@@ -1,13 +1,15 @@
 project:
   type: book
+  output-dir: docs
 
 book:
-  title: "book-BIR"
-  author: "Norah Jones"
-  date: "1/24/2025"
+  title: "Basic IFR"
+  author: "Rainer RQ Koelle"
+  date: "24. January 2025"
   chapters:
     - index.qmd
     - intro.qmd
+    - 010-air-law.qmd
     - summary.qmd
     - references.qmd
 
