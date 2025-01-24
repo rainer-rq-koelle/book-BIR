@@ -1,0 +1,1 @@
+RQ notes for BIR
