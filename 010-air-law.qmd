@@ -3,3 +3,40 @@ title: "Air Law"
 ---
 This is the air law chapter
 
+Chicago Convention - Appendices
+
+Annex 2 - rules of the air
+
+European implementation of Annex 2 (plus some Annex 3, and 10) - rules of the air = SERA (Standardised European Rules of the Air). 
+
+* generally applicable rules
+* VFR
+* IFR; and
+* aircraft interception
+
+## Personal Licensing
+
+:::{.callout-note}
+Differences between ICAO Annex 1 and the Aircrew Regulation: Describe the relationship and differences between ICAO Annex 1 and the Aircrew Regulation.
+
+Define the following:
+category of aircraft, cross-country, dual instruction time, flight time, SPIC, instrument time, instrument flight time, instrument ground time, MCC, multi-pilot aircraft, night, private pilot, proficiency check, renewal, revalidation, skill test, solo flight time, type of aircraft.
+:::
+
+:::{.callout-note}
+Explain the structure of Part FCL.
+:::
+
+### Rating
+
+:::{.callout-note}
+Explain the requirements for instrument ratings, their validity and privileges.
+:::
+
+
+
+
+<!-- paste-and-copy -->
+:::{.callout-note}
+
+:::

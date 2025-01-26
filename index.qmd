@@ -1,3 +1,12 @@
 # Preface {.unnumbered}
 
 This project started as a parking place for storing information and rehearse it as a refresher.
+
+## Modules 
+
+The following modules are applicable: 
+
+* (1) Module 1: Pre-flight operations and general handling; 
+* (2) Module 2: Departure, precision (3D) approach procedures and non-precision (2D) approach procedures; 
+* (3) Module 3: En-route IFR procedures; 
+* (4) Module 4: Optional flight with one engine inoperative (multi-engine aeroplanes only).

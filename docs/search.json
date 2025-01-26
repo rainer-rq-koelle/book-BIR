@@ -44,9 +44,139 @@
     "href": "010-air-law.html",
     "title": "2  Air Law",
     "section": "",
-    "text": "This is the air law chapter",
+    "text": "2.1 Personal Licensing",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Air Law</span>"
+    ]
+  },
+  {
+    "objectID": "010-air-law.html#personal-licensing",
+    "href": "010-air-law.html#personal-licensing",
+    "title": "2  Air Law",
+    "section": "",
+    "text": "Note\n\n\n\nDifferences between ICAO Annex 1 and the Aircrew Regulation: Describe the relationship and differences between ICAO Annex 1 and the Aircrew Regulation.\nDefine the following: category of aircraft, cross-country, dual instruction time, flight time, SPIC, instrument time, instrument flight time, instrument ground time, MCC, multi-pilot aircraft, night, private pilot, proficiency check, renewal, revalidation, skill test, solo flight time, type of aircraft.\n\n\n\n\n\n\n\n\nNote\n\n\n\nExplain the structure of Part FCL.\n\n\n\n2.1.1 Rating\n\n\n\n\n\n\nNote\n\n\n\nExplain the requirements for instrument ratings, their validity and privileges.\n\n\n\n\n\n\n\n\n\nNote",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Air Law</span>"
+    ]
+  },
+  {
+    "objectID": "0x0-human-factors.html",
+    "href": "0x0-human-factors.html",
+    "title": "3  Human Factors",
+    "section": "",
+    "text": "3.1 Threat and Error Management\nICAO Annex 1 defines error management as the process of detecting and responding to errors with countermeasures that reduce or eleminate the consequences of errors and mitigate the probablity of further errors or undesired states.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Human Factors</span>"
+    ]
+  },
+  {
+    "objectID": "0x0-human-factors.html#threat-and-error-management",
+    "href": "0x0-human-factors.html#threat-and-error-management",
+    "title": "3  Human Factors",
+    "section": "",
+    "text": "error tolerance minimising the effect of errors and as tolerant as possible –&gt; system’s ability to sustain itself despite the occurance of an error\nerror reduction minimise probability of an error occurring and also minimising the extent of the error.\nerror prevention avoiding an error.\nerror recovery return system back to its original state after the occurrence of an error.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Human Factors</span>"
+    ]
+  },
+  {
+    "objectID": "0x0-human-factors.html#stress",
+    "href": "0x0-human-factors.html#stress",
+    "title": "3  Human Factors",
+    "section": "3.2 Stress",
+    "text": "3.2 Stress\nYerkes-Dodson-Law\n\nknitr::include_graphics(\"./figures/Yerkes-Dodson-Law.jpg\")\n\n\n\n\n\n\n\n\npositive stress (eustress) = demand &lt; ability ~ under arousal\nWhat next?",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Human Factors</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#modules",
+    "href": "index.html#modules",
+    "title": "Basic IFR",
+    "section": "Modules",
+    "text": "Modules\nThe following modules are applicable:\n\n\nModule 1: Pre-flight operations and general handling;\n\n\nModule 2: Departure, precision (3D) approach procedures and non-precision (2D) approach procedures;\n\n\nModule 3: En-route IFR procedures;\n\n\nModule 4: Optional flight with one engine inoperative (multi-engine aeroplanes only).",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "0x0-instrumentation.html",
+    "href": "0x0-instrumentation.html",
+    "title": "4  Instrumentation",
+    "section": "",
+    "text": "4.1 Flight Intruments - “six pack”",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Instrumentation</span>"
+    ]
+  },
+  {
+    "objectID": "0x0-instrumentation.html#air-temparature",
+    "href": "0x0-instrumentation.html#air-temparature",
+    "title": "4  Instrumentation",
+    "section": "4.2 Air Temparature",
+    "text": "4.2 Air Temparature\nSpeed (of faster) aircraft create temperature measurement problem. Measurement results are distorted by frictional heating, ditto on static air accelerated with aircraft and used to measure temperature.\nincrease in sensed temperature is called * kinetic heating (or ram rise) *. The kinetic heating/ram rise in temperature is due to adiabatic compression.\n\nstatic air temperature SAT / outside air temperature OAT / Corrected outside air temperature COAT ambient outside temperature = temperature measured if you were in the basket of a ballon holding a thermometer (non-accelerated, slow moving)\ntotal air temperature TAT / measured impact temperature (higher) temperature sensed by a (fast) moving aircraft.\n\nTAT = SAT (OAT) + ram rise\nThe (total) conversion of kinetic energy to heat can be calculated:\n\\[TAT = SAT * (1 + 0.2 M^2) \\] Temperatures SAT/TAT in Kelvin K (!= Celsius or Fahrenheit)\nConversion loss as there is no perfect thermodynamic conversion. –&gt; conversion factor, i.e., recovery factor K, K &lt; 1. Typical values K =0.9.\n\\[TAT = SAT * (1 + 0.2 *K * M^2) \\] \\[SAT (or\\ OAT) = \\frac{TAT}{1 + 0.2 * K * M^2}\\]\nExample: Mach number 0.7, measured impact temp = -48deg C, recovery factor K of 0.85.\nTAT in Kelvin: -48C + 273 = 225 K \\(M^2\\) = 0.7 * 0.7 = 0.49\n\\[SAT = \\frac{255}{1 + 0.2 * 0.85 * 0.49} = \\frac{255}{1 + 0.0833} = 208 K\\] Kelvin to Celcius: 208 - 273 - -65degC",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Instrumentation</span>"
+    ]
+  },
+  {
+    "objectID": "0x0-instrumentation.html#pitot-status-system",
+    "href": "0x0-instrumentation.html#pitot-status-system",
+    "title": "4  Instrumentation",
+    "section": "4.3 Pitot Status System",
+    "text": "4.3 Pitot Status System\nstationary aircraft (on ground) acted on from all directions by ambient air pressure or static pressure. Statis pressure is the atmospheric pressure.\nmovement through air “adds” dynamic pressure. Dynamic pressure is the kinetic energy changed to pressure energy/ The dynamic pressure is proportional to aircraft’s speed:\n\\[dynamic\\ pressure = 1/2 * \\rho * v^2\\]\n\\(\\rho\\) air density\n\\(v\\) true velocity of aircraft\nDynamic pressure important as it represents the pressure of air flowing over the aircraft. Thus, relates to lift it creates and drag it experiencies. ~ flying characteristics of an aircraft.\n\n4.3.1 Pitot Tube\nA sensing system detecting the total pressure on the front of the aircraft.\nTotal pressure = dynamic pressure (movement) + static pressure (background).\nTo find dynamic pressure = need to separately sense the static (ambient background) pressure.\nBernoulli principle ==&gt; total pressure = dynamic + static pressure ==&gt; dynamic pressure = total pressure - static pressure\nSeparate measurement of static pressure also useful for height and rate of vertical change (i.e., climb and descent).\nStatic pressure vents or ports. Holes = vents are placed at right angle to the airflow. This avoids detecting the dynamic pressure.\nSome smaller aeroplane (not having multiple sensors) have a selectable standby static source inside the cabin. Unpressurised cabin ~ slightly lower (static) pressure due to aerodynamic suction.\ncombined pressure heads: measuring both, static and pitot/total pressure. “mast” to ensure sensors are outside boundary layer of aircraft skin. Can have heater element = avoid blockage from icing, drain hole to exit water entering the tube.\n\n\n4.3.2 position error\nAny error in detecting static pressure will give false instrument indications.\nThe sum total of all such errors is called position error (ex pressure error).\nposition error:\n\npredictable configuration error, and\nmaneuever error (less predictable)\n\nconfiguration: typically static sources are sited as far as possibly to be error free ~ some small remaining error which change with aircraft true airspeed and configuration (flaps, gears), and with angle of attack.\nSuch errors are established in flight testing = thus known ==&gt; calibration cards, or in modern systems programmed out in the air data computer.\nNote: standby instruments are not fed through ADC and - even in modern aircraft - have uncorrected position errors.\nmaneuver: rolling, pitching, or yawing, including random gusts may introduce transient and unpredictable static pressure errors. These can therefore not be programmed out with ADC.\nExtreme rolling/pitching unlike with transport aircraft.\nErrors related to yawing may be minimised by sitting static ports on both sides of fuselage.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Instrumentation</span>"
+    ]
+  },
+  {
+    "objectID": "0x0-instrumentation.html#intruments---six-pack",
+    "href": "0x0-instrumentation.html#intruments---six-pack",
+    "title": "4  Instrumentation",
+    "section": "",
+    "text": "pitot-static instruments\n\nairspeed indicator ASI\naltimeter\nvertical speed indicator VSI\n\ngyroscopic intruments\n\nattitude indicator AI (sometimes called artificial horizon)\nheading incdicator (or directional gyro)\nTurn coordinator ## Air Temparature\n\n\n\n\n\nstatic air temperature SAT / outside air temperature OAT / Corrected outside air temperature COAT ambient outside temperature = temperature measured if you were in the basket of a ballon holding a thermometer (non-accelerated, slow moving)\ntotal air temperature TAT / measured impact temperature (higher) temperature sensed by a (fast) moving aircraft.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Instrumentation</span>"
+    ]
+  },
+  {
+    "objectID": "0x0-instrumentation.html#asi---airspeed-indicator",
+    "href": "0x0-instrumentation.html#asi---airspeed-indicator",
+    "title": "4  Instrumentation",
+    "section": "4.4 ASI - airspeed indicator",
+    "text": "4.4 ASI - airspeed indicator\ngood info: https://aerotoolbox.com/airspeed-indicator/\nYour airspeed indicator, put simply, is a scale that measures the difference between the static pressure from your static ports, and the ram pressure (dynamic + static) from your pitot tube The static pressures cancel each other out, and you’re left with dynamic pressure.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Instrumentation</span>"
+    ]
+  },
+  {
+    "objectID": "0x0-instrumentation.html#flight-intruments---six-pack",
+    "href": "0x0-instrumentation.html#flight-intruments---six-pack",
+    "title": "4  Instrumentation",
+    "section": "",
+    "text": "pitot-static instruments\n\nairspeed indicator ASI\naltimeter\nvertical speed indicator VSI\n\ngyroscopic intruments\n\nattitude indicator AI (sometimes called artificial horizon)\nheading incdicator (or directional gyro)\nTurn coordinator",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Instrumentation</span>"
+    ]
+  },
+  {
+    "objectID": "0x0-instrumentation.html#pressure-altimeter",
+    "href": "0x0-instrumentation.html#pressure-altimeter",
+    "title": "4  Instrumentation",
+    "section": "4.5 Pressure Altimeter",
+    "text": "4.5 Pressure Altimeter\nThe pressure altimeter measures the “barometric” difference in height between pressure levels.\ncalibration based on standard atmosphere\n- (mean) sea level pressure: 1013.25 hPa - sea level density: 1225 g/m^3 - sea level temperature: 15 C - temperature reduces with increasing altitude at 1.98 C per 1000ft + up to 36 090 ft at -56.6C staying constant to + 65617 ft then rising at 3C per 1000ft\n\nknitr::include_graphics(\"./figures/met-ISA-atmosphere.jpg\")\n\n\n\n\n\n\n\n\ndetection of change in static air pressure\n\nsimple altimeter\nsensitive altimeter\nservo assisted altimeter\n(modern systems) altitude calculated in ADC output to EFIS or servo-driven instrument\n\nSimple altimeter: - aneroid capsule connected to rotating needle\n- capsule expands with decreasing ambient air preassure –&gt; higher altitude - subscale allows adjustment to different datum pressure settings (e.g. QNH, standard, …) - rate of pressure decrease with increasing height is not constant ==&gt; non-linear linkage - read-out only correct for ISA condistions\n\n\n\nAltimeter (FAA Flying Handbook)\n\n\nSensitive altimeters: increased sensitivity by stack of 2 or more capsules (~ increased movement/change); vibrators to overceom static friction; more complex gearing allows to use 3 pointers (10000ft, 1000ft, and 100ft); others use drum or digital display with one pointer.\nmore modern variants: vibrator and pressure setting digitiser, both require electrical supply; digitised information can be used by transponder (automatic transmission)\nservo-assisted altimeters: movement transmitted to a pivoted bar, i.e., the I-bar\ncapsule stack (increased sensitivity) –&gt; E/I-bar assembly sending signal to servo motor –&gt; complex gearing –&gt; digitiser for transmission of 1013hPa based ALT to transponder\nADC-driven altimeters: fourth generation system using static ambient pressure fed to ADC to calculate altitude referenced to both 1013hPa and selected subscale setting –&gt; transponder , other feed to servo driven instrument or EFIS\naccuracy requirements ICAO PANS-OPS (dependent on test/indication range):\nQFE/QNH accurately -/+ 20m or 60ft for range of 0-9000m or 0-30000ft\nor 25m or 80ft for 0-15000m or 0-50000ft\n\n4.5.1 Altimeter Errors\nPosition Error: position error can affect altimeter readings. Can be minimised by good design. Error varies with TAS and angle of attack.\nInstrument Error: friction in the gearing\nhysteresis error: Any capsule based system will encounter problem that the aneroid capsulses themselves are not perfectly elastic and ‘reluctant’ to change shape after being at one pressure for a period of time.\n\n\n4.5.2 Barometric Error\nchange of sea level pressure from the datum set on altimeter\n==&gt; resetting subscale to correct value\n \nHIGH pressure to low pressuer - altimeter over-reads; true alt decreases, while shown altitude stay constant HIGH termp to lower temperature - altimeter over-reads, true alt decreases\nhigh-low-high: flying from high pressure/temperature to low pressure/temperature … altimeter show high(er than you are)\nditto for low-high-low\nhigh-to-low, carful go! Im Winter sind the Berge höher@\nTemperature error correnction tables\ntemp error in when flying in warm air –&gt; alt under-read … no issue, as you tend to climb.\nflying in cold air mass and at low altitudes! ~ landing!\nAccordingly, temperature corrections must be applied to decision heights/altitudes, step down fixes, and even terminal minimum safe altitudes in temperatures of ISA -15C or below!",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Instrumentation</span>"
+    ]
+  },
+  {
+    "objectID": "0x0-instrumentation.html#pitot-static-system",
+    "href": "0x0-instrumentation.html#pitot-static-system",
+    "title": "4  Instrumentation",
+    "section": "4.3 Pitot Static System",
+    "text": "4.3 Pitot Static System\n\n\n\npitot-static-system and instruments (FAA flying handbook, figure 8-1)\n\n\nstationary aircraft (on ground) acted on from all directions by ambient air pressure or static pressure. Statis pressure is the atmospheric pressure.\nmovement through air “adds” dynamic pressure. Dynamic pressure is the kinetic energy changed to pressure energy/ The dynamic pressure is proportional to aircraft’s speed:\n\\[dynamic\\ pressure = 1/2 * \\rho * v^2\\]\n\\(\\rho\\) air density\n\\(v\\) true velocity of aircraft\nDynamic pressure important as it represents the pressure of air flowing over the aircraft. Thus, relates to lift it creates and drag it experiencies. ~ flying characteristics of an aircraft.\n\n4.3.1 Pitot Tube\nA sensing system detecting the total pressure on the front of the aircraft.\nTotal pressure = dynamic pressure (movement) + static pressure (background).\nTo find dynamic pressure = need to separately sense the static (ambient background) pressure.\nBernoulli principle ==&gt; total pressure = dynamic + static pressure ==&gt; dynamic pressure = total pressure - static pressure\nSeparate measurement of static pressure also useful for height and rate of vertical change (i.e., climb and descent).\nStatic pressure vents or ports. Holes = vents are placed at right angle to the airflow. This avoids detecting the dynamic pressure.\nSome smaller aeroplane (not having multiple sensors) have a selectable standby static source inside the cabin. Unpressurised cabin ~ slightly lower (static) pressure due to aerodynamic suction.\ncombined pressure heads: measuring both, static and pitot/total pressure. “mast” to ensure sensors are outside boundary layer of aircraft skin. Can have heater element = avoid blockage from icing, drain hole to exit water entering the tube.\n\n\n4.3.2 position error\nAny error in detecting static pressure will give false instrument indications.\nThe sum total of all such errors is called position error (ex pressure error).\nposition error:\n\npredictable configuration error, and\nmaneuever error (less predictable)\n\nconfiguration: typically static sources are sited as far as possibly to be error free ~ some small remaining error which change with aircraft true airspeed and configuration (flaps, gears), and with angle of attack.\nSuch errors are established in flight testing = thus known ==&gt; calibration cards, or in modern systems programmed out in the air data computer.\nNote: standby instruments are not fed through ADC and - even in modern aircraft - have uncorrected position errors.\nmaneuver: rolling, pitching, or yawing, including random gusts may introduce transient and unpredictable static pressure errors. These can therefore not be programmed out with ADC.\nExtreme rolling/pitching unlike with transport aircraft.\nErrors related to yawing may be minimised by sitting static ports on both sides of fuselage.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Instrumentation</span>"
     ]
   }
 ]

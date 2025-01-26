@@ -1,0 +1,31 @@
+---
+title: "Human Factors"
+---
+
+## Threat and Error Management
+
+ICAO Annex 1 defines **error management** as *the process of detecting and responding to errors with countermeasures that reduce or eleminate the consequences of errors and mitigate the probablity of further errors or undesired states*.
+
+* **error tolerance** minimising the effect of errors and as tolerant as possible --> system's ability to sustain itself despite the occurance of an error
+
+* **error reduction** minimise probability of an error occurring and also minimising the extent of the error.
+
+* **error prevention** avoiding an error.
+
+* **error recovery** return system back to its original state after the occurrence of an error.
+
+
+## Stress
+
+Yerkes-Dodson-Law
+
+```{r}
+knitr::include_graphics("./figures/Yerkes-Dodson-Law.jpg")
+```
+
+
+
+positive stress (eustress) = demand < ability  ~ under arousal
+
+What next?
+

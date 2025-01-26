@@ -10,6 +10,8 @@ book:
     - index.qmd
     - intro.qmd
     - 010-air-law.qmd
+    - 0x0-human-factors.qmd
+    - 0x0-instrumentation.qmd
     - summary.qmd
     - references.qmd
 
