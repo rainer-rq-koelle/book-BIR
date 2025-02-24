@@ -19,6 +19,12 @@ other instruments/systems
   
 ## Air Temparature
 
+Temperature probe of an aircraft measure the Total Air Temperature (TAT).   
+TAT includes friction and ram rise.   
+TAT >= SAT
+
+At lower speeds, OAT (SAT) ~ TAT, as friction and ram rise does not play a role.
+
 Speed (of faster) aircraft create temperature measurement problem.
 Measurement results are distorted by frictional heating, ditto on static air accelerated with aircraft and used to measure temperature.
 
@@ -47,6 +53,8 @@ $M^2$ = 0.7 * 0.7 = 0.49
 
 $$SAT = \frac{255}{1 + 0.2 * 0.85 * 0.49} = \frac{255}{1 + 0.0833} = 208 K$$
 Kelvin to Celcius: 208 - 273 - -65degC
+
+Higher speed "rams" air into thermometer and gets compressed (a bit) causing increase in temperature: $$Ram\ rise = SAT * 0.2 * M^2$$
 
 ## Pitot Static System
 
@@ -143,6 +151,9 @@ Simple altimeter:
 - rate of pressure decrease with increasing height is not constant ==> non-linear linkage
 - read-out only correct for ISA condistions
 
+Pressure in aneroid capsule: vacuum (or a very low pressure).   
+Pressure in casing: static pressure.
+
 ![Altimeter (FAA Flying Handbook)](figures/inst-altimeter.png)
 
 Sensitive altimeters: increased sensitivity by stack of 2 or more capsules (~ increased movement/change); vibrators to overceom static friction; more complex gearing allows to use 3 pointers (10000ft, 1000ft, and 100ft); others use drum or digital display with one pointer.
@@ -190,4 +201,839 @@ temp error in when flying in warm air --> alt under-read ... no issue, as you te
 flying in cold air mass and at low altitudes! ~ landing!
 
 Accordingly, temperature corrections must be applied to decision heights/altitudes, step down fixes, and even terminal minimum safe altitudes in temperatures of ISA -15C or below!
+
+Error of line blockage (static line blocked) - pressure cannot change == no altitude change when climbing or descending
+
+Fracture of static line - 'cabin pressure' will be measured rather than aircraft altitude.
+
+In case of wrong altimeter reading - GPS could serve as alternative.    
+Caution: 4 satelites needed for position fix including altitude. Without some form of GPS augmentation, GPS are not as accurate as pressure systems/instruments. GPS altitude error 1.5-3 times higher than positional error. Anecdotal evidence from mountaineers ~ up to 400ft.
+
+### Altimeter Pressure Settings
+
+* QFE - measures altitude about (local) field - zero on ground
+  + airfield QFE is measured at highest point of airfield surface and generally correct for the whole airfield
+  + touchdown QFE is measured at the touchdown of runway in use for precision approaches. Give accurate height about particular runway.
+
+* QNH - measures altitude about mean sea level (AMSL) - shows field elevation on touchdown.
+QNH is determined by measuring QFE and increasing it to sea level assuming ISA temparature values for the calculation.
+  + airfield QNH is measured AMSL for the position of the aerodrome. It must be set at least on one altimeter when departing fom an aerodrome in controlled airspace.
+  + in some States, a Regional or Zone QNH is available. This is the lowest QNH for the next hour within the Altimeter Setting Region (ASR) or Zone Area.
+  
+The air mass is not exactly ISA when Altimeter reads zero with QNH ~ you are not exactly at sea level.     
+In cold air you will be above MSL. In warm air you will be below it.
+
+The QNH and actual sea level pressure (QFF) will only be the same if the ambient conditions are - in fact - ISA.
+
+The standard QNH is 1013.25 hPa or 29.92 in (inches of mercury).    
+This setting makes the altimeter read a pressure altitude of Flight Level.    
+This setting is used for traffic above the "transition level".
+
+:::{.callout-note}
+Exam questions is about working out difference between levels.
+Sketch - biggest number at bottom (highest pressure level).
+Then work with 30ft per hPA difference.
+  30ft per hPa difference
+:::
+
+$$True \altitude = indicated\ altitude\ (QNH) + Temp\ correction$$
+$$ Temp\ correction = 0.004 * ISA\ deviation * height\ air\ column\ ac&station$$
+OAT = ISA - 10C, ISA deviation = OAT - ISA = -10C
+
+station to be assumed at MSL!!! (not given)    
+==> height 9500ft
+
+Temp correction = 0.004 * (-10) * 9500 = -380ft    
+True altitude = 9500ft + (-380ft) = 9120ft
+
+
+
+
+### Density Altitude
+
+Aircraft performance is dependent on density altitude.    
+Density altitude is the altitude corrected for temperature.
+
+In other words, the altitude in ISA which gives you the same air density as the prevailing non-ISA combination of temperature and pressure altitude.
+
+To calculate density altitude
+
+$$density\ altitude = pressure\ altitude + (120 * ISA\ deviation)$$
+For example:
+
+FL100 --> 10 000ft
+OAT = -15C ==> -20
+DA = 10 000ft + (120 * -20ft) = 10000ft - 2400ft = 7600ft
+
+
+## Vertical Speed Indicator VSI
+
+VSI records the rate of change of static pressure, and displays it as a rate of climb/descent.
+
+Instrument consists of capsule fed with static pressure. The case is also fed with static pressure.    
+Static feed to case is passed through a very small gap, the metering unit.    
+If the aircraft changes its altitude, the capsule reacts immediately whilst the pressure change in the case is slower.    
+The differential pressure is maintained as long as the aircraft continues to climb or descend. But once level, the pressure equalises and the rate of climb or descend returns to zero.
+
+Key component: metering unit.
+Metering unit uses a "choke" directing the air through both a capillary tube and a "knife edge orifice".
+
+instantaneous VSis
+simple VSI will not show rate of climb or descent immediately. There is time lag in indication while pressure difference between capsule and case builds up.
+
+The IVSI counters this by including in the static line two weights in dashpots central with springs ... causing immediate differenial pressure because of the inertia as aircraft enters climb/descend.   
+Dashpots are sometimes called "accelerometers".
+
+Steep turns: IVSI will initially show a climb - stabilise - descent on rollout.    
+Do not trust IVSI when turns > 40 degrees or changing load factor in turn.
+
+Other systems for vertical speed
+
+* modern strap-down inertial reference system IRS - vertical acceleration and velocity are available from IRS  as one of the accelerometers calculates movement in vertical axis.
+* barometric height in electronic form from ADC, the rate of change of height can be calculated and displayed as vertical velocity.
+* dynamic vane VSI - difference between static and metered static pressure induces a flow over moveable vanes, rather like a small air turbine instead of using a capsule. Movement of the vances records the vertical speek.
+
+In practice, modern transport aircraft will use one of the two electronic systems driven by ADC or IRS
+
+### Errors and blockage
+
+instrument error - can be present. Can be largely compensated for with an adjusting screw that zeroes the reading.
+
+lag - the basic VSI design sees a lag before a rate of climb or descent is indicated. This may take sometimes up to several seconds. IVSI overcomes this. Modern inertial systems do not suffer from this error.
+
+static errors - error in the absolute value of static pressure produces NO error. However, a change in static pressure when none is due will give a false indicator of climb or descent.    
+The pressure driven instrument is susceptible to maneuver errors, particularly during take-off and go-around, and in turbulence.
+
+static blockage will cause the pressure driven instruments read zero in all circumstances.
+
+static leak to the pressure cabin will ause the instrument to read cabin rate of climb and descent.
+
+On start-up, all VSIs should read zero.
+
+
+cool explanation: flight-club: https://www.youtube.com/watch?v=gZBzs2b2kJU
+https://flight-club.com.au/
+
+
+
+
+pUd pOc sOd sUc    
+sOd - is **s**tatic is blocked in **d**escent, the airspeed indicator will **O**verread
+
+PUDSUC POCSOD
+
+
+pUd == pitot blocked in descent - ASI under-reads
+SUC == stqtic blocked in Climb - ASI under-reads
+
+
+## Airspeed Indication
+
+indicated airspeed ~ reference for handling the aircraft     
+true airspeed ~ determine how far we fly in a given time --> navigation
+
+dynamic pressure = basic measure of airspeed    
+
+airspeed indicator are calibrated to read correctly at MSL under ISA conditions.   
+at height/altitude, air density decreases --> same dynamic pressure reflects now a higher true airspeed (air is thinner ~ for same pressure aircraft needs to move faster).    
+The same applies if the air is warmer than standard (warm air is thinner ~ for same pressure we have to move faster)
+
+$$dynamic\ pressure = \frac{1}{2} * \rho * v^2$$
+If $\rho$ air density reduces, velocity $v$ must increase for the same dynamic pressure.    
+
+Other unit of airspeed: speed of the aircraft as a portion of the speed of sound --> *Mach* or *Mach number*
+
+Knowledge of mach number important, because if aircraft approaches the speed of sound, the airflow around the aircraft changes (starting of shock waves). 
+If aircraft is not designed for supersonic flights, this can have an impact on its stability, required extremes of control movements, and loss of control.     
+Aircraft approaching speed of sound is marked by *airframe buffeting*.
+
+IAS at low speeds; mach number at high speeds.    
+TAS to be calculated by pilot or aircraft computers.
+
+### Flate Plate Indicators
+
+earliest measurement of dynamic pressure ~ flat plate attached to wing --> deflected plate (spring) --> scale indicating airspeed according to deflection.   
+Calibrated under ISA conditions: IAS correct at sea level.
+
+### mechanical airspeed indicator
+
+(light) aircraft: feeding of both, static and dynamic pressure to ASI.
+
+pressured sealed case supplied with static pressure.    
+inside the sealed case a capsule is supplied with dynamic pressure.     
+With increasing airspeed the dynamic air pressure increases --> capsule expands --> mechanical link indicates airspeed (~ difference beteen dynamic and static pressure).
+
+calibration: IAS at MSL under ISA == TAS.
+
+Potential inaccuracy due to temperature effect on linkage. Potential bi-metal strips to reduce expansion/contraction.
+
+### ADC driven instruments
+
+Modern (and larger) aircraft feed the pitot and static pressure lines to an Air Data Computer --> electrical signal --> servo-driven mechanical display or EFIS screen.
+
+Airspeed can be calculated from the pressures using formulae by Saint-Vernant.     
+== calibrated airspeed CAS
+
+### Errors
+
+Any instrument subject to errors: sensor errors, mechanical inaccuracies or issues with design.
+
+ASI subject to all
+
+* instrument error - older mechanical systems will suffer from mechanical errors.
+* position error - position errors linked to poor designed systems ~ less likely with modern aircraft. In modern aircraft the predictable element of position error (=configuration error) can be eliminated by ADC.
+
+## Calibrated Airspeed
+
+IAS = dynamic pressure reading corrected for instrument and position errors is called CAS.
+
+Aircraft without ADC may have an ASI correction table for different configuations to convert from IAS to CAS.
+
+old term: *Rectified Airspeed RAS*.
+
+All large aircraft display CAS on the ASI as a primary reading. Thus, IAS = CAS and no instrument or position errors need to be applied to the reading.
+
+EFIS shows CAS!
+
+## compressability, CAS and EAS.
+
+In case of increasing speeds > 0.3/0.4M air starts to behave as a compressible fluid --> "compressed" in pitot tube.    
+This causes the dynamic pressure to be greater than it should be. Accordingly, CAS calculated from $1/2 *\rho *v^2$ over-reads.
+= compressibility error.
+
+compressibility corrections are not required for ADC calculated speeds (Saint Venents formulae ~ assuming air is a compressible fluid).
+
+CAS corrected for compressibility is *Equivalent Air Speed EAS*.   
+The correction is always a reduction, as compressibility causes the calculated CAS to be too high.
+
+The threshold as of which compressibility needs to be taken into account is approximate.
+Compressibility is a gradual increasing factor, and insignificant in the beginning (lower speeds).    
+(FAA) compressibility becomes significant at/above 200kt CAS and at/above 10 000ft ~ equating to around M0.36 in ISA.    
+Most navigation computers apply compressibility correction not below 300kt TAS ~ M0.45 at MSL.
+
+```{r}
+#| fig-caption: take from Bristol Groundschool
+knitr::include_graphics("./figures/inst-airspeed-corrections.png")
+```
+
+check for math behind: https://aerotoolbox.com/airspeed-conversions/
+
+$$TAS = IAS + IAS * (\frac{2}{100} * \frac{ALT}{1000})$$
+
+ICE T and the Pussy Cat Dolls (PCD)
+
+(ICE-T): IAS          CAS                EAS          TAS
+(PCD)     -> Pressure    -> compressiblity   -> density
+             Position
+
+
+### TAS Calculation
+
+TAS can be calculated from CAS, if you know the air pressure and temperature.    
+Pressure is defined by the pressure altitude of the aircraft.
+
+conversion from CAS to EAS requires knowledge of Mach number (M = f(CAS) + pressure altitude): CAS -- PA ($Z_p$) --> EAS     
+conversion from EAS to TAS requires knowledge of air density (or density altitude)   
+EAS -- DA ($Z_d$) --> TAS
+
+
+```{r}
+knitr::include_graphics("./figures/inst-ASI-pitotstatic.png")
+```
+
+
+
+## Magnetism - Compass Reading
+
+https://www.studyaircrafts.com/compass-system
+
+A compass is an instrument designed to indicate direction on the surface of the earth, relative to some known datum. The magnetic compass works on the principle that a freely suspended magnet will align itself with the earth's magnetic field such that one end will point toward the north magnetic pole.
+
+The purpose of a magnetic ‘steering’ compass in an aircraft is to indicate heading, the direction in which the aircraft is pointing. Magnetic influences - iron/steel components, electric currents - distort the earth’s field so that the compass magnet assembly deviates from the magnetic meridian. This is called compass deviation.
+
+It is mandatory that all civil aircraft must carry such a compass and in all but light general aviation aircraft it serves as a standby compass.​
+
+### Deviation
+
+Aircraft manufacturing --> magnetisation; aircraft degaussing.  
+Residual magnetism which can influence compass readings.
+
+Other sources: cargo
+
+Distortion of Earth's magnetic field, or electrical fields (e.g. aircraft equipment)
+
+### Factors affecting Deviation
+
+Deviation experienced by an aircraft is specific to each aircraft and varies with heading and magnetic latitude.
+
+Variation with heading occurs as resultant aircraft fields oppose Earth's field, both + or -.
+On which headings this happens is dependent on how deviating fields are aligned with aircraft.
+
+Variation with magnetic latitude is due to horizontal component of Earth's magnetic field H.
+It varies in strength depending on where it is detected.
+At the magnetic equator all the field is in H component, at the poles, the H component is weak to non-existing.
+
+If H is weak, the deviating forces are proportionally stronger. 
+Thus, deviation is greater near the poles and smaller at magnetic equator.
+
+### Magnetic Direction
+
+Variation is the difference between true and magnetic direction/headings.     
+Variation east - magnetic least.    
+Variation west - magnetic best.
+
+```{r}
+knitr::include_graphics("./figures/inst-magnetic-variation.png")
+```
+
+### Compass Direction
+
+Influence by Earth's magnetic field. 
+Compass installed in an aircraft distorts, field distorted by aircraft/metal and  electrical equipment.
+
+==> deviation from magnetic north == compass north
+
+Deviation is difference between Compass North CN and Magnetic North MN.
+
+deviation east - compass least     
+deviation west - compass best
+
++ turn to east, - turn to west
+
+Deviation not constant for a given compass.
+It varies as the aircraft's magnetic fields interfere with the Earth's magnetic fields.
+
+Deviation varies with:
+
+* magnetic latitude ~ strength of Earth's magnetic field
+* aircraft heading ~ orientation of aircraft and interference changes
+* changes in aircraft electrical equipment ~ different levels of interferring fields
+
+### Calculations
+
+Conversion of compass heading to true heading, etc. 
+
+Cadbury's Dairy Milk is Very Tasty
+compass-deviation-magnetic-variation-True
+
+compass heading: 222
+deviation 3W:   -  3
+magnetic heading: 219
+variation 23E:   + 23
+true heading:     242
+
+
+Given true heading of 005, VAR 32W, deviation 4E. 
+What is the compass heading
+
+"CaDbury's Milk is Very Tasty":
+C: 033
+D: +4
+M: 037
+V: -32
+T: 005
+
+Given compass heading 233, true heading 246, and deviation -3,
+what is the variation?
+
+C: 233
+D:  -3
+M: 230
+V: ==> +16 == VAR 16E
+T: 246
+
+### Determining Compass Deviation
+
+deviation is detected by means of a compass swing. Done by licensed engineer (not a pilot).
+--> compass deviation card ~ residual deviation, placed next to compass
+
+Under EASA, CS25 requires main compass to be accurate to -/+5 degrees and standby compass to -/+10 degrees.
+
+### Compass Serviceability Check
+
+check before each flight: clean/clear and not distorted, liquid no bubbles and clean.
+Accuracy cross check to another compass. Alternative runway (or known) heading.
+(Note: runway headings are "magnetic")
+
+C 214
+D  +6 ==> DEV: 6E
+M 220
+V
+T 212
+
+
+procedures for
+calibrating an aircraft magnetic compass to minimize the effect of aircraft-induced
+magnetic fields. These procedures are often referred to as “swinging the compass” or a
+“compass swing.
+
+compass calibration = determining residual deviation --> compass calibration card
+
+
+
+## Gyroscope
+
+3 main gyroscopic instruments found on aircraft are the artificial horizon, the heading indicator, and the turn coordinator. All three use gyroscopic axes to provide a datum from which the aircraft’s orientation can be measured. More advanced systems can also be found on complex aircraft.
+
+All gyroscopic instruments rely on using the gyroscopic axis as a datum.
+
+gyro = turn    
+skopein = see
+
+angular momentum of a spinning body ~ moment of inertia * rate of rotation    
+inertia dependent on mass, and distance from spinning axis
+
+gimbals     
+gyroscopes are usually suspended in a system of frames, i.e., gimbals    
+==> freedom of movement in a defined number of planes.
+
+a gyro must have at least one gimbal for every axis around which you need to measure movement.    
+Thus, a turn coordinator measures movement around yaw-axis --> one gimbal;   
+artificial horizon measures pitch and roll --> two gimbals.   
+
+
+Instrument Name	    Instrument Shows	    Gyroscopic Axis Alignment
+Artificial Horizon	Attitude and Bank	    Vertical to Centre of the Earth
+Heading Indicator	  Heading	              Aircraft Yaw Axis
+Turn Coordinator	  Rate of Turn*	        Aircraft Pitch Axis
+
+(*) turn coordinator does not show bank angle!
+
+
+### classification
+
+* degree of freedom
+* orientation of spin axis
+* use
+
+#### by degree of freedom
+
+degree of freedom = number of axis about which gyro displacement can be measured, i.e., the number of gimbals.
+
+spin axis is not counted as degree of freedom, as gyro displacement cannot be measured around spin axis
+
+note: gyro rotor mounted in two gymbals with two degrees of freedom is free to move in all three planes, i.e., yaw, roll, and pitch.
+
+Note: EASA uses planes of movement rather than degrees of freedom.
+Thus, one more "plane" than "degree", because spin axis is considered as well.
+
+#### by spin axis orientation
+
+In aviation, 
+
+vertical (spin axis) or     
+horizontal (spin axis)
+
+#### by use
+
+* space gyros - 2 degrees of freedom := "free gyros" (3 planes)
+* tied gyros - 2 dgrees of freedom, but with external influence controlling orientation of spin axis by typing it - for example - to the horizontal or vertical aircraft axis
+* earch gyros = sub-category of tied gyros where spin axis is tied by Earth gravity to remain in Earth vertical
+* rate gyros - one gimbal = one degree of freedom == sense rotation in only one plane, e.g. rate of yaw
+* rate-integrating gyros = one degree of freedom == sense angular displacement
+
+
+### Rate Gyros
+
+![rate gyros](figures/inst-gyro-axes.png)
+
+rate gyro - one gimbal --> sense movement in one plane
+
+e.g. rate gyro sensing yaw     
+gyro axis oriented horizontally across the aircraft    
+gimbal pivoting around its one degree of freedom --> restraining springs resisting the pivoting and tend to restore neutral position      
+yawing force twisting the moment in the horizontal plane ....
+
+spring force produces a secondary precession equal to and in the same direction as the yaw.
+
+dependent on orientation, rate gyro can indicate pitch or roll
+
+
+heading indicator = directional gyro
+suction to drive attitude and heading indicator
+
+turn - electrical
+
+heading indictor reference magnetic north = dial to configure orientation
+horizontal gyro - plan perd to horizon - 3 degrees of freedom = regardless of aircraft movement gyro will stay in place
+
+turn - gyro will stay rigid in place, turn left = gyro to right
+
+excessive pituch or bank will stop ~ 85 degrees elect . air suction 55
+
+gyroscopic apparent wander ~ rigid in space ~ earth rotation
+max at poles, min at equator (aligned with meridian)   
+dependent on latitude
+
+real gyroscopic wander - wear, friction and imbalance, about 1 degree per hour
+Real wander (or random wander) of a gyroscope, as opposed to apparent wander, is actual movement of the spin axis caused by engineering imperfections such as friction and unbalance.
+
+
+
+practice: adjust HI every 10-15 mins when straight and level (= compass shows correct heading related to magnetic north)
+
+gyromagnetic compass - remote indicating gyro / slaved gyro.    
+in principle: heading indicator incorporating a "slave gyro" ; automatic alignment
+
+
+### rate indigrating gyros
+
+rate gyro --> rate of angular displacement   
+rate integrating gyro --> rate of displacement and time it was applied for ~ indication of rotational displacement
+
+rate integrating gyros ~ extreme accuracy over a small angular movement    
+one degree of freedom --> rotatinal movement about one axis
+
+gyro rotor inside a cylinder acting as sole gimbal, free to rotate inside a 2nd cylinder. The outer cylinder is filled with viscous fluid.
+
+issue: cross-coupling
+
+### ring laser gyros
+
+Laser or ring laser gyro (RLG) mainly used in Inertial Reference System IRS
+
+Uses gas discharge laser to generate monochromatic radiation in two directions.; frequenccy difference proportional to input rate ==> measured and converted to digital output signal
+
+issue: Frequency Lock and Dither
+
+RLG issue - frequency lock or lock-in or laser lock.    
+at low input rates, frequencies of CW and CCW beams are nearly the same ~ lock ~ zero
+
+dither = slow rotation of laser system around input axis --> ensures RLG stays out of lock-in range
+
+INS = 3 RLGs at right angles fixed to aircraft frame    
+INS measures all rotations about the three axes, giving a very accurate readout of aircraft attitude with reference to a space datum.
+
+benefits: size, lifespan compared to conventional rate sensing or rate integrating gyros
+
+
+
+## Turn Indicator
+
+turn indicator and turn coordinator
+
+balance ball ~ in or out of balance ~ too much or too little bank used for rudder deflection
+
+indicator rate of change of aircraft heading = rate of yaw in the plane of the earth horizontal
+
+rate gyro with horizontal axis, one gimbal, and degree of freedom    
+either air/vacuum driven (suction) or electronically driven
+
+horizontal axis parallel to lateral axis of aircraft (= pitch axis)
+
+when aircraft banks into balanced turn, the gyro precesses in the opposite roll sense in order to keep its axis more or less with the earth horizontal.
+
+bank angle for a given rate of turn is related to the TAS    
+requires calibration to a specific range of TAS ==> turn indicator calibrated for (e.g.) Cessna will not indicator correctly in (e.g.) a jet;    
+turn indicator will also not correctly if turn is not balanced because angle of bank would be incorrect.
+
+rotates away from pilot
+
+
+required angle of bank:     
+
+* standard rate 1 turn = 180 degree per minute = 360 per 2 minutes, 3 degree per second
+* standard rate 2 turn = twice = 360 per minute, 6 degree per second
+
+$$angle\ of\ bank = (\frac{TAS}{10}) + 7$$
+
+### Turn indications
+
+(typical) turn indicator - one index L or R at rate 1 turn; note showing rate 1 ~ "2min turn"    
+optional TIs with 2 or 3 rate turn markings
+
+### Slip and Skid
+
+balanced turn = coordinated amount of bank and rudder     
+too much bank ~ aircraft slipping    
+too little bank ~ aircraft skidding
+
+straight and level flight ~ gravity keeps ball in center of liquid filled tube = no slip and no skid     
+ditto for balanced turn
+
+in case of too much or too little bank, the resulting force will not be through the aircraft vertical axis ==> ball displaced
+
+"kick the ball" = more or less rudder in the direction of the ball
+
+### Turn Coordinator
+
+Turn Coordinator is a further developed turn indicator.
+
+Gimbal raised at the front by 30 degrees.  
+Thus, sensitive primarily to yaw, but also slightly to roll ==> begins to indicate turn as soon as aircraft starts to roll into the turn and before yaw rate is established.
+
+Once in steady turn, there is no further roll rate and therefore the instrument only indicates yaw!
+
+Turn coordinator only indicates rate 1 turns accurately in a tight TAS range (about 5% of specific speed), as it indicates/reacts to yaw, roll, and part of pitch.
+
+
+
+
+## Attitude Indicator - Gyro Horizon or Aritifical Horizon
+
+Direct attitude indicators use an Earth gyro = gyroscope with 2 degrees of freedom (2 gimbals), spin axis maintained in Earth vertical by gravity
+
+Attitude indicator shows aircraft attitude in pitch and roll.
+
+Either driven by air/vacuum (suction) or electrically.
+
+### Air-driven AI
+air drives rotor, typically rotates anti-clockwise when viewed from above.
+
+inner gimbal --> horizon bar up/down
+outer gimbal --> bank angle
+
+gyro remains level, case pitches with horizon bar displaced to show climb or descent
+
+ladder = major pitch attitudes numbered    
+aircraft symbol (white or yellow) remains fixed to the instrument casing.
+
+bank indications - sky pointers     
+bank indictor rotates in roll with the rest of the indicator card
+
+first 30 degrees shown in increments of 10 degrees, further indications at 45, 60 and 90 degrees
+
+#### air driven gyro erection
+
+Air-driven artificial horizons are made pendulous, settle gimbals ina nearly erect position when NOT working = reduces erection time at start-up
+
+once engine has started --> gyro is rotation --> gyro axis tied to Earth vertical 
+
+air exhausts at bottom to regulate orientation
+
+#### electrically driven articifial horizon
+
+same principle, rotate clockwise when viewed from above, gyro tied to Earth vertical
+
+more rigid that air-driven gyros, electric squirrel cage motor higher spin speed, electic erection system & very quick
+
+electrically driven artificial horizons do not suffer from turning and acceleration errors.
+
+#### principle of operation
+
+...
+
+### servo driven attitude indicators
+
+modern aircraft, instrument driven by servos    
+signals amplified and set to a processor and then to the display unit: Attitude Diretor Indicator (ADI).
+
+signals from vertical gyro also sent to autopilot and flight director.
+
+information from other systems can be combined in the ADI, e.g. ILS localiser and glide-scope indicator, radio height, airspeed deviation from target and flight directors
+
+
+### vertical guros an AHRS
+
+advantages of using remote vertical gyro unit over basic instruments are:
+
+* improved accuracy
+* better use of space, in that the vertical gyro does not have to be installed in the instrument panel
+* better maintenance access, all detectors can be comnined in a Line Replaceable Unit (LRU)
+* when three vertical gyros are used their signals can be compared and a failed unit discarded
+
+Such vertical gyros may be combined with a remote indicating compass system = Attitude and Hearding Reference System (AHRS)
+
+AHRS gyros no longer use 2 defree of greedom to detect attitude but instead use single degree of freedom rate gyros as roll, pitch, and heading sensors combined with accelerometers in all three axes and a magnetic field detector, i.e., flux valve.
+
+most modern AHRS use MEMS gyroscopes, accelerometers and magnetometers on three orthogonal axes.    
+MEMS smaller, lighter, accuracy, reliability, and cost
+
+AHRS may be combined with an Air Data Computer tp make Air Data and Attidutde Heading Reference System (ADAHRS).
+
+### EFIS Displays
+
+modern aircraft fitted with IRS or ADAHRS take attitude signals from IRS and send them to the EFIS symbol generation fo relectronic display. = Primary Flight Display (PFD).   
+PFDs can incorporate attitude information as well as airspeed / Mach number, maneuver boundaries, flight direcetors, attitude and autopilot or flight director mode indications
+
+
+
+
+
+![PFD and ND](figures/inst-PFD-ND.png)
+
+The main characteristic of the Navigation Display is the colour screen and the ability to display different modes and functions : route flown, VOR, AFD, ILS, Weather Radar, TCAS, etc.
+
+
+## Directional gyros
+
+apart from attitude, gyros can be used to indicate direction either on their own as a Direction Indicator (DI) or integrated into a compass system.
+
+DI are used as a primary heading reference on light aircraft.
+DI measure changes in direction relative to the Earth's surface.
+such DIsare tied to the horizontal of the aircraft instead.    
+== tied gyros with horizontal spin axis    
+two degrees of freedeom ~ two gimbals.
+
+DI driven by air or electricity.    
+typically air-driven because they are only fitted in simple aircraft and directional gyros incorporated into other systems are typically electrically driven, because they are fitted into slightly more complex aircraft with better electrival supplies.
+
+Directinoal gyros have 2 defrees of freedom and a horizontal spin axis.
+
+Direction indicators fitted into simple aircraft to supplement heading information from a direct reading magnetic compass.   
+The rigidity of its gyroscope gives steadier heading inforamtion than the compass (compass subject to turning and acceleration error).
+
+A DI cannot be completely on its own. 
+Subject to its own errors of apparent drift.   
+Apparent drift caused by rotation of the earth and transport wnder.
+
+both instruments are used together. 
+The DI is the primary heading reference, it must be periodically reset to the heading reference from the direct reading compass when aircraft in straight and level flight.
+
+Gimbals give freedom in pitch and roll up to about -/+ 55 degree.
+
+Due to its rigidity the gyroscope will retain its orientation in space.
+As it turns, the aircraft effectively rotates around the outer gimbal, and indicated heading is read from the scale fixed to the outer gimbal.    
+The heading scale is normally round the middle of the gimbal.
+
+### DI Gyro Erection
+
+DI is a tied gyro - which also it is free to move in its gimbals has the spin axis held to the aircraft horizontal.   
+Air is fed through nozzles mounted on the outer gimbal, itself tied to aircraft horizontal. when the rotor is erect, impinge equally on both sides of the buckets.
+
+### DI 
+
+* on ground whiule taxying: left turn = heading decrease, turn right (clockwise): increase
+
+* mechanical ADI is fed attitude data from remote vertical gyro or a referencing platform. But it can be supplied from an IRS.
+
+
+## Remote Reading Compasses
+
+DI and compass = heading information.     
+Both have significant errors, but used together they can perform.
+
+Combination of both in one instrument using rigidity of gyro to stabilise the compass in the short terms but to correct for apparent wander with a continous magnetic heading input.    
+== gyro compasses == remote reading gyro compasses == gyro flux gate compasses
+
+
+### Radio Magnetic Indicator
+
+information from VOR or NDB added --> RMI
+
+* (orange triangle/top) lubber line = indicates current magnetic heading
+* desired heading can be set with knob at bottom left (yellow triangle)
+* green arrow indicators direction to selected VOR or NDB
+
+### Horizontal Situation Indicator HSI
+
+adds information on deviation from selected VOR/ILS/RNAV tracks.
+
+
+### System Errors
+
+**Deviation** remote indicating gyro compass suffers from same potential errors caused by variation in aircraft magnetism as direct reading compases - but at lesser degree due to flux valve placed as far away from disturbing sources/fields.
+
+Deviation correction is achieved by adjusting the electromagnetic fields near the flux valve with permanent magnets.
+
+EASA CS25 requires main comapss system to have accuracy adequate for safe operation of aeroplance. == within 5 degrees for remote indicating compass.
+
+some authorities require residual error less than 1 degree.   
+--> no compass correction card required.
+
+**Acceleration and Turning** acceleration on take-off and deceleration on lainding will cause flux valve to swing & some liquid surrounding dampening.
+Thus, moves from Earth horizontal detecting some vertical Z component == direction distortion.
+
+Steady pitch attitude up to 25 degree from level will produce no error.
+However, in steady balanced turns the flux detecter will stay level with respect to the aircraft and agins start to pick up Z component of magnet field ~ ditortion.
+
+== various sensors incorporated to detect pitch, bank, and acceleration --> switching off when these parameters exceed limits set in the magnetic monitoring system. 
+
+
+## Intertial Reference System
+
+IRS required to maintain a very accurate reading of true north.     
+Although not a compass, it is used as a heading reference.
+
+The IRS computer will hold a variation map for the world and can display both true and magnetic heading!    
+CS25 requires accuracy of 1 degree.
+
+In earlier INS, the INS provides true heading for mixing with and stabilising the magnetic heading input from a detector.
+
+
+
+Questions
+
+* flux detactor detects strength and direction of the Earth's magnetic fields.
+The error detector compares the flux valve reading with the 'null'/North position and expresses the difference --> heading on compass card.
+
+* remote indicating compass fitted with free/slave swith. When slave system and system synchronised what is the source of the displayed heading
+== flux detection unit.
+
+remote indicating compass ~ 2 main parts: indicator = direction gyro until we add input from flux valve/detector.    
+if switched to slave == only flux; sometimes switch Comp/DG for compass and directional gyro.
+
+* limit deviation = mount in wingtip
+
+
+
+DG 2 axes, incapable of self-orientation in an Earth tied position
+annunciated (slaving loop)
+DG 2 axes, spin axis horizontal plane by erection system
+
+DG --> 2 errors: apparent wander/Earth rotation and transport wander/drift; no influence of longitudinal accelerations or Earth magnetic field (~ gyro!)
+
+
+
+
+# Electronic Flight Instrument Systems (EFIS)
+
+EFIS enhances attitude and navigational data.   
+PFD errors --> stanby instruments, modern: Integrated Stanby Instrument System (ISIS)
+
+Components
+
+![EFIS](figures/inst-EFIS.png)
+
+* electronic Attitude Director Indicator (EADI) = Primary Flight Display (PFD)
+* electronic Horizontal Situation INdicator (EHSI) = Navigation Display (ND)
+* EFIS control panel
+* Symbol Generator SG (creates graphic output for display on PFD/ND)
+* remote flight sensor unit
+
+typically 2 SGs, if one fails the remaining supplies both = identical information/display; optional 3rd backup generator
+
+PFD can be switched to ND (or to any other available unit. -- EFIS control panel.
+
+### Primary Flight Display
+
+EADI/PFD is an electronic version of a sky-pointing ADI
+
+Overlay possible of
+
+* flight director command bars
+* pitch limit symbols
+* 'rising' ruwnay symbol
+
+![](figures/inst-EFIS-PFD-only.png)
+fast/slow indicator shows airspeed error of -/+10kt when autothrottle engaged, acts as throttle director when thrust is manually controlled
+
+**Speed tape**
+
+speed tape shows calibrated airspeed CAS from air data computer ADC between 45 and 420kt.    
+overlaid on the moving speed tape are the speeds that are important for handling and performance considerations.    
+max speed/Mach number: VMO or MMO and high speed buffet boundary    
+minimum maneuver speed, stick shaker speed
+
+minimum flap retraction speeds are shown as a greed F    
+landing reference speed VREF as a green R    
+gear and flap placard speeds are shown in red and black
+
+Note: displays vary - yellow = caution, red and black = limits
+
+**decision height** and **radio height**
+
+(in B737) Decision Height DH can be supplemented with a digital or dial readout of the Radio Altitude RA.    
+RA only active below 2500ft. Between 2500ft and 1000ft, both DH and RA are shown.   
+Below 1000ft, circular display / traditional analogue dial readout in 100ft increments.
+
+DH bug is displayed in magenta at appropriate height.    
+below 1000ft circular scale gradually eroased in anti-clockwise direction.
+
+DH + 50ft: aural aleart ... increasing rate until selected DH reached & flashing
+
+screenshot Airbus PFD
+![](figures/inst-EFIS-PFD-Airbus.png)
+
+
 

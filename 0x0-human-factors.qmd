@@ -29,3 +29,24 @@ positive stress (eustress) = demand < ability  ~ under arousal
 
 What next?
 
+
+## Eye
+
+![](figures/hf-eye.webp)
+
+DARK adaptation ~ 30 min
+LIGHT adaptation ~ 10 sec (light and quick)
+
+pupil = center of iris regulating amount of light that enters the eye
+
+## Ear
+
+![ear anatomy](figures/hf-ear-anatomy.png)
+
+Spatial orientation accomplished measuring linear and radial accelerations within inner ear
+
+* otoliths in the utriculus and sacculus: GRAVITY and LINEAR accelerations
+* semicircular canals: ANGULAR accelerations
+
+
+

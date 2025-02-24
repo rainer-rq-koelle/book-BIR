@@ -1,0 +1,58 @@
+---
+title: "Meteorology"
+---
+
+relative humidity
+
+$$RH = 100 - 5* (T - T_d)$$
+Temp: 21 deg, dew point: 9 deg ==> spread = 21-9 = 12 deg
+RH = 100 - 5 * 12 = 100 - 60 = 40
+
+T = 30, td = 21 ==> spread = 9
+RH = 100 - 5* 9 = 100 -45 = 55%
+
+Temp correction (warmer than isa, distance higher)
+
+Fl190 - FL070 = 12 000ft
+4% per 10degC ==> 2% per 5degC ==> 2% 0f 12000 = 240ft
+distance 12000ft +240ft = 12240ft
+
+
+## Standard Atmosphere
+
+for every 1degC deviation from standard temperature, altitude change by 4ft per 1000ft
+
+4ft * 10deg * 2(1000ft) = 80ft
+
+## Cloud
+
+$$cloud\ base = 400 * (surface\ temp - dew\ point)$$
+
+
+
+
+
+Wind direction
+
+mnenomic: "like in a fight, NO BACKING Down"
+aircraft in 2000ft Warsaw,  wind 210 /24kt
+Northern Heminisphere = NO
+BACK =210 -30 = 180
+DOWN = 50% --> 12kt
+
+
+Divergence = net outflow of air (decrease of mass) in an area
+convergence = net inflow or air (increase of mass) in an area
+
+![divergence and convergence](figures/met-divergence-convergence.png)
+
+
+Think about subscael on your altimeter:
+
+* Norther Hemnisphere: turn it left (anti-clockwise) --> indicated altitude decreases = LOW
+* NH: same with crosswind from left (anti-clockwise wind direction) --> alt decrease = LOW
+
+NH: wind from left = altitude theft
+
+NH: HIGH ~ Hour = clockwise     
+NH: LOW  ~ anti-clockwise

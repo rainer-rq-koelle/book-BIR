@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Basic IFR - 3&nbsp; Human Factors</title>
+<title>Basic IFR - 4&nbsp; Meteorology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -64,8 +30,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./040-meteology.html" rel="next">
-<link href="./010-air-law.html" rel="prev">
+<link href="./0x0-instrumentation.html" rel="next">
+<link href="./0x0-human-factors.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -103,6 +69,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -115,7 +110,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./0x0-human-factors.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Human Factors</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./040-meteology.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Meteorology</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -160,13 +155,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./0x0-human-factors.html" class="sidebar-item-text sidebar-link active">
+  <a href="./0x0-human-factors.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Human Factors</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./040-meteology.html" class="sidebar-item-text sidebar-link">
+  <a href="./040-meteology.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Meteorology</span></span></a>
   </div>
 </li>
@@ -198,10 +193,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#threat-and-error-management" id="toc-threat-and-error-management" class="nav-link active" data-scroll-target="#threat-and-error-management"><span class="header-section-number">3.1</span> Threat and Error Management</a></li>
-  <li><a href="#stress" id="toc-stress" class="nav-link" data-scroll-target="#stress"><span class="header-section-number">3.2</span> Stress</a></li>
-  <li><a href="#eye" id="toc-eye" class="nav-link" data-scroll-target="#eye"><span class="header-section-number">3.3</span> Eye</a></li>
-  <li><a href="#ear" id="toc-ear" class="nav-link" data-scroll-target="#ear"><span class="header-section-number">3.4</span> Ear</a></li>
+  <li><a href="#standard-atmosphere" id="toc-standard-atmosphere" class="nav-link active" data-scroll-target="#standard-atmosphere"><span class="header-section-number">4.1</span> Standard Atmosphere</a></li>
+  <li><a href="#cloud" id="toc-cloud" class="nav-link" data-scroll-target="#cloud"><span class="header-section-number">4.2</span> Cloud</a></li>
   </ul>
 </nav>
     </div>
@@ -210,7 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Human Factors</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Meteorology</span></h1>
 </div>
 
 
@@ -227,51 +220,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="threat-and-error-management" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="threat-and-error-management"><span class="header-section-number">3.1</span> Threat and Error Management</h2>
-<p>ICAO Annex 1 defines <strong>error management</strong> as <em>the process of detecting and responding to errors with countermeasures that reduce or eleminate the consequences of errors and mitigate the probablity of further errors or undesired states</em>.</p>
-<ul>
-<li><p><strong>error tolerance</strong> minimising the effect of errors and as tolerant as possible –&gt; system’s ability to sustain itself despite the occurance of an error</p></li>
-<li><p><strong>error reduction</strong> minimise probability of an error occurring and also minimising the extent of the error.</p></li>
-<li><p><strong>error prevention</strong> avoiding an error.</p></li>
-<li><p><strong>error recovery</strong> return system back to its original state after the occurrence of an error.</p></li>
-</ul>
+<p>relative humidity</p>
+<p><span class="math display">\[RH = 100 - 5* (T - T_d)\]</span> Temp: 21 deg, dew point: 9 deg ==&gt; spread = 21-9 = 12 deg RH = 100 - 5 * 12 = 100 - 60 = 40</p>
+<p>T = 30, td = 21 ==&gt; spread = 9 RH = 100 - 5* 9 = 100 -45 = 55%</p>
+<p>Temp correction (warmer than isa, distance higher)</p>
+<p>Fl190 - FL070 = 12 000ft 4% per 10degC ==&gt; 2% per 5degC ==&gt; 2% 0f 12000 = 240ft distance 12000ft +240ft = 12240ft</p>
+<section id="standard-atmosphere" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="standard-atmosphere"><span class="header-section-number">4.1</span> Standard Atmosphere</h2>
+<p>for every 1degC deviation from standard temperature, altitude change by 4ft per 1000ft</p>
+<p>4ft * 10deg * 2(1000ft) = 80ft</p>
 </section>
-<section id="stress" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="stress"><span class="header-section-number">3.2</span> Stress</h2>
-<p>Yerkes-Dodson-Law</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"./figures/Yerkes-Dodson-Law.jpg"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="./figures/Yerkes-Dodson-Law.jpg" class="img-fluid figure-img" width="360"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>positive stress (eustress) = demand &lt; ability ~ under arousal</p>
-<p>What next?</p>
-</section>
-<section id="eye" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="eye"><span class="header-section-number">3.3</span> Eye</h2>
-<p><img src="figures/hf-eye.webp" class="img-fluid"></p>
-<p>DARK adaptation ~ 30 min LIGHT adaptation ~ 10 sec (light and quick)</p>
-<p>pupil = center of iris regulating amount of light that enters the eye</p>
-</section>
-<section id="ear" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="ear"><span class="header-section-number">3.4</span> Ear</h2>
+<section id="cloud" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="cloud"><span class="header-section-number">4.2</span> Cloud</h2>
+<p><span class="math display">\[cloud\ base = 400 * (surface\ temp - dew\ point)\]</span></p>
+<p>Wind direction</p>
+<p>mnenomic: “like in a fight, NO BACKING Down” aircraft in 2000ft Warsaw, wind 210 /24kt Northern Heminisphere = NO BACK =210 -30 = 180 DOWN = 50% –&gt; 12kt</p>
+<p>Divergence = net outflow of air (decrease of mass) in an area convergence = net inflow or air (increase of mass) in an area</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="figures/hf-ear-anatomy.png" class="img-fluid figure-img"></p>
-<figcaption>ear anatomy</figcaption>
+<p><img src="figures/met-divergence-convergence.png" class="img-fluid figure-img"></p>
+<figcaption>divergence and convergence</figcaption>
 </figure>
 </div>
-<p>Spatial orientation accomplished measuring linear and radial accelerations within inner ear</p>
+<p>Think about subscael on your altimeter:</p>
 <ul>
-<li>otoliths in the utriculus and sacculus: GRAVITY and LINEAR accelerations</li>
-<li>semicircular canals: ANGULAR accelerations</li>
+<li>Norther Hemnisphere: turn it left (anti-clockwise) –&gt; indicated altitude decreases = LOW</li>
+<li>NH: same with crosswind from left (anti-clockwise wind direction) –&gt; alt decrease = LOW</li>
 </ul>
+<p>NH: wind from left = altitude theft</p>
+<p>NH: HIGH ~ Hour = clockwise<br>
+NH: LOW ~ anti-clockwise</p>
 
 
 </section>
@@ -666,13 +644,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./010-air-law.html" class="pagination-link  aria-label=" &lt;span="" law&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Air Law</span></span>
+      <a href="./0x0-human-factors.html" class="pagination-link  aria-label=" &lt;span="" factors&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Human Factors</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./040-meteology.html" class="pagination-link" aria-label="<span class='chapter-number'>4</span>&nbsp; <span class='chapter-title'>Meteorology</span>">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Meteorology</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./0x0-instrumentation.html" class="pagination-link" aria-label="<span class='chapter-number'>5</span>&nbsp; <span class='chapter-title'>Instrumentation</span>">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Instrumentation</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
