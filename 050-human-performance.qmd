@@ -1,0 +1,118 @@
+---
+title: "Human Performance"
+---
+
+Aviation is one of the safest form of mass transport.   
+About 50 accidents around the world each year.   
+IATA 2014: 1 accident  per 1 million movements.
+
+Accidents trends show a slow but steady decrease in the number of accidents and fatalities.
+
+ICAO's primary indicator of safety in the global air transport sector is the accident rate based on the scheduled commercial operations involving aircraft having a MTOW above 5700kg.   
+## Human Error
+
+"pilot error' a (historical) cause for accidents.
+
+Modern investigations are less ready to accept that any one individual can be blamed for an accident which occurs as a result of a long chain of circumstances.   
+==> one link in the chain <====> many contributing factors (next to human error)
+
+pilot/aircraft commander has the overall responsibility ofr the flight.   
+Human error encompasses errors by regulators, managers, engineers, pilots, ... in fact any person involved in aviation.
+
+studies show(ed) that 70-75% of accidents were caused by human errors (1940).
+Later studies (1970) indicated the proportion had remained substantially unchanged over the intervening decades.
+
+### Factors contributing to Accidents caused by Human Error
+
+long term study - 3 broad and overlapping categories
+
+* pre-deposition ofthe individual
+* enabling factors
+* immediate casue of the accident
+
+### propoer safety culture
+Uttal's (1963) definition of safety culture captures most of its essentials:
+
+Shared values (what is important)
+and beliefts (how things work) that interact with an orgainsations sturcutes and control systems to produce behaviourla norms (the ways we do things around here)
+
+Safety culture   
+--> something an organisations is (beliefs, attitudes, and vaules of its members regarding the pursuit of safety)    
+--> something that an organisation has (the structures, practices, controls and policies designed to enhance safety)
+
+Both are essential for achieving an effective safety culture.    
+However, it is accepted that the latter is easier t manipulate than the former.   
+It is hard to change the attitudes and beliefs (or adults by direct methods of persuasion)
+
+A safety culture is a product of organisational, professional, and national cultures.    
+Therefore a safety culture may be positive, negative,m or neutral, depending on the differences in the vaulues of the three elements above.
+
+Social psychologists have attempted to classify national cultures in terms of coellective traites they display. The most well known being the four dimensions as proposed by Geert HOFSTEDE
+
+relevant to aviation:
+
+* nature of relations between subordinates and superiors
+* how often subordinates are afraid to express disagreement
+
+### ICAO
+
+ICAO --> publishes SARPs designed to promote common approach to aviation safety.
+
+The aim it to achieve an open culture where knowledge should be spread freely and its growth should come from developing, altering, or enriching already existing systems, procedures, and equirment on the basis of sharing and collaboration, without being rerstrictited by inappropriate rules or procedures.   
+The consequense is that all personas involved should have equal access to information and all the work torwards the same goal which - in aviation - is safe operation. This is the opposite of a closed culture where communication is poor to non-existtent, almost secretive, and the sharing of ideas and aspirations does not happen.
+
+### Organisational Accidents
+
+nature of individual accidents has remained largely unchanged over the years.   
+Organisational accidents are the product of technologgical innovations that have radically altered the relatioship between systems and their human elements.
+
+Most critical distinctin between individual and organisational accidents lies in the quantitiy, quality, and variety of the defences, barrierts, and safeguards that protect people and assets from the local operational hazards.
+
+swiss cheese model (Dr James REASON) ~ causes of organisational accidents    
+Defences are intervening between the local hazards and potential losses.   
+Each slice of cheese represents one layer of defence. In an ideal worldm, all of these layers would be intact. In reality, however, each layer has holes or gaps. 
+
+Gaps created by
+
+* active failures - the errors and violations of those at the human system interface
+* latent conditions ariging from the failure of designers, builders, managers, and maintainers to anticipate all possible scenarios.
+
+
+Safety culture consists of five elements:
+
+* an informed culture
+* a reporting culture
+* a learning culture
+* a just culture
+* a flexible culture
+
+### Safety Management Systems (SMS)
+
+To embed safety culture in an organisation: SMS.   
+ICAO Annex 19 (2013):  SMS = SARP
+
+SMS is a systematic approach to managing safety within an organisation, including the necessary organisational structures, accountabilities, policies, and procedures.    
+At the core of a SMS = robust risk management process, identifying hazards and assess and mitigate the risk.    
+
+some residual risk will maintain.
+
+four components of a SMS
+
+1. safety policy and objectives
+2. safety risk management
+3. safety assurance
+4. safety promotion
+
+### Threat and Error Management
+
+ICAO Annex 1 (personell licensing) requires pilots to be able to recognise and manage threats and errors.
+
+Threats are events or errors that occur beyound the influence of an operational person.   
+An error is an action or inaction by an oeprational person that leads to deviations from the organisational or operational person's intentions or expectations.
+
+TEM is the process of detectin and responding to threats and errors with countermeasures that reduce or eliminate the consequences of errors and mitigate the probabliity of further errors or undesired aircraft states. 
+
+
+
+
+

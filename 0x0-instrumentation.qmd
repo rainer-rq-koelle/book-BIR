@@ -1509,8 +1509,8 @@ CANBUS connects all of the electronic control units involved in a group of funct
 
 software certification.
 
-Operating systems are termed 'multi-tasking' as they allow more than one programme to run at the same time.    
-Not to be confused with 'multi-processing' ~ more than one processor (2 or more CPUs) are used to operate a single computer programme.
+Operating systems are termed 'multi-tasking' as they allow more than one programme to run at the same time. --> actually sequentially = software solution    
+Not to be confused with 'multi-processing' ~ more than one processor (2 or more CPUs) are used to operate a single computer programme. = hardware solution
 
 Multi-processing is the case for most airborne systems (some multi-tasking) ~ safety back.
 
