@@ -350,6 +350,30 @@ Aircraft approaching speed of sound is marked by *airframe buffeting*.
 IAS at low speeds; mach number at high speeds.    
 TAS to be calculated by pilot or aircraft computers.
 
+
+speed of sound:  
+In the Earth’s atmosphere, the chief factor affecting the speed of sound is the temperature.
+
+Earth’s atmosphere, the speed of sound is influenced by factors such as:
+
+Temperature (the main factor)
+Humidity
+Altitude/Pressure
+The speed of sound in the atmosphere is calculated using the following formula:
+
+V_sound = 643.855 x (T / 273.15)^0.5
+
+Where:
+
+v_sound is the speed of sound in knots.
+T is the air temperature in Kelvin.
+643.855 is a constant used to calculate the speed of sound in knots.
+
+
+Celsius to Kelvin: K = °C + 273.15
+==> -40 + 273.15 = 233.15
+==> 233.15 / 273.15 = 0.85  ~ 85 / 100  ~ (81 = 9^2) (85/100)^0.5 = 9/10 = 0.9 
+
 ### Flate Plate Indicators
 
 earliest measurement of dynamic pressure ~ flat plate attached to wing --> deflected plate (spring) --> scale indicating airspeed according to deflection.   
@@ -1035,5 +1059,486 @@ DH + 50ft: aural aleart ... increasing rate until selected DH reached & flashing
 screenshot Airbus PFD
 ![](figures/inst-EFIS-PFD-Airbus.png)
 
+
+# Electronic Flight Instrument Systems
+
+EFIS replace mechanical instruments in modern aircraft.    
+Focus on B737/77/777 and Airbus equivalents.
+
+Not to be confused / compared with "modern" general aviation aircraft --> e.g. Garmin, Dunon, AvMap
+
+EFIS ==> presentation of attitude and navigational data to flight crew.
+EFIS uses modern colour graphics and are usually integrated with digital computer-based navigation systems.
+
+EFIS now using Avtice Matrix LCD, good temperature range, lower power consumption, reduced glare (over earlier systems)
+
+To cope with failure in the primary flight display PFD or its inputs standby instruments.
+Older aircrat use analogue, consisting of AI, ASI, VSI and ALT.    
+Modern aircraft is an electronic integrated Standby Instrument System (ISIS).
+
+### Multi-crew EFIS installation
+
+![](figures/inst-EFIS-system-layout.png)
+
+multi-crew EFIS installation consists of left (captain) and right system (first officer).   
+Each system comprises
+
+* PFD or Electronic Attitude Director Inidcator (EADI)
+* Navigational Display ND or Electronis Horiontal Situation Indicator (EHSI)
+* EFIS control panel
+* SG symbol Generator
+* remote light sensor unit
+
+Symbol Generator SG creates the graphic outputs for display on PFD and ND.   
+A third (centre) symbol generator can be incorporated. It may be used in the event of failure of either the right or left unit.    
+If 2 symbol generaturs are used and one fails, the remaining unit can supply both sides of the cockpit - but information would be the same.   
+Switching is pilot controlled. 
+
+If a dispaly unit fails, the PFD data can usually be switched to the ND or to any other available unit. This is done with the EFIS control panel.
+
+Light aircraft use fewer displays, typically able to display both PFD and ND, and aircraft systems.
+
+### Primary Flight Display
+
+PFD or EADI is an electronic version of a sky pointing ADI.    
+Overlay by on basic attitude information
+
+* flight director command bars
+* pitch limit sympbols
+* rising runway symbol
+
+PFD presents a dynamic colour display of all parameters necessary to control the aircraft.
+
+PFD principle: bringing all basic-T instruments in one display.
+
+```{r}
+knitr::include_graphics("./figures/inst-PFD-B737.png")
+knitr::include_graphics("./figures/inst-PFD-A320.png")
+```
+
+Note: fast/slow scale indicates airspeed error of -/+ 10kts when autothrottle and acts as throttle director when thrust is manually controlled.
+
+### Speed Tape
+
+Speed Tape shows Calibrated Airspeed (CAS) from air data computer, 42 ... 420 kt.    
+Overlaid speeds are important for handling and performance characteristics.    
+
+* maximum speed/Mach number (VMO or MMO)
+* high speed buffet boundary
+* minimum maneuver speed
+* stick shaker speed
+
+* minimum flap retraction speed shown as green "F"
+* landing reference speed VREF shown as green "R"
+* gear and flap placard speeds are shown in red and black
+
+yellow ~ caution range    
+red and black ~ limits
+
+V1 and VR are shown at top or bottom, if off scale
+
+### Decision height and Radio Height
+
+in B737 the set Decision Height (DH) can be supplemented with a digital or dial readout of the Radio ALtitude (RA).
+
+The radio altimeter is active only below 2500ft.    
+Between 1000ft and 2500ft, both the radio height and decision height are shown in figures.    
+Below 1000ft, the display switches to white circular display = analogue dial readout graduated in 100ft increments - digital readout of height indicated in the center of the circle.    
+Decision Height is indicated as magenta at appropriate height.    
+Aural alert at 50ft above DH. ... change to white and amber/flahs for a few seconds.    
+Reset button on control panel to inhibit flashing and reverts scale and marker to original colours.
+
+B737 have DH/RA at bottom right or top right of PFD display.
+
+A320 has DH at top right in a screen area designated 'approach' capabilities. 
+It is in digirtal form, coloured in cyan (blue)     
+RA is shown at bottom center of attitude display. Green until 100ft above DH --> changes to amber, flashes for 3 seconds at DH + amber DH flag appears above RA.
+
+Both B737/A320 are supported by automatic voice call outs of DH and RA during approach.
+
+### Pitch Limit Symbols
+
+pitch limit eyebriws show the attitude to select in the event of a whind shear go-around or in response to a GPWS warning.    
+At this attitude the aircraft will climb just on the light buffet or more precisely: stick shker.
+
+### Flight Mode Annunciator
+
+Autopilot modes are shown at top of the PFD in an area called the Flight Mode Annunciator (FMA).
+
+Boeing uses a three column - two line display.    
+Airbus uses five columns - three line.
+
+"armed modes": Boeing ~ white, Airbus ~ cyan, until     
+"captured/engaged": green
+
+not all modes have "armed" state. For those using "armed", change occurs when certain criteria are met, i.e.,
+
+* APP for approach will be white until aircraft is receiving a valid ILS GS or LOC signal ==> green
+
+autothrottle controlling the thrust (EPR), FMS VNAV give guidance in pitch and limit the speed and FMS LNAV give guidance in roll. 
+
+If the autopilot is not coupled, guidance information is fed to the flight directors which show the aircraf is slightly below the required profile and on left of track.
+
+### Flight Directors
+
+flight director bars show where the centre of the aircraft symbol "SHOULD" be placed for the required flight profile.    
+An alternative EASI display for 737 uses a chevron shaped aircraft sympb
+
+
+## Navigation Displays
+
+Navigation Displays (or Electronic Horizontal SItuation Indicator) provides mode-selectable depiction of navigation and supplemental inforamtion
+
+ND modes
+
+* MAP (or ARC)
+* VOR (or ROSE VOR)
+* APP (or ROSE LS); and
+* PLAN
+
+in light aircraft, the displays are usually multi-functional with display modes emulating PFD and ND displays. The ND is likely to use GPS rather than inertial reference system source information.
+
+Example G1000 ND
+
+![](figures/inst-ND-Garmin1000.png)
+
+### MAP (or ARC) Mode
+
+MAP shows computed FMS track relative to the aircraft symbol.   
+Aircraft symbol can be positioned at the centre of the display (CENTRE MAP mode), or conventionally at the bottom of the display (MAP mode).
+
+FMS track = magenta line connecting waypoints; active waypoint is magenta, the rest white
+
+![](figures/inst-ND-MAP.png)
+MAP mode can be overlaid with other information, including weather.
+
+off-route airfields are shown as cyan circles and VOR/DMEs are displayed in their standard symbol - cyan if not used, green if currently tuned.    
+If a navigation aid is tuned, the selected radial is shown.
+
+white straight line shows current track with range rings; 80NM shows   
+green arc across track shows aircraft in climb or descent to a selected altitude and shows where the FMS has computed it will reach the altitude.
+
+Deviation from VNAV computed flight path is shown by a separate scale on the right.
+
+WEATHER RADAR COLOURING
+
+rainfall severity
+
+* black 0-1 mm/hr
+* green 1-4 mm/hr
+* yellow 4-12 mm/hr
+* red 12-50mm/hr
+* magenta >50 mm/hr
+
+magenta is alternatively used to indicate turbulence using Doppler-based radar, by slecting WX+T or TURB on radar control panel
+
+
+
+SYMBOLS and COLOURS
+
+recommended EFIS colour coding is set out in the Certification Specification (CS).
+
+The colour coding from the PFD is applied to ND with information depicted in white and the desired flight pash shown in magenta.
+
+GREEN   active or selected data - engaged autopilot modes
+WHITE   current data/values - armed autopilot modes
+MAGENTA   command information, weather radar turbulence, selecting heading, flight director bars
+YELLOW    cautions, abnormal sources
+CYAN    non-active and background, sky
+RED     waring, flight envelop & system limits
+BLACK   off
+BROWN/TAN   earth
+
+AIRBUS uses GREEN to show active route rather than magenta
+
+ALL EFIS FAILURES ARE AMBER
+
+
+### Control of Data Feeds
+
+transfer of data from one display unit to another to cover failures of the actual display units.
+
+Failure on one side of duplicated systems can result in data being displayed on both sides of the flight deck from one common source.     
+Crews will always be alerted to this, to that data can be cross-checked from standby sources or from raw data.
+
+In light aircraft with multi-functional displays MFD: if there is more than one display unit, failures of one MFD are accommodated by using the 2nd alone.
+
+
+### EFIS Control Panel
+
+PFD and ND are controlled from (captain's and FO's) control panel(s).
+
+![](figures/inst-PFD-ND-control.png)
+
+PFD controls are minimal --> brightness control and mode selection, resetting of decision height.
+
+ND --> selection type of display, weather radar display on/off.    
+Map switsche vary the background information, range selector.
+
+Range and map combination can improve situational awareness.    
+Selecting a greater range will show weather radar indications that might not otherwise be seen in good time.   
+Selecting ARC mode, for final approach
+
+
+## Airbus Navigation Displays
+
+* ROSE LS (for landing system, either ILS, GLS, or MLS)
+* ROSE VOR
+* ROSE NAV
+* ARC
+* PLAN
+
+ROSE LS
+
+![](figures/inst-Airbus-ROSE-LS.png)
+ROSE VOR
+![](figures/inst-Airbus-ROSE-VOR.png)
+2 VORs tuned, VOR1: TOU, VOR2: DOO    
+VOR1 desired course CRS: 217 QDM; actual indicating 230 QDM   
+heading 260 and actual track (green diamond) 255
+
+full scale deviatio CDI ~ 10 degrees: here a bit more than 5 deg
+
+ROSE NAV
+
+![](figures/inst-Airbus-ROSE-NAV.png)
+
+Airbus shows FMS track as green (Boeing: magenta)
+
+![](figures/inst-Airbus-ARC.png)
+ARC display shows the FMS track in the same manner than ROSE NAV mode, but limits visible compass arc to 90 deg, 45 degrees to either side of heading.
+
+aircraft placed at bottom  (full rose modes: aircraft in the centre)
+
+range markers ~ look ahead distance; range displayed as concentric arcs (full rose mode: rings)
+
+figure shows overlaid weather data
+
+AIRBUS ND can show weather radar in all modes except PLAN 
+
+
+### Engine & Systems Screeens
+
+Boeing EICAS - Boeing uses 2 engines and systems screens called Engine Indicating and Crew Alerting System (EICAS).    
+EICAS located in centre of control panel.
+
+![](figures/inst-Boeing-EICAS.png)
+Upper display: engine parameter: engine pressure ratio EPR, N1 RPM, and Exhaust Gas Temperature EGT    
+warning messages in red, cautions in amber, and advisory messages in white.
+
+lower screen: optional secondary engine parameters or a series of status messages.   
+The engine secondary data displayed in this mode is oil pressure, oil temperature, oil quantity, and vibration count
+
+AIRBUS ECAM
+
+![](figures/inst-Airbus-ECAM.png)
+
+Electronic Centralised Aircraft Monitoring (ECAM)    
+2 screens - above or next to each other
+
+upper/left screen: EWD Engine Warning Display - shows primary engine information, alerts, memos and status
+lower/right screen: System Display - shows secondary engine data, system information, and system schematics.
+
+
+![](figures/inst-EICAS-ECAM-info.png)
+
+### Electronic Flight Bags (EFB)
+
+Generic term EFB means any portable electronic device for use by the flight crew.   
+Could be a laptop, tablet computer, or indeed an integrated device within the flight deck (provided no tools are needed to remove).    
+If permanently installed = part of the aircraft == covered by the aircraft airworthiness approval and becomes part of Minimum Equipment List (MEL).
+
+EFB functions can include much of the work previously carried out by hand and using paper forms. An operational flight plan, with wind, drift and groundspeed calculations filled in after the CRP-5.
+
+
+## Digital Computers / Circuits
+
+computers are pervasive.
+
+A computer can be very simply defined as a machine for manipulating data according to a list of instructions.   
+Digital computers use semiconductors in integrated circuits to store and process information in binary form. 
+
+Data in --> input peripherals --> computer --> output peripherals --> data out
+
+### von Neumann Model
+
+A computer has 6 basic features and capabilities.
+The von Neumann model calls for 
+
+* input and output facilities
+* processing unit
+* memory
+* programmes and data sharing the same memory
+* programme steps carried out in a sequential manner (software programme)
+* processor and memory joined as a pair
+
+![](figures/inst-comp-vonNeumann.png)
+
+### Central Processing Unit CPU
+
+Computers have one or more CPUs.   
+CPU to execture the programmes stored in the memory by fetching the instructions, examining then, and then executing them in a sequential manner.
+
+CPU task can be described as: fetch-decode-execute cycle.
+
+CPU has 3 components
+
+* control unit - responsible for fetchnig instructions from memory and determining their type
+* arithmetic and locig unit (ALU) - performing the arithmetical and logical operations
+* (small high speed) memory - to store temporary results and control information. The memory is made up of registers, often only 32 bits big.
+
+### Memory
+
+memory = to store programmes and data while the computer is operating, and - in some cases - when the computer is turned off.    
+If information does disappear when the power is off: volatile memory.
+
+Two main types of memory are: RAM and ROM.
+
+Most common form: Random Access Memory (RAM) ~ read/write memory.   
+Data in RAM can be changed easily while the computer is operating.
+
+semiconductor RAM can be devided in 2 sub-categories:
+
+* static RAM, and 
+* dynamic RAM (DRAM).
+
+Static RAM will hold information without being refreshed as long as the power is on.   
+Dynamic RAM needs refreshing every few milliseconds. DRAM 'simplicity' ~ allows four times the density of static RAM, but is slower to use than static RAM.
+
+ROM - read-only memory; data stored in a chip that cannot be erased intentionally or otherwise. Used for start-up programmes and standard mathematical routines.
+
+PROM - programmable read-only memory; can be programmed once into a "blank" chip making manufacture easier.
+
+EPROM - erasable programmable read only memory; chips to be re-used after a (lengthy) erasing process.
+
+### input and output interfaces
+
+input interface = convert input data from a format that humans can use to something the computer can use.   
+example: CDU keyboard of a FMC --> information going in is analogue, and it must be converted to digital data for the computer. This involves an analogue / digital conversion at the input interface.
+
+Output interface use (often) a digital/analogue conversion to change computer data into human readable data. A CDU dispaly screen on a FMC converts digital into graphical information.
+
+### software
+
+..... binary 0-1
+
+64-bit binary  
+decimal system: the greater the number of digits available, the greate ther range of numbers we can display    
+==> 4 digits available --> 10.000 numbers, i.e., from 0000 to 9999
+
+binary equivalent to 9999 uses 14 digits
+
+==> 64-bit computer uses binary code with 64 digits    
+==> each instruction could be one of (2^64 - 1) possibilities.
+
+hexadecimal  
+==> more compact form; hexadecimal uses based 16 (16 possibilities for each bit)
+
+machine code    
+computer languages can be written in humanfriendly format - then converted into hexadecimal or binary machine code.    
+rule of machine code are particular to every CPU and dependent on CPU architecture.   
+Thus, machine-code written for on CPU not 'portable' to another type of CPU.
+
+assembly - conversion computer programme to machine code   
+assembler - utility software used to carry out the assembly process.
+
+assembly languages
+
+low-level vs high-level languages    
+high-level languages: Java, C++, or C#    
+programmers will (still) use assembly languages when dealing with mission-critical systems often running on embedded devices.   
+example: automatic braking system, flight control systems.
+
+programming in assembly language is generally regarded as a more robust way to create software for embedded devices.    
+~ high-level languages offer alternative
+
+Thus, assembly language 
+
+* is used to programme mission-critical software
+* is more user-friendly than machine code
+* is a low level language; and
+* files must be abstracted into machine code to be used by computers.
+
+abstraction ~ degree to which a (computer) language uses easily understood phrases.   
+A language may use a term to describe a process, but the way that process is implemented by the computer is hidden from the programmer.    
+
+low-level: to display something on the screen: programmer needs to specify what to display and how the item should look (colours, fonts, ...)    
+high-level: it is not necessary to specify how to go about displaying somethig on a screen.
+
+The amount of abstraction defines how "high-level" a programming language is.   
+reminder: assembly = low-level language.
+
+files produced in high-level languages must be converted before they can be used by a computer. This process is called 'compiling'.    
+a.) 2 steps: high-level language --> assembly language --> abstracted in machine code
+b.) 1 step: directly compiled to machine code.
+
+![](figures/inst-comp-high-level-vs-low-level.png)
+scripting languages
+
+scripting languages do not undergo similar conversion to produce a file wihch can run on a computer.    
+Scripts are sets of instructions which are interrogated by other software.    
+E.g. website pages with embedded scripts (possibly Javascript) -- the browser interrogates the webpage that contains the script(s).   
+Two way communication between browser and script:   
+script give instructions to browser or data based in the information passed to the script by the browser.
+
+E.g. webpage recognising country you are in.
+
+ASP, Javascript, Perl, Python
+
+![](figures/inst-comp-scripting-languages.png)
+
+### Connections
+
+Computers on an aircraft would be useless, if they were unable to communicate with each other.   
+The approach used is to connect them using 'computer buses'.   
+Latin 'omnibus' meaning 'all together'. 
+
+Computer buses may be 
+
+* serial - where the data is sent in packages one after the other; or
+* parallel - where multiple data paths exists, allowing flow in both directions.
+
+Early systems used 'daisy chaining' = data passed through each part of the system to reach its destination.
+
+Example of a data bus on a modern aircraft is the controller aera network CANBUS.   
+Originally from automobile industry, adopted by Airbus for the A380.    
+CANBUS connects all of the electronic control units involved in a group of functions by serial connections.
+
+![](figures/inst-comp-bus.png)
+
+
+software certification.
+
+Operating systems are termed 'multi-tasking' as they allow more than one programme to run at the same time.    
+Not to be confused with 'multi-processing' ~ more than one processor (2 or more CPUs) are used to operate a single computer programme.
+
+Multi-processing is the case for most airborne systems (some multi-tasking) ~ safety back.
+
+Differnt parts of the aircraft may use variations of operating systems.    
+The FMS is a much bigger type of OS than - for example - the ATSU which has far fewer functions to handle.     
+Simple systems, e.g. Air Data Computer ADC, only has to execute a relatively simple mathematical functions such as deriving SAT from TAT.
+
+Flight safety regarding computer software and electronic documentation on aircrafr is certified under EROCAE standards.   
+ED-12B "Software Considerations in AIrborne Systems and Equipment Certification" details requirements for software planning development and safety.
+
+Note: software is never certified as standalone entity. Respective hardware is also considered.     
+The idea of system safety is crucial to how the regulation within E12B used to certify airborne equirments.
+
+5 levels oare defined
+
+failure   software
+catastrophic A
+hazardous    B
+major        C
+minor        D
+no-effect    E
+
+an aircraft with fly-by-wire flight controls is computer controlled. failur of the software would be catastropic. Software level 'A' is defined as meaning that failure woud result in the loss of ability to continue safe flight and landing.
+
+Failure at level C, C, D would increase crew workload and reduce operational taksinging of the aircraft - but would not prevent safe flight.   
+e.g. failure of FMC.
+
+Failure of level E software would have no effect on operations or pilot workload.   
+e.g. in-flight entertainment equipment.
 
 
