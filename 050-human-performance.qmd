@@ -30,7 +30,7 @@ long term study - 3 broad and overlapping categories
 * enabling factors
 * immediate casue of the accident
 
-### propoer safety culture
+### proper safety culture
 Uttal's (1963) definition of safety culture captures most of its essentials:
 
 Shared values (what is important)
@@ -41,18 +41,20 @@ Safety culture
 --> something that an organisation has (the structures, practices, controls and policies designed to enhance safety)
 
 Both are essential for achieving an effective safety culture.    
-However, it is accepted that the latter is easier t manipulate than the former.   
+However, it is accepted that the latter is easier to manipulate than the former.   
 It is hard to change the attitudes and beliefs (or adults by direct methods of persuasion)
 
 A safety culture is a product of organisational, professional, and national cultures.    
 Therefore a safety culture may be positive, negative,m or neutral, depending on the differences in the vaulues of the three elements above.
 
-Social psychologists have attempted to classify national cultures in terms of coellective traites they display. The most well known being the four dimensions as proposed by Geert HOFSTEDE
+Social psychologists have attempted to classify national cultures in terms of collective traits they display. The most well known being the four dimensions as proposed by Geert HOFSTEDE
 
 relevant to aviation:
 
 * nature of relations between subordinates and superiors
 * how often subordinates are afraid to express disagreement
+
+
 
 ### ICAO
 
@@ -80,11 +82,13 @@ Gaps created by
 
 Safety culture consists of five elements:
 
-* an informed culture
+* an informed culture (org collects, analyses, and disseminates saf information)
 * a reporting culture
-* a learning culture
+* a learning culture (organisation teaches people about SMS and learns from mistakes)
 * a just culture
 * a flexible culture
+
+open culture ~ ehere leaders regularly assess and respond to questions/feedback. Organisation exhibits transparency, inclusivity, adaptability, collaboration and community.
 
 ### Safety Management Systems (SMS)
 
@@ -105,14 +109,565 @@ four components of a SMS
 
 ### Threat and Error Management
 
-ICAO Annex 1 (personell licensing) requires pilots to be able to recognise and manage threats and errors.
+ICAO Annex 1 (personnel licensing) requires pilots to be able to recognise and manage threats and errors.
 
-Threats are events or errors that occur beyound the influence of an operational person.   
-An error is an action or inaction by an oeprational person that leads to deviations from the organisational or operational person's intentions or expectations.
+* Threats are events or errors that occur beyond the influence of an operational person.   
+* An error is an action or inaction by an operational person that leads to deviations from the organisational or operational person's intentions or expectations.
 
 TEM is the process of detectin and responding to threats and errors with countermeasures that reduce or eliminate the consequences of errors and mitigate the probabliity of further errors or undesired aircraft states. 
 
 
+## Respiration, Hypoxia, and Acceleration
+
+![](figures/hf-breathing.png)   
 
 
+breathing - use of muscles and diaphragm to draw air into the lungs and subsequently expel it.    
+inside the lungs, oxygen is transferred into the bloodsteam and carbon dioxide is removed.   
+Circulatory system carries the gases in the blood to and from the tissue.
+
+respiratory system    
+--> trachae (windpipe) branches into the bronchial tubes 
+--> bronchial tubes branches further getting smaller each time   
+--> air distributed throughout the lungs
+
+Normal breathing: inhalation - ribs/muscles between ribs, intercostal muscles, and the diagphragm expand the chest cavity and draw air into the lungs.
+
+shallow breathing: predominantly diaphragm
+
+exhalation - intercostal muscles and diaphragm relax
+
+external respiration at rest: 12-16 times a minute
+
+External respiration occurs as a function of partial pressure differences in oxygen and carbon dioxide between the alveoli and the blood in the pulmonary capillaries. ~ respiratory surface ~ lung (CO2 to environment - O2 to lungs).
+Internal respiration is gas exchange that occurs at the level of body tissues ~ cellular exchange (CO2 from cell to blood, O2 from blood to cell) 
+
+### Gas Transfer
+
+gas molecules flow from area of high concentration to areas of low concentration.    
+Oxygen $O_2$ melecules pass through the cell walls into the blood where they combine with heamaglobin molecules in the red blood cells or corpuscles to form oxyhaemoglobin molecules with give blood its red colour.   
+The more oxygen there is in the lungs, the more oxyhaemoglobin there will be in the blood.   
+Oxygen is carried to the muscle tissues where it is metabolised with sugards carried in the blood to proide energy for fhe body.   
+The wase products from the chemical reaction between oxygen and carbohudrates are carbon dioxide CO2 and water H2).   
+The metabolism of oxygen with carbohydrates in the cells is called internal respiration.
+
+Waste carbon dioxide molecules are carried from the tissues of the body dissolved in the colourless blood plasma as carbonic acis H2CO3.   
+The plasma transports the carbon dioxide to the lungs where it is passed out to the atmosphere through the walls of the alveoli.
+
+Waste water from the process of metabolism is also carried in the blood. Some of the water is used by the body's cooling mechanism and lost as perspiration and the remaining excess water is removed from the blood by the kidneys and passed out of the body as urine.
+
+The rate of breathing is controlled by both the amount of oxygen in the body and by the amount of carbon dioxide waste product. But the CO2 concentration is more significant.
+
+Excess carbon dioxide in the blood reacts with the nervous system to increase the rate of inhalation and exhalation.
+
+NOTE:
+
+* oxygen is carried in the red blood cells
+* carbon dioxide is dissolved in the blood plasma
+* CO2 changes are more significant in controlling breating rate than changes in O2
+
+### Lung capacity
+
+![](figures/hf-lung-capacity.png)
+
+total lung capacity (~ 6000ml) = vital capacity and the residual volume
+
+vital capacity is the difference between the capacity of the lungs after maximum inhalation and the capacity remaining after maximum exhalation, approximately 5000ml.  
+The volume remaining after maximum exhalation is the residual volume; approx. 1000ml.
+
+total lung capacity = inspiratory capacity + functional residual capacity    
+inspiratory capacity = resting tidal volume and the inspiratory reserve volume
+
+The resting tidal volume is the volume of air going in and out of the lungs during normal respiration. When working the body demands more oxygen and breathing increases in rate and depth.   The additional volume or air inhaled when the body is working is referred to as the inspiratory reserve volume.
+
+The functional residual capacity is the volume of air in the lungs when the body is at rest and normal expiration has occurred. This comprises the expiratory researve volume (which can be pushed out with maximum active contraction o fthe expiratory muscles) and the residual volume, which always remain in the lungs.
+
+The tidal volume is about 0.5 litre / 500ml at rest.
+
+### The Hazard of Carbon Monoxide
+
+CO is created when incomplete combustion takes place in a confined space.   
+Unfortunately, carbon monoxide $CO$ bonds with haemoglobin, which carried oxygen though the blood, over 200 times more effectively than oxygen to form carboxyhaemoglobin.    
+This means that anyone breathing carbon monoxide would not take in adequate oxygen and also would not get the automatic reaction of increased rate and depth of breathing caused by a build-up of $CO_2$.   
+
+Carbon monoxide poisoning is insidious, rapidly leading to a loss of consciousness and death.   
+Symptoms of carbon monoxide poisoning include headache, weakness, nausea, muscle pain and dizziness.   
+In many respects the symptoms are "flu like", although high temperature is not one of them!   
+You may have heard of "cherry red" lips or skin as a symptom.    
+Acutally this is very rare and even then only seen when the person has died from Carbon monoxide poisoning already.
+
+When the level of exposure is high, Carbon Monoxide can have a severe effect on abilities in a short period of time.
+
+### Carbon Monoxide Alarms
+
+if aircraft is fitted with carbon monoxide alarm or if symptoms of carbon monoxide are suspected, there are immediate measures that can be taken (dependent on type of aircraft).     
+These include:
+
+* put on oxygen masks (if available)
+* switch off cabin heating, especially if it is fed from bleed air
+* open the fresh air vents (if possible)
+* avoid smoking
+* consider landing as soon as possible or diverting if symptoms persist
+
+Carbon monoxide poisoning is treated by providing the casuality with 100% oxygen.
+It can take several days to recuperatre fully from carbon monoxide poisoning.
+
+### Hypoxia
+
+Hypoxia - sometimes called anoxia - occurs when the body is short of haemoglobin oxygen saturation.   
+Strictly the term hypoxia is a reduction in oxygen supply, while anoxia is a total absence of oxygen syppply to an organ's tissues.   
+
+The amount of oxyhaemoglobin in the blood depends not on the percentage of oxygen in the air, but the amount of oxygen in the lungs.    
+This means low external air pressure can cause hypoxia as can a change in the proportion of the gases in the lungs.
+
+The amount of oxygen in the air can be described as its partial pressure in mm Hg.    
+At sea evel the standard atmopheric pressure is 760 mm Hg, but only 160 mm Hg of the togal is from oxygen.    
+We would therefore describe the partial pressure of oxygen in the atmosphere at sea level as 160 mm Hg.
+
+As altitude increases the partial pressure of oxygen in the atmosphere falls with the atmosphereic pressure but not at a constant rate.    
+The rate of change of pressure is greatest as we climb from sea level and decreases with altitude.
+
+Symptoms of hypoxia:
+
+Hypoxia affects the brain first ==>
+
+* difficulty in concentrating
+* impaired judgement, mood changes, euphoria
+* short term memory may be impaired above 12.000ft
+* drowsiness and lethargy
+* light headedness, dizziness, nausea
+* loss of muscular coordination
+* pallor and cyanosis, a blueing of the extremeties such as fingertips and earlobes, caused by low oxyhaemoglobin levels
+* failure of the basic senses, especially colour vision, which becomes significantly affected above 5.000ft
+* unconsciousness, coma and death
+
+The feeling of well-being (euphoria) induced by hypoxia is potentially very dangerous, especially for pilots flying solo.
+
+### Decompression Sickness
+
+prolonged periods at high altitude dissolve gases in the blood, particularly nitrogen, can emerge into the body as bubbles of gas.     
+Decompression sickness can occur even when the oxygen supply is adequate and may appear some time after the flight is complete.
+
+Decompression sickness is exacerbated by high altitudes, duration of exposure, ages, excess body weight and recent diving activity.     
+Pilots are prohibited from flying within 24 hours of scuba diving of diving below 30ft without air.
+
+Decompression sickness can occur even if the oxygen supply is adequate.
+
+### Effects of acceleration
+
+human body is adapted to live under normal gravity condistions ~ 1G.
+
+Maneuvering in flight can lead to forces acting on the body that increase or decrease the apparent weight.    
+Acceleration can be sub-divided into linear, radial, and angular acceleration.
+
+* linear acceleration - occurs in crashes and crash landings and buffeting
+* radial acceleration - occurs when the aircraft turns about a distant axis, e.g.a loop or a level turn
+* angular acceleration - occurs when the rate of rotation changes e.g. a change of roll rate.
+
+The last of these only affects the senses of balance and will be discussed separarately. The first two can increase the apparent weight of the body.    
+This effect is quantified by comparing the forces on the body to the normal force of 1G.    
+A doubling of the apparent body weight is described as for of 2G.
+
+The body - unaided - can toleratre 7 and 8 G.
+
+![](figures/hf-acceleration.png)
+
+Direction of linear acceleration can be described with three ais based on alignment of human spine.    
+Fore and aft: x, lateral axis: y, and the vertial axis: z.    
+Positive and negative signs are used to specify direction along each axis.   
+Forward: +Gx, upward +Gz, right +Gy left -Gy
+
+Body can tolerate short-term ~ 25G in the vertical axis (+25G)
+45G in fore/aft axis.    
+
+If the acceleration is sustained the limits of tolerance are much less.     
+Forces in excess of +1Gz drive the blood to the lower part of the body, expscially the legs.    
+As forces approach +3.5G in a relaxed person the lack of blood to the eyes and brain will cause "greying out" of vision, tunnel vision, loss of peripheral vision, and ultimately  blackout and unconsciousness.
+
+
+negative G occurs more rarely in normal flight and the body is less tolerant to it.    
+Negative forces approaching -3G will increase blood pressure in the head and breain leading to facial pain, bursting of small blood vessesls in the face and the forcing up of the lower eyelid to cause "red out" vision.
+
+For classification purposes accelerations are divided into 'long duration' (more than one second) and 'short duration' (less than one second, essentially, impact accelerations forces).
+
+Short people can tolerate more vertical G.    
+Negative G is rarer and is tolerated less.
+
+
+### Senses
+
+* eye and night vision
+* ear and balance
+
+```{r}
+knitr::include_graphics("./figures/hf-eye-anatomy.jpg")
+```
+
+Iris changes aperature - similar to a camera - to vary the amount of light.   
+Lens is behind the iris, can be stretched to control focus.    
+Light is focussed by the lens on the light sensitive membrane, i.e., retina. The retina converts the inputs to electrical impulses.    
+Most sensitive part of retina: fovea.   
+Light impulses are sent to the brain stem and then routed to the visual cortex via the optic nerve.
+In the cortex the signals from both eyes are interpreted.   
+Respective signals are routed to the cerebellum which receives sensory inputs for control of movement and balance.
+
+Blind spot - optic nerve entry.
+
+Night vision: eye reacts to reducing lights in two ways:
+* quick/fast/immediate: dilate pupil to allow more light to enter
+* chemical: rods and cones adjust to lower light, conses faster ~ 7mins, full rod adaptation ~ 30min
+
+Adaptation from night vision to day vision takes only a few seconds.
+
+
+Ear and balance
+
+Human ear consists of outer, middle, and inner ear.
+
+The motion sensing is located in the inner ear.
+Balance comes from the vestibular apparatus of the inner ear, the semi-circular canals, the utricle, and the saccule.
+
+The vestibular system is a crucial sensory system located in the inner ear that helps maintain balance and spatial orientation by detecting head movements and position.
+Components of the Vestibular System
+The vestibular system consists of several key structures within the inner ear, including:
+
+* Semicircular Canals: There are three semicircular canals (horizontal, anterior, and posterior) that detect rotational movements of the head. Each canal is positioned at approximately right angles to the others, allowing for the detection of motion in three-dimensional space.
+* Otolith Organs: These include the utricle and saccule, which detect linear accelerations and the position of the head relative to gravity. They contain tiny crystals that move in response to changes in head position, sending signals to the brain about the body's orientation.
+* Vestibular Nerve: This nerve transmits information from the vestibular organs to the brain, where it is processed to help maintain balance and coordination.
+
+semicircular canals detect angular acceleration of the body,
+otolith organs (utricule/hori, saccule/verti) detect linear acceleration and gravity.
+
+Three semi-circular canals are arranged in right angles, i.e., orthogonal, to each other to sense the angular acceleration (~ turn, pitch, yaw).   
+Semi-circular canals are filled with fluid. Sensory hair hold a gelatinous flap.
+Head movement, fluid tend to stay where it is and displaces the flap --> hair sense the displacement --> signal to brain via vesibular nerve.
+
+The utricle and saccule (:= otolith organs) are located at the base of the semi-circular canals. 
+Otoliths have sensory hairs with chalky deposits at the free end.
+The deposits are affected by gravity and liner accelearation --> hair bends --> nerve cells at the base send signals to brain to interpret orientation.     
+utricle senses horizontal acceleration; saccule ~ vertical acceleration
+
+Cholea and Tympanum for hearing
+
+```{r}
+#| fig-cap: reference FAA handbook
+knitr::include_graphics("./figures/hf-ear.png")
+```
+
+### Caridac output
+
+Cardiac output (CO) is the volume of blood pumped by the heart per minute, typically measured in liters. 
+It is calculated using the formula: CO = Stroke Volume (SV) × Heart Rate (HR), 
+where stroke volume is the amount of blook pumped by each ventricle per heartbeat, and heart rate is the number of beats per minute.
+
+Normal cardiac output ranges from 5-6 litres per minute ~ how effectively the heart is functionning.
+
+Question: 72 beats per minute and a stroke volume of 70ml
+--> SV * HR = 70 ml * 72 bpm = 4900 ml*bpm + 2 * 70 ml*bpm = 5040 ml*bpm ~ 5,04l *bpm
+
+
+
+### Human Performance - Illusions
+
+brain receives input from peripheral nervous system and attempts to make sense out of the information according to remembered models of the world.    
+Incomplete, missing data are "filled in" to create comprehensible picture.
+
+Perception --> meaning from random collection of spots.
+
+Human senses (5: sight, hearing, touch, taste, and smell) tend to adapt.
+Severly visually impaired individuals generally compensate by having an increased sensitivity to sound and touch "within certain limits".
+
+* **visual illusions** illusion = mental model differ s from real world. Brain judges comparatively, i.e. distance ~ distant objects appear smaller than objects close, less clear (dust/pollution), move less (more stationary).
+Two eyes to resolve perspective close-up but relative proportions are used at distance.
+
+size
+perspective
+- size constancy, moon illusion of being larger when low on the horizon
+- shape constancy (linked and similar to size constancy) ~ partially open door still rectangular and not trapez
+
+change in attitude and confusion about "horizon", sloping cloud layer/terrain can be confused for the real horizon, near horizon encounters during take-off / landing ~ very different from wings level.
+
+visual cues and illusions on landing
+
+* landing ~ judgement on glideslope/glidepath during approach and final landing
+* initial judgement based on visual circuits/pattern ~  point in space ~ judgement confirmed or refuted by lights of precision approach path indicators PAPI and/or visual approach slope indicators VASI.
+* if aides not available --> visual angle of approach relative to horizon. In case of no visible horizon (e.g. bad visibility) we tend to estimate where it would be by extending the sides of the runway to the vanishing point.
+
+sloping rwy illusion
+* sloping rwys can produce incorrect estimates of the location of the horizon ~ inaccurate judgement of glide path
+-- upsloping runways -- feel high ==> approaching from too low angle
+
+-- narro runways -- ac is higher than it actual is --> try to fly lower approach
+-- wide runways (size) -- ac is closer/lower --> levelling off higher
+-- long rwys -- feel high -- approach too close (erronuus speed and height reductions)
+
+black hole effect    
+- night without visual references
+- rwy can appear further away ~~ ac/pilot feel higher ==> low approach / land short of rwy
+- effect amplified by rain on windscreen ~~ pilot feel too high
+- mist or fog ~~ pilot feel pitching up (getting higher) ==> steepen approach
+
+recommendation: if no information on rwy or nature of terrain => make instrument landing (= block out/overwrite visual cues that can mislead).
+
+
+In general
+- pliot thinks too high
+- adjusting for steeper approach ~ lower angle of attack (worst case push down)
+- risk of landing short/undershoot
+
+
+The autokinetic effect (also referred to as autokinesis and the autokinetic illusion) is a phenomenon of visual perception in which a stationary, small point of light in an otherwise dark or featureless environment appears to move.
+
+### Integration of sensory inputs and spatial (dis)orientation, Vertigo
+
+#### Spatial orientation
+
+vestibular system on its own does not allow the brain to determine spational orientation.
+Vestibular system combined with vision, hearing, proprioception, and memory to form "overall picture".
+
+Proprioceptive := skin, muscles, and joints
+
+Visual sense is the "most relied" on sense.
+In the absence of not enough or sufficient visual cues, the brain falls back to memory and experience to make sense of vestibular inputs.
+
+Subcutaneous pressure receptors sense spatial orientation. 
+When stationary or in straight and level flight without acceleration/deceleration, these pressure receptors are affected only by gravity.
+Aircraft accelerations/deceleration --> additional G forces act on the receptors.
+In a balanced (coordinated) turn, no (additional) G-force in or out of the turn (turn indicator bar in the middle). But there is an extra pitch up force to maintain height.
+The latter is sensed as a force on the body's vertical axis.
+The subsequent reduction in that G-force when coming out of the turn may be falsely interpreted by the pilot as a dive.
+With the pilot applying back pressure on the controls and causing a reduction in airspeed (stall ...)
+
+#### Somatogravic illusion
+
+Forces sensed by the subcutaneous pressure receptors, together with responses from muscles, tendons, and joints sensitive to the position and movement of body parts, provide for a ***sense of orientation called proprioception***.
+Proprioception is commonly referred to as "seat-of-the-pants sense".
+
+Normally we relay on sensing the effect of gravity on our bodies to tell with way is up.
+However, in flight there are other forces which are similar to gravity and cause confusion and seats-of-pants sense is no longer correct/reliable.
+
+Similar to visual illusions can occur as the the brain misinterprets inputs, the vestibular illusions can occur. Somatogravic illusion is one of these illusions.
+
+Somatogravic illusion happens as aircraft accelerates. Pilot experiences a force pushing backwards which - combined with the normal sensation of weight from gravity - produces a **resultant force** that can produce the sensation of the aircraft climbing. 
+
+Note: pitchin errors on an air-driven artificial horizon under acceleration act in the same way than somatographic illusion. This can "confirm" the wrong sensation.
+
+subcutaneous pressure receptors sense spatial orientation, but visual sense is predominant sense.
+Somatic illusions cause pitch to be sensed under acceleration.
+Visual sense most powerful for spatial orientation. Linear accelerations makes you think you are climbing.
+
+
+rolling out of a steep turn    
+similar but opposit effects when rolling out of a steep turn.
+In a balanced turn the additional centripetal force required increases the G-loading on an aircraft. 
+This is a force on the body's vertical axis.
+The subsequent reduction in that G-force when rolling out of the turn may be falsely interpreted as a dive.
+With applying back pressure on the controls to counteract the perception, this may result in a climb and reduction of airspeed.
+
+Visual references. If you have them, sort the brain out.
+Reduced G force rolling out of a steep turn can make you think you are pitching down.
+
+### Somatygyral illusion - the leans
+
+A 2nd vestibular illusion is not concerned with pitch but with roll := somatogyral illusion.    
+A slow entry of a balanced turn, the roll rate may be below the detection threshold of the semi-circular canals ... and not be sensed.    
+Once in the balanced turn, the pilot will sense neither roll nor yaw. He may interpret the orientation as 'wings level'.   
+Recognising the situation, pilot rolls wings level at a rate capable of being sensed by the semi-circular canals. Now - in wings level attitude - the pilot feels as though he is banking. ~ "the leans".
+
+A similar illusion can occur after a developed spin. On recovery the brain senses the change in rate of turn and interprets it as a spin in the opposite direction.
+
+### Spatial disorientation
+
+balancing senses can be stimulated without any change in the rate of turn.
+If a pilot moves their head during a steady turn, an illusion can form called "cross-coupleed stimulation" (coriolis) of the semi-circular canals. --> cause of vertigo.
+
+Disorientation will occur when the information from the eyes and the information from the vestibular apparatus does not agree.
+The brain tries to process the conflicting information, but with varying degrees of success dependeing on the amoout, quality and types of sensory information.
+
+Conditions pre-disposing to spatial disorientation include:
+* transfering from VMC to IMC
+* trying to fly VMC when external conditions are unreliable
+* after acrobatics, in particular at the end of spinning or rapid rolling maneuvers, sensation of spin to opposite direcion
+* moving the head during turns (coriolis effect)
+* lack of flying practice - especially lack of instrument flying practice.
+
+
+Overcoming spatial disorientation
+The primary way to combat disorientation: "trust your instruments over your senses".   
+The proprioceptive (seat of pants) is particularly unreliable whenvisual contact with the ground is lost/or flying in IMC or poor visual horizon.
+
+disorientation may be avoided
+* never fly under alcohol (drug) inflluene (can affect inner ear multiple days)
+* avoiding rapid head movements when maneuvering
+* choosing reliable visual references to help overcome false mental picture.
+
+#### Motion sickness
+
+disorientation from brain misinterpreting conflicting data. a prolonged mismatch between inputs, either visual and physical or between physical inputs and perception, consuses the brain and causes mothin sickness.
+
+motion sickness is a normal reaction to confusing stimuli (in flight: air sickness)
+can happen all the time/to everybody.
+
+visual references do not match with physical stimuli --> more likely to get motion sickness reading a book than looking out of window.
+
+air sickness can also happen as result of body, in particular skull, vibration at low frequencies, less than 0.5 HZ.
+Common in chop or turbulence, creating vestibular signals confusing the brain.
+
+motion sickness causes nausea, salivation, vomitting, hyperventilation, apathy, drosiness, pallor, and cold sweats.
+Not necessarily all symptoms at once ... mild nausea.
+
+Familirity helps to reduce the onset of the symptoms.
+Relief by keeping head still or keeping eyes closed to remove conflicting visual input.
+
+Medication can help, but affects overall performance.
+
+#### Vertigo
+
+more common in everyday life, particularly tall buildings: vertigo ~ ultimate senstation of spatial disorientation when surroundings appear to whirl dizzily. Sense of loss of balance, in extreme cases: nausea and vomitting.
+
+SEP bright sunlight can induce sensation of vertigo, called "flicker vertigo".
+Similar: flickering lights (e.g. strobe lights), most problematic at freqs of 4-20 flashes per second.
+
+counter measure: change of rpm, avoid looking through disc.
+
+"pilot verigo (dizziness and/or tmbling sensation caused by contradictory impulses to the central nervous system.) flickering light or infection of ear --> mismatch ofsensory and visual inputs.
+
+
+vibration
+
+* 1-4 Hz interference with breathing
+* 4-10 Hz chest and abdominal pain
+* 8 - 12 Hz backache
+* 10 - 20 Hz headaches, eye strain, pain in the throat, speech disturbance and muscular tension
+
+
+
+### Health in aviation
+
+tobacco - smoking --> affects respiratory system, blood supply, reduces resistance to hypoxia, reduces G tolerance, and adversely affects night vision
+
+nicotine - substance which gives smokers "satisfaction" ~ addictive
+tar - clogs lunks and causes cancer (carinogenic)
+carbon monoxide - clogs haemoglobin (200 times faster than O2) --> hypoxia at lower altitude ; regular smoker to loose almost 10% of oxygen transport capacity
+
+drugs --> flying strict regulations limiting intake of alcohol and drugs.
+Recreational drug use to be avoided.
+Ditto non-prescription drugs, as they can affect body in flight.
+
+anti-histamince drugs (insect bites), rashes, allergies, hay fever and in cold cures.
+Side effects include drowsiness, impaced depth perception, dry mouth, headaches, nausea, and lack of balance and coordination.    
+effects possible even for small doses./ check with aviation doc.
+
+General rule: when getting new medication, doc to be aware that you are aircrew, as many pharmaceutical products are not compatible with flying.  
+Most doctors will suggest a period of non-flying to ensure that there are no adverse side effects.
+~ 24hrs
+
+Aspirin can cause gastric bleeding, immodium can cause blurring vision, sedatives and sleeping pills reduce level of alertness -- to be taken outside 24hours before flight duty.
+
+Stimulants or diet pills cause opposite symptoms of overconfidence and recklessness. Not compatible with flying.
+
+Antibiotics have only mild side effects, but their use usually indicates a severe infection.
+The infection could make the pilot unfit to fly.
+
+Guidelines
+
+* do not self medicate, even with 'over the counter' products
+* do not fly, if you are unfit. If you are unwell enough to need medication, you are likely not fit to fly.
+* seek informed medical opinion, if taking medication.
+
+
+Anaesthetic
+Pilots should not fly within 12 hours of receiving local anaesthetic and 48 hours of receiving general anaesthetic
+
+
+
+
+Question:
+nasal decongestant ~ contains antihistamine
+--> mostly drowsiness
+--> can: dry mouth, headaches, impaired depth reception, and nausea.
+
+
+## Human Perception
+
+Perception is the means by which information is acquired from the environment by the sense organs and translated into experiences of objects and events through images, touch, sounds, and smells, and temperature.
+
+"Gestalt laws" = basic principles how objects are organised and perceived.
+The laws are concerned with structural and organisational arrangements of elements that influence the way in which we perceive things.
+
+For example: elements which are closer together tend to be seen as a group. Ditto on elements which are similar.
+
+Gestalt laws begin with the distinction between what is "seen" as a figure or object and what is seen as background.    
+Illusions can occur when it is not clear what is the figure and what is the background.
+
+Gestalt theory deals with our perception and organisation.
+
+### Mental models
+
+perception is not a straightforward mechanical process.
+Images formed on the retina, for example, are not simply transmitted and replayed somethwere in the brain. Instead the brain actively interprets the pieces of visual information arriving from the eye and uses them to construct a ***mental model of the world***.     
+The mental model is constructed, modified, and refined by applying previous knowledge about the world.
+
+stepping into room and "spotting" old TV set.    
+Conceptually, you saw the front face (screen) and perhapst a small portion of one side.
+However, even if not seen this particular TV before, you perceive the object as a solid 3-dimensional entity.   
+Ditto on knowing that the image on the screen is artificially projected and is not simply a window looking into another room.
+... subconsciously ascribe other characteristics of the objects (how it feels/if you touch, how heavy ....)
+Ditto for all other objects/situation ==> mental model of the scene.
+
+Assuming the TV would be a dummy, the mental model would be inaccurate and you would be suffering from an illusion.
+
+An illusion caused by the misinterpretation of sensory inputs is called a "cognitive illusion".
+
+The information received by all our senses is subjectively interpreted.
+E.g. sound from sterio hi-fi is perceived as coming from between the speakers, marble feels colder than wood (even if objects are equally warm). Wine may taste sweet or sour depending upon what we are eating at the time.
+
+Using these examples we can see that the world we perceive may or may not correspond with the reality.    
+
+--> the brain uses previous knowledge to interpret the information received by the senses. This is used to construct mental models of the world.      
+--> 70% of the inforamtion we process enters via the visual channel.    
+--> perception is a highly subjective process.
+
+
+Complexity of perception
+
+perception is a complex task ... and thus fallible.
+Distinguishing figure from background, near objects from far objects, fast from slow objects, music from noise all in real time with each element perhaps continuously changing is a formidable challenge.    
+complex processing ~ chellange to (even) most advanced computing hardware and software.
+
+Advantage of using a mental model to interpret visual sensory information is our ability to apply visual constancy to the images we see.   
+Our brains automatically cope with the apparent changes in size, detail, and colour of familiar objects.
+
+The process of constructing a mental model is very dynamic.
+
+Expectancy ~~ disadvantage of mental models is that they are largely based on past experience. To some extent, we perceive what we expect to perceive -- not necessarily what is actually there.    
+Expectancy or perceptual set can cause problems whe we first enouter something new/unfamiliar.
+
+mental models allow the brain to quickly interpret vast amount of conflicting perceptual inforamtion arriving from the senses.   
+mental models help to efficiently sort out the information into a r readily understandable form.   
+== efficient way of meeting the processing challenge.
+
+Drawback: errors can be made at each stage of the process (of perceiving and forming a mental model/interpreting it).
+
+Sight and sound are the two most important senses associated with flying.   
+Nevertheless, it should be understood that "ALL" senses have a part to play in the operation of an aircraft.
+
+Mental models can be influenced by what we expct to see or hear.
+This is known as expectancy or perceptual set.
+
+### Visual Constancy
+
+mental models are constructed --> reality and perception of reality may not correspond.
+
+visual constancy = ability of the brain to perceive an object as the same object thoughout a wide variety of vieing conditions.
+
+well kmown person ~ appear to be the same at every occasion. <> not an accurate representation of what the eyes is actually seeing.
+Information registred on retina will change considerably from moment to moment.
+
+scale up of known person/ohbject --? size constancy.
+varying color based on lighting conditions --> objects having the same colour --> color / brightness constancy.
+
+shape consancy.
+
+visual constancy is the process of recognising familiar objects even in unfamiliar conditions.
 

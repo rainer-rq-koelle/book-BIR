@@ -13,6 +13,7 @@ book:
     - 0x0-human-factors.qmd
     - 040-meteology.qmd
     - 0x0-instrumentation.qmd
+    - 050-human-performance.qmd
     - summary.qmd
     - references.qmd
 
