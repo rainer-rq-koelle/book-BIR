@@ -7,3 +7,7 @@
 
 # RQ stuff
 icns*
+.Rdata
+.httr-oauth
+.DS_Store
+.quarto
