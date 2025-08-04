@@ -546,6 +546,10 @@ vibration
 
 tobacco - smoking --> affects respiratory system, blood supply, reduces resistance to hypoxia, reduces G tolerance, and adversely affects night vision
 
+Two chemicals, nicotine and carbon monoxide, interfere with your cardiovascular system’s ability to function properly. 
+Nicotine causes your blood vessels to constrict or narrow, which limits the amount of blood that flows to your organs. 
+Carbon monoxide binds hemoglobin, the molecule in your blood that carries oxygen. When carbon monoxide is bound to hemoglobin, oxygen cannot bind. This decreases the amount of oxygen delivered to all of your cells. 
+
 nicotine - substance which gives smokers "satisfaction" ~ addictive
 tar - clogs lunks and causes cancer (carinogenic)
 carbon monoxide - clogs haemoglobin (200 times faster than O2) --> hypoxia at lower altitude ; regular smoker to loose almost 10% of oxygen transport capacity
@@ -671,3 +675,651 @@ shape consancy.
 
 visual constancy is the process of recognising familiar objects even in unfamiliar conditions.
 
+
+## Human Memory, Learning, and Acquiring Skills
+
+Long-term memory --> forget what we have in store.
+Forgetting does not imoly that the information is no longer in the story ~ we do not know how to retrieve it.
+
+counteracting failure of retrieval mechanism
+
+* association - easier to recall information when associated with a particular context
+* catch phrases and rhymes - recall memorable catch phrase/rhyme: 30 days have September, Aril, Ju e and November. East is least, west is best
+* mnemonics - FREDA fuel radio engine, diretion indicator, altimater ~ cue to recall each of the titems for checking.
+
+Over learning ~ type of mental training, involves repeated rehearsal of a procesdure, action or skill. ~ hours of TG
+
+acquiring skills - phases of learning a skill
+
+skill may be defined as acquired expertise at a task which results in increases accuracy and reduced errors. The ease, rapidity, and precision of carrying out an action.
+
+process of acquiring expertise involves 3 stages when moving from theoretical knowldege of what needs to be done through a phase of practice to the stage where the knowledge is completely embedded in procedureal memory.
+
+example typist learning to touch type. first phase: acquiring the skill involves being taughtrules (which hand deals with which part of the keyboard, and which fingers are used to press which keys). This is declared knowledge and the trainee typist will easily be able to recount the rules.
+
+next stage: putting theory to practice. Rules are applied, repeated and reheasrsed. 
+Theoretical knowledge slowly evovles into procedures.
+
+third phase process consolidation. typist discards some of the theoretical procedures in favour of sortcuts. Skill completely internalised. doing things without event thinking about it./ difficulty in explaining how something is done.
+
+Anderson's model: skills are learned in three stages:
+
+* cognitive
+* associative
+* autonomous
+
+cognitive phase = 1st phase. Instructor talks about the skill. "talk about it, pass theoretical knowledge.
+assocaitive stage = techniques are demonstrated, learned and refined and errors are gradually reduced. "must remember to reaise nose when decelerating.
+autonomous/automatic stage: performance perfected and internalised.
+
+Theoretical knowledge is acquired in the cognitive phase. The skill is practiced in the associative phase. In the autonomous phase the skill is polished, perfected and internalised.
+
+
+## Human Error
+
+to err is human
+
+because of capabilities, we err / commit errors.
+Errors are the flip side of the coin of an exceptionally efficient inforamtion processing system.
+
+An **error** is an occasion where a planned sequence of mental or physical activties fails to achieve its intended outcome, and where these failures cannot be attributed to random external intervention.
+
+key: intention! Error and intention are inextricably bound up with each other because there can be no error where there was no intention to carry out the action.
+
+Human error is relatively common. 1 in every 100 occasions.
+Error rate can be reduced given right conditions.
+
+The acceptable rate in hardware system is one error in 10 million occasions.
+
+Human behaviour invariably results in errors.
+Human error rates vary from about 1 in 100 for simple repetitive tasks to about  1 in 1000 times for a complex and stimulating task.
+
+Unreliability of human behaviour
+--> 1943: 70% of aircraft accidents caused by pilot error --> flawed approach
+
+no reason to distinguish pilot error from any other form of human error.   
+human error in itself is not a suitable and adequate explanation for an aircraft accident.    
+by attributing accident to pilot error, we fail to examine both the i.) underlying cause of the error, and the ii) circumstances that allowed the initial error to develop.
+
+now: twin track approach to error == reducing the occurrence of errors and minimising the consequence of errors.
+
+```{r}
+knitr::include_graphics("./figures/hf-deviation-violation.png")
+```
+
+error and intention inextricably associated ==> an error can only occur if the action was intended and is only an error, if the actual outcome of the action differs from the intended outcome.
+
+--> intended and unintended deviation from standards
+
+error chain ~ sequences of errors rather than isolated errors.
+A sequence of related errors := error chain. 
+
+Mt Erebus accident, 1977.
+
+active and latent errors
+
+* latent errors are those where the consequences may lie dormant in the system for some time, will only show themselve under certain conditions.
+* active errors are those where the consequences of the error are felt almost immediately, e.g. over rotation on take-off in a 747 can lead to tail strike.
+
+Murphy's law - if a system can go wrong, it will, sooner of later.
+
+Latent error: incorrect entry of waypoint in the nave data base.
+
+Error generation:
+
+important distinction between internal and external error generating factors.
+internal errors include perceptual errors, mistakes in situation awareness.
+
+sources of error
+
+* sensing error - individual fails to detect. Occasions when information is present by not sensed. above cloud/fog/snowfield ~ visual cues reduced or obscured --> difficult to discern
+* perceptual error - interpretation of stimuli is faulty. Perceptual errors are influenced by context, inadequate and ambiguous information, and expectancy.
+* action slips - action slips occur when the wrong sequence of actions (motor programme) is implemented. first officer thinks he is raising the gear, when raising the flaps.
+James REASON calls these errors "action not as planned (ANAP") 
+
+The two main types of motor programme errors: goal directed behaviour with an improper element instrted to or an action misdirected to the wrong goal.
+
+decision-making
+false hypothesis ~ most insiduous and dangerous of error types
+distraction
+motivation and arousal
+
+"end deterioration effect" ~ complacency towards the end of a task.
+
+external error generation
+* ergonomics
+* economics, and 
+* social environment
+
+
+## Coping with Human Error
+
+human errors are inevitable! --> management strategy
+
+**error tolerance** aims to make a system better able to cope with error by minimising the consequences.
+
+Error management programms
+
+--> zero defect programme ~ aims to "eradicate" errors altoghether by encouraging high levels of motivation and imposing regid regime of training and checking.    
+Concept fundamentally flawed in its believe that human errors can be eradicated.
+Ignores fact that some errors are induced by equipment design and other external factors.
+Typical result: lower number of reporting.
+
+--> error cause removal (ECR) programme ~ concentrations on reducing errors by thrying to anticipate when, where, and how they might occur. ECR teams ~ scenarios ~ approach priate procedures and techniques to "reduce" risk.
+
+--> remove human from system ~ principal idea, if human removed, there cano't be a human error. Automation is a good way of dealing with routine and repetitive tasks (often badly performaned by humans). However, certain tasks are better performed by humans (e.g. detecting unusual sounds, smells, or other sensory input)
+Humans and machines have different strenghts and weaknesses.
+Machines are prone to sudden overload breakdown whereas humans are much more likely, human typically breakdown under gradual overload.
+
+human (strenghts): inductive reasoning, error correction, intelligence
+system (strenghts): monitoring, deductive reasoning, speed, power, consistency, complex activities, short term memoy, and computation.
+
+Reducing the causes and consequences of errors
+
+==> twin track approach: reducing the causes of error and reducing the consequences of errors.
+
+reduction of cause of error
+* addressing weaknesses in all the areas of interaction   
+Overlearning has positive effect on making skills resistant to stress and error. Emphasis on training, re-training, and performance checking.
+
+reduction of consequences
+* reversible errors - scratch pad system on FMS allows to check the entry before committing it to the syste..
+* error prevention - per design/ avoid errors, e.g. weight-on-wheels switch prevents the undercarriage from being seleved while aircraft on ground
+* cross monitoring - cross-checking between 2 or more crew members
+* machine monitoring systems - dedicated systems to monitor human performance and to warn when dangerous situations are developing (e.g. ground proximity warning, collision avoidance system).
+
+when a system is set up so that the consequences of an error will not be jeorpadise safety ~~ "tolaerant to error"
+opposite: if single error can cause disaster, "vulnerable to error".
+
+
+## Threat and Error Management
+
+TEM components
+* threats
+* errors, and
+* undesired aircraft states.
+
+Threats and errors are everyday part of aviation ~ need to be managed by flight crews to avoid "3rd component" undesired aircraft states.
+
+Threats are external factors that can affect flight operations (= beyond influences of flight crew), such as adverse weather conditions, technical malfunctions, or air traffic control issues. Identifying these threats early allows pilots to take preemptive actions to manage them effectively. 
+
+- Anticipated (expected) Threats: Known to the flight crew and can be prepared for in advance.
+- Unexpected Threats: Occur without warning and require immediate response using training and experience.
+- Latent Threats: Not immediately obvious and require thorough safety analysis to uncover.
+
+Latent threats include:
+- organisational culture change
+* equipment design issues
+* incorrect/incomplete documentation
+* fatigue/rostering
+* lack of recent proficiency / experience
+* optical illusions
+* operational pressure & delays
+
+Threats can be further divided into 2 categories: 
+i.) environmental, and 
+ii.) organisational 
+
+environmental threats include (but not limited)
+* thunderstorms
+* turbulence
+* icing
+* wind shear
+* cross/tail winds
+* extreme temperatures
+ATC
+* traffic congestion
+* TCAS/RA/TA
+* ATC commands
+* ATC errors
+* language difficulties ...
+* rynway change
+* callsign similarity
+Airport
+* contaminated rwy/taxiway
+* short runway
+* poor signage/markings
+* bird activity
+Terrain
+* high ground
+* slope
+* lack of visual references
+* "black hole"
+
+Organisational Threats
+* operational pressure (delays, late arrival, equipment changnes)
+* aircraft (malfunctions, automation event, minimum equirment list, configurations deviation list)
+* Cabin (flight attendant error, cabin event, interuptions, cabin door,)
+* ground (ground handling event, de-icing issues, ground crew error)
+* dispatch/scheduling (paperwork error, dispatacher error, documentation error)
+
+### Errors
+
+Errors are actions or inactions by the flight crew that can lead to unsafe situations (= deviations from organisational or the operator's intentions or expectations). 
+These can be mistakes in navigation, communication, or procedural execution. 
+By understanding common errors, pilots can develop strategies to avoid them. This includes thorough pre-flight briefings, checklists, and continuous training to ensure adherence to standard operating procedures (SOPs).
+
+Errors can be spontaneous with no link to specific threats, linked to threats, or part of an error chain.
+
+Safety effect dpends  on detection and corrections befor it leads to undesired aircraft state.
+
+Errors fall into 3 categories
+* aircraft handling errors (manual, automation, system, or navigational),
+* procedural errors, and
+* communication errors.
+
+### Undesired Aircraft State
+
+outcome of imperfect threat and/or error management is an undesired aircraft state.
+An undesired aircraft state is a flight crew induced aircraft position or speed deveiation, misapplication of flight controls, or incorrecte systems configuration, associated with a reduction in flight safety.
+
+undesired aircraft states, incorrectly or poorly managed can lead to further errors and escalating the situation into an incident/accident.
+
+Three basic categories of undesired aircraft states
+* aircraft handling ( attitude control, vertical/lateral/speed deviations, unnecessary weather penetration, unauthorised airspace penetration, operating aircraft outside aircraft limitations, unstable approach)
+* ground navigation (proceeding towards wrong taxiway or runway, use of wrong taxiway)
+* incorrect aicraft configuration (systems, flight controls, automation, engines, weight and balances)
+
+## Flight Deck Ergonomics
+
+guiding principle: made to fit the pilot.
+
+Static anthropometry (limb lengths) and dynamic anthropometry (reach and clearances)
+
+seat dsign (adjustable)
+design eye point (pilot shoud hav e adquate view of flight controls and outside world)
+
+eye datum, referecnce view point or design eyes point.
+
+instrument and display design
+EFIS intrument and display design (glass cockpit, still designed based on same principles). Attitude central
+
+instrument design faults (multi-pointer altimeter ~ confusing / hard to read); less in modern instrument display.
+
+design of controls ~~ intuitive and standardised between aircraft (as far as possible).
+E.g. 
+* altimeter sub-scale knob operate in the same intuitive sense: clockwise rotation results in increase in subscale reading and a clockwise movement of the needle.
+* critical controls look differently (flap level shaped like a flap, landing gear level shaped like wheel).
+* switches: on-positing is typically up from pilot's viewpoint (except in helicopters)
+
+
+poor standardisation: unfortunately, there are sill instances where the control functions are not standardised between aircraft.    
+E.g. light aircraft fuel systems having on/both in different position. Issue: habit reversion, and a pilot may use the same 'movement' (resulting in wrong select) ~ negative habit transfer.
+
+Checklists and Documentation - important principles
+* typeface (excessive uppercase)
+* colour
+* indexing/layout
+* diagrams and charts (for complex inforamtion)
+
+Note: checklists should use upper and lower case fonts.
+
+Warning systems - overall principle: attention getting without startling (e.g. flashing lights or an audio warning or combinaion of both).
+--> alert and inform (gnd prox warnibg if landing gear not retracted, low oil pressure)
+
+Warning should be taken seriously, but non acted upon until the problem has been positively identified.
+
+## Summary of Design Principles
+
+HMI is goal orientated. Main goals: productivity (economics), dafety, humanisation and evnvironmental compatibility. The goals have fairly obvious applications in flight deck design and erfonomics.
+
+* positioning and sequencing - important controls within reach, follow sequence, controls used simultaneously (e.g. throttles) are grouped together
+* identification of controls - controls are made to look and feel different to make it easier to distinguish them
+* spatial relationships - displays and controls are positioned to reflect the same spatial relationship (e.g. throttle for left engine is on the left, engine instruments for the left engine are on the left and grouped with the left throttle)
+* display colour/symbology - colours are used in (relatively) standardised way --> 
+  + red for danger/critical malfunction; 
+  + amber is used for caution and warning; 
+  + white is used for information, 
+  + green is  used to note correctly functioning systems.
+Warning devices often arranged to flash / attention getting.
+* guards and interlocks - critical controls are often guarded, as in the case o f the fire bottle switches, or interlocked as in the case of the landing gear lever
+* standardisation - where possible the position of important controls is stnadardised between different aircraft and aircraft types.
+
+## TEM Countermeasures SUmmary
+
+countermeasures utilised in TEM can be split into two major categories
+1. hard resources, and
+2. soft resources.
+
+Hard resources and countermeasures are known as "systemic based" and embedded in the aviation system, e.g. 
+
+* legislation controls (ICAO, EASA, FAA, CAA)
+* aircraft systems (ACAS, GPWS)
+* operational procedures (SOPs, briefings, checklists)
+* crew training
+
+Soft resources relate to the diret human (crew) input
+
+* planning countermeasures - including SOP briefing, stated pans, assignment of workload and contingency management --> essential for managing anticipated and unexpected situation
+* execution countermeasures - inlcuding autormation and workload management, monitoring, and cross-checking --> proper error detection and proper response
+* review countermeasures - including open questioning, evaluation, and modification of plans coupled with crew assertivenes --> effectively manage the ever-changing flight conditions.
+
+## Decision-Making
+
+Errors frequently occur as a result of faulty decision-making.
+Decision-making is knowledge-based behaviour and influences by a variety of factors (e.g. poor/incomplete knowlege, incorrect interpretation/weighting of information).
+
+Decision-making concepts
+
+Decision = choice actively made between one or more courses of action.
+
+subconscious decision / low complex decisions / less pressing decisions ~ Information can be held in memory / worked on.
+
+Decision-making process (9 stages):    
+definition of aim -- collection of information -- risk assessment -- development of options -- evaluation of options -- decision -- implementation -- consequencies -- review and feedback.
+
+quick decisions or simple / familiar problems - intuitive leap.
+
+pilot makes risk assessment based upon four basic elements:   
+- the pilot
+- the aircraft
+- environmental conditions, and
+- availbale time.
+
+clouded judgement under stress. 4 basic stressors i.) physical, ii) physiological, iii.) psychological, and iv) socialogical factors.
+
+Pilot may bring positive and negative human capabilities into the risk assessment and decision-making process.    
+positive: creativity - innovativity - adaptability
+negative: false mental mode - incorrect motor programme - lack of feedback
+
+```{r}
+knitr::include_graphics("./figures/hf-decision-making-concept.png")
+```
+
+Gary KLEIN three sources of error: i.) lack of experience, ii.) lack of information, and iii.) inadequate simulation.
+
+habits and routine can bias decision-making by selecting the most familiar solution.
+
+
+## Conditions which make errors more likely
+
+Decision-making errors are made more likely by
+* stress
+* time pressure
+* distraction
+* peer pressure
+* economic pressure, and 
+* self-imposed pressure.
+
+Errors are more likely when the decision-maker is
+* physiological or psychological stress (poor cockpit environmental conditions)
+* pressure to make the decision very quickly (e.g. on final apporach at night, emergency runway) ~ confusing runway and taxiway
+* distracted or overloaded by tother tasks
+* unduly influenced by peer pressure and/or opinion (e.g. non-confident captain leaning heavily on the opinion of his pilot)
+* under operational/economic pressure (attempt to expedite turn-aournd to stay in duty time)
+* self-imposed pressure (make up lost time)
+
+## Situational Awereness
+
+Best defence against errors: situational awareness.
+Situational awareness refers to the process of maintaining an accurate mental model and requires conscious effort to maintain.
+
+Situational awareness is the accurate perception of the operational and environmental factors that affect the flight.
+
+::: callout-note
+some additional banalities
+:::
+
+* gather as much information as possible
+* take time to make decisions and resits to jump to conclusions
+* consider all possible interpretations
+* try to maintain a running 3 dimensional mental polot of whwere the aircraft is
+* metnally step back from the situation and rethink how and why current actions fit into the bigger picture
+* test hypotheses against known and new facts
+
+situational awareness is one of the best defences against error.
+
+### Loss of situational awareness
+
+breakdown in SA opens the path to false hypotheses, poorly sequenced actions, inappropriate actions, and a feeling of behdind the drag curve / catch up with the aircraft.
+
+Once classic symptom of loss of SA is when it becomes incrasingly difficult to reeconcile new information with the known facts. If you start to experience this, suspect the "known" facts rather than try fit the new ones in.
+
+If you start to lose SA, first try to off-load some of the immediate pressure. Trim the aircraft properly or engage the autopilot to relieve the workload. Try to integrate all sources of information from the radia, the navigation aids, the visual scene etc to (re)construct an internal "visual" plot of the situation.
+
+The pilot who actively works to give himself time to think stands a much greater chance of maintaining situational awareness.
+
+### Planning
+
+SA = best defence against errors. Maintain SA = continue defence.    
+SA is compromised when workload is higher.    
+One way this can be avoided is by spreading the workload over a longer period.   
+PLANNING in advance means that work can be done and decisions can be made in advance.
+
+obvious: planning for a navigational exercise. not getting airborne before plannning route. if you did, workload increases, SA would be compromised and the chances of error would be increased.
+
+Ditto. Anticipating what you will do in future situation reduces the workload and opportunity to err when it occurs.    
+That is why we do pre-take-off emergency briefs. There is little time to think and decide in the event of a major malfunction occuring at a critical stage of flgiht. So we plan ahead and anticipate our actions.
+
+### Group Behaviour
+
+"risky shift" - undesirable characteristic of groups is their tendency to arrive at riskier decisions that would otherwise have been taken by individuals.   
+**risky shift** can lead a group to pursue a course of action that can lead to disaster. Risky shift differes from groupthink in that the group makes a conscious decision to adopt the riskier approach.
+
+The reasons why this happens can vary, but bravado is rearely far from the cause.
+
+
+## Workload - Human Overload and Underload
+
+Effect of arousal on performance.
+Yerkes Dodson Law of arousal and performance.
+
+```{r}
+knitr::include_graphics("./figures/hf-Yerkes-Dodson-law-arousal-performance.png")
+```
+
+certain level of arousal good for performance.
+the higher the arousal, the lower the performance.
+
+ideally, critical tasks (e.g. programming flight plan into FMS best dane with little arousal/anxiety <----> shift curve to left!)
+
+Arousal is a physiological response to stress.    
+The sympathetic nervous system is responsible for arousal.
+The parasympathetic nervous system is responsible for reducing arousal.
+
+Stress is a natural reaction to unfavourable environmental conditions ~ stressors.
+
+**underload** - complete absence of stress. --> could be harmful as being top relaxed --> failure to notice changes (e.g. sink rate).
+"bored sick", lack of stimulation in life / dull job --> extreme: depreassion and helath problems including headaches, fatigue and recurrent infections.
+
+**overstress** - high level of stress, anxiety and a reduction in performacne.    
+Prolonged exposure to a stressful stimulus can lead directly to physical problems.
+most modern stressors require mental rather physical solutions.
+
+Prolonged exposure to stress can cause physical illness. Anxiety affects judgement, attention, and concentration.
+
+**stress** := heightened state of arousal caused by stressors in the environment.
+
+```{r}
+knitr::include_graphics("./figures/hf-stress-demand-ability.png")
+```
+
+IS THIS MODEL USEFUL?
+
+Both good things and bad things cause stress.    
+Only bad events, however, are perceived as stressful.
+
+**stressors** event or situation that induce stress. Stressors come in various formats ranging from physical stress to psychological (mental) stress
+
+```{r}
+knitr::include_graphics("./figures/hf-stress-causes-breakdown.png")
+```
+
+Effects of stress and steess overload
+
+--> acute stress - sudden, unexpected
+--> chronic stress - long-term stressor, recurring
+
+* physiological effects include short-term effects of acute stress such as increased heart rate/blood pressure, fast breathing; long-term effects from chronic stress physical illness from psychological cuases = psychosomatic illness
+* behavioural effects, e.g. restlessness, nervousness, trembling, anxiety. Loss of appetite, ecessive drinking or smoking. Primarily psychological stress reactions.
+* cognitive effects limit brain's ability to process information.Symptoms: forgetfulness, inability to concentrate, poor ttention, inability to make decisions, diffficulte to relax/switching off.
+* personality - chronic stress can lead to temporary - but long-lasting  - changes in personality. Depression, bad mood, permanently anxious.
+
+stress is a cumulative effect.
+can result in mental breakdown.
+stressed individuals become more accident-prone as they reach their  "break point" and their performance degrades.
+
+Chronic stress can result in physical illness.   
+Stress is cumulative. Domestic stress can lead to a decrease in professional performance affecting concentration and decision-making.
+
+### Strategies for coping with Stress
+
+Coping = identifying the cause of stress and then either adjusting to the sressfol situation or removing oneself from the situation.
+
+1. action coping
+2. cognitive coping
+3. symptom directed coping
+
+action coping - individual takes positive action to cope with source of stress (e.g. removing, staying away) addressing the problem (fire drill) or altering the situation. ==> reduction of size of ***acual demand***.
+
+cognitive coping - involves reducing the ***perceived demand*** and the psychological impact of the sressor (boltering confidence) --> yes, I can do this!
+
+symptom-directed coping - addressing symptoms rather than the cause of stress. This may include the use of alcohol, drugs, or tobacco to reduce the psychological stress. Healthier alternative would be to dissipate the stress through physical exercise or meditation.
+
+Stress managemetn is achieved by identifying the cuase of stress and then develop a strategy to cope with it.    
+Absenteeism is an extreme form of action coping.    
+couseling, either by a friend of by a prefessional is a useful and valuable method of cognitive coping.
+
+Managing stress
+* fitness programmes
+* relaxation techniques
+* conselling
+
+--> reducing perceived demand and increasing perceived ability.
+
+Chronic fatique is a cumulative process caused by extended periods of excessive workload and inadequate rest. Stress management programmes centre on developing approrpiate coping strategies.
+
+### Fatigue
+
+Fatique is a very general term used to describe everything from a mstate of mental exhaustion to physical tiredness resulting from exercise.   
+Fatigue is generally negative.
+
+4 main causes:
+* inadequate rest ~ tiredness due to no/little/inadequate rest
+* disruption of circadian rhythm - commonly known as **jet lag**. Fatique due to disrupted natural pattern of sleep and wekefulness
+* exessive mucular activity - tiredness after physical exercise/activity
+* excessive cognitive work - mental tiredness or exhaustion following a plrolonged period of mental workload.
+
+Environmental factors can also cause fatigue, e.g. low humidity, vibration and noise.
+
+Chronic and acute fatigue:
+
+* **chronic fatigue** extends over a long period and often has a psychological cause. Can be caused by continuous strain due to domestic of work pressure, or an underlying disease. --> physical discomfort such as stomach disorders, intestinal problems, and general aches and pain throughout the body. Can lead to emotional illness.
+
+* short-term **acute fatigue** is of limited duration and accepted as a normal part of everyday life.
+
+Fatigue is a major issue in aviation. Fatigue causes significant decrease in performance.
+
+Effects of fatigue:
+
+* reduced ability to carry out tasks invovolving calculation
+* reduced vigilance
+* mood changes
+* behavioural changes
+* reduced motivation
+* poor self-monitoring leading to lack of awareness of deteriorating performacne.
+
+Such symptoms can appear even folloiwng small disturbances in sleep patterns.
+
+
+## Automation
+
+increasing level of automation within aviation, aircraft technology, and systems.
+
+Airbus - automated systems (e.g. fly by wire) can correct erroneous pilot action. Automation should maintain the aircraft in the normal flight evelope and enhance safety, efficiency, and economy. In the normal flight envelope, automation will work against the operator when absolutely necessary for safety.
+
+Boering - concept centered aournd pilot is the final authority for the operation of the aircraft. Automation is tool to assist but not to replace the pilor and will address humns strenghs, weaknesses and individuak differnces inboth normal and abnormal operations.
+
+Advantages of automation    
+modern notion of automation (lgass cockpit, fly by wire, FMS) is the next ligical step towards closer integration of increasingly comples xystems.
+
+1. safe extension of the operational envelope (e.g. to maneuver modern aircraft, reduce workload, CAT III landing systems)
+2. economic benefits (e.g. fuel efficient)
+3. workload reduction - automation can relieve pilots of much of routine workload., support during emergency, improved situational awareness in glass cockpits with integration of flight, navigation, and weather information.
+
+Disadvantages of automation     
+Highly automated cockpits carry their own inherent disadvantages.
+
+human-machine interface (HMI): human & machine. interface is link between both. human element can input inforamtion, some decision-making can be performed by the machine (not all!) ...     
+Machine is only able of deductive rather than inductive reasoning. (that holds until AI emerges).
+The machine outputs its data to the human, who can then apply intelligence and indcutive reasoning to correct errors, if they are present.     
+In a flight crew that means not blindly following / beliveing whatever the system tells them.
+
+Humans genuinely bad at monitoring!    
+Automation = reduction of active involvement, emphasis shifts to moonitoring!
+Automation does much better things that the pilot already knows how to do well.
+However, automation does not know all how to do the things which the pilot would like to do well.
+
+Autoflight systems have 2 fundamental restrictions.    
+1. absence of creativity when faced with unknown or unforseen situation, and 
+2. incapable of any motivation with regards to flight safety.
+
+Human advantages of automation     
+1. prioritisation of tasks
+2. decision-making
+3. reliability
+
+REDUCED VIGILANCE --> manual flight "pilot in the loop"/actively involved in the conduct of the flight. <----> high state of vigilance.
+In highly automated cockpit, the aircraft is happily flown for the majority with the pilot monitoring/not in the loop/out-of-the-loop ==> reduced vigilance.
+
+Vigilance refers to an individual’s ability to pay close and continuous attention to a field of stimulation for a period of time, watchful for any particular changing circumstances.
+
+hypo-vigilance (BGS question) --> correct anser speaks about enroute/low arousal & (high) cognitive load (?!?!):
+Def: hypo-vigilance is the body's response to prolonged stress, where the body and brain shuts down to conserve energy. This "numbness" is a coping mechanism for emotional overload.
+
+Hyper-vigilent = survival mechanism keeping individual alert to threats ~ "over"-heightened/amplieifed state of alertness ~ remain on constant alert, scanning for threats. 
+
+```{r}
+knitr::include_graphics("./figures/hf-hyper-hypo-vigilance.png")
+```
+
+
+extensive automation can lead to pilots being out-of-the-loop.
+
+REDUCED SITUATION AWARENESS --> active involvement/process --> builds situational awareness.
+automated cockpit - situation is presented "on a plate" ~ needs to be understood.
+The lack of involvement in constructing the mental picture can lead to subsidaiary problems. The situation has been constructed by the aircaft/systems, the pilot(s) may struggle to re-engage with the situation after a period of passive monitoring.
+
+--> confusion about what the display is telling and cause **blinkered concentrations** as the pilot(s) struggle to interpret the information.
+
+Modern 'glass cockpit' can lead to the pilot(s) becoming bored and complacent.
+
+REDUCED WORKLOAD - with increased automation, lower workload can lead to readuced performance --> Yerkes-Dodson law suggests the need for some stress for high performance.
+
+SYSTEM OPACITY and LACK OF MODE AWARENESS   
+A highly automated flight management system can be operated in a number of different modes. The cockpit indicatorions for each mode are sometims not immediately apparent and this can lead to lack of mode awaresness. Incorrect appreciation operation mode has led to at least one fatal accident.
+
+Automated systems filter the information presented to the crew. This may lead to lack of awareness of what is really going on.
+
+AUTOMATION COMPLACENCY - advanced automation has become victim of own success. With automated systems being highly reliable, pilots tend to place a lot of faith in the system. ~ system in charge ~ slips from crew.   
+**automation complacency** := feeling of quiet pleasrure or security, often while unaware of some potential or defect. The crew tend to become passive monitoris of the system and fail to actively question its performance (and actions).
+
+Various factors in automation complacency can be identified:     
+* passive monitoring - inherent belief in the system reliability can lead to the crew "simply watching" instead of analysing and checking.
+* blinkered concentration - narrowing of concentration in a highly automated cockpit leading to concentration on one particular aspect and the exclusion of others.
+* confusion - breakdown in situational awarewness due to an over-relieance on the automatic system leading to an absence of cross-checking.
+* mode awareness - the need for the crew to be aware of the selected mode in an automated cockpit.
+
+In manually flown aircraft, the pilot is "in the loop" ~ continuous and frequent actions, verfification of assumtpions, interpretations of inforamtion.    
+In automated cockpits, crews often fail to examine the performance of the automation quite so rigorously.
+
+
+### Working Concepts
+
+The key to the problem of living with, and managing automated cockpits starts with an understanding and appreciation of the potential pitfalls.
+
+Solution == measures to get back into the loop == downgrade the level of automation.
+For example set VNAV/LNAV to ALT/HDG mode regaining appreciation of the flight status.
+
+* active participation in building the mental picture is essential, e.g. "raw navigation data" to construct and verify mental or physical plot of approximate position.
+* mental exercises during low workload can help to maintain alertness (e.g. calculatioe time to next reporting point)
+* regular switching between dispaly modes will increase the information available and permit comparisons between sets of information to reveal discrepancies
+* verbal cross checking (e.g. altitgue checks in the descent) will improve monitoring of vital information
+* regular manual practice, particulary approach and lading --> flying skills
+* simulator detaisl rehearsing reversionary modes and subtile display failures to increase awareness or insidious failure modes.
+
+Einstein on relation between human and the machine:    
+
+Computers are incredibly fast, accurate, and stupid.
+Humans are incredibly slow, inaccurate, and brillant.
+Together, they are powerful beyond imagination.
