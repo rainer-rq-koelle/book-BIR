@@ -2,6 +2,53 @@
 title: "Meteorology"
 ---
 
+Forces that drive the weather system.
+
+## The Atmosphere
+
+The atmosphere is a mixture of gases, including water vapour, solid particles (e.g. Dust and smoke), and some water in either solid of liquid form (e.g. clouds, mist, fog).
+
+Composition of dry air (no water/water vapour, and solids), the concentrations of gases are constant in the lower layer of the atmosphere (i.e., troposphere):
+
+* Nitrogen $N_2$: 78%
+* Oxygen $O_2$: 21%
+* Argon $AR$: 0.9% with traces of Carbon Dioxide $CO_2$ and other gases.
+
+These are relative percentages by volume in dry air.   
+Most gases are inert as far as the weather is concerned, carrying only limited amounts of energy as hot or cold air.    
+The three that play an important part are the very small percentages of Carbon Dioxide, Ozone, and water vapour.
+
+Water vapour carries the large amount of **latent (heat) energy**. It is a light transparent gas.
+It averages less than 1% by volume, with the local concentration of water vapour varying significantly from 0.001% in the coldest portions of the atmosphere to about 4% in hot and humid air masses.    
+Most of the water vapour in the atmosphere is found at low altitudes and in areas with higher air temperature, i.e., the tropics.
+
+The sun's energy reaches the earth as short wave radiation, and little is absored or reflected before it warms the earth's surface.   
+Long wave readiation is then emitted back into the atmosphere from below/the surface.
+Some of this long wave radiation is absorbed by the carbon dioxide and water vapour.
+This absorption is causing the ***greenhouse gas effect***.
+
+Ozone, an allotrope of oxygen made of 3 oxygen atoms rather than the usual two, is most concentrated in a layer in the upper stratosphere between 50 000 and 100 000ft (15 to 30 km).     
+Ozone absorbs harmful UV radiation from the sun. As the UV radiation is absorbed it causes a temperature increase in the upper atmosphere. The maximum heating occurs at the top of the ozone layer ~ 160 000ft (50km).
+
+### Pressure and Density
+
+In the atmosphere, there is a fixed relationship between temperature, pressure, and volume.    
+The general gas law is
+
+$$Pressure * Volume = R * Temperature$$
+$R$ a gas constant.    
+In meteorology we are most concerned with the **density** of the air/atmosphere.
+
+Density is defined as the mass of a unit volume of a gas, for a fixed mass of air, density is inversely proportional to volume.    
+This means that as the volume increases, the density decreases.
+
+$$\frac{1}{Volume} = \frac{Pressure}{R * Temperture}$$
+Substituting $Density ~ \frac{1}{Volume}$ 
+$$Density \alpha \frac{Pressure}{R * Temperature}$$
+Thus, density is directly proportional to pressure, and inversely proportional to Temperature.
+
+$$Density \alpha \frac{Pressure}{Temperature}$$
+
 relative humidity
 
 $$RH = 100 - 5* (T - T_d)$$
