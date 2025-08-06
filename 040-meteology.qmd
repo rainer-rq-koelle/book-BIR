@@ -6,6 +6,8 @@ Forces that drive the weather system.
 
 ## The Atmosphere
 
+The atmosphere is the gaseous medium enveloping our Earth and revolving with it as an integral body. The air is the basic gas composing the atmosphere, but to a very-small extent it also contains water vapor (the basic source of all fog, cloud, and precipitation) and suspended tiny microscopic solid particles called aerosols. The atmosphere gets lighter with increasing altitude. The atmosphere regulates heat, air, and moisture. It also protects us from the sun’s harmful rays and from meteoroids, and maintains the ecological balance on the Earth. Flying takes place only in the relatively denser portion of the atmosphere.
+
 The atmosphere is a mixture of gases, including water vapour, solid particles (e.g. Dust and smoke), and some water in either solid of liquid form (e.g. clouds, mist, fog).
 
 Composition of dry air (no water/water vapour, and solids), the concentrations of gases are constant in the lower layer of the atmosphere (i.e., troposphere):
@@ -30,6 +32,13 @@ This absorption is causing the ***greenhouse gas effect***.
 Ozone, an allotrope of oxygen made of 3 oxygen atoms rather than the usual two, is most concentrated in a layer in the upper stratosphere between 50 000 and 100 000ft (15 to 30 km).     
 Ozone absorbs harmful UV radiation from the sun. As the UV radiation is absorbed it causes a temperature increase in the upper atmosphere. The maximum heating occurs at the top of the ozone layer ~ 160 000ft (50km).
 
+### Temperature 
+
+Temperature is the most significant quantity which influences pressure and density of the air. 
+The differential heating on Earth causes weather changes.
+
+Air temperature is directly a measure of the average kinetic energy of air molecules. It is a physical quantity indicating the degree of heat or coldness of air.
+
 ### Pressure and Density
 
 In the atmosphere, there is a fixed relationship between temperature, pressure, and volume.    
@@ -48,6 +57,259 @@ $$Density \alpha \frac{Pressure}{R * Temperature}$$
 Thus, density is directly proportional to pressure, and inversely proportional to Temperature.
 
 $$Density \alpha \frac{Pressure}{Temperature}$$
+This relationship is crucial for the development of the vertical movement in the atmosphere, i.e. **convection**. 
+At constant temperature, decreasing pressure --> air less dense
+at constant pressure, decreasing temprature  --> air density increases.
+
+Air which is warmer than its surrounding - and therefore less dense - will rise and continue to rise.
+Air that is colder than its surroundings will sink.
+
+### Pressure
+
+Pressure which is a force per unity area is measured in (milli)bars.
+ICAO uses hPa: 1hPa == 1 mb.
+
+Average pressure of the atmosphere at sea level: 1013.25mb/hPa ~ 29.92 in(ches of mercury).    
+Pressure is commonly measured by a barometer
+
+```{r}
+knitr::include_graphics("./figures/met-pressure-mercury.jpg")
+```
+
+
+Surface pressure chart --> barometric pressure measurements from many observation stations recorded on surface weather charts. 
+For a first overivew of the pressure distribution is achieved by joining points having equal air pressure, i.e. **isobars**.
+
+Next to overview of the pressure distribution, the surface weather chart gives an estimation of the wind direction and speed at any point on the chart.
+
+
+### Density
+
+Density (in meteorology) is measured in grams per cubic meter.
+
+* dry air - pressure 1013.25 hPa, temp 15 C ==> density: $1225 g/m_3$
+* water vapour -''-     ==> $760 g/m_3$
+
+Water vapour (at sea level) has a density of about 760 g/m3 ~ about half of the density of dry atmosphere.   
+Thus, if water vapour is the air mixture (i.e., not dry air), the density is lower for the same conditions.
+Moist air is less dense than dry air at the same temperature and pressure.
+
+Air density decreases with altitude.     
+On average, the air density is half of that of sea level at 22 000ft, and a quarter of the sea level at 40 000ft.
+
+### ISA - International Standard Atmosphere
+
+ICAO has defined a standard atmosphere for instrument calibration and as benchmark for comparison.   
+The average values for sea level pressure, temperature, and density were taken as the starting point and the average change of the temperature with height added in.
+
+The ICAO Standard Atmosphere (ISA) is a model used to represent the average conditions of the Earth's atmosphere. It assumes a mean sea-level pressure of 1013.25 hPa and a temperature lapse rate of 6.5 °C per kilometer up to the tropopause, which is typically at 11 km altitude. The ISA serves as a reference for comparing actual atmospheric conditions at any given time and location, helping in various applications in aviation and meteorology. 
+Oxford Reference
++3
+
+Key properties of the ISA include:
+Pressure: Decreases with altitude.
+Temperature: Also decreases with altitude until the tropopause.
+Density: Varies with altitude, affecting aircraft performance. 
+
+This model is essential for flight planning and performance calculations in aviation.
+
+```{r}
+knitr::include_graphics("./figures/met-ISA-temperature.png")
+knitr::include_graphics("./figures/met-atmosphere-temperature-pressure.jpg")
+```
+
+
+### Calculating ISA Deviation
+
+To correct from ISA to real world, the deviation from ISA needs to be calculated.
+I.e., the difference between the calculated ISA value for temperature at a specific height and the real environmental termperature, the outside air temperature OAT.
+
+Often OAT given --> determine associated ISA temperature by using lapse rate of 2C per thousand feet from a surface/sea level temperature of 15C --> typically close enough to get ther right answer.
+
+$$T_{ISA} = 15 - (height in 1000ft * 2)$$ 
+or
+$$T_{ISA} = 15 - (height in km * 6.5)$$
+deviation from ISA: $OAT - T_{ISA}$.
+if $OAT > T_{ISA}$ - deviation positive
+
+Example:
+
+OAT at FL100 := -8C
+==> ISA at FL100: 15 -(10 * 2) = 15 - 20 = -5
+OAT colder ==> deviation -3C   (or OAT - T_ISA = -8 -(-5) = -3)
+
+
+Beware of ISA temperature above 11km (36090ft) and up to 20km (65817ft) is constant at -56.5C
+
+OAT at 39000ft is -45C - what is the ISA deviation
+OAT -TISA = -45 -(-56.5) = 11.5 degree    
+OAT warmer than TISA, i.e. positive deviation!
+
+
+What is the OAT at FL240, if it is ISA + 7?
+
+ISA at FL240 = 15 - (24 * 2) = 15 - 48 = -33    
+OAT := ISA + 7 = -33 + 7 = -26C
+
+
+Temp at FL80 = 6C, what at FL130 if standard lapse rate
+FL130 - FL80 = 5000ft --> lapse: 5 * 2 = 10 ==> 6 - 10 = -4C
+
+## Altimetry
+
+Altimeters can be adjusted to read heights above a certain datum. 
+
+* **height (above ground)**: QFE (field elevation) - station pressure: 0 at ground
+* **altitude (above MSL)**:  QNH (nautical height ~ nautical ~ MSL) - station pressure QFE adjusted to mean sea level using ISA for termperature: station elevation on ground = field elevation.
+* **pressure altitude / FL**: standard pressure 1013.25mb: pressure altitude (typically given in FL) 
+
+* QFF station pressure adjusted to MSL using the actual station temperature and the actual lapse rate (including surface inversions) ==> used by meteorological service as accurate value for the air pressure at MSL.
+
+QNH used GND - transition altitude (regional QNH); regional QNH is the lowest of all the forecast QNH values for maximum safety margin.
+QFE is the pressure of the highest point of the airfield (if needed separate touchzondn point/zone QFE)
+
+QNE is the touchdown height if altimeter set to standard/1013.25mb = pressure altitude of the trouchdown.
+
+If temperature and lapse rate are in accordance to ISA: QNH == QFF.
+
+For stations above sea level:
+
+* temperature warmer than ISA: QNH > QFF
+* coder than ISA: QNH < QFFf
+
+stations below sea level
+* tmep warmer than ISA: QNH < QFF
+* temp colder than ISA: QNH > QFF
+
+CHANGING SUB-SCALE SETTING   
+By definition, if the reference datum is changed, the indicated height will change!
+
+Example: take-off altimeter is set to QNH 1003 hPa. Transition altitude is 3000ft.    
+As aircraft passes through transition altitude, the pilot sets altimeter to 1013.25mbar.
+
+
+3000ft --------------------------------- 3270ft
+|                                            |
+|                                            |
+1003hPa       = 10hPa --> 10 * 27 = 270ft ---|
+|------------ 1013                        ---|
+
+
+### Temperature Error
+
+True altitude will differ from indicated altitude, if the temperature differs from ISA.   
+In high temperature air masses, any given pressure level will be at a greater altitude than in cold air masses.
+
+Altimeters measure pressure. Thus, the altimeter will show the same altitude at the same pressure level irrespective of any termperature difference.
+
+                                ------------
+                                |           |
+--------------- 700 hPa ----------------------- "altimeter measures pressure"
+            |              |    |           |
+---------|  |              |    |   warm    |
+  cold   |  |    ISA air   |    |   air     |
+  air    |  |              |    |           |
+------------ 1013 hPa --------------------------
+
+In ISA conditions, the 700hPa level is almost exactly at 10 000ft.
+In cooler air, the 700hPa level -- which the altimeter reads at 10 000ft -- is significantly lower.
+(Im winter sind the Berge höher!)      
+In low temperatures the altimeter **over-reads**.     
+In warm air, it under-reads.
+
+Thus, air mass temperature deviation from ISA makes no relative difference to height keeping for air traffic reasons, as all aircraft will be subject to the saem error.     
+However, the absolute separation between pressure levels is reduced in cold air.    
+E.g. while there is a height separation of 1000ft between DL300 and FL310, the separation is less than 1000ft  in cold air, while it increases in warm air.
+
+
+```{r}
+knitr::include_graphics("./figures/met-altimetry-temp-true-vs-indicated-altitude.png")
+
+# source: https://skybrary.aero/articles/altimeter-temperature-error-correction
+```
+
+
+
+Temperature Error correction    
+
+best done with flight computer --> rule of thumb:
+
+1. barometric error can be calculated separately - do this first
+2. temp correction applies to the band of atmosphere between the level where the altimeter reads correctly and the aircraft. This datum level is station elevation for airfields QNH and touchdown QFE. If sea level pressure QFF is given, the datum is sea level.
+3. ISA deviation can be assumed to be the same at all heights.
+4. pressure are whole milibars rounded down.
+5. 4% height difference in true altitude from indicator altitude for every 10C difference in air mass temperature (every 10C of ISA temperature deviation).
+
+4% of height difference for every 10C of termperature difference     
+4% * (height in thousands of feet) * ISA deviation.
+
+Example:
+flight in FL200. OAT = -40C, pressure at sea level 1033hPa.    
+What is the true altitude?
+
+-------- PA = FL200 = 20 000ft
+
+--- standard 1013
+                    20hPa * 27ft = 540ft
+--- MSL = 1033hPa
+
+ISA @ FL200: 15 - (20[000] * 2) = 15 - 40 = -25
+"check Otis": ISA dev = OAT - TISA = -40 - (-25) = -15
+
+temp correction error: 4% * 15/10 * 20 540ft = 4 / 100 * 30 810ft = 308 * 4 = 1232ft
+
+temp is colder than ISA = altimeter overreads == 20540 - 1232 = 19308ft   
+true altitude lower thn indicated!
+
+
+### Relationship between QNH and QFF
+https://www.youtube.com/watch?v=wTfM0-ysCsk
+QNH is calculated from station pressure assuming ISA conditions.    
+QFF is the actual sea level pressure.
+
+If temperature different from ISA, QNH and QFF will be different.
+
+```{r}
+knitr::include_graphics("./figures/met-QNH-QFF.png")
+```
+
+relationship reverses for aerodromes below sea level (how realistic). In colder air QNH > QFF.
+
+### Temperature Correction
+
+why is QNH on the ground give you correct airfield altitude above mean sea level?
+
+--> altimeter is calibrated to ISA.
+--> QNH assumes barometric lapse rate: 27ft ~ 1 hPa
+
+For QFF, we would need to correct for the temperature to get the correct reading on the ground.
+
+**If the temperature differs from ISA, the QNH will only read the correct altitude on the ground.**
+If you are airborne the altitude needs to be corrected for the temperature to obtain the **true altitude**.
+
+In warm conditions this is not dangerous. True altitude willbe higher than indicator.
+However, in cold air, true altitude lower than indicator (Berge höher)!
+
+==> temp error correction for minimum descent heights and decision heights in very cold conditions.
+The amount to add on the indicated height or altitude is usually derived from correction tables.
+
+Temperature correction example
+
+
+Definitions
+* altitude - above AMSL
+* elevation - ground point AMSL
+* height - point or level (altitude minus elevation)
+* pressure altitude - indicated altitude with standard pressure
+* flight level - pressure altitude in abbreviated form
+* true altitude - the result of correcting a pressure altitude for both i.) pressure (barometric) and ii.) termperature deviations from ISA. Baro correction performed first to give an indicated altitude, which is what the altimeter would read with QNH set. Then, temp correction for True Altitude.
+* True Height - true altitude minus elevation
+
+QFE
+QNH
+QFF - station pressure reduced to MSL using the actual station temp and lapse rate. QFF set on altimater, it would read 0 when aircaf landed at sea.
+
+
 
 relative humidity
 
