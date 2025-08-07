@@ -310,6 +310,116 @@ QNH
 QFF - station pressure reduced to MSL using the actual station temp and lapse rate. QFF set on altimater, it would read 0 when aircaf landed at sea.
 
 
+## Temperature and Heat
+
+### Basics
+
+Temperature is the measure of the level of molecular activity within a substance/air cell.
+It is not a direct measure of the amount of energy present.
+
+--> feasible: small hot objects that contain little energy, or large objects that contain huge amounts of heat energy.
+
+CLEARLY SEPARATE between temperature and heat energy!
+
+objects cooled to a temperature of absolute zero, i.e., -273degC or 0 Kelvin, all molecular activity stops.
+In such a case the object contains no heat energy.
+
+If we add energy, the temperature will increase.    
+However, how much the temperature increases depends on the "material" (i.e., air composition).
+
+
+By definition, units of heat energy are expressed in terms of behaviour of water.
+The amount of heat energy needed to increase 1 gram of water by 1 centigrade (or Kelvin) is 1 calorie (cal).
+
+10 cal added to  1g of water --> temperature increases by 10degrees.    
+10 cal added to 100g of water --> temperature increase by $\frac{10cal}{100g} = $0.1 degrees
+
+Water has the highest ability to **absorb** heat.     
+Thus, other material will heat up more easily.
+
+specific heat of a substance := amount of heat required for the same temperature increase.
+
+Water has a specific heat of 1.0.    
+Most common other substances have specific heat values of (much) less than 1.0.     
+For example, ice has a specific heat of approx. 0.5.
+
+Thus, 
+
+* 1 cal --> raise temperature of 1g of water by 1 degree C
+* 0.5 cal --> to raise temp of 1g ice by 1 degree C, and 
+* e.g. 0.25 cal --> to raise temp of 1g of rock by 1 degree C.
+
+This explains how oceans (water) and land masses respond to sun energy.   
+The sea stays more or less at the same temperature (day ~ absorption of energy, night ~ re-radiation) during day and night, winter and summer, while    
+land masses heat up quickly and cool down quickly.
+
+### Heating of Troposphere
+
+The sun heats the atmosphere by radiation.    
+The earth heats the atmosphere by radiation, conduction, and convection.
+
+**Radiation**    
+Earth has a lower temperature than the sun. Earth radiates this energy at a longer wavelength ~ 10 micron band.
+Low level radiation is absorbed in water vapour and carbon dioxide, and by clouds.
+This heats the troposphere/atmosphere, especially at the lower troposphere where water vapour and clouds are at maximum.   
+
+Some long wave reradiation is re-radiated and reflected back to earth. 
+Maximum reflection occurs in overcast conditions (~ reflective shield/layer of clouds)
+
+**Convection**    
+Heat transfer (aloft) can occur as a vertical movement of air.   
+* forced convection - air forced up over a range of mountains, or mechanical turbulence in the lee of hills or mountains;
+* thermal convection - heated air having a lower density than its surrounding will rise.
+
+Rising air carries energy aloft in two forms:     
+* ordinary heat energy
+* latent heat energy
+
+As the air rises and cools, water vapour in the air cell may condense to form clouds.
+Through the forming of clouds, the air releases its latent energy / latent heat of condensation.
+
+**Advection**    
+Advection is the horizontl movement of air, i.e., wind.   
+Advection only transfers energy horizontally.     
+This means advection is not heating the troposhere. It only "re-distributes" the energy within it.(affects stability of air)
+
+Thermal advection can be divided into    
+
+* warm air advection (WAA) - movement of warm air toward a fixed point on a horizontal plane, e.g. warm fronts and ahead of cold fronts. Warm air advection "contributes" to rising air as warm air is less dense than cool air (as warm air expands to a larger volume than cold air). This expansion pushes the warm air above the low (denser/colder) air.
+The upward movement is slow and the rate that the air rises is much less than the rate the air rises in an updraft of a thunderstorm.
+
+* cold air advection (CAA) - movement of colder air toward a fixed point on a horizontal plane. CAA is common behind cold fronts. Cold air advection contributes to sinking air because cold air is denser than warm air. Cooler air has contracted more than warmer air, and this contraction in the low levels forces a sinking motion aloft to compensate for the reduction of volume in the lower levels.     
+Thus, in an ideal case, the skies will be clear behind cold fronts.
+
+There is **not a direct relationship between thermal advection and the resultant vertical motion** in the atmosphere, as other lifting/lowering mechanisms play a role as well.
+Evaporative cooling, condensation cooling, solar heating, complex topography, and radiational cooling contaminates thermal advection.     
+A forecaster will examine these factors to determine the actual magnitude of the resultant thermal advection. For example, the warming and uplift from WAA will be reduced in cases where precipitation is falling into the low levels and cooling the air through evaporation.
+
+### Diurnal Variation of Surface Temperature
+
+The daily (or diurnal) variation in surface temparture is important.
+It influences the formation of radiation fog, land and sea breezes, and the development of convective cloud during the day.
+
+The balance between incoming and outgoing radiation is shown in the figure (typical day over land, May or September, middle latitudes, with sunrise at 0600 local mean time LMT and sunset at 1800 LMT)
+
+```{r}
+#| out-width: 70%
+knitr::include_graphics("./figures/met-diurnal-deficit-surplus.png")
+```
+
+surplus in exceeding area. deficit below the longwave radiation.
+
+expectation that surface temperature would decrease during radiation deficit.    
+However, multiple factors at play. With (daily) increase in temperature, thermal convection begins and winds mix the air (even turbulent mixing). Calm nights can see higher cooling of earth, ... see breezes ... clouds. 
+
+Figure could be overlaid with clear skies and overcast "Deckel"/blanket.
+Clouds limit incoming radiation and reflect back the the outgoing re-readiation. Thus, reducing a reduction in temperature.    
+Thick clouds are more effective. Clouds with low bases are efficient in reducing the daytime maximum termperature and diurnal temperature rante DTR. High/middle clouds less effective.
+
+Overall effect: minimum surface temperature occur at about 30 minutes after sunrise, max temp at tow/three hours past mid-day.   
+Cloud blanket "dampens" the variation of the temperature.
+
+## Water Vapour
 
 relative humidity
 
