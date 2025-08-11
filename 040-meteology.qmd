@@ -2,7 +2,21 @@
 title: "Meteorology"
 ---
 
+Climate: the composite or generally prevailing weather conditions of a
+region, throughout the year, averaged over a series of years.
+
+Weather: the state of the atmosphere at a place and time with respect to
+wind, temperature, cloudiness, moisture, pressure, etc.
+
 Forces that drive the weather system.
+
+:::{.callout-note}
+GUCKSTU
+* some useful / easy to comprehend stuff: https://people.wou.edu/~taylors/gs106/ES106_home.html; in particular 6,7 8 https://people.wou.edu/~taylors/gs106/class_notes_atmosphere2.pdf
+* https://www.weather.gov/source/zhu/ZHU_Training_Page/ZHU_Training_Page.html several notes
+*  https://www.langleyflyingschool.com/Pages/CPGS%20Meteorology,%20Part%201.html; https://www.langleyflyingschool.com/Pages/CPGS%20Meteorology,%20Part%202.html
+* general stuff including meteorology: https://www.langleyflyingschool.com/Pages/Classroom.html
+:::
 
 ## The Atmosphere
 
@@ -155,6 +169,13 @@ OAT := ISA + 7 = -33 + 7 = -26C
 Temp at FL80 = 6C, what at FL130 if standard lapse rate
 FL130 - FL80 = 5000ft --> lapse: 5 * 2 = 10 ==> 6 - 10 = -4C
 
+## Radiation
+
+```{r}
+knitr::include_graphics("./figures/met-radiation.png")
+```
+
+
 ## Altimetry
 
 Altimeters can be adjusted to read heights above a certain datum. 
@@ -261,6 +282,16 @@ temp correction error: 4% * 15/10 * 20 540ft = 4 / 100 * 30 810ft = 308 * 4 = 12
 temp is colder than ISA = altimeter overreads == 20540 - 1232 = 19308ft   
 true altitude lower thn indicated!
 
+flight in FL100, temp dev -15C, pressure at sea level 983hPa
+
+--------- PA = FL100 = 10000ft
+
+---  MSL: 983 ------------------------------> ALT = 10.000 - 810 = 9190ft
+                      30hPa * 27ft = 810ft
+---- standard 1013
+
+ISA dev = -15
+temp correction 4% 15/10 * 9190ft = 4/100 * ... 551.4  9190 - 551
 
 ### Relationship between QNH and QFF
 https://www.youtube.com/watch?v=wTfM0-ysCsk
@@ -419,9 +450,787 @@ Thick clouds are more effective. Clouds with low bases are efficient in reducing
 Overall effect: minimum surface temperature occur at about 30 minutes after sunrise, max temp at tow/three hours past mid-day.   
 Cloud blanket "dampens" the variation of the temperature.
 
-## Water Vapour
+## Moisture and Convection
 
-relative humidity
+Increase in temperature --> higher molecular activity --> some molecules to escape (liquid) to gas state.
+Increase in pressure --> resistance to 'escape'.
+
+Water will continue to evaporate until the concentration of water vapour reaches a point where the water vapour pressure is high enough to "push back" water molecules at the same rate as they are escaping.
+The air is then **saturated** with water vapour.     
+This is known as the **saturation vapour pressure (SVP)**.
+
+If the air subsequently cools, the gas pressure will push some vapour back to the water state.
+This is visible as cloud fog or dew.     
+The concentration of water vapour will decrease until the temperature and gas pressure are in equilibrium again.
+
+The saturation water pressure depends ONLY on the TEMPERATURE and the EVAPOURATING SURFACE.
+
+The SVP is slightly lower over ice than over supercooled water at the same temperature (below 0 degrees [ice melts for T > 0]).
+If unsaturated air is cooled below 0 degrees C, the frost point is reached before the dew point. 
+Hoar frost forms.
+
+### Saturated Air
+
+Air at low temperatures reaches saturation at very low concentrations of water vapour.    
+At 15C, air saturates at a 2% concentration; at 30C at about 4% concentration.   
+
+This explains why the average concentration of water vapour in the troposphere is generally so low.    
+Consequently, the majority of water vapour will be found in areas with warm air, i.e., tropics.
+
+### Atmospheric Humidity
+
+**humid** marks a relatively high level of water vapour in the atmosphere.
+
+Water vapour constitutes (only) 0-4% of the total volume of the atmosphere.   
+However, it is the most important determinant of waether and climate:
+
+* water vapour condenses to form precipitation. The potential for precipitation is determined by the amount of water vapour.
+* water vapour is an active absorber and emitter of infrared radiation. It affects heating and cooling of the atmosphere and surface.
+* latent heat releases when vapour condenses or freezes. == energy source for atmosphereic motion and convective weather systems.
+* vertical transport of water vapour, through cumulous convection is the most important mechanism for upward transport of heat in the atmosphere.
+* the amount of water vapour influences the rate of surface evaporation and transpiration. (Humans and animals are uncomfortable in highly humid conditions that impede the rate of perspiration. At low humidity levels --> dehydration)
+
+The main sources of water vapour in the lower atmosphere are the evaporation from the surface and transpiration by plants.    
+In the stratosphere, the breakdown of methane by sunlight.
+
+**vapour pressure** - partial pressure of air that is exerted by water vapour (hPa or mb)    
+**absolute humidity** - mass of water vapour per unit volume of space, grams per cubic meter $\frac{g}{m^3}$. ~ density of water vapour.       
+**specific humidity** - mass of water vapour divided by mass of air - $\frac{g}{kg}$    
+**mixing ratio** - mass of water vapour divided by the mass of dry air - $\frac{g}{kg}$      
+**saturation mixing ratio** - air can only hold a certain amount of water vapour at any given temperature before it is saturated. The total amount of evaporate air can hold at any given termperature by weight relatioship.     
+**dew point temperature** - temperature to which air must be cooled - at constant pressure and vapour content - for saturation to occur. The frost point temperature applies to saturation of ice.
+** relative humidity** - ratio of specific humidity to saturation specific humidity. The amount of water vapour compared with the amount required for saturation (at particular temperature and pressure).     
+**saturation** (or equilibrium) - condition of the atmosphere when evaporation rate is equal to the condensation rate. When air is saturated, the amount of water vapour is the maximum hat air can hold at that temperature and pressure.
+
+HUMIDITY MIXING RATIO     
+The humidity mixing ratio measures the content of water vapour in the air.    
+The ratio in grams of water vapour to kilogram of dry air.   
+The saturation mixing ratio is the respective value corresponding to saturation.
+
+As air gets warmer or cooler, the mixing ratio remains constant, but the relative humidity and saturation mixing ratio changes as the air is capable of holding more or less water vapour at different temperatures.
+
+The absolute humidity is a measure of mass of water vapour per unit volume of air. Specific humidity is the same as mixing ratio (mass of water vapour per unit mass of air). These will not change as temperature changes.
+
+More water vapour means more latent energy.    
+If air cannot hold any more water vapour it is saturated.
+
+EFFECT OF ALTITUDE     
+With increasing altitude, temperature generally decreases.   
+On a general level: in ISA, the saturation mixing ratio - or the mass of water vapour air can hold - decreases with height.
+
+Note: at constant pressure and temperature, the density of the air will decrease as humidity increases. This is because for each additional molecul of water vapour, a molecule of nitrogen, oxiygen or the other gases will be replaced in order to keep the temperature and pressure constant.     
+A molecule of water vapour has less mass than a molecule of any of the gases displaced. Thus, the mass of a given volume of atmosphere will decrease with increasing humidity.
+
+* relative humidity
+* dew point
+* wet bulb temperature
+
+
+### relative humidity
+
+**relative humidity** tells us how much (or how much more) water vapour the air is holding compared to what it could hold.   
+
+$\text{relative humidity} = \frac{\text{water vapour content}}{\text{water vapour capability}}$
+
+saturated air: RH = 100% (cannot hold more water vapour)     
+unsatuated air: RH < 100%
+
+Diurnal "expectation": with increasing temperature of the atmosphere, the RH will decrease, and - after the maximum daily temperature is reached at about 1400hrs, the RH will increase as the air cools down.
+
+Saturation mixing ratio will decrease (gently) with altitude in a normal atmosphere.   
+Thus, if a parcel of air is raised up, its relative humidity will generally increase and ultimately clouds will form. Rising air cooling down can hold less water.
+
+```{r}
+knitr::include_graphics("./figures/met-relative-humidity-change.png")
+```
+
+cooling air == increasing relative humidity (air gets denser, content gets closer to capacity)
+warming air == decreasing relative humidity (air expands, capacity increases 1/capacity)
+
+
+### Dew Point Temperature
+
+Relative humidity increases with cooling of an air parcel.   
+Eventually, parcel temperature reaches a level with RH = 100%.    
+From this temperature on down, liquid water will condense out of the mix as cloud or dew while the RH remains at 100% with reducing water vapour content, but increasing amounts of liquid water - the total water content in the parcel remains the same.     
+The temperature at which this happens: dew point temperature. Can be measured directly using a dew point hygrometer.
+
+So long water content or pressure are not altered, the dew point remains the same.   
+Increasing the temperature will cuase the moisture to evaporate.   
+Decreasing the temperature to the dew point will produce condensation again.
+
+If the OAT is higher than the dew point, the air is less than saturated, i.e., less than 100% RH.   
+The further apart OAT and dew point, the drier the air and the lower the RH.   
+== dew point spread.
+
+SVP over ice is slightly lower than over water --> frost will form below 0 deg before the dew point.
+As frost point and dew point are very close, some references refer to frost point to describe (also) the dew point at sub-zero temperature.
+
+**Dew point** is the temperature at which cloud or dew forms.    
+The **dew point spread** tells how moist/humid the air is and indicates the relative humidity.
+
+### Measurement of Humidity - Wet Bulb
+
+picture - temp measurement by two thermometers. One "normal", the other with bulb wrapped in moist cloth.
+Wet bulb thermometer will measure lower temp.   
+As relative humidity increases, evaporation slows down, and finally ceases at saturation.
+
+==> difference between wet bulb temperature and dry bulb temperature gives a measure of relative humidity.    
+Note: wet bulb temp is not the dew point and always falls between the dew point and OAT. However, all three coincide at saturation with RH 100%.
+
+Wet bulb and dry bulb thermometer together is knowns as "psychometer" or "Mason's hygrometer".   
+Readings allow to calculate the RH.   
+
+The wet bulb / dry bulb spread tells how dry the air is.   
+The wet bulb temperature lies between dew point and OAT.
+
+if air dry --> moisture will evaporate rapidly from the cloth.   
+The latent heat needed is taken from wet bulb.
+
+### Lapse Rates
+
+Temperature varies with height ~ 6.5C per 1000m or 2C per 1000ft ~ ISA.   
+This is the **average environmental lapse rate (ELR)**.   
+In the real atmosphere, the ELR can be different from the average (ISA).
+
+ELR is measured by a radio sonde ~ balloon carrying instruments to measure temperature, pressure and humidity.
+
+Temperature/height diagram ~ temparture/pressure diagram, as height ~ pressure in the atmorsphere. := T/P diagram.
+
+If the air mass has been cooled in the lower layers by conduction from a cold surface, for example, then the temperature may rise as height increaes := temp inversion.
+If temp stays constant as height increases := isothermal layer.
+
+#### Dry Adiabatice Lapse Rate
+
+Convection taks place rapidly and the rising air does not mix with the environment.
+Similar to a balloon.   
+This "isolation" means that no energy will pass in or out of the rising parcel of air.   
+This is called **adiabatic** := without energy gain or loss.
+
+Rising parcel of air is moving to lower atmospheric pressure. Thus, parcel will expand.
+With expansion, parcel temperature cools.   
+With no energy going in or out, we can calculate the temperature decrease, as it only depends on the Gas Laws.
+
+Rising dry air where no condensations of moisture is involved will cool adiabatically at 3C per 1000ft ~ 1C per 100m.   
+This is true for all starting temperatures and all heights.
+== **dry adiabatic lapse rate** DALR.
+
+#### Saturated Adiabatic Lapse Rate
+
+Non-dry saturated air holds all the water it can.
+If such an air parcel rises, temperature cools. Thus, water vapour will condense out to water releasting internally some of the latent energy/heat.   
+This internal release of heat will reduce the lapse rate := **saturated adiabatic lapse rate SALR**
+
+The SALR is not constant. The reduction from the DALR depends on the rate at which the latent heat is released internally. This depends on the total amount of water vapour present at saturation.
+
+At sea level in temperature climates, the SALR is about 1.8C/1000ft (0.6C per 100m).    
+In the tropics, SALR can be 1C/1000ft.    
+At surface temps below -20C (where the total water content at saturation is very low) is is near to the DALR.   
+Ditto at higher altitudes.
+
+==> DALR, SALR, and ELR.
+
+
+RESOURCES: https://homepages.see.leeds.ac.uk/~lecimb/envi1400/lectures.html
+
+```{r}
+knitr::include_graphics("./figures/met-DALR-SALR.png")
+```
+
+
+
+DALR ~ 3deg/1000ft    
+SALR ~ 1.8 deg/1000ft
+
+
+### Unstable Air
+
+ELR bigger than DALR (and SALR)
+
+A parcel of air rising and cooled adiabatically will be "warmer" than the environment.
+And at the same pressure, the air parce will be less dense and will continue to rise. 
+
+Rising air is **unstable** in the air mass - whether saturated or not.   
+If ELR is grater than DALR: "the air mass is absolutely unstable".
+
+Rising air is always warmer than the environment ==> keeps rising.
+
+### Stable Air
+
+ELR very low - perhaps even negative (temperature inversion).
+Accordingly, the air aloft is relatively warm.
+
+Rising parcels are colder than the environment - no matter if cooled at DALR or SALR.
+Such cooler cells are mome dense and will sink back to lower altitudes.
+
+The airmass is *stable to rising air**.    
+If ELR is less than SALR, the airmass is **absolutely stable**.
+
+==> isothermal layers and temperature inversions are absolutely stable air portions.
+
+### Indifferent (Neutral) Stability
+
+Neutral stabiity is an atmospheric condition that occurs when the environmental lapse rate ELR is equal to the dry adiabatic lapse rate: ELR == DALR.
+
+### Conditionally Unstable Air
+
+DALR 3deg/1000ft > ELR >  1.8 deg/1000ft SALR
+
+air is stable, if dry - but unstable if saturated!
+
+not saturated air would follow DALR, cools, and falls back == stable.    
+if saturated air parcel follows SALR, and would end up warmer than ELR == unstable
+air forced to rise cools at DALR (and is stable). After reaching its dew point (base of clouds), it couls at SALE and becomes unstable.
+
+REFLECTION
+
+ELR is not constant all the way up to the tropopause. The air mass can have different chracteristics at different levels. I.e., being stable at low levels and unstable aloft, or being generally unstable with a stable layer at medium altitudes.
+
+Average ELR for tropopause ~ 2deg/1000ft. Air mass stability varies widely from place to place.
+Accordingly - the expectation is that - average condition for troposphere is **conditional instability**.
+This means that ther is an average tendency for saturated air to rise and contine to rist.
+
+**Super-instability** with an environmental lapse rate above DALR does not occur often.   
+In such conditions, instability makes warm air rise quickly aloft and bring cold air down to replace it.
+This brings the ELR back to a more normal value.
+
+Advection of air - warm or cold - can affect stability of the atmosphere.     
+Warm air advection at the surface and/or cool air advection aloft will enhance the atmosphereic instability.    
+Conversely, advection of cold air at the surface can contribute to a stable atmosphere.
+
+SUMMARY
+
+conditions that enhance **atmospheric instability**:
+
+* warming of surface air by
+  + solar heating of ground
+  + warm "advection" near surface
+  + air moving over a warm surface (e.g. a warm body of water)
+* cooling of air aloft by
+  + cold advection aloft
+  + radiative cooling of air/clouds aloft
+  
+conditions that contribute to a stable atmosphere
+
+* radiative cooling of surface at night
+* advection of cold air near the surface
+* air moving over a cold surface (e.g. snow)
+* adiabatic warming due to compression from ubsidence (sinking)
+
+```{r}
+knitr::include_graphics("./figures/met-stability-one-fig.png")
+```
+
+
+- if the ELR is less than the SALR, the air is absolutely stable, since even saturated air will cool more rapidly than the environment.
+- if the ELR is between the SALR and the DALR, the air is conditionally unstable, since dry air will cool more rapidly than the environment but saturated air will not.
+- if the ELR is equal to the DALR, the air is neutrally stable - but only so long as the air doesn't saturate. (You could say it is conditionally unstable too)
+- if the ELR is greater than the DALR ( and therefore also the SALR) the air is absolutely unstable.
+
+As for the value of the lapse rates, the DALR remains fairly constant at 3o / 1000ft. The SALR results from the release of latent heat when water vapoiur condenses and the rate of condensation depends on the amount of water vapour, the ambient temperature and the ambient pressure. Therefore the SALR is also dependant on these too. In fact, at sea level it is about 1.2oC/1000ft but at 18000ft, it is about 2.4oC/1000ft.
+
+
+## Clouds 
+
+WMO defines cloud as "... a hydrometeor consisting of minute particles of liquid water or ice, or of both, suspended in the atmosphere and usually not touching the ground. It may also include larger particles of liquid water or ice, as well as non-aqueous liquid or solid particples such as those present in fumes, smoke, or dust.
+
+Cloud formation: air at the surface is normally not saturated and has a RH of less than 100%, and a dew point and a wet bulb temperature lower than OAT.    
+If the air parcel rises, if will cool down at the DALR initially until it reaches the dew point.    
+At that height, a cloud will form.   
+
+If we assume the air parcel is forced to rise (further) - ignoring why - we can do calculations on cloud base height and temperature.
+
+```{r}
+knitr::include_graphics("./figures/met-cloud-formation.png")
+```
+
+example:
+- air mass with surface OAT of 20C, dew point of 13C, and wet bulb temp of 16.4C ~ typical summer day.
+- if air rises, the air parcel dry bulb temperature will fall at DALR, 3 deg/1000ft [is this important?], wet bulb temp at SALR 1.8deg/1000ft
+
+air parcel dew point decreases with height ~ dew point lapse rate ~ 0.7C/1000ft.
+
+The wet and dry bulb temperatures are converging at $DALR - SALR = 1.2 deg/1000ft$.
+
+All three temperatures will coincide at cloud base.
+
+==> $T - T_{wb} = 20 - 16.4 = 3.6$ -->$3.6 / 1.2 deg/1000ft$ --> 3000ft.
+
+Temperature at cloud-base: OAT = 20C --> 20C - 3deg/1000ft * 3000ft = 20 - 9 = 11C
+
+
+example 2: OAT at surface 15C, wet bulb temp 9C.    
+What is height and temperature at cloud base?
+
+OAT - Twb = 15C - 9C = 6C    
+converging at 1.2C/1000ft: $\frac{6 C}{1.2 \frac{C}{1000ft}} = (6 / 1.2)*1000ft = 5000ft$   
+==> cloud base at 5000ft
+
+temp lapse: $OAT - DALR*Height = 15C - 3*5 = 0C$    
+==> temp at base 0C
+
+
+example: cloud base in 3000ft with an OAT of 5C.     
+What would be the OAT, wet bulb and dew point on the surface.
+
+cloud base ==> OAT(3000ft) == T_wb(3000ft) == T_d(3000ft)
+
+$DALR * Height = 3 deg/1000ft * 3000ft = 9$, $OAT_{GND} - 9 = 5 ==> T_{GND} = 5 + 9 = 14$
+$SALR * Height = 1.8 deg/1000ft * 3000ft = 5.4$ ==> $T_{wb} = 5 + 5.4 = 10.4$
+
+dew point must be "slightly" higher that dew point at cloudbase, but lower than wet bulb temperature at surface. ==> pick respective multiple choice answer!
+
+### Thermodynamic diagrams - Tephigrams
+
+Meteorologists use accurate graphs of temperature and pressure height --> thermodynamic diagram.
+These are based on radiosonde readings for the analysis of the actual state of the atmosphere.
+
+???
+
+Thermodynamic diagrams contain 5 sets of lines:
+
+* pressure (isobars)
+* temperature (isotherm)
+* dry adiabatic lapse rate - solid green lines sloping upwards - change in temperature that an unsaturated air parcel would undergo, if moved up and expands because of pressure
+* saturated adiabatic lapse rate - solid blue lines - saturation adiabats - show temperature change that a saturated air paces undergoes when vertically displaced. Appear as curves with slopes ranging from 0.2C/100m in warm air new surface to 1C/100m when approaching dry adiabats.
+* saturation mixing ratio - dotted blue lines. Saturation mixing ratio is the theoretical maximum amount of water vapour that an air cell at a specific temperature and pressure can hold. When saturated, air cannot hold any additional water vapour.
+
+pressure and temperature define the thermodynamic state of an air parcel of unit mass at any time. 
+Thus, any point (P,T) gives a parcels position with respect to temp and pressure.
+
+
+```{r}
+knitr::include_graphics("./figures/met-cloud-categorisation.png")
+```
+
+## Convection - Triggers
+
+triggers for surface air to rise:
+
+* orographic trigger - air mass is forced to rise over rising ground, hills, or mountains. "Orographic" ~ dp with mountains.
+* thermal trigger - heating of air in lower layers. For example, seasonal or daytime heating of the surface, or from local areas that are particularly hot (i.e., factories or power stations).
+* frontal surface / meeting of air masses - warmer air will be forced to rise over the colder air := frontal convergence.
+* non-frontal convergence - surface air is moving and converging and the only way out is "up". convergence of low-level winds is associated with rising air and convection.
+* turbulence at low level, usually with strong winds in the lee of mountains.
+
+### Orographic Triggers
+
+If the air mass is unstable, any rising ground will trigger immediate convection.
+This will continue up to form cloud when the rising air cools down to its dew point.
+
+If the air is very dry, a cloud never form, but the convection (rising of air) will be there.
+"Blue thermals" ~ glider flying.
+
+If the air is absolutely stable, then no matter how high the mountains, the air will sink back down on the lee side. There will be no convection.
+
+However, if the stable air is lifted to a level where the temperature is below the dew point, stratiform cloud will form. The cloud will not rise much higher that the high ground which is causing the lifting.
+
+Conditionally unstable air. --> initial rising at an (average) ELR of 2C/1000ft (ELR < DALR).
+If the air was forced to continue to rise, would first cool at DALR until it reaches its dew point.
+At that momment cloud forming would begin.
+If it is forced to rise further, it cools at SALR. 
+Once ELR = SALR, air turns unstable.
+
+The air becomes unstable when the line for the rising air crosses the ELR, marked as the instability level.    
+It will then continue to rise unaided until the ELR intersects SALR (ELR rate reducing, slow warming).
+:= cloud top level.     
+In practice, the vertical momentum of the air carries it a few thoughsand feet above the crossover point.
+
+Faced with three different orographic triggers, shown in diagram, what will happen?     
+
+1. Passing over the small mountain, the air will not cool enough to form a cloud, nor will it be unstable ELR < DALR: ==> sinks back on downwind side of mountain.
+
+2. with higher mountain, the air rises high enough to form cloud, but remains stable ELR < SALR.  
+==> sinks back down forming a (mountain) "cap" cloud.
+
+3. with higher mountain, cloud forms, air turns unstable with ELR > SALR, and cloud continues to rise.
+These large coulds drift away from downside of mountain.
+
+The "size" of the orographic trigger determines how conditionally unstable airmass reacts.   
+Big lifts increase the likelihood of instability.
+
+```{r}
+knitr::include_graphics("./figures/met-orographic-lift-triggers.jpg")
+```
+
+If the airmass with same ELR and surface OAT (20C, WB 17C) had more moisture content.
+Dew point increased to 14C.
+
+==> would produce cloud base at 2500ft ==> stable cloud now forming on smallest mountain.     
+==> middle mountain would push airmass into instability, when ELR intersects SALR and ELR > SALR
+
+unstable convective cloud will build to higher maximum height.
+
+Adding moisture to conditionally unstable air mass increases its tendency toward instability, and in unstable air masses moist air gives lower cloud bases and higher tops.
+
+The more moisture:
+* the more likelihood of instability
+* the lower the cloudbase, and
+* the higher the cloud tops.
+
+### Thermal triggers
+
+Thermal tiggers when air parcel near the surface is heated by conduction and by radiation from the surface.   
+Heated parcel turns less dense than its surrounding and will start to rise.
+
+If airmass absolutely unstable, will trigger full convection.    
+Cloud or blue thermal will form based on water content.
+
+If air is absolute stable, no convection, although the low-level heating will produce some low-level mixing and turbulence.
+
+condiationally unstable air masses   
+
+example
+--> ELR ~ 2C/1000ft, surface OAT = 18C and Dewpoint 14C ==> air is stable at surface as it is not saturated.
+
+--> during day/heating: OAT = 20C == less dense than surrounding ==> lift and cooling at DALR    
+air parel climbs to ELR = DALR == convection stops.    
+==> convection and turbulence in the lower levels, but no cloud (not yet reached dew point line). no change at higher altitudes.
+
+air rising at DALR meets ELR == stability.    
+The first effect of heating from surface is low-level turbulence.
+
+--> with continuing surface temperature increae --> rising air with higher surface temperature.   
+==> interception of dew point line before reaching the ELR.    
+Rising air is unstable / cloud forms.    
+Rising air DALR to SALR; ELR > SALR = instability
+
+2nd effect of surface heating: convective cloud.
+
+--> further rise in surface temperature, pushes "curves" in TP diagram further right.    
+==> higher cloudbase as DALR and dew point line intersect at higer levels.; coudtops also higher (more latent energy / more climb).
+
+rising air meest the dew point line while still warmer than the environment == condensation a. Cools at SALR = instability     
+== higher base, higher cloud tops.
+
+Starting from higher temperature, air has to rise higher to cool to dew poin / condense and form cloud.    
+Heating during the day leads to higher cloudbases and higher tops.
+
+
+Heating is major factor in "destabilising" air. If the air is moist, the whole convective effect is accentuated., with cloud coming earlier in the day at lower cloudbases and higher tops.
+
+
+### Frontal Convergence
+
+Convergence of two air masses with different temperature, water content.
+The "warmer" air being less dense will rise over the colder air.
+If the air is moving rapidly, the uplift will be more intense.
+
+stronger convection: cold front.    
+slower effect: warm front --> strati?
+
+### Non-frontal Convergence
+
+Even in air masses with no significant difference in temperature, low level winds can converge.
+At convergence, the will have to rise producing instability and convection.
+
+Converging streamlines, air velocity will increase and the pressure decreases.
+
+resulting combination: surface converge, low pressure and rising air.     
+On the opposite: surface divergence, high pressure and subsiding air go together.
+
+non-frontal convergece are found in troughs of low pressure and at the inter-tropical convergence zone with converging trade winds
+
+
+### Turbulence
+
+Turbulence in the lee of high ground or over rough terran can produce a layer of cloud.
+This effect only occurs, if the air mass is stable.    
+By definition: air mass with an ELR less than 1.8C/1000ft (SALR).    
+The air has to be moist and the wind speed needs to be fairly high in order to generate sufficienty strong turbulense.
+
+some wild air heating taking down at DALR, climbing, mixing ... do not get it.
+
+Turbulence has changed the temperature structure of the air mass in the turbulence layer.   
+The ELR has become DALR = 3C/1000ft, and the air below half the layer height is hotter that it used to be, while the air above half way is cooler that it used to be.
+
+If enough moisture, the additional cooling in the top half of the turbulence layer will produce cloud.
+
+The change in temperature structure within the turbulence layer has generated a sharp rise in temperature :== inversion at the top of the layer as cooler top turbulence layer temperature goes back to ELR (actual temperature of surrounding air).    
+ELR unchanged above turbulence layer.
+
+Turbulence has not changed the totel heat energy in the layer, but has redistributed it.
+Turbulence cloud layers will get deeper at night and the cloud will be more dense.
+
+## Cloud Formation and Dissipation Process Summary
+
+### Formation
+
+vertical motion is the primary method of cooling air that leads to cloud formation. Ther are two atmosphereic cooling processes:
+
+* adiabatic process = change of temperature of a parcel of air due to the air rising adiabatically or sinking adiabaticall. Adiabatic process assumes that no heat, mass or mementum pass across the air parcel boundary.
+* diabatic process - temperature change of air not related to its adiabatic vertical dsplacement.
+
+Adiabatic cooling processes:
+
+* convection due to heating of the ground (e.g. unorganised lifting into thin layers, fair-wetather cumulus)
+* convection due to cold air passing over a warm surface (e.g. cloud streets over warm water)
+* convection due to convective instability aloft (altocumulus castellanus)
+* forced lifting by orographic ascent
+* forced lifting by frontal ascent
+* rotational pressure reduction (e.g. funnel clouds, tornadoes, wing tip vorices)
+
+Diabatic (non-adiabatic) cooling processes:
+
+* mixing of air of different termpatures (e.g. breath in cold air and contrails)
+* fog (e.g. radiation fog and advection fog)
+* turbulent mising in the boundary layer (a mixture of mixing and adiabatic coolding)
+
+### Dissipation
+
+Three primary processes for cloud dissipation - can combine in combination)
+
+* temperature increase - with higher temperature, the air has a higher capcaity to evaprate liquid water. Increasing temperature and thus evaporation reduces the ligquid moister content of the cloud.  Cloud warming by solar radiation and longwave emissions from earth.
+
+* cloud mixing with direr air - a cloud does not remain perfectly adiabatic. Som envionmental air does mix into the cloud mass. If a cloud is no longer develloping and not adding additional condensational moisture, the drier environmental air will graduallyeore the cloud. --> entrainment - cloud looks wispy with not well defined edges. During entrainment, drier air incorporates itself into the cloud and induces evaporation..
+
+* air sinking within the cloud - sinking air warms adiabatically. Warming will induce evaporation and erosion of the cloud. aDynamic sinking mechanisms or increases over a cloud or cloud field, e.g. lowe level cold air advection, low level divergence, and downslope flow.
+
+## Inversions
+
+Inversion ~ temperature increase with height ==> inhibits convection.
+
+4 ways of inversions: at fronts, from surface cooling, from subsidence in stable air masses, and above turbulence.
+
+### Inversion at Fronts
+
+When 2 dissimilar air masses meet, the warm(er) air will settle over the cold(er) air because of their different densities.
+
+The frontal slop is shallpw (typically 1 in 50 to 1 in 150). Passing from cold to warm air the environmental temperature OAT will rise at the frontal surface.
+
+### Surface cooling
+
+When the surface is cool, e.g. during night of winter season, the air in the lower layers will be cooled by conduction.    
+Cooling from below makes the air more stable == no convection or turbulence in strong winds to mix low-level air.
+Thus, air can cool sufficiently to produce temperature inversion from 100 to about 1000ft
+
+Surface cooling inversion can be a take-off hazard, as the aircraft climnbs into progressively warmer air and perforamcne degrades soon after take off. Extreme cases; aircraft trapped below inversion and unable to climb. (?!?!)
+
+### Subsidence in Stable Air Masses
+
+air rising in one place is balanced by air subsiding in another place. 
+Subsiding air warms at DALR increasing the temperature aloft as the subsidence develops.
+
+This typ of inversion starts at high level, and gradually sinks during the file of the subsiding air mass.
+When it reaches the level where the air is no longer able to subside and must diverge ~ 2000-3000ft.
+
+Subsiding air and surface divergence means high surface pressure.   
+Such inversions are typical for well established highs (in particular sub-tropical high pressure systems.)
+You can also see the effect of this sort of inversion on fine summer days over Europe where there is marked layer of poor visibility trapped by the inversion below 2000ft or so.
+
+### Turbulence Inversion
+
+Near surface turbulence creates inversions due to mixing of air, can possibly form a turbulence cloud.
+
+When there is a turbulence layer in dry air, it is easy to calculate the temperature involved afte the air has mixed.
+
+Example:
+- dry stable air mass, ELR of 1.5C/1000ft, surface OAT of 15C
+- turbulence layer forms in the lee of hills
+- top of turbulence layer is at 3000Ft GND.
+
+What will be the new surface OAT, and the OAT in the top of the turbulence layer?
+
+surface to top of turbulence layer --> ELR: 
+
+$OAT_{3000ft} = OST_{GND} - ELR * Height = 15C - \frac{1.5C}{1000ft} * 3000ft = 15C - 4.5C = 10.5C$
+
+air from surface will rise (turbulence mixed) to 3000ft be cooling at DALR (dry stable air)
+
+$T = OAT_{GND} - DALR * Height = 15C - 3*3C = 6C$
+
+air from top will descend (turbulence mixed) warming at DALR
+
+10.5 + 3*3C = 19.5
+
+==> new surface OAT = average of old OAT 15C and mixed top layer air 19.5 == 17.25C
+==> new top player temperature = avg of old T 10.5 and raised air 6C == 8.25C
+
+
+Note: that is a 2.25C temperature inversion as you leave the top of the turbulence layer and revert to ELR that existed before the onset of the turbulence.   
+Nothing has changed in the air above the turbulence layer.
+
+Value of inversion "direct calculation"
+
+$$\Delta T_{inversion} = \frac{(DALR-ELR)}{2}* \text{height turbulence layer}$$
+With this: $\Delta T_{inv} = \frac{3-1.5}{2} * 3=\frac{4.5}{2} = 2.25$
+
+==> new surface: OAT + 2.25 = 17.5     
+==> top layer temp: OAT3000ft - 2.25 = 10.5 - 2.25 = 8.25
+
+
+### Valley Inversion
+
+In mountain valeys on a clear night radiation cooling on the valley sides produces cold air that slides down into the valley bottom. ~ katabatic effect.   
+The "pooling" of cold air at the bottome of the valley creates the inversion with warmer air at higher heights.
+
+### Effects of Inversions on Aircraft in Flight
+
+* poor(er) visibility - inversion prevent the rise and dispersal of pollutants from the loer layers of the atmosphere ~ trapping of pollution material. Reduced visibility also in combination with smog, dust, and possibly fog.   Strong inversion can cause distant objects to appear as they float abouve ground.
+
+* turbulence and wind shear - inversions signal stable (and smooth) air, howver, the crossing from one to the other air mass can come with turbulence and wind shears.
+
+* climb out performance - climb out from cold (dense) air to warm air will result in reduced rate of climb and change in airspeed, and subsequently reduction in lift and thrust (due to lower density of warmer air).
+
+### Inversion Summary
+
+* ground - nocturnal radiation inversion or advection inversion = most common inversion is radiation inversion. Earth cooling by night through longwave radiation emission. Can also form when warm air moves over cold(er) surface (advection).
+* subsidence - aera of high pressure, air will sink with few cm/sec. Subsiding air warms by compression (adiabaitc warming), 2000-6000ft.
+* frontal - border between 2 air masses with differing temp. warm over cold.. Inversion in transition zone between the two air masses.
+* turbulence / friction layer - turbulent mixing of the air in the riction layer, air adopts a DALR temp gradient. top layer ~ top friction layer = inversion
+* valley - at night valley sides cool and air sinks to bottom katabatically.
+
+Clearing of inversions: heating from below   
+--> typically: daytime heating over land
+--> change of weather pattern bringing in new air mass (with different temperature) 
+
+### Influence Inversions on Cloud Development
+
+**influence on vertical movement**     
+
+Buoyancy in the atmosphere is determined by the vertical gradient of temperature.   
+Inversion can prevent the rise of air from lower layers, as the warm(er) air acts as a lid preventing the vertical movement.
+
+**influence on formation of Stratus clouds**
+
+Temperature inversions are responsible for certain cloud formations.
+
+When clouds form below the inversion, they "spread out" and have a flat smooth appearance.    
+Often seen over cool ocean waters.
+The inversion caps the marine boundary layer, preventing the cool moist marine air from mixing with warm dry air above.    
+Relative humidity allows for saturation forming stratus clouds just below base of inversion.
+
+**influence of a ground inversion on formation of fog**
+
+Ground inversion develops with air being cooled by contact with cold(er) surface.   
+Happens mostly on clear nights with the ground cooling rapidly (radiation emission).   
+If temperature of the cooled surface air drops below dew point, fog may result.
+
+Very common in higher altitudes.    
+Surface temperature inversion in lower and middle latitudes occurs during cold nights and gets destroyed during daytime (morning fog).
+
+**influence of inversion on Height of Cumulus Clouds**
+
+Convection controlled by buyoance relative to thermal's surroundings.
+When ascending bubbles encounter an inversion (temp increases with height), air parcels tend to lose their relative buyoanccy and spread out sideways.     
+An inversion will often delineat the top of the cumulus cloud.
+
+
+## Wind
+
+(first force) Pressure gradient force H --> L.
+PGF is the the tendancy of air to move from areas of HIGH to LOW pressure.
+
+Across the surface of Earth, there is considerable variation of air pressure.
+Thus, air will flow from H --> L.
+
+map of surface pressure by joining places of equal pressure.
+lines == isobars.
+isobar ~ contour lines
+
+the closer the lines/isobars, the higher the horizontal gradient (i.e., steeper/stronger), 
+and thus, the higher the wind speed.
+
+Initially, the wind direction resulting from the PGF is across the isobars.
+The deflecting force resulting from the rotation of the Earth: Coriolis.
+With increasing height ==> parallel to isobars.
+
+Note: Coriolis force makes water spin when going down a plug hole.
+Coriolis force is dependent on latitude, i.e., it is stronger at Poles and zero at Equator.
+
+```{r}
+knitr::include_graphics("./figures/met-wind-pressure-hi-alt-vs-sfc-friction.png")
+```
+
+Charts using isobars used for aviation purposes. 
+
+### Surface Wind
+
+Air flowing over surface --> boundary layer. Surface friction will slow air.
+Within **friction layer** air velocity reduces from free-stream (higher altitudes) to much lower speed at the sufrface
+
+Reduction depends on wind speed, the drag/friction of the surface (rough reduces more), and the conditions in the boundary layer.
+
+Boundary layers can be classified in two types: i.) laminar and ii.) turbulent.
+* **laminar** boundary layer - no vertical mixing, layers of air slide smoothly over each other --> linear decrease/increase with height from/to free-flow streem.
+* **turbulent** boundary layer - some vertical mixing ~ increased friction, resulting in non-linear decrease/increase with height through the layer.
+
+Laminar (friction) layer is typically thinner than a turbulent one.    
+Turbulent about 2000ft, laminar ~ 1000-1500ft.
+
+If wind direction is parallel with runway, but changing rapidly == caution.   
+Descending into decreasing headwind and with constant airspeed, this will give increasing ground speed.   
+For example 3deg glide slope, GS 150kt ~ descent rate of 750 ft/min.   
+With increase in GS --> 160kt, the required descent rate is 800 ft/min. Sticking at 750 ft/min will make the aircraft go above the glide path.
+
+### Boundary Layers
+
+Change from laminar to turbulent depends on i.) mechanical mixing due to surface (e.g. hills) and/or ii.) thermal convection from the surface.
+
+--> laminar layers over smooth and cold surface    
+--> turbulent layers over hot and rough surface.
+
+Primary factor affecting depth of boundary layer: stability, wind speed, roughness of surface.
+Air can be warm or cold, stable or unstable, But unstable air will have a deeper boundary lauer than stable air.
+
+Surface wind speeds will be thus slower than the free-stream wind due to surface friction.    
+Slowing the air reduces the Coriolis Force. As pressure gradient stays the same, the wind will turn toward the LOW.
+
+Forces balance out as vector sum. PGF and CF in the free stream (windspeed perpendicular to PGF/CF and parallel to isobars). PGF vs friction and CF.
+
+In the northern hemnisphere, the low pressure will be on the left.    
+Thus, descending through boundary layer, the wind speed will reduce (free-stream --> friction layer) and wind direction will turn to the left.
+
+southern hemnisphere: LOW to the right, wind turns to right.
+
+slack and back for Northern Hemnisphere
+slack and veer for Southern Hemnisphere
+
+                           by day                        by night
+               backed      % freestream              backed     % freestream
+over land        30deg       50%                       40         30
+over sea        10 deg       70%                       10         70
+
+surface friction at highest over land at night when air colder and denser
+surface friction smallest during day when the air is warmer and less dense.
+
+### Local Topographic Effects
+
+Wind (and friction) dependent on topography. Winds follow the same physical laws as in the small scale aerodynamics.
+
+* Valley winds - mountain barriers make winds flow down valleys, same like a venturi == the air converges, the pressure falls and the speed increases.
+
+* mountain and valley breezes - local wind systems that blow downhill (mountain breeze) at night and uphill (valley breeze) during the day. At day, the thin air above high mountains sides warm quickly. Warm air rises and creates local low pressure along the slopes. Air from the lower valleyes moves in to replace it creating the upslope breeze. Strongerst around noon. (valley breeze)
+
+At night, high mountain slopes cool quickly. Cold dense air forms a local HIGH pressure area. The pressure gradient drives a gentle breeze down the slop into the valley. Strongest just before sunrise = mountain breeze.
+
+* Föhn Winds - warm dry winds that blow on the lee side of mountains. Moist stable air blows slowly over a grange of hills. Air will rise over the hills. Rised air cools and forms clouds. Being stable, slide down the other side where the cloud will end as the air warms up in the descent.    
+If moisture was lost by precipitation on the hill, then the cloubase on the lee side will be higher than on the windward side. The longer warming at the DALR will give a higher surface temp on the lee side.
+
+Föhn produces warm, dry winds in the lee of mountains.
+
+* katabatic winds - katabatic == flowing down! sides of hills and mountains at night or on very cold days when there is no strong gradient wind to hide the effect. The cold surface cools the air by conduction. The colder and more dense air slides down the mountains.   
+Katabatic winds can be quite strong as each parcel of descending air joins with others. (e.g. Mistral in Provence, Bora in the Alps toward North Adriatic ~ 70kt).
+
+* anabatic winds - flow up the slides of mountains when the surface is hot during the day. The air in contact is heated by conduction. The less dense air slides up the hills. The heared air will tend to convect straight up rather than follow the slope of the mountain. Thus, anabatic winds only show in gentle gradient conditions flowing onto the slope. This wind is enhanced with the anabatic effect.
+
+### Wind Hazards along hills.
+
+* air rising up the hill and cooling at adiabatic lapse rates will rbing the zero degree isotherm lower on the windward side of the hill. This is combined with updraft and may produce moderate icing and turbulence on windward side
+* airflow over the hill summit may induce lower pressures and make altimeter over-read.
+* on the lee side of hills the warm Föhn wind may generate a temperature inversion over cold pools of air in the valleys;
+* a cold katabatic flow undercutting warmer air will have a similar effect - inversion brings windshears, turbulence and performance degradation at top of cold layer.
+
+### Land and Sea Breeze
+
+land and sea breeze are light low level coastal winds that build up and decay throughout the day and night.    
+They are caused by the land warming and cooling more quickly than the sea.    
+They form in clear summer weather with a slack pressure gradient.
+If there is a strong gradient wind already blowing, this will mask the effect.
+
+sea breeze - day: land warms faster --> rises ~ LOW
+
+land breeze - night
 
 $$RH = 100 - 5* (T - T_d)$$
 Temp: 21 deg, dew point: 9 deg ==> spread = 21-9 = 12 deg
@@ -429,6 +1238,8 @@ RH = 100 - 5 * 12 = 100 - 60 = 40
 
 T = 30, td = 21 ==> spread = 9
 RH = 100 - 5* 9 = 100 -45 = 55%
+
+
 
 Temp correction (warmer than isa, distance higher)
 
@@ -475,3 +1286,16 @@ NH: wind from left = altitude theft
 
 NH: HIGH ~ Hour = clockwise     
 NH: LOW  ~ anti-clockwise
+
+
+
+Some questions
+
+- sample of moist but unsaturated air may become saturated 
+... by expanding it adiabatically - adiabatic cooling increases RH
+
+- QFE, QNH, and QFF are the same
+... airport at MSL
+
+surface temp is 15C, temp 1t 10000ft in a current of acending unsaturated air is
+... ascending unsaturated air will cool at DALR = 3C/1000ft --> 15C - (10 * 3) = -15C
