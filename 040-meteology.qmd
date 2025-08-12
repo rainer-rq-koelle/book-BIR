@@ -1232,6 +1232,148 @@ sea breeze - day: land warms faster --> rises ~ LOW
 
 land breeze - night
 
+## Clouds
+
+Classification of clouds based on appearance.    
+
+stable air: "layered" ~ " stratus"     
+unstable air: puffy and vertical extent ~ "cumulus"
+
+Could type - stratus or cumulus - preceded by height at which they occur.
+For temperate regions "low"  clouds range with a base below 6500ft (2000m) above GND ~ no prefix.   
+cloudbase over 
+- 6500ft < 16500ft (5000m): medium := "alto"
+- > 16500ft (5000m): high ~ "cirro"
+
+The prefix "nimbo" ~ rain bearing. Thus, nimbostratus is stratus cloud from wiht drizzle, rain or snow is falling.
+
+These height ranges vary with latitude. For test ~ temperate latitudes.
+
+Most clouds are confined wihtin their level with the following few notable exceptions:
+
+* altostratus - typically middle level, but often extends higher
+* nimbostratus ~ almost always in middle level, but can extend into the other two levels
+* cumulus and cumulonimbus ~ typicl bass in low level, vertical extension is so great that their tops reach into middle or high level.
+
+
+  Level / type          polar region    temperate reg   tropical region       
+HIGH
+- cirrus               3-8km            5-13km         6-18km
+- cirrocumulos          10000-25000ft   16500-45000ft  20000-60000ft
+- cirrostratus
+
+MIDDLE
+- altocumulus          2-4km            2-7km          2-8km
+- altostratus          6500-13000ft     6500-23000ft   6500-25000ft
+- nimbostratus
+
+LOW     
+- stratus              from earth's surface to 2km/2000m
+- stratuscumulus                0 - 6500ft
+- cumulos
+- cumulonimbus
+
+### High Clouds = cirro
+
+cirro clouds typically contain ice crystals (rather than liquid water) ~ height ~ temperature   
+
+flight conditions are good: no icing in cirrus (it is already ice) and it is not dense cloud --> reasonable visibility usually more than 1000m
+
+Cirrus CI   
+Detached clouds of white delivate, feathery or fibrous appearance, or white patches or bands.   
+Appear to move without any significant change in form or shape.
+
+Cirrostratos CS    
+Transparent white veil, not thick enough to obscure the sun or moon. Sunlight passing through it is strong enough to form shadows on ground.    
+ice crystal refract the light to produce haloes around the sun or moon.
+
+cirrocumulus CC     
+regular thin patches of high cloud without shadows; regular ripples or lumps.    
+Most of the elements have an apparent width of less than one degree (small), [!?! the apparent width of a little finder held at arm's length.]
+
+### Medium Level Clouds
+
+clouds of water or of a mixture of water and ice particles.
+
+Altocumulus AC     
+one of more layers of cloud comprising lumps or rolls which are often more of less merged and coloured white or grey.
+
+Altostratus AS     
+Greyish or bluish cloud sheet or layer of striated, fibrous, or uniform appearance totally or partly covering the sky.    
+Parts thin enough to reveal the sun - at least vaguely as though through ground glass.     
+Light rain from thick altostratus may reach the ground.
+
+### Low Level Clouds
+
+Stratocumulus SC     
+stratocumuls is - in general - grey or whitish in appearance. It amy cover the sky completely or be patchy.    
+It is composed of rounded masses or rolls, whcih may or may not merge. There are often aligned in waves.     
+Though mainly formed by turbulence, it may also be formed as cumulus dies down and spreads out in the evening before dispersing.    
+Turbulet stratocumulus can lead to moderate to severe icing conditions if the temperature are just below freezing.
+
+Stratus ST     
+Grey layer of cloud with fairly uniform base. 
+Thick stratus may produce drizzle or snow grains.    
+Thin stratus may form in moist air becaouse of turbulence coupled with orographic lifting or surface cooling.    
+Ragged patches of fracto-stratus may form in rain or snow falling from a layer of altostratus or nimbostratus above.
+
+Nimbostratus NS     
+Nimbostratus is a thick, grey layer of cloud, darker that either stratus or altostratus.    
+Appearance is diffuese by more or less continuously falling rain or snow which typically reaches the ground.   
+It is thick enough throughou to block out the sun.     
+
+Nimbostratus clouds are associated with frontal lifting and can be found with bases in the band for either low or medium level clouds.     
+Nimbostratus can occur at any level from close to surface up to about 25000ft.
+
+Cumulus CU     
+detached heap cloud with sharp outline, particularly as it develops.   
+Sunlit parts are brillantly white and the strength of the vertical motion inside the cloud can be inferred by observing the vigour of the rising domes or towers.    
+
+In side larcter cumulus clouds - called towering cumulus - there are strong updrafts and consequently temperature in the cloud is warmer than the surrounding air.   
+
+Development can be very lmimted on occasion resulting only in little puffy white clouds or may continue through a considerable depth leading to marked turbulence and icing.
+
+Cumulonimbus CB     
+The tops of cumulunimbos may reach very high levels, e.g. up to 30000ft over Europe, i.e., up to the tropopause and over 55000ft in the tropics where the sheer momentum of the stronger convective lifting can take the tops of these clouds into the lower stratosphere.
+
+Cumulonimbus clouds show tremendous vigour and their tops become fibrous in appearance as ice particles predominate over water droplets.     
+They are assocaited with showers, hail, and thunderstorms.    
+Severe turbulence and severe icing is always to be expected in association with cumulunimbos clouds.
+
+
+### Cloud shapes
+
+cloud types can be further described by shape, if it is distinctive.   
+Some more common definitions follow:
+
+* fractus - clouds in the form of irregular or ragged shreds, borken cloud. The very low cloud ahead of the warm front is called fracto stratus which is found helow the frontal nimbo stratus in an aere of very high humidity receiving continuous steady rain.
+
+* lenticularis - having the share of a conves lens or an almond. Altocumulus lenticularis are typically associated with mountain waves (or standing waves as air slopes over hill/mountain top).
+
+* castellanus - usually applied to altocumulus describing the top of the cloud developing vertical extensions like the turrets of castles.
+
+* capillatus - applied only to cumulunimbos clouds. The suffic capillatus implies cirrus elements in a layered or disorderly pattern often in the shape of an anvil. (latin: having "hair")
+
+* mammatus - breast shaped cloudbase of cumulus and cumulonimbus clouds associated with imminent precipitation.
+
+### Types of CUmulus Clouds
+
+* humile - cumulus clouds of only a small vertical extent
+* mediocris - cumulus clouds of moderate vertical extent
+* congestus - cumulus clouds with marked "sprouting" with fairly extensive vertical extent, resembles a cauliflower. Otherwise known as "towering cumulus".
+* calcus - cumulonimbus that is losing some of its cumuliform shape in the upper parts. The top appears as withish mass with some vertical striations. Latin: "bald".
+
+### Other Cloud Types
+
+* nebulosus - like a layer or veil wiht no distinct details. Applies to Strotocumulus, altocumulus, and sometimes cirrocumulus
+* fioccus - cirris, cirrocumulus and altocumumus with a tuft of cumuliform cloud that is ragged at the bottom. Ofen with virga which is an boservable streak or shaft of precipitation that falls from a cloud bu evaporates of sublimes before reaching the ground.
+* fibratus - cirrus and ciffostratus that are very thin and detached streaks of cloud with no hooks at the ends or tufts.
+* spissatus - cirrus clouds with sufficient thickness to appear grey.
+* uncinus - cirrus clouds that are shaped like a comma. With a hook or tuft and a streak. Sometimes called mares'tail cirrus.
+
+
+
+
 $$RH = 100 - 5* (T - T_d)$$
 Temp: 21 deg, dew point: 9 deg ==> spread = 21-9 = 12 deg
 RH = 100 - 5 * 12 = 100 - 60 = 40
