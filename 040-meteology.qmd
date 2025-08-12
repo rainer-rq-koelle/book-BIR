@@ -1306,21 +1306,21 @@ Light rain from thick altostratus may reach the ground.
 ### Low Level Clouds
 
 Stratocumulus SC     
-stratocumuls is - in general - grey or whitish in appearance. It amy cover the sky completely or be patchy.    
+stratocumuls is - in general - grey or whitish in appearance. It may cover the sky completely or be patchy.    
 It is composed of rounded masses or rolls, whcih may or may not merge. There are often aligned in waves.     
 Though mainly formed by turbulence, it may also be formed as cumulus dies down and spreads out in the evening before dispersing.    
-Turbulet stratocumulus can lead to moderate to severe icing conditions if the temperature are just below freezing.
+Turbulent stratocumulus can lead to moderate to severe icing conditions if the temperature are just below freezing.
 
 Stratus ST     
 Grey layer of cloud with fairly uniform base. 
 Thick stratus may produce drizzle or snow grains.    
-Thin stratus may form in moist air becaouse of turbulence coupled with orographic lifting or surface cooling.    
+Thin stratus may form in moist air because of turbulence coupled with orographic lifting or surface cooling.    
 Ragged patches of fracto-stratus may form in rain or snow falling from a layer of altostratus or nimbostratus above.
 
 Nimbostratus NS     
 Nimbostratus is a thick, grey layer of cloud, darker that either stratus or altostratus.    
-Appearance is diffuese by more or less continuously falling rain or snow which typically reaches the ground.   
-It is thick enough throughou to block out the sun.     
+Appearance is diffuse by more or less continuously falling rain or snow which typically reaches the ground.   
+It is thick enough to block out the sun.     
 
 Nimbostratus clouds are associated with frontal lifting and can be found with bases in the band for either low or medium level clouds.     
 Nimbostratus can occur at any level from close to surface up to about 25000ft.
