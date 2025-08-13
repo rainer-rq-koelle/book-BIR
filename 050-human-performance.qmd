@@ -521,6 +521,10 @@ Relief by keeping head still or keeping eyes closed to remove conflicting visual
 
 Medication can help, but affects overall performance.
 
+AVEXAM   
+"involved": vestibular system, vision, proprioceptive senses & gastrointetianl system (reacts on vomitting) 
+"responsible" (causing): vestibular, vision, and proprioceptive
+
 #### Vertigo
 
 more common in everyday life, particularly tall buildings: vertigo ~ ultimate senstation of spatial disorientation when surroundings appear to whirl dizzily. Sense of loss of balance, in extreme cases: nausea and vomitting.
@@ -746,6 +750,13 @@ now: twin track approach to error == reducing the occurrence of errors and minim
 ```{r}
 knitr::include_graphics("./figures/hf-deviation-violation.png")
 ```
+
+```{r}
+knitr::include_graphics("./figures/hf-TEM-failures.jpg")
+# source https://skybrary.aero/articles/human-error-types - text might be helpful
+```
+
+
 
 error and intention inextricably associated ==> an error can only occur if the action was intended and is only an error, if the actual outcome of the action differs from the intended outcome.
 

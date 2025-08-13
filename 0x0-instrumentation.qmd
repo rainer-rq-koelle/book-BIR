@@ -1542,3 +1542,30 @@ Failure of level E software would have no effect on operations or pilot workload
 e.g. in-flight entertainment equipment.
 
 
+
+
+
+
+Questions
+
+rate of turn - directly proportional to bank angle - inverse proportional to TAS == independent of aircraft weight    
+$RoT = \frac{(g * tan(\text{bank angle}))}{TAS}$
+
+angle of bank = $\frac{TAS}{10} + 7$; e.g. 100kts = (100/10) + 7 = 17; 200/10 + 7 = 27
+
+the faster we fly, the more to bank to keep a specific bank angle
+
+
+PED portable electrobic device (iPad) ~ not certified
+
+
+
+speed conversions ICET & pussy Cat Dolls
+
+IAS - indicated airspeed
+                            Position and Pressure error (instrument error subsumed in P)
+CAS - calibrated airspeed
+                            compressibility (high airspeed)
+EAS - equivalent airspeed
+                            density correction
+TAS - true airspeed

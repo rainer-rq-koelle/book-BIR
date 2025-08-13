@@ -954,11 +954,13 @@ Turbulence cloud layers will get deeper at night and the cloud will be more dens
 
 ## Cloud Formation and Dissipation Process Summary
 
+stabilty/lapse-rates/cloud formation: https://www.bom.gov.au/aviation/data/education/atmospheric-stability-aero-diagram.pdf
+
 ### Formation
 
 vertical motion is the primary method of cooling air that leads to cloud formation. Ther are two atmosphereic cooling processes:
 
-* adiabatic process = change of temperature of a parcel of air due to the air rising adiabatically or sinking adiabaticall. Adiabatic process assumes that no heat, mass or mementum pass across the air parcel boundary.
+* adiabatic process = change of temperature of a parcel of air due to the air rising adiabatically or sinking adiabatically. Adiabatic process assumes that no heat, mass or mementum pass across the air parcel boundary.
 * diabatic process - temperature change of air not related to its adiabatic vertical dsplacement.
 
 Adiabatic cooling processes:
@@ -1234,6 +1236,8 @@ land breeze - night
 
 ## Clouds
 
+https://www.bom.gov.au/aviation/data/education/cloud-types-postcard.pdf
+
 Classification of clouds based on appearance.    
 
 stable air: "layered" ~ " stratus"     
@@ -1372,7 +1376,470 @@ Some more common definitions follow:
 * uncinus - cirrus clouds that are shaped like a comma. With a hook or tuft and a streak. Sometimes called mares'tail cirrus.
 
 
+## Precipitation
 
+precipitation := (out of clouds) rain, hail, or snow.    
+precipitation depends on type of cloud, in particular the strength of updrafts within the cloud.
+
+WMO definitions for precipitation:
+
+### Drizzle
+
+Drizzle DZ - fairly uniform precipitation of very fine drops of water ~ very small water droplets    
+Drizzle drops less than 0.5mm in diameter. Drops almost "float", no noticeable impact on water surfaces.  
+Drizzle falls from low stratus, sometimes touching ground, i.e., fog.
+
+Identification of stratus cloud distinguishes rain from drizzle (stratus)
+
+supercooled drizzle (freezing drizzle FZDZ): drizzle where temp drops below 0deg.   
+Drops of supercooled drizzle may freeze on impact with ground, in-flight aircraft or other objects = "freezing drizzle".
+
+### Rain
+
+Rain RA: precipitation of drops of water that fall from cloud. Drops about 0.5-5.8 mm.    
+Note: drops bigger of 5.8mm break up when falling because of the pressure from the airflow.
+
+supercooled rain (freezing rain FZRA) - rain where temp drops below 0deg.    
+Drops of supercooled rain may freeze on impact with ground, in-flight aircraft or other objects.
+
+### Snow
+
+Snow SN - precipitation composed of ice crystals, single or stuck together.
+
+Form, size, and concentration of snow crystals (e.g. grains, needles, snowflakes) differ considerably according to the temperature and supersaturation at which they develop.   
+Snow typically comprises various types of snow crystals and types.
+
+Small droplets of frozen water are often attached to the snow crystals.    
+If present in great numbers, these can obscure the crystalline struture of the snow.
+
+At temps of about -5degrees, the crystals generally stick together to form snowflakes.
+
+### Snow Grains SG
+
+snow grains - small opatuye white particles of ice.   
+Particles are fairly flat. Diameter of less than 1mm. 
+
+Althgouh frozen and occurring when the temp is approx -10 < T < 0 degrees, the other properties of snow grain corresponds to drizzle.   
+When hitting hard ground, no bouncing.
+
+Snow grains fall mostly from Stratus of from fog, and never form a shower.   
+Except for the mountains, snow grains usually fall in small quantities.
+
+### Snow pellets GS
+
+snow pellets - white and opaque ice particles. Generally conical or round, diameter up to 5 mm.    
+Snow pellets are composed of a frozen nucleus covered with frozen cloud water droplets.   
+They form when a particle of ice, collects cloud droplets which rapidly freeze.   
+Density low, brittle.
+
+Bounce on hitting ground and break.    
+Showers of snow pellets fall from Cumulus or cumulunimbos. Showers usually consist of snow pellets and snowflakes together.   
+Occur when temperatures near the surface are close to 0degC.
+
+### Hail GR
+
+hail GR - particles of ice (hailstones). can be transparent, of partly/completely opaque. usually spherical, conical, or irregular in form. Typically 5-50mm in diameter.    
+Particles may fall from cloud either separately or agglomerated in irregular lumps.
+
+Hail always occurs as shower. Typically during heave thunderstorms.   
+Hail stones can cause significant damage.
+
+Hailstones form around a nucleus that may not be at their geometric centre. The nulceaus may be anywhere between a few milimetres and a centimeter in diameter.
+Nucleus composed of ice / usually opaque.
+
+Hailstones can occur with great variety of forms and dimensions within a single shower.
+
+### Small Hail (GS)
+
+small hail - precipitation of translucent ice particles. Particles are almost always spherical and sometimes have conical tipis. Diameter may approach or exceed 5 mm.
+
+Small hail always occurs in showers from Cumulonimbus.
+
+Small hail consists of snow pellets totally or partially encased in a layer of ice.   
+Smail hail not easily crushable (relative high density), bounces with audible sound from ground on impact.
+
+Small hail is an intermediate stage between snow pellet and hailstone.    
+Differs from snow pellet in its particularly smooth surface and higher density.    
+Differs from hailstone in its smaller size.
+
+### Ice Pellets (PL)
+
+Ice pellets - precipitation of transparent ice particles. Spherical or irregular, and rarely conical. Diameter less than 5mm.   
+
+Ice pellets originate as rain drops or snowflakes (less common) falling from Altostratus or Nimbostratus.   
+They fall into a subcould layer of warm air where the snowflakes melt or partially melt, and then fall into a could layer of air (below 0deg) where they freeze and reach the ground as frozen precipitation.
+
+Ice pellets are not easily crushable. Bounce with audible sound on impact.   
+
+Ice pellets may be partly liquid. Their density is usually close to, or above that of ice (0.92 g/cm3)
+
+### Ice Crystals (Diamond dust IC)
+
+precipation from a clear sky as very small ice crystals - tiny.
+
+Diamond dust can be observed in polar and alpine regions and continental interiors, especially in clearl, calm, and cold weather.    
+It forms at temperatures typically less than -10decC in rapidly cooling airmass.     
+crystals of about 100um.    
+
+Crystals - when visible - sparkle in sunlight and can produce halo pheonomena.    
+Visibility in diamond dust varies considerably, and the lower limit is greater than 1 km.
+
+### condensation nuclei
+
+Water vapour requires something to condense on to, called condensation nuclei. 
+A condensation nuclei is typically smoke, dust, and ice or salt crystals.   
+
+Super saturated air ~ water vapour saturation can go beyond 100%.
+Relative humidities in escess of 400% have been reached in labs.
+
+Nuclei are hygroscopic - like ice crystals. They attract the water vapour, and condensation can occur before saturation is reached.   
+This is explains why sometimes mist and fog form with RH below 100%.
+
+### Drizzle and Rain
+
+Two theories why water droplets or ice grow inside clouds. Neither gives complete answer.
+
+**Theory A: Ice Crystal Theory - Wegener-Bergereon-Findeisen - Norwegian Theory**   
+water is know to exist as a liquid below 0degC when it is supercooled.   
+Such water droplets can be mixed with ice crystals in cloud above the freezing level.    
+If the air is still rising and water vapour is continuing to condense, it will tend to sublimate directly onto the nucleus of an ice crystal. Water vapour over ice is lower than that over water (~ attracts).   
+
+Question: water vapour pressure is higher around liquid water droplet than around ice crystal ==> difference of maximum vapour pressure over water and over ice of the same temperature.
+
+The crystal grows until a point at which they cannot be supported by the existing updraft ==> fall.   
+During fall the crystal grows by colliding with other ice crystals.  
+When reaching surface they will be snow (conglomeration of ice crystals up to 5mm in diameter), snow grain (up to 1 mm diameter) or diamond dust (tiny ice crystals) depending on the rate of collision of the ice crystals during the descent through the cloud.    
+Below the freezing level, the crystals melt and turn into rain.
+
+
+**Theory B: Coalescence Theory of Precipitation**    
+Liquid drops grow in size because they collide and coalsce with other drops.   
+If an updaraft is supporting drops of various sizes, the smaller ones will move up faster than the larger ones (heavier) and therefore they will collide.     
+When the size of the combined drop is too large to be supported, it will fall and bump into other drops and growing further.    
+
+This theory explains the creation of rain and drizzle.
+Coalescence can produce drizzle and rain at _all_ latitudes in both stratus and cumulus clouds.
+Drizzle (small drops) most common for Stratus / cumulus "big drops"
+
+QUESTION: in mid latitudes, coalescence explains the production of "only drizzle and very light rain".
+
+
+Theory A explains why rain does not fall from cumulus cloud until the cloud tops have passed the freezing level (in temperate climates). In the tropics, however, and in strats clouds, rain falls from cloud where the temperature is +5degC or more. There are suggestions that small particles like dust may take the place of ice crystals and the condensation nuclei.   
+The seeding of cumulus clouds with silver iodide crystals does sometimes produce rain. This supports the nuclei theory.
+
+Theory B seems to explain the formation of raindrops in stratus cloud at temperatures above freezing. 
+
+In reality it may be a combination of both.
+
+### Snow
+
+snow is precipation in form of ice crystals forming above 0degC level in the cloud.    
+As the ice crystal fall, they are warmed by the higher air temperatures below.
+If their temperture raises to zero, they will begin to melt.    
+Meting requires an input of latent energy drawn from the surrounding air.   
+The air termperature will fall and the 0degClevel will be lower in the snowfall than in the air outside.   
+If the snow has to fall through more than abotu 1500ft of air above 0degC, it will melt completely and reach the ground as rain. This equates to a ground level temperature of 3-4 degC.
+
+The ICAO definitions are as follows:
+
+* **slush** - water saturated snow which with a heel-and-toe slap-down motin against the ground will be dispaced with a spatter, specific gravity: 0.5-0.8. (?!?!)
+
+* **dry snow** - snow which can be blown if loose, or - if compacted by hand - will fall apart again upon release; specific gravity: up to 0.35 (not included)
+
+* **wet snow** - snow which - if compacted by hand - will stick together and tend to form a snowball; specific gravity 0.35 up to but not includeing 0.5.
+
+* **compact snow** - snow which has been compressed into a solid mass that resists further compression and will hold together or break up into lumps, if picked up; specific gravity 0.5 and over.
+
+### Hail
+
+Hail is assocaited only with cumulonimbus clouds.   
+
+The updrafts in these clouds are very strong and it is possible for an ice crystal at the top of the cloud to fall, gathering moisture around it as it falls, be lifted up again by the updrafts, and so on.   
+Crystal is refrozen as a larger lump of ice, before falling.
+
+A large hailstone will show rings of similar to the rings in a tree trunk. Each corrsponding to a falling and rising cycel within the highly convective cloud.   
+Hailstone will fall to ground when too heavy or when the updraft through the hailstone away fromt he top of the cloud.
+
+Hail has been observed in clear air several miles away from the parent thunderstorm and although hailstones are typically only a few mm in diameter.
+Example of hailstone: 150mm ~ 1kg.
+
+The largest hailstones can be found in cumulunimbus clouds over continental interiors rather than sea
+Convective and orographic triggers will be stronger over land.   
+Freezing levels are high in equatorial regions (about 16000ft): hailstones do not reach - typically - the ground in these areas.
+
+In temperate latitudes, hail can damage aircraft.   
+Encountered as high as 45000ft.    
+Hailstones of 100mm in diameter have been encountered at 10000ft in severe thunderstomrms. (photo from B737 - badly damaged nose)
+
+
+
+## Standing Waves - Mountain Waves
+
+Standing waves = mountain waves occur in the troposphere when stable air mass blows at moderate speed over a range of hills or mountains.   
+Turbulence above that extends into low stratosphere.    
+However - safety hazard - turbulence and downdrafts near surface.
+
+```{r}
+knitr::include_graphics("./figures/met-mountain-wave.png")
+#source:  JAA MET Fig 9.5
+```
+
+* wind of 15kt or more over small mountains, up to 30kt or move over large mountains
+* wind speed increasing steadily with height up to tropopause
+* wind direction roughly constant up to tropopause
+* wind direction within 30 degrees of the perpendicular to the ridge line
+* stable air mass      
+  strongest waves, if there is a very strong stable layer, possibly inversion at ridge height with less stable air (but not unstable) above and below
+  
+good visual detection: cap cloud on montain tops, lenticular clouds "downstream", beware of rotor clouds (if visible)
+
+If conditions are met: air mass forms stable **wave pattern**.    
+Area of strongest turbulence is about at ridge height and "1" wavelength downwind (rotor).    
+The wavelength depends on the windspeed and ridge height. In Europe, typically 5-10NM.
+
+A Föhn wind over the Alps creates turbulence on the far side of the mountains.
+
+### Rotor Streaming
+
+During the first peak, the wave formation may be strong enough to create a **horizontal rotor**. The rotating air will create a roll cloud if the humidity is high enough.    
+The "Helm Bar" of Cross Fell in UK is a well know example of this effect. (?!?)
+
+Turbulence in rotors is severe.   
+Sometimes the rotors break off and stream away downwind carrying their turbulence with them.     
+Note: rotors and rotor streaming can occur in the lee of ridges even when the upper air condistions are not right for standing wave formation.
+
+FLying with the wind over the ridge itself produces no serious problems.   
+Flying into the wind require to climb to clear the ridge when the downdraft is forcing you down.   
+Potential hazard for all aircraft, escpecially light aircraft.
+
+Turbulence behind hills, rotors and rotor streaming are not confined to standing wave coditions.   
+They can occur in any strong wind over hills conditions.
+
+### Other visual clues
+
+major visual clues: 
+* cap cloud over the ridge and
+* lens shaped - lenticular - clouds "downstream" wherever there is a layer of moist air aloft that is cooled belw the dew point in the rising part of the wave.
+
+Turbulence from standing/mountain waves up into the low stratosphere.
+As moderate low level wind steadily increases with height, standing waves are often associated with jetstreams aloft.    
+The wave effects can persist for up to 100NM downwind (dependend on mountain size and windspeed).
+
+
+## Visibility
+
+Day or night, visibility reduced when particles in the atmosphere obstructed, reflect, and scatter the light.    
+Particles could be: water droplets, ice crystals, or solids (e.g. sand, dust, smoke)
+
+Additional icing on windshield, sun reflecting from top of clouds, fog, and haze layers or looking into the sun can reduce flight visibility.
+
+### Hazards
+
+poor visibility during landing and take-off --> difficulty to see runway, angle of approach     
+confusion: "closer to runway/tourchdown or at higher appraoch angle"
+
+### Defining visibility
+
+flight and aerodrome visibility are often different. E.g. mist layer at ground vs from air.
+
+Aerodrome visibility := prevailing visibility or runway visual range RVR
+
+ICAO Annex 3:
+
+**Visibility** for aeronautical purposes is the greater of:    
+1. greatest safe distance at which a black object of suitable dimensions situatated near the ground can be seen and recognised when observed agains a bright background, and
+2. greatest distance at which lights in the vicinity of 1000 candelas can be seen and identified against an unlit black background.
+
+
+**ground visibility** is defined as the prevailing visibility near the Earth's surface as reported by an accredited observer.
+
+**prevailing visibility** the visibility value that is reached of exceeded within at least half the horizon circle or within at least half of the surface of the aerodrome. These areas could comprise contiguous or non-contiguous sectors.
+
+### prevailing visibility ~ average visibility.
+
+caveats:
+* half horizon --> visibility in one or more directions is significantly lower than the prevailing visibility
+* vis in any direction less than prevailing visibility and less than 1500m or less than 50% of prevailing visibility and less than 5000m, the lowest visibility observed will be also reported.
+* general direction of the are of lower visibility will be indivated by reference to one of the eight points on the compass. If lowest visibility is observed in more than one direction, the most operationally significant direction will be reported.
+* when visibility is fluctuating rapidly, the prevailing visibility cannot be determined. Only the lowest visibility will be reported with no indication of direction.
+
+Note: non-precision or circle-to-land approach is based on prevailing visibility. Thus visiubilty in certain sectors could be less than 50% of the reported visibility, but the minimum value will be reported if less than 1500m
+
+Prevailing visibility reported in meters.     
+METAR EGGD 1250 1800 0800NE ...     
+Weather at 1250, ("prevailing") visibility 1800 meters, ("worst") visibility 800 meteres to the North East.
+
+### Runway Visual Range (RVR)
+
+RVR is the maximum distance in the directio of takeoff or landing at wich the runway, or specified lights delineating the runway, can be soon from a position on the centreline corresponding to the average eye level of a pilot at touchdown.
+
+RVR may be assessed subjectively by observer, but is typically measured automatically (infra-red or laser sensors).    
+RVR sensors are called "transmissionmeters", other sensor: "forward scatter meter" measuring visibility by looking at the amoutn by which solid particles or water groplets in the atmosphere are scattering light.
+
+
+Methods for measuring **prevailing visibility** and **RVR** are quite different.    
+RVR is measured in a specific direction if less than 1500m.    
+Prevailing visibility will be the average and the minimum values.
+
+RVR and prevailing visibility can not be directly compared.     
+RVR is likely to be the same as or greater that the lowest reported value of the prevailing visibility.
+
+### RVR reporting
+
+RVR reporting in steps of 25m up to 200m, then in 50m up to 800m, then in steps of 100m.    
+RVR is - normally - not reported, if it is 1500m or more.
+
+Most automatic systems report touchdown, midpoint, and stop end values.   
+Partly surpressed to cut down chatter on final approach frequency if not significant.
+
+E.g. AGIVIS (commonly used system in Europe): mid-point or stop end values are repored only if the value in question is less than the touchdown value AND less than 800m, or if it is less than 400m.    
+When all three values are given, the names are omitted.
+
+### Low Visibility Conditions
+
+* fog is caused by water droplets or ice crystals - visibility less than 1000m, RH 100%
+* mist caused by water droplets or ice crystals - visibility at least 1000m but not more than 5000m, RH assumed 95%
+* freezing fog is fog in termperature below 0degC and consists aminly of supercooled water droplets
+* ice fog consists of ice crystals (rather than water droplets) - extremely rare / mostly in polar regions; temp below -20degC
+* haze consists of solid particles, if visibility less than 1000m, qualified by type of pollution, e.g. smoke haze.
+* blowing snow = snow, temp below 0degC, picked up by strong surface winds
+
+The type of obscuration - mist or haze, smoke, dust or sand - is NOT normally quoted, if the visibility is more than 5000m.
+
+### Radiation Fog
+
+Radiation Fog forms when surface cools at night through long wave radiation (loss of heat energy). The cold surface cools the air in contact by conduction bringing it below the dew point.    
+
+c.f. above: sea surface does not cool significantly at night. Ground / solid does!
+Radiation fog only occurs over land., away from the coast, and the moderating influence of the sea, and usually when there is little or no cloud cover (== stronger cooling / no obstructions) to limit temperature reduction.
+
+Industrial contamination increases the probablity of fog formation by providing nulei for condensation.
+
+In still air, the cooling by conduction will be limited to a very thin layer of air near the surface ==> water condensing out == heavy dew == no fog.     
+In strong(er) winds, the turbulent mixing will lift the fog into low cloud or disperse it.
+
+Conditions favouring radiation fog:
+
+* over land
+* at night (cooling)
+* clear or nearly clear skies (no shield/damping of cooling effect)
+* light winds - 2-8kt
+* high relative humidity.
+
+Typical conditions of high pressure systems in winter and in cool high perssure systems in the summer with a slack pressure gradient and low level termperature inversion holding moisture below it.
+
+Low lying areas inland where katabatic winds have brought lower tempeatures and with marshy or damp ground.
+
+Radiation fog typically only up to 500ft thick.
+
+Radiation fog forms (typically) in dawn.
+
+If temp below 0degC - air will meet frost point first as it cools. Moisture --> ice (sublimation) == heavy frost rather than radiation fog.     
+Can turn into (heavy)fog with slight turbulence and heating at sunrise.
+
+Radiation fog is cleared by surface heating during the day. 
+More quickly during summer.
+Or by strong winds or a change of air mass.
+
+
+#### Southern Gulf in Winter
+
+southern arabian gulf is directly beneath the sub-tropical high perssure system, with light winds and clear skies at night.    
+Temp fall over the dessert can be quite severe.   
+During day, sea breezes bring in cool moist air over coastal regions.  
+At night, the temp fall over land catches the moist air before the night time land breezes take it out to the sea.      
+==> radiation fog forms in coastal areas and gently drifts out to the sea.    
+Fog burns off in the hot sun shortly after sunrise.
+
+#### Polor Maritime Air in Winter
+
+polar maritime air originated in cold polar areas and passed over warmer ocean surface. --> moist air    
+As (moist) air warms, it rises and gets unstable.   
+The weather normally associated: convective cloud and vood visibility, except in sowers.
+
+If polor maritime air lies over land in winter, the convective activity may die away at night leaving a cool stable moist air mass with clear skies.   
+If there are light winds, this sets up all the conditions for radiation fog.
+
+
+### Advection Fog
+
+Advection fog occurs when warm moist air masses move over a cold surface.      
+**Katty Perry "katvection" = hot and cold**
+About 15kt windspeed is needed to move the air mass.
+
+Typically, warm air from sub-tropical high pressure regions flowing toward polor front zone, and meeting cold ocean current coming in from the poles.     
+
+Unlike radiation fog, which can form over land at night, advection fog can form over land or sea, day or night.
+
+Advectio fog formed over the sea can persist when blown onshore, if the land is cold (usually in winter).
+Warm winds blowing over cold ground can also form advetion fog. Particular, melting snow that covers the ground ~ "thaw fog".
+
+high winds can lift advection fog into the low stratus or clear it by turbulent mixing.    
+Ditto, daytime heating can lift or dispense the fog over land.
+
+Advection fog forms rapidly when the airmass conditions are right and may only clear again when the airmass conditions change.
+
+### Arctic Smoke
+
+artic smoke or sea smoke or steaming fog has the reverse mechanism from advection fog.
+
+It is formed when (very) cold (polar) air passes over a warm surface.  
+Often when (very) cold air flows over (relatively) warm water.
+
+Normally, these conditions, i.) moisture and ii.) heating from below, would produce instability and convection in the air mass.     
+Thus, there has to be a marked temperature inversion at low level to prevent the lifting.
+
+Arctic smoke is often seen in Greenland and Norwegian fjords.   
+Arctic smoke GND to 500ft maximum.
+
+### Frontal or Other Types of Fog
+
+Frontal fog is fog associated with the passage of a warm front.   
+It can be hill fog, thaw fog, or a type of very low stratus cloud formed in the continuous rain at frontal passage.
+
+Cold saturated air ahead of a warm front mising with the warm moist air behind the front.    
+--> sometimes called: (front) mixing fog.
+
+### Fog Characteristics - Summary
+
+Fog is cloud - usually stratus - in contact with the ground or sea and visibility of less than 1000m.
+
+Fog formation --> fog forms by increasing moisture and /or cooling the air. Moisture is increased by the following:
+* precipitation
+* evaporation from wet surfaces
+* moisture advection
+
+Cooling of the air results from
+* radiation cooling
+* advection over cold surface
+* upslop flow
+* evaporation
+
+Dissipation
+
+removing moisture and/or heating the air dissipates fog and stratus.    
+Moisture is decreased by
+* turbulent transfer of moisture downward to the surface (e.g. to for dew or frost)
+* turbulent mixing of the fog layer with adjavent drier air
+* advection of drier air
+* condensation of the eater vapour to clouds.
+
+Heating of the air results from
+* turbulent transport of heat upward from air in contact with warm gound
+* advection of warmer air
+* transport of air over warmer land surfaces
+* adiabatic warming of air through subsidence or downslope motion
+* turbulent mixing of the fog layer with adjacent warmer air aloft
+* release of latent heat associated with the formation of clouds.
+
+
+```{r}
+knitr::include_graphics("./figures/met-fog-visual-summary.jpeg")
+```
+
+
+
+## Formulae - Questions - check where to integrate
 
 $$RH = 100 - 5* (T - T_d)$$
 Temp: 21 deg, dew point: 9 deg ==> spread = 21-9 = 12 deg
@@ -1441,3 +1908,21 @@ Some questions
 
 surface temp is 15C, temp 1t 10000ft in a current of acending unsaturated air is
 ... ascending unsaturated air will cool at DALR = 3C/1000ft --> 15C - (10 * 3) = -15C
+
+
+
+conditions to formation of steam fog
+...  cold air to warm surface = advection cooling == steaming fog
+  vs warm air to cold surface = advection warming == advection fog
+ 
+ advection fog ~ warm moist air to cold surface
+ frontal fog ~ warm moist air to cold (humid) air
+ additional moist --> warm front
+  
+  
+check questions on ISA temp ==> density or density altitude     
+... lower temperature than ISA --> higher air density --> lower density altitude
+
+ISA at 18000ft: 15 - (18 * 2) = 15 - 36 = -21C
+OAT := - 35C    
+--> actual outside temperature is LOWER than ISA, thus DENSITY is HIGHER
