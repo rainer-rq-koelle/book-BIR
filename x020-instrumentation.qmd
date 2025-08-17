@@ -1,0 +1,166 @@
+---
+title: "Untitled"
+---
+
+1. Basic Concepts of Aircraft Instrumentation
+
+Aircraft instruments translate physical phenomena into usable cockpit information.
+
+Categories:
+
+Flight instruments → attitude, altitude, speed, heading, turn rate.
+
+Engine instruments → fuel, oil, manifold pressure, RPM, EGT/CHT.
+
+Navigation instruments → VOR, ILS, GNSS, ADF.
+
+Principles of operation:
+
+Mechanical instruments: rely on pressure or gyroscopic motion.
+
+Electrical/electronic instruments: use sensors, data buses, and displays.
+
+👉 Study Tip: Always think what physical property is being measured and what errors can affect it.
+
+2. Pitot-Static System & Air Data Instruments
+Components:
+
+Pitot tube → measures dynamic pressure (q = ½ρV²).
+
+Static port(s) → measures ambient atmospheric pressure.
+
+Instruments:
+Instrument	Principle	Key Errors/Limitations
+Airspeed Indicator (ASI)	Compares pitot (total) pressure vs static → dynamic pressure → IAS	Position error, compressibility, density altitude
+Altimeter	Aneroid capsules expand/contract with static pressure vs ISA model	Wrong QNH/QFE, temperature error, lag
+Vertical Speed Indicator (VSI)	Rate of change of static pressure via calibrated leak	Lag, temporary errors (accelerations)
+Failure Modes:
+
+Blocked pitot, clear static → ASI reads like altimeter, VSI zero.
+
+Blocked static, clear pitot → ASI unreliable, altimeter and VSI frozen.
+
+👉 Mnemonic: If it looks odd — suspect the static system.
+
+3. Temperature & Pressure Measurement Systems
+
+OAT probe: resistance thermometer. Corrected for compressibility at high speeds (TAT).
+
+Manifold pressure gauge: measures absolute pressure in intake manifold.
+
+Oil pressure/temperature: mechanical or electrical transmitters.
+
+Fuel quantity: float sensors, capacitance probes.
+
+👉 Pilots need awareness of limitations (e.g., fuel gauges only reliable when empty).
+
+4. Magnetism and Compass Instruments
+Direct-Reading Magnetic Compass:
+
+Simple, passive, mandatory backup.
+
+Subject to:
+
+Variation (difference between true and magnetic north).
+
+Deviation (local fields inside aircraft).
+
+Turning/acceleration errors (due to dip).
+
+Rules of Thumb (Northern Hemisphere):
+
+ANDS → Accelerate North, Decelerate South.
+
+UNOS → Undershoot North, Overshoot South (when rolling out on headings).
+
+Remote/Flux Gate Compass:
+
+Uses sensors and gyros to electronically stabilise heading.
+
+Feeds data to HSIs and EFIS.
+
+5. Gyroscopic Instruments
+Principles:
+
+Rigidity in space → gyro resists change in orientation.
+
+Precession → force applied moves 90° later in rotation.
+
+Key Instruments:
+
+Attitude Indicator (AI): Pitch + bank. Errors: tumbling, acceleration errors.
+
+Heading Indicator (HI): Gyro-stabilised; needs compass alignment due to drift.
+
+Turn Coordinator: Senses roll and yaw → displays rate of turn (standard rate = 3°/s).
+
+👉 Cross-check instruments: AI + compass/HI + VSI/ASI.
+
+6. Electronic Flight Instrumentation (EFIS)
+Glass Cockpit:
+
+PFD (Primary Flight Display): combines AI, ASI, altimeter, VSI, HI.
+
+MFD (Multi-Function Display): navigation, weather, engine/system info.
+
+Advantages:
+
+Reduced workload, better situational awareness, integrated warnings.
+
+Limitations:
+
+Complexity → “mode confusion”.
+
+Reliability depends on electrical power and software.
+
+👉 Always keep basic instrument scan skills as backup.
+
+7. Autopilot and Flight Director
+
+Autopilot (AP): maintains selected modes (HDG, ALT, NAV, APR).
+
+Flight Director (FD): command bars show correct control inputs.
+
+Pilot Awareness:
+
+Know which mode is engaged.
+
+Always be ready to disconnect and hand-fly.
+
+Trust but verify.
+
+8. Alerting and Warning Systems
+
+Master Warning/Master Caution lights → require pilot acknowledgment.
+
+Aural alerts: stall warning, overspeed clacker, GPWS/EGPWS.
+
+Trend indicators on EFIS help anticipate problems.
+
+👉 Treat warnings as action prompts, not suggestions.
+
+9. Navigation and GNSS/FMS Basics
+
+FMS: integrates sensors + databases to calculate nav and performance solutions.
+
+GNSS (GPS, Galileo): main BIR navigation enabler.
+
+RAIM (Receiver Autonomous Integrity Monitoring): ensures accuracy and integrity.
+
+Limitations:
+
+Susceptible to jamming/spoofing.
+
+Database validity crucial (AIRAC cycle).
+
+✈️ Suggested Visualisations to Add
+
+Pitot-static system diagram: showing pitot tube, static port, ASI, VSI, altimeter.
+
+Compass error illustration: turning/acceleration errors.
+
+Gyro principles: rigidity and precession.
+
+Glass cockpit PFD screenshot: highlighting integrated instruments.
+
+Autopilot mode panel example: showing ALT/HDG/NAV/APR modes.

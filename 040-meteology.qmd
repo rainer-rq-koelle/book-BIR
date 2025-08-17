@@ -16,6 +16,7 @@ GUCKSTU
 * https://www.weather.gov/source/zhu/ZHU_Training_Page/ZHU_Training_Page.html several notes
 *  https://www.langleyflyingschool.com/Pages/CPGS%20Meteorology,%20Part%201.html; https://www.langleyflyingschool.com/Pages/CPGS%20Meteorology,%20Part%202.html
 * general stuff including meteorology: https://www.langleyflyingschool.com/Pages/Classroom.html
+* http://ww2010.atmos.uiuc.edu/(Gh)/guides/mtr/home.rxml
 :::
 
 ## The Atmosphere
@@ -1837,6 +1838,85 @@ Heating of the air results from
 knitr::include_graphics("./figures/met-fog-visual-summary.jpeg")
 ```
 
+## Pressure Systems - Convergence and Divergence
+
+Divergence = net outflow of air (decrease of mass) in an area
+convergence = net inflow or air (increase of mass) in an area
+
+In active pressure systems, the pressure pattens at the surface and at the tropopause are opposity.    
+surface LOW  (convergence) --> rising air (convection) --> divergence in upper air.
+surface HIGH (divergence)  <-- sinking air (subsidience) <-- convergence LOW in upper air.
+
+Note: level of "non-divergence" ~ 600 hPa ~ 14000ft := "barometric level".
+At barometric level, the pressure systems are neither HIGH nor LOW, but between the two.    
+Over poles, barometric level can be 10000ft/700hPa; higher near equator.
+
+18.000ft ~ 500 hPa
+
+Highs or Anticyclones - high pressure systems are called anticyclones.   
+Air flows out of a high pressure system (geostrophic rules) clockwise. (clock Northern Hemnisphere/opposite in the Southern)
+((NH: LeftHand - thumb up/HIGH --> clockwise, thumb down/LOW --> counter-clockwise))
+
+![divergence and convergence](figures/met-divergence-convergence.png)
+
+Think about subscael on your altimeter:
+
+* Norther Hemnisphere: turn it left (anti-clockwise) --> indicated altitude decreases = LOW
+* NH: same with crosswind from left (anti-clockwise wind direction) --> alt decrease = LOW
+
+NH: wind from left = altitude theft
+
+NH: HIGH ~ Hour = clockwise     
+NH: LOW  ~ anti-clockwise
+
+
+```{r}
+knitr::include_graphics("./figures/met-high-pressure-system-meteoswiss.jpg")
+#source: https://www.meteoswiss.admin.ch/weather/weather-and-climate-from-a-to-z/anticyclone-high-pressure.html
+```
+
+Anticyclones    
+* large ~ 1500NM
+* slow to form and dissipate
+* slow moving / stationary
+* surface pressure gradient at centre is low == light winds
+
+### Cyclones - Lows - Depressions
+
+Cyclone - air moves in same direction as Earth's rotation ~ **counter-clockwise**/Northern Hemisphere.
+
+Cyclones     
+* (relatively) small ~ 300NM  
+* active, form rapidly, move at fair speeds, and fill rapidly when dying.
+
+Mechanism for taking in energy at low level in the form of latent heat or warm air, carrying it alogt.   
+This energy input, translated to kinetic energy -- winds -- makes the LOW circulate more strongly, further lowering the central pressure (and sucking in more energy).    
+Depression/LOW will continue to develop and deepend until the energy feed is cut off or the upply of warm air runs out --> die.   
+Depressions are associated with strong winds, surface convergence, upper divergence, convection and precipitation.    
+
+Depressions/LOWs classified according to how they form:
+
+* frontal depression/low - formed along the line of the polar front
+* orographic depression/low - "lee depression" formed by swirling of airflow behind hills and mountains
+* thermal depression/low - caused by surface heating
+* cold air low/polar low - associated with small-scale instability developing in polar airflow.
+
+### Ridges, Troughs, and Cols
+
+ridge (or wedge) - elongated area of relatively high pressure - characterised by a generally anticyclonic weather (fair weather), extension of HIGH pressure region, bounded by LOW pressure.
+
+troughs - elongated area of LOW pressure system, sharp kkink/angle in "v"-shaped isobars.   
+Troughs often coincide with fronts, across which wind direction and isobar alignment change.    
+Typically associated with unsettled weather, cloudy conditions, precipitation, and often produce lines of convective cloud and thunderstorms in conditionally or absolutely unstable air masses.
+
+cols - like geographic cols - are regions between two highs and two lows.   
+Pressure pattern produces basically no low level wind.   
+Light winds, clear skies, and an inversion at low level.   
+Over land in winter: cols can produce deteriorating visibility due to radiation fog.    
+Over land in summer: lack of wind and turbulance allows the surface heating to raise the low level air temperature to the point where convective activity starts ==> "air mass thunderstorms", isolated, thermally generated CBs 
+
+
+
 
 
 ## Formulae - Questions - check where to integrate
@@ -1880,21 +1960,6 @@ BACK =210 -30 = 180
 DOWN = 50% --> 12kt
 
 
-Divergence = net outflow of air (decrease of mass) in an area
-convergence = net inflow or air (increase of mass) in an area
-
-![divergence and convergence](figures/met-divergence-convergence.png)
-
-
-Think about subscael on your altimeter:
-
-* Norther Hemnisphere: turn it left (anti-clockwise) --> indicated altitude decreases = LOW
-* NH: same with crosswind from left (anti-clockwise wind direction) --> alt decrease = LOW
-
-NH: wind from left = altitude theft
-
-NH: HIGH ~ Hour = clockwise     
-NH: LOW  ~ anti-clockwise
 
 
 
@@ -1926,3 +1991,8 @@ check questions on ISA temp ==> density or density altitude
 ISA at 18000ft: 15 - (18 * 2) = 15 - 36 = -21C
 OAT := - 35C    
 --> actual outside temperature is LOWER than ISA, thus DENSITY is HIGHER
+
+
+Sinking air ...
+... is heated by compression (air gets denser, warms) = adiabatic heating     
+==> can hold more water vapour == less cloud

@@ -1,0 +1,157 @@
+---
+title: "Untitled"
+---
+
+1. Introduction to Aviation Meteorology
+
+Meteorology is the study of the atmosphere and its phenomena.
+
+For pilots, the focus is on weather conditions that affect flight safety and performance.
+
+Key elements: pressure, temperature, humidity, wind, clouds, visibility, hazards.
+
+Understand ICAO Annex 3 (Meteorological Service for International Air Navigation) and associated EU rules.
+
+2. The Atmosphere
+
+Divided into layers: Troposphere (up to ~36,000 ft mid-latitudes), Tropopause, Stratosphere.
+
+Most aviation weather occurs in the troposphere.
+
+Lapse rate: standard 2°C per 1,000 ft.
+
+ISA (International Standard Atmosphere):
+
+Sea level: 15°C, 1013.25 hPa.
+
+Pressure decreases ~27 ft per hPa.
+
+👉 Pilots use ISA as a reference for altimetry, performance, and weather interpretation.
+
+3. Pressure and Wind
+
+Pressure systems:
+
+High (anticyclone): sinking air, stable, light winds, clear skies.
+
+Low (depression): rising air, unstable, clouds, precipitation.
+
+Wind:
+
+Caused by pressure gradients.
+
+Modified by Coriolis effect (deflects to the right in NH).
+
+Near the surface: slowed and turned by friction.
+
+Gradient wind vs geostrophic wind:
+
+Aloft winds flow parallel to isobars.
+
+Near surface, they cross isobars towards low pressure.
+
+4. Temperature, Humidity, and Stability
+
+Relative humidity (RH): ratio of actual water vapor to saturation.
+
+Dewpoint: temperature at which air becomes saturated → clouds/fog.
+
+Stability:
+
+Stable air: resists vertical motion → stratiform clouds, poor visibility, smooth air.
+
+Unstable air: encourages vertical currents → cumuliform clouds, turbulence, showers.
+
+👉 Rule of Thumb: Temperature decreasing faster than 2°C/1,000 ft = unstable.
+
+5. Clouds and Precipitation
+
+Cloud classifications:
+
+Stratus: flat, stable.
+
+Cumulus: heaped, convective.
+
+Cirrus: high-level ice clouds.
+
+Cloud development: lifting → cooling → condensation.
+
+Precipitation forms: rain, snow, hail, drizzle.
+
+Ceiling & visibility determine VFR/IFR conditions.
+
+6. Air Masses and Fronts
+
+Air mass: large body of air with uniform temp/humidity.
+
+Fronts:
+
+Cold front: fast-moving, steep slope, cumulus, showers, turbulence.
+
+Warm front: gentle slope, stratiform clouds, steady rain, poor vis.
+
+Occluded front: combination, widespread cloud/rain.
+
+Stationary front: little movement, prolonged poor weather.
+
+👉 For IFR: expect significant weather changes at frontal passages.
+
+7. Aviation Hazards
+
+Turbulence: mechanical (terrain), convective, wind shear, CAT (clear air turbulence).
+
+Icing:
+
+Forms in supercooled liquid water regions.
+
+Types: rime (opaque, rough), clear (glassy, heavy), mixed.
+
+Dangers: weight, drag, blocked sensors, loss of lift.
+
+Thunderstorms: require moisture + instability + lifting.
+
+Hazards: turbulence, hail, icing, microbursts, lightning.
+
+Fog types: radiation, advection, upslope, frontal.
+
+8. Weather Charts and Forecasts
+
+Surface charts: pressure systems, isobars, fronts.
+
+Upper air charts: jet streams, turbulence zones.
+
+Significant Weather (SIGWX) charts: areas of turbulence, icing, cloud tops.
+
+METAR/SPECI: coded actual weather.
+
+TAF: terminal forecasts.
+
+SIGMET/AIRMET: warnings for en-route weather hazards.
+
+👉 Pilots must be fluent in METAR/TAF decoding.
+
+9. Meteorological Information for IFR Flight
+
+Pre-flight: study TAF/METAR, SIGWX, NOTAMs.
+
+En-route: ATIS, VOLMET, ATC updates, onboard weather radar.
+
+Decision-making: always plan for alternates considering weather minima.
+
+✈️ Suggested Visuals for Meteorology Notes
+
+Diagram of atmospheric layers.
+
+Pressure systems with wind circulation (NH).
+
+Stability comparison (stable vs unstable lapse rates).
+
+Cloud classification chart.
+
+Frontal cross-sections (cold/warm/occluded).
+
+Thunderstorm life cycle.
+
+Fog formation types.
+
+Sample decoded METAR/TAF table.
