@@ -121,6 +121,22 @@ good info: https://aerotoolbox.com/airspeed-indicator/
 
 Your airspeed indicator, put simply, is a scale that measures the difference between the static pressure from your static ports, and the ram pressure (dynamic + static) from your pitot tube The static pressures cancel each other out, and you're left with dynamic pressure.
 
+NOTE: flight club video
+
+
+
+PUD                      SUC
+P - Pitot blocked         S - static blocked
+U - Under-reads           U - Under-read
+D - in Descent            C - in Climb
+
+```{r}
+knitr::include_graphics("./figures/inst-ASI-POC-PUD.png")
+knitr::include_graphics("./figures/inst-ASI-SUC-SOD.png")
+```
+
+
+
 ## Pressure Altimeter
 
 The pressure altimeter measures the "barometric" difference in height between pressure levels.
@@ -1186,6 +1202,8 @@ An alternative EASI display for 737 uses a chevron shaped aircraft sympb
 
 
 ## Navigation Displays
+
+CHECK ALSO: https://wiki.ivao.aero/en/home/training/documentation/Navigation_Display_-_ND for figures, etc.
 
 Navigation Displays (or Electronic Horizontal SItuation Indicator) provides mode-selectable depiction of navigation and supplemental inforamtion
 

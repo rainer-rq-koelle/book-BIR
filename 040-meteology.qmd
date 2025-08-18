@@ -1500,8 +1500,8 @@ This is explains why sometimes mist and fog form with RH below 100%.
 
 Two theories why water droplets or ice grow inside clouds. Neither gives complete answer.
 
-**Theory A: Ice Crystal Theory - Wegener-Bergereon-Findeisen - Norwegian Theory**   
-water is know to exist as a liquid below 0degC when it is supercooled.   
+**Theory A: Ice Crystal Theory - Wegener-Bergereon-Findeisen - Norwegian Theory**      
+water is known to exist as a liquid below 0degC when it is supercooled.   
 Such water droplets can be mixed with ice crystals in cloud above the freezing level.    
 If the air is still rising and water vapour is continuing to condense, it will tend to sublimate directly onto the nucleus of an ice crystal. Water vapour over ice is lower than that over water (~ attracts).   
 
@@ -1996,3 +1996,73 @@ OAT := - 35C
 Sinking air ...
 ... is heated by compression (air gets denser, warms) = adiabatic heating     
 ==> can hold more water vapour == less cloud
+
+
+
+which form of precipitation falls from clouds containing only water ...
+... "only water" = Nimbostratus == drizzle    
+note: large raindrops and hail ~ large cumulus containing both: water droplets and ice crystals.
+
+
+
+
+
+
+
+## See How to integrate the following
+
+Humidity
+Cloud formation occurs when invisible water vapour becomes visible, either as water droplets or ice crystals.  This is called condensation.  When ice crystals form, the process is sublimation.
+
+Every air mass is limited in the amount of moisture it can hold; when this limit is reached—referred to as the saturation point—condensation will occur.
+
+The amount of moisture an air mass can hold is dependent on temperature: the warmer the air, the more moisture it can hold.
+
+Relative Humidity is the ratio of water vapour in the air relative to the saturation point (saturated air has 100% RH).  As air is cooled its ability to hold invisible moisture decreases; the temperature to which unsaturated air must be cooled to become saturated (at constant pressure and humidity) is called the dewpoint.  The smaller the spread between temperature and dewpoint, the higher the relative humidity.  Fog or cloud usually forms when the spread is within 2°C.
+
+Supercooled Water Droplets: Water droplets can remain in a water state as low as -40°C., and are commonly found in cloud with temperatures between 0° and -15°C.  When these droplets strike an airframe, severe icing can occur.
+
+Heating
+The troposphere is heated from below from the earth’s surface by radiation (terrestrial radiation).  Specifically, we identify four processes:
+
+convection
+
+Air over warm surfaces becomes heated and rises; cold air descends to replace it
+
+advection
+
+Cold air becomes heated after moving over a warm surface.
+
+compression
+
+Descending air is compressed and its temperature rises.
+
+turbulence
+
+The mixing process whereby heat is distributed.
+
+Isotherms are found on meteorological maps and are lines joining areas of equal temperature.
+
+Cooling
+Since the troposphere is heated from below, temperature decreases with increased altitude; the rate of decrease is called the lapse rate.  The lapse rate is 2°C. per 1000’ (specifically, 1.98°C).
+
+The earth’s surface cools at night as heat is lost by radiation—radiation cooling.  When warm air moves over a cool surface, the decreased temperature of the air is advection cooling.  As air rises, it expands and cools; this is called the adiabatic process.  Two adiabatic lapse rates are used: the dry adiabatic lapse rate, which is 3°C. per 1000’, and the saturated adiabatic lapse rate, which is 1.5°C. per 1000 ft.
+
+Using the dry adiabatic lapse rate, cloud bases can be predicted; icing levels can be predicted by the saturated adiabatic lapse rate.  To make the calculation, you require surface temperature and dew point; take the temperature-dewpoint spread and divide by 3 for predicting cloud heights in thousands of feet or by 1.5 to predict freezing level.
+
+Stability
+It is useful to differentiate between two types of air masses: stable and unstable.
+Stability of an air mass refers to its tendency to develop vertical movement (updrafts and downdrafts).
+Stable air resists vertical movement, and when displaced returns to its original horizontal level; unstable air moves further up and down when disturbed.
+Why is this important?  Unstable air produces turbulence and thunderstorms.
+When expansion of air takes place, the air is cooled.  This is the adiabatic process.
+If the rising air cools to a temperature equal to its surrounding air, stability will occur and it will stop rising; if, however, the rising air remains warmer than the surrounding air, it will continue to rise.
+The main indicator of air stability is therefore the temperature lapse rate.  Rule:  A steep lapse rate creates instability, and a shallow lapse rate creates stability.
+Advection therefore causes a steepening of the lapse rate and creates instability, while an isothermal layer (layer with constant vertical temperature) or an inversion (reversed lapse rate) causes stability.
+Lifting agents which create vertical movement of air:
+Convection: air heated by warm surface; an example of this is the evenly spaced puffy clouds that form on a previously clear summer’s day.
+Orographic lift: air forced to rise because of terrain; this is why the folks in North Vancouver have so much rain; it is also why folks on the West Coast have rain and the Prairie folks do not.
+Frontal lift: cold air undercutting warm air, or warm air overrunning cold air.
+Mechanical turbulence: friction between wind and surface.
+Convergence: air moving to the centre of a low pressure, which fills the area and is forced to rise.
+
