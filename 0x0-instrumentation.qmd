@@ -203,6 +203,10 @@ change of sea level pressure from the datum set on altimeter
 ![barometric change](figures/inst-altimeter-barometric-error.png)
 ![temperature change](figures/inst-altimeter-temp-error.png)
 
+```{r}
+knitr::include_graphics("./figures/inst-indicated-vs-true-altitude.jpg")
+```
+
 HIGH pressure to low pressuer - altimeter over-reads; true alt decreases, while shown altitude stay constant
 HIGH termp to lower temperature - altimeter over-reads, true alt decreases
 
@@ -1335,6 +1339,14 @@ figure shows overlaid weather data
 AIRBUS ND can show weather radar in all modes except PLAN 
 
 
+TODO - table of "features"
+
+MAP mode:    
+* partial compass rose
+* no North Arrow indicator (PLAN!)
+* (triangular) aircraft symbol
+
+
 ### Engine & Systems Screeens
 
 Boeing EICAS - Boeing uses 2 engines and systems screens called Engine Indicating and Crew Alerting System (EICAS).    
@@ -1587,3 +1599,9 @@ CAS - calibrated airspeed
 EAS - equivalent airspeed
                             density correction
 TAS - true airspeed
+
+
+AIBus nd video https://www.youtube.com/watch?v=F6wBh8WF0x8
+ND - MAP: https://www.bing.com/videos/riverview/relatedvideo?q=ATPL+ND+MAP+mode&cvid=78babbb48f814625982e1c5c12cae39a&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhA0gEJMTQ0NjBqMGoxqAIAsAIA&PC=U531&ru=%2fsearch%3fq%3dATPL%2bND%2bMAP%2bmode%26cvid%3d78babbb48f814625982e1c5c12cae39a%26gs_lcrp%3dEgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhA0gEJMTQ0NjBqMGoxqAIAsAIA%26FORM%3dANAB01%26PC%3dU531&mmscn=vwrc&mid=E0E99C92DF96C2C74212E0E99C92DF96C2C74212&FORM=WRVORC&ntb=1&msockid=0d0dbb477f2111f0be5b8bd3b0f6a311
+https://www.brainscape.com/flashcards/remote-indicating-compass-17236226/packs/22420401
+https://wiki.ivao.aero/en/home/training/documentation/Flight_Management_System_-_FMS

@@ -781,6 +781,9 @@ $SALR * Height = 1.8 deg/1000ft * 3000ft = 5.4$ ==> $T_{wb} = 5 + 5.4 = 10.4$
 
 dew point must be "slightly" higher that dew point at cloudbase, but lower than wet bulb temperature at surface. ==> pick respective multiple choice answer!
 
+cloud base approx
+$(T_surface - T_dewpoint) * 400$
+
 ### Thermodynamic diagrams - Tephigrams
 
 Meteorologists use accurate graphs of temperature and pressure height --> thermodynamic diagram.
@@ -2066,3 +2069,17 @@ Frontal lift: cold air undercutting warm air, or warm air overrunning cold air.
 Mechanical turbulence: friction between wind and surface.
 Convergence: air moving to the centre of a low pressure, which fills the area and is forced to rise.
 
+
+CAVOK when “all” of the following conditions are met:[2][3][4]
+
+Prevailing visibility 10 km (6.2 miles) or more
+No minimum visibility reported
+No clouds below 5000 ft (1.5 km) or below Minimum Sector Altitude (MSA), whichever is greater
+No TCU (towering cumulus) or CB (cumulonimbus) clouds
+No significant (SIG) weather phenomena in or around the aerodrome
+
+
+https://atoc.colorado.edu/~saraht/atoc1050/Lecture_Notes/index.htm
+
+GOOD STUFF: https://paragonair.com/public/docs/AdvCircs/AC00-06A_AvWx/AC00-6A_ch05.html
+https://paragonair.com/public/docs/AdvCircs/AC00-06A_AvWx/index.html

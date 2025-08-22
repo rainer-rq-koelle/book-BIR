@@ -25,6 +25,9 @@ category of aircraft, cross-country, dual instruction time, flight time, SPIC, i
 
 :::{.callout-note}
 Explain the structure of Part FCL.
+
+
+
 :::
 
 ### Rating
@@ -40,3 +43,92 @@ Explain the requirements for instrument ratings, their validity and privileges.
 :::{.callout-note}
 
 :::
+
+## ACAS   
+
+ACAS also known as traffic collision avoidance system TCAS    
+based on Mode S transponders to provide traffic information to aircrew.
+
+ACASII provides collision avoidance in the vertical plane.   
+Resolution Advisories RA are system-based and may conflict with ATC instructions.
+RA ==> collision avoidance command.
+
+Traffic Advisory TA information on proximate traffic and traffic that is potentially threatening.
+TA ~ enhance situational awareness, possibility of a RA, assist in visual acquisition of traffic.
+
+E.g. G1000 offers option for TCAS
+
+
+## Definitions
+
+Rule of the Air ...
+
+acrobatic flight - maneuvers intentionally performed by an aircraft involving an abrupt change in its attitude, an abnormal attitude, or an abnormal vairation in speed.
+
+ADS-C agreement - reporting plan for ADS-C reporting (air traffic unit and frequency)
+
+advisory airspace ... airspace or designated route within which air traffic advisory service is available.   
+advisory route .. route along which ... air traffic advisory service
+
+aerodrome - defined area on land or water ...
+
+aerodrome control service   
+aerodrome control tower - unit established to provide ATC to aerodrome traffic.  
+aerodrome traffic - all traffic in maneuvering area of an aerodrome and all aircraft flying in the vicinity of an aerodrome. (ac are in the vicinity of an aerodrome when it is in, entering, or leaving the aerodrome circuit).      
+aerodrome traffic zone - airspace of defined dimensions established around an aerodrome for the protection of aerodrome traffic.
+
+AIM/AIP   
+
+aeronautical station - a land station in the aeronautical mobile service. In certain situation on ship or platform at sea.
+
+aeroplane - a power-driven heavier than air aircraft deriving its lift in flight chiefly from aerodynamic reactions on surfaces which remain fixed under given conditions of flight.
+
+ACAS
+
+aircraft - any machine that can derive support in the atmosphere from the reactions of the air other than the reactions of the air against the earth's surface.
+
+air traffic control clearane - authorisation for an aircraft to proceed under the conditions specified by an air traffic control unit.    
+* for convenience: air traffic control clearance is frequently abbreviated to " clearance",
+* the abbreviated term clearance may be prefixed by the words "taxi","take-off","departure
+","en-route","approach" or "landing" to indicate the particular portion of flight to which the air traffic control clearance relates.
+
+ATC service - service provided for the purpose of    
+* preventing collisions     
+  + between aircraft, and
+  + on the maneuvering area between aircraft and obstructions; and
+* expediting and maintaining an orderly flow of air traffic.
+
+
+appropriate authority    
+* regarding flight over high seas: the relevant authority of the State of registry
+* regarding flight other than over the high seas: the relevant authority of the State having sovereignty over the terriroty being overflown.
+
+....
+
+## Flight Rules
+
+### Cruising Levels
+
+cruising levels are based on magnetic track (projected path) not the magnetic heading!
+semi-circular cruising levels; 000-179 & 180-359 --> opposite traffic is separated vertically.
+
+In polor regions, i.e., above 70N or 70S, grid tracks aligned with the Greenwich Meridian may be used instead when prescribed by the relevant authorities.   
+In other states, e.g., New Zealand, Italy, Israel, France, ..., with predominantly NORTH-SOUTH airway tracks, the semi-circular levels may be based on southbound tracks defines as between 090-269 and nothrbound 270-089.
+
+Figure shows non-RVSM airspace/cruising levels.
+
+```{r}
+knitr::include_graphics("./figures/air-cruising-levels.png")
+# taken from BGS
+```
+
+RVSM - on the basis of the regional air navigation agreement a vertical separation minimum VSM of 300m/1000ft is applied between FL290 and FL410 inclusive.    
+== RVSM area.
+
+in RVSM
+
+  westbound   eastbound
+<-- FL320
+            --> FL310
+<-- FL300
+            --> FL290

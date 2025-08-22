@@ -44,8 +44,9 @@ Both are essential for achieving an effective safety culture.
 However, it is accepted that the latter is easier to manipulate than the former.   
 It is hard to change the attitudes and beliefs (or adults by direct methods of persuasion)
 
-A safety culture is a product of organisational, professional, and national cultures.    
-Therefore a safety culture may be positive, negative,m or neutral, depending on the differences in the vaulues of the three elements above.
+A safety culture is a **product** of organisational, professional, and national cultures.   
+The safety culture is a "sub-component" of the national culture (<-- EXAM question).    
+Therefore a safety culture may be positive, negative, or neutral, depending on the differences in the vaulues of the three "constituting" elements (i.e., org, prof, and national cultures).
 
 Social psychologists have attempted to classify national cultures in terms of collective traits they display. The most well known being the four dimensions as proposed by Geert HOFSTEDE
 
@@ -54,6 +55,12 @@ relevant to aviation:
 * nature of relations between subordinates and superiors
 * how often subordinates are afraid to express disagreement
 
+Reason model for safety culture (5 sub-cultures)    
+* informed culture  := collects and analyses relevant data, and actively disseminates safety informatio
+* reporting culture := cultivating an atmosphere where people have confidence to report safety concerns without fear of blame
+* learning culture  := org is able to learn from mistakes and makes changes, promotes understanding of SMS
+* just culture      : errors and unsafe acts will not be punished if the error was unintentional. However, those who act recklessly or take deliberate and unjustifiable risks will still be subject to disciplinary action
+* flexible culture := organization and the people in it are capable of adapting effectively to changing demands
 
 
 ### ICAO
@@ -756,7 +763,7 @@ knitr::include_graphics("./figures/hf-TEM-failures.jpg")
 # source https://skybrary.aero/articles/human-error-types - text might be helpful
 ```
 
-
+Note: A deliberate violation leads to an associated suspension. == Just culture! while non-punitive by design vs error, consequences of deliberate violations are known/enforced. (exam question)
 
 error and intention inextricably associated ==> an error can only occur if the action was intended and is only an error, if the actual outcome of the action differs from the intended outcome.
 
@@ -919,6 +926,11 @@ Errors fall into 3 categories
 * procedural errors, and
 * communication errors.
 
+3 categories of countermeasures: 1. planing, 2. execution, 3. review (PlanDoCheck&Act) c.f. below summary.
+* plannin countermeasure   := planning and preparation of a flight
+* execution countermeasure := proper management of execution, e.g. handling of automation, task prioritisation, active crew-(cross-)monitoring/checking     
+* review countermeasure    := action analysing and reviewing -->plans<-- (to differ from execution ~ doing the job), seeking clarification, investigate on critical information    (CHECK THIS FOR BETTER WORDING)
+
 ### Undesired Aircraft State
 
 outcome of imperfect threat and/or error management is an undesired aircraft state.
@@ -986,7 +998,7 @@ Warning devices often arranged to flash / attention getting.
 * guards and interlocks - critical controls are often guarded, as in the case o f the fire bottle switches, or interlocked as in the case of the landing gear lever
 * standardisation - where possible the position of important controls is stnadardised between different aircraft and aircraft types.
 
-## TEM Countermeasures SUmmary
+## TEM Countermeasures Summary
 
 countermeasures utilised in TEM can be split into two major categories
 1. hard resources, and
@@ -999,10 +1011,10 @@ Hard resources and countermeasures are known as "systemic based" and embedded in
 * operational procedures (SOPs, briefings, checklists)
 * crew training
 
-Soft resources relate to the diret human (crew) input
+Soft resources relate to the direct human (crew) input
 
 * planning countermeasures - including SOP briefing, stated pans, assignment of workload and contingency management --> essential for managing anticipated and unexpected situation
-* execution countermeasures - inlcuding autormation and workload management, monitoring, and cross-checking --> proper error detection and proper response
+* execution countermeasures - including automation and workload management, monitoring, and cross-checking --> proper error detection and proper response
 * review countermeasures - including open questioning, evaluation, and modification of plans coupled with crew assertivenes --> effectively manage the ever-changing flight conditions.
 
 ## Decision-Making
