@@ -150,3 +150,103 @@ in RVSM
             --> FL290
 
 
+## Aerodromes
+
+ICAO Annex 14 --> SARPS for aerodromes intended for international traffic.   
+Local / regional variations may exist - but in principle "same" standardised markings, terminology, and lighting.
+
+aerodrome components    
+supporting buildings, apron, and maneuvering area.
+
+maneuvering area = part of aerodrome used for take-off, landing, and taxying of aircraft EXCLUDING aprons.    
+taxiways are defined paths for taxying aircraft and provide links between different parts.  
+runway = defined as rectangular area for take-off and landing of aircraft.   
+apron = defined area intended to accommodate aircraft for the purpose of loading or unloading passengers, mail, or cargo, and for fueling, parking, or maintenance.
+
+runway design    
+* non-instrument runways intended only for aircraft using visual approach procedures, and
+* instrument runways intended for aircraft making instrument approaches as well as visual approaches. Instrument runways can be further sub-divided into
+  + precision approach runways := runways served by ILS and/or MLS precision approach airs
+  + non-precision approach runways := runways provided by an approach air with at least directional guidance for a straight in approach (e.g. NDB)
+  
+runway holding positions     
+aircraft should hold at designated runway holding position, or 50m from runway edge where runway is 900m or more, 30m from runway where runway length is less than 900m.
+
+runway strips    
+runway strip is an area which includes the runway and the stopway.   
+Strips are intended to reduce damage to aircraft running off the runway and to protect aircraft flying over it on take-off or landing.
+
+a strip should extend before the thrrshold and beyond the end of the runway or stopway for a distance of at least:     
+* 60m where the code number is 2,3, or 4;
+* 60m where the code number is 1 and the runway is an instrument runway; and
+* 30m where the code number is 1 and the runway is a non-instrument runway.
+
+runway width     
+A strip including a precision approach runway should - wherever practicable - extend laterally to a distance of at least     
+* 150m where the code number is 3 or 4; and 
+* 75m where the code number is 1 or 2     
+on each side of the runway centre line or the runway and its extended centre line throughout the length of the strip.
+
+grading of runway strips      
+that portion of a strip of an instrument runway within a distance of at least:    
+* 75m where the code number is 3 or 4; and 
+* 40m where the code number is 1 or 2    
+from the centre line of the runeay and its extended centre line should provide a graded area for aeroplacnes which the runway is intended to serve in the event of an aeroplane running off the runway.    
+
+The surface of the strip which abuts a runway shall be flush with the surface of the runway and should be prepared against blast erosion in order to protect a landing aeroplance from danger of an exposed edge.
+
+runway end safety areas    
+a runway end safety area is a semi-prepared surface at the end of a runway designed to reduce the damage if an aircraft lands short or over runs the runway.    
+ICAO recommends that a runway and safety area should extend from the end of a runway strip for as great a distance as practicable, but at least 90m.   
+It should be at least twice as weide as the associated runway.
+
+### reported data
+
+aerodrome data is reported in the AIP in text and also on the ICAO aerodrome chart.   
+Short term information such as work in progress and runway conditions may be reported by NOTAM.
+
+reported data includes:    
+* ARP aerodrome reference point = designated geographical location of the aerodromes. The ARP should be at or near the actual or planned geometric centre of the aerodrome.
+* ELEV aerodrome elevation is the highest point in the landing area where the landing area is defined as that part of the movement area intended for the landing or takeoff of aircraft.
+* declared distances
+  + declared distances are the offical published data for the various distances required for takeoff and landing calculations
+  + stopway and clearway
+    + stopway is defined as rectangular area on the gorund at the end of the take-off run available prepared as a suitable area in which the aircraft can be stopped in the case of an abandonned takeoff. The stopway should be at least as wide as the runway.
+    + clearway is a rectangular area on the ground under the control of the aerodrome authority which is selected or prepared as a suitable are over which an aeroplane may make a portion of its initial climb to a specified height. The clearway may not be greater than 50% of the tuake off run available and should extend at least 75m either side of the centre line.
+
+Note: a stopway has to be load bearing whereas a clearway does not. It could be water.
+
+### displaced threshold
+
+Where a runway has a displaced threshold, the LDA will be reduced by the distance the threshold is displaced.
+
+### runway contaminents
+
+runway contaminents can include:
+* water
+* snow
+* slush
+* ice
+* anti-icing or de-icing fluid
+* mud
+* dust
+* sand
+* volcanic ash
+* oil, and
+* rubber.
+
+### braking action
+
+braking action shall be reported if the runway is contaminated with snow or water.
+
+measured breaking coefficient   estimated breaking action   code
+0.4 and above                       good                     5
+0.39 to 0.36                        medium to good          4
+0.35 to 0.3                         medium                    3
+0.29 to 0.26                        medium to poor            2
+0.25 and below                      poor                      1
+
+
+questions
+
+* RSA/RESA = runway safety area (RSA) or runway end safety area (RESA): = he surface surrounding the runway prepared or suitable for reducing the risk of damage to airplanes in the event of an undershoot, [1] overshoot, or excursion from the runway
