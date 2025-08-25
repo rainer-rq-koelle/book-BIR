@@ -105,12 +105,28 @@ appropriate authority
 
 ....
 
+Danger Area    an airspace of defined dimensions within which activities **dangerous** to the flight of aircraft may exist **at specified times**.
+Prohibited Area    prohibited (at all times)
+Restricted Area
+
+Apron = defined area, on a land aerodrome, intended to accommodate aircraft for the purpose of laoading or unloading passengers, amil or cargo, fueling, parking or maintenance.    
+Maneuver area = part of an aerodrome to be used for take-off, landing, and taxiing of aircraft, excluding aprons.    
+Movement area = that part of an aerodreom to be used for take-off, landing and taxiing of aircraft and the aprons.
+
+AIRAC = aeronautical information regulation and control) signifying a **"system"** aimed at advance notification based on common effective dates, of circumstances that necessitate significant changes in operating procedures.     
+AIP ... a publication issued by or with the authority of a state and containing aeronautical information of a lasting character essential to air navigation. 
+AIP amendment (**"regular update"**) ... involves changes to the existing (AIP) information, adding new data or deleting outdated content. 
+AIP supplements (**"temporary update"**) encompass temporary, but long-term changes, or additional information that hasn’t been integrated into the main AIP, often due to the extensive or interim nature of the content.
+Note: https://aviationgoln.com/aip-amendments-and-supplements/
+
 ## Flight Rules
 
 ### Cruising Levels
 
 cruising levels are based on magnetic track (projected path) not the magnetic heading!
 semi-circular cruising levels; 000-179 & 180-359 --> opposite traffic is separated vertically.
+
+Minimum separation between flight levels is 500ft. (IFR/VFR)
 
 In polor regions, i.e., above 70N or 70S, grid tracks aligned with the Greenwich Meridian may be used instead when prescribed by the relevant authorities.   
 In other states, e.g., New Zealand, Italy, Israel, France, ..., with predominantly NORTH-SOUTH airway tracks, the semi-circular levels may be based on southbound tracks defines as between 090-269 and nothrbound 270-089.
@@ -132,3 +148,5 @@ in RVSM
             --> FL310
 <-- FL300
             --> FL290
+
+

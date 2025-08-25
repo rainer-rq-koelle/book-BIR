@@ -1185,6 +1185,16 @@ stressed individuals become more accident-prone as they reach their  "break poin
 Chronic stress can result in physical illness.   
 Stress is cumulative. Domestic stress can lead to a decrease in professional performance affecting concentration and decision-making.
 
+General Adaptation Syndrome (Hans Selye) = 3 stage response of body when under stress ; theory explaining relationship between stress and illness.   
+https://www.verywellhealth.com/general-adaptation-syndrome-overview-5198270    
+1. alarm reaction stage (flight)  -- sympatheitic nervous system --> release of hormones (e.g. adrenaline) --> increased heart rate, breathing rate, and blood pressure    
+2. resistance stage --> body tries to repair itself from initial shock  
+- if stress gone: return to normal    
+- if stress on-going: absence of signal to return to normal --> continued stress hormones, high blood pressure ... other problems      
+prolonged stress that is not resolved leads to 3rd stage
+3. exhaustion stage -- enduring stressors without relief drain physical, emotional, and mental resources until body is no longer able to cope: ==> fatigue, burnout, decreased stress tolerance.==> may chronic heald issues
+
+
 ### Strategies for coping with Stress
 
 Coping = identifying the cause of stress and then either adjusting to the sressfol situation or removing oneself from the situation.
@@ -1346,3 +1356,54 @@ Einstein on relation between human and the machine:
 Computers are incredibly fast, accurate, and stupid.
 Humans are incredibly slow, inaccurate, and brillant.
 Together, they are powerful beyond imagination.
+
+automation - computer vs human    
+* lack of creativity (when presented with unkown/unforeseen situations)
+* lack of "self-preservation"/personal motivation for flight safety
+
+
+
+
+Questions
+
+Example of sensory adaptation == graveyard spin     
+spinning or prolonged turns --> hairs inside (fluid of) vestibular canals adapts ~ does not detect the turn movement   
+== sensory adaption
+
+restrictions of autoflight (automation)    
+--> lack of creativity & lack/absence personal motivation for SAF
+!!! autoflight/automation is NOT expected to predict future states !!! == thus also not correct (no constraint)
+
+flight at 10.000ft visual acuity decreases --> lack of oxygen (e.g. Hypoxia)   ==> supplementary oxygen
+
+Motor programmes ("muscle memory") involve behaviour routines ...    
+... which need to be monitored continuously.    
+motor programmes are skill-based and their execution requires little/no consicous thought (quasi-reflex)!    
+check what you 'think' you have (reflex-like) done, you actually did 
+
+vertigo = condition of dizziness, and/or tumbling sensation caused by contraditctory impulses to the central nervous systems (CNS)
+
+illusion = false impression (mental image) when sensory information (sensory perceptions/experience) is misinterpreted by the brain
+
+corolis ~ sudden head movement during numbing
+corolis illusion = spatial disorientation resulting from ...    
+... simultaneous head movements during aircraft maneuvers
+... simultaneous stimulation of several semicircular canals
+
+autonomic nervous system = regulation of vital functions (stay alive)
+
+leans/somatogyral illusion ... "not getting maneuver stop" ...    
+prolonged turn --> semi-circular canals "numb" == dumb to roll or yaw;
+upon change --> "awakening" semi-circular canals "hallucinate" 
+e.g. reducing bank (change) after prolonged turn (numbing maneuver)
+
+narrow or very long runway == illusion too high ==> risk of approaching too low, short/undershoot
+
+
+eye - fovea = sharp sight & colours --> predominated by cones
+
+
+15000 no supp oxygen    
+--> dizziness, tingling, impaired vision, rapid breathing, and fatigue    
+no "red lips" == incorrect option --> no oxygen -- lips turn blue 
+9high ~ cold ~ blue lips at pool) 

@@ -2083,3 +2083,11 @@ https://atoc.colorado.edu/~saraht/atoc1050/Lecture_Notes/index.htm
 
 GOOD STUFF: https://paragonair.com/public/docs/AdvCircs/AC00-06A_AvWx/AC00-6A_ch05.html
 https://paragonair.com/public/docs/AdvCircs/AC00-06A_AvWx/index.html
+
+
+
+True Altitude = Indicated Alt + 30 * (QNH - 1013) + 4 * ISADEV * AAL/1000
+TA = IA + 30 * (QNH - 1013) + 4 * ISADEV * AAL/1000
+TA = 4500ft + 30 * 0 + 4 * 23 * 4.5
+   = 4500 + 92 * 4.5 = 4500 + (100 * 4.5 - 8 *4.5) = 4500 + 450 - 34
+   = 4950 - 34 = 4916
