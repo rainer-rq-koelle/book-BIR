@@ -247,6 +247,79 @@ measured breaking coefficient   estimated breaking action   code
 0.25 and below                      poor                      1
 
 
-questions
+## Aerodrome Markings
+
+markings - Annex 14 Aerodromes ~ 
+
+markings typically "painted" on to surfaces in maneuvering area    
+signs and markers have vertical extent
+
+### Markings
+
+runway marking shall be white. runway marking requirements are shown on the following page --> get fiture.
+
+taxiway markings and aircraft stand markings shall be yellow.
+
+apron safety lines must be a conspicuous colour which contrasts with that used for aircraft stand markings.
+
+pre-threshold area - the paved area preceding a displaced threshold is marked with white arrows when suitable for normal use for take-off but not for landing.
+
+runway designators - markings should be shown at the thresholds of paved runways. The marking shows the magnetic alignment of the runway in 2 digits to the nearest one tenth of magnetic azimuth.     
+parallel runways: runway designator supplemented by a letter: L, R, or C.
+
+In the unuual case of four paralle runways, one pair would be designated 28L and 28R, and the second pair would take the next nearest digit, 29L and 29R.     
+Up to six runways can be named using this convention and L,R, and C.
+
+aiming point marking - an aiming point marking must be provided at the approach end of a paved instrument runway where the code number is 2,3, or 4.   
+The aiming point must be positioned no closer to the threshold than:    
+
+LDA                 dist from threshold
+less than 800m        150m
+800m to 1200m         250m
+1200m to 2400m        300m
+more than 2400m       400m
+
+runway lengths usually fall into the 3rd category, making the normal distance 300m.   
+If the runway is equipped with a visual approach slope indicator, a VASI or PAPI installation, the aiming point must correspond to the origin of the visual approach slope.
+
+runway threshold markings - runway threshold marking consists of a pattern of longitudinal stripes of uniform dimensions disposed symmetrically about the centre line of the runway     
+The number of stripes depends on the ruwnay width:    
+
+runway width    number of stripes
+18m               4
+23m               6
+30m               8
+45m              12
+60m              16
+
+touchdown zone markings - touchdown zone markings must be provided in the touchdown zone of a paved precision runway where the code number is 2,3, or 4.    
+The markings can be either pairs of single lines either side of the centre line every 150m or the single lines can be replaced with first a pair of tripple lines, then a pair of double lines, and then a pair of single lines.     
+
+The number of pairs relate to the LDA or - when both ends of the runway are marked - the distance between the thresholds:    
+
+distance between thresholds   pairs of marking
+less than 900m                1
+900m to 1200m                 2
+1200m to 1500m                3
+1500 to 2400m                 4
+more than 2400m               6
+
+
+Other runway and taxiway markings    
+* taxiway holding position (solid and dashed lines) = last holding position before runway
+* "gatter": CAT II and III holding position
+* intermediate holding positions can be estalished where needed. That taxiway marking is a yellow dotted line across the taxiway accompanied by a position identification marker or marking in yellow on a black background.
+
+taxiway identification markings - painted on surface, possibly arrows
+
+mandatory instruction markings - mandatory instruction markings may be used where it is impractical to use signs.
+The marking must be white lettering on a red background and painted on the taxiway straddling the centre line on the taxiway side of the holding point. (e.g. runway identifier)    
+except of a NO ENTRY marking the content of madatory instruction markings will be idetical to the corresponding signs.    
+
+A NO ENTRY sign is the familiar horizontal white bar and circle with a red background as used on the road. NO ENTRY marking is the words NO ENTRY in white on a red background.
+
+
+
+## questions
 
 * RSA/RESA = runway safety area (RSA) or runway end safety area (RESA): = he surface surrounding the runway prepared or suitable for reducing the risk of damage to airplanes in the event of an undershoot, [1] overshoot, or excursion from the runway
