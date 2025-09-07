@@ -17,6 +17,8 @@ GUCKSTU
 *  https://www.langleyflyingschool.com/Pages/CPGS%20Meteorology,%20Part%201.html; https://www.langleyflyingschool.com/Pages/CPGS%20Meteorology,%20Part%202.html
 * general stuff including meteorology: https://www.langleyflyingschool.com/Pages/Classroom.html
 * http://ww2010.atmos.uiuc.edu/(Gh)/guides/mtr/home.rxml
+* cool summary of fogs: https://www.youtube.com/watch?v=a7erl8R2QnI
+* icing/NASA - check this - https://aircrafticing.grc.nasa.gov/index.html
 :::
 
 ## The Atmosphere
@@ -2091,3 +2093,28 @@ TA = IA + 30 * (QNH - 1013) + 4 * ISADEV * AAL/1000
 TA = 4500ft + 30 * 0 + 4 * 23 * 4.5
    = 4500 + 92 * 4.5 = 4500 + (100 * 4.5 - 8 *4.5) = 4500 + 450 - 34
    = 4950 - 34 = 4916
+   
+   
+TA = IA + 27 (QNH - STD) + (0.004 * ISA_dev * HAS)     
+HAS := height above station which provides data
+
+
+True Virgins Make Dull Company
+TH -/+ VAR = MH -/+ DEV = CH
+
+(other way round) Cadbury's Dairy Milk Very Tasty
+
+
+TAS = CAS + 1%/600ft    
+TAS at FL60 ~ 6000ft --> 6000ft/600 = 10 ==> TAS = 100 = CAS ~ IAS = 110
+
+
+
+VSI error: PIML = Peter Is Making Lasagne   
+position - instrument - maneuvering - lag (and timing)
+
+
+
+compass := for x steer y     
+MH = x, CH = y: for 240 steer 242:  MH = 240, MH + DEV = CH <=> 240 + DEV = 242    
+DEV = +2 = 2W

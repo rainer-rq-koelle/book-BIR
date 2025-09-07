@@ -318,7 +318,554 @@ except of a NO ENTRY marking the content of madatory instruction markings will b
 
 A NO ENTRY sign is the familiar horizontal white bar and circle with a red background as used on the road. NO ENTRY marking is the words NO ENTRY in white on a red background.
 
+ILS/MLS marker board - runway holding position that aircraft or vehicle will not infringe the obstacle free zone, approach surface, take-off climb surface or ILS/MLS critical/sensitive area or interfere with the operation of radio navigation aids.
 
+Information markings - where required. Locations are shown in yellow on black and directions are shown black on yellow.  
+
+Signs ... are used for mandatory instructions and information.     
+Must be rectangular, frangible/breakable, and sufficiently low to preserve propeller tip clearance and engine pod clearance for taxying aircraft.
+
+Mandatory instruction signs use white text on red background.   
+The are only used to show a point beyond which either a taxying aircraft or vehicle must not preceed without authorisation.    
+Mandatory instruction signs include: runway designation signs, CATi/II/III holding position signs, runway holding position signs, road holding position signs, and NO ENTRY signs.
+
+Signs must be illuminated    
+* when runway is less than 800m
+* at night when associated with instrument runway
+* at night when associated with on-instrument ruwnays with code 3 or 4; and
+* when intended for use at night in association wiht non-instrument runways, when the code is 1 or 2, signs may either be illuminated or reflective.
+
+## Aerodrome Lighting
+
+Annex 14 stipulates criteria for aerodrome lighting, including approach lighting, and visual flightpath guidance lighting in form of VASIs and PAPIs.    
+Aircraft lighting is governed by Annex 2.
+
+### aerodrome beacon
+
+aerodrome beacon required , if aerodrome used for night operations and if   
+* aircraft navigate by predominantly visual means;
+* reduced visibility is a frequent occurrence; or
+* it is difficult to locate the aerodrome fomr the air of surrounding lights or terrain.
+
+aerodrome beacon = flashing light = every two to three seconds    
+either white or green and white alternativne.
+
+if an aerodrome is intended for use at night and cannot be easily identified from the air by other means an identification beacon must be installed.     
+The identification beacon will flash a two or three letter code in Morse identifying the aerodrome.    
+* green - civil aerodrome
+* yellow - civil water aerodrome
+* red - military aerodrome
+
+both types of aerodrome beacon are now rare. Where they exist they be listed in the AD section of the AIP.
+
+### Lights
+
+structure: elevated runway, stopway, and taxiway lights must be frangible.   
+Their height shall be sufficiently low to preserve clearance for propellers and for engine pods of jet aircraft.   
+
+Elevated approach lights and their supporting structures within 300m of the threshold
+must be frangible.
+
+
+intensity - must be compatible with the nearest section of approach lighting.   
+Separate intensity contols must be provided for compatibility with    
+* approach lighting systems
+* ruwnay edge lights
+* runway threshold lights
+* runway end lights
+* runway centre line lights
+* runway touchdown zone lights
+* taxiway centre line lights
+
+
+operation - all ground lights must be operated    
+* continuously during the hours of darkness after the end of evening civil twilight unthe the beginning of morning civil twilight;
+* when required for the control of air traffic; and
+* at any time when their use, based on weather conditions, is considered desireable for the safety of air traffic.
+
+Lights on and in the vicinity of aerodromes that are not intended for en-route navigation pruposes may be turned off, if no likelihood of regular or emergency operations exist, provided that they can be brought into operations at least one hour before the epected arrival of an aircraft.
+
+### Vehicles
+
+obstacle lights displayed on emergency or security vehicles must be flashing blue.
+Obstacle lights on all other vehicles must be flashing yellow.
+
+### Apporach Lighting Systems
+
+lighting system dependent on appraoch category of the runways:    
+* simple (non-precision) approach lighting system
+* precision approach CAT I lighting system; or
+* precisions approach CAT II or III lighting system.
+
+approach lights shall be fixed variable white lights.
+
+CAT II and  III lighting systems are not in the BIR syllabus.
+
+
+Simple approach lighting system = row of lights on the extended centre line of the runway extending, whenever possible, for not less than 420m from the threshold.    
+A row of lights form a crossbar 18m or 30m in length 300m before the threshold.
+
+```{r}
+knitr::include_graphics("./figures/inst-simple-approach-lighting-system.jpg")
+```
+
+simple approach lighting system may serve:    
+* non-instrument runway intended for use at night where the code number is 3 or 4
+* non-precision approach runway
+* precision approach runway CAT I runway, but only when it is physically impracticable to install a precision approach CAT I lighting system.
+
+fixed lights, normally white, but the colour of the lights shall be such as to ensure that the system is readily distinguishable from other aeronautical ground lights, and from extraneous ligting, if present.   
+Each centre line shall consist of either     
+* a single source, or
+* a barrette (i.e., three or more ground lights closely spaced together to appear as a bar of lights) at least 3m in length.
+
+Precision approach CAT I lighting     
+precision apprach CAT I Lighting = row of lights on extended centre line of the runway, whenever possible, for 900m from the runway threshold with a row of lights forming a crossbar 30m in length at a distance of 300m from the runway threhold.     
+CAT I lighting can be improved by having a total of 5 crossbars spaced 150m apart.
+= "Calvert system"
+
+crossbar = perpendicular, bisected by line of centre line    
+lights of crossbar must be spaced as to produce a lenear effect, except that gaps may be lefton each side of the centre line.   
+Such gaps to be kept at minimum, not exceed 6m.
+
+lights forming centre line must be plaed at 30m intervals with the innermost light located 30m from threshold.
+
+the lighting system must lie as nearly as practicable in the horizontal plane passing through the threshold, provided that     
+* no object other than an ILS or MLS azimuth antenna protrudes through the plan of the approach lights within a distance of 60m from the centre line of the system; and
+* no light other than a light located within the central part of a crossbar or a centre line barrette (not their extremeties) is screened from an approaching aircraft.
+
+Any ILS or MLS azimuth antenna protruding through the pane of lights must be treated as an obstacle and marked and lighted accordingly.
+
+### Runway Lead-in Lights
+
+ruwnay lead in lights are used to define the desired approach path.
+
+Where groups of lights are used, they must be arranged so that each group can be sighted from the preceding group and the interval between groups should not exceed 1600m.    
+Lead-in lights may be curved or straight. Each group of lights shoud consist of at least three flashing white lights in a linear or cluster configuration. 
+The system may be augmented by steady burning gaseous discharge lights.    
+Where practicable, the lights should flash in sequence towards the runway. The most famous example of this is at JFK.
+
+### Runway Edge Lights
+
+runway edge lights must be fixed lights showing variable white, except that:    
+* in case of a displaced threshold, the lights between the beginning of the runway and the displaced threshold must show RED in the approach direction; and 
+* a section of 600m or one third of the runway length, whichever is less, at the fare end of the runway from whicht the take-off run is started may show yellow.
+
+### Runway Threshold Identification Lights
+
+unidirectional flashing white lights may be used to give added conspicuity to the threshold of a non-precision approach runway or to a dispalced threshold on a precision approach runway.
+
+located symmetrically about the centre line, in line with the threshold and approx. 10m outside each line of runway edge lights.
+
+
+### Threshold Lighting
+
+runway threshold lights are placed as near to the end of the runway as possible, and no more than 3m from it.    
+Wing bar lights are provided on a precision approach runway when additional conspicuity is considered desrirable and on a non-instrument or non-precision approachrunway where the threshold is diplaced and ruwnay threshold lights are required but not provided.   
+Each wingbar is formed by at least 5 lights extending at least 10m perpendicular to the line of the runway edge lights with the innermost lights of each wingbar in the line of the runway edge lights.     
+runway threshold and wing bar lights are fixed unidirectional lights showing green in the direction of approach to the runway.
+
+### Runway Centre Line Lights
+
+runway centre line lights are white from the threshold to 900m from the end of the runway, they they alternate red and white from 900m to 300m from the end, then become red for the last 300m.
+
+### Runway End Lights
+
+runway end lights are fixed red unidirectional lights facing the landing aircraft.
+
+### Runway Guard Lights
+
+ruwnay guard lights in 2 configurations
+
+config A
+* shalle be provided at each taxiway/runway intersection associated with a runway intended for use in 
+  + RVR conditions of less than 550m where a stopbar is not installed; and
+  + RVR condistions between 550m and 1200m where traffic density is heavy.
+  
+config B: shall be located at places where a holding bay, runway holding position, or road holding position would normally be located.
+
+## VIsual Flight Path Guidance
+
+### PAPI
+
+precision approach path indicator (PAPI) system is made up of one bar of 4 eaually spaced lights on the left hand side of the runway or - more normally - two bars of lights either side of the runway, 4 lights in each bar.
+
+above all                 white
+slightly above            wwwR
+on or close to approach   wwRR
+slightly below            wRRR
+below approach slope      RRRR
+
+### APAPI
+
+The abbreviated PAPI consists of a bar of two lights located on the left side of the runway, or more usualy on both sides of the ruwnay.
+
+for a single PAPI indicator on the left   
+above           ww
+on/close        wR
+below           RR
+
+### T-VASIs
+
+The T-VASI consists of 20 lights unit, 10 on either side of the runway.   
+The form a cross shape with six lights in line with the runway and four across in a bar. (~ landing T)
+
+too high = 4 lights in each bar show white with one, two, or three white lights visible beyond it.    
+on path ~ the number of lights visible beyond the bar decreases until - on the correct path - only the four white lights of the bar are visible.
+
+when below the approach path - four lights in the bar show red with one tow or three red lights visible in front of the bar (dependen on how far below)
+
+### AT-VASI
+
+an AT VASI is made up of ten lights units arranged on one side of the runway in a cross shape with six lights in line with the runway and four across in a bar.
+
+Effectively one half of a T-VASI installation either on the left or right side of the runway.
+
+T-VAISs and AT-VASIs are mostly found in Australia.
+
+## Taxiway Lighting
+
+aerodrome for low visibility operations GREEN centre line lighting is fitted on taxiways, other wise taxiways use blue edge lighting.   FOLLOW THE GREEN    
+Most CAT II and III aerodreomes have both.
+
+Where centre line taxiway lighting is used, additional centre line lights may be used to lead on to or off the runway centre line.    
+In this case, the runway exit markings must be laternating yellow and green to the edge of the ILS sensitive area and green aftr that.    
+If the same taxiway is used to enter the ruwnay they shoudl show green throughout for an aircraft entering.
+
+A stop bar is a row of unidirectional red lights acorss the taxiway at a aholding point.    
+When stop bar lights are on all aircraft must stop at that holding point and may not proceed until the red stop bar lights have been switched off.
+
+## Summary
+
+check photos ~ 29./30. August    
+reproduce  and put here / or check for other source.
+
+
+## Aeronautical Information 
+
+### AIP
+
+AIP = 3 parts    
+* Part 1 - General GEN
+* Part 2 - En-route ENR
+* Part 3 - Aerodromes AD
+
+Part 1 GEN comprises "general" information, including    
+* procedures for entry, transit, and departure of aircraft, passengers, cargo, and crew
+* differences from ICAO SARPs
+* tables and codes (e.g. unit of measurement / conversion tables, time system, geodetic reference dataum, aircraft nationality and registration marks)
+  + chart symbols
+  + list of radio navigation aids
+  + sunrise/sunset tables
+  + aeronautical information service, AIRAC system
+  + aeronautical charts
+  + air traffic services
+  + meteorological services, reports and observations
+    + areas and routes for which meteo services are provided
+    + METAR/TAF
+    + VOLMET
+    + SIGMENT information above FL100 and AIRMET information for traffic below FL100
+  + Search and Rescue SAR
+  + Aerodrome/heliport and nagigation charges
+  
+Part 2 ENR contains     
+* general rules and procedures including details of VFR and IFR
+* ATS airspace classification
+* holding, approach and departure procedures
+* altimeter setting procedures
+* regional supplementary procedfures
+* fligth planing and adressing flight plan messages
+* interception of civil aircraft, unlawful interference and air traffic incidents
+* decription of FIR, UIR, and TMAs
+* description of ATS routes
+* radio navigation aids/systems and aeronautical ground lights
+* navigation warings
+* information about existing prohibited, danger, and restricted areas.
+  + such areas must include natioality letters for location indicators assigned to the State or territory followed by the letters P, D, or R, and an unique number for each area. (rested for minimum 1 year, if removed/replaced)
+* military training and exercise areas
+* other dangerous activities
+* air navigation obstacles en-route
+* aerial sporting and recrational activities
+* bird migration areas
+* en-route charts
+
+Part 3 - AD contains    
+* aerodreome geographical data, services, and facilities
+* refueling facilities and fuel grades available
+* surface movement guidance and control system and markings
+* runway physical characteristics
+* aerodrome radio navigation and landing aids
+* aerodrome charts
+  + insturment approach charts show details of radio navigation aids (frequency and identification), obstacles / obstable clearance atlitude OCA and/or height OCH, and tracks to be followed when flying procedural approaches (or departures)
+  + standard operationg procedures SOPs may require additional margins to be added to the stated minima depending on the level of qualification or experience of the pilot or the equipment on the aircraft.
+
+### NOTAM
+
+NOTAMs shall be originated and issued promptly     
+* whenever the information to be distributed is of a temporaty nature and of short duration;
+* when operationally significant permanent changes are made at short notice; or
+* when temprary changes of long duration are made at short notice.
+
+NOTAMs are not used for inforation of sort duration which contains extensive text and/or graphics. Such changes are published as AIP supplements.
+
+### SNOWTAM
+
+SNOWTAM is a special NOTAM series used for information related to snow, slush, ice or standing water associated with the movement area (of an aerodrome).
+
+### ASHTAM
+
+ASHTAMs are special NOTAM series notifying - in a specific format - an important change for aircraft operations due to volcano activity, volcane eruption, or a volcanic ash cloud.
+
+### AIRAC
+
+The Aeronautical Information Regulation and Control AIRAC system aims to give advance notification on significant changes in operating practices.    
+It is based on introducing all relevant information on a common "effective date".
+
+Effective date cycle: 28 days.
+
+(significant) changes to AIP shall be published following AIRAC procedures whwther they are amendments or supplements.    
+AIRAC information to be distributed at least 42 days in advance of the effective date with the objective of reaching recipients at least 28 days in advacne of the effective date. 
+
+Major change: 70 days before effective date: 14 days distribution time + 56 days
+normal change: 42 days:                      14 days + 28 days
+effective date + 28 days = no further change
+
+### Pre-Flight Information
+
+"current" NOTAM and other urgent information must be made available to flight crews informof plan language pre-flight information bulletins PIB.
+
+
+
+## Departure Procedures
+
+PANS OPS (Doc 8168) entails additional recommendations regarding aircraft operations.   
+PANS are not (formally) part of the 19 Annexes of the Chicago Convention.   
+Thus, PANS are not SARPs.    
+However, PANS are widely accepted as the definitive operating procedures:    
+* Volume I   - flight procedures
+* Volume II  - construction of visual and instrument flight procedures
+* Volume III - aircraft Operating Procedures.
+
+"All 3 volumes cover operational practices that are beyond the scope of SARPs, but with respect to which a measure of international uniformity is desirable." (introduction of Vol I)
+
+Vol I describes the operational requirements for flying the procedures designed in accordance with the criteria provided in Volume II.
+
+Vol II is intended for the guidance of procedure specialists and describes the essential areas and obstacle clearance requirements for IFR.   
+Provides basic guidance for States, and those operators, and organisans producing instrument flight charts that will result in uniform practices at all aerodromes where instrument flight procedures are carried out.
+
+Vol III describes operational procedure recommendations for the guidance of flight operation personnel and flight crew.
+
+
+### Ensuring Obstacle Clearance
+
+both departue and arrival routes are based on defined tracks and the area around theose tracks ensures terrain and obstacle clearance.
+
+An obstacle identification surface (OIS) is a defined surface intended for the purpose of determining those obstacles considered for the planning of a departure route and climb gradient or the calculation of obstacle clearance altitude/height for an approach proceufure.
+
+Obstacle clearance volume: A volume of airspace is established which guarantees clearance from obstacles.    
+Obstacle clearance volume is divided into 2 main areas:    
+* primary volume for "full obstacle clearance"
+* secondary volume outside the primary volume where decreasing obstracle clearance is provided.
+
+The width of the obstacle clearance volume increases as the distance from the runway increases.   
+Dependent on minimum clearance requirements and departure gradient, "procedure design gradient PDG (default 3.3%) or the approach gradient.     
+PDG is made of 2.5% of obstacle identification plus 0.8% increasing obstacle clearance.
+
+```{r}
+knitr::include_graphics("./figures/airlaw-moc-protected-area.jpg")
+```
+
+primary area (track guidance) symmetrically about the nominal flight track in which minimum obstacle clearance MOC is provided.   
+total width = primary area (1/2 of tatal width) + 2 * secondary area (each 1/4 of total width) 
+
+### Accuracy of Fixes
+
+routings / track guidance are based on defined tracks.    
+
+fix tolerance area ~ aircraft "precise" position cannot be established, but falls within the tolerance area.
+
+Intersection Fix  - the dimension of an intersection fix are determined by the accuracy of the navigational system used to define the fix.
+
+     when providing track guidance   when NOT providing track guidance
+VOR         5.2 deg                         4.5 deg
+ILS         2.4 deg                         1.4
+NDB         6.9 deg                         6.2
+
+error margin/uncertainties represent overall system inaccuracy including aircraft equipment and displays.
+
+Other fix tolerance Factors    
+* surveillance radar - radar fix accuracies are based on the radar mapping accuracies, azimuth resolution, flight technical tolerance, controller technical tolerance, and the speed of the aircraft   
+  + terminal area radar (TAR) within 37km/20NM: fix tolerance -/+ 1.5km/0.8NM
+  + en-route surv radar (RST) within 70km/40NM: fix tolerance -/+ 3.1km/1.7NM
+  + DME: -/+ 0.46km/0.25NM + 1.25% of distance to the antenna
+  + VOR: fix tolerance heading over a VOR is based upon a circular cone of ambiguity extending 50deg to either side of the vertical
+  + NDB: fix toleratnce overhead an NDB is based on an inverted cone of ambiguity extending 40deg either side of the facility.
+
+
+### RNAV - Area Navigation
+
+Area navigation equipment tends to be more accurate than basic fixing and can be based on either VOR/DME information, satelitte systems, inertial systems or combination of these.
+
+RNAV based on VOR/DME --> aircraft equipped with RNAV systems approved by the State of the Operators for the appropriate level of RNAV operations (approaches and/or deprtures).    
+Conditions:    
+* RNAV equipment is serviceable
+* pilot/crew know(s) how to operatre equipment to achieve optimum level of navigation accuracy, and
+* published VOR/DEM facility upon which the procedure is bases is serviceable.
+
+Accuracy dependent on computer for conversion of navigational data, calculation of track and distance, and steering guidance to next waypoint.    
+Disadvantage: way-point and in some cases, data contained in the vaigational database have been calculated and promulgated by States and inserted by the opertor or crew.   
+However, the computer cannot identify data input errors.   
+Furthermore, computer designed to minimise errors and not affecting accuracy, the actual computed position will contain any errors introduced into the navigational database.
+
+VOR/DME RNAV dependencies         
+* ground station tolerance
+* airborne receiving system tolerance
+* flight technical tolerance
+* system computation tolerance
+* distance from reference facility.
+
+GNSSS based RNAV Equipment    
+SBAS bases RNAV equipment
+  + SBAS approved for departure procedures; guidance material for arrival procedures "in the making" but exist!
+  
+RNP Operations - required navigation perfromance (RNP) standards define an airafts's capability to navigate accurately by its fixing accuracy.    
+RNP 0.3 == aircraft can fix to an accuracy of 0.3NM total system error TSE on 95% of occasions.    
+RNP (often based on RNAV) however requires additional on-board monitoring of TSE and alert process if TSE is exceeded.
+
+RNP approaches and departures can be conducted on the basis of regional air navigation agreements --> approved by State and RNAV system approved for promulgated RNP.   
+
+Routes may comprise segments with different RNP values.    
+The segment with the lowest RNP vlaue is the most demanding one for the flight.   
+Before a flight, pilot/aircrew must verify that the aircraft is able to meet RNP requirements for each segment.   
+Might require update of aircraft navigation system before take-off.    
+During flight: pilot must check sytem compliance with RNP requiremetns of the current segment.
+
+
+### Baro VNAV
+
+baro VNAV equipment is the Vertical Navigation element of an FMS with an additonal barometric altitude input into the FMS.    
+Can be applied to 2 different approach and landing operations:    
+* approach and landing operations with vertical guidance - lateral guidance is based on the required navigation procedures (RNP), approach (APCH) specifications and baro VNAV is required.
+* non-precision approaches - baro VNAV is not required but is used to assist the continuous descent final approach CDFA technique
+
+### Departure Procedures
+
+The minimum obstacle clearance MOC for a straight departure in the primary area is "zero" at the departure end of the runway (DER) and increases from that point to 0.8% of the distance flown.    
+This assumes turns through no more than 15 deg.   
+If turns through more than 15 deg are planned a **turning area** is constructed.   
+The MOC in the turning area is at least 90m/294ft.
+
+If the departure route goes across mountainous terrain, the MOC may be increased.
+
+### General Criteria
+
+Departure procedures are designed with the assumption that all engines are operational.   
+Operators are responsible to publish engine failure procedures and these may differ from the published departure by including, for instance, an emergency turn.
+
+The design of instrument departure procedure is dictatated by the terrain surrounding of the aerodrome, but may also need to consider ATC requirements.    
+These factors in turn influence the type and sitting of navigation airds in relation to the deparure route.    
+Airspace restrictions may also effect the routing and sitting of NAVAIDs.   
+
+The use of automatic take-off thrust control systems (ATTCS) and noise abatement procedures will need to be taken into considration by the pilot and the operator.
+
+### Straight and Turning Departures
+
+straight departure = initial departure track is within 15 degs of the alignment of the runway centre line    (figure showed 150m = 75 + 75 symmetrical to threshold)
+
+turning departue = if departure route requires a turn of more than 15 degs to avoid obstacle(s). Such routes may contain a maximum speed restriction to contain the radius of the turn.     
+If an aircraft requires a higher speed, then an alternative departure procedure must be requested.
+
+Turns may be specified at an altitude/height, at a fix or at a facility.   
+If the turn is not at a fix or facility, guidance information from a VOR or NDB must be acquired within 10km after completing the turn.
+
+### Departure Routing
+
+Standard instrument departures (SID) includes specific routing, usually to link up with airway routes.
+
+Where such a routing is not required and there are no significant obstacles, the departure procedure may be to fly straight ahead to a defined height and then turn as required on to any desired track.    
+This is known as an **omnidirectional departure**.
+
+Where no suitable NAVAIDs are available, the criteria for omnidirectional departures are applied.
+
+The minimum procedure is to maintain the runway extended centre line until reaching a height of 120m/394ft and then turn on track.    
+For helicopters, the minimum height is 90/295ft.
+
+### Departure Routing - Obstacles
+
+if additional height for obstacle clearance is needed, the straight departure can be continued to a greater height.
+
+Where obstacles exist, the procedure may identify sectors for which either a minimum gradient or a minimum turn altitude/height is specified, e.g. climb straight ahead to ALT 3000ft (on QNH xxxx) before commencing turn to sector 0 to 180 degrees.
+
+Where obstacles do not permit development of omnidirectionsal procedures, it is necessary to    
+* fly a departure route SIB; or
+* ensure that ceiling and visibility will permit obstacles to be avoided by visual means.
+
+
+### Promulgation of Departure Procedures
+
+Details of any required departure procedure are to be notified withink the relevant Aerodrome AD pages of the AIP:
+
+* general procedures - local traffic regulations
+* details of NADP - noise abatement departure procedures, including altitude/level above which such procedures are no longer applicable
+* specific departure procedures, including references to any SIDs or omnidirectional departures
+* charst depicting generic departure procedures, including NADPs
+* individual charts depicting specific omnidirectional depatures and SIDs (are to be published)
+* where depatures procedures are limited to specific aircraft categories, the applicability of such procesures must be clearly statned on the procedure chart
+
+Additional RNAV Procedure Requirements    
+Such additonal requirements for RNAV procedures are detailed in PANS OPS and EUROCONTROL TNAV procedure design guidance material.    
+Experience has highlighted the need for clear and unambiguous RNAV procedure descriptions and charts to be published in AIPs.   
+In order that commercial navigation database providers can accurately code the procedrures without mistinterpretation or error.   
+An unclear or ambiguous procedure description may result in database providers interpreting and codeing the procedure in a manner different to that intended, with the result that the aircraft may fly on widely differing profiles.
+
+BAAAAAAAAAHHHHHHHHHh
+
+
+## Approach Procedures
+
+Doc 8166 PANS-OPS   
+instrument approach procedures consists of up to 5 segments    
+* arrival
+* initial
+* intermediate
+* final, and
+* missed approach
+
+Whenever possible, a straight-in approach will be specified which is aligned with the runway centre line.    
+In case of non-precision approaches a straight-in approach is considered acceptable, if the angle between the final approach track and the runway center line is 30deg or less.   
+
+All published procedures depict tracks and pilots should attempt to maintain the track by applying corrections to heading for known wind.
+
+### Obstacle Clearance
+
+MSA - minimum sector altitude or TAA terminal arrival altitudes are established for each aerodreome and provide at least 300m (984ft) minimum obstactle clearance within 25NM of a specific point.    
+The full area may be divided into sectors based on **magnetic track**.    
+
+For the MSA, the 25NM radius centres on the homing facility associated with the approach procedure for that aerodrome.   
+For TAA, the 25NM centres on the initial approach fix IAF or in some cases the intermediate fix IF.    
+TAA is intended for use with RNAV procedures and - where published - replaces the MSA.
+
+
+### Aircraft Approach Categories
+
+aircraft performance --> airspace and needed visibility for instrument maneuvers.    
+most important factor: speed.
+
+speeds quoted are 1.3 times the stall speed in landing configuration at maximum certified landing mass
+
+category H    helicopters
+category A    less than 91kts IAS
+category B    91kt to 121kt IAS
+category C    121kt to 141kt IAS
+category D    141kt to 166kt IAS
+category E    166kt to 211kt IAS
+
+instrument approach chart specifies the categories of aircraft for which the procedure is approved.    
+procedures designed to provide protected airspace and obstacle clearance for airfraft up to and including category D.    
+Given airspace requirements, procedures may be restricted to lower speed categories.  
+Alternatively procedure may specifiy a maximum IAS for a particular segment without reference to aircraft category.
+
+lesson 12 - page 4
 
 ## questions
 

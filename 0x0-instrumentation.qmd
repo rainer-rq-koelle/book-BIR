@@ -1605,3 +1605,27 @@ AIBus nd video https://www.youtube.com/watch?v=F6wBh8WF0x8
 ND - MAP: https://www.bing.com/videos/riverview/relatedvideo?q=ATPL+ND+MAP+mode&cvid=78babbb48f814625982e1c5c12cae39a&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhA0gEJMTQ0NjBqMGoxqAIAsAIA&PC=U531&ru=%2fsearch%3fq%3dATPL%2bND%2bMAP%2bmode%26cvid%3d78babbb48f814625982e1c5c12cae39a%26gs_lcrp%3dEgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhA0gEJMTQ0NjBqMGoxqAIAsAIA%26FORM%3dANAB01%26PC%3dU531&mmscn=vwrc&mid=E0E99C92DF96C2C74212E0E99C92DF96C2C74212&FORM=WRVORC&ntb=1&msockid=0d0dbb477f2111f0be5b8bd3b0f6a311
 https://www.brainscape.com/flashcards/remote-indicating-compass-17236226/packs/22420401
 https://wiki.ivao.aero/en/home/training/documentation/Flight_Management_System_-_FMS
+
+
+rate of turn $\text{rate of turn}=\frac{g * tan(\text{bank angle})}{TAS}$   
+rate of turn    
+- directly proportional to bank angle (tan(bankangle))
+- inversely proportional to TSA $RoT ~ \frac{1}{TAS}$
+- indeptendet of aircraft weight
+
+Gyro and axes
+TL1 AV2 DH2 PYR
+TL1 - turn indicator - ac lateral axis ~ pitch (horizontal) - 1 degree of freedom
+AV2 - artificial horizon - vertical axis ~ yaw - 2 deg
+DH2 - directional gyro - horizontal axis ~ roll? - 2 def
+PYR?
+
+
+ball and needle to one side == NOT ENOUGH RUDDER == TOO MUCH BANK    
+thus correct the ball   
+* kick the ball --> more rudder
+* wingtip low   --> less bank
+
+ball opposit to needle
+* too little bank --> more bank
+* excessive rudder --> less rudder
