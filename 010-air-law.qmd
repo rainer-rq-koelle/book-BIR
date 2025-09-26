@@ -865,7 +865,139 @@ procedures designed to provide protected airspace and obstacle clearance for air
 Given airspace requirements, procedures may be restricted to lower speed categories.  
 Alternatively procedure may specifiy a maximum IAS for a particular segment without reference to aircraft category.
 
-lesson 12 - page 4
+### OCA/OCH
+
+each approach procedure has a published obstacle clearance altitude/height (OCA/OCH).   
+precision approach and circling approach a OCA/OCH is published for each category of aircraft.
+
+precision approach: ILS, MLS, GLS, or PAR    
+non-precision approach:  ILS LOC only, SRA, VOR/DME, VDF, NDB/DME, or NDB
+
+OCA/OCH is     
+* for a precision approach procedure or approach procedures with vertical guidance (APV) the lowest altitude (OCA) or the lowest height (OCH) above the elevation of the relevant runway threshold at which a missed must be initiated to ensure compliance with the appropriate obstacle clearance criteris
+* for a non-precision approach procedure, the lowest OCA or lowest height above aerodrome elevation or elevation of the relevant runway threshold, if the threshold elevation is more than 2m/7ft below the aerodrome elevation, below which the aircraft cannot descend without infringing the appropriate obstacle clearance criteria; or
+* for a visual (circling) approach procedure, the lowest altitude OCA or lowest height above the aerodrome elevant below which an aircraft cannot descend without infringing the appropriat obstacle clearance criteria.
+
+### Operational Minima
+
+minima ~ cumulative effect of a number of operational factors ==> OCA/OCH    
+in the case of precision approaches, decision altitude DA or decision height DH   
+non-precision approaches: minimum descent altitude MDA or minimum decision height MDH
+
+```{r}
+knitr::include_graphics("./figures/air-oca-och-factors.png")
+```
+
+
+Additional limits are given for each type of approach.    
+For ILS approaches, the decision height DH and runway visual range RVR limits are   
+
+CATI     DH 200ft    RVR 550m    or visibility 800m
+CATII    DH 100ft    RVR 300m
+CATIIIA  DH 0ft      RVR 200m
+CATIIIB  DH 0ft       RVR 50m
+CATIIIC  DH 0ft       RVR 0m
+
+### Arrival Segment
+
+standard arrival routes STAR start at a fix (radio nav aid or waypoint) and 
+show routing from that point to a fix or facility used in the procedures, usually the initial approach fix IAF.
+
+if published, STAR, the width of the associated obstacle clearance volume decreases from the en-route value until the initial approach value with a convergence angle of 30deg each side of the axis.    
+This convergence begins 25NM before the IAF.
+
+obstacle clearance in the primary area is a minimum of 300m (984ft)   
+omnidirectional or sector arrivals can be provided taking into account minimum sector altitudes MSA.    
+
+At the end of a STAR, the IFR flight will not be cleared for an initial approach below the appropriate minimum altitude, unless    
+* the pilot has reported passing an appropriate point defined by a radio aid;
+* the pilot reports that the aerodrome can be kept in sight;
+* the aircraft is conducting a visual approach; or
+* the aircraft's position has been positively determined by use of radar.
+
+primary area: a defined area symmetrically disposed about the nominal flight track in which the minimum obstacle clearance is provided.
+
+### Initial Approach Segment
+
+the initial approach segment starts at IAF and ends at intermediate fix IF.
+
+aircraft maneuvers to enter intermediate approach segment.   
+aircraft speed and configuration will depend on the distance from the aerodrome and required descent.   
+initial approach segment provides at least 300m (984ft) obstacle clearance in primary area.
+
+initial approach segment may be quite short or it may include reversal procedures called procedure turns or base turns, racetrack procedure to lose height or to position the aircraft inbound to a facility when a reversal procedure is not practical.
+
+maximum angel of intercepting of initial approach segment    
+--> normally track guidance is provided along the initial approach segment to the IF with a maximum angle of interception of    
+* 90deg for a precision approach; and
+* 120deg for a non-precision approach
+
+### Reversal Procedure
+
+a procedure designed to enable aircraft to reverse direction during the initial approach segment of an instrument approach procedure.    
+The sequence may include procedure turns or base turns.
+
+45/180
+* facility - straight leg with track guidance, timed or limited by a radial or DME distance, fix
+* 45deg turn
+* times traight leg without track guidance, 1 min for CAT A & B, 1 minute 15sec for CAT C,D,and E)
+* 180 turn to intercept inbound track
+
+80/260 turn    
+* facility - straight leg with track guidance which may be timed or limited by a radial or DME distance
+* 80deg turn
+* 260deg turn in the opposite direction to intercept inbound track
+
+procedure turn - a maneuver in which a turn is made away from a designated track followed by a turn int he opposite direction to permit the aircraft to intercept and proceed along the reciprocal of the designated track.
+
+### Base Turn (teardrop)
+
+base turn consists of a specified outbound track and timing or DME distance from the facility, followed ny a turn to intercept the inbound trafk where the traks are not reciprocal.
+
+a turn executed by the aircraft during the intial approach between the end of the outbound track and the beginning of the intermediate or final approach track.   
+Tracks are not reciprocal.
+
+### racetrack procedures
+
+racetrack is a procedure designed to enable the aircraft to reduce altitude during the intial approach segment and/or establish the aircraft inbound when the entry into a reversal procedure is not practical.   
+It consists of a turn from the inbound track through 180deg from overhead the facility of fix on the outbound track for 1,2, or 3 minutes, followed by a 180deg turn in the same direction to return to the inbound track.   
+The outbound leg may be limited by DME range instead of timing.   
+
+A shuttle is a climb or descent conducted in a holding pattern.
+
+
+### intermediate appraoh segment
+
+segment during which the aircraft speed and configuration should be adjusted to prrepare the aircraft for final approach.   
+Descent gradient as shallow as possible.  
+During the intermediate approah the obstacle clearance requirement reduces from 300m (984ft) to 150m (492ft) in the primary area.
+
+When a final approach fix is available, the intermediate approach segment begins when the aircraft is on the inbound track of the procedure turn, base turn, or final inbound leg of the racetrack procedure.
+
+Where no final approach fix is specified, the inbound track is the final approach segment.
+
+in case of an operational advantage, an ILS procedure may include a dead reckoning segment from a fix to the localiser.  
+The DR track will intersect the localiser at 45deg and not be more than 19km/10NM in length. The point of intersection is the beginning of the intermediate segment and will allow for proper glide path interception.
+
+Speed control -- during the intermediate and final phases of the approach, a radar controller may request an aircraft to make adjustments of up to 20kts.    
+Speed controll should not be applied within 4NM of the threshold on final approach.
+
+### final approach segment
+
+segment for alignment and descent for landing.   
+final apprach may  be made to a runway for a straight in landing or to an aerodrome for a visual maneuver.   
+
+for straight-in approaches, the angle formed by the final approach track and the runway centre line must not exceed    
+* 30deg for procedures restricted to CAT A and B aircraft
+* 15deg for other categories.
+
+A stepdown fix may be incorporated in non-precision approach procedures in which case two OCA/H values will be published:     
+* higher value applied to the primary procedure, and 
+* lower value applicable only if the stepdown fix is positively identified during the approach.
+
+final approach segment begins at the final approach point FAP or the final approach fix FAF, and ends at the missed approach point MAPt.
+
+p.14.
 
 ## questions
 

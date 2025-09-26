@@ -1607,6 +1607,8 @@ https://www.brainscape.com/flashcards/remote-indicating-compass-17236226/packs/2
 https://wiki.ivao.aero/en/home/training/documentation/Flight_Management_System_-_FMS
 
 
+https://www.studyaircrafts.com/systems
+
 rate of turn $\text{rate of turn}=\frac{g * tan(\text{bank angle})}{TAS}$   
 rate of turn    
 - directly proportional to bank angle (tan(bankangle))
@@ -1617,7 +1619,7 @@ Gyro and axes
 TL1 AV2 DH2 PYR
 TL1 - turn indicator - ac lateral axis ~ pitch (horizontal) - 1 degree of freedom
 AV2 - artificial horizon - vertical axis ~ yaw - 2 deg
-DH2 - directional gyro - horizontal axis ~ roll? - 2 def
+DH2 - directional gyro - horizontal axis ~ roll? - 2 deg
 PYR?
 
 
@@ -1626,6 +1628,9 @@ thus correct the ball
 * kick the ball --> more rudder
 * wingtip low   --> less bank
 
-ball opposit to needle
+ball opposite to needle
 * too little bank --> more bank
 * excessive rudder --> less rudder
+
+slipping turn ~ ball and needle in the direction of turn
+skidding turn ~ needle in turn direction, ball deflected opposite

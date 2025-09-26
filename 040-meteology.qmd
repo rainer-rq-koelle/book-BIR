@@ -19,6 +19,9 @@ GUCKSTU
 * http://ww2010.atmos.uiuc.edu/(Gh)/guides/mtr/home.rxml
 * cool summary of fogs: https://www.youtube.com/watch?v=a7erl8R2QnI
 * icing/NASA - check this - https://aircrafticing.grc.nasa.gov/index.html
+* quick recap of many things/subsiedience ~ inversion
+* ATPL TIPS: https://www.youtube.com/channel/UCBg4ILtj8oVqcGP_Uo-OfIg (many vids)
+* full ATPL vid: https://www.bing.com/videos/riverview/relatedvideo?q=ATPL+precipitation&mid=8D2FA76B295AB11416A28D2FA76B295AB11416A2&FORM=VIRE
 :::
 
 ## The Atmosphere
@@ -2118,3 +2121,31 @@ position - instrument - maneuvering - lag (and timing)
 compass := for x steer y     
 MH = x, CH = y: for 240 steer 242:  MH = 240, MH + DEV = CH <=> 240 + DEV = 242    
 DEV = +2 = 2W
+
+
+HIGH ==> air sinking to ground == SUBsidience (submarine going down)  
+air going down == compression == warming of air (temp profile change)    
+~~ changed profile/lapse rate --> inversion = stable layer of air (rising air kept down)
+
+
+
+
+CHECK OUT ATPL TIPS = https://www.youtube.com/channel/UCBg4ILtj8oVqcGP_Uo-OfIg
+SUBsidiance -- stability    
+stability -- inversion
+inversion -- "keeps down" == Haze and mist
+
+
+Wind from left = altitude theft == flying into Low
+wind from right == opposite ==> flying into HIGH
+subscale - left turn (anti-clockwise) = reduced ALT = LOW
+
+
+clouds
+- top    ==> SALR == ELR
+- bottom ==> DALR == ELR   ~ $(T-T_{dew}) * 400$
+
+high humidity = low cloud base (anabatic cooling immediately reaches dew point)
+low humidity = high cloud base T >> $T_{dew}$
+
+Bergeron/coalescence https://www.youtube.com/watch?v=WByQ3yKxj1s
