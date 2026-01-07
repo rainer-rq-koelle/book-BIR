@@ -948,13 +948,13 @@ The sequence may include procedure turns or base turns.
 * 80deg turn
 * 260deg turn in the opposite direction to intercept inbound track
 
-procedure turn - a maneuver in which a turn is made away from a designated track followed by a turn int he opposite direction to permit the aircraft to intercept and proceed along the reciprocal of the designated track.
+procedure turn - a maneuver in which a turn is made away from a designated track followed by a turn in the opposite direction to permit the aircraft to intercept and proceed along the reciprocal of the designated track.
 
 ### Base Turn (teardrop)
 
-base turn consists of a specified outbound track and timing or DME distance from the facility, followed ny a turn to intercept the inbound trafk where the traks are not reciprocal.
+base turn consists of a specified outbound track and timing or DME distance from the facility, followed ny a turn to intercept the inbound track where the tracks are not reciprocal.
 
-a turn executed by the aircraft during the intial approach between the end of the outbound track and the beginning of the intermediate or final approach track.   
+a turn executed by the aircraft during the initial approach between the end of the outbound track and the beginning of the intermediate or final approach track.   
 Tracks are not reciprocal.
 
 ### racetrack procedures
@@ -966,7 +966,7 @@ The outbound leg may be limited by DME range instead of timing.
 A shuttle is a climb or descent conducted in a holding pattern.
 
 
-### intermediate appraoh segment
+### intermediate approach segment
 
 segment during which the aircraft speed and configuration should be adjusted to prrepare the aircraft for final approach.   
 Descent gradient as shallow as possible.  
@@ -985,7 +985,7 @@ Speed controll should not be applied within 4NM of the threshold on final approa
 ### final approach segment
 
 segment for alignment and descent for landing.   
-final apprach may  be made to a runway for a straight in landing or to an aerodrome for a visual maneuver.   
+final approach may  be made to a runway for a straight in landing or to an aerodrome for a visual maneuver.   
 
 for straight-in approaches, the angle formed by the final approach track and the runway centre line must not exceed    
 * 30deg for procedures restricted to CAT A and B aircraft
@@ -997,8 +997,472 @@ A stepdown fix may be incorporated in non-precision approach procedures in which
 
 final approach segment begins at the final approach point FAP or the final approach fix FAF, and ends at the missed approach point MAPt.
 
-p.14.
+### Final Approach Fix and Final Approach Point
+
+final approach segment begins at FAF - if there is one.    
+The FAF should not be more than 10NM from landing surface.   
+
+For ILS/MLS approaches, the final approach segment begins at the final approach point FAP.   
+The segment ends at the missed approach point MAPt.
+
+FAP is a point in space on the centre line of the localiser or the MLS azimut specified for the final approach track where the intermediate approach alt/height intersects the nominal glide path or MLS elevation angle.   
+The FAP normally occurs at heights between 300m (984ft) and 900m (2955ft) above the runway elevation.
+
+### Approach Area Splays
+
+accuracy of facilities for tracking information ~ widen or narrowing instrument approach areas
+
+area width VOR 2.0NM and 2.5NM for NDB    
+area splays at 7.8deg for VOR and 10.3deg for NDB   
+optimum and maixum distances for the FAF are 5NM and 10NM
+
+descent angle    
+optimum descent gradient is 5.2%/3deg    
+minimum descent gradient is 4.3%/2.5deg    
+maximum descent gradient     
+- CAT A/B: 6.5%/3.7deg    
+- CAT B/D/E: 6.1%/3.5deg    
+- CAT H (heli): 10%/5.7deg
+
+precision approaches the preferred glide angle is 3deg    
+higher values are only used where there is no other way to avoid obstacles.    
+The glide angle for ILS CAT II or III must be 3deg
+
+### Non-precision approaches - vertical flight path
+
+studies: high risk of CFIT for non-precision approaches --> training and standardisation
+
+ICAO: 3 methods
+* constant angle descent
+* step-down descent
+* continuous descent final approach
+
+* constant angle descent    
+approach flown at constant angle from FAF or equivalent to a reference datutm (typically) 50ft above the runway threshold.    
+at MDA/H: if the required visual reference are not given, level off at or above MDA/H until visual or MAPt at which go-around is initiated
+
+* step-down descent    
+approach flown in a series of steps immediately descending to the next stepdown altitude or height to MDA/H.    
+Higher than normal descent rates require careful height monitoring.
+
+* continuous descent final approach     
+CDFA requires a continuous descent from altitude, or at least from the initial approach fix (IAF) to a point 50ft above the threshold.    
+The descent to pass any stepdown fix at or above the minimum altitude.    
+Unlike constant angle, the aircraft is not flown level at or near to MDH, the visual references are either adequate in which case the approach is continued or not. If not: go-around.    
+
+to avoid descent below MDA/H, the go-around must be initiated slightly above MDA/H.    
+Operators may specify additional increments (typically 50ft) to be added to MDA/H.    
+
+If go-around is initiated at or near MDH, no lateral or turning part of the missed approach procedure can be started until the MAPt is passed.
+
+The CDFA is preferred by ICAO. Many states require the use of this technique and apply increased visibility or RVR requirements when on e of the alternative techniques is used.
+
+During a non-precision approach such as a NDB-only approach, a QFE altimeter setting shall be provided to the aircraft on request or on a regular basis in accordance with local procedures. It shall be the QFE for the aerodrome elevation EXCEPT for non-precision approach runways, if the threshold is 2m (7m) or more below the aerodrome elevation in which cases the QFE for the relevant runway threshold 
+
+### Surveillance Radar Approach
+
+A surveillance radar approach SRA will normally stop 2NM before the threshold.   
+With approval of appropriate authority and if accuracy of the radar permits, it may continue to the runway threshold.    
+Under these circumstances the controller will pass distance and level information every half mile.
+
+
+### ILS Approaches
+
+ILS approach begins at the final approach point ==> glidepath interception occurs at heights between 300m (984ft) and 900m (2955ft) above runway elevation.
+
+Obstacle clearance surfaces for an ILS approach assumes a pilot localiser accuracy of half a scale defelection and glide path accurace of half course fly-up deflection after being established on thrack.
+
+ILS/MLS glidepath failure    
+If the ILS glidepath or MLS elevation angle are lost, the procedure reverts to a non-precision approach.   
+Separate procedures will be published to cater for this, often on the same approach plate/chart, with appropriate revised OCA/OCH.
+
+### Visual Maneuvering (Circling) Approach
+
+Visual Maneuvering (Circling) is the term used to describe the visual phase of flight after completing an instrument approach to position the aircraft for landing on a runway which is not suitable for a straight-in approach.
+
+The visual maneuvering area is determined by arcs centered on each runway threshold and joining those arcs with tangents.   
+The radius of the arcs is related to the aircraft category, and therefore the speed.
+
+In case of prominent obstacle in the visual maneuvering area, but outside the final approach and missed approach area, the published procedure may prohibit circling in this sector.    
+No 'single' circling approach procedure can be designed as every aerodrome has its own particular characteristics regarding obstacle location.
+
+After establishment of visual maneuvering area, the OCA/OCH for each aircraft category is determined.   
+As in non-precision approaches a margin may be added to the OCA/OCH to allow for operational considerations so that the MDA/MDH can never be lower than the OCA/OCH and is often higher.
+
+After initial visual contact, the assumption is that the runway environment (i.e., runway threshold or approach lighting aids or other markings identifiable with the runway) should be kept in sight while circlung at MDA/MDH.
+
+Descent below MDA/H    
+* visual reference established and can be maintained
+* pilot has landing threhold in sight; and
+* required obstacle clearance can be maintained and the aircraft is in a position to carry out a landing
+
+Loss of visual reference    
+If visual reference is lost while circling to land from an instrument approach, the missed approach procedure specified for that particular procedure must be followed.   
+
+It is expected that the aircrew will make an initial climbing turn toward the landing runway and overhead the aerodrome where the crew will establish the aircraft climbing on the missed approach track.
+
+In as much as the circling maneuver may be accomplisehed in more than one direction, different patterns will be required to establish the aircraft on the prescribed missed approach course depending on its position at the time the visual reference is lost.
+
+Missed approach on a circling approach is to make an initial climbing turn toward the landing runway and then - when overhead - establish the aircraft on the missed approach track.
+
+### Missed Approach
+
+During the missed approach phase --> high workload: aircraft configuration, attitude and altitude ==> design of missed approach as simple as possble ... in 3 phases:    
+
+* initial phase: starts at missed approach point and ends where climb is established
+* intermediate phase: starts where climb is established and extends to the point where 50m (164ft) obstacle clearance is obtained an can be maintained
+* final phase: begins at point where 50m (164ft) obstacle clearance is first obtained and extends to the point where a new approach, holding, or return to enroute flight is initiated.
+
+Typically, procedures are based on a minimum missed approach gradent of 2.5% (nominal gradient).    
+Gradient of 2% may be used, if necessary survey and safeguarding have been provided.     
+With approval by appropriate authority, gradients of 3,4, or 5% may be used for aircraft whose climb performance permits an operational advantage to be obtained.   
+
+If a gradient different than the "nominal" gradient of 2.5% is used, it will be indicated on the instrument approach chart.    
+In addition, the OCA/H applicable to the nominal gradient will be shown.
+
+A missed approach point is specified for EACH instrument approah perocedure where the missed approach begins and a point of an altitude/height where it ends.
+
+Missed approach is (assumed) to be initiated not lower than D/H IN PRECISION approach procedures, or at a specified point in non-preciion approach procedures not laower than the MDA/H.
+
+The missed approach point MAPt in a procedure may be:    
+* the point of intersection of an electronic glide path with the applicable DA/H;
+* a navigation facility;
+* a fix; or
+* a specified distance from the final approach fix FAF
+
+Nominal missed approach procedure climb gradient is 2.5%.    
+The missed approach procedure assumes that the missed approach starts no lawer than the DA/H or MDA/H.
+
+If upon reaching MAPt, the required visual reference is not established, the procedure requires that a missed approach be initiated at once for protection from obstacles.    
+It is assumed that the pilot will fly the published missed approach procedure.    
+If the missed approach is initiated PRIOR to arriving at the missed approach point, it is expected that the pilot will normally proceed to the missed approach point and then follow the missed approach procedure in order to remain within the protected airspace.    
+MAPt can be flown to and crossed at higher altitudes than required for the procedure.    
+The MAPt is defined a flyover waypoint in the FMS.
+
+From the earliest MAPt, the area splays at 15deg on each side of the missed approach track , at least until the start of climb SOC is reached.   
+This is based on some RNAV limitations and pilot's workload at the beginning of the missed approach phase.
+
+The missed approach procedure must be initiated if the required visual references are not obtained by the time the aircraft reaches the MAPt.
+
+
+An aircraft on surveillance radar approach SRA or precision approach radar PAR under radar control should be directed to execute a missed approach procedure:    
+
+* if the aircraft appears to be dangerously positioned,
+* for traffic deconfliction;
+* if clearance to land has not been received by the time the aircraft reaches 2NM from touchdown; or
+* on instruction from the aerodrome controller
+
+An aircraft making a radar approach should be advised to consider exectuting a missed approach procedure, if     
+* aircraft reaches a position from which it appears that a successful approach cannot be completed;
+* the aircraft is not visible on the radar display for a significant interval during the last 2NM of the approach;
+* clearance to land has not been received from the non-radar controller by the time the aircraft has reached 2NM from touchdown.
+
+ATC will direct a missed approach procedure,if clearance to land is not received by 2 NM.
+
+### Performance Based Navigation PBN
+
+PBN is based on area navigation systems RNAV.    
+PBN aims at global standardisation of RNAV and RNP specifications and to limit the proliferation of navigation specifications world-wide.
+
+airborne performance requirements are expressed in Navigation Specifications in terms of accuracy, integrity, continuity, and functionality needed for the proposed operation in the context of a particual airspace concept.   
+Within the airspace concepts, the availability of NGSS signal-in-space SIS or that os some other applicable navigation infrastratuture has to be considered in order to enable the navigation application.
+
+PBN is then described through means of RNAV and RNP applications with respective RNAV and RNP operations.
+
+3 components:    
+* navigation specification,
+* navaid infrastructure, and
+* navigation application.
+
+Navigation specification prescribes the performance requirements in terms of accuracy, integrity, continueity for proposed operations in a particular airspace. The Navigation Specification also describes how these performance requirements are to be acheieved, i.e., which navigation functionalities are required to achieve the prescribed performance.     
+Associated with the Navigation Specification are requirements related to pilot knowledge and traineing, and operational approval.    a
+Navigation Spacification is either an RNP specification or an RNAV specification.    
+A RNP specification includes a requirement for on-board self-obtained performance monitoring and alerting while a RNAV specification does not.
+
+The Navaid Infrastructure relates to ground- or space-based navigation aides that are referenced in each navigation specification. The availability of the navaid infrastructure has to be considered in order to enable the navigagtion application.
+
+The navigation application refers to the application of the navigation specification and navaid infrastructure in the contaext of an airspace concept to ATS routes and instrument flight procedures.
+
+PBN. States to prescribe navigation specification.   
+When applicable the navigation specification(s) for designated areas, tracks or ATS routes shall be described on the basis of regional air navigation agreements.    
+In designating a navigation specification, limitations may apply as a result of navigation infrastructure constrints or specific navigation functionality requirements.     
+THe prescribed navigation specification shall be appropriate to the level of communication, navigation, and air traffic services provided in the airspace concerned.
+
+Development from conventional routes to RNP routes:
+
+* conventional routes: today's airways connect ground-based navigation aides, limited design flexibility      
+* RNAV: area navigation RNAV routes follow defined "waypoints" ~ increased airspace efficiency     
+* RNP required navigation Performance routes within specified containment area ~ optimise use of airspace (curved paths)
+
+specificed navigation accuracy for a route or departure/approach procedure is given in NM units:    
+* enroute RNP: 2 NM or greater
+* approach RNP: as low as 0.11NM
+
+Precision approach and landing systems such as the ILS, MLS and NGSS GLS for part of the navigation suite, but are not incldued within the concept of performance-based navigation.     
+They differ from PBN applications in that they ar enot based on area navigation techniques.
+
+## Acronyms
+
+Decision ALtitude DA or Decision Height DH     
+A specified altitude or height in the precision approach or approach with vertical guidance at which a missed approach must be initiated, if the required visual reference to continue the approach has not been establisehd.
+
+DA ~ MSL, DH ~ threshold ELEV
+
+Minimum Descent Altitude MDA or Minimum Descent Height MDH     
+A specified altitude or height in a non-precision approach or circling approach below which descent must not be made without the required visual reference.
+
+MDA ~ MSL, MDH ~ aerodrome elevation or to the threshold elevation if that is than 2m (7ft) below the aerodrome elevation.
+
+
+Obstacle Clearance Altitude / Obstacle Clearance Height      
+The lowest altitude or the lowest height above the elevation of the relevant runway threshold or the aerodrome elevatino as applicable used in establishing compliance with the appropriate obstacle clearance critaeria.
+
+OCA ~ MSL, OCH ~ threshold elevation or in case of non-presicioan approaches to the aerodrome elevation oth the threshold elevation if that is more than 2m/7ft below the aerodrome elevation.
+
+An obstacle clearance height for a circling approach is based on the aerodrome elevation.
+
+
+Final approach fix FAF: a specified point on a non-precision instrument approach which identifies the commencement of the final segment.
+
+Final approach point FAP: a specified point on the glide path of a precision instrument approach which identifies the commencement of the ginal segment.
+
+Note: FAP = FAF on a localiser based non-precision approach.
+
+Initial Approach Fix IAF: a fix that marks the beginning of the intial segment and the end of the arrival segment, if applicable. In RNAV applications this fis is normally defined by a fly-by waypoint.
+
+Intermediate Fix IF: a fix that marks the end of an initial segment and the beginning of the intermediate segment.   
+In RNAV applications, the intermediate fix is normally defined by a fly-by waypoint.
+
+Missed Approach Point MAPt: The point of an instrument approach peocedure at or before which the prescribed missed approach procedure must beinitiatted in order to ensure that the minimum obstable clearance is not infringed.
+
+Primary Surveillance Radar PSR: a surveillance radar system which uses reflected radi signals.
+
+Turning Point (TP): a specified point in an instrument procedure which identifies the commencement of a turn.
+
+QFE: atmospheric pressure at aerodrome elevation (or at runway threshold if that is more than 2m/7ft below aerodrome elevation).    
+An altimeter with its sub-scale set to QFE will read zero when at aerodrome elevation (or at runway threshold).
+
+QNH: altimeter sub-scale setting to obtain elevation when on the ground.
+
+## Holding Procedures
+
+Holding - conceptually "anywhere"
+
+### Obstacle Clearane in the Hold
+
+holding --> holding area at a given level or altitude.
+The holding will be defined by a faciltiy, e.g. VOR/DME, or a fix.
+
+Holding Area is a volume of airspace made up of the basic holding area and the entry area.
+
+**basic holding area** at any particular level is the airspace required at tht level to encompass a racetrack holding pattern based on the allowance for aircraft speed, wind effect, timing errors, hodling fix characertistics, etc.
+
+**entry area** incldes the airspace required to accommodate the specified entry procedures.
+
+For the determination of the minimum holding level, a buffer area of 5NM beyond the boundary of the holding area is applied.
+
+```{r}
+knitr::include_graphics("figures/airlaw-holding-area.png")
+```
+
+minimum holding level provides a clearance of at least:     
+* 300m (984ft) above obstacles in the holding area    
+* a reducing value which provides clearance above obstacles in the buffer area
+
+published minimum holding altitude i rounded UP to the nearest 50m or 100ft as appropriate.
+
+The lowest flight level available for use above the transition altitude is called transition level.   
+Over high terreain or in mountanous areas, obstacle clearance up to a total of 600m/1969ft is provided to allow for the possible effects of turbulence, down drafts, and other meteorologicagl phenomena on altimeter performance.
+
+### Holding Procedure
+
+Holding and entry procedures are described in ENR section of AIP.
+
+In case a pilot cannot conform with holding procedures for any holding patterns, air traffic control shall be advised asap.
+
+ICAO: RIGHT TURN holding pattern.     
+For left-turn holding pattern, the corresponding entry and holding procedures are mirrored about the inbound holding track.
+
+If no operational procedures prevail, authorities should design right turn holding patterns!
+
+```{r}
+knitr::include_graphics("./figures/airlaw-holding-pattern-from-station.png")
+knitr::include_graphics("./figures/airlaw-holding-pattern-to-station.png")
+```
+
+General rules:    
+
+* all turn at bank angle of 25deg or at rate of 3deg per second, which ever requires the lesser bank
+* procedures depict tracks and pilots should attempt to maintain the track by making allowance for known wind by applying correnction both to the heading and timing during entry and while flying in the holding pattern
+* oubound timing begins over or abeam the fix whichever occurs later. If the abeam position cannot be determined, start timing when the turn the the outbound leg is completed
+* if outbound leg length is based on a DME distance, the ouboutnd leve terminates as soon as the limiting DME deistance is attained
+* for shape and terminology c.f. figures.
+
+### Entering the holding
+
+3 possible procedures to enter the hold, depending on the aircraft's inbound heading:     
+* **parallel entry** = sector 1 entry
+* **offset entry** = sector two entry
+* **direct entry** = sector three entry
+
+"zone of flexibility" either side of the sector boundaries, if the entry heading is whing 5deg of the boundary either procedure may be chosen.
+
+Turns at the end of the oubound entry leg my be specified in terms of DME, otherwise turns should be made on time.    
+This is one minute, if below or at 14 000ft, and one and a half minute if above 14000ft.    
+In this context 140000ft must be interpreted as being according to the cleared altitude of level. I.e., if you are on QNH := 14 000ft, if on 1013.25hpa := FL 140
+
+**parallel entry** aircruft turned left onto an outbound heading to achieve the reciprocal of the inbound track. at appropriate time or distance, turn left to intercept the ibound track of return directory to the fix.     
+As the fix is passed for the 2nd time, right turn to enter holding pattern.
+
+**offset entry (teardrop entry)**  at the fix the aircraft is turned left of right to make good track 30deg left of the reciprocal of the inbound track.    
+At appropriate time of distane the aircraft is turned right to make good the inbound track to the fix.     
+As the fix is passed a 2nd time, right turn to enter holding pattern.
+
+**direct entry** when reaching fix, the aircraft is turned right to enter holding pattern.
+
+
+example: right turn holding, 1 min outbound, inbound magnetic track 052.    
+aircraft approaching with no wind on magnetic track 232.
+
+inbound track: 052 ==> outbound track: 052 + 180 = 232 (== approach track)   
+==> 5deg flexibility ~ either parallel or offset (teardrop) entry.
+
+
+Flying the holding procedure - aircraft passing fix is enterin holding = right turn to outbound leg.     
+Outbound leg continued to appropriate time of DME distance. If time, 1 min or 90secs depending on altitude/flight level.   
+Right turn to regain inbound track before holding fix is passed.
+
+Pilots to make adjustments to heading and timing to ensure regaining of inbound track before passing holding fix.   
+If end of outbound is defined by DME distance, timing cannot be adjusted.
+
+Holding Speeds
+
+|-------------------|------------------------|
+|level              | normal                 |
+|-------------------|------------------------|
+|up to FL140        | CAT A & B: 170kt       |
+|                   | CAT C & D: 230kt       |
+|-------------------|------------------------|
+|above FL140 - FL200|    240kt               |
+|-------------------|------------------------|
+|above FL200-FL340  | 265kt                  |
+|-------------------|------------------------|
+|above FL340        | M0.83                  |
+|-------------------|------------------------|
+
+Departing/leaving the hold at set time    
+When clearance is received that specifies the time of depature form the holding point, the pilot should adjust the pattern within the limits of the established holding procedure in order to leave the holding point at the time specified.
+
+## Altimeter Setting Procedures
+
+Standardised altimeter setting --> vertical separation between aircraft and adequate terrain (obstacle) clearance during all phases of flight.
+
+Below or at **transition altitude**, aircraft is flown at altitudes based on altimeter setting to MSL, i.e., QNH. Vertical position = altitude.
+
+Above **transition altitude**, aircraft flown on standard constant atmospheric pressure of 1013.25hPa ~ flight levels FL.
+
+Where no transition altitude has been established for the area (e.g. remote areas), aircraft in the enroute phase must be flown at flight levels FL (standard pressure setting of 1013.25hPa)
+
+Altimeter settings provided to aircraft shall be rounded DOWN to nearest whole hectopascal.
+
+### Transition Altitude & Transition Level
+
+Transition altitude is the altitude below which the vertical position of the aircraft is controlled by altitudes above mean sea level MSL.
+
+TA must be specified for each aerodrome by the State in which the aerodrome is located.    
+In practice, and to avoid confusion, transition altitudes are normally standardised for the whole FIR.
+
+Whereas the transition altitude is fixed, the **transition level** changes based on QNH/air pressure. ATC to determine the transition level.    
+- calculated height of the transition altitude is rounded up to the next full 1000ft (e.g. 3300ft --> 4000ft).
+
+Transition altitudes "as low as possible", but normally not less than 3000ft.
+
+Nearby aerodromes - coordination for common transition altitude = highest transition altitude if considered separately.
+
+Transition altitudes are published in AIP and shown on approach charts.
+
+**transition level** change in reference from altitude on QNH to flight levels (standard pressure).
+
+Transition level = lowest flight level available for use above the transition altitude.
+
+An aircraft in descent must set QNH at the transition level.
+
+Transition altitude = altitude at which the pilot in a climb changes from QNH to 1013.2/standard pressure.    
+Transition level = lowest flight level available for use above the tranistion altitude.    
+Transition level is the flight level at which the pilot in a desent changes altimeter setting from standard/1013.2 to QNH.
+
+### Transition Layer
+
+transition layer := layer between transition altitude and transition level.
+
+transition altitude < transition layer < transition level 
+
+within transition layer: vertical position should be expressed in terms of flight levels when ascending and in terms of altitude when descendeing.
+
+variations exists.
+
+### Pre-flight Operational Test
+
+**QNH setting** - aircraft at known elevation on the aerodrome, set altimeter pressure scale to current QNH seting. Vibrate instrument by tapping unless mechanical vibration is provided ~~ -/+80ft for a 0-50.000ft altimeter
+
+**QFE setting** - aircraft at known elevation on the aerodrome, set altimeter pressure scale to the current QFE. Vibrate insturment unless mechanical vibration is provided ~~ -/+ 80ft for 0-50.000ft altimeter.
+
+-/+60ft for altimeter 0-30.000ft range.
+
+
+### Take-off and Climb
+
+QNH must be made available to aircraft as part of the taxi-clearance.    
+Prior to take-off at least one altimeter must be set to the latest QNH altimeter setting for the aerodrome.
+
+### Approach
+
+During the approach to land terrain clearance may be detmined by using QNH (giving altitude) or - under specified circumstances - a QFE setting (gibving height above the QFE datum).
+
+
+## Parallel Runway Operations
+
+Near parallel runways are defined as non-intersecting runways whose extended center lines diverge or converge by 15 degrees or less.    
+Rules apply equally to exactly paralle or near parallel runways.
+
+### Parallel Approaches
+
+**independent parallel approaches** = approaches which are made to parallel runway where radar separation minima between aircraft using adjacent ILS are not prescribed.
+
+**dependent parallel approaches** = approaches which are made to parallel runways where radar separation minima between aircraft using adjacent ILS and/are prescribed.
+
+### Parallel Departures
+
+simultaneous departure for aircraft departing in the same direcetion from parallel runways.
+
+### both parallel approaches and departures
+
+3 sets of operations that allow both approaches and departures from parallel runways:     
+- mixed    
+- segregated     
+- semi-mixed
+
+**mixed operations** = simultaneous parallel approaches with departures interspersed on both runways      
+**segregated operations** = exclusive use of one runway for approaches and the other for departures     
+**semi-mixed operations** = either one runway used exclusively for departures, while the other ruenway accepts a mixture of approaches and depattures, or one runway is exclusively used for approaches and the other accepts a mix of departures and approaches.
+
+
+### Simultaneous Independent Approach Procedures
+
+simultaneous independent parallel approaches are in progress
+
+* controller will issue instructions to ensure separation between aircraft and prevent aircraft from entering the NTZ;
+* arriving aircraft will be vetored to one of the other of the parallel ILS localiser courses;
+* when cleared for an ILS approach, a procedure turn is not permitted;
+* the final vector must allow at least 1NM of straight and level flight before the localiser final approach track interception.
+* the final vector must also enable the aircraft to be established on the ILS localiser course final approach track in level flight for at least 2NM prior to intercepting the ILS glidepath;
+* each pari of parallel approaches will have a *high side* and a *low side* for vectoring to privde vertical eparation until aircraft are established inbound on their respective parallel ILS localiser course and/final approach track. The main objective is that both aircraft to be estabished on the ILS localiser course final approach track befor ethe 300m/1000ft vertical separation is reduced;
+* if considered necessary, appropriate missed apporahc instructions will be issued.
+
+Aircraft must be vectored ot be established on the localiser at least 2NM before the glide path interception.
 
 ## questions
 
 * RSA/RESA = runway safety area (RSA) or runway end safety area (RESA): = he surface surrounding the runway prepared or suitable for reducing the risk of damage to airplanes in the event of an undershoot, [1] overshoot, or excursion from the runway
+
+* Initial Approach Fix marks beginning of instrument approach = transition from "arrival" to "instrument approach" = end of standard arrival procedure, i.e., STAR permits transition from enroute phase to approach phase
