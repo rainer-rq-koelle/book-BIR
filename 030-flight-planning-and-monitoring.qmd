@@ -1,0 +1,251 @@
+---
+title: "Flight Planning and Monitoring"
+---
+
+Flight Planning broadly covers 
+
+* route planning for IFR flights
+* fuel planning
+* planning to cover emergencies
+* flight monitoring
+
+
+fuel planning is essential & critical.     
+Fuel is a significant portion of operator's overall costs.
+
+
+## Key Terms and Definitions
+
+### Navigation
+
+**wind correction angle WCA** := amount and direction by which the heading is offset from the course in order to allow for wind velocity/direction
+
+**track (Tr) or course (Co)** := path over the surface of the earth
+
+**drift** := the angle between heading and track
+
+**true airspeed (TAS)** speed of the aeroprolane through the atmosphere
+
+**nautical miles (NAM/NM)** air distance flown in a given time at a given TAS
+
+**nautical ground miles NGM** ground distance covered over the earths' surface
+
+**ground speed (GS)** speed of the aeroplane over the earth's surface
+
+**TOC** top of climb
+**TOD** top of descent
+
+### Route Terminology
+
+**route** := a description of the path followed by an aeroplane between a departure point and its nominated final destination.
+
+**route segment** := a portion of a route, usually between nominated points that are generally coincident with significant waypoints.
+
+**schedule** one of a number of regular flights along a nominated route.
+
+**waypoint** significant navigation point alon the route normally definedas a latitude/longitude or as a VOR/DME radial and range.
+
+### ALtitudes
+
+**Minimum Safe En Route IFR Altitude (MEA)** = lowest published altitude (between radio fixes) that meets obstacle clearance requirements between these fixes. The MEA applies to the entire width of the airway, segment or route between the defining radio fixes.     
+In many countries: MEA ensures acceptable radio navigational signal coverage.
+
+**Minimum Obstacle Clearance Altitude (MOCA)** = lowest published altitude in effect between radio fixes on VOR airways, off airways routes, or route segments meeting obstacle clearance rewquirements for the entire route segment (and in the US: sufficient radio nav signal coverage within 22NM of a VOR).    
+--> 100ft clearance over obstacles up to and including 6000ft and 2000ft clearance for obstacles over 6000ft in elevation.    
+Indicated on en-route chart with T suffix to the minimum, e.g. 5300T
+
+**Minimum Safe (Sector) Altitude (MSA)** = MSA given on instrument approach charts. MSA identifies the minimum altitude that provides a 1000ft vertical clearance above obstacles within 25NM of navigational facility.    
+Could be divided into sectors with different values.    
+MSA is for emergency use only.
+
+**Minimum Off Route Altitude (MORA)**    
+* ROUTE MORA provides a defined vertical clearance above all obstructions within 10NM of the route rentre line.    
+* GRID MORA provides a minimum of 1000ft clearance in a section defined by latitude and longitude lines
+
+**Maximum Authorised Altitude (MAA)** = published altitude that represents the maximum useable altitude or flight level for a particular airspace structure or route segment.
+
+**Minimum Crossing ALtitude (MCA)** = lowest altitude at which an aircraft proveeding in the direction of a higher MEA may cross a certain fix.
+
+**Minimum Holding Altitude (MHA)** = lowest altitude in a holding pattern that assures navigational signal coverage, communications, and provides clearance of at least 1000ft above obstracles in the holding area.   
+Over high terrain or in mountainous areas, additional obstacle clearance up to 600m (1969ft) is provided to accommodate effects of turbulence, down dafts, and other meteorological phenomena on the performance of altimeters.
+
+### Fuel Terminology
+
+**Start-Up and Taxy** = fuel allowance - often fixed by the operator - which has to be deducted from Ramp (Taxy) Mass to obtain Take-off Mass (TOM).
+
+**Take-Off, Climb, Cruise, and Descent Fuels** -> values extracted from the performance manual to meet the needs of the particular route, weather, and operating profile.
+
+**Trip Fuel** or **Sector Fuel** = sum of take-off, climb, cruise, and descent, approach and landing fuels, or runawy to runway.
+
+**Contingency Fuel** = fuel amount carried to account for unplanned operations, e.g. ATC re-routing, cruising at lower flight level, stranger than forecasrt headwinds.
+
+**Alternate Fuel** = fuel required from the missed approach point to the nomnated alternate. It will include the fuel required for climb, cruise, descent, approach, and landing.
+
+**Additional Fuel (for planning purposes)** = fuel that may be required for planning purposes or contingencies (depressuraisation is one example).
+
+**Island Reserve** operations to isolated airfields or islands require a significantly increased reserve fuel on arrival at destination.
+
+**Final Reserve** = quantity of fuel that should never be used, but is carried in order to provide a safety net.   
+You should always land - at destination and alternate - with *final reserve fuel intact*.    
+Final reserve fuel for    
+- turbine engine: 30 minutes holding at 1500ft above airfield
+- piston engine: 45 min fuel (normally at cruise fuel flow).
+
+**Block Fuel** or **Ramp Fuel** = total fuel loaded into the aeroplance = sum of    
+* taxy fuel
+* trip fuel
+* reserve fuel consisting of
+  + contingency fuel
+  + alternate fuel
+  + final reserve fuel
+  + additional fuel (if required)
+* extra fuel (added by operations for known delays)
+* discretionary fuel (at discretion of the Commander)
+
+### Aircraft Mass Terminology
+
+**Maximum Take-off Mass (MTOM)** = structural limit (which must be never exceeded) or a performance limit.
+
+**Maximum Landing Mass (MLM)** = structural limit - not to be exceeded in normal operations - or a performance limit.
+
+**Maximum Zero Fuel Mass (MZFM)** = structural limit    
+=> **Zero Fuel Mass (ZFM)**  = total mass of the aeroplane less the usable fuel.    
+Any fuel in tanks which cannot be transferred to the engines (unusable fuel) forms part of the ZFM.
+
+**Basic Empty Mass (BEM)** = mass of airframe, engines, lubricating oil, unusable fuel, and the equipment required for all roles of the aeroplane (e.g. pax seats, cargo restraints).
+
+**Variable Load (VL)** = weight of the crew and their baggage and equipment, food, beverages, water, and any special equipment required for a particular aeroplane mode.
+
+**Dry Operating Mass (DOM)** = sum of BEM and VL.    
+DOM does not entail usable fuel and payload.
+
+**Payload** = combined weight of the passengers and their baggage, cargo and mail (~ what brings revenue ~ pay).
+
+**Traffic Load** = payload plus non-revenue load.    
+$traffic load + DOM = ZFM$.
+
+**Take-Off Mass (TOM)** = weight (mass) of the aeroplace at the start of the take-off run.    
+$TOM = ZFM + takeoff fuel$.
+
+**Operating Mass (OM)** = sum of DOM plus take-off fuel = TOM minus traffic load.
+
+**Ramp Mass (RM)** or **Taxy Mass** = total mass of the aircraft and its contents at start up.    
+$RM (or taxymass) = ZFM + fuel load$.     
+When the allowance for start-up and taxy fuel is subtracted, the fuel remaining is called take-off fuel and the resultatnt weight is the take off mass (TOM).
+
+**Landing Mass (LM)** = mass of the aircraft on landing => $LM = TOM - trip fuel$.
+
+**All Up Mass (AUM)** = total aircraft mass at a specified point.     
+Also referred to as **Gross Mass**.
+
+
+### Designators for Controlled, Advisory, and Uncontrolled ATS Routes
+
+ICAO Annex 11 and AIP describe airways and associated designators.   
+Designator shall not exceed 6 characters, normally 5.   
+Basic designator: letter followed by number 1 ... 999:
+
+* A,B,G,R routes forming part of the regional routes - non-RNAV
+* L,M, N, P regional RNAV routes
+* H,J,V,W   non-regional networks of ATS routes - non RNAV routes
+* Q,T,Y,Z non-regional RNAV routes.
+
+Where applicable, one supplementary letter can be added as prefix  
+
+* K = low-level route, primarily helicopter (spoken as KOPTER)
+* U = route of portion estabilshed in the upper airspace (spoke as UPPER)
+* S = route established exclusively for use by supersonic aircraft during accerleration and deceleration and while in supersonic flight (sponek as SUPERSONIC)
+
+examples: L620 (Lima 6-2-0), UL620 (UPPER Lima 6-2-0), Q295
+
+An ATS authority can assign supplementary letter after the designator to indicate the type of servie provided.   
+However, this designator may not be displayed to the pilot on some some types of equipment, and the crew is not required to use them in radio communications:
+
+* F indicated that only an advisory service is provided on the route or portion of the route
+* G indicates that only a flight information service is provided on the route or portion of the route
+
+### Meteorology - Weather Information
+
+Significant weather charts (Sig WX charts or prognostic charts) - may differ in format based on route, aeroplane type/operating altitudes and range.
+
+E.g. piston engine -> low-level (below 10000ft) weather chart
+
+High level CHarts (operating up to 40000ft or higher).
+On high-level charts the surface conditions are not particularly important, but the location of jet streams, areas of cumulonimbus and thunderstorms (implying moderate to severe turbulence and icing), and areas of Clear Air Turbulence (CAT).
+
+check for symbology - MET.
+
+Wind and Temperature Charts -> planning ~ forecast of wind and temperatures. Charts exists in differnt formats.
+
+low-level wind and temperature ~ spot wind chart ~ at various selected latitude and longitudes, spot winds and temperatures are indicated.    
+Values for intermediate points can be extracted for planning purposes.
+
+high-level wind and temperature ~ typically showing wind systems, direction and strength
+
+Note: temps are assumed to be negative in UPPER airspace unless stated otherwise, e.g. 36 = minus 36 degrees Celsius, PS2 = plus 2 deg C
+
+```{r}
+#| label: fig-airlaw-wind-symbology
+#| fig-cap: wind symbology
+ 
+knitr::include_graphics("./figures/airlaw-met-wind-symbology.png")
+```
+
+**aerodrome reports and forecasts** meteorological aerodrome reports (METAR) and Terminal Aerodrome Forecasts (TAF).    
+METAR within current reporting period (typically 30 mins).    
+TAF forecast of weeather expected over stated period of time.
+
+For planning purposes, the weather at the departure, destination, and alternate aerodromes will be considered for a period of your estimated time of arrival -/+ 1 hour.
+
+Operations Manual specifies weather minima for destination and diversion aerodromes.    
+Approach minima are established by the Operator, approved by the Authority based on rules in EU OPS.
+
+## Approach Charts
+
+guidance from initial approach fix IAF or radar vectors to the runwway and missed approach procedure
+
+### Instrument Approach Procedures
+
+* arrival segment = transition from en-route to approach phase - normally via Standard Arrival Procedure (STAR) ending at the initial approach fix IAF or via an RNAV Transition.
+* initial approach segment starts at IAF, aircraft descent to position for approach. Often aircraft are vectored to the Intermediate Fix (IF) at which the initial approach segment ends.
+* intermediate approach Segment starts at IF which is normally on or within 30 degrees of the extended centerline and ends    
+  + for non-precision approaches at the Final Approach Fix (FAF), or
+  + for precision approaches at the Final Approach Point (FAP).     
+  
+  Note: the IF is normally not identified on the Instrument Approach Chart as IF. In practical terms the aircraft speed and configuratio should be adjusted to prepare for the Final Approach (starting at FAF or FAP), thus, the descent gradient is kept as shallow as possible.
+  
+  Note2: for RNP approaches, a 10NM waypoint on the extended centerline is used and can be labelled as IAF or IF dependent upon the design of the approach. This point is the waypoint where the final approach course of a T approach meets the crossbar of the T (?!?!?)
+  
+* Final Approach Segment starts at the FAF/FAP and ends at the Missed Approach Point (MAPt).
+* Missed Approach Segment starts at MAPt and terminates at point (NDB, radial and DME, or an altitude/height).     
+  If a missed approach is initiated before the MAPt, thenthe aircraft is flown to the MAPt and then follows the missed approach procedure to remain within the protected airspace.
+  
+### Approach Chart Sections
+
+example: ILS DME approach for London Heathrow runway 27R
+
+chart comprises 4 sections    
+* HEADING SECTION
+* Approach Plan View
+* approach profile view
+* landing minima
+
+heading section provides name, identifier, approach aid, frequencies, elevation, and missed approach procedure
+
+plan view generally drawn to scale (noted otherwise), shows approach path and tracking details from the IAF to the approach air and Final Approach Fix (FAF)
+
+not all instrument approaches have an Intermediate Fix (IF) (normally within 30 deg of centreline)
+
+runways - location and orientation    
+reporting points - compulsory and non-compulsory    
+tracks and distances - magnetic tracks and distances for the approach procedure     
+
+missed approach path - path to be followed.
+p10/19
+
+## Questions
+
+TT Drift TH VAR MH DEV CH
+TT + drift (9right) = TH
+ TH + VAR       = MH -- MH + DEV = CH 
+271 + 22E (-22) = 249 -- 249 3W (+3) = 252

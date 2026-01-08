@@ -11,6 +11,7 @@ book:
     - intro.qmd
     - 010-air-law.qmd
     - 0x0-human-factors.qmd
+    - 030-flight-planning-and-monitoring.qmd
     - 040-meteology.qmd
     - 0x0-instrumentation.qmd
     - 050-human-performance.qmd
