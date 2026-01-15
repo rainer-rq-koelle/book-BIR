@@ -2090,6 +2090,257 @@ GOOD STUFF: https://paragonair.com/public/docs/AdvCircs/AC00-06A_AvWx/AC00-6A_ch
 https://paragonair.com/public/docs/AdvCircs/AC00-06A_AvWx/index.html
 
 
+## VISIBILITY
+
+poor visibility ~ day and night -> small particles "obstruct", reflect, or scatter light.   
+sources: water droplets, ice crystals, or solids (e.g. dust, sand, smoke).
+
+icing on windshield, sun reflection off the top of clouds and off fog or haze, or direct looking into sun
+
+### Hazards
+
+poor visibility is a hazard for flight, landing and take-off.   
+additionally, diffraction through water drops in rain, mist or fog may distort view/orientation (e.g. wrong perception of angle of approach). == makes you think closer to touchdown or at higher approach angle
+
+### Definitions
+
+**flight visibility** and **aerodrome visibility** differ.   
+A mist layer can be quite shallow (easy to see through) from the air, but not from the ground (dense layer).
+
+**aerodrome visibility** can be reported either as **prevailing visibility** or **runway visual range**.
+
+ICAO Annex 3:   
+
+visibility for aeronautical purposes is the greater of    
+
+* greatest safe distance at which a black object of suitable dimensions situated near the ground, can be seen and recognised when observed against a brieght background; and
+* greatest distance at which lights in the vicinity of 1000 candelas can be seen and identified against an unlit black background.
+
+**ground visibility** is defined as the prevailing visibility near the Earth's surface as reported by an accredited observer.
+
+Note: check for direction/range of observation, etc.
+
+**aerodrome visibility** is typically describes as prevailing visibility.   
+> The visibility value that is reached or exceeded within at least half the horizon circle or within at least half of the surface of the aerodrome. These areas could comprise contiguous or non-contiguous sectors.
+
+=> over half of the horizon circle, the prevailing visibility will be exceeded and, over the half, the visibility will be less than the prevailing visibility.   
+The prevailing visibility roughly represents the *average visibility*.
+
+Attention when visibility in one (or more) direction(s) is significantly lower than the prevailing visibility.
+
+if visibility in "any" direction is either less than the prevailing visibility AND less than 1500m OR less than 50% of the prevailing visibility and less than 5000m, the lowest visibility observed will be ALSO reported!    
+The direction of the area of lower visibility will be indicated by reference to one of the eight points of the compass.    
+If the lowest visibility is observed in more than one direction, then the most operationally significant direction will be reported.
+
+If visibility is fluctuating rapidly and the prevailing visibility cannot be determined, only the lowest visibility will be reported, with NO indication of direction.
+
+Decision for non-precision or "circle-to-land" approach is based on prevailing visibility, caution that visibility in certain sectors could be up 50% less than the reported visibility, reassure that the visibility would be reported as a minimum value, if less than 1500m.   
+
+Prevailing visibility is reported in meters: METAR EDDS 1450 1800 0800SE = weather at 1450z, prevailing visibility 1800m, lowest visibility 800m to the South-east.
+
+### Runway Visual Range RVR
+
+RVR = maximum distance in the direction of takeoff or landing at which the runway, or specified lights delineating the runway, can be seen from a position on the centerline corresponding to the average eye level of a pilot at touchdown.
+
+RVR can be "subjectively" assessed by a human observer, but typically measured automatically ("non-subjectively" ~ factual measurement) by infra-red or laser sensors at the runway edge.     
+RVR sensors: *"transmission-meter"*    
+*"forward scatter meter"* ~ measures visibility by amount of scattering of light caused by solid particles or water droplets.
+
+### Comparison RVR and MET visibility
+
+methods for determining **prevailing visibility** and **RVR** differ.    
+RVR measured in one specific direction ("runway direction") if less than 1500m.   
+Prevailing visibility is the average and the minimum level.
+
+No direct comparison.    
+However, RVR likely to be the same as or greater than the lowest reported value of prevailing visibility.
+
+### RVR reporting
+
+RVR "automatic", listed in Airfield Installation Directory.    
+RVR reported ins teps of 25m up to 200m, stesp of 50m up to 800m, and then steps of 100m.   
+RVR normally not reported, if it is 1500m or more.
+
+Most systems measure RVR at touchdonw, mid-point, and stop-end of runway.   
+To reduce reporting, some values are suppressed if not significant.     
+(AGIVIS a common system in Europe) mid-point or stop-end values are ONLY reported, if the value inquestion is less than the touchdown value and less than 800m OR less than 400m.    
+If all three values are given, the names for the segments are omitted.
+
+## Fog or Mist
+
+* **fog** is caused by water droplets or ice crystals, and is defined as visibility less than 1000m, relative humidity RH = 100%
+* **mist** caused by water droplets or ice crystals, defined as visibility of at least 1000m, but not more than 5000, RH around 95%
+* **freezing fog** = fog with temperature reduced to below 0 deg C, mainly consists of supercooled water droplets
+* **ice fog** consists of ice crystals rather than water droplets, rare and only found in polar regions, occurs at temperatures below about minus 20 deg C.
+* **haze** consists of solid particles, visibility less than 1000m, qualified by type of pollution (e.g. smoke haze)
+* **sandstorm**: (i) gradient wind sandstorms (e.g. Harmattan), and (ii) convective sandstorm (e.g. Haboob)
+* **blowing snow** = snow at temperatures well below 0 deg C, picked up by strong surface winds.
+
+The type of obscuration - mist or haze, smoke, dust or sane - is normally not quoted, if the visibility is more than 5000m
+
+
+MET report: VC = within vicinity of 8km
+
+
+## Module 2 - Pressure Systems
+
+```{r}
+knitr::include_graphics("./figures/met-ridge-trough-col.png")
+```
+
+* **ridge** (wedge) = elongated area of relatively HIGH pressure - anticyclonic type of weather (i.e., generally fair weather) that may be an extension of an anticyclonie or high pressure region and is bounded by low pressure. 
+* **troughs** = elongated feature of low atmospheric pressure, the axis of which is defined by a shark 'kink' or angle in the v-shaped isobars.
+* **cols** = regions between two highs and two lows
+
+LOW  - left hand - wind in anti-clockwise
+HIGH - left hand - wind in clockwise (fingers) direction
+
+### Mid-Lattitude Frontal Depressions
+
+front marks the boundary between air masses originating from different regions, with different characteristics, particularly, the temperature of the air.   
+A front can be stationary, but more generally is moving.
+
+warm front = boundary where a warmer air mass is replacing a colder air mass.    
+warm front ~ semi-circular symbol on side of colder air
+
+cold front = colder air mass is displacing a warmer air mass.
+cold front ~ triangular symbol pointing to the side of movement to warmer air mass.
+
+region between fronts is called warm sector
+
+stationary ~ boundary between warm and cold air mass is stationary; both symbols
+stationary front - symbols point in different directions
+
+cold fronts travel faster than warm fronts ... and eventually catch up with warm front := occlusion; symbols show in same direction.
+
+```{r}
+knitr::include_graphics("./figures/met-frontal-depression.jpg")
+```
+
+
+surface pressure chart -> spot ridge of high pressure, trough of low pressure, warm/cold/occluded front, warm sector, high/low pressure area
+
+## Sources of MET Information - SIGMET and AIRMET
+
+### Pre-flight Weather Information
+
+MET offices provide aerodrome forcasts and briefing documents.    
+Most countries provide a recorded telephone message service suitable for General Aviation GA.    
+More detailed information is available in text or fax form through the Aeronautical Fixed Telecommunications Network (AFTN) fax and telex.   
+Text-based MET information in Europe is distributed on AFTN by the Meteorological Operational Telecommunications Network Europe (MOTNE).    
+Access to the ful MET service for national and international flights can be obtained on-line through a dedicated Meteorological Information Standard Terminal MIST - installed in most airports.
+
+### Special Route Forecasts
+
+The MET authority will provide special route forecasts, if required.
+
+ICAO requires this information to be supplied as soon as it becomes available, but not later than three hours before departure.
+
+### In Flight Weather Information
+
+routine weather information available in flight through VOLMET service, ACARS, and ATIS.
+
+VOLMET broadcast on HF and VHF and repeats current METARs and SPECIs for the area in plain language and - if determined by a regional air navigation agreement - TAFs and SIGMETs.
+
+ACARS is a ground/air link that passes information of different nature. MET inforamtion can be used to pass general warnings, SIGMETS, and the ATIS information for destination airfields.
+
+ATIS = automatic terminal informatoin service, broadcasts current weather and traffic information, runway condistions, and general warnings.    
+ATIS re-issued every 30mins as the METAR is issued or any other change.    
+identifier -> signals tower which ATIS received.
+
+In-flight Briefings ~ upon prior arrangement with the MET authroity, a special in-flight enroute weather service can be provided.    
+advance notification on route/route sector, flight level, time in the sector, and the ATS unit
+
+Diversion Briefings = in case of diversion along a route for which no weather information wa obtained.    
+In addition, ATS unit will pass any relevant SIGMET and AIRMET warnings.
+
+
+Meteorological Watch Office (WMO) ~ specified under ICAO ~ maintain wath over meteorological conditions within a defined area (usually FIR) or along designated routes or portions thereof for the purpuse of spullplying MET information, in particular SIGMET and AIRMET.
+
+SIGMET (significant meteorological information) = formal weather report issued to ALERT pilots and aviation operations about hazardous weather conditions that may affect safety of flight.    
+- issued as needed, validity up to 4hr
+
+SIGMET warnings are routinely issued by each FIR(WMO) and related to cruising levels generally above FL100.
+
+Along with AIRMETS, SIGMETs are available pre-flight and can be passed in flight to warn of any of the following adverse weather conditions
+
+* thunderstorm TS, OBSC TS, EMBD TS ....
+* tropical cyclone TC
+* turbulence   SEV TURB
+* icing SEV ICE, SEV ICE FZRA
+* mountain wave
+* duststorm (HVY) DS
+* sandstorm SS
+* volcanic ash VA
+* radioactive cloud RDOACT
+
+AIRMET (airmen's meteorological information) = weather advisory issued by WMO concerning the occurrence or expected occurrence of specified enroute weather phenomena that may affect the safety of LOW-LEVEL aircraft operations.    
+typically issued for a maximum of 4 hours
+
+AIRMET warnings are for traffic at lower levels, normally up to FL100, and up to FL150 or higher in moutainous regions.    
+Available pre-flight and can be transmitted in flight to warn about adverse weather conditions comprising
+
+AIRMET less severe than SIGMET!
+
+* surface wind speed, wind speeds above 60km/hr ~ 30kt, SFC WSPD (+ wind speed and units)
+* surface visibility, areas affected by reduction of visibility to less than 5000m & weather phenomena, SFC VIS (+visibility) (+ phenomena, e.g. BR, DS, DU, DZ, ....)
+* thunderstorms, isolated without/with hail, ISOL TS, OCNL TS ISOL TSGR OCNL TSGR
+* mountain obscuration, MT OBSC
+* icing, moderate (except CU/CB) MOD ICE
+* turbulence, moderate (except CU/CB), MOD TURB
+* cloud, areas of broken or overcast cloud with height of less than 300m/1000ft AGL, BKN CLD (+base/top)
+* cumulonimbus, isolated/occasional/frequent, ISOL/OCNL/FRQ CB
+* towering cumulus, isolated/occasional/frequent, ISL/OCNL/FRQ TCU
+* mountain wave, moderate, MOD MTW
+
+TASK - decode SIGMET/AIRMET - check for examples
+
+### Aerodrome Weather Warnings
+
+In general, warnings of specific weather conditions at aerodromes are broadcast on ATIS, or by radio
+
+aerodrome warnings provide meteorological conditions that could adversely affect aircraft ON THE GROUND, including parked aircraft, and the aerodrome facilities and services.    
+issued every 6 hours
+
+* tropical cyclone (mean surface wind grater than 63km/hr / 34kt)
+* thunderstorm
+* hail
+* snow (including expected or observed accumulation)
+* freezing precipitation
+* hoar frost or time
+* sandstorm
+* duststorm
+* rising sand or dust
+* strong surface wind and gusts
+* squall
+* frost
+* volcanic ash
+* tsunami
+* other phenomena as agreed locally
+
+Windshear warnigns
+* information from Dopple radar systems or surface wind and pressure sensores
+* aircraft observations and PIREPS
+
+squall lines := line of thunderstorms that can produce severe weeather, including heavy rain, hail, and tornadoes, often forming along or ahead of a cold front.    
+-> quasi-linear convective system
+-> can extend 100s of miles, but remains "narrow" (aka line) about 10-20 miles
+Windshear associated with
+* thunderstorms
+* microbursts
+* funnel cloud
+* gusts fronts
+* frontal surfaces
+* strong surface winds coupled with local topography
+* sea breaze fronts
+* mountain waves including low level rotors in terminal area
+* low level temperature inversions
+
+
+
+
+
+## WORKED EXAMPLES & STUFF
 
 True Altitude = Indicated Alt + 30 * (QNH - 1013) + 4 * ISADEV * AAL/1000
 TA = IA + 30 * (QNH - 1013) + 4 * ISADEV * AAL/1000

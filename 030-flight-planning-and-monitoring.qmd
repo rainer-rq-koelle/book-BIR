@@ -240,8 +240,283 @@ runways - location and orientation
 reporting points - compulsory and non-compulsory    
 tracks and distances - magnetic tracks and distances for the approach procedure     
 
-missed approach path - path to be followed.
-p10/19
+missed approach path - path to be followed, depicted as dashed line.
+
+holding patterns - location and direction of holding patterns     
+example Stuttgart/EDDS, non-standard left-turn holding at Luburg LBU R357 inbound (track: 177)
+
+altitudes - procedure altitudes to be flown
+
+radio aids - location of all radio navigation aids of the instrument approach and associated indications at key waypoints
+
+obstructions - locations of all relevant obstructions (obstacles, mountaines) and associated altitudes
+
+restricted airspace(s) - any restricted airspace (EDDS, powerplant on ILS final approach)
+
+altitude vs distance table - tabulated information on altitudes (heights) versus distance for an approach WITHOUT a serviceable glide path signal.    
+The glide slope is shown for ILS procedure or the Vertical Descent Angle VDA is given for the localiser only procedure. The relative descent rates (feet per minute) for the slope is given relative to the groundspeed in knots.
+
+PROFILE VIEW - not drawn to scale, illustrates vertical profile of the approach path.
+
+* heights and locations at which to intersect the glide path
+* distances to threshold at various locations
+* location of Final Approach Fix (FAF) = '*cross symbol*'
+* missed approach point (MAPt) = point at which a missed approach should be initiated in order to preserve the required obstacle clearance limits.     
+  + example EDDS: MAP for the full ILS := DA (1381ft)
+  + for localiser only LOC := designated MAP (M) - in example overhead STG VOR / D0.7 ISTW or D1.4 from SGD DME with an MDA of 1590ft
+* threshold elevation
+* any further details of the missed approach procedure
+
+APPROACH MINIMA    
+* DA/MDA (H) for various categories of aircraft
+* categories dependent on aircraft approach speed (A, B, C, D)
+
+OCA/OCH and MINIMA     
+* details of the landing minima for combinations of available facilities and aircraft categories; decision altitude DA reference to QNH, decision height DH referenced to QFE      
+  Note: lighting availability of touchdown zone TDZ, centerline lighting, ALS approach light system can impact RVR
+* circling to land altitude/height minima are given (if relevant)
+* rates of descent required at different ground speeds, in order to maintain the prescribed glide path.
+
+## Route Planning
+
+planning exercise: Heathrow to Amsterdam/Schiphol
+
+* find aerodromes EGLL and EHAM on E(LO) chart - assumed FL = FL190;     
+  tip: pick LON first to be in right area of chart     
+  draw line between both aerodromes
+* pick SID and STAR    
+  assume light westerly wind: EGLL R27L/R; EHAM (many options) 18
+* westerly departure from EGLL will take us to airway at BROOKMANS PARK   
+  routing as short as possible/almost direct
+
+HEATHROW standard instrument departure SID
+* possible route entry: BROOKMANS PARK, CLACTON, or LAMBOURNE, easterly routes to the EAST being one-way     
+  no SID for CLACTON or LAMBOURNE; Heathrow 10-3 lists BPK 7F and 7G departures runways 27R/L to BROOKMANS PARK
+  + ruwnay selection will be ATC choice (dependent traffic volume, operational constraints, gate, etc.)
+  + assumption: 27R => SID BROOKMANS PARK 7F, i.e., BPK 7F
+  
+PLAN = depiction of SID procedure, textual information at bottom;     
+example:      
+  + based on radials and distances from various NAVAIDS
+  + LON 113.6, designator 'D' := DME
+  + EGLL ELEV 83ft, TA 6000ft
+  + climb straight ahead after take-off then turnright at D3 from LON DME onto 299 radial inbound to BURNHAM (BUR); BUR = NDB, 421kHz.
+  + at D6 LON (waypoint) right turn to intercept 056 inbound CHILTERN CHT, NDB 277kHz
+  + BROOKMANS PARK BPK = VOR DME, frequency 117.5
+  + average track mileage ~ take-off to BPK - given for climb planning
+  + speed control: max 250kt below FL100 is a fairly standard rule at most international airports for both, departures and arrivals.
+  + minimum safe altitude within 25NM (unless stated otherwise): all London departure area LON VOR 2100ft
+  
+ATS routing    
+  + check low level enroute chart, from BPK there is only 1 viable route: O295 to CLACTON VOR/DME, then L620 through REDGA on FIR boundary to TULIP.
+  + walk along route (segments); note distances and surrounding information, e.g. center frequencies, distance between fixes, reporting point REDFA (FIR boundary crossing point London/Amsterdam)
+
+ARRIVAL ROUTING     
+  + identify AMSTERDAM AREA CHART 10-1 for overview, find TULIP (and entry from REDFRA) along L620
+  + options: TULIP to SPIJKERBOOR VOR/DME via Y12 or TULIP to PAMPUS VOR/DME via L620 and BASNO reporting point
+  + now check STARS for EHAM: only 1 STAR for aircraft arriving from the west via REDFA == REDFA 1A
+  
+REDFA 1A STAR    
+  + gen info, ATIS, ELEV, radar vectors = arrival applicable for all runways
+  + max 250kts below FL100, IAF = SUGOL; tracking inboud DEN Helder VOR/DME to SOLUT, then 077 to SUGOL 31NM on 292 from SPL
+  
+APPROACH FROM SUGOL (IAF) to EHAM R18 = instrument approach procedure, 3 parallel runways -> ILS for runway 18R ==> approach 11-4
+  + routes from SUGOL to SPL VOR/DME to commence procedure; recall: REDFA arrivals from IAF to intermediate fix IF may be vectored by ATC!
+  + heading and communications ATIS --> GND
+  + APPROACH BRIEFING INFORMATION and MSA; ILS ident/frequency VPB 110.1; final approach course: 183, minimum altitudes on GS (if published, none for this procedure), procedure DA/H; aerodrome elevation -11ft, runway touchdown zone TDZE -13ft
+  + missed approach procedure
+  + gen info on approach
+  + MSA
+
+PLAN VIEW shows routing from SUGOL direct to SPL VOR, left turnto establish and follow SPL 338 radial outbound to 12.1NM before turning right onto track 153 to intercept localiser VPB inbound on 183.   
+MAP depicted as dashed line to intercept R280 SPL outbound; with overshoot warning
+
+PROFILE VIEW - range versus height profile for a localiser LOC only approach
+  + descent starts overhead SPL VOR/DME at FL70 on SPL R338 to 3000ft, at 12.1DME RIGHT turn onto 153 to intercept ILS localiser; inbound course 183 and descend to 2000ft
+  
+CONVERSION TABLE    
+tabular presentation of rate of descent to maintain a 3 deg descent profile at different ground speeds;     
+MAPt (for the localiser only approach): VDP D0 (~ threshold c.f. above)     
+Note: DA(H) = MAPt for ILS;     
+further description of MAP: depicted RIGHT TURN onto SPL R280, SPL freq 108.4MHz
+
+APPROACH MINIMA    
+minima section comprises approach type, aircraft approach category (approach speek) and available aerodrome lighting
+
+title STANDARD signals values are compliant with EASA AIR OPS. State values supplied as compared to EASA AIR OPS and the higher of the two published
+
+approach types:    
+  + ILS runway 18R
+  + localiser only (no glideslope)
+  + circle to land
+  
+aircraft approach categories:    
+  + A ... D; most jets ~ D
+  + associated minima for each category; can differ e.g. Circling Approach
+  
+for ILS: DA = 187ft above MSL/DH = 200ft above ground     
+Note: here DH > DA as aerodrome is below MSL (runway elevation of -13ft)    
+DA(H) remain constant, but the required RVR depends on availability/status of lighting system (FULL, LIMITED, OUT)    
+Note: RVR increases for LOCALISER ONLY for category A and B, or a converted meteorological visibility (CMV) of 2400m for category C and D;    
+for LOC ONLY DA(H) increases to 690ft MSL/703ft AGL
+
+circling to land minima per aircraft category and maximum circline speeds;    
+category D:  circling minima 890ft MSL/901ft AGL with a min visibility of 3600m to maneuver to another runway.
+
+The note states limitations on the circling approach, i.e., circling to 18L or 36L are not permitted except in an emergency.
+
+## AIP
+
+for planning route, AIP for the relevant countries shall be consulted for regulations and deviations from ICAO standards (e.g. meters instead of FL).
+
+PART I - GENERAL (GEN)    
+  + GEN 1   National regulations and requirements
+  + GEN 2   Tables and codes
+  + GEN 3   Services
+  + GEN 4   changes for aerodromes/heliports and air navigation services
+
+PART 2 - ENROUTE (ENR)    
+  + ENR 1   general rules and procedures
+  + ENR 2   air traffic services airspace
+  + ENR 3   ATS routes
+  + ENR 4   radio navigation aids/systems
+  + ENR 5   navigation warnings
+  + ENR 6   enroute charts
+  
+PART 3 - AERODROMES (AD)     
+  + AD 1    aerodromes / heliports - introduction
+  + AD 2    aerodromes
+  + AD 3    heliports
+
+
+## Operational Flight Plans
+
+comprises:    
+
+* navigation details (tracks, headings, waypoints, timing, navigation facilities, altitudes);
+* air traffic detail includeing frequencies and agencies;
+* aircraft mass and fuel details;
+* alternate aerodrome details and routings;
+* FIR boundaries
+* weather detail - forecast OAT and wind
+
+an operational flight plan is typically produced 'hours' before the actual flight, i.e., it might not have the 'latest' information or changes (e.g. routing, runway, weather detail)    
+captain required to verify/update operational flight plan
+
+standard/dummy template    
+* MSA minimum safe altitude (either MSA when on SID or STAR, or Grid Minimum Safe Altitude when enroute)
+* AWY name or designator of waypoint
+* FL planned flight level
+* W/P FREQ waypoint name, navigation aid frequency
+* LAT/LON (often omitted for legs and often attached as list to OPS PLAN)
+* TAS planned true airspeed in knots
+* W/V forecast wind (deg/kt)
+* G/S planned groundspeed based on forecast wind/OAT
+* OAT forecast outside air temperature
+* MTK magnetic track
+* HDG magnetic heading
+* LEG DIST leg distance (ground NM)
+* DIST TO GO remaining distance to destination
+* TIME leg time
+* ETA continuous (elapsed) time from take-off, completed after take-off time is recorded in UTC
+* ACTM continuous time from T/O - estimated elapsed time
+* ATA actual time of arrival (UTC) - completed during flight over each waypoint
+* FUEL REQ minimum FUEL REQuired to complete sector
+* FOB actual fuel on-board - recorded during sector
+
+complete OPS FPL as good as possible (with information obtained/extracted)    
+re routing: it might not be required to add all reporting points, however, compulsory, FIR crossings/boundaries, navigation aids, etc.    
+For the SID, STAR and Approach all turning points    
+
+enter MSA (use GRID MSA from chart, within 25NM of airport, use MSA (sector) from approach chart)    
+
+enter airway name
+
+enter MTK and LEG DIST
+
+use navigation computer to calculate heading HDG and groundspeed GS for cruise legs
+
+complete distance to go
+
+complete TIME and ACTM 
+
+
+2nd planning exercise - London to Stuttgart
+SID (to Dover), STAR (from Karlsruhe)
+transfer details to OPS PLAN
+
+### Cruising Flight Levels
+
+* aeroplane performance and mass - goal: operate at most fuel efficient (flight) level (to keep costs down). I.e., jets ~ as high as possible, aeroplane mass is an obvious consideration (as it limits which level can be reached)
+* weather - temperature and wind influence 'performance'. OAT limits operating ceiling (high temperatures ~ reduced performance); wind ~ reduce time in headwind, opt for beneficial tailwinds ==> influences flight level choice and cruise speed.
+* terrain and obstacles - maintain minimum clearance from terrain and obstacles. 
+* air traffic rules - ICAO semi-circular IFR cruising levels ensure a minimum separation between aircraft on opposite tracks. Consider RVSM vs non-RVSM separation.
+
+BELOW FL290    ==> at or above FL290 ICAO "standard" levels separated by 2000ft, in RVSM airspace (again) 1000ft 
+359M  360M
+even  odd
+200   210
+220   230
+180M  179M
+
+at above FL290: EVEN 310 350 ... ODD 290 (we start ODD at FL290!) 330
+
+EVEN levels go to the EAST
+
+above FL410 rules revert to ICAO semi-circular cruising levels - even in RVSM airspace
+
+## COMMUNICATIONS
+
+### Position Reporting
+
+a controlled flight must    
+  + maintain 2 way communication     
+  + report the time and level of passing each compulsory reporting point and others as required by ATC
+  
+in the absence of specified reporting points, position reports are made as required by the appropriate ATS authority.   
+
+In Europe, IFR flight operations are typically under radar control == reporting only as required by ATC
+
+### Communication Failure
+
+* IFR - VMC ==> continue in VMC and land at the nearest suitable aerodrome, report arrival by the most expeditions means to ATC
+* IFR - IMC and not under radar (no regional agreement applies) ==> maintain the last assigned speed and level or minimum flight altitude if higher for a period of 20 mins following the aircraft's failure to report its position over a compulroy reporting point and thereafter adjust flight level and speed in accordance with filed flight plan.
+* IFR & IMC & under radar (no regional agreement applies) ==> maintain the last assigned speed and level, or minimum flight altitude if higher, for a period of 7 minutes following setting mode 3/A 7600 failure to report last assigned level achieved whichever is later, then proceed in accordance with filed flight plan
+* IFR & IMC & being vectored or directed by ATC to proceed offset using RNAV without a specified limit ==> proceed in the most direct manner possible to rejoin current flight plan route no later than the next significant point, taking into consideration the applicable minimum flight altitude.
+* IFR & IMS & under radar climb (regional air navigation agreement applies) ==>  climb to maintain for a period of three minutes the level to which you were cleared 
+and then continue in accordance with current flight plan
+
+### Long Range Flights
+
+some areas low traffic density - most attractive direct route
+
+areas/countries affected by political factors compelling overflyhing aircraft to follow certain pre-scribed routes and require rigid compliance within the defined boundaries of these routes/corridors
+
+remote areas more and more establishing some form of ATS - generally laid down in procedures to ensure safety levels.    
+e.g. north atlantic region: rules of procedures for trans-atlantic flights
+
+### Minimum Time Routes and Minimum Cost Routes
+
+minimum time routes = shortest route between 2 points in terms of time. in no wind: great circle. with wind: minimum time route changes and requires constructing/sampling different routes to take into account the wind effect.
+
+minimum cost route is the route that will result in the lowest cost and most economic path.     
+affected by:    
+  + choice of flight level
+  + cruise technique
+  + enroute winds and temperature.    
+
+The minimum cost route takes also into account fuel, turn around, and overflight costs.
+
+Economic considerations:     
+  + if fuel is cheap it might be more efficient to fly faster ~ burn more fuel, but save engine and airframe hours     
+  + if fuel is more expensive, it might be cheaper overall to fly slowly.    
+  
+The minim cost route could be longer in terms of time (flight duration) than the minimum time route. By definition cannot be less!
+
+
+
+
+
 
 ## Questions
 
