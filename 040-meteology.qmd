@@ -2421,8 +2421,145 @@ additional information added following 'remark' RMK.
 if report is from an automatic recording station, AUTO will be inserted before the wind group.
 
 
-NEXT LESSON 16
+## High and Medium Level Significant Weather and Wind Charts
 
+### Significant Weather Charts SIGWX
+
+significant weather charts typically prepared 24hrs in advance for synoptic times, i.e. 0000, 0600, 1200, and 1800UTC.    
+covers 3 hours before and up to 3 hours after the issue time, i.e., 0600hr chart covers 0300 - 0900hrs
+
+Coverage - the high level significant weather chart -> FL250 - 630.   
+- medium level significant weather chart -> 100 - 250, but many services provide FL100 - FL450.     
+Geographical coverage is determined by regional air navigation agreement.
+
+High and medium level significant weather charts include - when given    
+* tropical cyclones (mean wind speed greater than 34kts)
+* severe squall lines
+* moderate or severe turbulence (in cloud or clear air)
+* moderate or severe icing
+* widespread sandstorm/duststorm
+* cumulonimbus cloud associated with thunderstorms and with all of above
+* flight level of the tropopause and high and low points of the tropopause
+* jet streams
+* information on the location of volcanic eruptions, ash clouds of significant impact on aircraft operations (symbol, name, LAT/LON, date and time of first eruption, ASHTAM refernce if issued)
+* information on the location of an accidental release of radioactive materials into the atmosphere of significance to aircraft operations
+
+symbology - check for examples
+
+### Medium Level Significant Weather Chart
+
+symbols/notes apply equally to medium and high level charts.
+
+scalloped line ~ area of significant weather     
+broken line ~ areas of CAT    
+heavy solid line (high level chart) ~ position of jet stream axis, direction and speed of wind kts and height of jet core in FL, if wind speed > 120kt, flight levels between which the wind speed exceeds 80kt are shown below the height of the jet core      
+tropopause levels ~ rectangular boxes in FL   
+if significant weather of CAT extends vertically beyond the limits of the chart, the upper and/or level level is shown as XXX
+
+### Changes to World Forecasts
+
+office in Europe: UK MET Service, and US: NOAA     
+medium and high level T+24 charts will be provided in paper until 2028 with following changes:     
+
+* colour
+* high level SIGWX to span FL250 to FL600
+* produced earlier than now (approx 1hr)
+* embedded cumulonimbus cloud will not be included
+  + ISOL EMBD CH, OCNL EMBD CB, and FRQ EMBD will not be shown
+  + only OCNL CB and FRQ CB will be forecast
+  + more areas of OCNL CB forecast (than nowadays)
+* CAT -> Turbulence, MOD (moderate), severe (SEV) turbulence areas include turbulence due to CAT and orographic turbulence, and if it is strong enough, turbulence with non-convective clouds
+* tropopause height will be shown as contours spaced at 5000ft vertical intervals, labels will be in the form FL300, FL350, etc.
+* on the medium level SIGWX, combined in-cloud turbulence and icing areas will change to show only icing intensity areas (MOD and SEV)
+
+### New WAFS mulit-timestamp SIGWX Forecasts
+
+new multi-timestamp forecasts provided in digital format ~ dynamic representation of significant weather conditions over time
+
+* T+6 to T+48 at 3-hourly intervals with new data published every 6 hours
+* FL100 to FL600
+* comprising
+  + jet stream information
+  + tropopause height contours
+  + areas of occasional (OCNL) and frequent (FRQ) cumulonimbus (CB) and the flight level of the CB cloud tops
+  + areas of moderate (MOD) and severe (SEV) turbulence, including both CAT and orographic turbulence (caused by mountains)
+  + areas of MOD and SEV icing
+  + information on active volcanic eruptions, tropical cyclone positions, and radioactive releases
+  
+WIFS := WAFS internet file service (operated by the United States)    
+SADIS := secure aviation data information service   (UK MET Office)     
+IWXXM := ICAO Weather XML (digital format)
+
+### Upper Wind and Temperature Charts
+
+note: careful consider LAT/LON, dots on meridians and parallels are at each single degree.    
+wind arrows point to a dot, lines of wind arrows.
+
+temperatures are NEGATIVE unless prefixed with a +sign (note: it is possible to have positive temps on FL100 charts in the tropics)
+
+10.000ft chart gives winds at FL100, but may be referenced at 700hPa chart    
+FL50 ~ 850hPa, FL100 ~ 700hPa, FL180 ~ 500hPa, 240 ~ 400hPa, FL300 ~ 300hPa ...
+
+### Calculating Wind Means
+
+typical exam question/task: work out mean wind or wind component    
+rule of thumb: averaging speeds and estimating sensible direction
+
+given chart type, e.g. 300hPa/FL300 chart: ISA temp -45C, avg temp ~ -63 => delta ISA -18C
+
+
+### Weather Radar
+
+### Ground Weather Radar
+
+warning of ssevere turbulence associated with thunderstorms and CBs.    
+typically primary radar systems ~ radio pulse transmission / reflection   
+targets: large water drops and hoil stones (found in cumuliform clouds)
+
+turbulence difficult to detect.    
+Weather radar displays areas of greatest signal return => high concentration of rain drops ~ worst turbulence
+
+note: water 5 times more reflective than ice, and dependent on size and density of the particles
+
+descending order of reflectivity:    
+
+* wet hail
+* rain
+* wet snow
+* dry hail
+* dry snow
+* drizzle
+
+radar does not detect clouds, fog, or wind, windshear, CAT, sandstorms or lightning.   
+Ground weather radar aims at rainfall.   
+ATC radars use differnt frequencies ~ avoid reflections from water drops
+
+### Airborne Radar
+
+airborne weather radar - support avoidance of thunderstorms and assocaited hazards, particularly turbulence and hail.
+
+reflection principle, displayed on stand alone display (plan position indicator) of Navigation Display.   
+green ~ weakest intensity, amber, red, some systems: magenta, but magenta is sometimes used for switchable turbulence mode using doppler radar to detect rurbulence.
+   
+### Interpreting Airborne Weather Radar
+
+water/ice reflection intensity is not an indication of turbulence
+
+in warm moist air, large rain droplets at lower altitudes may show as red, yet have very little turbulence associated with them.
+
+turbulence typically where there are sharp updrafts near the edge of a thundersttorm cell, i.e., areas where the colours are closest together particularly at the edge of a cell
+
+turbulence ~ cloud shapes, such as     
+  + fingers extending from main cloud
+  + hooked shaped returns, and
+  + U shaped cavities
+  + scalloped edges
+  
+caution: intense returns could mask the clouds behind the clouds/returns suggesting a (false) clear area ~ "radar shadowing"
+
+scale effect - selected scale (e.g. on a short range scale) may suggest a passage through thundertorms, which when looked at large scale/longer range turns out to be a blind alley.
+
+stormscopes := device used in conjunction with airborne weather radar ~ detects electrical discharges (i.e., lightning) and indicates the direction of such discharges to the aircraft
 
 ## WORKED EXAMPLES & STUFF
 
