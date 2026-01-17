@@ -1,0 +1,178 @@
+---
+title: "Radio Navigation"
+---
+
+## Radio Theory
+
+production: oscilating electrical current & aerial   
+electrons moving for- and backwards produce electromagnetic field    
+field moves away with speed of light
+
+aerial ~ transducer = transforming enery from one type to another: alternating current to free electromagnetic wave = 'radio frequency (RF) energy'
+
+in receiving aerial -> current identical to the originating
+
+transmitter -> tranmitter aerial ~~~ receiving aerial -> receiver -> amplifier -> headset
+
+### Frequency and Wavelength
+
+electromagnetic waves characterised by frequency or wavelength.   
+speed of light constnat (in vacuum) 3 * 10^8 m/s
+
+alternating current that cycles once in a second will produce one wave in that time -> wavelength
+
+$$\lambda = \frac{c}{f}$$
+doubling frequency -> half the wavelength
+
+note for exam questions: speed of light 3 * 10^8 m/s ~ 300.000 km/s ~ 162.000NM/s
+
+   c
+  ---
+  f $\lambda$
+
+radio signal, freq 3 kHz -> what is the wavelength?     
+3kHz = 3000Hz    
+$\lambda = \frac{c}{f} = \frac{3 * 10^8}{3 *10^3} = 10^5 m = 100.000m = 100km$
+
+wavelength of 3.5cm -> what is the frequency?
+$f = \frac{c}{\lambda} = \frac{3*10^8}{3.5}*\frac{\frac{m}{s}}{cm}$ = 3*10^8 / 0.035 = 8.57GHz
+
+### Frequency Spectrum
+
+Very      Very Low Frequency    VLF   3-30kHz       100-10km  Myria-metric
+Lovely    Low Frequency         LF    30-300kHz     10-1km    Kilo-metric
+Maidens   Mediaum Frequency     MF    300kHz-3Mhz   1km-100m  hecto-metric
+Have      High Frequency        HF    3-30MHz       100-10m   Deca-metric
+Very      Very High Frequency   VHF   30-300MHz     10-1m     metric
+Useful    Ultra High Frequency  UHF   300MHz-3GHz   1m-10cm   deci-metric
+Sewing    Super High Frequency  SHF   3-30GHz       10-1cm    centi-metric
+Equipment Extremely High Freq   EHF   30-300GHz     1cm-1mm   milli-metric
+
+### Phase and Phase Difference
+
+phase angle := positions on a radio wave are expressed in degrees from 0 ... 360    
+by definition, measurement of phase angle starts when aomplitude is increasing through zero
+
+in phase = two transmissions with same wavelength/frequency start at same time ~ synchronised.    
+out of phase = difference, delta expressed in degrees
+
+note: signals can be in phase with different amplitude, however, wavelength or frequency identical
+
+phase comparison, same wavelength   
+avoid cancelling out of signals (i.e., if out of phase by 180deg)
+
+modulation = additional of information to a carrier wave (or transporter)
+= process of impressing and transporting infomation by radio waves
+
+modulation can be achieved by i) changing amplitude, ii) changing frequency, or iii) phase of the signal
+
+AM = Amplitude Modulation ~ simplest form of modulation = variation of amplitude of the carrier wave to transmit information
+
+Sidebands   
+modulation = imposing intelligence on carrier wave = "heterodyning"   
+when 2 frequencies are heterodyned => 2 additional frequencies are created on top of the original carrier wave = sidebands
+
+example: AM signal, carrier wave 400kHz, intelligence of 1 to 3 kHz   
+lower side band: 400kHz - 1 kHz & 400kHz - 3kHz
+
+SSB = single sideband transmission = removal of carrier wave and sideband ~ lower power requirement and reduced bandwidth, by convention only the lower sideband     
+short range VHF communication systems  DO NOT remove carrier wave.    
+long range HF communication systesm use SSB (with suppressed carrier wave)
+
+### Frequency Modulation
+
+instead of varying amplitude, change of wave frequency
+
+FM receiver can clip signal to remove extraneous variations in amplitude.  
+FM audio signal = high fidelity reproduction of the original without interference from static.
+
+mixture of frequencies more complex than AM, (virtually) impossible to strip out sidebands   
+thus: FM => higher bandwidth, require more power (than AM SSB signal)    
+FM transimission requires about 3 times the power required for AM SSB   
+and twice the bandwidth
+
+to avoid frequency congestion, FM signals restricted to low power and thus SHORT ranges (becuase of higher bandwidth occupied)
+
+advantage: less static noise/interference
+disadvantage:   
+  + greater power requirement
+  + greater bandwidth, and
+  + more complex transmitting and receiving equipment
+  
+### Phase Modulation
+
+phase modulation allows for the sending of information in form of instantaneous variations in the phase of the carrier wave.   
+== Phase-Shift Keying (PSK)
+
+PSK is used in GPS systems, in wireless local area networks LAN, and for bluetooth communication.
+
+### Sending Binary Information
+
+simplest form: morse code
+
+typically achieved by interrupting := keying carrier wave to send a series of dots and dashes.    
+~ pulse modulation (morse code, radar)
+
+increasing information needs, more complex binary signals and pulse modulation = Amplitude Shift Keying ASK
+
+FM for digital signals the sidebands are smaller than when sending for instance audio signals, and therefore the disadvantes of FM are less prominten.    
+Using FM for digital transmissions is called Frequency-Shift Keying FSK.
+
+Simpest form of phase-shift keying is Binary Phase Shift keying BLSK. This transmits digital information by simply reversing the phase of the carrier wave.
+
+example: binary signal of zeros and ones    
+ASK uses an interruped carrier wave (e.g. for the ones)    
+FSK varies the frequencies for ones and zeros     
+BPSK reverses the phase at every change from one to zero or vice versa.
+
+### Emission Classification
+
+radio transmissions are classified by a three digit ITU code:    
+  1. symbol := modulation
+  2. symbol := type of modulating signal
+  3. symbol := type of infomation carried
+  
+NDB    
+  NON carrier without modulation
+  A1A carrier with keyed morse code modulation
+  A2A carrier with amplitude morse code
+  
+A3E carrier with amplitude modulated speech used for VHF communication
+
+### Polarisation
+
+radio waves are composed of 2 elements: i) electrical or E field, and ii) magnetic field at right angle to electrical field, called H field    
+E and H-fields are thus orthogonal and in phase.
+
+vertical polarised wave is a wave in which all the electrical oscillation (E-field) is in the vertical plane.    
+Vertical aerial will produce vertical polarised wave requiring a vertical aerial to receive it.   
+In analogy, horizontal one will produce horizontally polarised waves.
+
+VHF communication frequencies are vertically polarised and the aircraft aerial are vertical.    
+Navigation frequenices (e.g. VOR) are horizontally polarised and the aerials are horizontal, often in V shapre on the fin of the aeroplane.
+
+### Aerials
+
+diploes := simplest aerial vertical or horizontal conductor, the orientation depending on the polarisation, with a length of half the wavelength to be transimitted or received.    
+dipole areial ~ $\frac{\lambda}{2}$
+
+monopoles (or single pole) aerial size is effectively half a dipole and therefore has an ideal size of a quarter of the wavelength for optimum efficiency.
+
+top view: ciruclar / omnidirectional ~ aerial transmits equally in all directions.  
+side view: monopole aerial transmits well horizontally, but there is an aread overhed where there is no transmission (cone of silence) = no signal.
+
+ideal dipole aerial is half or quarter of the wavelength   
+
+
+VHF ~ metric band, vertically polarised, with wavelengths from 10m to 1m ==> monotpol receiving aerials placed on the top of the aircraft ~ signal path to/from antenna is not obstructed by parts of the aircraft (top antennas), Length about 2.5 and 25cm.   
+
+VOR aerials are dipoles in the same frequency range, and signals are horizontally polarised.    
+=> V shaped aerials on the fin of the aeroplane, each half being a quarter wavelength and therefore in total making up a half wave diploe.
+
+Antenna Shadowing = positioning of aerials is important as the received signal strength is reduced is there is either another aerial or physical obstrauction in the line-of-sight path.   
+Another aerial in the way takes energey from the radio wave as it received the signal leaving less for the aerial behind to detect.
+
+### Parabolic Aerials
+
+p.22
+
