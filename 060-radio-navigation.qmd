@@ -2,6 +2,13 @@
 title: "Radio Navigation"
 ---
 
+feels like source for BGS material on radio nav: https://www.scribd.com/document/339377917/Radio-Navigation-pdf    
+CAE: https://www.scribd.com/document/823524548/Radio-Navigation-Marked
+https://studylib.net/doc/27627103/cae-oxford-easa-atpl-volume-10--radio-navigation
+
+good source: https://aviationtricks.com/radio-navigation/
+
+
 ## Radio Theory
 
 production: oscilating electrical current & aerial   
@@ -130,7 +137,7 @@ BPSK reverses the phase at every change from one to zero or vice versa.
 radio transmissions are classified by a three digit ITU code:    
   1. symbol := modulation
   2. symbol := type of modulating signal
-  3. symbol := type of infomation carried
+  3. symbol := type of information carried
   
 NDB    
   NON carrier without modulation
@@ -174,5 +181,292 @@ Another aerial in the way takes energey from the radio wave as it received the s
 
 ### Parabolic Aerials
 
-p.22
+oldest generation of directional aerials/antenna ~ mathematical shape of parabol => capture of "pencil beam" (or "conical beam")   
+not 100% efficient     
+generate sidelobes and backscatter, the more efficient, the lower sidelobes and back scatter/energy loss.    
+about 2/3 or energy can get lost in sidelobes.    
+refrlections from sidelobes can cause interference and confusion to a directional signal.
 
+groubd based radars often make use of kust a section of the aerial to track in only two dimensions.    
+The beam is comparatively tight in the horizontal plane, but would not have much definition in the vertical pane.
+
+parabolic antenna typically ground based primary radar systems and aircraft weather radar.
+
+### Phase Array Aerials
+
+modern alternative to parabolic dish = phase array aerial ~ series of conducting elements like small dipoles are arranged in a line and are fed signals in phase with each other.   
+interference pattern they produce acts like a pencil beam.
+
+sidelobes are still present, but the advantage of phase array aerials over parabolic aerials is that the energy loss in sidelobes is less to a 1/3 of the total.
+
+examples:   
+PSR (parabolic) and SSR (phase array)
+
+slotted scanners or slotted planar arrays ~ (function like) phase array aerials   
+vertical dipoles elements are replaced by a series of slots which act as resonante cavities to produce the radio signal.   
+
+reduced energy loss ~ more energy concentration in tighter beam.
+
+most modern aircraft use slotted planar arrays.
+
+note: all dish aerials produce sidelobes. Phase array and slotted planar arrays produce smaller sidelobes.
+
+## Wave Propagation
+
+### Refraction
+
+change in density will result in refraction ~ higher density slower   
+amount of refraction ~ change in speed, its frequency, and angle at which it hits the new medium.
+
+change in speed := refractive index (e.g. glass ref ind = 1.5, the higher the freq, the higher the refraction)   
+in Ionosphere (refractive index < 1, higher refraction for lower frequencies!)
+
+radio waves are refracted (speed change) due to surface (passing over) or because of the medium they are passing through
+
+### Diffraction
+
+wave passes through a hole ~ circular waveform past the hole    
+hole acted as point source and retransmitted the wave
+
+diffraction also happens when passing over sharp objects.
+
+diffraction is greater at longer wavelengths ~ low frequencies
+
+### Reflextions and Re-Radiation
+
+specular reflection ~ simple reflection (mirror like)   
+reflection dependent on density and smoothness of reflecting surface material and angle
+
+smooth surface ~ mirror     
+rough surface ~ reflection in all directions := diffuse reflection
+
+note: surface reflection dependendent on wavelength/frequency
+
+radar systems -- reflection is an integral part of design -- some return is specular, but most comes from small parts of the taerget airacraft structure acting as little receiving aerials which re-radiate the transmission.    
+This effect happens also with water droplets in weather radars.   
+Design caution to ensure radar wavelength compatible with target size, i.e. same size or smaller as target.
+
+radar reflection is most likely when the wavelength is compatible with the target size!
+
+### Attenuation
+
+attenuation := loss of signal strength of a (electro-magnetic) wave.    
+in vacuum ~ no attentuation   
+in atmosphere -> electrions in dust and water droplets absorb some of the energy
+
+atmosphereic attenuaation increases wtih increasing frequency, significant above 1 GHz    
+
+surface attenuation := radio waves passing over Earth's surface loose energy and slow down    
+surface atttnuation is greatest and speed is lowest over the ICE CAPS, then desert areas, then over other land, and there is least attenuation over SEA
+
+surface attenuation increases as frequency increases (just at atmospheric attenuation); both affected by same substances, rock and water.
+
+Waves passing through electrically charged atomes at the edges of space known as the ionosphere are also attenuated:   
+HOWEVER: ionospheric attenuation increases as frequency decreases
+
+
+### Space Wave
+
+space wave := line-of-sight wave = standard propagation of all frequencies; range limited by obstructions and curvature of Earth surface.
+
+VHF and EHF only propage with space wave => limited in range.    
+Ground reflected waves are also included in this category.
+
+maximum theoretical range of a space wave in UHF or VHF in NM 
+
+$$max_theo_range = 1.23 \sqrt{H_1} + 1.23 * \sqrt{H_2}$$
+H1 = height of transmitter, and H2 height of receiver, in FEET ft
+range in nautical miles NM
+
+example:   
+aircraft at 8000ft communication to ground station. What is max theoretical range of the signal?   
+
+H1(aircraft) 8000ft, ground station (assumed) 0ft/MSL    
+max theoretical range = 1.23 (sqrt(0) + sqrt(8000)) = 1.23 * sqrt(80 * 100) ~ 1.23 * (9 *10) = 1.23 * 90 ~ 110NM
+
+### Surface Waves
+
+at lower frequencies, radio waves pass over hills and buildings and are diffracted. 
+Effect increased by slower wave front near Earth's surface caused by ground conductivity (resulting in downward component of movement ~ pull to surface).    
+=> surface wave follows curvature of Earth
+
+diffraction greatest at low frequencies -> low frequencies tend to form surface waves    
+travel distance dpendent on surface attenuation which is lowest at low frequencies and over sea.    
+==> surface waves are longest for low(est) frequencies
+
+surface waves    
+  + HF band ~ 100NM
+  + MF band ~ 500NM
+  + LF band ~ 1000NM
+  + VLF band ~ 4000NM
+  
+surface waves and space waves will occur at short range and the combination is called: "ground wave".
+
+surface wave propagation not affected by time of day.
+
+### Sky Waves
+
+sky waves are radio waves refracted from Ionosphere.    
+Ionosphere - ionised component of atmosphere ranging from 60-400km above the surface and divided in 3 layers, i.e. D, E, and F layer.
+
+Depth and density of each layer varies with time of day, season and solar activity.
+
+Ionosphere ~ gas molecules (normally with no electrical charge) are split into positive and negative ions.   
+Density of ions increases with height and intensity of readiation (solar and cosmic radiation).   
+Ionosphere is weaker at night than during day due to change of solar radiation.
+
+Change of ion density -> refraction of radio waves (medium change).    
+Most refraction occurs at 125km = E layer.    
+Wave of low enough frequency at the correct angle of incidence will be refracted back to earth.     
+Some refraction also at F layer.
+
+VHF and higher are certainly refracted if they pass through the Ionosphere, but are not bent enough to come back to Earth.    
+I.e., sky waves do not occur at all at VHF and higher frequencies.
+
+
+### HF Skywaves
+
+lower frequencies = higher refraction in Ionosphere, HF refracted back to Earth as skywave.
+
+minimum skip distance := distance from transmitter to first returning (refracted) skywave; for HF typically 600-1200NM    
+near transmitter, HF propagates as space wave and surface wave ~ 150NM
+
+==> area between the end of the sufrace wave range and the first returning skywave (between 150NM and 1000NM) where no signal is received.   
+"dead space" or "skip zone".
+
+skip distances increae at night ~ weaker ionosphere ~ less ino density due to lower radiation/no solor radiation => less refraction.    
+
+maximu skip distance occurs when the signal leaves the Earth at a tangent, refracts from the Ionosphere, and returns at a tangent to the Earth's surface.    
+Maximum theoretical skip distance from the E layer is about 1500NM.
+
+Note: longer distances due to "multi-hop transmissions" due to Earth refractions/retransmission.
+
+### ML/LF Skywave Interference
+
+ML/LF refract more from Ionosphere = reduced skip distance.
+MF/LF have longer surface waves ==> no dead space/skip zone at all around 300-400NM.
+
+==> receiver will pick up both: surface wave and (first returning) skywave which may interfere with each other.
+
+interference: different travel distances ~ variation in phase possible == amplified signal or cancellation.
+
+typically Ionosphere signals move continuously in and out of phase (= increases and decreases) ~ fading == indication that the signal has taking  two paths to the receiver.   
+
+During daytime: signals passing through Ionosphere are subject to inospheric attentuation, greatest at low frequencies.   
+==> MF and LF are more attenuated that HF ==> interference unlikely during daytime.   
+==> higher fading during night-time (i.e., between dusk and dawn) ~ weaker Ionsophere and associated attentuation.
+
+Skywaves are    
+  + reliable in the HF band 
+  + do not (normally) occur at VHF and higher
+  + cause interference in MF/LF
+  
+Skywaves are used in HF voice communication and also in HF as part of the ACARS messaging system (long-range communication).
+
+### Sporadic E
+
+skywaves do not "normally" occur in VHF, but intimes of very high solar activity the E layer is much more heavily ionised that usual, called "sporadic E.    
+Thus, it becomes dense enough to generate returning skywaves in the lower VHF band.
+
+Unusual, but can lead to unexpected long-range reception in VHF.
+
+### Atmospheric Ducting
+
+Given "right conditions", VHF, UHF, SHF and EHF bands can get "trapped" within a layer in the atmosphere := atmospheric duct.
+
+Atmospheric duct allows for long range propagation over the visual horizon (= atmosphereic ducting or super-refraction).
+
+Near surface ducts ~ marked temperature inversions and a rapid decrease in humidity with height.    
+Air mass subsidence (surface high pressure) systems can produce elevated ducts.   
+
+Atmospheric ducting generally unpredictable.     
+But, "always" some ducting that extends line-of-sight by about 15%. This is accounted for in the range formula for VHF and UHF.
+
+atmospheric sub-refraction = where atmospheric refraction is less than normal -> causes reduced maximum theoretical range. 
+
+### VLF Propagation
+
+VLF wavelengths in order of tens of kilometers and low frequencies that normally no skywaves will form and completely attenuated by the Ionosphere.    
+Surface waves are present up to 4000NM.
+
+Ranges beyond 400NM are formed in VLF because the gap between Ionosphere and Earch acts as natural waveguide.    
+This can happen when VLF wavelength is similar to gao height (lower levels of Ionosphere)
+
+Ionospheric ducting := combines very long surface waves with guided waves to reach around the world.
+
+### Static
+
+static interfere with radio signals making communication difficult in HF band and interfering with the operation of navigation equipment.
+
+statis is a natural phenomenon caused by electrical discharges in convective clouds.
+Thunderstorms generate huge amounts of electricity and these discharges affect the lower frequencies, becoming insignificant in the VHF band.
+
+MF/LF static can "swamp" signals from NAV beacons in those frequencies, i.e., NDBs => indicators in aircraft point to thunderstorm rather than the NAV beacon.
+
+**precipitation static** when precipitation - particularly rain - strikes aircraft at a different electrical potential, there is a minute discharge of static.   
+Again most troublesome in LF and MF bands.
+
+rule of thumb: static and skywaves are unlikely above 30MHz.
+
+
+### Doppler Effect
+
+sound: change in pitch of engine noise as car passes observer    
+water/beach: change in facing waves when moving in or out of water
+
+change in received frequency = Doppler Shift    
+Doppler shift proportional to the relative velocity    
+indifferent to tranmitter or receiver moving (or both)
+
++ closing relative velocity produces increase in frequency, i.e., positive Doppler shift
++ if the transmitter and receiver are moving apart, the received frequency is lower, i.e., negative Doppler Shift.
+
+Doppler shift is a small change to the tranmitted frequency, even for jet aircraft.   In most systems small enough to be within bandwidth.    
+However, sysgem can be built to "look" for this shift.
+
+Doppler Navigation systems use the Doppler shift in reflected signals to compute the groundspeed and drift of the aircraft.   
+More sophisticated systems use this combined with heading from the compass system to compute the aircraft's track and ground speed  providing position readouts.
+
+While mostly superseeded by satellite navigation and intertial navigation, Doppler navigation systems can still be found in some older helicopters.    
+Doppler is also sometimes used for hover control.
+
+Doppler is used   
++ some VOR beacon (called Doppler VOR)
++ identify moving targets in some forms of ground based radar called Moving Target Indicators (MTIs)
++ to identify areas of turbulence in some weather radars, and
++ (as one of two methods) to determine receiver's speed in satellite navigation.
+
+### Propagation Summary
+
++ atmospheric and surface attenuation are greatest at high frequencies
++ ionospheric attenuation is greatest at low frequencies
++ ALL radio frequencies produce SPACE WAVES;    
+  SKYWAVES only (reliably) present in HF band, create interference in MF/LF bands
++ SURFACE WAVES start to be significant in HF and get longer with LOW FREQUENCIES
++ atmospheric ducting is occasionally present in VHF and HIGHER    
+  ionspheric ducting is present in VLF ONLY
++ static is greatest at LOWest FREQUENCIES
+
+VLF/LF/MF/HF: Surface Wave + Sky Wave
+VHF/UHF/SHF: Direct Wave (Space Wave)
+
+
+Band	Abbr.	Frequency	Wavelength	Aviation Use
+Very Low	VLF	3-30 kHz	100-10 km (Myriametric)	-
+Low Frequency	LF	30-300 kHz	10-1 km (Kilometric)	NDB/Locator
+Medium Frequency	MF	300-3000 kHz	1000-100 m (Hectometric)	NDB/ADF
+High Frequency	HF	3-30 MHz	100-10 m (Decametric)	HF Comms, VOLMET
+Very High Frequency	VHF	30-300 MHz	10-1 m (Metric)	VOR, ILS Locator, VHF Comms, VDF, Markers
+Ultra High Frequency	UHF	300-3000 MHz	100-10 cm (Decimetric)	DME, ILS Glideslope, GPS, Radar Terminal
+Super High Frequency	SHF	3-30 GHz	10-1 cm (Centimetric)	AWR, MLS, ASMR, Radio Altimeter
+Extremely High Frequency	EHF	30-300 GHz	10-1 mm (Millometric)	-
+
+## NDB and ADF
+
+next lesson 3
+
+
+## QUESTIONS
+c/f = 3 * 10^8 / 75MHz = 3 * 10^8 / 75 * 10^6 = 3/75 * 10^2 = 300/74 ~ 4
+
+c/lambda = 3 * 10^8 / 12cm = 3 * 10^8 / 12 * 10^-2 = 3/12 * 10^10 = 30/12 * 10^9 ~ 2.5 * 10^3 * 10^6 = 2500MHz
