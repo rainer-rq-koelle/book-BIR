@@ -463,7 +463,139 @@ Extremely High Frequency	EHF	30-300 GHz	10-1 mm (Millometric)	-
 
 ## NDB and ADF
 
-next lesson 3
+NDB omni-directional beacon = simplest navigation beacon   
+technological progress, NDBs subsequently (not) replaced by VOR/DME, GPS, and IRS
+
+frequencies - WWII ~ requirement to provide information as fars as 600NM over sea, beacons on both sides of Atlantic ~ 1000-1500NM.   
+progation path/wave -> surface waves ==> MF and upper LF bands    
+ICAO: 190-1750kHz    
+in Europe, NDBs usually operate in the range 280-530kHz   
+theoretical ranges over land ~ 300NM (for high power beacons due to higher surface attenuation)
+
+### carrier waves and idents
+
+unmodulated carrier wavem, ITU classification N0N.   
+unmodulated signal = best direction finding result    
+
+to make signal identifiable, NDBs use Morse code identifiers of 2-3 letters.    
+Idents imposed on the carrier wave in one of 2 ways    
+  + NON A1A beacons - older systems interrupe carrier wave to send a series of dots and dashes (keying); the uninterrupted carrier weave identification has the ITU classification A1A, whole transmission referred to as N0N A1A
+  
+problems:    
+  + interrupted carrier wave at MF frequency is not naturally audible - require "extra" device to make it audible; and 
+  + use may have erratic bearing indications when the carrier wave signal is being interrupted with Morse code (pauses)
+  
+### Beat Frequency Oscillators
+
+to make unmodulated signal audioble, the ADF equipement in the aircraft incorporates a Beat Frequency Oscillator (BFO).   
+produces freqency slightly removed from the received frequency and the two are then mixed together or herodyned.
+
+mixing of the 2 frequencies produces an audible beat frequency, which is the difference of the 2. Example: oscillator generates signal of 401kHz to match a received signal of 400kHz = heterodyning the two produces additional frequencies at 401kHz + 400kHz = 801kHz and 401 - 400 = 1 kHz.   
+Frequency at 1 kHz is the beat frequency and this is an audible tone.
+
+BFO makes the inaudible audible = N0N carrier wave can be heard as a continuous tone wiht is then interrupted into morse for the A1A ident, then back to continuous tone of the N0N signal again.
+
+A1A idents are nowadays extremely rare. BFO function is still available on modern aircraft with the switches labelled BFO or Tone.
+
+### N0N A2A Beacons
+
+more modern systems do not interrupt the carrier waves, but instead use an amplitude modulated Morse code signal for the identification: ITU A2A.
+
+A2A signal does not need special equipment like the BFO to make it audible.   
+A standard ADF receiver will strip the modulated signla off and present it to the aircrew as an audible Morse ident.
+
+NDBs like this are referred to as N0N A2A beacons, N0N for the main carrier wave used for direction finding, and A2A for the intermittent ident.
+
+Amplitude modulation of the morse identifier does still degrade bearing accuracy when the ident is playing - an unmodulated tone is always the best signal for direction finding - but not as much as with the A1A ident.
+
+typically, Holding and airfield approach NSBs: N0N A2A; long range N0N A1A.
+
+### Marine and Other beacons
+
+NDBs are also used by shipping.   
+Marine NDBs should not be used for IFR aircraft navigation (and not plotted on aviation charts).
+
+Issue: frequencies for NDBs not exclusively allocated. E.g. long wave commercial radio band between 150ksz and 280kHz which overlaps the NDB band.
+
+ADF receiver can happily puck up the readio stations above 190kHz and you can listen to the (amplitude modulated) broadcast. Note: the direction of the source of transmission for these commercial radio stations may ot be used for IFR navigation.
+
+### Receiver Operation
+
+Automatic Direction Finder ADF, replaced an earlier manual system called Radio Direction Finding (RDF, DF).    
+Doth systems use rotating loop aerials.    
+
+Technological progress: aerials smaller and faired. modern loop aerial looks nothing like the original. Concept staid the same.
+
+### Loop Aerial
+
+NDB signal vertical polarised -> singal passing over the loop induces an electric current in the vertical parts of the aerial.   
+rotation of the loop in line with incoming signal then different phases will be received in each of the vertical bars and current will flow.   
+When the aerial is at right angles to the direction of travel, both sides reeive the same phase signal and no current flows.    
+If aerial rotated until no current flows, we can be sure it lies at right angles to the wave movement.     
+Remaining question: in front of us or behind us.
+
+Loop aerial polar diagram = plan view/aerial from above ~ value of induced current around it as the aerial is rotated we find a figure of eight shape with two clearly fined null points and two less clearly defined maxima.   
+The double null is the ambiguity w just identified.
+
+Cardiod - to resolve ambiguity, another vertical aerial is added to the system, the sense aerial.   
+The sense aerial receives signals from all directions just like a monopole.   
+It is carefully tuned to have a polar diagram diameter that just matches the loop aerial figure of eight polor diagramme.  
+
+When the 2 polor diagrams are combined, the reception charateristics of the 2 aerials can be added and subtraced as appropriate to produce a hear shaped polar diagram : "cardioid". The cardioid has only one null point.
+
+Rotating the loop to find the bearing = rotating the loop areial will rotate the null so that now when no signal is received by the combined aerial, the null is pointing directly at the beacon and the aerial combinaiton will be in line with the incoming signals.
+
+Aerial position is relayed to flight deck instruments.   
+These - in its simplest form - shows the relative bearing to the beacon.
+
+### INstrument Displays
+
+* simplest and oldest instruments are fixed card ADFs - sometimes called relative bearing indicators RBIs or radio compasses.
+
+with a fixed card ADF, the bearing of the beacon from the aircraft is determined by adding the aircraft's heading to the relative bearing: magnetic bearing QDM = MH + RB; true bearing QUJ = TH + RB.    
+Bearing from beacon/station is obtained by adding/subtracting 180 degrees.
+
+* moving card ADFs - 2nd generation instruments provide a moving compass card so that the aircraft heading, usually magnetic, can be manually set at the top of the instrument.   
+POint of needle indicates QDM, tail QDR.
+
+* RMI = 3rd generation of instruments shows magnetic heading of the aircraft continuously at the top of the instrument using feeds from a remote indicating compass. The point of the needle now automatically indicates QDM and tail QDR.   
+Radio Magnetic Indicator RMI is standard equipment on most commercial aircraft, either as a standalone insturment or displaying on the EFIS Navigation Display.
+
+RMIs dispaly both ADF and VOR information. On most instruments the two RMI needles can be switched to show either two ADFs, 2 VORs or ADF and VOR.
+
+QDM (head) or QDR (tail) shown are obtained using the aircraft's magnetic heading.   
+If true bearings are required, the variation at the aircraft must be used rather than that at the NDB.
+
+Becuase airccraft heading is effectively added to the relative bearing by the instrument to give a QDM, any errors in the aircraft compass system will make both the heading and the QDM and QDR readout at the two ends of the needle unreliable.   
+But it will not affect the accuracy of the relative bearing.
+
+
+### Errors and Accuracy
+
+ADF subject to a number of errors.    
+ICAO requirment is an accuracy of -/+5 degrees.   
+ICAO Annex 10 requires a monitoring system fo rht beacons to check pwer output and that the ident is present.
+
+* static - all forms of static can affect ADF. In snow and freezing rain, precipitation static reduces the accuracy and attenuation reduces the range of bearing information.
+* thunderstorms - TS in the vicinity act as radio beacons and can cause the needle to deviate in their direction. VHF and VORs should be used in preference to ADF. TS can cause largest errors in ADF systems. At the very least, ADF needle will flail around, extreme cases, it will point directly at a very active thunderstorm. (UNPREDICTABLE)
+* night effect - although prinicpal propagation of NDBs is ground/surface wave, it is possible for weak sky waves to be returned at night when the inosphere is less dense and inonospheric attenuation correrspondingly less. Change in polarisation (no longer vertical), coming from space at any anglea nd strike the top of the loop aerial where none would be present. --? null is no longer sharply defined and ADF needle hunts reducing the bearing accuracy. 
+
+Night effect can be confirmed by turning the BFO on and listening for the carrier wave increasing and dereasing involume (Fading). Night effect is most likely AT DAWN OR DUSK, no likely at short range (below 200NM) because it is too close to the beacon for sky waves to return.
+
+night effect is sky wave interference from the selected beacon
+symptoms of night effect are a hunding needle and fading on the carrier wave   
+night effect is greatest at dawn or dusk
+
+* station interference - long ground waves of LF and MF signals mean that signals from other stations on similar frequencies overlap.   
+If this occurs, ADF indications may be erratic because there is no sinle null.   
+Listening for 2 separate idents. Can be avoided during daytime at least, by only using an NDB within its published rated range.   
+At night, returning sky waves can cause rogue signals at considerable range.
+
+rated ranges = published rated ranges quarantee sufficient signal strentgh and freedom from station interference. But without conssidering the effects of skywave interference by day only.
+
+Rated range my be referred to as protected range.ß
+
+NEXT p 18.
 
 
 ## QUESTIONS
