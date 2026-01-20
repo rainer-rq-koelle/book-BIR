@@ -467,7 +467,7 @@ NDB omni-directional beacon = simplest navigation beacon
 technological progress, NDBs subsequently (not) replaced by VOR/DME, GPS, and IRS
 
 frequencies - WWII ~ requirement to provide information as fars as 600NM over sea, beacons on both sides of Atlantic ~ 1000-1500NM.   
-progation path/wave -> surface waves ==> MF and upper LF bands    
+propagation path/wave -> surface waves ==> MF and upper LF bands    
 ICAO: 190-1750kHz    
 in Europe, NDBs usually operate in the range 280-530kHz   
 theoretical ranges over land ~ 300NM (for high power beacons due to higher surface attenuation)
@@ -487,13 +487,13 @@ problems:
   
 ### Beat Frequency Oscillators
 
-to make unmodulated signal audioble, the ADF equipement in the aircraft incorporates a Beat Frequency Oscillator (BFO).   
+to make unmodulated signal audioble, the ADF equipment in the aircraft incorporates a Beat Frequency Oscillator (BFO).   
 produces freqency slightly removed from the received frequency and the two are then mixed together or herodyned.
 
 mixing of the 2 frequencies produces an audible beat frequency, which is the difference of the 2. Example: oscillator generates signal of 401kHz to match a received signal of 400kHz = heterodyning the two produces additional frequencies at 401kHz + 400kHz = 801kHz and 401 - 400 = 1 kHz.   
 Frequency at 1 kHz is the beat frequency and this is an audible tone.
 
-BFO makes the inaudible audible = N0N carrier wave can be heard as a continuous tone wiht is then interrupted into morse for the A1A ident, then back to continuous tone of the N0N signal again.
+BFO makes the inaudible audible = N0N carrier wave can be heard as a continuous tone which is then interrupted into morse for the A1A ident, then back to continuous tone of the N0N signal again.
 
 A1A idents are nowadays extremely rare. BFO function is still available on modern aircraft with the switches labelled BFO or Tone.
 
@@ -517,7 +517,8 @@ Marine NDBs should not be used for IFR aircraft navigation (and not plotted on a
 
 Issue: frequencies for NDBs not exclusively allocated. E.g. long wave commercial radio band between 150ksz and 280kHz which overlaps the NDB band.
 
-ADF receiver can happily puck up the readio stations above 190kHz and you can listen to the (amplitude modulated) broadcast. Note: the direction of the source of transmission for these commercial radio stations may ot be used for IFR navigation.
+ADF receiver can happily pick up the readio stations above 190kHz and you can listen to the (amplitude modulated) broadcast.     
+Note: the direction of the source of transmission for these commercial radio stations may ot be used for IFR navigation.
 
 ### Receiver Operation
 
@@ -593,12 +594,195 @@ At night, returning sky waves can cause rogue signals at considerable range.
 
 rated ranges = published rated ranges quarantee sufficient signal strentgh and freedom from station interference. But without conssidering the effects of skywave interference by day only.
 
-Rated range my be referred to as protected range.ß
+Rated range my be referred to as protected range.
 
-NEXT p 18.
+* coastal refreaction - speed of surface wave is affected by surface (faster over water, slower over land) = speed change = wave refraction at low altitude as it passes over coastline. --> refraction always towards the coast (slower side over land pulls wave towards the cost)
 
+the position readout suggest aircraft nearer to the coast than it acutally is (false bearing readout)    
+effect increased the wider land-inward the beacon is sited => could be minimised by choosing beacons closer to the coast or flying at higher altitudes.  
+can be avoided by taking bearings at right angle from coast when no refraction occurs.
+
+* dip - some Bendix-King aerials suffer from an error called dip. This occurs when the receiver sense aerial is masked by the loop aerial.    
+dip results in large bearing errors, only offures in a turn, and is greatest when the NDB is on a relative bearing of 45 or 135 left and right of the nose.
+
+* mountain effect - at low altitudes multi-path signals reflected from or diffracted around terrain can cause erroneous readings. Effect diminishes with height as hills are further from the line of sight and interfere less with the surface wave.
+
+### range 
+
+range of a beacon controlled by its power.    
+long range NDB have power output of about 10kW and a range over sea in excess of 500NM   
+short range NDB ~ 150NM over land requires an output of 1 kW.
+
+coarse formula:
+
+$$maxrange = 3 * \sqrt{power in Watts}$$
+Formula does not include effect of ground conductivity or frequency, only approximate max range.
+
+Doubling the range requires 4 times the output power (due to square root).
+
+NDB bearings have longer ranges over see than over land, because of better surface wave propagation.
+
+range ofa  beacon is not always the same as its rated range!    
+ICAO Annex 10 requires the power output of an NDB to generally match its agreed rated range, but an exception is made which allows the power to be greater, if no harmful interference to other facilities will result.    
+Thus, rated ranges usually not greater than 200NM, while the effective range of NDBs can be up to 600NM over the sea.
+
+### Types of NDB Stations
+
+ADF equipment will work on any continuous transmission in the frequency range, including commercial radio stations in the MF band.
+
+* **locators** = LF/MF NDB used as an aid to final approach usually with a range of 10 to 25NM (ICAO Annex 10) = low power NDBs at 15 to 40 Watts.    
+locators are typically co-located with the ILS outer marker.
+* **homing** and **holding NDBs** = beacons intended as an aid to transition from en-route portion to the detination airfield, rated coverage slightly less than 50NM, power output up to 200Watts.
+* **en-route** and **long-range NDBs** = raged coverage in excess of 50NM, tend to be in LF end of the allocated frequencies to benefit from longer surface waves.
+
+### Operating the equipment
+
+ADF equipment is normally digitally tuned. -> panel typically for duplicated controls for 2 separate ADF systems (i.e., number 1 and number 2 ADF)
+
+Tuning via selector knobs under frequency display    
+turned on by selecting the ANT position (this uses the sense areal position only optimising audio reception for identification but not producing any bearing)
+
+If BFO is required, toggle switches labelled BFO can be seleted to the appropriate system or, on an A2A beacon, select it off by leaving it in the NORM postion.
+
+Once tunig and identification is complete, select ADF on the rotary switch to include the loop aerial and send bearing information to the RMIs.
+
+TEST function to test system. Often ADFs without test facility = no way to check if the instrument has failed. Lack of failure warning indication is often cited as a limitation of older systems.
+
+Select ANT for good audio - but no bearing.
+Set    ADF for bearing information.
+
+### Other ADF tuning panels
+
+e.g. A320 - simple(r) to operate.
+
+NAV button to take away control from FMS, then select DF and tune as required.    
+Select BFO if required.  Newer systems apply BFO automatically.
+
+
+### NDB Tracking
+
+ADF needle points towards the beacon = ideal for tracking inbound or outbound from the NDB.   
+in still air: point aircraft wher ethe MI indicates    
+if wind; allow for wind correction/drift
+
+when aircraft reaches beacon overhead ~ aircraft enters area of weak or no signal called "cone of confusion".   
+ADF pointer will rotate around the dial until the signal is (propoerly) restored.
+
+tracking outbound - needle reversed and points to the station, tail of needle shows the QDR = radial the aircraft is on ~ correct for wind drift.
+
+wind changes - with changing wind, tracking and drift correction will be incorrect and the bearing of the NDB will change.    
+e.g. wind to zero = drift correction to "strong", QDM wanders as aircraft steers away from bearing/track.
+
+with the heading out by more than the drift, the effect is to push the head of the needle away from the heading bug.
+
+PUSH THE HEAD AND PULL THE TAIL.
+
+example: track 070 away from beacon - heading 060 - no wind    
+heading bug "pulls" the tail of the needle towards it (to show the right radial 060).
+
+==> PUSH THE HEAD or PULL THE TAIL
+
+example: RMI showing ADF/yellow 150. Intecept bearing of 130 inbound to NDB in still air; heading bug 095
+
+"push" beyond = answer 170
+
+inbound ISI: soll = 130, is = 150 => from soll to ist + x ~ 170
+
+
+No allowance for wind/drift and aircrew only follows point of the needle == curved path == curve of pursuit   
+homing without allowing for drift is not used in practical navigation because it is inefficient and inelegant. == always correct for drift
+
+
+### Intercepting a Desired Track
+
+NDB -/+5 deg ~ established on track
+
+
+## VOR - VHF omni-directional range
+
+VORs more sophisticated than NDBs and operate at shorter range.  
+line-of-sight frequencies in VHF band = free from most errors that affect NDBs.
+
+108-117.975 MHz;   
+band shared with ILS: 108-112MHz - VOR frequencies allocated at even 100kHz pacing.
+112-117.950MHz = only VOR = spacing 50kHz
+
+==> 108.2 and 113.35MHz = VOR frequency; 108.1Mhz ILS (!= VOR)
+
+VOR and Doppler VOR DVOR.
+
+standard VOR (30 revolutions a second) produces a limacon shaped polor diagrame whcih rotates with the dipole at 30 revolutions a second.    
+Limacon has no sharp NULL (like cardioid of ADF)
+
+receiver "listening" to signal, amplitude appears to go up and down 30 times a second as limacon rotates (typically clockwise) = received signal is amplitude modulated at 30Hz.    
+phase differs of the AM signal depending on the bearing of the aircraft from the VOR. = variable phase signal.    
+phase difference is compared to reference phase - omnidirectional reference signal also at 30Hz. Ref signal is frequency modulated FM to be distinguishable.
+
+both signals synced to show phase differnce of 0 for magnetic North 000/360.
+
+receiving aircraft looks at phase differnce between FM reference signal and AM variphase signal and displays it as a radial QDR.
+
+If true bearings are desired, the variation at the staion must be used in the conversion. This is because radials are referenced to magnetic north at the station rather than the aircraft.
+
+DOPPLER VOR = ring of starionary omnidirectional dipoles 13.5m in diameter. VHF signal is switched continously around the ring of aerials so that it appears to come towards the aircraft and then move away. The relative movement of the origin of the signal produces a Doppler shift/shift in frequency that varies with bearing.    
+== variphase signal is FM!   
+==> reference signal is AM.   this would produce reverse sensing in aircraft receiver ~~ DVOR signal rotates anti-clockwise!!! (reverse the reverse)
+
+aircraft tracking a constant phase difference either inbound QDM or outbound QDR will follow a great circle path
+
+### Cone of confusion
+
+area overhead VOR transmitter where it is not possible to obtain accurate bearing information.
+
+ICAO: confe of confusion 50dep from vertical.
+
+radius of cone can be calculated as 1.2 * height ==> maximum possible diameter of 12 NM at 30.000ft (in reality less)
+
+### Identification
+
+VORs - 3 letter Morse ident modulated at 1020Hz repeating every 10 seconds.    
+some beacons have voice identiiers as well.  (this is Stuttgart omni range ... morse code)
+
+if VOR & DME, the DME ident will be heard as a higher pitch 1350Hz every 40 seconds.
+
+### VOR Types
+
+VORs primarily used for en-route IFR navigation.
+Many European VORs about 80NM apart to ensure aircraft to stay within confines of airway 10NM wide (1 in 60 rule).
+
+* **terminal VOR** low power beacon used as part of an airfield approach. TVORs often share the lower frequencies with ILS.
+* **broadcast VOR** = usually a terminal NAVAID with voice broadcast giving out the airfield weather, the aerodrome terminal information service or ATIS, super imposed on the carrier wave
+* **test VOR** (VOT) = low power beacon sited at airfiled (usually in the US) which puts out a constant phase difference of zero in alll directions. ~ allows to test aircraft equipment accuracy on the ground.
+VOR test funtion with course set to 000, course deviation indicator should center with FROM indicated, RMI to indicate 180 QDM. Beacon identifier for VOT is a series of dots.
+
+### Airborne Equipment
+
+antenna, receiver, and instrument display    
+antenna is horizontal as would suit a horizontally polarised signal, and approximately a quarter of a wavelength long.   
+VOR aerials are often seen high on the tails of light aircraft
+
+VOR and ILS usually use the same control panel.    
+The aid in use is determined by the frequency selected.
+
+VOR information canbe displayed on an omni-bearing indicator OBI which is used if the aircraft has no electronic compass information, or and RMI and a Horizontal Sitaution Indicator HSI
+
+### Omni Beaing Indicators
+
+omni-bearing selector knob = required bearing    
+==> course deviation indicator (hinged at top) showing degrees of displacement from the selected bearing AND    
+TO/FROM window/flag indicating wether the selected bearing is a QDR or a QDM.
+
+full deflection = 10 degress
+
+next p12
 
 ## QUESTIONS
 c/f = 3 * 10^8 / 75MHz = 3 * 10^8 / 75 * 10^6 = 3/75 * 10^2 = 300/74 ~ 4
 
 c/lambda = 3 * 10^8 / 12cm = 3 * 10^8 / 12 * 10^-2 = 3/12 * 10^10 = 30/12 * 10^9 ~ 2.5 * 10^3 * 10^6 = 2500MHz
+
+
+range NDB    
+- transmitting power: more power, lomger range     
+- frequency: lower freq, longer ground wave
+- terrain: "lower terrain" = sea, longer range
