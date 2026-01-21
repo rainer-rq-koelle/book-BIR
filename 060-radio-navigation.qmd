@@ -774,7 +774,162 @@ TO/FROM window/flag indicating wether the selected bearing is a QDR or a QDM.
 
 full deflection = 10 degress
 
-next p12
+alternative instrument/display - vertical scale/grid for the ILS glideslope, not hinged at one end; here G/S flag (red) as not glideslope signal (as tuned to a VOR)
+
+CHECK FOR SOME SCREEN SHOTS/INSTRUMENT figures
+
+example: 060 selected, TO flag, deviation indicator shows 2 dots left     
+==> QDM 060, dot ~ 2deg ==> 2 dots = 4 degs "right" of QDM    
+==> bearing to station = 060 - 4 = 056 deg, and on 056 + 180 = 236 radial QDR "inbound" 
+
+Note: display is independent from heading, however it makes sense to fly either TO or FROM a station.
+
+example:   
+aircraft heading 075 (M). CDI course 0f 025. VOR indicates TO, needle right deflection.    
+In which quadrant to the station defined by what radials?
+
+TO = 025 == QDR 025+180 = 205    
+RIGHT == left of course = 025 - 090 = 385 - 090 = 295 (or 205 + 90)
+
+"FLY INTO THE NEEDLE" 
+
+Note: for exam questions: no heading input to OBI - heading is irrelevant regarding location to/from beacon or quadrant.     
+selection of intercept radial determines a (next) heading!
+
+example: heading 210, magnetic variation at VOR is 5W and at aircraft 10W.    
+CDI shows: TO, deflection right 2 dot, CRS 200   
+What radial?
+
+CRS/OBI = 200 ==> target QDR = 020   
+course to the right ==> left, 1 dot = 2 deg ~ actual QDR 020 + dot    (2 dot disply => 1 dot = 5deg) ==< actual QDR = 020 + 5 = 025
+
+variation only relevant when TRUE radial desired, station synced signal = station variation, here not asked. 
+
+### Radio Magnetic Indicators RMI
+
+VOR information is usually displaed on RMI.   
+This requires an electronic compass feed, and so OBIs are still used in light aircraft.   
+
+RMI feeds compass heading to the top of the dial and the tail of the VOR needle is driven to the detected phase difference on the dial.   
+point of the needle indicates the QDM and the tial the QDR.
+
+needles can be associated to NDBs, in this case DME readout would show off flag.
+
+### Horizontal Situation Indicator HSI
+
+HSI usually used togethr with RMI.   
+HSI has electronic compass to feed top of dial (showing compass heading)
+
+HSI have rotating center section independent of the compass card.   
+Manual selection of particular course/bearing shows deviation from bearing/course similar to OBI; full scale deflection 10 or more degrees; on a 2 dot HSI each dot represents 5 degs; 5 dots ~ 2 degs   
+TO/FROM indicator
+
+example: HSI, compass heading 300, course selected 280, TO, deflextion 2 dots RIGHT
+
+==> (tail) target QDR 100, 4 to 5 degrees to our right ==> current QDR = 100 +5 = 105
+
+### Use of HSIs and RMIs
+
+RMI information is stometimes overlaid on the ompass card element of the HSI to combine both instruments; i.e., EFIS versions of HSI.
+
+Example HSI next to RMI, both tuned to same station    
+- ac heading 030 - shown on both    
+- RMI shows bearing TO station of 060 (QDR = 240)    
+- HSI course selected 090, TO flag; deviation at full sale tothe LEFT ~ 090 bearing is more than 10 degrees away
+
+### VOR tracking
+
+VOR tracking can be accomplished using either RMI, OBI, or HSI.
+
+RMI ~ equivalent to NBD - follow bearing (and/or correct for wind)    
+OBT indicates in the correct sense (i.e., left/right indications) if the heading is roughly the same as the bearing selected. To track to a beacon turn the course selector knob (OBS) around until TO is indicatoed and the cdi is central.    
+== selected bearing - still air heading to beacon. Adjust for drift and follow CDI as commands.
+
+Heading instructions are deliberately vague, using words like turn left a little, because the readial sensitivity of the instrument increases the closer the beacon.   
+--> smaller corrections, if closer to beacon.
+
+tracking FROM a beacon:   
+- OBS until FROM and CDI centered    
+- turn aircraft to a heading that matches the selected bearing   
+- correct for drift
+- follow command
+
+intercepting a bearing on either the OBI or HSI: start by setting up the required bearing wiht the OBS of course selector.
+
+### Procedure Turns
+
+VORs and NDBs can be used to execute procedure turns.   
+These are formal turning paths used to reverse the direction as part of a procedural approach.
+
+Most common: 45/180 procedure
+
+- start at facility or fix with track guidance - either timed or limited by radial or DME distance    
+- 45 degrees turn to the LEFT    
+- timed straight outbout leg without track guidance; CAT A and B: 1 min, CAT C,D, and E: 1:15min = 75 secs    
+- 180 turn to the right to intercept inbound track
+
+### Errors and Accuracy
+
+VOR is free from sky wave interference and coastal refraction because of its higher frequency and line-of-sight transmission.   
+Bending of signal by structure of aeroplance does not accect the indicated bearing, i.e. no quandrantal error.
+
+Designated operational coverage DOC of a VOR, the range, sector, and altitude where freedome fom interfreence is guqanranteed, is given in the AIP.   
+Unlike protected range of NDBs, this is valid both by day and night.   
+Outside DOC interfreence from other stations is possible.   
+DOC is sometimes referred to as "service volume".    
+
+ICAO estimate the overall fixing accuracy of VORs to be -/+5 degrees on 95% of occasions.
+
+When flying VOR approaches, ICAO Doc 8168 required the aircraft to be within half a scale deflection, i.e., 5 degrees of the selected bearing, to be considered "on track".
+
+### Scalloping and Site Error
+
+reflections from terrain and mane made obstructions can cause errors as 2 signals with different phase differences interfere, "site error".
+
+Site errors cause VOR indicator to move rapidly from side to side. On a RMI it will make the indicator needle wobble.   
+This effect is known as "scalloping".   
+
+Scalloping different from beam bends wihch are also caused by reflections from buildings, but which are more predciable slight curves within the system tolerances.   
+Where Scalloping is known to occur, it is notified in the COM sectino of the AIP and on approach plates.
+
+Conventional VOR variphase signals are continuously transmitted through 360 and differing amplitude.    
+" continuous"  reflection by obstructions near transmitter.   
+DVOR variphase signal is switched around much larger aerial, and is likely to reflect from an obstruction and hit the aircraft receiver only for a small part of its cycle.   
+Thus, DVOR suffer less from multipath signals; and the reason given is because of the larger aerial.
+
+### Multipath Signals and Mountain Effect
+
+Reflections from terrain at a distance from the transmitter may be referred as 'multipath signals', the error arising may unusually be referred to as mountain effect, although that name is normally reserved for the equivalent NDB error.
+
+### Atmospheric Ducting
+
+atmospheric ducting can lead to synchronous transmissions even within the DOC.   
+Ducting is inherently unpredictable, so no allowance can be made for it, illustrating the need to check the station ident whenever a beacon is used.
+
+Scalloping causes rapid deflections that can not be followed by an aircraft.
+
+### Power and Range
+
+output power of tranmitter impacts range: 200Watts -> up to 200NM, 50 Watts only good for short range transmissions.
+
+max theoretical range: = 1.23 sqrt(H_t) + 1.23 * sqrt(H_rx)
+
+### Equipment Errors
+
+ICAO Annex 10 requires VOR transmitters to be monitored to make sure they put out bearings to at least an accuracy of -/+ 1degree.   
+Should the monitor detect a greater bearing error, transmitter to be shut down and stanby transmitter to be brought online.   
+Station to be shut down, if signal strenth drops by more than 15% or if monitor fails.
+
+During the transfer period the sation ident either ceases or is replaced by a continuous tone.   
+The ident is resumed when the standby tranmitter is operating within limits.ß
+
+
+## ILS
+
+NEXT: ILS chapter
+
+
+
 
 ## QUESTIONS
 c/f = 3 * 10^8 / 75MHz = 3 * 10^8 / 75 * 10^6 = 3/75 * 10^2 = 300/74 ~ 4
