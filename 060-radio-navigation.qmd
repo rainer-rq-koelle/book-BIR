@@ -924,10 +924,233 @@ During the transfer period the sation ident either ceases or is replaced by a co
 The ident is resumed when the standby tranmitter is operating within limits.ß
 
 
-## ILS
+## Instrument Landing System ILS
 
-NEXT: ILS chapter
+precision approach system, technological progress/accuracy -> categories.   
+normal: CAT I, most capable CAT III.
 
+### Principle
+
+separate ground transmitters provide beams to show lateral position of aircraft in reference to extended center line, i.e., the localiser, and  the vertical displacement from glidepath.   
+possible short range beacons to mark distance from touchdown, now supplemented or replaced by distance measuring equipment DMEs.
+
+localiser works in VHF band: 108 - 119.95 MHz (shared with VORs; localiser uses odd 100kHz frequencies and odd + 5okHz, e.g. 108.1MHz, 108.15MHz, 108.3MHz, 108.35MHz) => VOR 108.2/108.4MHz; 108.25 is not allocated!
+
+glidepath uses 40 spot UHF frequencies from 329.3Mhz to 335Mhz paired with the VHF frequencies.  
+glidepath frequency is automatically selected when the paired VHF channel is selected.
+
+marker beacons operate on 75MHz
+
+### Identification
+
+The ILS ident is a 1020Hz tone amplitude modulated on the localiser carrier wave..
+The ident is a 2 or more letter morse code transmitted at 6 words a minute.   
+If ambiguous: ident preceded by letter I to signal ILS ident, e.g. Mardid Torrejon: IJTA with nearby NDB TJA.    
+On some CAT I or II systems voice can be superimposed onto the localiser carrier wave.
+
+### Instrument Displays
+
+Omni-Bearing Indicator (as for VOR) or a Horizontal Situation Indicator HSI.   
+In some cases, ILS information repeated on the Attitude Indicator or EFIS Primary Flight Display PFD.
+
+Displacement presented as "command needles" from central point.
+Displaced right = fly right, displaced above = fly up = decrease rate of descent.
+red warning flags = unreliable localiser or glideslope signals.
+
+ILS Localiser display is less sensitive than glidepath.   
+Full scale localiser deflection := 2.5 degrees  => 1 dot = 0.5 deg  
+full scale glidepath deflection := 0.7 degrees => 1 dot = 0.15 deg
+
+displays with circle = first dot!
+
+### HSI
+
+if VOR indicator is used, it is important to realise that the bearing or course selection will still function. BUT, it will not have an effect on the information displayed.   
+The ILS centre line bearing of QDM is usually selected at the top of the instrument for neatness.
+
+some HSI: glidepath information on the right side, localiser on main instrument
+
+With VOR information the deviation information and TO/FROM indicator on the HSI were sensitive to heading, VOR information never indicates reverse sense.   
+CAUTION: ILS information not impacted by selected track/course, i.e., ILS does not send out radial type signals (like VOR).
+
+==> select ILS QDM.
+
+### Localiser Operation
+
+2 overlapping beams:
+  + one amplitude modulated at 90Hz ~ left side of centerline; and
+  + one amplitude modulated at 150Hz~ right side of centerline.
+
+receiver (aircraft) derives center line displacement from signal strengths, i.e.,
+if more 90Hz than 150Hz = LEFT side of centerline => needle deflection to RIGHT = FLY RIGHT
+
+when depth of modulation is equal = DDM = 0 => ON CENTER LINE
+
+by convention: 90Hz (left side of centerline) = YELLOW lobe
+150Hz (right side of centerline) = BLUE lobe.
+
+
+### Localiser Aerial and Coverage
+
+localiser transmitter usually in line with runway centerline, about 300m off the upwind end.   
+Frangible aerial may be 20 meters wide and 3 meters high.   
+Consists of a number of dipole and reflector elements.
+
+localiser signals protected out to 25NM to a height of just over 6000ft.   
+Beyond that range they mau be received, but not relied upon.
+
+within 17NM - 35deg left and right of centerline
+17-25NM     - 10 degs
+
+if terrain: reduced to 18NM within 10deg coverage and 10NM elsewhere.   
+dimensions will be varied for steeper glidepaths and different categories.
+
+in unusal cases LOC signals can be reflected outside the coverage area and may cause reverse indiator or false signals.   
+Reflections from terrain or buildings possible ~ bent localiser. Carefully checked to be withikn limits during calibration and notified on approach plate.
+
+LOC can only be used for navigation inside protected area.
+
+OFFSET LOCaliser - if it cannot be sited on extended runway centerline upwind, i.e., placed next to runway. (YELLOW and BLUE) Beams are then adjusted to pass through centerline at decision height.
+
+If offset is more than 5deg = ILS no longer "precision approach" and approaches must be flown to MDA/MDH limits!
+
+### Glidepath
+
+glidepath works in analogy to localiser with signals in UHF band modulated at 90 and 150Hz.
+
+90Hz = ABOVE glidepath ==> FLY DOWN
+150Hz = BELOW glidepath ==> FLY UP.
+
+nominal glidepath (Annex 10): 3deg; in some cases up to 6deg.   
+E.g. London City 6 degree glideslop.
+
+glideslope aerial positioned next to the instrument touchdown point (about) 300m/1000ft in from threshold and approximately 120 m off the runway centerline.
+
+### Glidepath Coverage
+
+min coverage angle 0.45 * glidepath angle    
+upper limit        1.75 * glidepath angle
+
+from above: coverage extends to 10NM, up to 8 degrees left and right of center line.
+
+example - limits of 3deg glidepath    
+- lower limit: 0.45 * 3 = 1.35 deg
+- upper limit: 1.75 * 3 = 5.25 deg
+- left and right: 8 degrees from centerline
+
+glidepath > 3.5. "steep" glidepath.
+steep glidepath limits 8 degrees left and right BUT only 8 NM out!
+
+### False glideslops
+
+transmission -> sidelobes, sidelobe beams less powerful than main lobe; however, can trigger falst glideslop indiation.
+
+==> given elevation angle: no false glideslop below coverage ==> intercept glideslop from below = first intercept = main glideslope == NEVER from above!
+
+first false glideslope about twice the angle and triggering a descent rate of > 1500ft/minute!
+
+==> standard ILS GS intercept := level flight at 1500-2500ft above aerodrome level
+once LOC established, continue level until intercept from below   
+then pitch adjusted for rate of descent
+
+### Marker Beacons
+
+ICAO Doc 8168 requires a fix or facility to allow aircrew to crosscheck height against range.
+ILS: up to 3 marker beacons.
+
+outer marker: (about) 4NM from threshold (blue)
+middle marker: (about) 0.6 NM from threshold (orange/amber)
+inner marker: at threshold (white)
+
+75MHz (VHF) fan shaped beam pointing upwards.   
+signals modulated to provide audible morse tone
+
+outer - blue   - low pitch(400Hz) - letter O: ---   (2 dashes a second)
+middle - amber - medium pitch (1300Hz) - letter C (aka Center): -.- (2 dashes a second, 6 dot per second)
+inner - white - high pitch (3000Hz) - letter I: .. (6 dots a second)
+
+markers becoming less common/increasingly replaced with DME.  
+Such DMEs also paired with ILS LOCaliser frequency (i.e., automatically selected).
+DME reliable withiin lateral limits of localiser up to 25.000ft
+
+airway markers are extremely seldom (why do i speak in ILS section about this?)
+signal moutains and use same light and tone coding.
+morse ident at siz to ten words a minute.
+
+### ILS tracking
+
+localiser captured before glidepath, typically at altitudes of 1500-2500ft above aerodrome.
+
+"established on localiser" = half a scale deflection of the required track.   
+aircrew must not start descent unless established on localiser.
+
+"established on glidepath" = maintain half scale up/down deflection.
+
+if aircraft deviates outside half scale on localiser or more than half scale below glidepath ==> immediate missed approach procedure (no longer obstacle free/guaranteed).
+
+### Back course approach
+
+mirror signal on "reverse" side of localiser.
+
+in Europe: back course approaches not approved.
+in US/CAN: relatively common, but only non-precision approach (MDH/MDA) or departure procedure.
+
+when used (as backup reference) post departure to track runway direction, back-course signal operate in the correct sense.
+
+!! glideslope signal to be ignored == only for non-precision approaches!
+
+### ILS Categories
+
+nuances between ICAO and EASA!
+
+CAT ground accuracy aircraft minima
+I   60m (200ft) above touchdown   200ft on baro altimeter, min RVR 550m
+II  15m (50ft) above threshold    100ft on radio altimeter, min RVR 300m
+IIIA  touchdown and beyond        0ft on radio altimeter, min RVR 200m
+IIIB  touchdown and beyond        0ft on radio altimeter, min RVR 75m   (ICAO 50m)
+IIIC  touchdown and beyond        0ft on radio altimeter, min RVR 0m
+
+### ILS Critical and Sensitive Areas
+
+ILS installation has areas plotted around both, the glideslope and localiser tranmitter aerials, where vehicles and aircraft movement will disturb the navigation signals.   
+== ILS ccritical areas. All vehicles and aircraft are excluded from critical areas, if ILS in use.
+
+Larger sensitive area where vehicle and aircraft MAY interfere with the signals but are only excluded during low visibility procedures LVP.   
+At other times, movement in the sensitive areas is controlled.
+
+### Holding Points
+
+width of sensitive area will vary by ILS caegory, hence CAT II or CAT III holding points at larger airfields are further back from runway than the CAT I holding point.
+
+Disturbance of critical area may cause scalloping, indicator changes from side to side which cannot be followed by aircrew/aircraft.
+
+### System Monitoring
+
+ILS signals can be disturbed by
++ transmitter faults
++ antenna damage
++ interfering signals, possibly from VHF FM radio stations
++ environmental disturbances
++ multi-path effects.
+
+increasing problem: FM radio stations working on frequencies close to LOCaliser band (around 108 MHz).
+ILS - AM is fitted with FM immune filters. ditto for VOR.
+
+today: nearly all VHF navigation receivers FM immune for IFR. on smaller aircraft (sportsclub): VFR only placarded on VHF receiver (= not FM immune)
+
+ICAO Annex 10 requires ground installation to ensure/monitor transmitter integirity
+alerts ATC and operations staff about changes in the mean course line or reductions in signal strength, exceedance of predetermined limits.   
+Ident will be removed and nav signal stopped within 6 seconds for a CAT I system and 2 seconds for a CAT II or III system.   
+Localiser and glideslop are independently monitored.
+
+CAT I system cuts 6 seconds after failure.
+
+### Receiver
+
+ILS receiver has automatic monitoring function.    
+Shows warning flag for localiser and/or glideslope.
+
+springs holding flags back - low (or no signal) in either 90 or 150Hz modulations == activation = reduced current = spring activates.
 
 
 
@@ -935,6 +1158,7 @@ NEXT: ILS chapter
 c/f = 3 * 10^8 / 75MHz = 3 * 10^8 / 75 * 10^6 = 3/75 * 10^2 = 300/74 ~ 4
 
 c/lambda = 3 * 10^8 / 12cm = 3 * 10^8 / 12 * 10^-2 = 3/12 * 10^10 = 30/12 * 10^9 ~ 2.5 * 10^3 * 10^6 = 2500MHz
+
 
 
 range NDB    
