@@ -1153,6 +1153,250 @@ Shows warning flag for localiser and/or glideslope.
 springs holding flags back - low (or no signal) in either 90 or 150Hz modulations == activation = reduced current = spring activates.
 
 
+## Radar Theory
+
+
+### primary and secondary radar
+
+primary radar := reflection.    
+secondary radar := signal "query" (interrogation), response by "transponder"
+
+primary signal (strenth) going back and forth   
+secondary only 1 way
+
+primary radar displays target bearing and range.   
+tranponder can reply with an active data stream, including aircraft identification, altitude, position, etc.
+
+
+### Frequencies
+
+progapagion characteristics -> signal design    
++ minimise static
++ minimal atmosphereic attenuation
++ line of sight propagaion
+
+=> UHF/VHF band, higher frequencies could be used, but increasing atmosphereic attenuation would mean more power is needed for the same range.
+
+radar characteristics: rather than transmitting in all directions, radar energy "bundled" (in a beam).   
+Short wavelength produce the narrower beams that are needed to identify small targetst.
+
+==> fourth requirement: short wavelength for narrow beams.
+
+to a decent return, the wavelength used should be similar in size or smaller than the target. Radar used to detect rain in thunderstomrs should therefrore have a wavelength of centimeters or less.    
+Similar wavelenths will also detect aircraft and mountains. 
+
+==> 5. requ: wavelength chosen for target size.
+
+4.+5. requirement important. Common to use higher frequencies in SHF band to get a narrow beam width at the correct wavelength and to accept that rande is reduced because of attenuation from atmosphere.    
+Civil radars operate in the UHF and SHF bands.    
+Military radars can use frequencies as high as EHF.
+
+### Continous Wave Radar and Pulse Radar
+
+two principal types of radar operations.
+
+pulse radar sends out short bursts of energy and then determines the range of the target from the time it takes the pulse to return.   
+advantage: single aerial can be used acting as transmitter when pulse is sent and then witching over to acet as receiver while it waits for the pulse to return.
+
+simple - but limitation in maximum and minimum range.
+
+continuous wave systems avoid some of the limitations of pulse radar max and min range, but, as there are no discrete pulses and echose as such, a different system must be used to determine range.   
+CW -> radio altimeter.
+
+### Pulse Radar Theory
+
+transmitted pulses are sent at regular intervals.   
+trnsmit - receive - transmit - receive ...
+
+pulse recurrence period RPF (or pulse recurrence interval PRI)    
+e.g. if it takes 0.5 seconds to complete one cycle of transmit and receive: pRP = 0.5 sec.    
+==> 2 pulse per second = pulse repetition frequency PRF.   
+a shorter PRP ~ more pulses in a second (higher PRF).
+reduced period = higher frequency.
+
+PRP = 1 / PRF
+
+example: PRP of a radar system is 700ys, what is the PRF.    
+==? PRF = 1 / PRP = 1 / (700 * 10-6s) = 1/7 * 10^4 = 10.000/7 = 1.429 1/s
+
+PRP = 1000 pulses per second, what's it PRP in milliseconds
+PRP = 1000Hz = 1000 1/s = 1000 /(10^3 * 10^-3s) = 1000/1000 * 1/(10^-3s) = 1/ms
+
+### Pulse Width, Power, and Range
+
+pulse power := power in each pulse.   
+(more common) 'continous power' of radar = pulse power averaged over complete transmission cycle.
+
+continuous power can be increased by    
++ boosting power when pulses are sent, and pulse length constant    
++ increasing pulse length
+
+power affects range, because radar beams are never completely prallel, they expand out, and therefore the pwer per square meter reduces as the squeare of the range.
+
+example: one way radar: signal range doubled. What happens to the reeived power per squeare meter?    
+-> range doubled == pwer per squeare meter reduced by factor $2^2 = 4$ ==> it is a quarter of the previous received power.
+
+CAUTION: questions about primary radar: signal travels both way!
+
+example: for any given circumstances, in order to double the effective range of a primary radar the power output must be increased by a factor of?
+
+==> to double range and keep power per square meter at target: increase transmitter power by $2^2 = 4$.    
+==> signal has to travel back: keep return constant $4^2 = 16$
+
+### Pulse Radar Maximum Range
+
+envisaged range influences PRP as a long enough quiet period is required for the reception of the reflected signal.    
+if PRP too short, the returning pulse would not arrive in the period when the radar was receiving, or, worse, it would arrive after the next pulse. => ambiguity (Alps south of Neuburg)
+
+max. theoretical or unambiguous range of a pulse radar is affected by PRP (and PRF).   
+Theoretical maximum range = $\frac{c}{2* PRF}$
+
+example: PRF of a radar system is 400 PPS (pulses per second). What is the maximum range in NM?
+
+max range = c / (2 * PRF) = 3 * 10^8 / (2 * 400) = 3/8 * 10^6 = 30/8 * 10^5 = 3,75 * 10^5 m = 375.000m = 375km ~ 200 NM
+
+or use 3 * 10^8 m/s = 162.000 NM/sec = 162.000/800 NM = 1620/8 NM ~ 200 NM
+
+LOW PRF needed for LONG RANGE radars!
+
+very short range, beginning of returning pulse can arrive before tht tail end of the puls has been transmitted => radar not yet switched to receive == no detection.
+
+==> short pulse for short range radar.   
+Thus pulse width or pulse length, affect the minimum range.
+
+obvious design choice: short pulses and long PRP for short and long range.   
+Unfortunately, long range systems need long pulses to keep the energy in the beam. :(
+
+==> purpose built radar:    
+short range radar ~ short pulse and high PRF    
+long range systems ~ long pulse and low PRF
+
+Note:   
+
+minimum range controlled by pulse width.   
+maximum range controlled by PRF, but also power.   
+long range radars have a slow scanner rotation (to allow for signal return measurement)
+
+factors affecting range of pulse radar:   
+
+* transmitter power,
+* PRP and PRF,
+* pulse width,
+* transmitter and target heights,
+* clouds and rain (weather clutter), and
+* intervening high gorund.
+
+### Bearing and Range Resolution
+
+bearing accuracy is controlled by the width of the radar beeam.   
+
+beam width: $$beamwidth = 70 * \frac{wavelength}{antenna diameter}$$
+
+-> the larger the parabolic dish aerials, the narrower the beams    
+-> best resolutoin would come from combination  of high frequencies and large aerial.    
+
+range resolution is controlled by pulse length.   
+Short pulses produce good range resolution.
+
+certain aerodrome sufrace movemment radar (ASMR) operate at such short wavelengths and have such narrow beams and high rotation rates, that it is possible to identify aircraft types from teturn - at least by size.
+
+tight beams comf from high frequencies and big aerials.   
+Good range resultion comes from short pulses.
+
+### Factors Affecting Quality of Target Responses
+
+* super refraction (ducting) := under certain conditions, VHF (and above) will behave in a manner that gives comparable ranges to sky wave propagation. If marked termperature inversion, and between that inversion and the ground there is a rapic decrease of humidity with heigth, the readio wave may be trapped under the inversion with little attenuation. ==> when high pessure systems prevail, signals in these bands may travel far beyound the normal direct wave range ~~ detection ranges of radars may be greatly increased.
+* sub-refraction ~ caused by temperature and humidity, can be bent less than normal. detection range may therefore be consderably less than normal.
+* attenuation with distance ~ dispersion of transmitted energy ~ weaker signal => no or faint radar response.
+* condition and size of reflecting surface ~ amount of reflected energy from a target is dependent upon its size and shape of the refleccting surface, the material, and aspect of the target (ac fliying directly towards radar reflects less energy than one passing in constant range). During attitude changes, there can be signal polarisation change -> target fading / low response
+
+### Ground based Radar
+
+ground based radar allows for less separation between air traffic than procedural or non-radar services.  
+ground based radar can also provide approach control and approach servie from cloud break to precision approach.   
+ASMR at (busy) airports to observe and control aircraft movements on maneuvering area.
+
+- surveillance radars
+- precision approach radars, and 
+- ASMRs.
+
+### Aerials
+
+rougnd radar aerials are either flat phase arays or parabolic sections designed to operation in two dimensions.    
+
+where systems require elevation information, a 2nd parabolic section aerial is used scanning up and down in the vertical plance.
+
+ground radars operate in 2 dimensionss (bearing and range)
+
+### Moving Target Identification
+
+option to include moving target indicator (MTI).   
+Doppler shift from moving target and the lack of Doppler shift from stationary targets to distinguish and exclude those that are not moving, theoretically the ground clutter.
+
+disadvantage of MTI ~ could exclude aircraft targets that are moving across the screen but neither towards or away from theradar head and therefore displying no Doppler shift.     
+MTI is only used with primary radar systems.
+
+### ATC Radar Displays
+
+Modern ATC radars tend to use computer generated displays (synthetic displays) rather than 'raw radar data'.
+
+### Surveillance Radar
+
+enroute surveillance radar ~ 200-300NM range and good weather penetrating capabilities.   
+Long range requirment: => low PRF with long pulses and lowish transmitted frequeency ~~ target resolution moderate !!!.
+
+==> 2 radar systems are used together to meet this requirement.   
+i) UHF primary radar on 600MHz with a wavelength of 50cm, pulse length of 4 ys, PRF 270 PPS, horizontal beam width 1.7deg, and an aerial rotation 5 RPM in conjucntion with a scondarry radar.
+
+primary radar: bearing and range.   
+secondary radar range, bearing, identification, altitude, etc from those targets quipped with a scondary radar transponer.
+
+secondary radar is not susceptible to weather clutter, because it uses a different frequencies to transmit and receive.   
+It is more likely to detect long range targets as the signal only travels onw way, not back and forth.   
+secondary aerial: flat phase array.
+
+### Terminal Surveillance Radar
+
+terminal surveillane radars provide separation between airccraft withink the terminal aera during transit, approach and departure.  
+May be used to provide a radar coud break.
+
+Mediam range radar with maximum ranges up to 60 to 80NM.   
+medium range ~ higher frequencies, higher PRF and faster scan rate for good tartet discrimination.
+
+prim and secondary radar used together.   
+primary radar is likely to operate in the top end of UHF 1000-1200Mhz with pulselength of 3.9ys, PRF 350PPS, beam width 1,2deg and a rotation rate of about 8 RPM.   
+Surveillance radar displayes for enroute and terminal aera are procedded throggh comuters to combine information from PSR and SSR.   
+This can be superimposed on an airspace map for the contoller convenience.
+
+### Approach Surveillance Radar
+
+approach surveillance radar = short range primary radars capable of being used to provide guidance during intial, intermediate, and possibly final approach of flight.   
+higher frequencies, PRF and rotation rates.
+
+UHF/SHF ~ 3GhZ with a PRF of about 700PPS.   
+Some approach radars have very short pulses of about 1 ys to allow them to operate to minimum ranges of as little as 150m.   
+Rotation rates are about 15RPM.
+
+can be used for surveillance radar approach SRA.  
+During SRA ATCO provides headings to aircrew to about half a mile from touchdown.   
+Controller has no view of the aircraft in the vertical plane and only advises the pilot on the heights that the aircraft should be passing.   
+SRAs are flown on QFE unless the pilot requests a QNH approach or unless the normal comparny procedure is QNH. Altimeter checks are crucial.
+
+SRAs are normally flown on QFE to MDH.
+
+### Precision Approach Radar PAR
+
+military   
+radar consists of 2 elements: one for azimuth and one for elevation.   
+both situation at approach end of runway near the toucdown point.   
+
+10Ghz on a sector scan rather than a complete circular scan.
+
+
+### Airfield Surveillance Movement Radar SMS
+
+ASMR or ASMI operate at very short wavelength 0f about 3.8cm (SHF).   
+Narrow beams with high rotation rates around 60RPM.
 
 ## QUESTIONS
 c/f = 3 * 10^8 / 75MHz = 3 * 10^8 / 75 * 10^6 = 3/75 * 10^2 = 300/74 ~ 4
