@@ -1257,6 +1257,9 @@ max range = c / (2 * PRF) = 3 * 10^8 / (2 * 400) = 3/8 * 10^6 = 30/8 * 10^5 = 3,
 
 or use 3 * 10^8 m/s = 162.000 NM/sec = 162.000/800 NM = 1620/8 NM ~ 200 NM
 
+ground radar with PRF of 450 pulses per second, what maximum range?    
+MUR = c / (2 * PRF) = 300.000km/s / (2 * 450) = 300.000 km/s / 900 1/s = 300/900 * 1000 km = 1/3 * 1000km = 333km 
+
 LOW PRF needed for LONG RANGE radars!
 
 very short range, beginning of returning pulse can arrive before tht tail end of the puls has been transmitted => radar not yet switched to receive == no detection.
@@ -1364,9 +1367,15 @@ Mediam range radar with maximum ranges up to 60 to 80NM.
 medium range ~ higher frequencies, higher PRF and faster scan rate for good tartet discrimination.
 
 prim and secondary radar used together.   
-primary radar is likely to operate in the top end of UHF 1000-1200Mhz with pulselength of 3.9ys, PRF 350PPS, beam width 1,2deg and a rotation rate of about 8 RPM.   
+primary radar is likely to operate in the top end of UHF 1000-1200Mhz with pulselength of 3.9ys, PRF 1350PPS, beam width 1,2deg and a rotation rate of about 8 RPM.   
 Surveillance radar displayes for enroute and terminal aera are procedded throggh comuters to combine information from PSR and SSR.   
 This can be superimposed on an airspace map for the contoller convenience.
+
+MUR = c / (2 * PRF)    
+60  = 162.000 NM/s  / (2 * PRF)   
+2 * PRF = 162.000 / 60    
+PRF = 162.000 / 120 = 16200 / 12 = 1350 PPS
+
 
 ### Approach Surveillance Radar
 
@@ -1397,6 +1406,68 @@ both situation at approach end of runway near the toucdown point.
 
 ASMR or ASMI operate at very short wavelength 0f about 3.8cm (SHF).   
 Narrow beams with high rotation rates around 60RPM.
+
+
+## Distance Measuring Equipment DME
+
+slant range to ground station  
+in general diff between slant and ground range 'minimal' (unless ac close to station)     
+DMEs often co-located with VORs and with ILS to provide range information
+
+DME secondary radar system = active component in ac and on the ground.   
+DME UHF band, 960-1215MHz using line of sight propagation.
+
+### principle of operations
+
+ac transmits a stream of apirs of pulses to the ground station.    
+2 pulses separated by 12 microseconds.   
+after delay of 50 microsecs ground station transmits.   
+range determined based on time delay between sending and receiving the pulses minus 50 microseconds.
+
+ac := interrogator, ground := transponder (as it replies)
+
+### practical challenges
+
+distinguish between i.) own and other ac pulses, and ii.) between retransmitted pulses from the transponder and its own interogator transmission reflected from ground.
+
+own interrogation := each ac "own" random or 'jittered' PRF ~ time interval between the paired pulses is random, likelihood of two pulses identical ~ NIL.
+
+transponder retransmits at a different frequency, 63MHz apart from interrogation ==> can differ ground reflected signal = ac receiver working on different frequency than transmitter/interrogator.
+
+paired frequencies are called channels and there are 252 of them available, 126 in regular use designated as X channels and another 126 Y channels which can be allocated.
+
+To make sure that the ground equipment is not triggered by other UHF transmissions such as mobile phones or SSR, it will only replay to pairs of pulses separated by 12 microsecs.
+
+### Searching
+
+PRF randomised, it averages out to about 150 pulse pairs per second when the aircraft starts to interrogate the DME, dropping to 60 pulse pairs per second after 15.000 pulse pairs.    
+The airborne equipment searches through the possible ranges looking for a match for the pattern of pulse pairs that it sent, called 'time gates'.   
+Once it found the PRF drops to about 24 pulse pairs a second and it is said to be 'locked on' or 'in tracking mode'.
+
+The ac will start with its time gates at minimum range and then move the search out to longer ranges.   
+Advantage of starging at minimum range is that you will always pick up the direct signal first, as any reflected responses from the ground station must arrive later.
+
+### DME memory
+
+memory function allows the range to continue counting down at the same rate, if the signal is temporarily interrupted.   
+After 8-10 seconds off flag will come up, or - with an LED display - the range will not be displayed.
+
+150 PPS for 15.000 pulse pairs, then 60PPS. Locks on at 24PPS.   
+DME memory keeps the counters turning for 8-10 seconds after signal losss.
+
+### Beacon Saturation
+
+ground equipment has limited capacity and adjusts its gain to only hanlde the strongest 2700 pulse pairs.   
+This means that only 18 searching aircraft can use the facility or 112 locked on aircraft.   
+In practice, there is a bit of eah and about 100 aircraft can be served at once.
+
+Note: DME ground equipment will answer the "strongest" signals, not the nearest ac.
+
+### Squitters and "Auto Standby Mode'
+
+p 4/15.
+
+
 
 ## QUESTIONS
 c/f = 3 * 10^8 / 75MHz = 3 * 10^8 / 75 * 10^6 = 3/75 * 10^2 = 300/74 ~ 4
