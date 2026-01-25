@@ -1465,15 +1465,146 @@ Note: DME ground equipment will answer the "strongest" signals, not the nearest 
 
 ### Squitters and "Auto Standby Mode'
 
-p 4/15.
+ground transponder limited to receiving 2700 pulse pairs per second,    
+it will transmit 2700 pulse pairs per second!   
+if not saturated, it will make up the numbers with random pulse pairs := squitters.
+
+ac interogator not active all the time.   
+ac interrogator starts searching when it receives transmissions from the ground transponder, either replies to other aircraft or squitters.   
+ac interrogator not active = "auto stand-by mode"
+
+==> DME interrogations will not start until a signal is received from the ground transponer!
+
+### Echo Protection Circuits
+
+transponder repliese reflection from ground to ac -> time gates in ac receiver count up from zero range, i.e., only the first arriving reply is received.   
+ac interrogations being reflected on their way to the ground, if acted on by ground transponder would result in false DME range.
+
+principle: direct path interrogations must arrive first, and also the assumption that reflected pulses are likely to be weaker.   
+After ground station receives valid pulse pair, it block any further lower amplittude pulse pairse from being receive for a very short time, about 150 microseconds := "echo protection circuit".   
+Echo protection circuit - retriggerable blanking gate (RTBG).    
+== all reflected interrogations are excluded.
+
+### Accuracy
+
+ICAO requires accuracy of 0.25NM plus 1.25%, 95% of occasions, in slant range measurement for systems installed before Jan 1989.   
+Systems installed after that date must have a slant range error of less than 02.NM on 95% of occasions.   
+=> DME most accurate ground short range NAVAID.
+
+### Tactical Aids to Navigation TACAN
+
+TACAN := military beacons operating in UHF band to give range and bearing information to equipped mil ac.   
+UHF range of TACAN compatible with DME so that civilian DME users can also obtain range from a TACAN.
+
+### VOR/DME Association
+
+associated beacons are beacons with same ident.   
+VORs and DMEs to be associated, they must be either less than 100ft (30m) apart, if used as terminal aid, or less than 2000ft (600m) if used for other purposes.   
+
+assocaited TACANs and VORs are called VORTAC.
+
+associated beacons send 3-letter ident morse code every 10sec.    
+One comes from the DME, the next three from the VOR -> DME ident comes every 40 secs.   
+Pitch of DME ident is higher that VOR ident at 1350Hz.
+
+If beacons are not meeting critieria, i.e., not associated, they may be given similar but not identical idents.   
+A DME within 6NM of an enroute VOR might have the last letter of its ident changed to Z, for instance: VOR := LIP, DME := LIZ.
+
+### Frequency Pairing
+
+DME channels (UHF) have paired VHF frequencies.   
+Airborne equipment designed that channel is slected when VHF frequency is selected and the aircraft responds to the paired UHF DME interrogation.
+
+Associated VOR/DME will be frequency paired.   
+VOR and DME beacons that are not associated may still be frequency paired, if it is considered it would be useful.
+
+ILS and DME transmitters may also be frequency paired so that selectiong the HVF ILS localiser frequency give paired UHF glideslop AND also the paired DME reading distance to run.
+
+### Non-Standard Time Delays
+
+delay at ground transponder of less than 50 microseconds will cause aircraft DME to UNDER READ, as the ac will still apply a correction fo the full 50 micreoseconds.
+
+can be used, if single DME provides ranges to touchdown on two opposing runways.    
+transponder placed next to the runway, exacltly between the two thresholds and mde to underread by haft a runway length.
+
+A DME assocaited with an ILS in this way, will clearly only read correctly when on the approach, and so should only be sued inside the localiser coverage area up to 25.000ft.    
+If DME cannot be placed exactly between the two threholds, it is zeroed to the main instrument runway and the other runway will have a note on the approach plte such as CAUTION: DME reads 0.1 NM at threshold! 
+
+### Cockpit Equipment
+
+DME is turned bu its paired VHF frequency, either VOR or ILS.   
+Displays mechanical or electronic.
+
+mechanical display: OFF flag across the range display - not lcoked on, if the counters are moving throughout their range, or that the power is off, if they are not.   
+General Aviation ac tend ot use LED displays that do not have on OFF flag.
+
+Transport ac, the DME is usually displayed on the EFIS ND and possibly also on a mechanical standy instrument which combines 2 RMI needles with a double DME readout (check for fig!).
+
+### DEME Rande and DME Derived Groundspeed.
+
+DME indicates slant range to the beacon, i.e., not the plan range.   
+At long range, ~ distances greater than the aircraft height in thoughsed of feet in NM - the difference is negligible.
+
+Pythogoras' theorem!
+
+example: ac at 35.000ft is 18NM slant range. Find plan distance.
+
+6080ft = 1 NM
+35.000ft / 6080 = 5,7 NM
+
+$c^2 = a^2 + b^2$ <--> $b^2 = c^2 - a^2$
+b^2 = 18^2 - 5.7^2 = 324 - 33 = 291
+b = sqrt(291) ~ 17NM
 
 
+some DME receiver use rate of change of DME to indicator groundspeed.   
+These are only accurate flying to or from the beacon at some range, ideally at ranges greater than the aircraft height in thoughsands of feet.
+
+GS indicators are most accurate flying to or from the beacon at long range and low altitudes.
+
+### Symbology
+
+DME only - squear with point    
+TACAN or DME    
+VOR/DME or VORTAC    
+DME, VORTAC or TACAN
+DME or TACAN
+
+```{r}
+#| label: fig-dme-symbology
+
+knitr::include_graphics("./figures/radionav-DME-symbols.png")
+```
+
+### DME Fixing and DME Arcs
+
+DME range can be used as part of an instument procedure to keep ac at constant range from beacon : = DME arc
+
+DME arc can lead into an approach procedure and it can be used to join a hold.    
+When DME arc procedure is used to enter a hold, it may only followed by Sector 1 or Sector 3 join.
+
+### DME Fixing and DME ars
+
+2 DME arc can be used to provide a range/range fix, called rho/rho fix.   
+
+2 circular positions cut in 2 places (possible ambiguity)   
+Typically "false" intersection usually "far enough away",
+
+DME can be used with VOR to produce a range/bearing or rhot/theta fix.
+DME/DME fix 'best' due to accuracy, DME/VOR next, VOR/VOR fix.
 
 ## QUESTIONS
+
 c/f = 3 * 10^8 / 75MHz = 3 * 10^8 / 75 * 10^6 = 3/75 * 10^2 = 300/74 ~ 4
 
 c/lambda = 3 * 10^8 / 12cm = 3 * 10^8 / 12 * 10^-2 = 3/12 * 10^10 = 30/12 * 10^9 ~ 2.5 * 10^3 * 10^6 = 2500MHz
 
+
+DME slant range in Russia: height 1000m, slant range 1.5NM; distance to ground station    
+
+1652m = 1 NM      1000m = 1000/1652 = 0.6NM
+
+2.25 + 0.36 = 2.61  ==> 1.65 NM ~ 2600m
 
 
 range NDB    
