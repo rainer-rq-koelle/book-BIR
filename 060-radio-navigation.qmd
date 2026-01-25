@@ -1593,6 +1593,130 @@ Typically "false" intersection usually "far enough away",
 DME can be used with VOR to produce a range/bearing or rhot/theta fix.
 DME/DME fix 'best' due to accuracy, DME/VOR next, VOR/VOR fix.
 
+## Secondary Surveillance Radar SSR
+
+basic SSR - mode A and C    
+modern SSR - mode S; mode S also used by TCAS/ACAS
+
+mode C and S replies are automatic, basic mode A identification code is set by aircrew: squawk 1234
+
+contrary to DME, SSR ground station := interrogator, ac := transponder
+
+interrogation pulses on 1030MHz with time spacing recognised by aircraft.   
+ac transsponder longer train of pulses on 1090MHz
+
+### Sidelobes and Sidelobe Suppression
+
+ground transmission/interrogation: rotatin beam from phase array aerial => sidelobes next to main beam.   
+aircraft response is omnidirectional.
+
+to avoid sidelobe confustion, main interrogation suppresses sidelobe; main interrogation pulses in rotating beam but overlaying an omnidirectional pulse at an amplitude that is greaten than the sidelobes, but soncisrable less than the main beam.
+
+Mode A and C use 2 pulses for main beam, i.e. P1 and P3, omnidirectional pulse P2 ==> intergogation received from a sidelobe would have lower amplitude than the omnidirectional P2 ~ could be identified as sidelobe == ignored by aircraft transponder, only replying to an interrogation where P1/P3 pulses are significantly higher amplitude than the P2.
+
+### Pulse Spacing
+
+P2 sent 2 microseconds us after P1 for Mode A and C.    
+Sometimes called "control pulse".
+
+Mode S sends the control pulse in a different place. But the principle is the same.
+
+### Mode A and C
+
+interrogation - interval between pulses 1 and 3 at ground interrogation dictates the sort of question that is asked, or the mode.
+
+mode A  spacing 8 ys    civil and military identification/squawk
+mode c  spacing 21 ys   altitude reporting
+
+aircraft reply on 1090MHz is a stream of pulses 20,3ys long framed by 2 frame pulses.   
+Deteween the frame pulses, there is space for 12 additonal pulses := 12 bit code.    
+Pulse train ~ binary code in with 2^12 or 4096 possible number combinations can be sent.
+
+response to mode A interrogation will be the code sent by the ac/squawk.   
+mode C is pressure altitude - automatic - if selected.
+
+ac altitude taken from digitisers on theback of the altimeer or from the Air Data Computer.   
+It is independent from the altimeter subscale setting == always references 1013.25hPa (standard pressure) = pressure altitude transmitted in 12bit code in 100ft increments _/+50ft from actual ac altitude).
+
+### Mode C Accuracy
+
+ATCO FL -/+300ft of assigned level.   
+
+if deviation, ATCO may request altitude reporting to be de-selected, or if fails, to squeaw 0000 to indicate a system malfunction.
+
+some EUR states with variation from ICAO standard: errors to be less than 200ft.
+
+Most ground equipment adjust the received pressure altitude to a QNH based altitude for display on radar screen (!????!!!!)
+
+### SPI or Ident
+
+additional identification pulse can be transmitted 4.35ys after the reply pulse train which causes the return on the readar scree to bloom (for 25 seconds).    
+
+### Mode A/C errors
+
+ac may respond to 2 ground interrogations.  
+received replies may be for wrong station := **fruiting** ~ False Replies Unsynchronised to the Interrogaror Transmission FRUIT.    
+Fruting causes display errors in both range and bearing.
+
+If 2 ac are on same bearing from ground station and closer together than 1.7NM, they may produce overlapping replies to the ground interrogation := **garbling**.   
+E.g. formation ~ only one ac, other transponders on standby.
+
+Fruiting and garbling reduced with Mode S.
+
+### Cockpit Equipment
+
+ac transponder control unit
+
+selector: OFF, SBY, ON, ALT, TEST    
+IDENT button
+key for squawk 0-7
+
+ON - power on, system replies to mode A with selected code    
+ALT - power on system replies to mode A interrogation with selected code and mode C (altitude readout)   
+TEST - selftest.
+
+### SSR Mode S
+
+mode S overcomes deficiencies of mode A and C.
+
+mode S provides over 16mio ICAO 24bit aircraft addresses; addresses allocated by respective state authority
+
+mode S operates on principle that selective interrogations are sent to particular aircraft using specific ICAO aircraft addresses.    
+mode S transponders store and are able to transmit on request hundreds of aircraft parameters and have datalink capability (ground initiated comm B (GICB)).
+
+mode S operates on the same frequencies as mode A and C.   
+Interrogator/transmponder backwards compaticble, i.e., ground station can interrogate a mode A ac and mode S ac will still provide mode A and C response to old-style interrogations.
+
+mode S altitude reporting = can provide enhanced vertical tracking with 25ft increments
+
+mode S interrogators have specific identification codes which they include in their transmissions := station identifiers SI codes and there are 63 of them.   
+63 sufficient due to line-of-sight properties of UHF and unlikely to be 63 secondary stations in range of any one aircraft..
+
+mode S capable of up- and downlink; required for TCAS I or II.
+
+
+### Mode A/C/S All Call
+
+mode S all call interogation starts of looking like Mode A or C interogation, but has a thrid extra pulse P4 after P3.
+
+ac will switch to mode S, if it receives P4 with its aircraft address and call sign.
+
+any mode A/C transponder receiving the all-call witll reply to the interrogation as normal, not recognising the P4 pulse.
+
+once mode S transponder has been identified and its track established, it can be locked out to prevent it replying to any further all-call interrogations from stations with the same intrrogator code.    
+It will then still repond to all calls from new stations with differing interrrogator codes but only reply to selective interrogations from the "active" ground stations.    
+= reduce transmissions and possibility of interference.
+
+Selective interrogations use the 24bit aircraft address and are only released when the radar beam is poiting to whare the aircraft is expected to be in the sky.   
+Ac reply is Mode A code, the aircraft identification (call sign) and pressure altitude.
+
+### Mode A/C only All-Call
+
+an all-call can be sent to only mode A/C transponders by shortening the P4 pulse so that Mode S transponders to not reply.
+
+some other shit stuff on Mode S (all calls etc.)
+
+
 ## QUESTIONS
 
 c/f = 3 * 10^8 / 75MHz = 3 * 10^8 / 75 * 10^6 = 3/75 * 10^2 = 300/74 ~ 4
