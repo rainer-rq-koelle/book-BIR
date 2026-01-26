@@ -1547,7 +1547,7 @@ General Aviation ac tend ot use LED displays that do not have on OFF flag.
 
 Transport ac, the DME is usually displayed on the EFIS ND and possibly also on a mechanical standy instrument which combines 2 RMI needles with a double DME readout (check for fig!).
 
-### DEME Rande and DME Derived Groundspeed.
+### DME Range and DME Derived Groundspeed.
 
 DME indicates slant range to the beacon, i.e., not the plan range.   
 At long range, ~ distances greater than the aircraft height in thoughsed of feet in NM - the difference is negligible.
@@ -1722,6 +1722,253 @@ Ac reply is Mode A code, the aircraft identification (call sign) and pressure al
 an all-call can be sent to only mode A/C transponders by shortening the P4 pulse so that Mode S transponders to not reply.
 
 some other shit stuff on Mode S (all calls etc.)
+
+## Satellite Navigation
+
+GNSS Global Navigation Satellite System := "accurate" & world wide navigation system.
+
+* Navstar Global Poisioning System (GPS) ~ US DoD
+* Global Orbiting Navigation Satellite System (GLOSNASS) ~ Commonwealth of Independent States (ex Soviet Union)
+* Galileo ~ European Space Agency (ESA)
+* Bei Dou (several iterations) ~ China
+
+### GNSS segments
+
+— space segment ~ constellation of satellites;
+— control segment ~ master control station, ground antennas, and monitor stations, compute corrections of orbital parameters, and up/download data;
+— user segment ~ receivers (typically on board of aircraft).
+
+space segment ~ notional constellation := design minimum to make (GNS)system work.
+
+### NAVSTAR GPS
+
+notional constellation of 24 satellites orbiting earth in 6 near-circular orbital planes each at 55degrees to the equator.    
+Each plane has 4 satellites orbitting at 20.200km (10.900NM) once every 12 hours.    
+=> 5-8 satellites will always be in line of sight range of a receiver
+
+satellite ground tracks only go up to 55deg Notrh and South, but coverage is global due to their orbit height.
+
+GPS has more satellites than the nominal minimum.    
+Currently 31 => more than 4 satellites in each orbital plane and more than 5 satellites will be inevitably in view.
+
+### Frequencies
+
+GPS originally designed for US military = two frequencies in UHF.    
+US convention 'bands' (than clusters of frequencies) => "L"-band, 1575.42 MHz (L1) and 1227.6MHz (L2).   
+Control of the satellite is maintained by an uplink in the S-band.
+
+military system uses both frequencies ~ "precise" possitioning service (PPS) and transmits a code called precise (P) or PY code.
+
+system for civilian use is called standard positioning service (SPS) and designed to provide users with a deliberately less accurate positioing service than for military.   
+It is known as the coarse acquisition signal (C/A) and is transmitted on the higher band, i.e., L1 at 1575.42MHz.
+
+P code also transmitted on both frequencies.
+
+### Timing and Timing Control
+
+Timing of each satellite's transmission is controlled by four on board clocks.   
+The time signal transmitted by the satellite is picked up by the moitoring stations around the world during its orbit and checked against atomic clocks in Master Control Station in California. ~ control segment.
+
+Next to monitoring output and positions of the satellites, the control segment will upload corrections and database information to the satellites, and - if one stellite fails, mark it as 'unhealthy'.
+
+L1 C/A and P code, L2 P code only.
+
+### Principle of Operation
+
+satellites transmit unique satellite identifier and the time at whchich the signal was sent.   
+satellite identifier := long digital signal modulated on the satellite arrier wave using Binary Phase Shift Keying BSPK that looks like random noise, but is in fact a repeating pattern := "speudo random noise" (PRN) code
+
+receiving equipment uses its internal electronic clock to measure how long the message has been in transit -> converts time delay into distance from the satellite = sphere of range centred on satellite.
+
+ranges from 2 satellites ~ circular position line in 3 dimensions where the spheres intersect.   
+==> ranges from 3 satellites are needed even for a two dimensional fix and either separate altitude information or a fourth satellite is needed for a 3-demensional 3D fix.   
+As 5-8 satellites are usually inview - even with a notional constellation - a 3D fixing capability is normal.
+
+ranging can be described as "trilateration" which strictly speaks about 3 satellites; while in fact 4 satellites are needed to determine a position.
+
+### Pseudo Ranges
+
+satellite clocks are very accurate, howver, the clock in the receiver is not an atomic clock / only an electronic clock.   
+Use of time together with speed of light, even small timing errors lead to bid distance errors.   
+A timing error of a millonth of a second, equates to a range error of 0,162NM = NOT accurate!
+
+Thus, due to receiver clock inaccuracy, the initial calculated range from the satellite is invariably inaccurate := pseudo range.    
+receiver clock error called 'receiver clock bias'.
+
+Pseude ranges from several satellites calculated by a receiver with clock bias would produce a poorly defined fix.
+
+SOLUTION => aircraft receiver applies a small timing correction and looks to see if the fis is more precise = i.e., checks if the 3-D area of uncertainty is smaller
+-> corrections repeated until a near pin-point fix is achieved.    
+Iterative process ~ through a series of small (correction) steps.
+
+iterative timing correction process runs continuously to keep the fixing as accurate as possible.   
+Correction for receiver clock bias ensures that by the time a fix position is calculated, the receiver is completely synchronised to satellite time.
+
+aircraft receiver must be aware of satellite positions.   
+Expected positions are stored in receiver memory.    
+Initial loading of database and (regular) update.    
+These (and other data) is downloaded as a second part of the satellite signal called the NAV message.
+
+Note: receiver clock bias is handled/resolved by receiver!
+
+### NAV Message
+
+message sent in 25 30-second data frames ~ total of 12 1/2 minutes.   
+Individual data frames are used to "chunk" the data and therefore still useful, if the satellite is not inview for the whole 12 1/2 minutes.
+
+* **almanac** ~ database that coarsely defines expected positions of tall satellites at any particular time - updated periodically - vlaid up to 180 dyas
+* **ephemeris** ~ short term position information of the transmitting satellite ~ valid for 4 hours - used for fixing, detailed/precise position
+* **satellite clock correction** ~ correction needed tfor timing signal from the transmitting satellite
+* **UTC correction** ~ determines difference between GPS time and UTC; UTC has leap seconds applied from time to time - GPS does not! Delta currently 18 seconds.
+* **ionospheric model** ~ mathematical model of Ionoshere to allow compensating for single largest error of GPS with is the dealy to the signal as it passes through the ionosphere, based on 11 year solar cycle.
+* **satellite Heath Status** ~ identifies satellite as healthy (usable) or unhealthy (unusable).
+
+### WGS84
+
+Receiver uses ephemeris data to work out the positions of the tranmitting satellite in 3 axes relative to the centre of the earth.   
+The calculated fis is also initially expressed relative to these acex with an additonal parameter, i.e., time := :delta T.
+
+X,Y, Z, and delta T fix position is then referenced in the receiver to the WGS84 ellipsoid => $\rho$, $\lambda$, and altitude position before finally preseented as LAT, LON, and Height.
+
+CAUTION: old maps that have not been corrected to the WGS84 dataum = show positions several hundred meters out from GPS!
+
+### Velocity
+
+low end GPS reeivers comute velocity from the change in receiver position over time ~ accuracy in order of meters a second.    
+Sophisticated receivers use Doppler shift on the received signal, compute out the satellite velocity in 3 dimensions and are left with the receiver velocity to accuracy of centimeters a second.
+
+### Time to First Fix
+
+purpose of Almanac = when receiver is first turned on, it looks for satellites where it expects to find them according to the almanac,and based on the time and its last known position.    
+If receiver has been moved a long way simnce it was last used, it gets confused and has to search the sky to determine which satellites are overhead: This can take up to 4 or 5 minutes.    
+
+Once satellites are identified, the position is computed from the more accurate ephemeris data.    
+
+Time to first fix can be shortened by entering a position, time, and date to give the receiver a new starting datum and shorten the search for the satellites.
+
+### User Equivalent Tange Errors
+
+achieved accuracy of raw GPS signals varies around the world and with time, typically less than a meter on 95% of occasions for civilian user.   
+
+Several system errors are classified as User Qquivalent Range Errors (UERE):
+
+* ionospheric propagation delay ~ variations in ionospheric density and atmospheric conditions are the largest individual source of error. Satellites that are overhead have the least errors, and provide the most accurate ranges. Satellites close to horizon produce the most inaccurate ranges.     
+Delay in transmission caused by ionosphere and atmosphere is proportional to $\frac{1}{f^2}$, f being the carrier wave of the signal.   
+Military receivers operate on 2 frequencies can compare the delays on their two frequencies to compute a near total correction for the ionospheric error.    
+Civilian receiver on 1 frequence L1 cannot make use of this method and relies on mathematical model of the inosphere which is downloaded from sattellites as part of the data message.   
+Reduces error by about 50% and was one of the ways by which the US DOF made the SPS inherently less accurate when it was initially released.
+
+2nd frequencies are now being provided along side the P codes on L2 allowing suitably equipped multi=frequency civil receivers the same level of accuracy as the military. These are called L2C.
+
+* satellite orbital variation ~ orbital variations or ephemeris error occur when the satellite is not exactly where it says it is. caused by solar winds, changes in Earth's gravitational field, or gravitaional effects of the sun and moon.    
+Control of position is so stringgent that errors ccaused by ephemeris error account for -/+0.5m.    
+Howerver, spotting and correcting ephemeris error can take up to 3 hours.
+
+* instrument/receiver error ~ caused by electical moise, computational errors, or errors arising when matching the pseude random signals. Erros in range from this source are small for specialist receivers, but in less sophisticated mobile phone equipment facurracy can drop from 1m to 5m.
+
+* multipath signals ~ signals reflected from terrain can be confused with direct signals and degrade accuracy by several meters. The error arising from multipath signals can be reduced by aerial desigin and software fixes, but may still be present when operating at low level mountainous terrain.
+
+* satellite clock error ~ timing errors at the receiver willlead to initial fixing errors, but receiver clock bia can be corrected out. Errors at the satellite are less likely, but more serious as these can be only corrected as the satellites pass over the master control station.
+
+### Satellit Geometry Error DOP
+
+strictly speaking not a GPS error, but error based on principle of using position lines to obtain a fix.    
+Optimum geometry for 4 satellites is to have 3 separated by 120 degrees in azimut and elevated a little above the horizon with a 4th directly overhead.    
+If satellites are close together, the angle of cut between the range lines withl be shallow and the fix is liable to be less accurate.
+
+GPS fixing dilution of precision DOP or geometric dilution of precision GDOP.   
+Position errors up to 70m can occur.
+
+DOP comprises 4 components:
+
+* PDOP - position dilution of precision in 3D - sometimes called spherical DOP
+* HDOP ~ horizontal dilotion of precision (latitude and longitude)
+* VDOP ~ vertical dilution of precision - height
+* TDOP ~ time dilution of precision ~ time.
+
+While each of these DOP terms can be individually computed, the are not indiependent of each other.   
+A high TDOP causes receiver clock errors that result in increased position errors.
+
+DOP can be expressed numerically from 1...20.   
+1 := ideal; 20 := poor.
+
+Computed value of UERE combined with a predicted dOP allows for an estimation of position accuracy.
+
+Geometric dilution of precision is caused by "shallow cut" of the position spheres.   
+Low DOP factor is good (ideal 1), high factor is bad (worst 20)
+
+### Coverage Problems
+
+GPS signals "weak", satellites only powered by batteris and solar panels -> weaker when received (travelled).   
+GPS easy to jam - either accidentially or deliberately transmitting on the same frequency.   
+accidental: transmissions are sometimes harmonics from similar frequencies such as UHF television broadcasts.
+
+Areas of no GPS coverage may be referred to as "worm holes" and wehre they can be anticiapted these are notified by NOTAM.
+
+Deliberate and un-notified GPS jamming can occur near airfields when truck drivers park up for the night and switch on short range GPS jamming devisec to stope their employers to track them (?!?)
+
+
+### GLONASS
+
+space segment - the GLONASS system is similar in operation and design to GPS. Fully operational 24 satellites orbit the Earth in 3 orbital planes, with 8 satellites in each orbit equally displaced by 45 degrees of latitude.
+
+The satellites in each plane are each 15 degrees out of sync with those in the next plane.    
+This ensures that only 1 satellite corsses the equator at any one time, not three together.   
+The near circular orbits are inclined at an angle of 64,8 degrees to the quator with the satellites flying at a height of approx 19.100kn, lower than GPS.   
+As the orbit is lower, the orbital time is 11hours 15 minutes.
+
+GLOSNASS satellites orbit faster and slightly lower than GPS.
+
+### GLOSNASS System Status
+
+24 operational satellites => at least 5 satellites should be in view from any position on earth.   
+
+ALthough many non-aviation and some aviation civilian receivers can use both GPS and GLONASS together, which increases both the number of satellites and frequencies available.   
+
+EASA: GLONASS may not be used in aviation applications.
+
+SYSTEM OPERATION
+
+user segment calculates range from satellites ~ GPS.   
+Reference system different: GLONASS positioninformation is calculated using the PZ-90 earth-centred earth-fixed reference system which basis its position on the average position of the geopgraphic north pole between 1900 and 1995.
+
+### GALILEO
+
+ESA equivalent to GPS/Navstar.   
+EASA approved use of Galileo together with GPS in multi-constellation GNSS aviation receivers.
+
+Galileo works ~ GPS.   
+Notional constallation is 27 satellites in 3 active spares.   
+
+3 orbital planes, inclined at an angle of 56 degrees to the equator.   
+The altituge of the orbit is 23.222km, higher than GPS and therefore the orbital period is longer than GPS at 14hours.
+
+Galileo satellites orbit slower and slightly higher than GPS.
+
+FREQUWNCIES: Galieleo use the same frequencies and carry an identifier at part of the navigation message.   
+Satellite navigation signals are transmitted in 3 band in UHF, on of which also contains the GPS L1 frequency.
+
+SYSTEM OPERATION - ranging principle ~ GPS and GLOSNASS.   
+
+3 service levels
+
+* open service OS ~ accurace comparable to GPS C/A signal
+* coomercial service CS - available for fee - uses additional 3rd frequency band E6 to provide higher level of accuracy than OS fixing to 1m
+* public regulated service PRS; accuracy comparable to OS but more securely for use by security forces and ATC
+
+Galileo satellites are also able to pick up and report signals from search and rescou beavons operating on 406MHz.
+
+RECEIVERS AND AERIALS = user segment
+
+multi-channel receivers = modern aviation receivers are multi-channel, i.e., theey are able to listen simultaneously to a number of satellite transimissions. up to 200-400 channes, can use all satellites in view from multiple constellations.
+
+mask angles = stellite not considered visible until it is a bit avobe the horizon, typically 5-15 degress. At low altitude satellites fuffer from ionospheric and atmosheric delay.    
+Angle called mask angle and is specific to each receiver.
+
+END OF P19/20.
+
+
+
 
 
 ## QUESTIONS
