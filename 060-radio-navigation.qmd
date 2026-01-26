@@ -1426,6 +1426,13 @@ range determined based on time delay between sending and receiving the pulses mi
 
 ac := interrogator, ground := transponder (as it replies)
 
+```{r}
+#| label: fig-dme-principle
+
+knitr::include_graphics("./figures/radionav-DME-principle.png")
+```
+
+
 ### practical challenges
 
 distinguish between i.) own and other ac pulses, and ii.) between retransmitted pulses from the transponder and its own interogator transmission reflected from ground.
