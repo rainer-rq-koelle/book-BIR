@@ -2037,8 +2037,107 @@ The input from other systems can identify when the GPS position is in error := a
 Note: neither component of ABAS, neither RAIM nor AAIM, improves satellite navigation accuracy.   
 They only provide INTEGRITY MONITORING!
 
-p3/12 done.
+### Ground Based Augmentation Systems GBAS
 
+principle: satellite signal errors detected and relayed from ground station to enable raw GPS data to be corrected to a higher level of accuracy.
+
+GBAS corrects for errors induced by satellite clocks, ephermeris and ionospheric propagation.   
+GABS cannot correct for receiver errors, multi-path signals, or some atmosphereic propagation errors.
+
+GPS position correction, precision approach path details and integrity information is delivered to the user over a VHF data link operating in the VOR range from 108 to 118MHz.   
+The VHF data broadcast is referred to as VDB and limited to a range of about 20NM.
+
+GBAS ground system provides 2 services:     
++ information for guidance in the terminal area, called GBAS positioning service
++ information for 3D guidance in the final approach segment (FAS) by transmitting the FAS data block := precision approach service. 
+
+```{r}
+#| label: fig-GBAS-principle
+
+knitr::include_graphics("./figures/radionav-GBAS-principle.jpg")
+```
+
+VDB broadcast to provide position update on VHF to ac receiver
+
+ICAO standards provide the possibility to interconnect GBAS stations to form a network broadcasting large-scale differential corrections.   
+These systems may be referred to as ground regional augmentation systems (GRAS).    
+
+US (old name: local area augmentation systems LAAS)
+
+### GLS precision approach service
+
+GLS approach := precision approach service, GBAS Landing System
+
+provides deviation guidance in 3D for final approach segments down to as low as 200ft.   
+Designed to be interpreted just like an ILS = no additional training requirements.   
+The only difference is that the VDB frequency is selected by a 5-digit channel number rather than by a frequency.
+
+minimum software designed GLS plan coverage is 15NM from the landing threshold out to 35 degrees to either side of centerline.   
+Further extension out to 20NM within 10 degrees to either side of centerline.   
+Outside this area, the FAS data of GBAS is not to be used.
+
+### Satellite Based Augmentation Systems SBAS
+
+GBAS provides a high level of accuracy over a small area.    
+SBAS apply principle over a wide(r) area using satellites to transmit correction data to aircraft.
+
+4 systems in operation (same principle)    
++ WAAS - wide area augmentation system, US
++ MSAS - multi-functional satellite augmentation system, Japan
++ GAGAN - GPS aided geo augmented Navigation system, India 
++ EGNOS - European Geostationary Navigation Overlay System, Western Europe and Mediterranean.
+
+SBAS uses same architecture as GPS: 3 segments: ground segment, space segment, and a user segment consisting of airborne SBAS receivers.
+
+multiple reference stations allow for error correction    
+-> master stations computes corrections   
+-> ground station transmits corrections to geostationary satellite    
+-> satellite provides position update to airborne receivers
+
+master station collects data, determines the corrections for each satellite being tracked, organises the data and formats a data broadcast.    
+ground earth station to uplink broadcast to space segment.
+
+benefit of SBAS: wide area covered by the reference stations and the large number of reference stations alls the master station to calculate separate errors for each satellite's clock and ephemeris errors as well as errors due to inonosphere.    
+GBAS on provides a single error vector for the local area.
+
+SBAS does not need to be located within 20NM of a reference stations.
+Some level of accuracy based on predicted errors rather than detected errors, is available over the sea (with no reference stations in the sea).
+
+SBAS space segment := geostationary satellite system ~ allows for transmission of the message over a wide area.    
+US: WAAS, Europe EGNOS -> INMARSAT.   
+Japanese use MTSAT1 and MTSAT2
+
+satellite receives the data and tranmits it to all users modulated on GPS L1 frequency. The message consists of:    
++ integrity message indicating the status of all GPS satellites in a use/don-t use format
++ wide area dGPS error corrections
++ inospheric delay model
++ ephemeris and clock data for the geostationary satellite.
+
+The satellite information also includes information that can be used to determine a range from the geostationary satellite increasing the fix accuracy even further.
+
+EGNOS uses 3 geostationary INMARSAT satellites broadcasting GPS look alike signals.   
+EGNOS was destined to provide an accuracy to 1 to 2m horizontally and 3 to 5 m vertically.   
+It is currently delivering horizontal accuracy of around 0.7m and vertical accuracy of around 1.1m.   
+
+SBAS improves integrity and safety. EGNOS alerts users within 6 seconds, if a GPS malfunction occurs; which EASA compare to up to 3hrs using GPS alone.   
+3 hours figure carefully disregards RAIM, which is close to instnt in its integrity monitoring, but not, of course, controlled by the State.
+
+?????
+
+### SBAS Coverage and Service Area
+
+SBAS coverage = SBAS broadcast reception area = geostationary satellite footprint.   
+SBAS service area is a smaller area within the coverage area.     
+Within the service area other service level areas exist where a particular service level is available.
+
+### SBAS Approaches
+
+SBAS allow for the implementation of 3D Type A and Type B approaches ~ approach procedure with vertical guidance APV.
+
+A,B old ICAO Annex 6 classification ~ type A := decision height of not less than 250ft, type B DH not less than 200ft.
+
+Example of SBAS approach plate.   
+T or Y shaped in plan view with 2 or 3 Initial Approach Fixes IATs allowing arrivals from different directions.
 
 
 ## QUESTIONS
