@@ -2140,6 +2140,147 @@ Example of SBAS approach plate.
 T or Y shaped in plan view with 2 or 3 Initial Approach Fixes IATs allowing arrivals from different directions.
 
 
+## Performance Based Navigation (PBN) Concepts
+
+past: reliance on ground-based NAVAIDs (e.g. VOR/DME)
+
+area navigation based on performance requirements for aircraft operating along an ATS route, on an instrument approach procedure or in a designated airspace.
+
+drawbacks ~  requirements based on reliance on ground-based NAVAIDs    
++ back-up procedure in case of failure
++ maintenance and inspection of ground installations (and associated power supply, security/fences) even in remote areas
++ operations can be affected by buildings and road development
++ change of location/replacement requires development (and approval) of completely new procedure
+
+on-going effort to create new standards for implementation and use based on new navigation systems and capabilities = complexity for authorities, airports, air traffic services, and operators.
+
+taking advantage of new technology and definition of airspace infrastructure by points in space, and then define the accuracy with which ac must be able to follow the new infrastructure := Performance-based Navigation PBN.
+
+### Area Navigation
+
+PBN takes advantage of GNSS, Inertial Reference System IRS, and systems integration developments supporting higher accuracy and flexibility of navigation.
+
+modern ac can accurately navigage from one defined ppint in space to another using a mix of external and on-board systems, free from the constraints of fixed points on the ground := area navigation.    
+A benefit of area navigation is that approach and departure routings can be complex routes, impossible to define using conventional aids.     
+-> terrain avoidance, noise abatement/sensitive areas
+
+airspace defined under performance-based navigation rules, the sources and systems used to navigate are NOT important.    
+NAVIGATIONAL ACCURACY MATTERS!    
+Operators can therefore select systems suited to their operational and financial needs, while ensuring that they meet the required navigation standards.
+
+### PBN Concept
+
+ICAO defines minimum navigation performance standards => ac manufacturers and operators must comply will all aspects of these standards for ac to use the airspace.
+
+PBN performance standard for a given procedure or airspace area will depend on the communication, surveillance (e.g. radar), and air traffic management environment.   
+E.g. a remote area with widely spaced routes would need a different standard from the airspace around a busy airport.
+
+### Components of PBN
+
+* *NAVAID infrastructure** ~ ground or space-based NAVAIDs. Ground-based include DME and VOR; space-based includes GNSS. Note: NDBs excluded from PBN!
+* *navigation specification** ~ details about the performance required of RNAV systems in terms of 3 key areas: continuity, integrity, and accuracy. -> may impact flight crew procedures, NAVAID sensor requirements. Specified as Required Navigation Performance RNP or Aera Navigation RNAV.
+* **navigation application** ~ applicaiton of a Navigation Specification and associated NAVAI infrastructure to airspace. RNP application is supported by an RNP specification, RNAV application by an RNAV specification.
+
+### NAVAID INFRASTRUCTURE
+
+RNAV and RNP applications use aeronautical data to define ground based NAVAIDs, runways, gates, waypoints, routes, and procedures to follow.
+
+Quality control processes are placed at every stage, and a vlidation process is used to check that the published procedures is accurate.
+
+Data integrity procedures include confirmation of the Minimum Obstacle Clearance MOC.
+
+### Navigation Specifications
+
+PBN airspace navigation standards specified as RNP X or RNAV X.
+
+RNP specifications include a requirement for on-board performance monitoring and alerting.
+
+RNAV specifications do not include any requirement of on-board monitoring and alerting.
+
+X designates the lateral and longitudinal navigation accuracy in Nautical Miles.   
+Expected to be achieved 95% of the time by the population of ac operating within the airspace, route, or procedure.
+
+to meet RNAV4 (X = 4) navigation specification, the Total System Error must be less than 4NM (X NM) for 95% of the time.
+
+### Linear and Angular Performance Requirements
+
+RNAV5 or RNP5 ~ lateral and longitudinal accuracy of 5NM for 95% of the time.   
+i.e., linear accuracy.
+
+In the approach phase PBN requirements can include not only the traditional linear accuracy requirement, but also an angular accuracy requirement for the approach.
+
+"self-explanatory"!
+
+### RNAV or RNP System Performance Requirements
+
++ **accuracy** ~ difference between true and indicated position ~ "conformance" of true position with the required position
++ **integrity** ~ measure of trust in the correctness of the information supplied by the whole system. Integrity includes the ability of the system to provide timely and valid alerts to the user.
++ **continuity** ~ capability of the system to perform its function without unscheduled interruptions during the intended operation.
+
+### Accuracy
+
+3 component errors:
+
+* path definition error PDE - inability of the system to accurately specify the desired path
+* navigation system error NSE - inability to dermine actual position (e.g. sensor failure) or the limits of accuracy of GNSS, IRS, or DME.
+* flight technical error FTE - error relating to execution of flight along a defined path.
+
+```{r}
+#| label: fig-PBN-accuracy-errors
+
+knitr::include_graphics("./figures/radionav-PBN-accuracy-errors.png")
+```
+
+TSE = PDE + FTE + NSE.    
+PBN navigation specification refer to total system error TSE.    
+Note: pilots mostly involved in FTE 
+
+### Integirty and Continuity
+
+old-style: beacon-to-beacon ~ sensor specific ~ navigation, separatoin, route spaceing etc dependent on accuracy of the raw NAV data (dependent on VOR, DME or NDB accuracy).
+
+PBN -> RNAV system that INTEGRATES (multiple) raw navigation data to provide positioning and navigation solution.    
+FMS position is calculated from multiple systems, e.g. IRS, GPS, DME, including some consistency checks <--> no longer sensor specific.
+
+Multiplicity of data sources improve navigation accuracy and continuity, as navigation is NOT dependent on a SINGLE data source, and includes an element of integrity control in case of a data source giving inconsistend position <- AAIM!
+
+Navigation specification indicates whether a SINGLE or DUAL installation is necessary.
+Multiple systems (e.g. GNSS, ADIRU) Failure of any one or two has little effect on navigation accuracy.   
+Multiple FMS to receive and compute position and navigation data.    
+Pilot input via 2 MFDs ...
+-- databus
+
+-> redundancy
+
+RNP require system performance monitoring and alerting functions := INTEGRITY CONTROL.    
+most modern ac, integrated into the dual FMS, where FMC computes position as well as postion accuracy.
+
+### Functionality
+
+sometimes referred to as 4th PBN system requirement.    
+there exists some PBN functionality requirements and some specific requirements for certain levels of RNAV and RNP.
+
+### GENERAL REQUIREMENTS 
+
+official ARINC database format for a route or a section of a route such as a SID or STAR requeires the rtoute to be assembled (coded) in a series of segments.   
+Each segment usually consists of a type of flight path, e.g. GC track or a direct track, and arrival fix or specific altitude.   
+These end-of-segment "path terminators" are said to define a specific type of terminination of the prvious flight path.    
+common to refer to the whole of the route segment, comprising both the path and the terminator as ARINC 424 path/terminator or ARINC424 path-terminator.
+
+The transition from one route segment ot the other can require the aircraft to either fly directly over the path-terminating fix or to turn short, a fly-by turn.
+
+For fly-by turn, the FMS uses ac speed, bank angle limit, wind, and angle of track change to calculate a smooth trtansition formonoe leg to the next.     
+Turn varies from ac to ac due to parameters, change in speed or wind, turn inititation point and turn area.   
+==> not used when routes are close by!
+
+FLY OVER TURN, FMC flies to the rurn waypoint and then rurns to hte next waypoint on the route.   
+ac overshoots centerline of the route ==> space must be allowed on the outside of the turn which increases the airspace needed.
+
+Fly over transitions are most commonly used when the direction of flight hardly changes at all, but the procedure requires the ac to actually pass over the fix. E.g. SID or STAR or the Final Approach Fix FAG on an approach.
+
+OFFSET FLIGHT PATHS
+p16/22.
+
 ## QUESTIONS
 
 c/f = 3 * 10^8 / 75MHz = 3 * 10^8 / 75 * 10^6 = 3/75 * 10^2 = 300/74 ~ 4
