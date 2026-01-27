@@ -1979,6 +1979,66 @@ receiver aerials are positioned on the top of the fuselage ßto give a clear vie
 ~ best/regular view to sky/satellites.
 
 
+## Satellite Augmentation Systems
+
+purpose:    
+* improve accuracy ~ differential GPS -> towards less than a meter; now cm (autoland capability)
+* better integrity monitoring
+
+3 categories    
+* airborne based augmentation systems (ABAS) ~ receiver or other aircraft systems provide integrity monitoring
+* ground based augmenttation systems (GBAS) ~ ground station directly relay integrity data to the aircraft
+* satellite based augmentation systems (SBAS) ~ integrity data is relayed through a satellite link.
+
+GBAS and SBAS provide also a theoretical increase in fixing accuracy, differential GPS.
+
+
+### ABAS
+
+satellites monitored from ground => delay before realising malfunction.  
+
+2 methods:    
+* RAIM
+* AAIM
+
+
+1. receiver autonomous integrity monitoring (RAIM) -> basic RAIM uses one additional satellite above the 4 required ones for a 3D fix, i.e., 5.    
+At a repeating time interval data from one of the four satellites is replaced by data from the spare/additional satellite.   
+If the calculated position changes => either satellite was taken out of the fixing calculation or the new one was brought in is in error.   
+Continuous sampling allows faulty satellites to be identified and removed from the position calculation.
+
+If removal results in no longer available satellites to provide a RAIM function := RAIM with Fault Detection (FD).    
+To continue integrity monitoring function, there must be an additional spare satellite, Fault Detection and Exclusion (FDE).
+
+        unmonitored  RAIM with FD  RAIM with FDE
+2D fix    3               4           5
+3D fix    4               5           6
+
+RAIM operation may be described as 'using redundant range measurement to support FD and FDE operation'.
+
+NOTE - EXAM     
+FD means able to detect one of the satellites is faulty, but unable to identify the faulty one!    
+FDE ability to detect and identify and isolate the faulty satellite.
+
+2. Aircraft Autonomous Integrity Monitoring (AAIM)
+
+improve integrity within the ac by combining positioning with more conventional navigation systems to create a multi-sensor navigation system, including use of other inputs such as barometric altitude and time.    
+Satellite fixing can be combined with either INS/IRS, or with radio fixing, or both.
+
+Satellite fixing with IRS is an ideal match of two quite different systems.   
+IRS is not as instantaneously accurate as satellite navigation, but its position only drifts, it does not fail.   
+SATNAV is very accurate, but when it goes wrong, it loses its position completely.
+
+RADIONAV where ac automatically tunes VORs and DMEs through the fms to obtain the best cross-cut, can be very accurate, often to less than 400m, but it is not quite as good as GPS. But more reliable.
+
+Modern FMS use all availabel data to form a view of where the aircraft is.     
+The input from other systems can identify when the GPS position is in error := aircraft autonomous integrity monitoring AAIM.
+
+Note: neither component of ABAS, neither RAIM nor AAIM, improves satellite navigation accuracy.   
+They only provide INTEGRITY MONITORING!
+
+p3/12 done.
+
 
 
 ## QUESTIONS
