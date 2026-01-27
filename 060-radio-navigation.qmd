@@ -1746,7 +1746,7 @@ notional constellation of 24 satellites orbiting earth in 6 near-circular orbita
 Each plane has 4 satellites orbitting at 20.200km (10.900NM) once every 12 hours.    
 => 5-8 satellites will always be in line of sight range of a receiver
 
-satellite ground tracks only go up to 55deg Notrh and South, but coverage is global due to their orbit height.
+satellite ground tracks only go up to 55deg North and South, but coverage is global due to their orbit height.
 
 GPS has more satellites than the nominal minimum.    
 Currently 31 => more than 4 satellites in each orbital plane and more than 5 satellites will be inevitably in view.
@@ -1776,7 +1776,11 @@ L1 C/A and P code, L2 P code only.
 ### Principle of Operation
 
 satellites transmit unique satellite identifier and the time at whchich the signal was sent.   
-satellite identifier := long digital signal modulated on the satellite arrier wave using Binary Phase Shift Keying BSPK that looks like random noise, but is in fact a repeating pattern := "speudo random noise" (PRN) code
+satellite identifier := long digital signal modulated on the satellite carrier wave using Binary Phase Shift Keying BSPK that looks like random noise, but is in fact a repeating pattern := "pseudo random noise" (PRN) code
+
+PRN comprises    
+* unique satellite identification
+* time signal (used by receiver to calculate distance from satellite -> rangeß)
 
 receiving equipment uses its internal electronic clock to measure how long the message has been in transit -> converts time delay into distance from the satellite = sphere of range centred on satellite.
 
@@ -1788,7 +1792,7 @@ ranging can be described as "trilateration" which strictly speaks about 3 satell
 
 ### Pseudo Ranges
 
-satellite clocks are very accurate, howver, the clock in the receiver is not an atomic clock / only an electronic clock.   
+satellite clocks are very accurate, however, the clock in the receiver is not an atomic clock / only an electronic clock.   
 Use of time together with speed of light, even small timing errors lead to bid distance errors.   
 A timing error of a millonth of a second, equates to a range error of 0,162NM = NOT accurate!
 
@@ -1846,7 +1850,7 @@ Once satellites are identified, the position is computed from the more accurate 
 
 Time to first fix can be shortened by entering a position, time, and date to give the receiver a new starting datum and shorten the search for the satellites.
 
-### User Equivalent Tange Errors
+### User Equivalent Range Errors
 
 achieved accuracy of raw GPS signals varies around the world and with time, typically less than a meter on 95% of occasions for civilian user.   
 
@@ -1910,11 +1914,12 @@ Deliberate and un-notified GPS jamming can occur near airfields when truck drive
 
 ### GLONASS
 
-space segment - the GLONASS system is similar in operation and design to GPS. Fully operational 24 satellites orbit the Earth in 3 orbital planes, with 8 satellites in each orbit equally displaced by 45 degrees of latitude.
+space segment - the GLONASS system is similar in operation and design to GPS. 
+Fully operational 24 satellites orbit the Earth in 3 orbital planes, with 8 satellites in each orbit equally displaced by 45 degrees of latitude.
 
 The satellites in each plane are each 15 degrees out of sync with those in the next plane.    
-This ensures that only 1 satellite corsses the equator at any one time, not three together.   
-The near circular orbits are inclined at an angle of 64,8 degrees to the quator with the satellites flying at a height of approx 19.100kn, lower than GPS.   
+This ensures that only 1 satellite crosses the equator at any one time, not three together.   
+The near circular orbits are inclined at an angle of 64,8 degrees to the equator with the satellites flying at a height of approx 19.100kn, lower than GPS.   
 As the orbit is lower, the orbital time is 11hours 15 minutes.
 
 GLOSNASS satellites orbit faster and slightly lower than GPS.
@@ -1938,14 +1943,14 @@ ESA equivalent to GPS/Navstar.
 EASA approved use of Galileo together with GPS in multi-constellation GNSS aviation receivers.
 
 Galileo works ~ GPS.   
-Notional constallation is 27 satellites in 3 active spares.   
+Notional constellation is 27 satellites in 3 active spares.   
 
 3 orbital planes, inclined at an angle of 56 degrees to the equator.   
-The altituge of the orbit is 23.222km, higher than GPS and therefore the orbital period is longer than GPS at 14hours.
+The altitude of the orbit is 23.222km, higher than GPS and therefore the orbital period is longer than GPS at 14hours.
 
 Galileo satellites orbit slower and slightly higher than GPS.
 
-FREQUWNCIES: Galieleo use the same frequencies and carry an identifier at part of the navigation message.   
+FREQUWNCIES: Galileo use the same frequencies and carry an identifier at part of the navigation message.   
 Satellite navigation signals are transmitted in 3 band in UHF, on of which also contains the GPS L1 frequency.
 
 SYSTEM OPERATION - ranging principle ~ GPS and GLOSNASS.   
@@ -1960,13 +1965,18 @@ Galileo satellites are also able to pick up and report signals from search and r
 
 RECEIVERS AND AERIALS = user segment
 
-multi-channel receivers = modern aviation receivers are multi-channel, i.e., theey are able to listen simultaneously to a number of satellite transimissions. up to 200-400 channes, can use all satellites in view from multiple constellations.
+multi-channel receivers = modern aviation receivers are multi-channel, i.e., they are able to listen simultaneously to a number of satellite transmissions. up to 200-400 channels, can use all satellites in view from multiple constellations.
 
-mask angles = stellite not considered visible until it is a bit avobe the horizon, typically 5-15 degress. At low altitude satellites fuffer from ionospheric and atmosheric delay.    
+mask angles = satellite not considered visible until it is above the horizon, typically 5-15 degrees. At low altitude satellites suffer from ionospheric and atmospheric delay.    
 Angle called mask angle and is specific to each receiver.
 
-END OF P19/20.
+older receivers ~ small mask angle, built before there were fewer satellites ~ able to pick up poor signals.    
+modern receivers ~ higher mask angles, 10-30 degrees above the horizon, and many allow to adjust the mask angle by the user.
 
+### Aerial Location
+
+receiver aerials are positioned on the top of the fuselage ßto give a clear view of the sky, and generally near the centre of gravity.    
+~ best/regular view to sky/satellites.
 
 
 
