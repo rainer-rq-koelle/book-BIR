@@ -2274,12 +2274,85 @@ Turn varies from ac to ac due to parameters, change in speed or wind, turn initi
 ==> not used when routes are close by!
 
 FLY OVER TURN, FMC flies to the rurn waypoint and then rurns to hte next waypoint on the route.   
-ac overshoots centerline of the route ==> space must be allowed on the outside of the turn which increases the airspace needed.
+ac overshoots centerline of the route ==> space must be allowed on the outside of the turn which increases the airspace neede ~ nominal turn boundary.
 
 Fly over transitions are most commonly used when the direction of flight hardly changes at all, but the procedure requires the ac to actually pass over the fix. E.g. SID or STAR or the Final Approach Fix FAG on an approach.
 
 OFFSET FLIGHT PATHS
-p16/22.
+
+increased accuracy of navigation -> increased risk of mid-air collision in case of mistakenly cleared on same segment altitude.
+
+remote areas - with ATC systems or communication difficulties exist - routinely and deliberately fly 1NM right of airway centreline.   
+Procedure also applied on oceanic routes, either 1 or 2 NM right of required track.   
+"Strategic Lateral Offset Procedures SLOP"
+
+PBN airspace uses this functionality. Aircrew select offsets may be used "strategically" for the whole of a route or sections of a route, or    
+"tactically" for a short time (e.g. weather avoidance).
+
+Offsets continue past waypoints, paralleling each leg at the specified distance from the defined path/track.    
+Offsets cannot continue beyond initial approach fixes, or any route discontinuity.
+
+modern ac have capability to offset track in 0.1NM increments := micro SLOP.
+
+### Specific Requirements
+
+specific requirement := "additional functionality"     
+most important specific requirements:    
++ curved flight path, RF leg and the FRT
+
+RADIUS-TO-FIX LEG (RF leg) ~ requirement for a specific curved path in a terminal or approach procedures (low-level procedure); defined as a radius, an arc length, and the fix at which it ends.
+
+Example: RF-leg starts at waypoint EA123 and ends at waypoint EA125. Procedure defined as radius and arc distance; formally, start point not part of the "definition" (arc starts passing this point).
+
+NOTE: important to follow flight director guidance and the speed constraints associated with an RF procedures.    
+If not, the correct path (and obstacle clearance) over ground will not be followed.
+
+FIXED RADIUS TRANSITION ~ transition from route leg to another leg/segment other than simple fly-by waypoint; used in en-route airspace.
+
+transition with a specified radius.    
+example: 3 waypoints - while middle waypoint is not overflown (and strictly not flown-by!); procedure defines transition from first leg, 1st to middle point, to 2nd leg, midpoint to endpoint, with a certain radius.   
+This defines the "calculated" centerpoint for the radius.
+
+### Additonal Functionality
+
+check for example table showing RNP and RNAV specification requiring additional functionality.
+
+* RF-leg or FRT are required - one or the other / not both. RF functionality is required for RNP1 and RNP APCH terminal areas, FRT functionality required in RNP2 and RNP4 ~ enroute areas/airspace.
+
+* NOTE: "HIGH" functionality specification, e.g. RNP1, requires functionality compliance, however, ac might not meet requirements for "LOWER" specifications, e.g. RNP2 or RNP4.
+
+terminology:    
+- TOAC := time of arrival control   
+- Baro VNAV ~ system using barometric altitude information to compute vertical guidance
+
+### Basic FUnctional Requirements of an Aircraft RNAV System
+
+aircraft RNAV system must have at a minimum:     
+* continuous indication of lateral deviation
+* distance/bearing to active waypoint
+* groundspeed or time to active waypoint
+* navigation data storage, and
+* failure indication.
+
+CONTINUOUS INDICATION OF LATERAL DEVIATION ~ could be a simple display on the RNAV system itself, or the FMC, or by having a Navigation Display ND showing a map of the intended route, a depiction of the aircraft position, and ground facilities of interest (e.g. NAVAIDS, airports).    
+most modern ac equipped with all!
+
+DISPLAY OF DISTANCE AND BEARING TO ACTIVE WAYPOINT    
+example ND display    
+top right: active waypoint SIPLO, bearing 185, distance 3.4 NM
+
+groundspeed GS or time to active waypoint: example groundspeed top-left 300 & TAX 466kts, also wind information 320/20    
+ETA actve waypoint: 11:50 top right under distance
+
+DATA STORAGE - system must be able to store data.    
+This data may be pilot entered, does not mean an aeronautical database must be used.
+
+FAILURE INDICATIONS ~ e.g. UNABLE RNP shown at top / centre of ND.
+
+cross track error shows aircraft deviation from Defined Path.   
+e.g. becuase of being vectored by ATC or deviation to avoid weather. <> NOT A FAILURE/NAVIGATION ERROR indication.
+
+
 
 ## QUESTIONS
 
