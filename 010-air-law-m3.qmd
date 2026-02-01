@@ -2,3 +2,280 @@
 title: "Air Law - Module 3"
 ---
 
+## Flight Rules
+
+flights can be conducted under visual flight rules (VFR) or instrument flight rules (IFR)
+
+VFR permitted in certain types of airspace, with 1 exception, only under visual meteorological conditions (VMC).    
+IFR flights can be conducted in any meteorological condition (and any airspace).
+
+### Use of Air Traffic Services
+
+FLIGHT PLANS ~ operational flight plan required for all flights.    
+ATS flight plan should be filed to permit ALERTING SERVICES to be activated, if required.    
+
+ATC clearances are issued solely for expediting and separating air traffic and are based on known traffic conditions.    
+If an ATC clearance is not suitable, the pilot-in-command may request and - if practicalbel - obtain an amended clearance.
+
+Issuance of an air traffic control clearance constitutes authority for an aircraft to proceed only in so far as known air traffic in concerned.    
+ATC clearances do not consitute authority to voilate any applicable regulations for promoting safety or for any other purpose.    
+Clearances DO NOT relieve a pilot-in-command of any responsibility whatsoever in connection with a possible violation of applicable rules and regulations.
+
+ATCU units shall issue ATC clearances as necessary to prevent collisiotns and to expedited and maintain an orderly flow of air traffic.    
+
+If flight plan  specifies that initial portion of a flight will be uncontrolled, and that the subsequent portion of the flight will be subhect to ATC, the aircraft shall be advised to obtain ist clearance from the ATC unit in whose area controlled flight will be commenced.    
+If flight plan specifies that first portion of a flight will be subject to ATC and tha the subsequent portion will be uncontrolled, the aircraft shall normally be cleared to the point at which the controlled flight terminates.
+
+When requested and agreed by pilot of other aircraft and so authorised by appropriatee ATS authority, ATC may clear a controlled flight, including departing and arriving flights, operating in airspace class D and E in visual meteorological conditions during the hours of daylight to fly subject to maintaining own separatio to one other aircraft and remain inv VMC.    
+When a controlled flight is so cleared the following shall apply:    
++ clearance shall be for a specified portion of the flight at of below 3050m/10.000ft during climb or descent and subject to further restrictions as and when prescribed on the basis of regional air navigation agreements;
++ if there is a possibility that flught under VMC may become impracticable, an IFR flight shall be provided with alternative instructions to be complied with in the event that flight in VMC cannot be maintained for the term of the clearance;
++ the pilot of an IFR flight, on observing that conditions are deteriorating and considering that VMC will become impossible, shall inform ATC before entering IMC and shall proceed in accordance with the alternative instructions given.
+
+Provision of vertical or horizontal separation aby an ATCunit is not applicable in tespect of any specified portion of a flight cleared subject to maintianing own separation and remaining in VMC.    
+If is for the flight so cleared to ensure, for the durationof the clearance, that it is not operated in such proximity to other flights as to create a collision hazard.
+
+VFR flight must maintain in VMC at all times.    
+Clearance to a VFR flight to fly subject to maintaining own separation and remaining in VMC has no other object that to signify that - for the duratio of the clearance - separation from other aircraft by ATC is not provided.
+
+Objective of ATC do not include prevention of collision with terrain.    
+The procedures prescribed do not relieve pilots of their responsibility to ensure that any clearrrances issued by ATC are safe in that respect.
+
+### Change from VFR to IFR
+
+ac operate in accordance with VFR wishes to change to compliance with IFR shall - if a flight plas was sub mitted - communicate the necessary changes to be effected to its current flight plan OR    
+submit a flight plan to appropriate air traffic service unit and obtain a clearance prior to proceeding IFR when in controlled airspace.
+
+### Change from IFR to VFR
+
+ac operating under IFR encouters VMC shall not cancle its IFR flight unless it is anticipated and intended that the flight will be continued for a reasonable perriod of time in uniterrupted VMC.
+
+Change from IFR to VFR flight shall only acceptable when a message initiated by the pilot-in-command containing the specific expressing CANCELLING MY IFR FLIGHT together with the changes, if any, to be made to the current flight plan is received by an ATS unit.    
+No invitation to change from IFR to VFR shall be made by ATS either directly or by inference.
+
+### Instrument Flight Rules
+
+#### Applicable to all IFR flights
+
+* aircraft equipment ~ ac shall be equipped with suitable insturments and with navigation equipment appropriate to the route to be flown and in accordance with applicable air operations legislation
+* minimum levels ~ except for take-off or landing, or when specifically authorised by the approprate authority, an IFR flight shall be flown at a alevel which is not below the MINIMUM FLIGHT ALTITUDE established by the State whose territory is overflown, or where no such minimum flight altitude has been established:   
+  + over high terrain or mountainous areas, at a level which is at least 600m/200ft above the highest obstacle located within 8km of the estimates position of the aircraft;
+  + elsewhere than as specified above at a level which is at least 300m/1000ft above the highest obstablce located withini 8km of the estimated aircraft position.
+
+Note: "estimated position" ~ accounts for navigational accuracy on the respective route segment, NAVAIDS available on the ground and in the aircraft.
+
+#### TIME
+
+time reference under IFR: UTC   
+expressed in 24hours and minutes (possibly seconds) beginning at midnight.    
+
+clocks to be within 30 seconds of UTC.    
+
+time check myst be obtained, normally from an ATS unit, prior to operating a controlled flight and at such other times during the flight as may be necessary.
+
+time in datalink communication: accurate to -/+ 1 second of UTC
+
+#### AIR TRAFFIC CONTROLL CLEARANCES
+
+ATC clearance must be obtained prior to operating a controlled flight, or a portion of a flight as a controlled flight.    
+Clearance is requested by submitting a flight plan to an ATC unit.
+
+Flight plan may cover only part of a flight, as necessary, to desribe that portionof the flight or those maneuvers which are subject to ATC.   
+A clearance may cover only part of a current flight plan, as indicated in a clearance limit or by reference to specific maneuvers such as taxying, landing or taking off.
+
+Whenever ac has requested a clearance involving priority, a report expaining the reasons for the priority should be made, but only if requested by ATC.
+
+Europe:
+
+* clearance expires at a certain time
+* take-off not before <<time>>
+* unable to clear at flight levels requested
+* join airways at a particular time and place and not before <<time>>
+* ATC reclearance in flight.
+
+If prior to departure it is anticipated that depending on fuel endurance and subject to re-clearance in flight, as decision may be taken to proceed to a revised destination aerodrome, the appropriate ATC unit shall be notified  by the instertion in the flight plan of information concerning the revised route (where known) and the revised destination.
+
+The purpose of this is to facilitate a re-clearance to a revised destination, normally beyond the filed destination aerodrome, a procedure known as the reduced contingency fuel RCF or decision point procedure.
+
+#### Taxy Clearance
+
+ac operated on a controlled aerodreom shall not taxy on the maneuvering area without clearance from the aerodrome control tower and shall comply with any instructions given by that unit.
+
+#### Adherence to Flight Plan
+
+ac should adhere to FPL route, speeds and altitudes unless a change has been requested and authorised.   
+In emergency, an ac can deviate from the FPL, if the circumstances require it but the appropriate ATS unit must be told of the emergency and the deviation as soon as possible.
+
+Unless otherwise authorised or directed by the appropriate ATC unit, controlled flights shall - in so far practicable
+
++ when on established ATS routes, operate along the defined centre line of that route; or
++ when on any other route, operate directly between the vaigation facilities and/or points defining that route.
++ on a route defined by 2 VORS, switch navigation guidance from the one behind to the one in front as neas as possible to any defined change-over point.
+
+CHANGE-OVER POINTS should be established on ATS route segments defined by reference to VORs where this will assist accurate navigation along route segments.    
+The estbalishment of change over points should be limited to reoute segments of 110km/60NM or more, except where the complexity of the ATS routes, the density of the navigational aids, or other technical and operational reasons warrant the establishment of change-over points on shorter route segments.
+
+### Intended FPL Change
+
+FPL changes must include:    
+
+* change of cruising level ~ ac identification, requested new cruising level and speed at this level, revised time estimates (when applicable) at subsequent flight information region boundaries;
+* change of route, destination unchanged ~ ac identification, flight rules, description of new route of flight including related flight plan data begining with the position from which requested change of route is to commence; revised time estimates; any other pertinent information.
+* change of route AND destination changed ~ ac identification, flights rules, description of revised route of flight to revised destination aerodrome including related flight plan data, beginning with postion from which requested change of route is to commence; revised time estimates; alternate aerodromes ; and any other pertinent information.
+
+### Weather Deterioration Below VMC
+
+VFR flight operated as controlled flight AND unable to maintain VMC on its current flight plan shall    
+
+* request an amended clearance enabling the aircraft to continue in VMC to destination or to an alternative aerodrome, or to leave the airspace within which an ATC clearance is required;
+* if no clearance can be obtained, continue to operatie in VMC and notify the appropriate ATC unit of the action being taken either to leave the airspace concerned or to land at the nearest suitable aerodrome;
+* if operated within a control zone, requrest authorisation to operate as a special VFR flight; or
+* request clearance to operate in accordance with IFR.
+
+### Position Reports - ICAO
+
+unless exempted, a controlled flight must make position reports at each designated compulsory reporting point OR when requested.
+
+position reports:     
++ time passing the designated reporting point
++ flight level
++ any extra information specificed with is often the ETA of the next reporting point and the name of the next reporting point beyond that.
++ speed control restrictions should be included; reported as IAS below FL250, above as Mach number
+
+controlled flights providing postion reports via datalink need only provide voice position reports when requested
+
+if specified in PANS-ATM, SSR mode C transmission of pressure altitude satisfy the requirement for level information in position reports.
+
+### Position Reports - Europe
+
+In EU region, postion reports should contain aircraft identification, position, time, and flight level, unless otherwise specified.
+
+areas with reliable radio communication, pilot and ATS unit and where SSR labels and Mode C information are permanently displayed to ATCO, the initial call need only contain the aircraft identification and level, subsequent position reports, if required, need only include identification, postion, and time.
+
+### Termination of Control
+
+A controlled flight shall - except when landing at a controlled aerodroeome - advise the appropriate ATC unit as soon as it ceases to be subject to Air Traffic Controll services.
+
+### Communications
+
+ac operated as controlled flight must maintain continuous air-ground voice communication watch on the appropriate communication channel of, and establish 2-way communication as necessary with, the approprate Air Traffic Control unit excpet as may be prescribed by the appropriate ATS Authority in respect of ac forming part of aerodrome traffic at a controlled aerodrome.
+
+SELCAL or similar automatic signalling devices satisfy the requirement to maintain air-ground voice communication watch.
+
+If using controller-pilot data link communication CPDLC, the requirement for air-ground communication watch remains in effect after CPDLC has been established (to ensure voice for fallback/emergency).
+
+EUROPE   ~ all ac operating above FL195 in EUR region must be quipped with 8.33kHz channel spacing.    
+ac operationg in uncontrolled airspace may be required to maintain a listening watch on specified frequencies.
+
+### Communication Failure
+
+ac fails to maintain or etablish contact with aeronautical station, try another frequency.     
+if atttempt fails, attempt contact other ac appropriate freqs or 121.5 MHz, including the air-to-air frequency 123,45MHz.
+
+if this fails:     
+- SQUAWK 7600 and if ADSB equipped - select COMMUNICATION FAILURE
+_ transmit its messages twince on the designated frequency(s) preceded by the phrase "TRANSMITTING BLING" and - if necessary - include the addressee(s) for which the message is intended; and
+- intention of the pilot
+
+subsequent actions should be:     
+* continue in VMC
+* land at the nearest suitable aerodrome; keep watch for visual signals
+* report the arrival by the most expeditious means to ATC.
+
+if IMC or when conditions are such that it is not feasible to complete the flight in accordance with VFR, then
+
+IMC or IFR - NO RADAR SERVICE    
+unless otherwise prescribed on the basis of regional air navigation agreement, in airspace where radar is not used in the provision of ATC:    
+
+* maintain the last assigned speed and level OR minimum flight altitude if higher
+* for a period of 20 minutes following the ac's failure to report its position over a complusory reporting point, AND
+* thereafter adjust flight level and speed in accordance with filed flight plan
+
+IMC or IFR AND RADAR SERVICE AVAILABLE    
+in airspace where radar is used in ATC:     
+
+* maintain the last assigned speed and level, or the minimum safe altitude if higher
+* for a period of 7 minutes; 7 minutes start from
+  + point when the transponder is set to 7600, 
+  + the last assigned level is reached, or
+  + the time the aircraft failed to make the last compulsory position report, whichever is LATER
+* when being radar vectored or having been directed by ATC to proceed offset without a specified limit, rejoin the current flight plan in the most direct manner possible and no later than the next significant point.
+
+### EU Differences
+
+IFR flights 
+
+* maintain the last assigned speed and level for 20 minutes after squawking 7600, if failure occurs outside controlled airspace;
+* then proceed according to filed flight plan;
+* if not limit points specified, rejoin the flight plan route at the next significant point.
+
+Where PIC of an IFR flight encounters VMC and elects to continue to fly in VMC, the pilot will set Mode A code 7601 in EU airspace
+
+IMC or IFR - subsequent actions
+
+* follow the flight plan to destination and enter the hold at the designated NAVAID; commence the approach as close as possible to the last acknoweledged expected approach time EAT. if not EAT has been received and acknowledged then commenct tha approach as close as possible to flight plan ETA;
+* complete a normal instrument approach;
+* if possible land within 30 minutes of the latest EAT or flight ETA, whichever is later.
+
+### Action by ATC
+
+loss of 2-way communication, ATS unit will use all available means to contact the aircraft including 121.5MHz, relays and SELCAL.
+
+ATCO should determine whether or not the ac's receiver is functioning by instructing the ac on the channel by making a specified maneuver or by instructin the ac tsquakw IDENT or make SSR code and/or SDSB transmission changes.
+
+Note: ac to squwak 7600     
+ADSB equipped ac may transmit appropriate ADSB emergency and/or urgency mode
+
+ATCO to repeat on any other available channel on which it is believed that the ac might be listening.   
+
+In both cases any maneuvering instructions shall be such that the ac would regain its current cleared track after having complied with the instructions received.
+
+When established that ac radio receiver is functioning, continued control can be effected using SSR code/ADSB transmission changes or IDENT to obtain acknowledgement of clearances.
+
+### Complete Communication Failure
+
+When ac experiencing complete communication failure and operates within area and flgith levels wehre an ATS surveillance service is applied, NORMAL SEPARATION rules may continue to be used.
+
+If ac experiencing communication failure is NOT IDENTIFIED, separation between identified ac and all unidentified ac observed along the expected route of the ac with failure, until such time as it is known, or can safely be assumed, that the ac with failure has passed through the airspace concerned, has landed, or has proceeded elsewhere.    
+ATCO will increase separation to an acceptable (judgemental) level. (?!?!?!?)
+
+### IFR flight within Controlled Airspace
+
+IFR flights shall be subject to ATC when operated in controlled airspace.
+
+cruising levels ~ IFR in controlled airspace must be operated at appropriate FLD.   
+in cruise climb, it must operate either between 2 IFR cruising levels or above an IFR flight level.    
+for flights above FL410, the correlation beteen track direction and crusing level can be overriden by an ATC clearance or by the national AIP.
+
+### IFR Flights Outside Controlled Airspace
+
+cruising levels - IFR operating in level cruising flight outside of controlled airspace shall be flown at a cruising level appropriate to it track.   
+This provision does not preclude the use of cruise climb techniques by ac in supersonic flight.
+
+above FL410, other cruising levels may be flown, if authorised.
+
+communications - IFR flight operating outside controlled airspace but within or into areas, or along routes, designated by the appropriate ATS Authority shall maintain an air-ground voice communication watch on the approprate communication channel and establish 2-way communication, as necessary, with the air traffic service unity providing Flight Information Service.
+
+position reports - IFR flight operationg outside controlled airspace and required by the appropriates ATS Authority
+
+* submit FPL
+* maintain air-gorund voice communication watch on the appro channen and establish 2 way communication, as necessary with the air traffic service ... FIS AND MAKE POSITION REPROTS as if it was a controlled flight.
+
+ac electing to use air traffic advisory srevice whilest operation IFR within specified advisory airspace are also expected to make position reports, ecept the flight plan and changes thereto are not subjected to clearances and that 2-way communication will be maintained with the unit providing the air traffic advisory service.
+
+### EMERGENCY DESCENT
+
+ATC 
+
++ broadcast by means of appropriate radio aides, or if not possible, request the appropriate commuincation stations immediately to bradcast an emergency message
+
+OTHER AC    
+
+it is expected that ac receiving such broadcast will clear the specified areas and stand by on the appropriate radio frequency for further clearances from the ATC unit
+
+subsequent action by ATC
+
+after emergency broadcast has been made, the ACC, Approach Unit, or aerodrome control tower concerned shall forward further clearances to all ac involved as to additional procedures to be followed during and subsequent to the emergency descent.   
+THe ATS unit concerned shall additonally inform any other ATS units and control sectors which may be affected.
+
+
