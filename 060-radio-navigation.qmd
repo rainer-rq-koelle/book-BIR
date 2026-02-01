@@ -2352,7 +2352,300 @@ FAILURE INDICATIONS ~ e.g. UNABLE RNP shown at top / centre of ND.
 cross track error shows aircraft deviation from Defined Path.   
 e.g. becuase of being vectored by ATC or deviation to avoid weather. <> NOT A FAILURE/NAVIGATION ERROR indication.
 
+```
+check out: https://www.airheadatpl.com/blog/from-ils-to-gnss-how-modern-air-navigation-works
+```
 
+## PBN Operations
+
+### Navigation Specification Levels
+
+Authorities set navigation specifications considering airspace and navigation infrastructure.   
+
+==> table nav specs ~ flight phase ~ additional functionalities
+vs RNAV10 ...RNAV1, RNP4 ... RNP1, advanced RNP, RNP APCH, RNP AR APCH, RNP 0.3
+
+RNAV specifications are all " legacy" specifications.
+
+* oceanic airspace: RNAV10, RNP4 or RNP2 (supporting closer spacing of routes)
+* enroute and arrival phase of flight: RNAV5    
+  RNAV2 enroute continental, arrival and departure phase
+  RNAV1 ditto, and approach phase with excludminimuing of final approach.
+* RNP1 in terminal and approach phases except final approach (requires greater accuracy for obstacle clearance)
+* RNP APCH variable accuracy requirement: 0.3NM on final approach and 1NM in other phases of approach
+* RNP AR APCH c.f. RNP APCH, specific operational approval is required for higher accuracy/phases -> AR approval required
+* RNP0.3 primarily helicopter operations (all phases, except remote/oceanic and final approach)
+* RNAV1, RNP1, and RNP0.3 may be used in enroute phases of low level IFR helicopters flights
+* advanced RNP (A-RNP) will be used in place of RNAV5, RNAV2, RNAV1, RNP2, RNP1, and RNP APCH. A-RNP covers all flight phases. 
+
+```{r}
+#| label: fig-RNAV-RNP-vs-flight-phases
+
+knitr::include_graphics("./figures/radionav-RNAV-RNP-flightphase.png")
+```
+
+
+
+### Developments in PBN
+
+conventional routes (fix-to-fix, mostly NAVAIDS)   
+PBN in and continual (further) development -> ambiguity, naming/terminology adaption and confusion 
+
+RNP requires on board performance monitoring (navigation accuracy, system state/failure) and alerting    (RNPeeeb make beep/alert)
+RNAV does NOT                  (RNAV does not cough)
+
+RNAV refers (often) to names used in early development of PBN.   
+Chart changes/updates -> slow remedial of "legacy" names/terms.
+
+RNP terminology is "current". 
+
+conventional routes - limited design flexibility    
+RNAV - waypoints ~ increased airspace efficiency (still waypoint-linear-to-waypoint)     
+RNP - waypoints and paths ~ optimised use of airspace, narrow obstacle clearance, seamless vertical path, curved paths
+
+ICAO PBN manual drives naming consistency (e.g. terminal RNAV, P-RNAV --> RNVA1, RNAV2).
+Driven also by technology advances ~ PNB accuracy.
+
+### Increased Airspace Capacity
+
+problem: airspace capacity ~ growth of flight/demand ~ fixed airspace/airports
+
+minimum route spacing dependent on - inter alia - ac navigation performance.  
+ensures separation / prevents mid-air collisions between ac navigating adjacent routes or procedures.
+
+PBN ~ confidence in navigational accuracy -> specific flight sectors (e.g. curved approaches) support better use of airspace in comparison to conventional sensor specific routings (or earlier RNAV routings/procedures).
+
+practical example: RNAV5 -> RNAV1 -> A-RNP and continuous reduction in minimum separation.   
+benefits of fixed radius turns FRTs enabling same route separation on turning segments (and across different ac types).
+
+reduced route separation ~ air traffic route planning. example: before 1 route, now 2 routes for terrain clearance.
+
+benefits: increase in capacity, reduction of (operating) costs (including ground installations), reduction of pollution due to shorter flight (more direct) paths and avoiding holding/spacing maneuvers.
+
+### Approval of Operator, Equipment, and Procedures
+
+to maintain safety margins -> ac using routes and procedures with reduced route separation must navigate accurately.    
+=> detailed examination of equipment and procedures.
+
+equipment -> airworthiness approval of ac.    
+Authorities check that all area navigation equipment installed in the airraft is "of a type and design appropriate to its intended function, and that the installation functions properly under all foreseeable operating conditions".
+
+operator's procedures (particularly training) -> subject to approval.    
+Operator must ensure compliance with     
+CAT.OP.MPA.126 -> continued airworthiness of the area navigation system for PBN operations    
+ORO.GEN.110(d) -> ac are equiped and crew qualified as required for the area and tuype of operation.    
+==> Operator must establish what requirements apply to the route, procedures, and airspace as a factor in planning their operation.
+
+pilots and ATCOs must be aware of the on-board RNAV or RNP system capabilities in order to determine whether the performance of the system is appropriate for the airspace requirements.    
+=> pilots must have RNP endoresement on their instrument rating
+
+EASA only requires specific approval of some PBN procedures, e.g. RNP AR APCH and RNP0.3.
+
+### Controlling TSE
+
+excessive path definition error PDE prevented by checks on navigation data, including checks on total flight plan distance for a flight with short distances between waypoints.   
+in remote areas: aircrew to check of direcetoin and distance between each waypoint.  
+In practice: PDE constrained through database integrity and functional requirements on the defined path, and is considered to be gegligible.
+
+Flight Technical Error FTE is pilot or autopilot error in following the route indicated by the FMC. Can be managed by onboard systems.   
+E.g. indication of distance the aircraft is from the diresired path or an alert to the crew when the aircraft deviates by a set distance from it.    
+crew procedures ~ cross-checks and/or mandatory use of autopilot in some airspaces.
+
+### Estimated Position Error
+
+RNP operations require on-board performance monitoring and alerting systems (PNbeeP).    
+Prediction/estimation: Kalman filter to estimate the most probable position using inputs from multiple sensors taking into account their known errors.    
+Part of this calculation is an estimate of the total navigation error, Estimated Position Error EPE.   
+EPE is shown on the FMS or NA as ACTUAL or ANP.   (CHECK FOR AN IMAGE)
+:= system assessment of Navigation System Error NSE.    
+If the FMS considers that ENP may become greater than RNP and alert is generated, i.e., prominent message displayed on the ND.   
+
+If navigation capability is degraded for any reason, resulting in PBN capability not being maintained, the flight crew must inform ATC.
+
+ABNORMAL and CONTINGENCY procedures set for the airspace in quiestion are to then to be followed.    
+This can be as simple as radar monitoring by ATC, or it may involve changes of flight level and/or routing.
+
+### CHECKING AIRAC CYCLE
+
+aeronautical data is key to all PBN operations    
+==> accuracy, resolution, and integrity must be safeguarded.    
+==> stringent standards and procedures at every stage of production, including upload/installation in the ac
+
+Navigation data is pulished under set of rules: AIRAC Aeronautical Information Regulation and Control.   
+==> 28 cycle for publication and validity
+==> publishing cycel ensures that air operators have the data 7 days before it becomes valid ~ allows for loading into ac before validity commences.
+
+flight crew has to CHECK that aeronautical database(s) is/are VALID for the current AIRAC cycle during pre-flight preparation.   
+
+If database is due to expire during flight, a manual check is made of the procedures being used after the expire.   
+If there are any changes to NAVAIDS to be used, then the database cannot be used to fly the procedure in question.
+
+
+## Specific RNAV and RNP Specification
+
+### RNP/RNAV10
+
+RNP10/RNAV10 - oceanic and remote airspace ~ large route spacing (e.g. 60NM)
+NOTE: misnomer - RNP10 not requiring performance monitoring and alerting RNPeeb, thus should be called RNAV10.
+
+RNP10/RNAV10 does not require any ground-based NAVAID infra (as developed for oceanic/remote airspace).
+
+RNP10/RNAV10 requires that ac operating in remote or oceanic areas have at least two independent Long-Range Navigation Systems (LRNSs) with integrity such that the probablity of the system giving the incorrect information is acceptable low.    
+The LRNSs can comprise the Inertial Navigation System INS, Inertial Reference System IRS, or Global Navigation Satellite System (GNSSs) or any combination of these.
+
+RNAV10 en-route updating ~ if only INS or IRS is used, the accuracy of navigation degrades over time.   
+For this reason such aircraft are "time-limited" and may only operate  in RNP10 airspace up to 6.2hours after the aircraft navigation system is switched to NAV mode.    
+==> in RNP10 airspace that spans more than 6.2 hours, air crew must update the aircraft position using ground-based NAVAIDS, enroute, in order to extend this time.   
+The length of the extension depends on the type of update used.   
+For example, automatic update using DME/DME allows 5.9 hours from time of update.
+
+As this is a low accuracy, legacy specification, manual waypoint entry is allowed.
+RNAV10 specification allows for the oceanic tracks to be 50NM apart.
+
+### RNAV5
+
+RNAV 5 allows operation in enroute continental areas by ac with surprisingly basic navigation equipment.   
+AC must have an RNAV system using one or more VOR/DME, DME/DME, INS or IRS, or GNSS.
+
+no requirement for dual RNAV systems => alternative means of navigation myst be available -> ground based NAVAID infrastructure is essential in RNAV5 airspace, although gaps in coverage are permitted.
+
+given limited functionality required, spacing at turns in routes must be increased.  
+More an authority/approval problem than a pilot issue.
+
+navigation database NOT required under RNAV5 => manual entry of data such as waypoints is permitted.   
+To support aircrew with gross error-checking, fix data is published for selected waypoints on aeronautical charts for RNAV5 airspace.
+
+### RNAV1, RNAV2, RNP1, RNP2
+
+RNPeeb, RNAV does not required on-board performance monitoring and alerting system.  Apart from this, accuracy requirements between RNAV2, RNAV1, RNP1, and RNP2 are basically THE SAME.
+
+aircrew to use SID or STAR under these navigation specifications, if they can retrieve it from an on-board navigation database by name and verify it as matching the charted route.
+
+Route can be modified through the insertion (from the database) or deletion of specific waypoints, in response to ATCO clearances.    
+However, manual entry or creation of new waypoints in the database by manual entry of latitude and longitude, or place/bearing/distance, is NOT PERMITTED.
+
+Once activated, and in response to clearances from ATC, the aircrew may delete waypoints or insert new waypoints, but only waypoints already in the database.
+
+### RNP APCH
+
+GNSS primary navigation system to support RNP APCH procedures, although missed approah procedures (e.g. checking altitude at a specified point on approach).
+
+Pilots can only use an approach that can be retrieved by name form an on-board navigation database, and it is verified to match the charted route.   
+Crew must also be able to view BUT NOT EDIT the details of the waypoints and legs making up the approach to be flown.
+
+RNP APCH may be lateral only LNAV, which is a non-precision approach, or lateral and vertical, which fall into the new category "approach with vertical guidance".
+
+```{r}
+#| label: fig-RNP-APCH
+
+knitr::include_graphics("./figures/radionav-RNP-APCH.png")
+```
+
+### RNP APCH LNAV Approach
+
+LNAV approaches are constructed in the FMS when pilot slects the approach from a database by name.   
+FMS uses the end point (known as the "anchor" point) located on the extended runway centerline, and a suitable distance from the runway threshold for a landing to be made, based on the Minimum Descent Altitude MDA.    
+It then constructs a lateral path using the path terminators specified for the approach, and displays the approach procedure for the pilots.   
+As it is purely lateral, this is known as a 2D operation.
+
+altitude information for points on the approach, and the ac may also display information regarding the point at which the ac will reach the MDA.   
+BUT, the FMS does not construct a glidepath fixed in space.   
+Thus, vertical guidance is not part of the approach.
+
+On approach plate, the vertical information is grey area ("box") bordered red.   
+
+Vertical guidance given by the ac systems will be based on rate of descent plotted against position and groundspeed, just as may be displayed when flying a NDB or VOR/DEM approach in some aircraft.    
+STRICTLY speaking, NO GLIDEPATH ==> MDA is used which will be higher than the Decision ALtitude DA or an LNAV/VNAV approach to the same runway.
+
+### RNP APCH - APV Approaches
+
+RNP approaches with vertical guidance := APV approach
+
+vertical guidance => decision to land made closer to ground (because of better vertical guidance) == use of Decision ALtitude DA (rather than Minimum Descent Altitude MDA).    
+==> point where altitude is reached is "predictable", repeatable, and on the correct descent path == no level flight to a missed approach point would be appropriate.
+
+APV approaches can be of 2 types distinguished by the vertical guidance provision:  
++ lateral guidance is always GNSS
+
+Vertical guidnace     
++ barometric data (APV Baro, Baro VNAV, or LNAV/VNAV); or
++ geometric path created using GNSS and SBAS for the region of operation, e.g. APV SBAS or LPV
+
+These approaches include a virtual glidepath, and comparison of ac vertical position with that virtual glidepath. == 3D operations
+
+APV Baro Approaches, vertical guidance VNAV and may include RNAV or RNAV GNSS to indicate lateral part of the approach.
+
+approval of ac to operate APV approaches includes assessment of TNAV an barometric equipment fitted, crew training and operational procedure.    
+Vertical guidance from any other source invalidates the use of VNAV minima.    
+E.g. where air data units are integrated with FMS, the loss of the air data sources cannot be substituted with backup barometric data unless these were certified for this use.
+
+approach path is constructed in the FMS, using a descent path angle given in the database as apart of the approach doding, and taking wind and pressure altitude into consideration.    
+The ac indicates the ac position relative to the lateral and vertical profiles of the approach in an almost identifcal way to that of an ILS.   
+Some ac can provide flight director or autopilot modes to follow theses approaches in the same way as they do an ILS.
+
+#### Air Temperature Correction
+
+some ac can correct for air temperature - NOT A REQUIREMENT for certification.   
+However, temperature cannot be ignored.  
+Temp below ISA, altimeter increasingly OVERREAD. -> low temperatures, ac lower than indicated!!!!
+
+to ensure obstacle clearance, VNAV procedures have a minimum OAT, below which the procedures is invalid for ac that do not have the capability to compensate for temperature.
+
+in analogy, if air temperature is very high -> resulting approach path, once altimeter UNDERREADS is accounted for, could be to steep to fly safely and predicably.   
+==> where portable: maximum temperature for the procedure is published for uncompensated ac.    
+Most likely at high elevations combined with high air temperatures.   
+E.g. Denver Colorado, runway 35R: VNAV approach.
+
+guidance is based on barometric references, altimeter setting discipline is crucial to conduct safe VNAV approach.   
+Unlike ILS, where the glidepath is fixed to a point on the ground, the VNAV approach path is based on a point in the air on the approach to the runway.
+
+Note: many operator use radio altimeter to crosscheck the barometric setting of the approach
+
+### APV SBAS Approaches
+
+for approaches with great precision requirement, the small errors inherent in GNSS can be a problem.   
+vertical guidance to low altitudes differential GPS is required.
+
+APC approaches using SBAS can be also known as Localiser Performance with Vetical Guidance LPV approaches.
+
+pilots fly geometric path in space to a Decision ALtitude DA similar to an ILS Cat 1.    
+DA typically just over 200ft above ruwnay threshold.   
+wind and pressure altitude are not used in the construction of LPV approaches in the FMS, because the path is geometric. constructed backwards froma  point which is a set distance from the ruwnay threshold, on the centerline at DA, using the descent path angle specificed for the approach.   
+What results in a "virtual" ILS.   
+Just like a real ILS, incorrect barometric settings would not a ffect the LPV gliegpath as it is fixed relative to the ground.
+
++> navigation database needs additonal information on the design of the appraoch to ensure a predictable, repeatable path.   
+This data is knows as the Final Approach Segment FAS data block.   
+In order to use LPV minima, the FAS data block must be used to create the approach.
+
+Indications presented to the pilot are practically identical to those of an ILS, including the size of deviations displayed.   
+This aids pilot training and reduces pilot workload.   
+e.g. a 50ft deviation form the glidepath 5NM from the runway is a small deviation, while at DA, close to the runway, 50ft is a large deviation.
+
+
+### Further Developments
+
+RNP AR APCH -> taking advantage of Track to Fix TF and Radius to FIx RF legs.   
+-> lower minima (TF legs and RNP0.15), and curved approaches (RF legs).
+
+AR := operation approach REQUIRED.   
+This includes ac meeting functionality and performance requireements, crew training, and verification of database integrity and operational procedure.
+
+ADVANCED RNP (A-RNP) -> logial development and rationalisation of PBN taking advantage of new functional elements made available by technological progress as well as simplifying the structure of airspace by reducing the number of differnt rule sets over time.
+
+anticipated: A-RNP will replace most/all other PBN navigation specifications.   
+Dependent on equipment replacement with ac retirement of retrofit.   
+Key feature of A-RNP is a variable navigation accuracy requirement based on flight phase.
+
+A-RNP makes us of functionality such as    
++ closer route spacing particularly in the enroute phase and on turn in routings.
++ curved approaches both for terrain and envirionmental reasons;
++ vertical windows to seggregate arrival and departure flows;   
++ lingitudinal navigation such as Time of Arrival Control (TOAC) to enable metering of traffic into terminal airspace. This can reduce or eliminate holding.;
++ tactical parallel offset as an alternative to radar vectoring.
+
+ICAO: Operator approaved for A-RNP will be automatically approved for RNPV5, RNPAV2, RNAV1, RNP2, RNP1, and RNP APCH.   
+Note: ICAO concession -- EASA require no specific approval for A-RNP.
 
 ## QUESTIONS
 
