@@ -279,3 +279,301 @@ after emergency broadcast has been made, the ACC, Approach Unit, or aerodrome co
 THe ATS unit concerned shall additonally inform any other ATS units and control sectors which may be affected.
 
 
+## Rules of the Air
+
+Departures from Rules of the Air is ONLY PERMITTED in the interest of Flight Safety.
+
+PRE-FLIGHT ACTION
+
+before a flight, PIC to familiarise with ALL AVAIBLE information.   
+For flights away from aerodrome, and for all IFR flights, CAREFUL STUDY of available weather reports and forecasts, taking into account fuel requirements, and alternative course of action if the flight cannot be complemented as planned.
+
+SIMULATED INSTRUMENT FLIGHT
+
+ac shall not be flown under simulated instrument flight conditions, i.e., with screens or equivalent, UNLESS    
+* fully functioning dual controls are installed in the ac; AND
+* a qualified pilot occupies a control-seat to as as SAFETY PILOT for the person flying under simulated instrument conditions.
+* safety pilot shall have adequate vision forward and to each side of the ac, or a compentent observer in cummunication with the safety pilot shall occupy a position in the aircraft from which the observer's field of vision adequately supplements that of the safety pilot.
+
+FLIGHT PLANS
+
+a flight plan SHALL be SUBMITTED priort to operating   
+
+* any flight or portion thereof to be provided with an air traffic control service;
+* any IFR flight within advisory airspace;
+* any flight within or into areas, or along routes designated by the competent authority, to facilitate the provision of flight information, alerting, and search and rescue services;
+* any flight within or into areas, or along routes designated by the competent authority, fo facilitate coordination with appropriate military units or with air traffic srevices units in adjacent States in order to avoid the possible need for interception for the purpose of identification;
+* any flight across international borders, unless otherwise prescribed by the States concerned; or
+* any flight planned to operate at night, if leaving the vicinity of an aerodrome.
+
+Note: not mandatory, but "highly recommended", file flight plans for flights over water greater than 10NM from the coast and/or flight over sparsely populated or remote terrain.
+
+WHERE TO FILE FPL
+
+FPL to be sumbitted BEFORE DEPARTURE to an air traffic service reporting office or, DURING FLIGHT, transmitted to the appropriate air traffic serves unit or air-ground control radio station, unless arrangements have been made for submission of repetititve flight plans.
+
+WHEN TO FILE FPL
+
+unless otherwise prescribed, a FPL for a flight to be provided with ATC service or air traffic advisory service shall be submitted AT LEAST 60 minutes before departure.
+
+if submitted during flight, it must reach the appropreate air traffic services at least 10 minutes before the ac is estimated to reach    
+* the intended point of entry into a control area or adisory area; or
+* the point of crossing an airway or adisory route.
+
+CONTENT OF FPL
+
+ICAO FPL format
+
+flight rules: I (IFR), V (VFR), Y (IFR changing to VFR), Z (VFR changing to IFR)    
+
+crusing speed: TAS in km/hr, e.g. K0505 for 505km/hr) or knots, e.g. N0480kts for 480kts, or Mach number, e.g. M0750 for Mach 0.750. Changes in speed of more than 5% of TAS or more of M0.01 or more must be indicated.    
+
+"estimated elapsed time" (EET) means time from take-off to     
+* for IFR flights the time at which it is estimated that the ac will arrive over that designated point, defined by reference to navigation aids, from which it is intended that an instrument approach procedure will be commenced, or - if no navigation aid is associated with the aerodrome - the time at which the ac will arriver over the aerodrome.     
+* for VFR flights, the time at which it is estimated that the ac will arrive over the aerodrome.     
+
+ZZZZ if departure, alternate, or destination aerodromes do not have an ICAO location indicator, insert ZZZZ in the appropriate section and in Field 18 provide information DEP/..., DEST/..., or ALTN/... := ... aerodrome name
+
+
+CHANGES TO A FLIGHT PLAN
+
+IFR flight: ALL changes to the flight plan    
+VFR flight operated as controlled flight: changes to be reports ASAP to appropriate air traffic service unit    
+other (:= uncontrolled) VFR flight: significant changes to a flight plan shall be reported ASAP to appropriate ATSU
+
+DELAY of 30 minutes in excess of estimated off-block time EOBT for a controlled flight    
+DELAY of 60 minutes for an uncontrolled flight    
+flight plan should be amended or a new FPL shall be submitted and the old plan cancelled whichever is applicable.
+
+
+
+CLOSING A FPL
+
+unless otherwise prescribed, a report or arrival shall be made in person, by RT, or via data link at the earliest possible moment after landing, to the appropriate ATS unit at the arrival aerodrome, by any flight for which a FPL was submitted covering the entire flight or the remaining portion of a flight to the destination aerodrome.
+
+Note:     
+
+* not required after landing on aerodrome with ATS AND radio communication or visual signals indicate that the landing has been observed.
+* if flight plan submitted for portion of flight, other than the remaining portion of a flight to destination, it shall, when required, be closed by an appropriate report to the relevant ATS unit.
+* when no ATSU exists at the arrival aerodrome, the arrival report, when required, shall be made as soon as practicable after landing and bu the quickest mens available to the nearest ATSU.
+
+if COM facilities at arrival aerodrome are inadequate and alternate arrangements for the handling of arrival reports on the ground are not available:    
+* immediately prior to landing - if practicable - transmit to the appropriate ATSU, a message comparable to an arrival report, where such a report is required.    
+Normally, this transmission shall be made to the aeronautical station serving the ATSU in charge of the flight information region in which the ac is operated.
+
+Arrival reports require the following:     
+
+* aircraft identification
+* departure aerodrome
+* destination aerodrome (only in case of diversionary landing)
+* arrival aerodrome
+* time of arrival
+
+
+EUR differences
+
+* repetitive FPL may only be used for IFR flights operated regularly on the same day(s) of consecutive weeks and on at least 10 occasions or for flights on at least 10 consecutive days.
+* flights subject to air traffic flow control, require flight plans to be submitted at least three hours in advance and any changes to EOBT in excess of 15 minutes requires the flight plan to be delayed or changed.
+
+
+
+## Division of Airspace
+
+### Classes of Airspace
+
+        UPPER AIRSPACE
+        controlled C
+FIR
+        LOWER AIRSPACE
+                        controlled    control area CTA
+                                      -> usually class A
+                                      -> TMA, class A, D, or E
+                                      
+                                      control zone CTR
+                                      -> class A, D, or E
+                        
+                        uncontrolled  advisory areas and
+                                      routes (ADR), class F
+                                      
+                                      open FIR
+                                      -> class G
+                                      
+FIR ~ 7 classes or airspace, A...G   
+class determines the level of Air Traffic Service(s) and separation     
+
+controlled airspace = ATC, i.e., class A (IFR only), B, C, D, and E (IFR and VFR)    
+uncontrolled airspace => class F and G
+
+controlled aerodromes (provide ATC service to aerodrome traffic) = must have control tower (according to ICAO)
+
+```{r}
+#| label: fig-airlaw-airspace-class-service.png
+
+knitr::include_graphics("./figures/airlaw-airspace-class-service.png")
+
+```
+
+Essential traffic is that controlled traffic to which the provision of separation by ATC is applicable, but which, in relation to a particular controlled flight is not, or will not be, separated from other controlled traffic by the appropriate separation minimum.     
+IFR to IFR in class A to E; and IFR to VFR in class B and C
+VFR to VFR essential in class B
+
+Essential traffic information shall be given to controlled flights concerned whenever they constitute essential traffic to each other.
+
+
+### Airspace Class Boundaries
+
+where airspace classes adjoin vertically, i.e., the one above the other, flights on the boundery level are treated as being in the less restrictive class of airspace.
+
+In applying these criteria, Class B airspace is considered less restrictive than Class A airspace, B > C ....
+
+### Typical Use of Airspace Clases
+
+variations of applications; AIP => ENR
+
+D is used for most CTAs and CTZs, i.e., allowing VFR flights
+
+### Speed Control
+
+unless otherwise notified speed is restricted to 250kt IAS below 10.000ft or FL100 in all classes of airspace except for IFR in classes A, B, and C, and VFR in class B
+
+```{r}
+#| label: fig-airlaw-speed-control.png
+
+knitr::include_graphics("./figures/airlaw-speed-control.png")
+
+```
+
+## Annex 11 - Air Traffic Services
+
+Annex 11 - division of airspace & SARPS for ATS  
+
+APPLICATION ~ where Contracting States provide air traffic services ATS SARPs apply, i.e., sovereign airspace and over high seas or undetermined sovereignty (and serviced by a specific CS).
+
+standard := essential mandatory    
+recommended practices := non-mandatory (i.e., expected)     
+Annex 11 comprises a large number of recommended practices (non-mandatory) ~ regional variations to be notified to ICAO (and the world)
+
+### Air Traffic Control Service ATC
+
+units providing ATC are: area control centre ACC (service en-route flights), approach control office APP (service controlled flights during arrival or departure), and control Tower TWR (aerodrome traffic)
+
+area control service (ACS) - can provide approach control service    
+approach control sercice (APP) -> dedicated arrival/deprature servcice; can be offered by TWR or ACC    
+aerodrome control service (TWR) -> tower, apron service may be assigned to a separate unit.
+
+### Operation of Air Traffic Control Service
+
+an ATC unit must    
+
+* be provided with information on the intended movement of each aircraft, and with current information on the actual progress of each ac;
+* determine from the information received, the relative positions of known ac to each other;
+* issue clearances and information for the purpose of preventing collisions between ac under its control and of expediting and maintaining an orderly flow of air traffic;
+* coordinate clearances as necessary with other unites
+  + whenever an ac might otherwise conflict with traffic operated under the control of such other traffic
+  + before transferring control of an ac to such other units.
+  
+UTC time used worldwide for ATS purposes; accurate to -/+ 30 secs.
+
+### Separation of Aircraft
+
+ATS := prevent collision of ac => vertical or horizontal separation
+
+vertical separation to ac in cruise by procedrues specific to their area; e.g. semi-circular cruising levels at/below FL410, modified tables of cruising levels may be used above FL410.
+
+horizontal separation is achieved by spacing ac laterally or longitudinally, or combination to horizontal and longitudinal.
+
+regional agreements allow the use of both horizontal and vertical separation together, called composite separation.   
+composite separation ~ horizontal and vertical requirements can be reduced bu never to less than half the standard values
+
+separation minima are published in PANS-ATM with variations notified in reginal supplements.
+
+### Longitudinal Separation
+
+EUR - variation from ICAO standard longitudinal separation.
+
+ac at level, climbing, or descending to be separated by 3 minutes, provided that     
++ progress is continously monitored by radar,
++ radar separation is never less than 20NM.
+
+applying assigned mach number for ac on same track and level provided that
++ both ac are observed on radar and no interruption to the service is anticipated;
++ ac operating at assinged Mach numbers and the following ac is assinged the same or a lower Mach number than the lead
+
+### ATC clearance
+
+ALL controlled traffic subject to ATC clearance.   
+ATC clearance is defined as "authorisation for an aircraft to proceed under conditions specified by ATC unit".
+
+ATC clearances to ac in flight, and ac and vehicles on the ground.
+
+ATC clearance should indicate:    
+
+* ac identification (as shown in FPL)
+* clearance limit
+* route of flight
+* level(s) of flight for the entire route or part thereof, and changes of levels if required; and
+* any necessary instructions or information on the other matters such as approach or departure maneuvers, communications, and the time of expire of the cleaance.
+
+### Responsibility of the Aircraft Commander (Pilot in Command)
+
+ATC clearance should USUALLY be OBEYed, but it does not absolve the ac commander of his or her responsibility to comly with the rules of the air and safety of ac.    
+Aircraft commander may advise ATC that the ac is unable to comly with a clearance and, in extreme cases, reject a clearance which is believed to be unsafe.   
+
+When being radar vectored, an ATC clearance shoudl take into account obstacle clearance.
+
+READING BACK CLEARANCES     
+clearance should be read back, usually in FULL, so that receipt and understanding are confirmed.
+
+unless specified by the authority, voice readback of CPDL messages is not required.
+
+RADIO COMMUNICATIONS     
+ac must maintain 2-way communication with current ATC unit whilst receiving a clearance from another unit which is further down the route.
+
+COORDINATING ATC CLEARANCES     
+responsibility for (en)route clearances lies with ACC in which flight begins.
+
+ACC to coordinate clearance, in particular for flights about to shortly after take off leaving AOR (<30 minutes).
+
+if (ever) coordination is incomplete and a clearance limit is reached, it is the responsibility of the PIC to obtain on-going clearance before proceeding beyojnd the clearance limit.
+
+### Air Traffic Flow Management ATFM
+
+ATFM in Europe to optimise the flow of air traffic.    
+ATFM is available to all States in the EUR region.
+
+ATFM may be applied to flights that      
++ take place in the EUR region
++ depart from the EUR region; or
++ enter the EUR region from an adjacent FIR.
+
+Where ATFM is applied, there is a requirement to file flight plans well in advance and you may anticipate slot times to be issued for the departure.
+
+Certain flights may be given priority over other flights, and certain flights may be exempt from the requirement to obtain a slot.
+
+### Automatic Terminal INformation ATIS broadccasts
+
+voice-ATIS or D-ATIS; D-ATIS transmitted to ac's FMS, electronic flight bag, or multi-function display
+
+VOICE-ATIS ~ provided at busy aerodromes to reduce voice frequency load; typically    
+* a single broadcast serving arriving ac; or
+* a single broadcast serving departing ac; or
+* one broadcast serving both, arriving and departing, ac; or
+* two separate broadcasts on different frequencies serving arriving and depating ac respectively. Note: used when length of a single broadcast serviing both arriving and departing ac would be excessively long.
+
+discrete VHF frequency - whenever practicable - to be used for voice-ATIS broadcasts.    
+if no discrete VHF frequency available, the transmission may be on the voice channels of the most appropriate terminal NAVAID(s), preferably a VOR, provide the range and readability are adequate and the identification of the NAVAID is sequenced with the broadcast so that the latter is not obliterated.   
+Voice-ATIS broadcasts will not be transmitted on the voice channel of an ILS.
+
+Whenever voice-ATIS is provided, the broadcast should be continuous and repetitive, and is often also generated by text-to-speech software.   
+It is recommended to not exceed 30 seconds.
+
+CONTENTS OF ATIS BROADCAST    
+* relate to a single aerodrome
+* individual ATIS messages will be identified by a letter designator, e.g. "This is information GOLF, ..."
+* information should be updated immediately when a significant change occurs, the identifyer is then changed to the next letter in the alphabet.
+* ac must acknowledge receipt of the information upon establishing communication with ATS unit providing either the approach control service or aerodrome control service, as appropriate.
+* when replying, the ATS unit need not retransmit any information contained in the ATIS to the ac except for the altimeter setting, which is always transmitted.
+* if an ac acknowledges receipt of an ATIS that is not longer current, any element of information that needs updating shall be transmitted to the ac without delay.
+
+
+
