@@ -575,5 +575,99 @@ CONTENTS OF ATIS BROADCAST
 * when replying, the ATS unit need not retransmit any information contained in the ATIS to the ac except for the altimeter setting, which is always transmitted.
 * if an ac acknowledges receipt of an ATIS that is not longer current, any element of information that needs updating shall be transmitted to the ac without delay.
 
+## Emergency Procedures
+
+**alterting service** := a service provided to notify appropriate organisations regarding airraft in need of search and rescue aid, and assist such organisation as required.   
+Annex 11 sets out requirement for alerting service    
+Annex 12 sets out search and rescue operations
+
+### Service to Aircraft in the Event of an Emergency
+
+aircraft to be known or believed in a state of emergency, including being subjected to unlawful interference, shall be given maximum consideration, assistance, and priority over other aircraft as may be cessitated by the circumstatnces.
+
+A pilot may be expetcted to be contacted by ATS on 121.5MHz, or even 243.0MHz, in an emergency, assuming that communication attempts on the frequency in use have been unsucessful.
+
+Aircraft equipped with an appropriate data link capability and/or an SSR transpointer might indicate an emergency, by operating the quipment as follows:
+
+* Mode A, code 7700 := emergency or interception by a military ac
+* Mode A, code 7500 := ac subject to unlawful interference
+* activate the appropriate emergency capability of ADS
+* transmit the appropriate emergency message via CPDLC.
+
+### 3 Phases of Emergency
+
+ATSU shall inform rescue coordination centers immediately when an ac is considered to be in a state of emergency according to 3 defined phases, or states of emergency:
+
+* uncertainty phase ~ a situation where uncertainty exists as to the safety of an aircraft and its occupants;
+* alert phase ~ a situation where apprehension exists as to the safety ofa an ac and its occupants; or
+* distress phase ~ a situation where there is reasonable certainty that an ac and its occupants are threatened by grave and imminent danger or require immediate assistance.
+
+Phases are initiated when certain set criteria are complied with.
 
 
+## Altimeter Setting Procedures
+
+```
+CHECK FOR STANDARD Altimeter figure
+```
+
+ac flown at altitudes determined from an altimeter set to sea level pressure QNH when at or below the TRANSITION ALTITUDE. vertical position expressed in terms of altitude.
+
+flights above transition altitude are performed along surfaces of constant atmospheric pressure baed on altimeter setting of 1013.25hPa (= mb) := flight levels.  
+Flight levels are defined according to their height in feet in the standard atmosphere, e.g. 3500ft ~ FL35, 10.000ft ~ FL100.
+
+where no transition altitude is established (e.g. remote areas outside FIRs), ac in the en-route phase MUST be flown at a flight level.
+
+height above ground/AGL ~ QFE     Height    
+height above mean sea level ~ QNH Altitude
+height above standard pressure ~ QNE/1013.25hPa FL
+
+altimeter settings provided to aircraft shall be rounded down to the nearest lower whole hectopascal.
+
+### Transition Altitude TA
+
+transition altitude is the altitude below which the vertical position of the aircraft is controlled by altitudes above mean sea level, i.e. QNH.
+
+Transitiona altitude must normally be specified for each aerodrome by the State in which the aerodrome is located.   
+In practice - and to avoid confusion - transitiona altitudes are normally standardised for the whole FIR.
+
+Whereas the transition altitude is fixed, the transition level will change as the value of the QNH changes and ATC are responsible for calculating the transition level to be used.
+
+The calculated height of the transition altitude is rounded up to the next full 1000ft, thus a calculated transition altitude (level?) of 33ooft will become 4000ft.
+
+Transitional altitudes are published in the AIP and also shown on appropriate charts.
+
+Transition altitude of an aerodrome shall be as low as possible, but not nromally less than 3000ft AGL.
+
+### Transition Level TRL
+
+change in reference from altitude on QNH to flight levels on 1013.2hPa is made when climbing, at the transition altitude.
+
+when descending towards the transition altitude this is more difficult as the altimeters will be set to 1013.2hPa and the ac altitude may not be known.
+
+To make things simple a transition level TRL, which is the lowest flight level available for use above the transition altitude, will be passed to a descending aircraft, normally as part of an approach or landing clearance, but can be requested by the pilot.   
+An ac in descent must set QNH at the transition level.
+
+Transition altitude := altitude at which the pilot in a climb changes altimeter setting from QNH to 1013.2hPa.    
+Transition level := lowest flight level available for use above the transition altitude. = flight level at which the pilot in a descent changes altimeter setting from 1013.2hPa to QNH.  
+
+### Transition Layer
+
+transition layer := layer between transition altitude and transition level.
+
+during passage of transition layer    
+- vertical position expressed in terms of flight levels for ascending ac; and
+- in terms of altitude for descending ac.
+
+variations to this procedure exists in various countries:    
+pilot in descending ac from FL to ALT, the pilot will change to the aerodrome QNH unless further flight level vacating reports have been requested by ATC, in which case the QNH will be set following the final flight level vacation report.
+
+here ATCOs need to realise that the datum will have been changed, and be repared to act accordingly.
+
+Pilots followin this procedure must be aware of the consequences in countries where this procedure is not standard, if the controller requires the ac to level before the cleared altituge is reached.    
+For example, ac cleared to descend from FL100 to ALT 3000feet, transition level FL40.   => pilot will set QNH and commence descent.   
+If controller subsequently requires the ac to level at FL60, the standard pressure setting must be reset!
+
+## SSR Operating Procedures
+
+next ....
