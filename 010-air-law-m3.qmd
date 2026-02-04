@@ -670,4 +670,264 @@ If controller subsequently requires the ac to level at FL60, the standard pressu
 
 ## SSR Operating Procedures
 
-next ....
+SSR -> ac equipped with transponder -> reply to (ground) interrogation
+
+Mode A  4096 numerical codes; 0-7    
+Mode C  pressure altitude in 100ft/FL increments    
+Mode S  transmits Mode A and "additional information" (e.g. ac identifier [callsign or registration], level information in 25ft increments, transponder capability and SI-code capability) := **elementary suveillance mode ELS**
+
+**enhanced surveillance mode EHS** transmits additional ac parameters, e.g. rate of climb/descent, IAS, heading, track.
+
+IDENT     
+ATC instruction: SQUAWK xxxx (= select Mode A or IDENT) ~ instruction to be acknowledged by aircrew.
+
+**airborne collision avoidance system ACAS** uses Mode S SSR equipment.
+
+### Operation of Transponders
+
+when ac carries serviceable transponder, aircrew to operate the transponder at all times during flight, regardless whether ac is within or outside airspace where SSR is used for ATS purposes.
+
+Mode A ~ except in emergencies, communication failure, or unlawful interference:   
+
+* operate transponder selcting on of the 4096 Mode A codes as individually directed by the ATC unit with which in contact;
+* operate transponder on Mode A codes as prescribed on the basis of regional air navigation agreements; or
+* in the absence of any ATC instructions or regional air navigation agreements, operate the transponder on Mode A Code 2000.
+
+Mode C ~ to be operated continuously, unless otherwise instructed by ATC.
+
+ATC may instruct to turn mode C off, if the reported flight level differes from the actual flight level by more than 300ft or 200ft in RVSM airspace (and also in some non-RVSM airspaces in Europe).
+
+If mode C is operated and a pilot is asked to report the ac's altitude, the level must be reported to the nearest 100ft.   
+E.g. ac at 17.278ft -> reported as FL173 (17.300ft)
+
+Mode S ~ IFR traffic in Europe with a MTOM ? 5700kg or a maximum cruising of greater than 250kt MUST be equipped with Mode S EHS.    
+Other IFR traffic must be Mode S ELS compliant.
+
+Requirements for VFR traffic vary across States, usually Mode S ELS.
+
+IDENT ~ pilot shall not squawk ident unless requested by ATC
+
+Equipment -> older transponders allow to turn altitude reporting on and off, or select modes. Modern equipment is build to operate at its highest capability (e.g. responding to Mode A, Mode S, and Mode C interrogations as required) ALL THE TIME.   
+Typically, pilot controls restricted to IDENT, OFF/STBY/ON, and number keypad for Mode A codes.
+
+### Transponder Failure
+
+in case of transponder failure, ATC units shall endeavour to provide for continuation of the flight to the destination aerodrome in accordance with the FPL.   
+Pilot may, however, expect to comply with specific restrictions:
+
+In case of transpoder failure BEFORE departure, pilots shall    
+
+* inform ATS asap, preferably before submission of a flight plan;
+* insert in Item 10/FPL under SSR the character "N" for complete unserviceability of the transponder, or, in case of partial transponder failure, the character corresponding to the remaining transponder capability;
+* comply with any published procedures for seeking exemption from the requirements for carriage of a functioning SSR transponder; and
+* if so required by the appropriate ATS authority, plan to proceed, as directly as possible, to the nearest suitable aerodrome where repain can be effected.
+
+
+SSR equipment codes for Item 10/FPL:    
+N ~ NIL    
+A ~ transponder - Mode A "only"    
+C ~ transponder - Mode A and C    
+X ~ transponder - Mode S without identification or altitude information    
+P ~ transponder - Mode S altitude, but no identification information    
+I ~ transponder - Mode S identification, but no altitude information    
+S ~ transponder "works" - Mode S with identification or altitude information    
+
+
+
+## Emergencies
+
+Mode A  7700  emergency, except when instructed by ATC to operate on specific code   
+pilot may select 7700 whenever there is a specific reason to believe that this would be the best course of action.   
+If an ac is intercepted by a military ac, the intercepted ac should set Mode A to code 7700.
+
+Mode A  7600  ac experiencing two way radio communication failure.    
+
+Mode A  7500  ac subjected to unlawful interference; unless situation warrants 7700
+
+any of 770, 7600, or 7500 will trigger alarm at all radar units interrogating the ac's transponder.   
+This alarm should indicate which emergency code has been selected.   
+But if this is not clear, the ATCO my interogate each code in turn in order to verify which code has been selected.
+
+
+### ACAS Equipment
+
+ACAS/TCAS uses Mode S transponder to provide traffic information   
+
+ACAS II provides collision avoidance commands in the vertical plane.    
+so-called Resolution Advisories RA, are separate from and may conflict with ATC instructions.
+
+Traffic Advisories TAs := ACAS advises on nearby, non-threatening traffic := "proximate traffic" ~ potentially threatening    
+upon TA, aircrew to try to visually identify the ac that triggered TA and prepare for an ensuing RA.   
+
+Displays: RA shown as RED SQUARE (and possibly vertical position related to ac, +01 = 100ft above).     
+VSI    
+showing RED := no go reaction; 
+FLY TO GREEN (e.g. climb with rate between 1500 to 2000ft/min.)    
+AUDIO: CLIMB CLIMB
+
+Europe: all fixed wing turbine-engined ac with MTOM > 5700kg or capable of carrying more than 19 pax must be equipped with ACAS II.   
+Additionally, many States and business aviation ac are equipped with ACAS. 
+
+
+
+## ICAO Doc 4444 - Air Traffic Services
+
+Doc 4444 - Procedures for Air Navigation Services - Air Traffic Management PANS-ATM.
+PANS-ATM is complementary to Annex 2 SARPs (Rules of the Air) and Annex 11 (Air Traffic Services).
+
+### Applicability
+
+Strictly speaking: States are NOT OBLIGED to comply with PANS-ATM ~ most do.
+
+PANS-ATM specifies in greater detail the actual procedures to be applied by ATSUs.   
+PANS-ATM procedures are supplemented where necesary by regional procedures.
+
+PANS-ATM mainly directed at ATCOs, attention of pilots should be drawn to the portions that affect pilots/direct interest to them.
+
+### Terrain Clearance
+
+Annex 11 defines the objectives of ATS NOT TO INCLUDE prevention of collision with terrain.   
+PANS-ATM do not relieve the pilot of his responsibilities of ensuring that any clearance issued by ATC are safe in this respect, ecept when an IFR flight is vectored by radar (radar minimum safe altitude)
+
+### ATFM Service
+
+ATFM ~ ensures that the number of flights does not exceed capacity of ATS.    
+
+ATCU to inform other ATCUs about constraints (cannot accept additional traffic or only at certain entry rate).
+
+Pilots of ac detined to the location or area in question, and operators known or believed to be concerned, must also be advised of the delays expected of the restrictions that will be applied.
+
+### Submission of a FPL
+
+except of arrangements for the submission of repetitive flight plans, a flight plan submitted prior to departure should be submitted to ATS reporting office at the departure aerodrome.   
+If no such unit exists at the departure aerodrome, the flight plan should be submitted to the unit serving or designated to serve the departure aerodrome.
+
+ICAO Annex 2 (rules of the air) requires flight plans to be submitted 60 minutes before departure (Europe 3 hours).   
+In case of a delay of 30 minutes in excess of the EOBT for a controlled flight (or 60mins for uncontrolled flight for which FPL was submitted), FPL to be amended or a a new FPL while old FPL cancelled (whichever is applicable).
+
+Repetitive FPL may be filed for identical flights taking place on the same day, days of consecutive weeks, and/or occur on at least ten occasions, or takel place on at least ten consecutive days.
+
+European region: More restrictions on repetivite FPLS ~ EUR SUPPS, section 2.
+
+### Clearances and INformation
+
+clearances are based on known traffic conditions   -> ac in air, ac and vehicles, and  obstruction on maneuvering area and under control by ATC
+
+ATC clearance not suitable to the PIC, PIC may request if applicable to obtain an mended clearance.
+
+receipt of a clearance does not constitute authority to violate any applicable regulations.  
+
+*Cleared via flight plan route* may be used to describe any route, or portion thereof, provided it is the same as that filed in the (last) FPL and that sufficient routing details are given to etablish the ac on its route.
+
+*cleared via (designation) departure* or *cleared via (designaion) arrival* may be used when standard departure or arrival routes have been established by the appropriate ATS authority and published in the AIP.
+
+### Multi-Stage Flights
+
+FPL for multi-state flight with one or more intermediate stops.   
+Initial clearance limit will be no further than the first destination aerodrome.   
+New clearances must be obtained for each subsequent leg.
+
+### Content of ATC Clearance
+
+ATC to include (in order listed):    
+
+* aircraft identification
+* clearance limit
+* route of flight
+* level for either the entire route of for part of it and level changes if required
+* instructions or other information about SSR, approach or departure procefures, communications, and the time of expiry of the clearance. If expiry time is given, the ac is not airborne by that time, a new clearance must be obtained.
+
+E.g. London centre clears Easy443 to destination as filed, request level changes en-route.   
+Bogeyair, direct SAM then ORTAC, maintain FL410. Clearance limit ORTAC, delays in xxx airspace.
+
+
+
+### Reading Back ATC Clearances
+
+clearance must be read back to the ATCO to confirm correct reception.   
+Readback is verbatim, but the following items must always be read back
+
+* ATC route clearances,
+* clearances to enter, land-on, take-off from, hold short of, cross, taxy, or backtrack on any runway
+* runway in use
+* altimeter setting
+* SSR codes
+* level, heading, and speed instructions.
+
+### Changes to FPL
+
+whenissueing a clearance covering a requested change in flight plan route or cruising level, ATC must specify the exact nature of the change in the clearance.
+
+If a level change is involved and more than one level is contained in the flight plan, all such levels must be included in the clearance.
+
+ATCU may ask an ac to temporarily change its call sign for safety reasons when there is a risk of confuston between two or more similar call signs.
+
+### Postion Reports
+
+on routes defined by designated significant points, position reports must be made when over, or as soon as possible after passing, each desgnated compulsory reporting point, unless position reporting is not required.
+
+Additional reports over other points may be requested by the appropriate air traffic services unit when so required or air traffic services purposes.
+
+Position report should contain the following elements:
+
+* ac identification
+* position
+* time
+* flight level or altitude
+* next position and time over
+* ensuring significant point
+
+Qanta 010A, KEMPTEN 52, FL390, estimate TANTO01, KARLSRUHE next
+
+Flight level or altitude may be omitted on the instructions of ATC when SSR mode C information can be made continuously availbale to controllers in a labelled form, and when adepquate procedures have been developed to guarantee the safe and efficient use of SSR Mode C information.
+
+All the last three element may be omitted from position report when so prescribed on the basis of regional air navigation agreements.
+
+Flight level or altitude shall however be included in the initial call after changing to a new frequency.
+
+Regional authorities may exempt certain flights completely fomr the requirement to make position reports.   
+This is now normal when receiving a radar service.
+
+### Change from IFR to VFR Flight
+
+change form IFT to VFR is only acceptable when a message initiated by the PIC containing **cancelling my IFR flight** together with the changes, if any, to be made to his current flight plan, is received by an air traffic services unit.
+
+No invitation to change from IFR to VFR is to be made by ATC either directly or by inference. 
+
+No reply, other than the acknowledgement "IFR cancelled at <<time>>" should be normally made by an air traffic services unit.
+
+When ATC are aware that IMC is likely to be encoutered along the route of flight, a pilot changing from ifR to VFR should, if practicable, be so advised.
+
+### Wake Turbulence Categories
+
+wake turbulence separation minima is based on a grouping of ac types into four categories according to the maximum certificated take-off mass:
+
+* SUPER (J)   A380-800
+* HEAVY (H)   ac of 136.000kg or more
+* MEDIUM (M)  ac of less than 136.000kg, but more than 7000kg
+* LIGHT (L)   ac of 7000kg or less
+
+H,M,L to be entered as wake turbulence category in the FPL.
+
+### Cruising Levels
+
+except when specifically authorised by the appropriate authority, cruising levels below the minimum flight altitudes established by the State MUST NOT BE ASSIGNED.
+
+minimum sector altitude MSA is calculated ensuring at least 300m/984ft clearance above the highest obstacle within 25NM of VOR, DME, or airfield.
+
+Unless otherwise prescribed by the State concerned, the lowest usable flight level is that flight level which corresponds to, os is immediately above the established minimum flight altitude.
+
+For flight in the vicinity of aredromes and wihtin terminal control areas, the vertical position of aircraft shall be expressed in terms of altitude at or below the transition altitude and interms of flight levels at or above the transition level.   
+While passing through the trtainsiton layer, vertical position shall be expressed in terms of flight levels when climbing or in terms of altitudes when descending.
+
+assignment of cruising levels ~ ac flying in the same direction shall be assigned in a manner that will be correct for an approach sequence t destination.
+
+speed control ~ ATC may instruct ac to modify their speed either in the en-route or approach stages.   
+At of above FL250: speed adjustments in increments of 0.01 Mach    
+Below FL250: speed adjustments in increments of 10kt IAS.   
+For turbine powered ac, speed reductions below 250kt may be rejected by the pilot for "good reason" (flight safety, operational performance limits/maeuverability/safe speeds)
+
+Under radar control and on final approach speed adjustments will be limited to a maximum of 20kt.   
+ONce within 4NM of the threshold on the approach no further speed adjustments should be given.
+
+
