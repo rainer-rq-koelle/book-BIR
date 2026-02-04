@@ -931,3 +931,135 @@ Under radar control and on final approach speed adjustments will be limited to a
 ONce within 4NM of the threshold on the approach no further speed adjustments should be given.
 
 
+## Separation
+
+controlled traffic is separated either vertically, horizontally, or by a combination of the two using no less than half of each criteria known as composite separation.
+
+separation must be provided    
+
+* between all flights in Class A and B
+* between IFR flights in Class C, D, and E
+* between IFR flights and VFR flights in Class C
+* between IFR flights and Special VFR flights; and
+* between Special VFR flights, when required by ATC, except in D and E during the hours of the daylight when flights have been cleared to climb or descend subject to maintaining own separation and remaining in VMC
+
+procedural control := separation may be estalished by applying procedures which do not require radar surveillance, or     
+radar control := by observing position of the ac on the radar screen.
+
+procedural separation always involves greater distances between ac than radar separation.
+
+### Procedural Separation
+
+vertical separation obtained by requiring ac using prescribed altimeter setting procedures to operate at different levels or altitudes.
+
+minimum vertical separation is:   
+
+* within RVSM airspace between FL290 and FL410 inclusive: 1000ft
+* below FL290: 1000ft, 
+* above FL290 in non-RVSM airspace: 2000ft
+
+vertical separation during climb or descent: pilot in direcet communication with each other may, with their concurrence, be cleared to maintain a specified vertical separation between their ac during climb or descent.     
+When an ac will pass through the level of another ac on the same track, the following longitudinal separation shall be provide:   
+
+* 15 minutes while vertical separation does not exist;
+* 10 minutes while vertical separation does not exist WHEN NAVAIDS permit the frequent determination of position; or
+* 5 minutes while vertical separation does not exist provided that the level change is commenced within 10 minutes of the time the 2nd ac has reported over an exact reporting point.
+
+an ac may be assigned a level previously occupied by another ac after the latter has reported vacating it.   
+if using SSR Mode C, the controller considers a lavel vacated, if it indicates a change in the anticipated direction from its previously assigned level of more than 300ft.
+
+An ac may be cleared to a level previously occupied by another ac after the latter has reported vacating it, except when:   
+
+* severe turbulence is known to exist;
+* the higher ac is effecting a cruise climb; or
+* the difference in ac performance is such that less than the applicable separation minimum may result.
+
+In such cases, the clearance shall be withheld unti the ac vacating the level has reported at or passing another level separated by the required minimum.   
+ac wishing to dscent to FL150 with another one below it wishing to descend to FL140:    
+in severe turbulenes: no cleard to leave FL150 until lower ac has cleared FL130.
+
+### Horizontal Separation
+
+lateral & longitudinal
+
+lateral separation of ac at the same level is obtained by requiring them to operate on different tracks or in different locations.    
+longitudinal separation is achieved by timing.
+
+lateral separation can be achieved    
+
+* by using the same or different geographic locations, sometimes called geographic separation;
+* by position reports which positively indicate the ac are over different geographic locations as determined visually or by reference to a NAVAID; or
+* by requiring ac to fly on specified tracks which are separated by a minimum amount appropriate to the NAVAID or method emplowed.
+
+using VORs: lateral separation based on VOR navigation requires ac to be separated by at 15 degrees and be 15NM or more from the beacon     
+using NDBs: lateral separation based on NDB navigation: 30 degrees and at least 15NM from NDB.     
+using (dead recogning) DR navigation: lateral separation based on DR requires ac to be established on tracks diverging by at least 45 degrees at a distance of 15NM or more from the point of the intersection of the tracks, this point being determined either visuall or by reference to a NAVAID.
+
+using RNAV: lateral separation based on RNAV achieved by establishing ac on traccks which diverge by at least 15 degrees.    
+Lateral separation exists when the protected airspace associated with the track of one ac does not overlap with the proteted airspace associated with the track of another ac.   
+This is determined by applying the angular difference between the two tracks and the appropriate protected airspace value.   
+The derived value is expressed as a distance from the intersection of the tow tracks at which lateral separation exists.
+
+DME/GNSS separation ~ DME or GNSS can be used in conjunction with other NAVAIDs and with direct controller/pilot communications.
+
+aircraft at same level -> same track separation is 20NM provided each ac uses on-track DME stations or DME station co-located with a waypoint or the same waypoint when both ac are using GNSS and separation checked by obtinaing simultaneous DME and/or GNSS readings from the ac at frequent intervals.
+This can be reduced to 10NM provided that the leading ac maintains a TAS of 20kt or faster than the trailing ac.
+
+ac on crossing tracks the longitudinal separation applies provided each ac reports its distance from the station located at the crossing point of the tracks and the angle between the tracks is less than 90 degrees.
+
+aircraft climbing or descending on the same track -> while vertical separation does not exist 10NM separtion is required provided each ac utilises "on-track" DME stations, an "on-track" DME station co-located with a waypoint or the same waypoint when both ac are utilising GNSS, one ac maintains a level and separation is established by obtaining simultaneous DME/GNSS reading from the ac.
+
+ac utilising on-track DME an/or co-located waypoint or same waypoint may be cleared to climb or descend through the levels occupied by other ac and/or co-located waypoint or same waypoint, provided that tit has been positviely established that the ac have passed each other and are at least 10NM apart, or such other value prescribed by the appropriate ATS authority.
+
+longitudinal separation estbliahed by requiring ac to depart at a specified time, to lose time to arrive over a geographical location at a specified time, or to hold over a gropgraphical location until a specified time.
+
+For ac on the same track at the same cruising level the timed separation minima are    
+* 15 minutes
+* 10 minutes if NAVAIDS permit frequent determination of position and speed;
+* 5 mins is preceeding ac 20kt or more faster, both ac departing from same aerodrome or reporting point;
+* 3 mins, if preceeding ac is 40kt or more faster, and ac departing from same aerodrome or reported over same reporting point.
+
+When an ac is to climb or descend through another's track, there must be 15 minutes of longitudinal separaion.   
+This can be reduced to 10 minutes when NAVIDS permit frequent position determination, or 5 minutes if close to an exact reporting point.
+
+
+LONGITUDINAL SEPARATION IN EUROPE ~ variation from ICAO.
+
+ac at level, climbing, or descending, to be separated by 3 minutes provided that    
++ their progress is continuously monitored by radar; and
++ their radar separation is never less than 20NM.
+
+reduction in separation in vicinity of aerodrome => separation in the vicinity of aerodromes reduced, if      
++ adequate separation can be provided by the aerodrome control tower when each ac is continously visible to the controller;
++ each ac is continuously visible to the flight crews of the other ac concerned and the pilots thereof report that they can maintain their own separation; or
++ if one ac follows another flight, the flight crew of the succeeding ac reports that the other ac is in sight and separation can be maintained.
+
+### RNP
+
+longitudinal and lateral distance-based separation minima in a RNP RNAV environment are    
++ RNP10 50NM
++ RNP4  30NM
++ otherwise 80NM with ac reporting distance "on track" from the same waypoint and separation is checked by obtaining simultaneous RNAV distance readings from the ac at frequent intervals to ensure that the minimum will not be infringed.
+
+### Radar Separation
+
+except under the special conditions of independent and dependent parallel approaches, the standard horozontal radar separation mimium is 5NM.   
+This may be reduced to 3NM when radar capabilities at a given location permit.
+
+Further reduction to 2.5NM may be applied between succeeding ac established on the same approach track subject to average runway occupancy time, braking action, radar rate of update, wake turbulence separation, etc.
+
+### Clearance to Maintain Own Separation While Maintaining VMC
+
+if requested by an ac and provided it is agreed by the pilot of the other ac, and so authorised by the appropriate ATS authority, an ACC may clear a controlled flight operating in airspace clases D an E in daylight VMC to maintain own separation to one other ac and remain in VMC.
+
+When a controlled flight is cleared, the clearance shall be for a specified portion of the flight at or below 10.000ft, during climb or descent and subject to gurther restrictions as and when prescribed on the basis of regional air navigation agreements.
+
+
+### Essential traffic information
+
+**essential traffic** is controlled traffic not separated from other controlled traffic by the prescribed separation minima.   
+ATC must advise both aircraft of    
++ direction of flight of the other ac concerned;
++ type of ac concerned; and
++ cruising level of the ac concerned and estimated time over the reporting point nearet to where the level will be crossed.
+
