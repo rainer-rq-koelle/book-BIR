@@ -1236,3 +1236,99 @@ During final approach the following information shall be transmitted without del
 ### Inability to Comply with Procedure
 
 PIC advises on inability to comply with the approach control holding or communication procedures, the alternative procedures should be approached if known traffic conditions permit.
+
+
+
+## Aerodrome Control Service
+
+### Functions of Aerodrome Control Tower
+
+TWR -> information and clearance for safe, orderly, and expeditious flow of air traffic on and in the vicinity of an aerodrome with the objective to prevent collision(s) between:    
+
+* aircraft flying in the aerodrome traffic circuits 
+* aircraft operating on the maneuvering area;
+* aircraft landing and taking-off;
+* aircraft and vehicles operationg on the maneuvering area; or
+* aircraft on the maneuvering area and obstractions on that area.
+
+### Alerting Service Provided By Aerodrome Control Tower
+
+TWR responsible for altering the safety services and must immediately report any failure or irregularity of operation in any apparatus, lgiht, or other device established at an aerodrome for the guidance of aerodrome traffic and PICs of ac.
+
+Aircraft with fail to report after having been handed over  to the TWR, or, having once reported, cease radio contant, and in either case fail to land five minutes after the expected landing time, must be reported to the area control center or flight information center.
+
+### Suspension of VFR Operations
+
+in case of suspension of VFR operations, TWR    
+
+* hold all departure other than those which file an IFR flight plan and obtain approval thereof from the aera control center;
+* recall all local flights operating under VFR or obtain approval for special VFR operations;
+* notify the area control center of the action taken; and
+* notify all operators of the reason for taking such action, if necessary or requested.
+
+### Information on Local Traffic
+
+information on local traffic shall be issued either directly or through the unit providing approach control service when, in the judgement of the TWR controller, such information is necessary in the interests of safety, or when requested by aircraft.
+
+### Information on Aerodrome Conditions
+
+essential information on aerodrome conditions includes information on the following:    
+
+* construction or maintenance work on, or immediately adjacent to the movement area;
+* rough or broken surfaces on a runway, a taxiway, or an apron, whther marked or not;
+* snow, slush, or ice on the runway, taxiway, or an apron;
+* water on a runway, taxiway, or an apron;
+* snow banks or drifts adjacent to a ruwnay, taxiway, or an apron;
+* other temporary hazards, including parked ac and birds on the ground or in the air; and
+* failure or irregular operation of part or all of the aerodrome lighting system; or any other pertinent information.
+
+### ATIS
+
+aerodrome information may be provided by a voice ATIS as a continuous or repetitive transmission.   
+A discrete VHF frequency is used whenever practicable, but, if one is not available, the transmission may be made on the voice channel of an appropriate terminal vavigation aid, preferably a VOR, but not on the voice channel of the ILS.
+
+information must relate to only 1 aerodrome.   
+information must be updated immediately given a significant change.    
+Preparation and dissemination of the ATIS message is the responsibility of ATS.    
+ATIS broadcast should, whenever practicable, not exceed 30 seconds.
+
+Individual ATIS messages are identified by a designator in form of a letter of the ICAO spelling alphabet, in alphabetical order.   
+Ac to acknowledge receipt of information upon establishing communication with ATS unit providing approach control srevice or aerodrome control service, as appropriate.   
+When acknowledging receipt, ATS unit will confirm the altimeter setting but isnot required to repeat any other information unless the ATIS message received is out of datae and then only the elements which have changed will be transmitted to the ac.
+
+When rapidly changing meteorological conditions make it inadvisable to inclde a weather report in the ATIS, the TIS message will indivate tha the relevant weather information will be given on initail contact iwth the appropriate ATS unit.
+
+
+### Control of Aerodrome Traffic
+
+ac landing or in the final stages of an approach to land shall normally have priority over an ac intending to depart.
+
+Priority for landing will be given to 
+
+* emergency
+* hospital flight;
+* search and rescue ac on operation.
+
+Clearance to land or any alternative clearance received from the aerodrome controller, or - when applicable - the procedural controller should normally be passed to the ac before it reaches a distance of 4km(2NM) from touchdown.
+
+If an ac enters the circuit without permission and indicats that it wishs to land, it must be allowed to do so.   
+In particular, controllers should be aware that ac experiencing an emergency might enter the circuit without permission and they should be ready to offer assistance.
+
+Departure shall normally be cleared in the order in which they are ready for take-off, except that deviations may be made from this order of priority to facilitate the maximum number of departures with the least average delay.
+
+Landing ac priority over take-offs!
+
+### Control of Departing Aircraft
+
+departing ac will not be permitted to commence take-off until the preceding departing ac has crossed the end of the runway in use or has started a turn or until all preceding landing aircraft are clear of the runway in use.
+
+In the interest of expediting air traffic, a clearance for immediate take-off may be issued to an aircraft before it enters the runway.    
+On acceptance of such clearrance the ac shall taxy out to the ruwnay and take-off in one continuous movement.
+
+Independent parallel departures may be conducted from parallel runways provided there is suitable surveillance readar available capable ofidentifying ac within 1NM from the end of the runway.
+
+### Control of Arriving Aircraft
+
+landing ac will not be permitted to cross the beginning of the runway on its final approach until the preceding departing ac has crossed the end of the runway in use, or has started a turn, or unitl all preceding ladning ac are clear of the runway in use.
+
+
