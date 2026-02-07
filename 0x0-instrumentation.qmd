@@ -1572,11 +1572,27 @@ Failure of level E software would have no effect on operations or pilot workload
 e.g. in-flight entertainment equipment.
 
 
+## Flight Management System FMS
+
+FMS databases    
++ navigation database ~ read-only, but amendable; 28-days AIRAC cycle
++ performance database ~ read-only, when required -> ac parameters
+
+FMS components:   
++ Control and Display Unit (Captain and FO)
++ FMC (redundant) - with databases
++ control panel
+
+```{r}
+#| label: fig-inst-FMS
+
+knitr::include_graphics("./figures/inst-FMS.png")
+```
 
 
 
 
-Questions
+## Questions
 
 rate of turn - directly proportional to bank angle - inverse proportional to TAS == independent of aircraft weight    
 $RoT = \frac{(g * tan(\text{bank angle}))}{TAS}$
