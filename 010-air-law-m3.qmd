@@ -1332,3 +1332,160 @@ Independent parallel departures may be conducted from parallel runways provided 
 landing ac will not be permitted to cross the beginning of the runway on its final approach until the preceding departing ac has crossed the end of the runway in use, or has started a turn, or unitl all preceding ladning ac are clear of the runway in use.
 
 
+## ATC Surveillance Service
+
+ATC surveillance service of air traffic from either radar or automatic dependent surveillance ADS.
+
+radar ~ primary radar/surveillance (reflections / echo principle)   
+secondary radar/surveillance ~ active response from ac transponder
+
+ADS transmits, as a minimum: GPS position, speed, height and heading.   
+ADS-B (broadcast) ~ basis data unsolicited on SSR reply frequency to whoever can receive    
+ADS-C (controct) ~ datalink service transmitting additional information, including clearance requests and messages. ATC can reply through datalink with clearances and control message,(voiceless control)
+
+### Radar System Capabilities
+
+radar ~ high level of reliability, availability, and integrity; back-up facilities are always provided.
+
+Radar services are restricted to specific areas of coverage within line-of-sight of the radar transmitter.   
+Thus, remote areas are unlikely to provide a radar service and air traffic will be procedural control.
+
+When ATC is equipped with/using PSR, the pilot of a departing ac can expect his ac to be identified within 1 NM of the departure end of runway.
+
+### Minimum Radar Information
+
+minimum radar information displayed to controller is
+
+* radar position indications;
+* radar map information; and
+* information from SSR Mode A, Mode C, and MOde S, when available.
+
+### Identification of Aircraft
+
+ac must be radar identified and the pilot informed before a radar service can be provided. Radar identification is achieved using SSR by
+
+* use of a radar identification label;
+* setting a specific code; or
+* using the IDENT feature.
+
+using PSR by    
+* correlating radar position with ac reported position;
+* transfer of radar identification;
+* observing ac reported maneuvers; or
+* instructing the ac to change haeding by 30 degrees or more.
+
+The term radar contact is used by a controller to an aircraft means that the aircraft has been positively identified on radar, but it does not mean that the radar controller is offering an specific service.   
+Before offering a service the radar controller must confirm that the ac has been positively identified on radar and he must also confirm the type of srevice given.
+
+### Position Information
+
+An ac provided with radar service should be informed of its position in the following circumstances:   
+
+* upon identification, except when the identification is established:
+  + based on the pilot's report of the ac position or withini on NM of the runway upon departure and the observation is consistent with the ac's time of departure;
+  + by use of assigned discrete SSR codes or Mode S and the location of the ac observed radar position indication is consistent with the currrent flight plan of the ac; or
+  + by transfer of radar identification;
+  + on request;
+* when a pilot's estimate differes significantly from the readar controller's estimation based on radar observation;
+when the pilot is instructed to resume own navigation after radar vectoring if current instructions had diverted the ac form a prviously assigned route; or
+* immediately before termination of radar srevice, if the ac is observed to deviate from its intended route.
+
+
+ATC advises pilots that they have radar contact to confirm that the radar identity of the ac has been established.
+
+Postion information will be passed to ac in one  of the following forms:
+
+* well-known geopgraphical position
+* magnetic track and distance to a significant point, an enroute NAVAID, or an approach aid;
+* direction (using points of compasses) and distance from a known position;
+* distance to touchdown, if the ac is on final approach; or
+distance and direction fromthe center line of an ATS route.
+
+### Strayed and Unidentified Aircraft
+
+**strayed aircraft** ~ an ac which has deviated significantly fom it sintended track or reports that it is lost;     
+**unidentified aircraft** ~ an aircraft which has been observed or reported to be operating in a given area but whose identity has not been established.
+
+### Radar Vectoring
+
+radar vectoring ~ giving pilot specific headings to maintain a desired track.
+
+when vectoring
+
+* whenever practicable - vectoring along routes or tracks on which pilot can monitor ac position with reference to NAVAIDs
+* when vector divert from previously assigned route, provide information unless self-evident
+* ac shall not be vectored closer than 2.5NM from limit of airapsce for which radar controller is responsible, unless local arrangements exist or transfer to adjacent sector
+* controlled flights not be vectored into uncontrolled airspace ecept in emergency or to circumnavigate sever weather, or at request of pilot
+* when vectoring IFR flight, the radar controller shall issue clearances such that the prescribed obstacle clearance will exist at all times until the ac reaches the point where the pilot will resum own navigation.
+
+When terminating radar vectoring, the radar controller shall instruct the aircrew to resume own navigation, given the ac's position and appropriate instructions as necessary, if vectoring diverted ac from previously assigned route.
+
+### Radar Vectoring to ILS
+
+vectors ~ magnetic headings to maintain the desired track.    
+Final vector to enable ac to be established in level flight on final approach track prior to intercepting the specified or nominal glide path, if an ILS or radar approach is to be made, and should provide an intercept angle with the final approach track of 45 degrees of less
+
+When independent parallel approaches are being used, the maximum intercept angle is 30 degrees and the ac should be established on the center line at least 2NM before glideslop intercept.
+
+### Surveillance Radar Approaches
+
+surveillance radar approaches are normally terminated at 2NM from touchdown or before an ac enters an area of permanent radar clutter.   
+When authorised, surveillance radar appaoches may be continued to the threshold of the runway, or a prescribed point less than 2NM from touchdown.   
+Distance and level information should be given at each 0.5NM.
+
+During a surveillance radar approach:    
+* distance and level information should be given at each 0.5 NM;
+* transmission should not be interrupted for intervals of more than 5 seconds while ac is within a distance of 4NM from touchdown; and
+* radar controller should not be responsible for any duries other than those directly connected with a particular approach.
+
+An ac making a radar approach should be directed to exectue a missed approach, if    
+* ac appears to be dangerously positioned on final approach; or
+* for reasons involving traffic conflcitions;
+* if no clearance to land has been received from the no-radar controller  at 2NM from touchdown or such distance has been agreed with the TWR; or
+* on instructions from the aerodrome controller.
+
+An ac making a radar approach should be advised to consider executing a missed approach in the following circumstances:   
+
+* when the ac reaches a position from which it appear that a successful approach cannot be completed;
+if the ac is not visiable on the radar dispaly for any significant interval during the last 2NM of the approach; or
+* if the position of the ac is in doubt during any portion of the final approach.
+
+In all such cases the reason for the instruction or advice shall be given to the pilot.
+
+### Transfer of Control
+
+transfer of control from one controller to another will only take place when the accepting controller has confirmed to the transferring controller that the ac has been positively identified.
+
+### Wakte Turbulence Radar Separation Minima
+
+different wake turbulence separation minima in different States.    
+
+ICAO requires in approach and departure phase    
+
+* an ac is operting directly behind another ac at the same altitude or less than 1000ft below;
+* both ac are using the same runway, or parallel runways separated by less than 760m; or
+* an ac is crossing behind another ac, at the same altitude or less than 1000ft below.
+
+          HEAVY   MEDIUM    LIGHT
+SUPER      6NM     7NM        8NM
+HEAVY      4NM      5NM       6NM
+MEDIUM      --      --        5NM
+
+Arriving aircraft
+
+distance separation for wake turbulence purposes between ac approaching to land is shown in the table.
+
+some EU status use the following wake turbulence separations based on time  LIGHT behind SUPER     4 mins
+  MEDIUM behind SUPER   3 mins
+  LIGHT behind MEDIUM or HEAVY  3 mins
+  MEDIUM behind HEAVY   2mins
+  
+```{r}
+#| label: fig-time-based-sep-departures
+
+knitr::include_graphics("./figures/airlaw-dep-separation-time-based.png")
+
+```
+
+
+
