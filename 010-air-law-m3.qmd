@@ -1063,3 +1063,176 @@ ATC must advise both aircraft of
 + type of ac concerned; and
 + cruising level of the ac concerned and estimated time over the reporting point nearet to where the level will be crossed.
 
+
+## Approach Control Service
+
+### General Procedures for Departing Aircraft
+
+transfer from TWR to ACS    
+
+* when VMC in the vicinity of the aerodrome
+  + prior to ac leaving vicinity of the aerodrome; or
+  + prior to ac enterin IMC
+* when IMS in the vicinity of the aerodrome
+  + immediately before the ac entering runway in use for take-off; or
+  + immediately after the ac is airborne, if local procedures require
+  
+Departing ac may be expedited by suggesting a take-off direction which is not into the wind.   
+responsibility of PIC to accept and making such take-off or wait for normal take-of in a preferred direction.
+
+### Clearances for Departing Aircraft
+
+if air traffic control is based on tracks, ATC clearances must specify direction of take-off and turn after take-off, track to be made good before proceeding on desired heading, level to maintain before continuing climb to cruising level, time, point and/or rate at which level change shalle be made, and any other necessary maneuver consistent with safe operation of ac.
+
+### Separation of Departing Aircraft
+
+minimum separation between departing aircraft:    
+
+* 1 minute, if ac fly on tracks diverging by at least 45 degrees.    
+  minimum may be reduced for ac using parallel runways or diffrent runways with divergin directions provided they do not cross, and provided instructions covering the procedures have been approved by the appropriate ATS Authority, and lateral separation is effected immediately after take-off.
+* 2 minutes, if preceeding ac is 40kt or more faster than following ac, and both ac follow same track.
+* 5 minutes while vertical separation does not exist if a departing ac will be flown through the level of a preceding departing ac and both ac follow the same track.
+
+### Information for Departing Aircraft
+
+information regarding **significant changes** in meteorological conditions in the take-off and climb-out area obtained by the unit providing approach control service after a departing ac has established communiation with such unit, shall be tranmitted without delay, ecept when it is known that the ac has already received the information.
+
+significant changes include surface wind direction or speed (note: magnetic wind direction is given for take-off and landing).
+
+information regarding operational status of visual or non-visual aids essential for take-off and climb shall be transmitted without delay/unless known.
+
+information on **essential local traffic** known to ATC
+
+### General Procedures for Arriving Aircraft
+
+responsibility for control of arriving ac shall be transferred from the unit providing approach control service to TWR when the ac    
+
+* is in the vicinity of the aerodrome, and it is considered that it will be able to complete its approach and landing in visual reference to the ground, or it has reached uninterrupted VMC; or
+* has landed.
+
+... whichever is the earliest.
+
+Arriving ac may be required to report when leaving or passing a reporting point or when starting procedures turn or base turn, or to provid other information required by the controller to expedite departing ac.
+
+Significant changes to weather and aids during departure will be notficed to the ac asap.
+
+### Separation of Departing and Arriving Aircraft
+
+except otherwise prescribed, separation shall be applied when take-off clearance is based on the position of arriving ac:
+
+if arriving ac is making a complete instrument approach, a departing ac may take-off:    
+* in any direction until an arriving ac has started its procedure turn or base turn leading to final approach; or
+* in a direction which id sidderent by at least 45 degrees from the reciprocal of the direction of approach after the arriving ac has started its procedure turn or base turn leading to final approach, provided that the take-off will be made at least 3 minutes before the arriving ac is estimated over the beginning of the instrument runway
+
+if an arriving ac is making a straight-in approach, a departing ac may take-off:   
+* in any direction until 5 minutes before arriving ac is estimated over instrument runway;
+* in any direction which is different by at 45 degrees from the reciproval of the direction of the approach of the arriving ac
+  + until 3 minutes before the arriving ac is estimate over the beginning of the runway; or
+  + before the arriving ac crosses a designated fix on the approach track.
+  
+**own separation** ~ when requested by the ac and if so prescribed by the appropriate ATS Authority an arriving ac may be cleared to descent subjet to maintaining own separation and remaining in VMC, if reports indicate this is possible.
+
+### Visual Approach
+
+IFR flight may be cleared to execute a isual approach provided that the pilot can maintain visual reference to the trerrain and:    
+* reported ceiling is at or above the approved initial approach level for the ac so cleared; or
+* the pilot reports at the intial approach level or at any time during instrument approach peocedure that the meteorological conditions are such that with reasonable assurance a visual approach and landing can be completed.
+
+Separation myst be provided between an ac cleared to execute a visual approach and other arriving and departing ac.
+
+
+---- ac    | reported ceiling above approach level
+        --
+          ------> MET conditions allow visual approach
+          
+Instrument approaches must be conducted in accordance with IFR even if the aircraft is in VMC.     
+However, the PIC may request a clearance to continue for a visual approach.
+
+applies also to successive visual approaches, until the pilot reports having the preceding ac in sight, upon which he/she shall then be instructed to follow and maintain own separation from the precedin ac.
+
+When both ac HEAVE WTC, or the preceding ac is heavier WTC than the following, and the distance between the ac is less than the appropriate wake turbulence minimum, the controller shall issue a caution of possible wake turbulence.
+
+PIC of ac concerned shall be responsible for ensuring that the spacing from a preceding ac of a heavier wake turbulence category is acceptable.   
+If additional spacing is required, the flight crew shall inform ATC accordingly, stating their requirements.
+
+
+### Instrument Approach
+
+PIC reports or it is clearly apparant to ATC that crew is not familiar with an instrument approach procedure, the initial approach level, the point (in minutes from the appropriate reporting point) at which the procedure turn will be started, the level at which the procedures turn shall be carried out, and the final approach track shall be specified, except that only the last-mentioned need be specified if the ac is to be cleared for a straight in approach.    
+The missed approach procedures shall be specified when deemed necessary.
+
+A *timed approach procedure* may be used, as necessary, in order to expedite the approaches of a number of arriving ac. 
+In a timed approach procedure ac are requested to pass a specified point inbound at a notified time.
+
+If visual reference to terrain is established before the approach procedures is complete, the pilot must continue with the full procedure unless he or she requests and is cleared for a visual approach.
+
+### Holding
+
+holding and holding pattern entry shall be accomplished in accordance with procedures established by the approiate ATS Authority and published in the relevant AIP.    
+If entry and holding procedures have not been published or if the procedures are not known to the PIC, the appropriate ATC unit shall describe the procedures to be followed.
+
+Levels at holding points should be assigned so that -- normally the first ac to arrive over a holding point  should be at the lowest level, with following ac at successively higher levels. <--> stack!
+
+### Approach Sequence
+
+approach sequence ~ facilitate maximum number of arrivals with least average delay.   
+
+Special priority may be given    
+
+* an ac with anticipates being compelled to land because of factors affecting the safe operation of the ac (engine failure, shortage of fuel, etc); or
+* hospital ac or ac carrying any sick or seriously injured person requiring urgent medical attention.
+
+If pilot in an approach sequence has indicated an intention to hold for weather improvement, or for other reasons, such action shall be approved.    
+However, when other holding ac indicate intention to continue their approach-to-land and if alternative procedures involving, for instance, the use of radar are not available, the pilot desiring to hold will be cleared to an adjacent fix for holding awaiting weather change or rerouting.    
+Alternatively, the ac should be given a clearance to place it at the top of the approach sequence so that other holding ac may be permitted to land.
+
+Coordination shall be effected with the area control centre when required to avoid conflict with the traffic under the jurisdiction of this centre. The ac operator, or a designated representative, shall be advised of the action taken immediately after the clearance is issued, if practicable.
+
+
+### Expected Approach Time
+
+**expected approach time** is the time at which ATC expects that an arriving ac, following a delay, will leave the holding point to complete its approach for a landing.
+
+EAT will be determined for an arriving ac that will be subjected to a *delay of 10 minutes of more*.   
+EAT must be transmitted to the ac asap and not later than at the commencement of its initial descent from cruising level.
+
+If ac is expected to *hold for 30 minutes or more*, the EAT must be transmitted by the most expeditious means.    
+
+A revised EAT must be transmmitted to the ac without delay whenever EAT changes by 5 minutes or more.
+
+If the holding point to which the EAT refers is not obvious, it should be specified.
+
+### Information for Arriving Aircraft
+
+arriving ac shall asap establish communiation with approach controle unit
+
+to be transmitted, unless known to have already received:
+
+* runway in use;
+* meteorological information (magnetic wind direcetion is given for take-off and landing)
+* current ruwnay sufrace conditions; and
+* changes in observed RBR or other measure of visibility.
+
+At the commencement of the final approach, the following information shall be transmitted:     
+* significant changes in the mean surface wind direction and speed;
+* latest information, if any, on wind shear and/or turbulence in the final approach area; and
+* current visibility.
+
+wind direction is normally "TRUE", but ATC will always give the surface wind in "MAGNETIC
+
+### Final Approach
+
+During final approach the following information shall be transmitted without delay:
+
+* sudden occurrence of hazards (e.g. unauthorised traffic on the ruwnay);
+* significant variations in the currrent surface wind, expresssed in terms of minimum and maximum values, significant changes are
+  + mean headwind component: 10kt
+  + mean tailwind component: 2 kt
+  + mean crosswind component: 5kt
+* significant changes in runway surface conditions;
+* changes in the operational status of required visual or non-visual aids; and
+* changes in observed RVR value(s), in accordance with the reporte scale in use, or changes in the visibility representative of the direction of approach and landing.
+
+### Inability to Comply with Procedure
+
+PIC advises on inability to comply with the approach control holding or communication procedures, the alternative procedures should be approached if known traffic conditions permit.

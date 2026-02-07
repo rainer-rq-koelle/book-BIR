@@ -11,3 +11,7 @@ icns*
 .httr-oauth
 .DS_Store
 .quarto
+
+# remove my private stuff
+figures/Canada-eTA-Gabriela.pdf
+*-corrup*
