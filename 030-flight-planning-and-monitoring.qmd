@@ -514,9 +514,339 @@ Economic considerations:
 The minim cost route could be longer in terms of time (flight duration) than the minimum time route. By definition cannot be less!
 
 
+## Basic Flight Planning Calculations
+
+### Heading, Track, Drift
+
+heading := angle of ac to north datum; true north ~ true heading; magnetic north ~ magnetic heading
+
+track or course := path of ac over ground. Desired path := **required track**; actual flown path := **track made good**.
+
+angle between required track and actual track (made good) := **track error angle**
+
+drift := angle between ac heading and track made good. "port" drift when track made good is less than the heading, "starbord drift" when track made good is greater than heading.
+
+"drift goes from heading to track" -> drift left/port, drift right/starboard
+
+### Wind Correction Angle
+
+compensate for effect of wind (and associated drift) -> steer ac from required track INTO the wind.
+
+required track: 156
+WCA              7L
+heading:         149
+
+or     
+heading       : 149
+drift         :   7R   drift and wind correction "opposite sign"
+track made good: 156
+
+### Wind Calculations
+
+NAV computer -> CHECK AND PRACTICE
+
+True Heading & True Air Speed ~ motion of aircraft        >     
+True Track & Ground Speed     ~ motion of ac over ground  >>    
+wind & velocity               ~ wind impact               >>>
+
+finding groundspeed    
+- required track 100deg true, TAS 190kt
+- wind velocity 320deg true/35kt    
+what is the required heading to fly track and will be the ground sepped?
+
+### Graphical Methods of Determining Average Winds
+
+ICE-T  - Pussy Cat Dolls
+
+IAS 
+      ~ corrected for instrument and Position errors gives
+CAS 
+      ~ corrected for Compressibility
+EAS
+      ~ corrected for Density
+TAS
+
+compressibility error/correction applied above 300kt TAS
+corrrection   (TAS / 100) - 3    
+example 445kt => 4.45 - 3 = 1.45
+
+(unsure how to handle this on a circular E6B)
 
 
+### Mach Numbers
 
+Mach number ~ how fast as a proportion of the local speed of sound LSS.   
+Local speed of sound varies with temperature.
+
+M > 1 := supersonic.
+
+M -> TAS for navigation purposes
+
+$$Machnumber = \frac{TAS}{LSS}$$
+$$TAS = Machnumber * LSS$$
+
+$$LSS = 38.94 * \sqrt{Tempabsolut}$$
+absolute zero = -273 degrees Celsius <=> 0 Celsius = 273 A
+
+TAS of ac flying at M 0.82 at FL310 and OAT -40deg C
+EB6 ==> mach index pointer on Temp = scale read TAS, flight level irrelevant, compressibility can be neglected
+
+Math:    
+TAS = M * LSS = M * ( 38.94 * sqrt(273 -40)) 
+    0.82 * ( 38.94 * sqrt(233))
+    0.82 * (38.94 * 15.26)
+    0.82 * 594
+    = 487kt
+    
+
+for required ETA => ac must fly 480kt, FL350, OAT = -55    
+what is Machnumber
+
+E6B 0.835
+
+TAS = M * LSS
+M = TAS / LSS = 480 / ( 38.94 * sqrt(273 - 55))
+480 / (38.94 * 14,77) = 480 / 574,94 = 0.835
+
+ac M0.77, FL290, OAT -48    
+ASI reads?
+
+TAS = M * LSS = 0.77 * (38.94 * sqrt(273 - 48))
+    = 449,76kt ~ 450kt
+    
+    check again how to get from TAS > 300kt to CAS with compressibility (here 1.5 divisions)
+    450kt -> CAS* 289 => 295kt
+    
+### Speed, Distance, and Time Calculations
+
+calc side 10 <>1hr = 60 mark
+
+478kt, time for 135NM
+speed: 478NM/60min => set 60 mark under 478
+
+185NM in 24 min => 185 over 24 ==> 60 mark shows 460NM/60min = 460kt
+
+
+### Other Uses
+
+Distance Conversions
+
+1200NM => outer scale NM index/place 12
+==> 1380 SM (given SM index)
+==> 22.2 against km ~ 22.200 km
+
+
+NM * 1.15 = SM     
+NM * 1.852 = km
+NM * 6080  = ft
+km * 3280 = ft
+NM * 1852 = m
+
+### Fuel Calculations
+
+all nav computers are capable of fuel flow calculations
+
+ac uses 1800lbs in 23 mins    
+fuel flow per hour   
+E6B    18/23  -> 47/60 ~ 4700lbs/60min
+
+ac burns 6200lbs/hr    
+how muhc used in 28 mins    
+E6B   62/60 -> 29/28min ~ 2900lbs/28min
+
+
+ac uses 6200lbs/hr with a ground speed of 420kt    
+fuel usage per NM     
+note: fuel flow and speed in hrs!    
+6200/420 = 620/42 ~ 62/42 -> 10marker ~ 1 unit ==> 14.75 lbs/NM
+
+### Fuel Conversions
+
+SG := specific gravity
+
+1 imp gal     = 1.2 USgal     = 4.54l
+1 im gal of water (SG = 1.0)  = 10lb
+1 imp gal of fuel (SG = 0.8)  = 8lb
+1 l of water      (SG = 1.0)  = 1kg
+1 l of fuel       (SG = 0.8)  = 0.8kg
+
+
+1000imp gal of fuel with SG of 0.8 in kg   
+rough: about 4kg or 4 liters in a gallon ~ 4000kg or 4000l
+???
+
+1000lb in litres
+
+
+E6B
+$$\frac{fuelweight}{"10"} = \frac{pounds}{gallons}$$
+
+$$\frac{fuelflow}{rate} = \frac{fuelconsumption}{timeminutes}$$
+
+## Flight Plans
+
+### Requirement to File a Flight Plan
+
+FPL shall contain all information relevant to an intended flight
+
+* flight or any portion of it is to be provided with ATC services
+* flight is under IFR within Advisory Airspace
+* flight is within, or into, a designated area or along a designated route when the appropriate ATS require it, in order to facilitate the provision of Flight Information and alerting and rescue services;
+* flight is within or into a designated area or along a designated route when the appropriate ATS require it in order to facilitate coordination with appropriate military units or with ATS units in adjacent States in order to avoid the possible need for interception for the purpose of identification; or
+* flight is to cross international borders.
+
+FPL may cover complete flight or portions for those portions requiring a particular clearance.    
+Check completeness and correctness of information, including confriming NOTAMs for NAVAIDs/aeronautical facilities and services, procedure, or hazard which may affect flight.
+
+### Submission
+
+FPL may be submitted    
++ before flight to an ATS reporting office; or
++ during flight by RT to the appropriate ATS unit or air ground control radio station (AIRFILED)
+
+FPL to be submitted before flight requiring ATC service or air traffic Advisory Service, at least 60 minutes before departure, i.e., EOBT.
+
+If AIRFILED: at least 10 minutes before entering    
++ intended point of entry into a Control Area CTA or Advisory Area; or
++ point of crossing an airway or advisory route.
+
+FPL for IFR flights over North Atlantic and on routes subject to ATFMshould be filed a minimum of 3 hours before EOBT.    
+ATFM might apply to certain busy airways at particular times of day or be applied when there are problems in the ATC system.
+
+If departure is delayed, FPL shall be amended or re-submitted, if delay exceeds     
++ 30 min in case of controlled flights; or
++ 60 min for an uncrontrolled flights.
+
+If flight requires control, it must not depart BEFORE clearance is received.    
+If only advisory service is required, the flight should await acknowledgement of receipt of the plan before departure.   
+Please note that the times given for filing/delays of flight plans are the standard ICAO requirement.    
+Individual State and Aerodrome requirements may well differ.
+
+A "current flight plan" is a filed flight plan with amendments and clearances included.
+
+### Actions on an ATC Cleared Flight Plan
+
+within certain limits, ac must adhere to the submitted plan unless clearance has been obtained for a change or an emergency requires deviation from it.    
+In the latter case the deviation must be reported as soon as possible to the appropriate ATS unit together with the reason for the diversion.
+
+Inadvertent changes of a controlled flight from its plan must be dealt with as follows:    
++ if ac is discovered to be off track action shall be taken to regain track fothwith;
++ EASA regulations: if TAS changes by more than 5% of the flight planned TAS the appropriate ATS must be informed. Note: ICAO regulations required variation of -/+ 0.02 Mach or more, or -/+ 19km/h (10kts) TAS or more, from the current flight plan must be reported.
++ if the ETA at significant reporting point is likely to change by 2 minutes or more from that already notified, it must be reported to the ATS unit together with a revised estimate.
+
+Requests for changes should include the following information:    
+* for a change of cruising level
+  + ac identification
+  + requested new level together with the cruising speed at that level and consequent changes to time estimates
+* for a route change with unchanged destination:
+  + ac identification, flight rules (VFR/IFR)
+  + requested new route together with the cruising speed and level and relevant time estimates.
+* for a route change with changed destination
+* as above but with the addition of the new destination and alternate(s)
+* change from IFR to VFR
+  + only acceptable when a message initiated by the PIC containing specific expression "Cancelling My IFR Flight" together with changes, if any to be made to the current FPL is received air traffic.
+* landing at an aerodrome other than the filed destination
+  + inform filed destination ad asap. There is a rule (ICAO)  that states you should do this within 30 minutes of landing.
+  
+For a VFR flight encoutering IMC     
+If -- because or worsening WX -- it appears that it will not be possible to continue in VMC, a VFR flight operated as a controlled flight shall:
+
+* request an amended clearance to continue to destination or an alternate or to leave the airspace for which ATC clearance is required
+* if no such amended clearance can be contained , continue in VMC and notify the approp ATC unit of the action being taken to leave the airspace or to land at the neearest suitable aerodrome
+* if operating within a control zone, apply for special VFR SVFR status
+* request IFR clearance
+
+### ICAO PFL Form
+
+example - fields - content
+
+broad sections    
+* ATS addresses and information, completed by filing ATS unit
+* flight and route details, completed by flight crew or flight ops
+* search and rescue details, completed by flight crew or flight ops, not transmitted.
+
+item 7: aircraft identification (ac registration or radio callsign)
+item 8: flight rules and type of flight I(FR), V(FR), Y := IFR -> VFR, Z := VFR -> IFR; position of change of flight rules specified in item 15.
+flight types
+  S scheduled air service
+  N non-scheduled air transport
+  G general aviation
+  M military
+  X any other operation
+
+item 9; number and type of ac and wake turbulence category    
+  1 or 2 characters for the number - only if more than 1 ac (e.g. formations)
+  2,3, or 4 characters for type using ICAO type designator; if no designator ZZZ and specify in item 18: TYP/number and types as appropriate   
+  an oblique stroke H for heavy > 136.000kg or more), M for medium (700kg < mass < 136.000kg), L for light (7000kg or less) types
+
+item 10: radio communication, navigation, and approach aid equipment
+  + N := NIL = none carried or equipment is unserviceable
+  + ....
+
+surveillance and ADS equipment
+
+item 13: departure aerodrome and time; if no ICAO location indicator ZZZZ and field 18: DEP/name of dep aerodrome
+
+plan submitted in flight AFIL; field 18: DEP/location indicator 
+
+item 15: cruising speed, level, and route
+  + cruiting speed TAS as K for knots in 4 figures, if in kilometers per hours
+  + N1234 in knots or
+  + M123 for Mach numbers
+  + F123 for flight level
+  + S1234 standard metric level
+  + A123 for ALtitude in hundreds of feet
+  + M1234 meters in tens of meeteres
+  + VFR for uncontrolled VFR; if flight rule change, point of change in item 15
+  
+  
+item 15: route description
+  outside ATS routes, about 200NM ~ 30min flight time aparrt; every point with a course change, TAS, flight level or flight rules
+  DCT if start/end point of a segment are clearly identified.
+  
+item 16: destination aerodrome, total elapsed time, and alternate aerodromes.
+
+For the destination and EET a total of 8 characters is used without spaces as follows:     
++ ICAO four letters designator followed without a space by the total EET
++ no ICAO: ZZZZ followed by EET; item 18: DEST/name of destination
+
+For alternates, c.f. above; however, item 18: ALTN/name of alternate
+
+item 18: other information
+  EET runs from take-off. 
+  example: EET/LFFF0020, i.e., 20 mins after take-off at LFFF
+  
+  RIF/ route detail to the revised destination, to be cleared in flight, route is given first followed by the destination locator
+  
+  REG/ registration markings of ac
+  
+  SEL/ SELCAL code
+  OPR/ operator name
+  STS/ special treatment
+  TYP/ type of ac
+  PER/ ac performacne data, if required
+  COM/ used to give significant detail of communications equipment
+  DAT/ data link capability
+    DAT/S for satellite data link
+    DAT/H for HF data link
+    DAT/V for VHF data link
+    DAT/M for SSR Mode S data link
+    
+  NAV/ navigatio equipment
+  DEP/ dep ad name if earlier ZZZZ
+  DEST/ destination ad name, if earlier ZZZZ
+  ALTN/
+  RALT/
+  RMK/ "remark" for anything plain language remarks
+  
+item 19: supplementary information
+
+filed by --> sender of FPL.
+
+
+## Tips
+
+measure distance on VFR chart and compare length at latitude grid ~ exact(er) distance - why not using measure (do I have this at the exam)?
 
 ## Questions
 
