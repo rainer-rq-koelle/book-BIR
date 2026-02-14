@@ -844,6 +844,250 @@ item 19: supplementary information
 filed by --> sender of FPL.
 
 
+## Fuel Planning
+
+## Piston Engine Aircraft
+
+### General Fuel Requirements
+
+rules require an operator to establish, implement, and maintain a fuel scheme suitable to their operational needs.
+
+* basic fuel scheme
+* basic fuel scheme with variations; if operator deviates partly or fylly from basic scheme
+* individual scheme; if operator tailors fuel scheme to operational needs
+
+individual scheme ~ lenghty process ~ requires fuel monitoring scheme of at least 2 years. Fuel scheme to monitor fuel consumption of ac, including consumption of the ac on scheduled routes    
+==> database for each ac and route, and associated deviations from planned fuel consumption
+
+information can also be used within the basic fuel scheme with variations to establish taxi fuel requirements and contingency fuel.
+
+### Basic Fuel Scheme
+
+basic fuel scheme includes:   
+
+* **taxi fuel** ~ amount expected to be used prior to take-off. consider local conditions at departure ad, APU consumption, and operational conditions, e.g. NOTAMs, MET (winter), ATS procedures (e.g. low visibility), and any anticipated delay(s).  Standard allowance for start up and taxi -- captain can vary as appropriate.
+* **trip fuel** ~ planned fuel for sector - runway to runway.
+  + fuel for take-off and climb from ad ELEV to initial level/altitude considering expected departure routing;
+  + fuel from top of climb to top of descent, including any step climb/descent;
+  + fuel from top of descent to point where approach procedure is initiated, considering expected arrival routing; and
+  + fuel for making an approach and landing at destination aerodrome.
+* **contingency fuel** ~ fuel to cater for uncertainties/not going according to plan, including headwind, re-routing, lower flight level (higher consumption), accelerated flight to compensate for delay. Contingency fuel must be the higher of
+  + 5% of the planned trip fuel, or - in the event of inflight re-planning - 5% of the trip fuel for the remainder of the flight; or
+  + an amount to fly for 5 minutes at holding speed at 1500ft (450m) above the destination aerodrome in standard conditions.
+* **alternate destination fuel** comprising
+  + ac is operated with one destination alternate
+    + fuel for a missed approach from the applicable DA/H or MDA/H at the  destination ad to the missed approach altitude considering the complete missed approach procedure.
+    + fuel for climb from missed approach altitude to the cruising level/altitude, considering the expected departure routing.
+    + fuel for cruising from top of climb to top of descent, considering the expected routing.
+    + fuel for descent from top of descent to point where approach is initiated, considering the expected arrival routing.
+    + fuel for making ann approach and landing at the destination alternate.
+  + when ac is operated with 2 detination alternates, the amount of fuel is the higher of the 2 alternate fuels.
+  + when a flight is operated with no destination alternate, ith shall be amount of fuel/energy required to hold at the destination while enabling the aeroplane to perform a safe landing, and allow for deviations from the planned operation, as a minimum, this amount shall be 15 minutes fuel/energy at holding speed at 1500ft/450m above ad elevation in standard conditions, calculated according to the estimated aeroplance mass on arrival at the destination aerodrome.
+* **final reserve** ~ final reseever fuel := always land with at least final researve; if not: declare emergency.    
+  + amount of fuel/energy to fly at holding speed at 1500ft/450m above aerodrome elevation in standard considtions according to the aeroplance estimated mass on arrival at the destination alternate aerodrome, or destination aerodrome when no alternate required
+      + shall not be less than -- for aeroplanes with reciprocating engines -- fuel/energy to fly for 45 minutes; or
+      + shall not be less than -- for turbine-engined aeroplances -- the fuel/energy to fly for 30 minutes
+* **additional fuel** ~ fuel which is only applicable to some operations (e.g. depressurisation over Atlantic) ~ must allow the ac to proceed, in the event of engine failure or loss of pressuraisation, from the most critical point along the route to a fuel en-route alternate (fuel ERA) aerodrome in the relevant ac configuration, hold there for 15 minumtes at 1500ft/450m above aerodrome elevation in standard conditions, make an approach and land.
+* **extra fuel** ~ added by operations ~ any anticipated delays or specific operational constraints, e.g. longer route due to night curfew or scheduled maintenance work slowing movements at aerodrome per NOTAM or AIP, use of 1 runway only for arrival/departures during winter (i.e., Munich)
+* **discretionary fuel** ~ added by commander
+
+### Minimum Ramp Fuel
+
+Minimum Ramp Fuel =     
+  taxi fuel +
+  trip fuel +
+  contingency fuel +
+  alternate fuel +
+  final reserve
+
+under certain planning circumstances
+  above +
+  additional fuel +
+  extra fuel
+
+and lastly
+  + discretionary fuel by PIC.
+  
+TTC(AA)FE
+
+### Performance Class
+
+https://www.bing.com/videos/riverview/relatedvideo?q=ATPL+aircraft+performance+class&qs=n&sp=-1&ghc=2&lq=0&pq=atpl+aircraft+performance+class&sc=12-31&sk=&cvid=AC4BE17843A94FDBAB49158106AAE44C&ajaxnorecss=1&sid=0AD64448D1DE67E9326052B1D0B6663B&jsoncbid=1&ajaxsydconv=1&ru=%2fsearch%3fq%3dATPL%2520aircraft%2520performance%2520class%26qs%3dn%26form%3dQBRE%26sp%3d-1%26ghc%3d2%26lq%3d0%26pq%3datpl%2520aircraft%2520performance%2520class%26sc%3d12-31%26sk%3d%26cvid%3dAC4BE17843A94FDBAB49158106AAE44C%26ajaxnorecss%3d1%26sid%3d0AD64448D1DE67E9326052B1D0B6663B%26format%3dsnrjson%26jsoncbid%3d1%26ajaxsydconv%3d1&mmscn=vwrc&mid=49EF442E4D2EEE33B8E749EF442E4D2EEE33B8E7&FORM=WRVORC&ntb=1&msockid=0994cdc3090511f1ba6fdda43f95ad30
+
+
+A := multi-engine ac powered by turbo-propeller engines with an MOPSC or more than nine OR a maximum take-off mass exceeding 5.700kg, and all multi-engine turbo-jets
+
+A think "jets"
+
+B := ac powered by propeller engines with MOPSC of nince or less AND a maxium take-off mass of 5.700kg or less
+
+B think "small ac, SEP or MEP ~ often general aviation ac
+
+C:= ac powered by reciprocating engines with MOPSC of more than nine OR a maximum take-off mass exceeding 5.700kg
+
+C think "oldies" ~ require more specific requirements than class B, but not class A
+
+```{r}
+#| label: tbl-ac-perf-classes
+
+knitr::include_graphics("./figures/plan-ac-perf-classes.png")
+```
+### Performance Class B - Special Fuel Requirements
+
+Class B ~ small piston aeroplanes 
+
+pre-flight calculation of usable fuel required includes
+
+TTC(AA)FE
+
+* taxi fuel
+* trip fuel
+* contingency fuel - not less than 5% of planned trip fuel
+* final reserve fuel - fly for an additional 45 minutes
+* alternate fuel - fuel to reach alternate via destination
+* extra fuel
+* discretionary fuel - if deemed necessary by PIC
+
+```{r}
+#| label: fig-plan-fuel-reqs
+
+knitr::include_graphics("./figures/plan-fuel-reqs.jpg")
+
+knitr::include_graphics("./figures/plan-fuel-reqs2.png")
+```
+
+
+### Fuel Management and Montioring Regualtions
+
+Operator to establish fuel monitoring procedures and approved by appropriate Authority.    
+Detailed in Operations Manual.
+
+Operators required to maintain an inflight fuel/energy management policy to     
+* confirm that any particular flight is proceeding in a manner that reflects the original pre-flight planning;
+* allo the crew to analyse this progression and enable them to make adjustments where necessary;
+* ensure that the ac retains the necessary amount of usable fuel, sufficient to achieve a safe landing (with final reserve intact);
+* record fuel/energy data relevant to the points listed above.
+
+specifics: agreement between competent authority and operator.    
+at a minimum; fuel checks at regular intervals throughout the flight comparing actual with planned fuel consumption. ==> crew to assess whether fuel is sufficient to complete the flight and what fuel remains aon landing.
+
+ac to arrive at destination with FINAL RESERVE FUEL and sufficient fuel to proceed to the destiantion alternate (if required).
+PIC to acquire delay infromation and adjust, possibly using ALTERNATE FUEL
+
+If unable to land with FINAL RESERVE == declare emergency: MAYDAY MAYDAY MAYDAY FUEL
+
+If landing close to FINAL RESERVE: MINIMUM FUEL as any furthe delay would result in the ac landing with less than the final reserve.
+
+MINIMUM FUEL includes commitment to land, e.g. in case of diversions.
+
+
+### Fuel Planning - SEP
+
+### Take-off and Climb
+
+take from graph    
+assumptions: pwer set to ful throttle with 250RPM, full rich, flaps as required, fuel density 6lb per gallon (note US gallon), IAS for fclimb out 110kts
+
+details to be found at top of graph.
+
+determine time, fuel, and still air distance NAM for take-off and climb to our selected cruise altitude.
+
+example:     
+  ad pressure alt: 2000ft
+  OAT ad:           25C
+  planned cruise:   10.000ft
+  OAT cruise:       -2C
+  take-off mass:    3200lb
+  
+compensate climb from MSL by subtracting conditions at ad ELEV!
+
+                CRUISE      AD
+TIME TO CLIMB     10.7  -  1.7min   = 9 min
+FUEL TO CLIMB     3.9  -   0.7 gal  = 3.2 gal
+DIST TO CLIMB     22   -   3 NM     = 19 NM NAM
+
+calculating ground distance in climb
+
+diagram ==> "still air" ~ to calculate ground distance NGM integrate wind.
+
+first TAS ~ assuming 20kt tailwind
+
+TAS = NAM/time = 19 NM/9min = 19/9 * 60 NM/hr = 127kt    
+GS = 127kt + 20kt = 147kt
+
+==> NGM = GS * time = 147kt * 9 min = 147NM/60min * 9 min = 22 NGM
+
+
+Using NAV computer -> mean altitude and mean temperature    
+2000 --> 10.000ft ~ 2/3 ~ 7.333ft   
++25C --> -2C      ~ 2/3 ~ 7C
+
+set temp and alt in window ==> blue scale CAS ~ IAS ==> outer scale 124kt   
+GS = 124 + 20 = 144kt     
+put 144kt/60~1hr --> check above 90 ~ 216 = dimension = 21.6NM NGM
+
+
+Other example
+
+MSL to 14.000ft => only values for 14.000ft    
+time = 25.5 min
+fuel 8 gal
+dist NAM = 52.5NAM
+
+TAS = NAM / time = ( 52.5NM / 25.5) * 60 = 123.5kt     
+GS = TAS + w/c = 123.5 + 25 = 148,5kt
+
+NGM = GS * time = 63NGM (NAV COMP 62)
+
+### Cruise
+
+TOC ~ reduce power and lean off mixture ~ reduces rate of fuel consumption (and wear and tear on engine)
+
+cruise data provided for a variaty of power settings.
+
+SPECIFIC AIR TANGE
+
+assuming we want to fly at most economic power setting, we need to decide on the measure of efficiency.    
+NAMs per unity of fuel 
+
+SAR = TAS / fuel flow = $\frac{\frac{NAM}{hour}}{\frac{lb}{hr}} = \frac{NAM}{lb}$ 
+
+comparison at 4000ft and 1000ft (as full throttle between 6000 and 8000)
+
+4000ft:   
+* MAP = 23 inHg
+* fuel flow = 69,4lb/hr
+* TAS = 154kt
+
+==> SAR = TAS/fuelflow = 154kt/69.4lb/hr = 2.22NAM/lb
+
+10.000ft: MAP = 20.7 inHg; fuelflow = 66,2lb/hr; TAS = 157kt
+
+SAR = TAS/fuelflow = 157 / 66.2 = 2.37NAM/lb
+
+since there is incerease of distance flown at 10.000ft ~ more economic flight level for flight.
+
+
+GROSS FUEL FLOW
+
+SAR does not take wind into account
+
+$$GFF = \frac{fuelflow}{groundspeed} = \frac{\frac{lb/hr}{NGM}}{hr}= \frac{lb}{NGM}$$
+
+ENDURANCE := amount of airborne time available for the fuel carried.
+
+
+Quizzie
+
+FL155 -> 2000ft = descent 13500ft    
+TAS = 260kt/constant during descent, no wind   
+GS := TAS = 260kt = 260NM/60min = 4.33 NM/min    
+rate of descent 500ft/min  => 135/5 = 27 min
+
+==> 4,33 NM/min * 27min = 117NM
+
+
+
 ## Tips
 
 measure distance on VFR chart and compare length at latitude grid ~ exact(er) distance - why not using measure (do I have this at the exam)?
@@ -854,3 +1098,7 @@ TT Drift TH VAR MH DEV CH
 TT + drift (9right) = TH
  TH + VAR       = MH -- MH + DEV = CH 
 271 + 22E (-22) = 249 -- 249 3W (+3) = 252
+
+
+Minimum Ramp Fuel := sufficient to complete flight ~ reserve fuel = contingency fuel
+TTC(A)FE
