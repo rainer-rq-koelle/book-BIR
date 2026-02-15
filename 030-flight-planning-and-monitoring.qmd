@@ -1088,9 +1088,177 @@ rate of descent 500ft/min  => 135/5 = 27 min
 
 
 
+## Fuel Planning MEP
+
+Class B MEP; fuel requirement for a sector A -> B:   
+
+T taxi fuel
+T trip fuel
+C contingency fuel - fuel not less than 5% of planned tip fuel
+A alternate fuel  - if required
+F final reserve fuel - fuel to fly for an additional period of 45min
+E extra fuel - added by operations (for known delays)
+D discretionary fuel - discretion of PIC
+
+### Climb
+
+example: departure airport 2000ft, airport OAT 21C; cruise 16500ft, cruise OAT = -13C
+            cruise  ad
+climb fuel  15 -    2   = 13 gal
+time to climb 27 -  3   = 24 min
+distance climb  50  -5  = 45NM NAM
+
+headwind 25kt -> 25NM/60min * 24 min = 10NM ==> NGM = 45-10 = 35NM
+
+example2: dep ad 2000ft, +5C, cruise 15000ft, -5C; TOM = 4750lb; tailwind 15kt
+              cruise  ad
+climb fuel      14 - 2  = 12 gal
+time clibm      25 - 3  = 22 min
+distance        46 - 5  = 41 NM NAM
+
+ground distance with tailwind   15NM/60 min * 22 min = 5.5 NM ==> NGM = 41 + 5.5 = 46.5NM NGM 
+
+### Cruise
+
+SAR = TAS/fuel flow = NAM/lb    GFF = fuel flow/GS = lb/NGM
+
+example: cruise 12.000ft, leg 400NGM, wind 30kt head, temp = ISA, RPM 2500 fuel density 6lb/USG
+
+power             75%   65%   55%   45%
+MAP               32.5  30.7  25.3  21.2
+fuel flow GPH     29    23.3  18.7  16.0      multiply with fuel density
+fue flow lbs/hr   174   140   113   96
+
+TAS               183   178   163   146     from diagram
+GS (30kt head)    153   148   133   116
+
+SAR = TAS/FF      1,05  1,271 1,45  1.52    SAR = TAS / FF = NAM / lb
+GFF = FF/GS       1,14  0,945 0,84  0.83
+
+time = 400/GS     2,61  2,70  3:00  3,44
+                  3:36  2:42  3:00  3:26     minutes = 0.61 * 60/1h ~ multiply by 6 ~ 6 * 6 = 36
+fuel used         455   378   339   330
+(time * FF)
+
+
+from example, read out still air ranges: 15.000ft, OAT = -20C; economy setting (65%)      
+NAM with reserve:     775NAM
+NAM without reserve:  875NAM
+
+temp correction based on delta OAT!   
+ISA@15.000 -> -2C per 1000ft -> 15C - 2*15 = -15C    
+OAT = -20C ==> -5 vs ISO ==> reduces NAM by 5 * 1 NM
+
+NAM corrected with reserve = 770NAM
+NAM correted without res  = 870NM
+
+
+MEP; 10.500ft, OAT -21C, usable fuel 123USG, economic cruise    
+? range in NM with 45min reserve fuel at 45% power!
+
+economic cruise (:= 65% power setting) using reserve at 45%!    
+NAM with reserve = 760NM
+
+temp correction: ISA @ 10.500ft := 15 - 2*10.5 = 15 - 21 = -6C   
+OAT = -21C ==> dISA = -15C -> -15NM   
+
+NAM temp corr with reserve (65% economy): 745NM
+
+
+endurance: find endurance of MEP 12.500ft, economic cruise, ISA - with and without 45min reserve at 45%
+
+endurance with reserve: 4.43 ~ 4:26
+endurance without res:  4.96 ~ 4:57
+
+NOTE: 45 min reserve only "full" 45 min if flying at 45% power setting (long range). As economic setting ~ higher fuel burn, thus not a full 45 min reserve! 26+45 = 1:11 != 0:57!!!
+
+### Descent
+
+MEP difference in cruise and descent fuel burn! ==> similar to climb allow for separate fuel calculation.
+
+cruise alt 16.500ft, OAT -13 C    
+destination ad: 3000ft, OAT 22C
+
+                  cruise    ad
+fuel to descend:   6    -   1   = 5 USG
+time to descend:  16    -   3   = 13min
+distance descended: 45  -   8   = 37NM
+
+if head/tail wind, correct NAM to NGM
+
+## FUEL REQUIRED EXERCISE MEP
+
+TIREE to STAVANGER, weather nice, no alternate, no NOTAMS
+
+MINIMUM RAMP FUEL   
+- start up and taxi:  25lb
+- TOM:                4750lb
+- cruise altitude:    FL85, OAT +8C
+- power setting:      economy cruise, 2500RPM
+- mean wind:
+  + climb:            NIL
+  + cruise:           100/25kt
+  + descent:          NIL
+- airfield data:      TIREE OAT 20C, 38ft MSL
+                      STAVANGER OAT 15C, 29ft MSL
+- sector distance:    425NM
+- required track:     067
+
+MINIMUM RAMP FUEL
+T taxi
+T trip
+C contingency 5% of trip fuel
+A alternate - NIL, not required
+A additional - NIL, not required
+F final reserve:  45min at 2000ft/45% power
+E extra - not requird
+D discretionary - not required
+
+trip = climb + enroute + descent
+
+climb fuel: 7.8 USG = 47 lb
+      time: 14 min
+      distance 24 NAM
+wind NIL => 24 NMA = 24NGM
+
+descent fuel: 3USG= 18 lb
+      time:   8 min
+      dist:   22NAM
+wind NIL => 22 NAM = 22 NGM
+
+cruise/enroute: 425 NM - 24 NM - 22 NM = 379 NM
+- economy 65%/2500RPM ==> fuel flow: 23.3GPH
+  MAP 31,0 in
+  temp correction: ISA = 15 - 2*8,5 = -2C; OAT = 8 => dISA = +10
+      1% per 6C: 10/6 = 1,66 ~ 1,7% ==> MAP = 31.53 in
+
+==> TAS 174 kt (taken from diagram)
+wind corretion: 100/25kt ~ head wind 22kt   
+==> GS = 174 -22 = 152 kt    (heading with WCA 4 deg = 071)
+
+time in cruise = dist / GS = 379 NM / 152 = 2,5hr = 2:30    
+cruise fuel: 23,3 USG * 2,5 = 58 USG = 348 lb
+
+required fuel    
+taxi         25 lb
+trip climb   47 lb
+     cruise 348 lb
+     desc    18 lb
+total trip  413 lb
+
+contingency (5% trip): 21 lb
+final reserve (check FF 45%) = 16 GPH -> 45 min = 12 USG = 72 lb
+
+=> minimum ramp fuel: 25 + 413 + 21 + 72 =  532 lb
+
 ## Tips
 
 measure distance on VFR chart and compare length at latitude grid ~ exact(er) distance - why not using measure (do I have this at the exam)?
+
+
+
+
+
 
 ## Questions
 
