@@ -2561,6 +2561,32 @@ scale effect - selected scale (e.g. on a short range scale) may suggest a passag
 
 stormscopes := device used in conjunction with airborne weather radar ~ detects electrical discharges (i.e., lightning) and indicates the direction of such discharges to the aircraft
 
+## MODULE 3
+
+## Valley Inversions
+
+mountain valley -> clear night radiation = cooling at bottom ~ cold air sliding down := katabatic effect == cold air pooling at bottom   
+==> temperature inversion = temperature rises as ac climbs out of valley
+
+inversions     
+* block pollutants from rising (warm air acts like lid := no vertical mixing) = trapping pollution material    
+== reduced visibility   
+~~ smog, dust, possible fog    
+== distant object appear as "floating over ground"
+
+* windshear and turbulence when crossing inversion air mass
+
+climb through inversion layer -> cold to warm air    
+==> reduction in rate of climb, reduced lift and thrust = reduced airspeed (lower air density of warm air)
+
+decent through inversion layer -> warm to cold ==> opposite ~ increase in thrust and descent rate
+
+## Cloud Classification II
+
+
+
+
+
 ## WORKED EXAMPLES & STUFF
 
 True Altitude = Indicated Alt + 30 * (QNH - 1013) + 4 * ISADEV * AAL/1000
