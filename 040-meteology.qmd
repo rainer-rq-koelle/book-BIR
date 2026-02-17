@@ -2583,6 +2583,178 @@ decent through inversion layer -> warm to cold ==> opposite ~ increase in thrust
 
 ## Cloud Classification II
 
+cloud formation ~ mechanism of its formation
+
+stratus clouds -> stable air restricted to low cloud, unless lifting mechanism will carry the air to great heights.   
+--> front (boundary between airmasses ~ warm and cold)
+
+if stable & warm(er) air moves towards cooler air, it will slide up == producing stratus, altostratus, and finally cirro stratus, and cirrus with nimbostratus mixed in at lower levels.
+
+cumulus cloud is formed by convection in unstable air ~ needs trigger to start off producing small cumular, large cumulus, and finally cumulonimbus.    
+Stratocumulus is formed when the convection is capped by a stable layer or an inversion aloft. Altocumulus and cirrocumulus occur mainly when there is a distince layer of unstable air aloft in a generally stable air mass.
+
+Large cumulonimbus - re-classified as thunderstorms when lightning and thunder start - discussed later.
+
+### Special Clouds
+
+**nacreous clouds** ~ "mother of pearl" clouds -> lower stratosphere (20-30km) ~ look like Ci or Ac lenticularis.    
+Bright shiny appearance comes from sunlight.
+
+**noctilucent clouds** ~ "night light clouds" ~ only reported since end of 19th century; made of ice crystals and exist in the mesosphere, 70-95km above earth.       
+night light ~ light coming from reflected sunlight as in nacreous clouds.
+
+### Contrails
+
+contrails are fomed by the extra amount of moisture that is being added to the atmosphere behind a jet engine by the combustion process.    
+If the air is cold enough to overcome the heating effect of the exhaust, then a contrail forms.
+
+### Polar Lights
+
+Aurora Borealis (northern lights) and Aurora Australis (southern lights) are not clouds.    
+Hydrogen atoms and free electrons that are chanelled by the earth's magnetic field towards the magnetic poles, glowing when they strike the earth's atmosphere.   
+
+beautiful and dramatic.     
+sometimes as a single colour, often green-ish, other times multicoloured.
+
+## Air Mass Thunderstorms
+
+thunderstorms are an extreme form of cumulonimbus cloud where activity is intense enough to produce thunder and lightning.
+
+requires deep layer of instability or conditional instability.
+
+Effectively, the ELR must be greater than the SALR for over 10.000ft.    
+Considerable moisture needed, particularly at low level and an adequate trigger action to start the lifting.   
+Any time - night or day.
+
+3 basic forms:    
+* single-cell
+* multi-cell
+* super cell.
+
+```{r}
+#| label: fig-thunderstorms
+
+knitr::include_graphics("./figures/met-wx-thunderstorms.png")
+```
+
+
+### Single Cell Thunderstorm
+
+single cell storm = cumulus cloud developing into a CB and then a thunderstorm (before dissipating).
+
+relatively short lifespan, less severe than multi-cell or super-cells TS.
+
+Note: no connection between external appearance and the severity of icing and turbulence inside the cloud.
+
+lifecycle: developing stage, mature stage, and dissipating stage.
+
+```{r}
+#| label: fig-thunderstorm-stages
+
+knitr::include_graphics("./figures/met-thunderstorm-phases.png")
+```
+
+development phase ~ 15-20 minutes   
+general upward movement/lift, updrafts 3000-4000fpm  
+turbulence mixes rising air with cold dry air of the environment ~ limiting growth of cloud    
+moderate to severe turbulence within the cloud, clear air turbulence outside cloud (environmental air drawn in)   
+NO precipitation (YET).
+
+mature stage ~ water drops fall through the cloud drawing air down with them.   
+development vertical - if no strong winds aloft    
+downdraft inside/center of cloud, updrafts bringing up warm moist air := fuel of cloud/storm.   
+downdrafts 3.000-4.000fpm ~ 6.000fpm    
+updrafts   5.000-6.000fpm (~10.000fpm)     
+movement in line with medium level winds, generally taken to be the 10.000ft/700hPa wind.
+
+virga := fall streaks = precipitation leaving the cloud but disappearing, also SALR cooled air in downdraft ~ gusts    
+-> intensification of downdrafts := mircobursts (5km across, up to 5 mins vertical downward speed of up to 6.000fpm).
+
+air reaching surface ~ spreading further out => low-level windsheer.
+
+ending/slowing of activity:      
+(i) mixing of rising air with dry and cold(er) environment reduces instability in the cloud    
+(ii) increasing downdrafts within central poart of cloud suppress thermal updraft and halt / slow down convection.
+
+active period of a single cell storm is less than 1 hr => 
+mature stage ~ 30-40 min.
+
+area under a thunderstorm experiences strong severe wind shear.   
+mature stage normally less than an hour/30-40min.
+
+dissipating stage ~ final stage of a TS (max 2 hours), marked by cessation of continuous rain and the beginning of sporadic showers.   
+vertical currents weaken and the air within the clouds susides more than it ascends, causing the cloud to "collapse".   
+The higher levels take on the familiar anvil appearance as upper winds spread the ice crystals.
+
+### Hazards
+
+wind and turbulence   
+rain and severe icing    -> pitot or static blockage
+static and lightning (including interfrence with NAVAIDs)
+
+lightning (mature stage) - discharge of electrical potential wihin the cloud. Upper cloud collects positive charge, the lower level negative charge => critical level / difference == lightning.   
+inside cloud: lightning ~ 5000ft below to 5000ft above freezing level (~ +10 - -10C cloud temperature)
+
+St Elmo;s Fire := (other) electrical discharge phenomenon = blue glow around windscreen and external parts of the ac.   
+Luminous plasma is created by discharge from a sharp or pointed object in a strong electric field in the atmosphere (e.g. generaged by TS or created by volcanic eruption).
+
+Electrical charges do not penetrate ~ Faraday Cage = lightning damage to structure and restriced to burning and small puncture holes at the point of strike and discharge.   
+Discharges may magnetise ac structure ~ influence magnetic compass.   
+Flashlight may blind crew temporarily & disorientation.
+
+### Orographic Thunderstorms
+
+in dry stable and moist unstable condistions (conditional instability) air can be forced to rise over an obstacle, e.g. hill or mountain, until the condensation level is reached.   
+Afterwards the moist unstable air will continue to rise on its own and TS can form.
+
+### Medium Altitude Thunderstorms
+
+medium altitude TS can form when the air in this layer is unstable and the layers above are cooling (e.g. advection).   
+Base of these clouds is relatively high, about 10.000ft.   
+This type of TS is not caused by warm air rising from the surface and can occur at any time of the day or night.
+
+Altocumulus castellanus clouds form from an unstable layer of air at medium altitudes.
+
+### Multi-Cell Thunderstorms
+
+single-cell TS rare - occur as isolated or occasional storm over wide areas based on thermal heating.
+
+several single-cell storms form together in clusters of several kilometers across, or in lines, i.e., squall lines.
+
+Multi-cell storms may exist as active storms for multiple hours while the individual single-cell storms form and die within the cluster.
+
+Squall line thunderstorms = severe flying conditions, heavy hail, destructive winds and other hazards.
+
+### Super-Cell Thunderstorms
+
+formation: requires "good" supply of warm moist air at low level, preferably held down by a thin stabler layer of air above ==> energy supply not dissipating by turbulence or small scaale convection == focussing of energy!   
+big trigger then sets off thunderstorm. 
+
+further ingredient: change of direction and strenghtening winds aloft -> tilting of CB tower.
+
+```{r}
+#| label: fig-met-thunderstorm-super-cell
+
+knitr::include_graphics("./figures/met-thunderstorm-super-cell.png")
+```
+
+tilt => updraft no longer on same axis as the downdraft ~ side by side => convection without restriction    
+central core isolates from cold, dry environmental air ~ high vertical speeds   ==> hail aloft and pushes trop of cloud through tropopause.
+
+warm air below "sucked in", cold dry air alogt with strong upper winds   
+combination often found between sub-tropical and polar air ~ central area of American Mid-West, sometimes Europe (Spain to UK).   
+Note: not a tropical phenonmenon!
+
+Large and self-sustaining (super-cell) storms can last for several hours in their full activity state.   
+severe icing and turbulence, clear air turbulence outside and above the storm, lightning and heavy rain and hail.
+
+Hail   
+(i) flung aloft into the anvil (up to tropopause) and falling as part of the general precipitation, potentially caught and re-circulated in updraft before falling as large intense hail at the front edge of precipitation zone.
+
+p11/15 - to be continued
+
+
+
 
 
 
