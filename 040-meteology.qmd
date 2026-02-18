@@ -2807,6 +2807,67 @@ Diameter of a tornado can vary from 90m to 1.6km, but ranges normally around 150
 Tornadoes come in a variety of shapes and sizes, and oten have an ominous dark colour due to the soil and other debris picked up during the movement.
 
 
+## Turbulence
+
+### Windshear
+
+windshear := sharp change in wind speed or direction over a short distance, vertically or horizontally, and is the cause of turbulence.
+
+~ apbrupt displace ment of ac
+
+low-level windshear := significant wind shear in the atmosphere below a height of 1600ft AGL ~> final approach and initial climb out.
+
+horizontal wind shear ~ wind shear when flying level, including vertical gusts    
+vertical wind shear ~ wind shear encountered when climbing or descending. For example, leaving top of an inversion. Vertical wind shear measured in kt/100ft.
+
+### Wind Shear Categories
+
+* light       0-4kt inclusive 30m/100ft
+* moderate    5-8kt inclusive 30m/100ft
+* strong      9-12kt inclusive per 30m/100ft
+* severe      > 12 kt per 30m/100ft
+
+### Effects of Wind Shear
+
+rapid change of wind direction and/or speed ...
+
+* increasing head wind or decreasing tail wind -> "effective" increase in air speed ~~ ac will climb
+* decreasing head wind or increasing tail wind -> decrease in air speed ~~ ac will descend/sink ==> risk during landing/take-off with little time for reaction
+* updraught or downdraught -> unwanted climb or descent and associated loss or gain of airspeed
+* side or cross wind -> ac driftin off desired flight path.
+
+### Temperature Inversion
+
+temperature inversion ~ wind shear   
+additionally risk of engines suddenly producing less power when changing from cold to warm(er) air ~ reduced lift/climb ~ lower/decreasing ac performance.
+
+Note: many accidents are the result of a combination of wind shear and inversion related performance reductions.
+
+### Turbulence
+
+Turbulence := variation in the wind along the ac's flight path or a pattern, intensity, and duration that disturbs the ac's attitude about its major axes, but does not significantly alter its flight path.
+
+Common types:
+
+* clear air turbulence CAT
+* convective turbulence
+* mechanical turbulence
+* orographic turbulence
+* frontal turbulence
+
+Turbulence normally found over rough ground surfaces, near relief (mountain waves), inversion layers, in and around CBs, in TS zones, in unstable layers, and associated with jetstreams and high-level troughs and ridges.
+
+summary table; type - formation - where found
+
+### Turbulence Classification
+
+light turbulence ~ conditions less than moderate turbulence. Changes in accelerometer readings less than 0.5g at the ac's center of gravity.
+
+moderate turbulence ~ conditions in which moderate changes in ac's altitude and/or altitude may occur but the ac remains in positive control at all times. Usually, small variations in air speed. Changes in accelerometer readings of 0.5-1.0g at ac's center of gravity. Difficulty in walking. Occupants feel strain against seat belts, loose objects move around.
+
+severe turbulence ~ conditions in which abrup changes in ac's attitude and/or altitude occur. Ac may be out of control for short periods. Usually large variations in air speed. Change in accelerometer readings greater than 1.0g at the ac's center of gravity. Occupants are forced vilently against seat belts. Loose objects are tossed about. 
+
+
 
 
 
