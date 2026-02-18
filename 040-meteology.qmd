@@ -2751,9 +2751,60 @@ severe icing and turbulence, clear air turbulence outside and above the storm, l
 Hail   
 (i) flung aloft into the anvil (up to tropopause) and falling as part of the general precipitation, potentially caught and re-circulated in updraft before falling as large intense hail at the front edge of precipitation zone.
 
-p11/15 - to be continued
+severe downdrafts, inclduing cold air forcing under warm air on surface resulting in severe gusts and low level windshear at gust front.
 
+super-cell storms move at an angle to the medium level wind and at a different speed, either 20 degrees to the right and slower, or 20 degrees to the left and faster.     
+Northern hemnisphere: more common/often: 20 degree to the right and slower movement.    
+In these cases the thunderstorm is becoming large enough to circulate and act as a small active depression, i.e. LOW (is this correct?).
 
+### Frontal Thunderstorms
+
+cold front: warm air pushed upwards by the undercutting cold air.    
+If the air is moist and unstable, thunderstorm clouds may form.
+
+Cold front thunderstorms occur mainly in the summer, less common in winter.
+Cold front thunder cells are "typically" lined up adjacent to each other.
+
+The warm sector before a cold front can form a line of thunder cells. These can be stronger than the cells forming in the following cold front.
+
+The cold air behind a cold front up to about 100km, can exhibit sharply defomred isobars, leading to the formation of a trough of low pressure.   
+Trough line showers usually occur but may develop into thunderstorms.   
+Tornadoes may form in these squall lines.
+
+Thunderstorms on a warm front occur in the Mediterranean, but are NOT common in more central European areas.   
+Due to the extensive amount of cloud on a warm front, thunder clouds are difficult to spot, they may also be embedded.
+
+### Tropical Thunderstorms
+
+tropical TS are less clearly understood. mechanism similar to standard storm. often occurring in squall lines. Energy content higher because saturated air entering at the bottome can carry twice the weight of water vapour as in the termpareate latitude storms. The anvil head streams off behind the storm in the Southwest and Northwest monsoons in the front, as it does in temperate latitude storms due to relationship between medium and tropopause level winds.
+
+Mature thunderstorms often reach 40.000 to 60.000ft, and in the tropics upward of 75.000ft.
+
+### Thunderstorm Avoidance
+
+Do NOT fly under the anvil as turbulence and hail can be expected.
+
+Thunderstorm avoidance 
+
+* in visual flight: 10NM
+* with weather radar - avoid echoes by
+  + 0 - FL250:    10NM
+  + FL250-FL300:  15NM
+  + above FL300:  20NM
+* clear tops visual or weather radar: at least by 5000ft
+
+Echoes of weather radar show the core of clouds, i.e., not the edge.   
+Thus, avoidance limits are larger than "visual identified" clouds.
+
+### Tornadoes
+
+Tornadoes are very intense circulating lows of small diameter, i.e., too small to show on pressure charts although the pressure at the centre can be very LOW, and wind speeds can exceed 200kt.
+
+Tornadoes move with the thunderstorm to which they are attached at an average speed of 35 miles/56 kilometers per hour.   
+Tornadoes have an average path length of about 5 miles/8 kilometers.
+
+Diameter of a tornado can vary from 90m to 1.6km, but ranges normally around 150m.
+Tornadoes come in a variety of shapes and sizes, and oten have an ominous dark colour due to the soil and other debris picked up during the movement.
 
 
 
