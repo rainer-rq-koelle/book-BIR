@@ -2959,6 +2959,295 @@ lenticularis clouds
 -> rotors on lee side of mountains (roll cloud)
 
 
+## Icing
+
+### Airframe Icing
+
+Ice in solid form will not stick to aircraft.    
+Icing must "form" on the aircraft ==> direct sublimation: howar frost or liquid water striking airframe.    
+- rain on very cold airframe, or
+- supercooled water hits airframe.
+
+Water - per se - does not always freeze at 0C, it can remain liquid at temperatures  below zero (pure and no material for ice crystals to form)
+    
+clouds can contain supercooled liquid water droplets at temps of -45C   
+water is supercooled in an unstable state ==> if it becomes contaminated or suffers physical shock it reverts to stable state := ice.
+
+change of state releases energy ~ heat!
+
+### Rime Ice
+
+ice forming when droplets freeze on impact with airframe instanttaneously
+
+very low temperature and/or very small ~ tiny pockets of air and will form white, crunchy, easily broken and easily cleared rime ice.
+
+### Mixed Ice
+
+mixed ice forms at temperatures between -10C to -15C.    
+Impacting water droplets freeze quickly and any ice crystals in the cloud will also freeze to the aircraft (~ accumulating)
+
+~ while looking porous appearance and opaque    
+often forms "mushroom" shapes which can modify aerodynamic of wings (and thus lift)   
+== mixture of clear and rime ice.
+
+
+highest proportion of dangerous clear ice forms in cloud at temp just below 0C.     
+at lower temps, higher proportion of innoculous rime ice.   
+at -23C only the smallest water drops will remain unfrozen as super cooled water drops    
+-> from -23 to -45C: rime ice
+
+=> no airframe icing at temps below -45C.
+
+stratus clouds: clear ice between 0C and -7C    
+cumulus clouds: clear ice at lower temperatures down to -23C (because of larger supercooled water droplets found in cumulus clouds)
+
+no icing at temps above 0C or below -45C    
+clear ice in stratus between 0 and -7C    
+clear ice in cumulus between 0 and -23C
+
+### Hazards
+
+worst quality of airframe ice ~ just below 0C    
+higher build up of ice at higher speeds; at very high TAS kinetic heating eases problem
+
+most rapid build up of ice where highest concentration of largest super cooled water drops.    
+active convective cumulus clouds hold large amount of super cooled water drops == Cu, CB, and TS.    
+
+highest concentration of super cooled water drops at the cloud base = most moisture in warm air (:= warm saturated air) ~ and OAT just below 0C.
+
+zero degree isotherm is at ground level in the polar regions, MSL to about 10.000ft in winter and summer in temperate regions and about 14.000-16.000ft in the tropic.   
+However, inside Cu and CB, the freezing level can be substantially above or below the mean sea level in clear air as updrafts and downdrafts take it.
+
+~~~ the following is a bit confusing ~~~ 
+polar region/winter: zero degree isotherme is at ground level to about 10.000ft MSL polar region/summer: 14.000 - 16.000ft
+
+temperature regions ....
+
+### Icing in clouds
+
+stratus ~ not going to hold large super cooled water drops    
+cumulus ~ able to keep large super cooled water drops aloft     
+turbulent SC - because of the enegy in the turbulence layer can hold large supper cooled water drops.    
+high clouds ~ temps below -45C ~ often contain very little, in any super cooled water --> if rime ice (crystals hitting surface != clear ice requiring drops to "run over surface")
+
+-45C isotherme varies from 18.000ft over Arctic to 37.000ft over the equator in January and up to 40.000ft over northern Indida in July.
+
+==> worst airframe icing: tropical CB, at temps just below 0C!
+
+proportion of clear ice to rime ice depends on the temp in the cloud     
+==> rime ice at high altitude in CB and thunderstorms.  
+==> presence of CB and thunderstorms always implies moderate to severe icing and turbulence.
+
+finally, orographic lifting increases the concentration and size of water droplets   
+==> even in stratiform cloud, by coalescence, and tends to exacerbate icing effects.    
+cloud with light/moderate icing without orographic lifting could give moderate/severe icing when there is orographic lifting
+
+```{r}
+#| label: tbl-met-icing-cloud
+
+knitr::include_graphics("./figures/met-icing-cloud-table.png")
+```
+
+### Summary
+
+distribution of supercooled water droplets and ice within a cloud varies with temperature.    
+important to decrease number of supercooled droplets with decreasing temperatures.   
+droplet size is important.   
+largest supercooled droplets tend to decrease with decreasing temperatures and/or increasing altitude.
+
+most common termp zones and associated icing types:   
+
+* 0 - -15C:    clear ice;
+* -10- -10C:   mixed clear and rime
+* -10- -20C:   rime
+
+approximate figures ~ zones overlap by about 5C.     
+Rime ice may occur at temps colder than -20C.
+
+at altitudes where air temp is colder than -35C,    
+supercooled water droplets are rate and the chance of ice formation is very small.   
+In general, icing is not a significant threat at altitudes where the air temp is colder than -20C except in large cumulus and cumulonimbus clouds where strong updrafts can rapidly transport large supercooled droplets to colder altitudes.
+
+### Factors which affect the icing threat
+
+factors affecting icing threat
+
+* particle size
+* particle concentration
+* shape of ac surfaces
+* ac speed
+* envirionmental temps; and
+* ac surface temp (must be 0C or colder)
+
+size of droplets ~ rate of catch -->    
++ small drops tend to follow airflow and are carried around the wind.
++ large drops = heavy drops ~ tend to strike the wing
+
+small drops will spread back over the wing only a small distance    
+large drops spread farther
+
+airspeed, the number of droplets struck by the aircraft in a certain time
+increases as airspeed increases
+
+curvature of leading edge of the wing has effect on rate of catch.    
+Thin wings catch more droplets than to thick wings.
+
+==> rate of catch "largest" for ac with thin wings flying at high speed through a cloud with large droplets and a high liquid water content.
+
+### Icing at fronts
+
+icing posibility ~ frontal system~   
+there is however, one special type of airframe icing that is associated with warm fronts := rain ice.    
+
+rain ice forms very heavy clear icing that is encountered when ac is flying above 0C level in cold air, but below the frontal surface and below the 0C level of warm air. 
+:= ice triangle.
+
+
+           |<------75NM------>|
+-- 0C ------------------------
+                            --     temps < 0C
+    temp above          -- ```
+          0C        -- ```````
+                -- ```````````
+            ---------------------------- 0C ------
+warm(er)  --
+  air  --     cold(er) air
+  --
+--        
+          
+continuous rain falling from stratus cloud, typically Ns which has formed in the warm(er) air and is "pushed" up the slop of cold(er) air.   
+aircraft in front of front is in "cold" air OAT below zero, possibly clear of cloud
+the rain is supercooled before hitting the ac := worst possible clear ice with high rate of accretion!
+
+== rain ice coms below the warm front surface, in rain, but clear of the frontal cloud.
+
+frontal slope "shallow" ~ 1:150 --> "rain ice is triangle" a thin and flat alyer.
+          
+For example, if temp delta between hot(er) and cold(er) ~ 6C ==> rain ice triangle ~ 3000ft, extending 75NM horizontally.
+
+frontal slope of front much steeper ~ 1:50, rain ice triangle with cold front is relatively small and this form of icing is  not so significant when flying in the vicinity of a cold front.   
+If the 0C isotherm in the cold air were at ground level, then freezing rain would be falling on the ground, runways, taxiways, and parked ac == extreme hazard.
+
+rain ice also feasible when rain falls into a sub-zero < 0C at the surface underneath a surface inversion.   
+Central Europe when rain follows a long period when the weather is dominated by a cold high-pressure system.
+
+exit strategy: climb OR descent ~~ higer clearance rate in the rain above icing, above the frontal surface in the warm air ==> climbing is an option if you are sure of the warm air above you.
+
+descent is perfectly acceptable as long as one has both air traffic and obstacle clearance to go down. It is also possible to turn back, but only if you have just entered the rain ice in level flight.
+
+### Hoar Frost
+
+Hoar frost is formed when airframe is VERY COLD, and the ac is in wrm moist air.    
+moisture will ublimate directly into ice crystals on the ac structure.   
+ac flying in warm air soon warms to the ambient temperature, i.e., the effect in flight is transient.    
+
+Hoar frost is mot often seen on the ground after a prolonged flight at high altitudes followed by a rapic descent.   
+Usually located over heat sinks like wing main spars and fuell fuel tanks.
+
+Hoar frost not considered much of a risk, clears quickly in flight, but recent accidents have shown that it can be a serious hazard.
+
+Hoar frost == serious contaminant and must be removed before flight, unless aircraft oepratoing manual specifically allows for it to remain.
+
+### Active frost and cold soaked fuel frost
+
+hoar frost --> to be removed prior to flight & will not reform!
+
+active frost continuously REFORMS.    
+active frost can only be with de/anti-icing fluids.
+
+hoar frost and active frost form under the same conditions:   
+
+* ac skin temp below 0C; note ac skin can be colder than ambient OAT due to radiation cooling or cold soak fuel.
+* air temperature is close to the dew point (within 3C of spread)
+* dew point is below freezing; and
+* either one of these conditions is/was present:
+  + cloudless sky with calm winds (due to radiation cooling mechanism);
+  + warm front beinging warm, moist air (due to the advection mechanism)
+  
+### Cold Soak Fuel frost
+
+moisture in form of precipitation or high humidity and temperature - duw point spread within a few dgrees (e.g. 3C), can deposit frost or ice on a cold wing, even in a fairly warm environment.
+
+fuel cold soaked and in contact with ac skin!   
+fuel becomes cold soaked by an extended exposure to a very cold environment, either on the ground or in the air
+
+### Packed Snow
+
+ice crystals at temperatures just below 0C will melt if compressed, and freeze again when the pressure is released == process of forming snowballs.
+
+ac in snow shower does normally not face risk of snow sticking to ac on impact.   
+conditions required are specific, and the probablility of occurrence is low.
+
+### Classification of airframe icing
+
+light   = less than moderate icing
+moderate = conditions in which a change of heading and/or altitude may be considered desirable     
+severe  = conditions in which an immediate change of heading and/or altitude is considered essential
+
+### high altitude ice crystal icing
+
+past events: engine power loss and damage in convective weather above the altitudes typically associated with icing conditions.   
+research showed that strong convective weather (e.g. TS activity) can lift high concentrations of moisture to high altitudes where it can freeze into very small ice crystals ~ 40microns (size of flour grains)
+
+radar reflectivity of only about 5% of an average rain drop = not appearing on airborne weather radar because the temperatures which prevail at the altitudes where they are mostly found are too low for super-cooled liquid water to survice <--> "glaciated conditions"
+
+crystals can affect engine when flying through convective weather.   
+"ice crystal icing" (ICI) to differ from "standard" icing conditions due to supercooled liquid.
+
+ice crystals do not adhere to cold airframe surface because the ice crystals bounce off.    
+however, ice crystals can partially melt and stick to relatively warm engine surfaces.   
+whilst large scale convective systems are more likely to produce ICI , this can also happen in smaller storms, just less regularly.
+
+ICI is most likely to occur in tropical latitudes where these systems are at their most extensive because warmer air can hold much more moisture.
+In particular when such convection occurs over the oceans where greater uptake of moisture is possible.
+
+INDICATIONS ... 
+
+AVOIDANCE
+
+some clues to the presence of ice crystals at densitites with the potential to affect engine function comprise:
+
+* air temp signifcantly abov the corresponding ISA temp
+* presence of some turbulence but rarely more than at light to moderate intensity
+* areas of heavy rain detected on weather radar below the freezing level
+* appearance of St Elmo's Fire on the flight deck windscreens
+* appeareance of small droplets of moisture on the flight deck windscreens, the results of impacting ice crystals being melted on contact with heated screens.
+
+best way to avoid high concentrations of very small ice crystals ~ effective use of the ac wx radar to ensure that significant convective activity  at altitudes below typical jet ac cruise levels is detected and the assumption then made that levels above this should be avoided.
+
+if particular susceptibility to ICI, deviation by more than the typically recommended margin of 20NM from all areas where large convective cells are present is advisable.    
+Certain engine type up to 50NM from such areas unless modifications are completed.
+
+
+### Ice Aovidance Techniques
+
+PREFLIGHT PLANNING (best option)
+
+* use many resources available, TV, internet weather, flight service stations, pilot reports, ....
+* ask the right question
+  + where are the fronts - know the big picture because most ice is in ftonts and low-pressure centres
+  * where are the fontrs moving - where will they be when I depart and when I arrive? check upstream weather reports and trends
+  + where are the cloud tops - expect much higher clouds over mountains
+  + where are the cloud base - below clouds where freezing rain or freezing drizzle is not present, there will be no structural icing
+  + where is the warm air? if freezing level is high enough above the IFR minimum enroute altitude the flight may be feasible
+  + air mass clouds or frontal clouds - know the difference between ai air mass cloud and frontal cloud. 
+  ==> frontal clouds typically indicative of large areas of significant weather. ac flying through frontal clouds can be exposed to icing conditions for a longer period of time.    
+  ==> air mass clouds may have snow showers, but do not have large areas of steady snow. Unless you are flying in the mountains, steady snow or rain means significant weather is building.
+  + what alternate routes are available? detour is necessary
+  + what are the escape routes? at any time during a flight where structural ice is possible, you need alternate plan of action. E.g. climb, descent, 180-degree turn, or immediate landing at nearby airport. Depends on traffic, terrain, cloud conditions, visibility, and availability of suitable alternate aerodrome.
+
+INFLIGHT
+
+* tak to ATC about any weather developments or forecast changes
+* airspeed is a key to measuring ice accumulation. If normal cruise speed is 140KIAS and you notive airspeed drop to 130 KIAS, it is time to exit immediately, if you cannot climb or descent.
+  + 180 degree turn == only option ~ tall speed margins shrink with speed loss
+* at first sign of accumulation, decide what action you need to take and advise ATC. Do you know where warmer air or a cloud free altitude is?
+* use any anti-icing/de-icing equiplment fitted to the ac
+* modify your route to avoid ice, start working with ATC early
+* be extra cautious when flying around mountains
+
+NEXT MET PROGRESS TEST
+
 ## WORKED EXAMPLES & STUFF
 
 True Altitude = Indicated Alt + 30 * (QNH - 1013) + 4 * ISADEV * AAL/1000
