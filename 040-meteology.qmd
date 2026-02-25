@@ -3246,7 +3246,200 @@ INFLIGHT
 * modify your route to avoid ice, start working with ATC early
 * be extra cautious when flying around mountains
 
-NEXT MET PROGRESS TEST
+
+## Visibility Reducing Phenomena
+
+### radiation fog
+
+radiation fog ~ surface cools at night from the loss of heat through long wave radiation, and cold(er, cooling) surface cools the air in contact by conduction    
+==> (conduction ~ cooling) air reaches dew point
+
+sea surface does not cool significantly at/during night    
+==> radiation fog primarily over land away from coast and moderating influence o f the sea, and with little to no cloud cover (nothing blocks/keeps)    
+==> no influence/limit to temperature fall.
+
+industrial contamination increases the probablity of fog formation, i.e., 
+providing nuclei for condensation (dirt particles)
+
+if air still / no wind, cooling by conduction limited to very thin layer of air near the surface    
+==> water condensing out will fall as heavy dew    
+==> no fog (bud dew on ground)
+
+if wind, turbulent mixing will either lift the fog into low cloud, or disperse it altogether.
+
+conditions favouring radiation fog:    
+
+* over land
+* at night
+* clear or nearly clear skies
+* light winds ~ about 2-8kt
+* high relative humidity
+
+conditions typical of HIGH pressure systems or cols in winter   
+cool HIGH pressure systems in summer with a slack pressure gradient and a temperature inversion at low level holding moisture below.
+
+low lying areas inland, where katabatic winds have brought lower temperatures, and with marshy or damp ground, are particularly sisceptible.
+
+radiation fog is only up to 500ft thick (thin layer on GND).
+
+Dawn is likely time for radiation fog to form.
+
+
+if the DEW POINT is BELOW 0C, the air will meet frost point first as it cools and the moisture will deposit (sublimate) directly to ICE forming HEAVY FROST on the surface rather than radiation fog.    
+in still air & heavy dew, slight turbulence and heating at sunrise cause sudden formation of low level, but very dense fog.
+
+radiation fog is cleared by surface heating (during the day), more quickly during summer or by strong winds or a change of air mass (and its temperature)
+
+
+### Polar Maritime Air in Winter
+
+polar maritime air -> originated in cold polar region, passed over warm(er) ocean surface (= moist air).   
+with patches of warm air rising --> unstable   
+==> convective cloud and good visibility, except in showers.
+
+polar maritime air over land in winter ~~> convective activity may die away at night leaving a cool stable moist air mass with clear skies.   
+if light winds -> radiation fog.
+
+### Advection Fog
+
+advection fog ~ warm(er) moist air mass moves over cold(er) surface.    
+about 15kt windspeed is required to "move" air mass.    
+
+it does NOT matter where warm moist air is coming from (IMPORTANT: it is MOIST), not WHETHER COLD SURFACE is LAND or SEA.
+
+majority of advection fog: warm air from sub-tropical HIGH pressure regions flowing toward the polar front zone and meeting cold ocean currents from poles.   
+
+unlike radiation fog which can only form over land at night, advection fog can form over LAND OR SEA, DAY OR NIGHT.
+
+
+example: cold labrador current flowing south, between Greenland and Labrador; moist air passing over cold(er) sea.
+
+advection fog formed over sea can persist when blown onshore (over land), if the land is COLD ~ usually in WINTER.    
+Warm wind blowing over cold grounds also advection fog particularly if wind is melting snow == thaw fog.
+
+high winds can lift advection fog into low stratus OR clear it altogether by turbulent mixing. ~ depends on spread (high spread more turbulence energy/rising ~ more mixture).    
+surface temperature well below air mass dew point, advection fog to persist in winds as high as 30-40kt.   
+
+daytime heating can lift or disperse the fog over land in summer.    
+
+advection fog can form rapidly when the airmass conditions are right, and may only clear again when the airmass conditions change.
+
+
+### Artic Smoke
+
+artic smoke or sea smoke or steaming fog follows reverse mechanism from advection fog.
+
+COLD air passes over WARMer surface.    
+as names imply: typically when very cold polar air flows off the ice cap or from a glacier over relatively warm open water.
+
+==> moisture and heating from below   
+--> instability and convection in the air mass   
+
+== marked temperature inverstion at low level to prevent air ascending.   
+
+artic smoke is often seen in Greenland and Norwegian fjords.   
+typically GND-500ft AGL.
+
+### Frontal and Other Types of Fog
+
+frontal fog ~ passage of warm front, and can be either hill fog, thaw fog, or a type of very low stratus cloud formed in the continuous rain at frontal passage.   
+
+cold saturated air ahead of a warm front mixing with the warm moist air behind the front and sometimes called "mixing gog".
+
+hill fog or orographic fog is low cloud covering hills.    
+Up-slope fog is the name ofr hill fog caused by wind drigting up a hill slope and cooling adibatically.
+
+### Summary
+
+fog := (stratus) cloud in contact with ground or sea and visibility of less than 1000m.
+
+fog forms by INCREASING MOISTURE and/or COOLING OF AIR (decreasing temperature).
+
+moisture increase:     
+* precipitation     
+* evaporation from wet surfaces     
+* moisture advection
+
+cooling of air    
+* radiation cooling    
+* advection over cold(er) surface    
+* upslope flow (and adiabatic cooling)
+* evaporation
+
+dissipation of fog ~ removing moisture and/or heating of air mass ==> dissipates fog (or stratus cloud on ground)
+
+moisture decrease      
+* turbulent transfer of moisture downward to the surface (e.g. to form dew or frost)     
+* turbulent mixing of the fog layer with adjacent drier air
+* advection of drier air
+* condenstation of the water vapor to clouds.
+
+heating of air
+* turbulent tranpsort of heat upward from air in contact with warm ground
+* advection of warmer air
+* transport of air over warmer land surface
+* adiabatic warming of the air through subsidence or downslope motion
+* turbulent mixing of fog layer with adjacent warmer air aloft
+* release of latent heat associated with formation of clouds.
+
+
+```{r}
+#| label: fig-met-fog-table
+
+knitr::include_graphics("./figures/met-fog-table-part1.png")
+knitr::include_graphics("./figures/met-fog-table-part2.png")
+```
+
+### Dust and Sandstorms
+
+desert areas ~ dust and sandstorms == hazard to aviation.   
+
+Gradient sandstorms are caused by stong low-level winds lifting sand into the boundary layer.   
+Widespread, but usually only as deep as the boundary layer, and not normally assocaited with very poor visibility.   
+exception West Africa, north-easterly Harmattan wind ==> limiting visibility and block the sun "heavily" (multiple days == Harmattan haze)
+
+visibility in low sun can be very bad.   
+haboob type of sandsotrm associated with gust front from thunderstorms blowing over a dry desert or extensive convection of dry air.  
+very dense up to 6.000ft from GNS   
+but very localised and narrow.
+
+if wind speed reaches storm level, dust particles can reach an altitude of 15.000ft and surface visibility dropping belwo 500m in heavy dust storms and with sky obscured (+DS := heavy dust/sand storm)
+
+in such conditions dust particles can be transported over great distances. --> Sahara dust (red snow or fields)
+
+### Blowing Snow
+
+for snow to lift in strong winds it must have fallen and remained at a temperature well below zero, -5 - -20C.   
+moderate winds will lift the snow to low level blowing snow, few cm to few m deep.
+
+not a visibility hazard, but it does remove all ground detail and makes visual assessment of height virtually impossible and low flying extrememy dangerours.    
+stronger winds will lift snow ionto the boundary layer where it does become a visiability hazard with the added danger that all external visual references can be lost in "white-out".
+
+note: helicopters can generate their own white-outs on entering the hover.
+
+### Rain and Drizzle
+
+visibility during rainfall compared to drizzle is greater.   
+
+drizzle: small water drops indicate very little lifting action in stable air, but the larger rain drops indicate greater lifting action and unstable air.    
+unstable air clears pollution vertically and visibility is better than in stable air.     
+
+### Visibility in Winter Precipitation
+
+liquid equivalent snowfall rate := amount of melted snowfall per unit time and typically measured by a snow gauge in mm per hour.
+
+rimed snow - snowlfakes that are partially or completely coated in tiny frozen water droplets called rime. .....
+
+reverse relationship between snowflake density and size in both dry and wet snow   constant proportionality in wet or rimed snow about 4 times greater than that in dry snow.
+
+==> factor 4 increse in visibility for wet or timed snow as compared to dry snow for a given liquid equivalent snowfall rate.
+
+visibility increased by factor 2 by higher terminal velocity of wet or rimed snow as compared to dry snow.
+
+net effect of visibility of wet or timed snow (generally larger flakes) over dry snow (generally smaller flakes) is roughly an increased visibility by a facotr of 8.
+
+
+
 
 ## WORKED EXAMPLES & STUFF
 
@@ -3308,3 +3501,11 @@ high humidity = low cloud base (anabatic cooling immediately reaches dew point)
 low humidity = high cloud base T >> $T_{dew}$
 
 Bergeron/coalescence https://www.youtube.com/watch?v=WByQ3yKxj1s
+
+
+Question about microbursts and tailwind     
+aircraft (indicated and) true airspeed describe movement within airmass   
+close to ground IAS ~ TAS    
+lift formula: Lift ~ v^2     
+tailwind -> ac moves slower through surrounding air -> loss of lift   
+==> TAS reduced, lift reduced ~ descend
