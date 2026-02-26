@@ -3439,6 +3439,144 @@ visibility increased by factor 2 by higher terminal velocity of wet or rimed sno
 net effect of visibility of wet or timed snow (generally larger flakes) over dry snow (generally smaller flakes) is roughly an increased visibility by a facotr of 8.
 
 
+## Pressure Systems
+
+### Anticyclones or HIGHs
+
+High pressure systems are called "anticyclones".    
+
+name suggests that the air flows out of a high pressure system folloing the geostrophic rules is in the opposite rotation of the earth.
+
+anticyclonic circulation is clockwise in the Northern hemnisphere (and anti-clockwise in the Southern hemnisphere).
+
+dependent on air temperature in its core compared to its surrounding air: warm or cold.
+
+```{r}
+#| label: fig-met-divergence
+
+knitr::include_graphics("./figures/met-divergence.png")
+```
+
+LOW ~ c"O"nvergence --> CONvection    
+HIGH ~ d"I"vergence <-- subsIdience
+
+### Warm Anticyclones
+
+warm anticyclones are formed when an excess of air in the high tropopause leads to subsidience and then divergence at the surface.
+
+the vertical spacing of the isobars must be greater than the surrounding air as long as the core is warm.    
+
+"permanent" sub-tropical anticyclones found around 30N and 30S ~ part of global circulation.  
+sun heats the equatorial regions making the air rist to the tropopuase wher it flows out toward the poles.    
+at about 30deg latitide, the air sinks down toward the surface, warming in the subsidience and producing a temperature inversion at low level := warm anticyclones 
+
+the belt of anticyclones is sea-based, but they encroach onto the land masses in the winter of the hemisphere when the land surface cools.   
+A good example of these warm highs is the permanent high pressure system over the Azores.
+
+
+### Cold Anticyclones
+
+cold anticyclones are formed when cold surface temperatures make the lower troposhere cold and dense.   
+
+classic cold anticyclone is the Siberian high that forms over the Asian land mass in winter. 
+extremely low surface termpatures - down to -40C - produce a pool of dense cold air and a temperature inversion at low level and intense suface high pressures.   
+This is coupled with an equally intense low pressure area at the tropopause.    
+The switch from high to low pressure can occure as low as 10.000ft.
+
+The phenonmenon is known as cold air pool. The surface chart may show high pressure , but above  10.000ft there may be a low presure system which will be evident on the upper wind and contour charts.   
+Northern hemisphere: wind flows clockwise around the HIGH pressure system up to about 10.000ft ... above this level, the wind direction will reverse to flow anti-clockwise around the LOW pressure at altitude.   
+
+cold air pools are more prevalent over land than over sea.   
+Greatest activity (i.e., instability) occurs when there is the greatest temperature contract between the cold air at mid and upper levels and the air at the surface.    
+surface atmosphereic heating is greatest at about 2pm local time.
+
+cold air pool indicates by the low contour (isohypse) height on the 500hPa chart and higher.    
+It would also be apparent from the upper wind and temperature charts.
+
+Polar high pressure region is formed by a combination of cold surface termps and subsidience in the general circulation, and the region does not show a stable and static high like the Siberian high, but a changing mix of high and low pressure zones.    
+Likewise, although there is a region of gneral high pressure over the North American continent in winter, it too can break and the pattern can change to occasional low pressure zones.
+
+### Temporary Cold Anticyclones
+
+temporary cold anticyclones form in the cold air on the polewards iide of the northern and southern polar fronts; often as ridges of high pressure and bringing bursts of fine weather between the frontal depressions.   
+These, unlike the classic systems, last for only a few days.
+
+### General properties of anticyclones
+
+anticyclones are large ~ 1500NM not unusual, slow to form or dissipate, and stationary or slow moving.   
+Surface pressure gradient at the center is slack, so winds are light.
+
+weather in anticyclones will be fine and colm.   
+if the anticyclone forms over the sea or any other moisture source, there will be a tendency for fog to form below the inversion.
+
+the surface outflow = divergence = HIGH is linked to both warm and cold types to subsidence.    
+==> little, if any, cloud and precipitation early in the day.   
+solar heating will produce mild instability at low level, particularly in warm anticyclones.
+==> small cumulus clouds ~ fair weather Cu, building up towards mid-afternoon.
+
+Cold anticyclones can be unstable and - if convective lifting and moisture are present - large cumulus and cumulonimbus clouds may form.   
+Most cold anticyclones (Siberia, Poles) are found in relatively dry areas.
+
+### Cyclones, Lows or Depressions
+
+cycLOne = LOw pressure system where the circulation moves air in the saeme direction as the earth's rotation.    
+Northern hemisphere: anti-clockwise    
+Southern hemisphere: clockwise
+
+LOW = depression.
+
+#### properties of depressions
+
+depressions/lows are generally small ~ 300NM across.   
+lows are active, form rapidly, move air at fair speeds, and fill rapidly when they die.
+
+mechanism for taking in energy at low level in form of latent heat or warm air, and carrying it aloft.   
+This energy input, translated to kinetic energy = winds makes depressions circulate more strongly, further lowering the central pressure and sucking in yet more energy.   
+The depression weill then continue to develop and deepen until the energy feed is cut off or the supply of warm air runs out, when they will fill and die.    
+
+Depressions are associated with strong winds, surface convergence, upper divergence, convection, and precipitation.
+
+Depressions can be classified according to the way they form:
+
+* frontal depressions ~ formed along the line of a polar front.
+* orographic depressions ~ "lee depression" ~ formed by the swirling o f the airflow behind hills and mountains.
+* theremal depressions ~ caused by surface heating
+* cold air lows ~ polar lows ~ associated with small-scale instability developing in polar airflow.
+
+In Europe: thermal lows form near Cyprus in the winter when cold continental air comes from the North.
+
+### Orographic depressions
+
+orgographic depression ~ lee depression, lee tough, or lee low := low pressure feature that fomrs preferentially to the lee (downwind) of a mountina barrier when air flow is at right angles to the barrier.   
+
+the air column is squashed by vertical contraction as it crosses the barrier. After the crossing, the column or air expands to its original (upstream) depth and tends to develop a strong spin about the vertical axis.
+
+This spin of the lee or mountains is manifested as a low-pressure centre.    
+This process is often seen in the lows that develop in the lee (east) of the Rocky Mountains with werterly winds and to the south of the western Alps under northerly flow.
+
+### Thermal lows
+
+thermal lows form when the surface is hot. Low level air is heated and rises, to be replaced by inflowing surface air ~ convergence.
+
+surface low and low level convergence, cyclonic circulation, convection, and high pressure and idvergence aloft
+
+high surface temperatures do not always lead to low pressure and convenction.   
+Some of the higherst surface temperatures in the temperate latitudes occur under warm highs.   
+In these examples the environmental lapse rate is so low, and the air mass so stable that the heating is confned to a shallow surface layer.    
+Continued surface heating over a long period can still make the air mass unstable, and then convective activity will start and the resulting depressions can become major weather features.
+
+theremal lows form over water in the winter, for the water termperaturs are often substantially higher than the surrounding land.   
+This happens over the Mediterranean, the Black Sea, the Great Lakes and Hugson's Bay.
+
+Thermal lows are warm lows, with a core warmer than the envirionment.    
+
+COLD LOWS
+  + polar lows 
+  + high level cold lows -> cold air pushes warm(er) air mass over mountain and into the valey on the lee side --> convection and low pressure (warm air)
+
+Cold air outbreaks
+
+cold air pools / cold air drops
 
 
 ## WORKED EXAMPLES & STUFF
