@@ -3579,6 +3579,403 @@ Cold air outbreaks
 cold air pools / cold air drops
 
 
+## Air Mass Weather
+
+air mass weather determined by the characteristics of the air passing overhead, including
+
+* stability, i.e., lapse rate
+* temperature and moisture,
+* interaction with surface conditions (surface temperature, heating by sun and physical features)
+
+### Air Mass
+
+body of air ~ volume of roughly homogeneous ~ characteristics roughly the same over a wide area.
+
+air that moves and mixes is constantly changing its temperature, humidity, lapse rate, and other characteristics.   
+==> to achieve homgeneous structure, air masses need to be "stationary" for a long(er) time in a source region.   
+
+low pressure areas are dynameic and always on the move <--> high pressure areas are stable and stationary.    
+
+air mass sources are therefore areas of stable HIGH PRESSURE - anticyclones.
+
+diveragence from these anticyclones carries the air mass weather over long distances.
+
+### Characteristics of Air Masses
+
+* all air masses "start" stable, and there may be a termperature inversion present (holds temp)
+* if source region is cold, the air mass will be cold
+* if source region is warm, the air mass will be warm
+* if source region is over land, or over ice or snow, the air will the "relatively" dry
+  if over sea, the air will be relatively "moist", particular in lower layers.
+  
+air masses moving away from source region, the conditions of the surface over which it travels will modify the starting characteristics.    
+==> change depends on distance travelled, speed across the surface, and the exact conditions of the surface.
+
+* air masses travelling over land will remain relatively dry
+* air masses travelling over the sea will pick up moisture, increasing the relative humidity RH in the lower layers    
+  + increasing RH is making air more prone to convective activity, as cloudbase and the change to SLAR come at lower heights
+* air masses moving over warmer surfaces are heated in the lower layers, incresing the ELR and the air less stable; even making it unstable, if the heating is sufficiently marked
+* air masses moving over colder surfaces are cooled in the lower layers, decreasing the ELR and the air more stable.
+
+### Air Mass Classification
+
+track - source region - temperature
+
+* track
+  + continental c
+  + maritime    m
+* source region
+  + polar       P
+  + arctic      A
+  + tropical    T
+* temperature
+  + warm        w
+  + cold        c
+
+```{r}
+knitr::include_graphics("./figures/met-air-mass-classification.png")
+```
+
+### Northwest Europe
+
+3 main HIGH pressure areas that act as source region for NW Europe:
+
+* polar high
+* Siberian cold high  (forms in winter, more or less permanent)
+* Azores warm high (extending in summer over Mediterranean)
+
+==> 6 air masses primarily affecting NW Europe
+
+Additional factor influencing the weather in NW Europe: inland surface.    
+* hills -> orographic lifting, daytime heating of the land in summer will set off thermal convection.
+
+### Maritime Polar Cold Air
+
+mPc starts over polar cap ==> cold dry & stable    
+moving south tracking over North Atlantic --> picking up moisture, warmer sease heat up the lower levels, and as temperature is raised "more moisture" is picked up ==> air becomes less stable.    
+convective currents distribute the moisture to the higher levels.
+
+==> air arrives at NM Europe from W and NW as cool, most, and unstable air.
+
+mPc is the normal airmass behind a cold front coming from the Atlantic.    
+weather: convective cloud, showers, and good visibility
+
+mPc arrrives as conditionally unstable air   
+--> orographic triggers set off Cu over mountain
+--> in winter: land cool ==> small to medium Cu forming during data & disperse during night
+--> in summer: hot land surface adds thermal triggering ==> Cu --> large Cu or CB during day, persist at night
+
+visibility good - except in showers   
+winds moderate W to NW with gusts near Cu / CB   
+icing moderate to severe in convective cloud
+
+radiation fog in winter if skies clear, gradient slackes at night in post front temporaty cold high
+
+mPc bring heavy precipitation to the Scandinavian mountains and Alps (if penetrating far inland)   
+mPc can enter Mediterranean, particularly during winter: rain and cold air down to Morocco.
+
+### Maritime Arctic Cold Air
+
+mAc from Artic ice cap, can reach in winter NW Europe as a more extreme version of mPc
+
+mAc also called Polar maritime dPm
+
+temperature contrast between the very cold air the the relatively warm open sea south of the ice pack makes the very cold air mass moist and unstable on arrival   
+CU and CB form over the sea, sometimes spreading out as Sc   
+==> heavy snwofall to the North and East coast of Scotland and England.
+==> sometimes small thermal depressions called "polar lows" are formed in the northerly air stream that can drop a foot or more of snow an an airfield in one pass.
+
+### Continental Polar Cold Air
+
+cPc ~ source region Siberian High ==> cold dry stable airmass over Eastern Europe and Russian plains in winter   
+==> tracks NW Europe on easterly wind across Europe
+--> little change to its start characteristics    
+==> dry, cold, stabel airmass 
+
+temperature inversion associated with these conditions that traps industrial contamination in the lower layers   
+==> poor visibility & little to no cloud   
+
+windshear and CAT at level of inversion.   
+Winds light blow inversion, moderate easterlies aove.
+
+cPc can make central Europe "very" cold.   
+If the continental Polar airmass is follwed by rain, there is likely freezing rain and ice at the surface.
+
+cPc transitioning Baltic and North Sea towards Scotland and northern England will pick up heat and moisture from the sea.   
+warming in the lower layers makes the air less stable and will produce sleet or snow over the sea and on windward coasts.   
+
+little diurnal change, precipitation small totoal moisture content will die out as it tracks inland.   
+
+cPc only in winter (!= in summer)    
+during summer: surface temperature in the source region rise to 20/25degC == area of mean low pressure
+
+
+### Continental Tropical Warm Air
+
+cTw comes from Notrh Africa, Turkey, and the eastern Mediterranean   
+==> in summer, stable and hot
+
+moving North, the airmass cools, increasing its stability of the lower levels.   
+over Mediterranean the air picks up moisture   
+--> to reach central or North West Europe, airmass must cross moutain barrier of the Alps and Pyrenees ==> most moisture is lost 
+
+if air mass is north of Alps, there is no cloud and the already poor visibility associated with the subsience and temperature inversion can be further reduced by the presence of fine dust particles from the desert source   
+==> clear skies and hot weather to NW Europ --> daytime heating over land can bring convective fair weather Cu, especially if slack pressure gradient and light winds
+
+cTw is a summer airmass: but summer extends into autumn in practice
+
+cTw crossing into North Sea to Scotland/Norther England, pick up moisture in the lower layers, trapped underneath the inversion ==> cooling over the sea will produce a thin layer of advection fog which blows on to the shore ==? sea fog known as Haar in Scotland and Sea Fret in Lincolnshire.
+
+cTw is rare over NW Europe (~ 5% per year) - to reach NW Europe "precise" track avoiding central European mountains
+
+cTw never present in winter (source region cools off)   
+can happen in late summer or early autumn.
+
+### Maritime Tropical Warm Air 
+
+mTw is sourced from warm, moist, stable Azores High   
+can arrive in NW Europe as warm sector of a large polar front depression ~ standard way
+
+air tracks North East to Northwest Europe, the lower levels cool    
+==> increasing relative humidity and making the air mass more stable.    
+
+Cooling accentuates the inversion at low level.    
+==> visibility is moderate to poor    
+mTw has no unstable upper layer like maritime Polar warm air, but is stable at all levels.
+
+when reaching south-west coasts of NW Europe, mTw produces dull drizzly weather with low stratus and advection fog.   
+hill fog over high grounds, and advection fog and low stratus can lift in moderate winds to Sc in tubulent cloud layers.
+
+In winter: low St or Sc with poor visibility and drizzle with breaks over lee sides of high ground  
+in summer: daytime heating to disperse fog and cloud, replacing with clear skies, then small CU and broken SCu in relatively stable air.
+
+Winds: light to moderate SW, no turbulence in stratus, but turbulence in Sc   
+windshear and turbulence, perhaps CAT, near any temperature inversion - at top turbulence cloud.   
+Icing will be light in stratus cloud, but can be moderate to serverin in Sc in winter, escpecially with additional orographic lifting.   
+
+probability of carburetor icing high in warm moist air.
+
+### Maritime Polar Warm Air
+
+mPw has same source region as mPc --> difference is longer sea passage, travelling further South, usually round a large Atlantic depression, and then returning to NW Europe on southwesterly winds   
+mPw referred to as "returning maritime polar"
+
+air tracking south ~ warms and picks up moisture in the lower levels == higher ELR == less stability at all levels   
+when tracking north, the effect reverses: air in lower levels cools, becoming more stable while still picking up moisture --> air in medium and high levels remain unstable
+
+mPw shows characteristics of mPc at medium level and mTw at low level.   
+mPw arriving in NW Europe give weather assocaited with moist stable air, low stratus and poor visibility in drizzle on W and SW coasts.   
+possibility of advection fog, if sea or land surfaces are cool enough   
+air at medium level: convective activity, often Ac castellanus
+
+fog and stratus can lift in turbulence overland to Sc if winds are more than 15kt   
+suffiently effective triggers break through the low level stability, the air mass will start convective activity and the low stratus will lift and break to small Cu or Ac, possibly converting to larger Cu.
+
+development dependent on thickness of the stable layer, degree of instability aloft and effectiveness of trigger.   
+Orographic lifting over high ground can break the stability.
+Surface heating over land is the main cause of breakdown of low level stability.
+
+in summer: mPw --> St and Sc on windward coasts changing to convective cloud inland   
+in winter: mPw --> stable weather conditions persist over much of NW Europe
+
+
+### Equatorial Air Mass
+
+one air mass never impinges NW Europe: equatorial air mass, develops at latitudes from 25degN to 1-degS.   
+high temperature, no land == maritime    
+== laden with moisture because water rapidly evaporates into the hot air at the equator
+
+warm air tends to rise creating area of low pressure ==> trade winds that blow into this area of low pressure near the equator push the warm air into the cooler upper atmosphere
+
+==> moisture condenses into ice crystals and turns into rain when falling to ground   
+==> TS frequent in regions dominated by equatorial air masses
+
+These frequent rainstorms feed the equatorial rainforests of the Amazon and Congo basins, and East Indies.
+
+### Cold Air Outbreaks and Cold Pools
+
+cold air outbreask are intrusions of cold air either at the surface or, more commonly, at height, into warmer temperate regions.
+
+cold air mass over a relatively warm surface and cold air pool at altitude can both result in extensive instability and, if moisture is present, there can be extensive convective cloud.
+
+
+## Polar Front Depressions
+
+### structure of warm sector in a polar front depression
+
+```{r}
+knitr::include_graphics("./figures/met-warm-sector-polar-depression.png")
+```
+
+
+leading edge of warm sector --> warm air slides over cold(er) air == warm front   
+trailing edge: system cold air "forces" itself under the warm(er) air == cold front
+
+slope of the fronts differ: cold front ~ 1:80, warm front ~ 1:150
+
+fronts shown on surface chart are the surface posisions of the fronts.
+
+observer on ground watching approach and passing of warm sector starts in polar air, usually mPc   
+mPc ~ Cu or CB with good visibility outside the showers
+
+warm front approaches: overlying warm air makes a temperature inversion at height  
+==> stabilises mPc and convective activity begins to die out
+
+observer will see first signs of approaching front: high cloud   
+mTw is very stable all the way up to the tropopause    
+warm air slid up the font is cooling and creating stratiform clould: Ns, As, Cs, and Ci   
+warm air mass raised up to the tropopause
+
+approaching front: cloud comes lower and lower: Ns   starting as drizzle --> moderate rain
+
+passing of warm front: air mass warm and moist - usually mTw   
+==> low cloud, stratus, and advection fog in winter, possibly clearing in summer
+
+little warning of cold front!   
+surface air displaced sharply upwards as cold front passes, as front passes, dispacement continues   
+==> first Ns and then embedded CB, perhaps mixed with As and Cs spreading from CB   
+Rain falls from Ns and heavy showers from CB
+
+rising air at the front and divergence at height that follows often lead to subsidence just bhind the front and a brief post-frontal clearance.   
+weather then takes on the pattern of the air mass, typically, mPc with developing Cu and CB
+
+Note: orographic lifting supplements the frontal lifting and the activity on the front is intenisfied when crossing a chain of mountains.
+
+### Pressure, Temperature, and Low Level Winds
+
+picture centre of depression passin to the North & tracking parallel to isobars in warm sector
+
+                          wind                    pressure    temp
+* approaching warm front  steady from south-west  falling     steady, cool
+* at warm front           veers                     --        increases
+* in warm sector          steady from west          steady    steady, warm
+* at cold front           veers                     falls     falls
+* behind cold front       steady from north west    rising    steady, cool
+
+
+
+### Hazards at Fronts
+
+#### Icing
+
+approaching warm front: no icing in Ci; but trace and rhime ice in As, moderate mixed rime and clear icing in Ns
+
+worst hazard: warm front ice rain
+
+freezing level diff ~ 3000ft, 75NM in rain == below zero == ice rain    
+"ice triangle"
+
+in warm sector: carburetor icing possible    
+cold front: embedded CB ~ risk of severe icing
+
+moutain ~ orographic lifting supplementing convective liftin ==> turbulence   
+additional lifting action --> increase in droplet size in cloud == increased severity of icing
+
+#### Turbulence
+
+warm front zone: light to moderate turbulence
+windshear at front    
+cold front/CB --> moderate to severe turbulence
+
+CAT around jetstreams.
+
+windshear and turbulence at low levels near cold front   
+near bases of CB and associated gust front
+
+line of CB on a cold front will move with the ftion which means that frontal thunderstorms will move faster than air mass thunderstorms
+
+### Occluded Fronts
+
+cold front overtaking warm front ~ characteristics of two fronts combine   
+warm sector air pushed aloft & 2 cold air masses meet at surface
+
+the two cold air masses began with the same characteristics, but by now their different tracks have changed these, and one cold air mass will be colder than the other.
+
+cold occlusion: air behind occlusion is cold(er)    
+warm occlusion: air behind occlusion is warm(er)   
+the 2 mP air masses will have similar temperatures --> temp change "small"   
+surface temps affected by station height and precipitation and not give a clear defiition of the occlusion type.
+
+#### Warm Occlusion
+
+at surface: warm front ~ uplift moderate, weather will be a mix of warm front and cold front weather, but more like a warm front, and move with speed of a warm front
+
+warm occlusion: precipitation mostly ahead of the surface position of the occlusion.
+
+in both types the significatnt cloud is aloft in the V of the occlusion, and cloud below the V will probably be broken stratus StFra forming in the rain, with Ns    
+CB aloft possible but in the warm occlusion they will probably be buried - embedded CB.
+
+NW Europe: warm occlusions common in winter (land to the East is cold, sea to the west is warm)
+
+### COld Occlusion
+
+cold occlusion have shape of a cold front ~ weather tending towards cold front, including speed
+
+in cold occlusion, precipitation falls near surface position of occlusion
+
+significant cloud aloft in V; clouds below the V will be broken stratus forming in the rain, although sometimes Ns
+CB aloft is possible.
+
+NW Europe cold occlusions common in summer, land to the East is warm and sea to the West is cooler.
+
+
+### Quasi-Stationary Fronts
+
+quasi-stationary front is a front along which one air mass is not appreciably replacing the other air mass.    
+stationary fronts develop from the slowing down or stopping of a warm or a cold front.
+
+Upon forming, the slot of the warm or cold front is initially very shallow.   
+Dense cold air stays on the ground, warmer air is displaced slowly upward.   
+Front slows or stops moving because the winds behind and ahead of the front become parallel to the stationary front.
+
+Quite unusual for 2 air masses of different properties to be side-by-side without movement.   
+misnomer: front/dividing line between air masses made up of undulating back and forth waves.   
+==> front not making headway, front moving less than 5jt is usually classified as a stationary front.
+
+stationary front: cold air mass not moving toward or away from the front   
+wind direction: wind above friction layer blows neither toward nor away from front, but parallet to it ==> wind shifts across the front typically 180 degrees.   
+==> isobars are parallel to stationary front   
+== easy to spot on weather map
+
+#### Stable Stationary Fronts
+
+frictional inflow of warm air toward a stationary front causing a slow upglide of air on the frontal surface.    
+air lifted to and behond stturation ==> clouds form in the warm air above the front   
+if warm air in a stionaray front is stable and the slope is shallow, clouds are stratiform.   
+Drizzle    
+--> air lifted beyond freezing level, icing conditions develop and lifht rain or snow may fall.    
+at very high levels above the front: ice clouds
+
+if slope steep and significant warm air is being advected up the frontal slop, stratiform clouds with embedded showers result.
+
+slight undulation or movement of the quasi-stationary front toward the warm air mass adds to the amount of weather and shower activity associated with the front.
+
+#### Unstable Stationary Fronts
+
+if warm air is conditionally unstable, the slope is shallow, and sufficient lifting occurs, the clouds are then cumuliform or stratiform with embedded towering cumulus.   
+If energy releast is great (warm, moist, unstbale air) thunderstorms result.   
+Within the cold air mass, extensive fog and low ceiling may result if the cold air is saturated by warm rain or drizzle falling through it from the warm air mass above.
+
+if temp is below 0degC, icing may occur, but generally it islight.   
+The shallow slope of an unstable stationary front results in a very broad and extensive area of showers, fog, and reduced visibility.
+
+if the slop of an unstable stationary front is steep and sufficient warn air is advected up the slope or the front moves slowly toward the warm air mass, violent weather can result.   
+Heavy rain, severe thunderstorms, strong winds, and tornadoes are often associated with this front.
+
+The width band of precipitation and low ceilings vary from 50-200 miles, depending upon the slope of the front and the temperatures of the air masses.   
+One characteristic of a stationary front is that it may greatly hamper and delay air operations by persisting in the area for several days.
+
+### Blocking Anticyclones
+
+warm, quasi-stationary anticyclones that have broken away from the Azores High can disrupt the passage of the travelling lows over the North Atlantic and their associated fronts.
+
+The influence of warm highs extends into the upper troposhere, so these features will affect the sub tropical jetstream, often changing its direction of flow to north/south for thousands of miles.
+
+Blocking highs can lead to heat waves in summer and long periods of cold weather in winters.
+
+
+
+
 ## WORKED EXAMPLES & STUFF
 
 True Altitude = Indicated Alt + 30 * (QNH - 1013) + 4 * ISADEV * AAL/1000
