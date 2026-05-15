@@ -1,0 +1,59 @@
+---
+title: "090-communications"
+---
+
+## Radio Theory
+
+production of radio wave: oscillating electrical current and an aerial (antenna)   
+electrons moving back and forth in aerial produce changing electrical field   
+electrical field moves "away" from aerial at speed of light   
+"receiving" aerial induces "identical" current   
+amplifiers and filters compensate for power loss of signal at receiving end
+
+transmitter --> transmitter aerial ........ receiving aerial --> receiver --> amplifier -> headset
+
+waves are referred to in terms of frequence or wavelength   
+speed of light ~ constant (in vacuum) 300.000.000 $\frac{m}{s}$ = $3 * 10^8 \frac{m}{s}$.
+= $162.000 \frac{NM}{s}$
+
+cycles per second = frequency   
+doubline frequency will halve the wavelenght, i.e. 2 cycles per second
+
+1000Hz = 1 kHz, 1.000.000Hz = 1MHz, 1.000.000.000Hz = 1GHz
+
+wavelength $\lambda = \frac{c}{f}$
+
+note: for calculations use right units:    
+* wavelength $\lambda$: metres
+* frequency $f$:        Hz = $\frac{m}{s}$
+
+example: radio signal of 3kHz - find wavelength: $\lambda = \frac{c}{f} =\frac{3 * 10^8}{3 * 10^3} = 10^5m = 100km$
+
+Radio signal has wavelength of 3.5cm. What is the frequency?
+$\lambda = 3.5 cm = 3.5 * 10^{-2}m$
+$f = \frac{c}{\lambda} = \frac{3 * 10^8 m/s}{3.5 * 10^{-2}m} = \frac{3}{3.5}*10^{10}\frac{1}{s}$
+$f = 0.857 * 10 * 10^9 Hz =8.57 GHz$
+
+### Frequency Spectrum
+
+radio spectrum is part of electromagnetic spectrum and covers frequencies from 3kHz to 300GHz.   
+spectrum browken down into 8 bands ranging from Very Low Frequencies VLF to Extremetly High Frequencies EHF.
+
+military uses upper VHF and UHF bands for communications.   
+civil agencies use the VHF badn from 118MHz to 137 MHz.
+
+Channel spacing now -- in Europe -- 8.33kHz (used to be 25 kHz) ~ increase in number of channels.   
+reception (power) usually good when in range
+
+range affected by    
+* power of transmitter
+* height of transmitter and receiver
+* obstracutions between transmitter and receiver.
+
+civil communication is also conducted on HF frequencies between 2.8MHz and 22.0MHz.
+These frequencies give long range, over the horizon capbailty
+
+>>> add frequency and band table <<<<
+
+mnemomic: Very Lovely Maidens Have Very Useful Sewing Equipment
+

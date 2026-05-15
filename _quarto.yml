@@ -16,6 +16,7 @@ book:
     - 0x0-instrumentation.qmd
     - 050-human-performance.qmd
     - 060-radio-navigation.qmd
+    - 090-communications.qmd
     - summary.qmd
     - references.qmd
 
