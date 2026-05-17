@@ -489,3 +489,245 @@ aircraft is not allowed to change its type of callsign or alter its callsign dur
 If necessary, ATC may instruct an ac to change its callsign.
 
 Initial call to an aerodrome control tower or approach control unit, an ac in HEAVY WTC must include HEAVY (or SUPER) immediately after the callsign.
+
+
+
+## Radio Phraseology
+
+### VFR Operating Minima
+
+A flight can be conducted under either VFR or IFR.   
+All flights can be operated under IFR, but only some flights -- depending on the weather conditions and the airspace -- can operate VFR.
+
+Where permitted, VFR flights must comply with weather minima
+
+No VFR in airspace A!
+
+airspace class              B   C   D   E   F   G
+* at and above 10.000ft     visibility 8km, 1500m horizontally and 1000ft vertically clear of cloud
+* below 10.000ft and
+  above 3000ft MSL/1000ft GND visibility 5km, 1500m horizontal, 100 vertical clear of cloud
+* below 3000ft MSL/1000ft GND vis 5km       vis 5km
+                              -- 1500m      clear of cloud
+                              | 1000ft      GND in sight
+                              
+
+### IFR Aerodrome Minima
+
+formally: no weather minima for IFR flights, but rules relating to destination and  alternate aerodrome weather
+
+an IFR flight must NOT be commenced unless the forecast for the landing airfield is at at or above the aerodrome operating minima for the estimated time of arrival ETA -/+1 hour.   
+Where a destination alternate is required, at least one destination alternate aerodrome must, at the estimated time of arrival -/+1 hour meet the more stringent planning minima.
+
+if weather reports or forecasts for the destination inidcate that tat ETA -/+1 hour the weather will be below the applicable minima, or is no meteorological information is available, 2 destination alternates are required.
+
+Having commenced the flight, a commander shall not continue towards the planned sttination unless the latest inforation available indicates that at the estimated time of arrival the wether conditions at the destination, or at least one of the destination alternate aerodrome, are at or above the applicabel aerodrome operating minima.
+
+### General RT Procedures
+
+first contact: full callsign, both ac and ground/aeronautical station
+
+message repitition: SAY AGAIN, SAY AGAIN ALL AFTER ..., SAY AGAIN ALL BEFORE
+
+station identification: station called uncertain of the identification of the calling station, the calling station should be requested to repeat its callsign until identification is established.   
+After contact is established, continuous communicaiton may b e performaned without further identification or call sign until termination of the contact, provided that no confusiotn or ambiguity will result.
+
+error in transmission: use CORRECTION, for full message: CORRECTION, I SAY AGAIN ...   
+if reception is likely difficult, important elements of the message should be spoken twice.
+
+broadcasting: ALL STATIONS, no reply expected unless individual stations are subsequently called to acknowledge recept.
+
+transfer of communications: frequency change, ATC will pass the instruction with the name and frequency of the (next) ATS unit
+
+conventions: following words can be omitted provided no confusion or ambiguity   
+* SURFACE in relation to surface wind direction and speed
+* DEGREES in relation to radar headings
+* VISIBILITY, CLOUD, and HEIGHT in meteorological reports
+* HECTOPASCALS when giving pressure settings
+  hectopascal to be appended when transmitting pressure setting below 1000hPa, or wehre confusion or ambiguity may otherwise result
+  
+excessive use of courtesises should be avoided
+
+IMMEDIATELY should only be used when immediate action is required for safety reasons.
+
+### ISSUE OF CLEARANCE AND READ BACK REQUIREMENTS
+
+clearance may vary in content from a brief landing clearance to a detailed description of the route and levels to be flown
+
+ALL ATC clearances MUST BE READ BACK.   
+Strict adherence to read back procedures ensures that the clearance has been received correctly, but also that is was transmitted as intended.   
+Serves as a check that the right aircraft, and only that aircraft, will take action on the clearance.
+
+MUST BE READ BACK IN FULL:    
+* taxi instructions
+* clearances to enter, land on, take off from, cross, backtrack, and hold short of the runway in use
+* runway in use
+* heading instructions
+* speed instructions
+* level instructions
+* altimeter settings
+* SSR codes
+* airways or route clearances
+* VDF information
+* frequency changes
+* type of radar service
+* transition level (TL shall be read back if given by ATIS broadcast)
+
+other clearances and instructions must be read back or acknoweledged in a manner that clearly indicates that they have been understood and accepted, an abbreviated format may be used.   
+an ac should normally terminate the read back with its callsign.
+
+if aircraft readback is incorrect, ATCO shall transmit NEGATIVE followed by the correct version.
+
+inability to comply --> if there is doubt whether a pilot can comply with an ATC clearance or instruction, the controller may follow the clearance or instruction by the phrase: IF NOT POSSIBLE, ADVISE   
+--> offer alternative.
+
+If pilot receives clearance or instruction which cannot be complied with, advise ATC: UNABLE TO COMPLY + reason
+
+Controllers will pass clearance slowly and clearly because pilot will need to write it down.   
+
+Controllers should avoid passing a clearance to a pilot engaged in complicated taxiing maneuverrs and on non occasion should a clearance be passed when the pilot is engaged in line up or take-off maneuvers.   
+E.g. route clearance should be passed to an aircraft before start up.
+
+CONDITIONAL CLEARANCES: call sign - contidtion - clearance
+
+
+level instructions may be reported as height, altitude, or flight level according to the altimeter pressure setting
+
+QFE: altimeter subscale setting ~ 0 at airfield datum.    
+QFE is measured at the highest point of the airfield surface; runway or helideck QFE dataum is measured at the threshold of the runway or helideck FATO.
+
+QNH: altimeter subscale setting ~ altimeter above mean sea level AMSL := airfield elevation.
+
+standard setting = 1013.2hPa (29.92in hg) = readout a pressure altitude or flight level; used for controlled airspace above transition level
+
+clearances in some parts of the world are passed in metres. operators normally have metric altimeters fitted.   
+Failing that operators provide conversion charts for meters to feet. If an altitude or height instruction is transmitted it must include the pressure setting.
+
+ICAO manual of RTF includes the word "TO" in all climbing/descending instructions and the exam follows this convention.  
+Most European countries do not use the word "TO" when transmitting instructions regarding Flight Levels
+
+EXPEDITE ~~> climb/descent at the maximum possibe safe rate, commence maneuver immediately.
+
+FL100 := FLIGHT LEVEL ONE HUNDRED, TWO HUNDRED ...
+
+Flights joining airways -- clearance to join, conditions, etc.
+
+leaving airway - specific point and instructions to ensure separation from other traffic
+
+holding enroute - holding instruction, onward clearance time
+
+
+### Routine Position Reporting
+
+position reports, AIREPs, are required unless either the AIP or the ATS unit permit the pilot to omit them.   
+It is normal to omit position reports when under radar control.
+
+Position reports contain the following elements    
+* ac identification
+* position
+* time
+-------- can be omitted on the basis of regional air navigation agreements
+* next position and time over
+* ensuing significant point
+
+Note: transmitting of time: by default "minutes-only", hour only to avoid confusion
+
+### Filing Airborne Flight Plans
+
+a pilot may file a flight plan with an ATS unit during flight.   
+use of busy ATC channels should be avoided, normally FIR frequency should be used.  
+Details should be passed using the flight plan format.
+
+during flight, a pilot may change from IFR to VFR by cancelling the IFR flight plan.
+
+when pilot has expressed the intention to change from IFR to VFR flight, the ATS unit should pass to the pilot any available meteoroglogical infromation that makes it likely that flight in VMC cannot be maintained.
+
+### Radio Test Procedures - RADIO CHECK
+
+test transmission:    
+* identification of aeronautical station
+* aircraft call sign
+* RADIO CHECK
+* frequency used
+
+replies to include readability    
+* identification of station calling
+* identifcation of station replying
+* information on readability
+
+1   unreadable
+2   readable now and then
+3   readable, but with difficulty
+4   readable
+5   perfectly readable
+
+when a ground station has to make test signals, such signals shall not continue for more than 10 seconds and shall be composed of splekn numbers, i.e., ONE, TWO, THREE, etc, followed by the radio call sign of the station transmitting the test signals.   
+such transmissions should be kept to a minimum.
+
+
+### Meteorological Observation by Aircraft
+
+routine met observations are made at ATS reporting points roughly an hour apart or when requested.
+
+ac exemptd from making routine observations when the flight duration is 2 hours or less, when the aircraft is wihin one hour of landing and when it is below 1500m (5000ft).
+
+because position reports are omitted when under radar control and radar control is the norm over land this tends to mean that routine position reports contain met information mostly when operating in oceanic areas.   
+The HF position report opposite includes the term OVER at the end of the transmission.
+
+AIREP SPECIAL- special air reports shall be made by all aircraft whenever the following consitions are encoutered or observed:   
+
+* moderate or severe turbulence
+* moderate or severe icing
+* severe mountain wave
+* thunderstorms, without hail that are obscured, embedded, widespread or in squall lines
+* thunderstorms with hai that are obscured, embedded, widespread, or in squall lines
+* heavy duststorm or heavy sandstorm
+* volcanic ash cloud
+* re-eruption volcanic activity or a colcanic eruption
+
+observations during climb of meteorological conditions or approach phases of flight not previously reported to the pilot-in-command which in his opinion are likely to affect the safety of other ac operations must be reporting in the AIREP format.   
+AIREP shall be made as soon as possible.
+
+AIREP content - 3 sections - 1st always sent, others when required
+
+--> section 1
+* aircraft identification
+* position
+* time
+* flight level or altitude
+* next position and ETA
+--> section 2 --> operational information
+* estimated time of arrival
+* endurance
+--> section 3 --> meteorological information
+* air temperature
+* wind
+* turbulence
+* aircraft icing
+* supplementary information
+
+when special AIREP of pre-eruption volcanic activity, a volcanic eruption or vlcanic ash cloud is transmitted the content and order in the AIRPE message is
+(section 1): ac identification, position, time, FL/ALT
+(section 3 - volcanic): VOLCANIC ACTIVITY OBSERVED, air temp, wind, supplementatial info
+
+
+### Summary
+
+flight either VFR or IFR. all flights can be IFR, but only some -- depending on WX and airspace -- can operate VFR.
+
+first contact: full callsign, abbreviated call sign only after first use by ATC
+
+words may be ommitted for   
+* SURFACE ~ wind direction and speed
+* DEGREES ~ radar headings
+* VISIBILITY ~ cloud and height in met reports
+* HECTOPASCALS ~ when issueing pressure settings
+
+ALL ATC CLEARANCES MUST BE READ BACK ==> ensures clearance reception & transmission as intended
+
+conditional clearance shall include the call sign, the condition, and the clearance.
+
+ac requiring to join an airway should make their request to the appropriate ATS unit. Where no flight plan has been filed, the request should include the filing of an airborne flight plan.
+
+Position reports are required unless either the AIP or the ATS unit permit the pilot to moti them. 
+It is normal to omit position reports when under radar control.
