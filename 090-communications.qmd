@@ -731,3 +731,153 @@ ac requiring to join an airway should make their request to the appropriate ATS 
 
 Position reports are required unless either the AIP or the ATS unit permit the pilot to moti them. 
 It is normal to omit position reports when under radar control.
+
+
+## Standard Instructions
+
+### Pre-Start Procedures
+
+at aerodromes with no ATIS, aircrew may ask for current aerodrome information before requesting start-up.
+
+aerodrome control service := air traffic control service for aerodrome traffic.    
+aerodrome control radio station := station providing radio communication between an aerodrome control tower and aircraft or mobile aeronautical stations.
+
+ac ~ (stand) position & acknowledgement of ATIS broadcast.
+
+TWR will inform aircrew about any delay to the departure by providing start up or expected start up time.
+
+start up := engine start, possibly assisted by ground crew
+
+### Push-back
+
+nose-in parking --> push-back before taxi    
+requests for push back are made to ATC or apron control/management service depending on local procedures.
+
+engines are normally started during push-back, i.e., request for start-up and pushback together.
+
+```
+aerodrome traffic := all traffic on the maneuvering area of an aerodrome and all aircraft flying in the vicinity of an aerodrome.   
+apron := defined area, on a land aerodrome, intended to accommodate aircraft for the purpose of loading or unlaoding passengers, mail or cargo, fuelling, parking, or maintenance.
+```
+
+push-back coordinated between aircrew and ground crew via intercom.   
+brakes must be off before push back starts
+
+when push-back maneuver complete, ground crew give the pilot a visual signal to indicator that the aircraft is free to taxi.   
+Pilot may stop maneuver at any stage: STOP PUSH-BACK.
+
+```
+maneuvering area := that part of an aerodrome to be used for take-off, landing, and taxiing of aircraft, excluding aprons.     
+
+movement area := that part of an aerodrome to be used for take-off, landing, and taxiing of aircraft, consisting of maneuvering area AND aprons.
+```
+
+### Taxi Instructions
+
+taxi instructions issued by a controller contains a **clearance limit** at which the aircraft must hold until a further permission to proceed is given (new clearance).
+
+for departures: typically **holding point** of the runway in use, can be another position on the aerodrome depending on procedures and traffic
+
+if ac acknowledges receipt of ATIS, ATCO does not need to provide the departure information when giving taxi instructions
+
+```
+Automatic Terminal Information Service (ATIS) := provision of  current, routine information, to arriving, and departing aircraft by means of continuous and repetivite broadcasts throughout the day or a specified portion of the day.
+```
+
+### Take-Off Procedures
+
+large aerodrome: separate GROUND and TOWER functions; ac transferred to TOWR at or approaching the holding point.
+
+ac may be required to carry out checks prior to departure and are not always ready for take-off when they reach the holding point.    
+READY FOR DEPARTURE upon completion of checks.
+
+correct phraseology for taxi and take-off clearances to aovid misinterpretation and confusion.
+
+```
+holding point := a specified location, identified by visual or other means, in the vicinity of which the position or an aircraft in flight is maintained, in accordance with air traffic control clearances
+```
+
+LINE UP, RUNWAY XX
+
+CLEARED FOR TAKE-OFF RUNWAY XX
+
+### Take-Off Clearance
+
+Take-off clearance: CALLSIGN CLEARD FOR TAKE-OFF RUNWAY XX   
+
+if reduced runway separation is used to take-off clearance will be preceded by traffic information.     
+Except in cases of emergency, controllers should not transmit to an aircraft in the process of taking off or in the early stages of a climb.
+
+*immediate take-off clearance* ~ given traffic situation, aircraft to take-off immediately after lining up.
+
+ARE YOU READY FOR IMMEDIATE DEPARTURE?
+
+CLEARED FOR IMMEDIATE TAKE-OFF, RUNWAY XX.
+
+### Departure Insturction
+
+normally not provided by ATCO during taking off or early stage.   
+ATC reoute clearance or local departure instruction are typically given when taxiing.
+
+to aovid ambiguity with take-off clearance, DEPARTURE or AIRBORNE.
+
+local departure instructions may also be given as part of the take-off clearance.
+
+### Take-Off Clearance Not Actioned
+
+TAKE-OFF IMMEDIATELY OR VACATE RUNWAY
+
+### CANCELLING of a TAKE-OFF Clearance
+
+unexpected traffic development or departing aircraft takes too long to take off, it may be necessary to cancel the take-off clearance and quickly free the runway.
+
+CANCEL TAKE-OFF
+
+### Abandoned Take-Off
+
+ATC: STOP IMMEDIATELY, ... reason
+
+if pilot/aircrew abandons take-off, the control tower should be informed as soon as practicable.
+
+REJECTED TAKE-OFF, ... reason
+
+### Joining the Circuit
+
+request by aircraft for circuit -> joining instructions be made "sufficiently" in advance to allow a planned entry into the circuit, taking other traffic into account.
+
+whenever the traffic circuit is a right-hand pattern, it will be specified in the clearance from ATC.   
+A left-hand pattern = standard ~ not mentioned specifically or to avoid confusion.
+
+when ATIS is provided, the pilot should acknowledge receipt of the broadcast in his initial call to the aerodrome
+
+```
+aerodrome traffic circuit := the specified path to be flown by aircraft operating in the vicinity of an aerodrome.
+```
+
+Following a request to join the circuit, aircraft may be instructed to join in three ways:
+
+1. overhead join: overfly at 2000ft above aerodrome elevation, descend on the 'dead side' to circuit height, join circuit by crossing the upwind end of the runway at circuit height and then position downwind;
+1. downwind join; or
+1. join for a stright in approach
+
+depending on prevailing traffic conditions and the direction from which an aircraft is arriving, it may be possible to give a straight-in approach.
+
+pilot, after having joined the traffic circuit makes routine reports as required by local procedures.    
+reporting procedures for a standard left hand circuit:   
+
+* downwind
+* late downwind, or in undable to report DONNWING and has passed the downwind end of runway
+* BASE
+* FINAL, clearance to land will be issued
+* when aircraft is on straight-in approach: LONG FINAL
+
+### Final Approach and Landing
+
+FINAL report about 4NM/7km
+
+p19/26
+
+
+helicoptiers: "AIR TAXI"
+
+
