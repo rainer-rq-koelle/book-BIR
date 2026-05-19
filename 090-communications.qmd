@@ -241,7 +241,10 @@ termination of distress communication and of silence
 
 ac no longer in distress, mut transmit message cancelling the distress condition
 
-distress communication and silence conditions are terminated by transmitting a message including the words DISTRESS TRAFFIC ENDED on frequencies being used for distress traffic
+distress communication and silence conditions are terminated by ATC transmitting a message including the words DISTRESS TRAFFIC ENDED on frequencies being used for distress traffic
+
+AC: CANCEL DISTRESS   
+ATC: DISTRESS TRAFFIC ENDED to all stations
 
 
 frequencies can be truncated 119.100 := ONE ONE NINEr DECIMAL ONE
@@ -784,6 +787,8 @@ if ac acknowledges receipt of ATIS, ATCO does not need to provide the departure 
 Automatic Terminal Information Service (ATIS) := provision of  current, routine information, to arriving, and departing aircraft by means of continuous and repetivite broadcasts throughout the day or a specified portion of the day.
 ```
 
+helicopters: "AIR TAXI"
+
 ### Take-Off Procedures
 
 large aerodrome: separate GROUND and TOWER functions; ac transferred to TOWR at or approaching the holding point.
@@ -814,7 +819,7 @@ ARE YOU READY FOR IMMEDIATE DEPARTURE?
 
 CLEARED FOR IMMEDIATE TAKE-OFF, RUNWAY XX.
 
-### Departure Insturction
+### Departure Instruction
 
 normally not provided by ATCO during taking off or early stage.   
 ATC reoute clearance or local departure instruction are typically given when taxiing.
@@ -875,9 +880,250 @@ reporting procedures for a standard left hand circuit:
 
 FINAL report about 4NM/7km
 
-p19/26
+turn to final wider out: LONG FINAL 15km/8NM   
+if no landing clearance received a further call: FINAL at 7km/4NM from touchdown
 
 
-helicoptiers: "AIR TAXI"
+### Request for Low Fly-by of the Tower
 
+a pilot may request to fly past the control tower or other observation point, for the purpose of visual inspection from the ground.
+
+if the low pass is made to allow air traffic to check the position of the gear the reply might use the words LANDING GEAR or WHEELS, for instance:
+
+* landing gear appears down
+* right wheel appears up
+* wheels appear down
+* nose wheel does not appear up.
+
+### Request for Low Approach
+
+for training purposes, a pilot may request permission to make an approach along or parallel to the runway without landing
+
+### Request for Touch and Go
+
+to save time when conducting training in the circuit, pilots may request to carry out a touch-and-go, i.e., the aircraft lands, continues rolling, and takes-off without stopping.
+
+### ATC instruction to go-around
+
+instructions to carry out a missed approach may be give to avert an unsafe situation.   
+When a missed approach is initiated cockpit workload is inevitably high.   
+Any transmissions to aircraft going around should be brief and kept to a minimum.
+
+Unless instructions are issued to the contrary, an aircraft on an instrument approach will carry out the missed approach procedure and an aircraft operating VFR will continue in the normal traffic circuit.
+
+If ATC require a go around they use the instruction; GO AROUND
+
+### Pilot Initiated Go-Around
+
+If the pilot initiates the missed approach the phrase: GOING AROUND is used.
+
+### After Landing
+
+Unless absolutely necessary, controllers should not give taxi instructions to pilots until the landing roll is complete.   
+Pilots should remain on the tower frequency when clear of the runway unless otherwise advised.
+
+### Summary
+
+Where no ATIS is provided, you may ask for aerodrome information before requesting start-up.  
+request start clearance.
+
+Taxi instructions issued by a controller will always contain a clearance limit.
+
+ATC route clearances and local departure instructions are often given whiles taxiing.   
+The do no constitute a clearance to take off or enter an active runway.
+
+To avoid ambiguity the phrase TAKE OFF is only used when an aircraft is cleared for take-off, or when cancelling a take-off clearance.
+
+A FINAL report is made when an aircraft turns onto final within 7km/4NM from touchdown.   
+For distance further than this position, a LONG FINAL report is made at about 15km/8NM from touchdown.   
+If no landing clearance is received at that time, a further FINAL report is made at 7km/4NM from touchdown.
+
+If ATC require a go around they will use the instruction GO AROUND.    
+If the pilot initiates a go-around, the uses the phrase GOING AROUND.
+
+Unless absolutely necessary, controllers should not give taxi instructions until the landing roll is complete.   
+Aircraft should remain on Tower frequency - even when clear of the active runway - until instructed to change to Ground.
+
+
+
+## Radar Procedures
+
+communication between aircraft and "all types" of radar units.    
+2 different radar services: i.) radar control, and ii.) advisory service.
+
+
+### Radar Services
+
+UNDER RADAR CONTROL ~ when radar conrol service = must comply with instructions from radar unit and ATC assumes responsibility for separation.
+
+air traffic advisory service provides bearings, distance, and height information on known conflicting traffic.    
+Some services will also provide advisory avoiding action.   
+Pilot(s) remain(s) responsible for terrain and collision avoidance at all times.
+
+A flight information service FIS is not a radar service.
+
+### Radar Identification and Vectoring
+
+radar vectors may be given to establish the identification of an aircraft.   
+The aircraft may also be identified using position report information, by requesting the aircraft to make turns, by reported bearing and distance information from a prominent object or radio aid and the by use of SSR.
+
+The pilot should be advised if radar identification is lost, or about to be lost, and appropriate instructions given.   
+
+In a radar environment, heading information given by the pilot and heading instructions given by controllers are in defrees magnetic.
+
+### Traffic Information and Avoiding Action
+
+whenever practicale, infomration rgarding traffic on a conflicting path should be given in the following form:   
+
+* relative bearing of the conflicting traffic in terms of the 12-hour clock;
+* distance from the conflicting traffic;
+* direction of flight of the conflicting traffic;
+* level and type of aircraft or, if unknown, relative speed of the conflicting traffic, e.g. slow or fast.
+
+Relative movement should be described by using whichever is appropriate of the following terms:   
+
+* closing;
+* converging;
+* parallel;
+* same direction;
+* opposite direction;
+* diverging;
+* overtaking
+* crossing left to right
+* crossing right to left
+
+Depending on the level of service, vectors may be offered by the controller or requested by the pilot.   
+The controller should inform the pilot when the conflict no longer exists.
+
+aircraft: LOOKING OUT FOR TRAFFIC; TRAFFIC IN SIGHT
+
+### Radar Vectoring
+
+Aircraft may be given specific vectors to fly to establish lateral separation.   
+Unless it is self evident, pilots should be informed of the reasons why radar vectors are necessary.
+
+When vectoring is completed, pilots shall be instructed to resume their own navigation and given position information and approprieate instruction as necessary.
+
+Occasionally an aircraft may be instructed to make a complete turn - known as an orbit or a 360 degree turn - for delaying purposes or to achieve a required spacing behind preceding traffic.
+
+### Secondary Surveillance Radar SSR
+
+#### SSR Emergency Codes
+
+Pilot not in direct communication with ATC should set the applicable special purpose code, preferably before any emergency transmissio is made, if the aircraft is qeuipped with an SSR transponder.
+
+* mode A 7700   emergency
+* mode A 7600   radio failure
+* mode A 7500   hijack or unlawful interference
+
+pilots in an emergency situation in contact with ATC and receiving a secondary service should maintain the code in use unless otherwise instructed.
+
+The individual country's AIP will contain information of other special purpose SSR codes, if any.
+
+ATC instructions with respect to SSR transponders
+
+* SQUAWK xxxx     set mode A code as instructed
+* CONFIRM SQUAWK  confirm mode A code set on the transponder
+* RESET xxxx      reselect assigned mode A code
+* SQUAWK IDENT    operate te IDENT feature
+* SQUAWK MAYDAY   select the emergency code
+* SQUAWK STANDBY  select the standby feature
+* SQUAWK CHARLIE  select pressure altitute transmission
+* CHECK ALTIMETER SETTING AND CONFIRM LEVEL check pressure setting and confirm present level
+* STOP SQUAWK CHARLIE WRONG INDICATOR
+* RESET MODE S INDICATION for a mode S equipped aircraft, check the setting of the aircraft identification
+* VERIFY LEVEL (used to derive accuracy of the Mode C level information displayed to the controller) check and confirm your level.
+
+pilot's reply to SSR instructions is usually either an acknowledgement or read back.   
+If ATC ask for your transponder capability ==> resply with a combination of Mode A, C, and/or S depending on the type of transponder fitted.
+
+
+### Approach Control
+
+#### VFR Departures
+
+Departing VFR traffic - when handled by an approach control unit 0 may be passed infromation on relevant traffic under an advisory service in order to assit the pilits in maintaining their own separation.
+
+Pilot should report leaving the area of responsibility of the approach control unit.
+
+Aerodromes may permit special VFR arrivals and departures.   
+SVFR procedures will be published in the AIP.
+
+#### IFR Departures
+
+typically, one approach control unit handles both approach and departures.   
+At busier airports, departures and arrivals may be handled separately by specific arrival and departure control units.
+
+In addition to the ATC route clearance, departing IFR flights may be given departure instructions by departure control.    
+These may be given in plain language or in the form of a standard instrument departure SID.
+
+#### VFR Arrivals
+
+depending on the procedures in use, the pilot of an arriving VFR flight may be required to establish contact with the approach control unit and request instructions before enterin its area of responsibility.
+
+Where there is an ATIS broadcast, the pilot should acknowledge if it has been received.   
+Where no ATIS broadcast is provided the approach controller will pass the aerodrome data.
+
+#### IFR Arrivals
+
+Approach control will normally advise on intial contact the type of approach to be expected.
+
+Occasionally, IFR aircraft do not complete the instrument approach procedure but request permission to make a visual approach.   
+A request for a visual approach does not imply that the aircraft is flying in VMC but only that the specified requirements for a visual approach have been met and that the pilot can maintain visual reference to the terrain.
+
+### HOlding
+
+Normally a holding procedure should be published.   
+However, when the pilot requires a detailed description of the holding procedure based on a facility, the information should be passed in the following order:
+
+* fix;
+* level;
+* inbound track;
+* right or left turns;
+* time of leg (if necessary)
+
+### Radar Vectors to Final Approach
+
+radar vectors are given to arriving flights to position them onto a pilot-interpreted final approach aid, or to a point from which a radar assisted approach can be made, or to a point from whtih a visual approach can be made.
+
+possible speed control to establish separation.
+
+### Surveillance Radar Approach
+
+on a surveillance radar approach SRA the pilot is given distances from touchdown, advisory altitude or height information and zimuth instructions, in order to carry out an approach.   
+SRAs are moe likely to be available at military aerodromes than at civilian ones, and the military usually uses QFE rather than QNH ??????
+
+where SRA procedure terminates at 2 miles from touchdown, the distance from touchdown and advisory altitude checks are normally passed at 1 mile intervals.   
+Where the DRA terminates at less than 2 miles from touchdown, such checks are given each half mile.
+
+Aircraft replies are expected to all transmissions up to the point where the pilot is instructed not to reply.
+
+Pilot to report RUNWAY IN SIGHT
+--> CONTINUE VISUALLY (IF RUNWAY NOT IN SIGHT GO AROUND)
+
+### Precision Radar Approach
+
+PAR controller, in addition to providing heading instructions during the continuous talkdown, provides information on altitudes relateive to the glide slope, together with instructions on corrective action in the event that the aircraft is too high or too low.
+
+when radar returns on the elevation element of the PAR indicate that the pilot may be making a missed approach, the radar controller shall, when there is sufficient time to obtain a reply from the pilot, pass the aircrafts height above the glide path and ask the pilot if a missed approach is intended.
+
+in similar circumstances, but when there is not sufficient time to obtain a replay from the pilot, the ATCO should continue the preceision approach empahsising the ac displacement.   
+If it becomes apparent that the pilot is mmaking a missed approach, eith before or after the normal termination point, the radar controller shall pass missed approach instructions.
+
+### Summary
+
+There are 2 different types of radar services: i.) radar control, and ii.) advisory service.
+
+The pilot remains responsible for terrain and collision avoidance at all times.   
+A flight infomration services FIS is  not a radar service.
+
+In a radar environment, heading information given by the pilot and heading instructions given by the controllers are in degrees magnetic.
+
+Whenever practicalble information regarding conflicting traffic should be given dtailing the relative bearing and distance of the traffic, its direction of flight, level and type of aircraft or, if unknown, relateive speed and whether it is slow or fast moving, same level, parallel, converging or crossing.
+
+SSR emergency codes are Mode A 7700 "emergency", 7600 " radio failure", and 7500 "hijack or unlawful interference".    
+Pilots in an emergency situation in contact with ATC and receiving secondary service should maintain the code in use unless other wise instructed.
+
+Typically, a single approach control unit handles both VFR and IFR arrivals and departures.   
+At busier airports, departures and arrivals may be handled separately by specific arrival and departure control units.
 
