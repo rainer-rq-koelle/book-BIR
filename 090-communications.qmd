@@ -1127,3 +1127,177 @@ Pilots in an emergency situation in contact with ATC and receiving secondary ser
 Typically, a single approach control unit handles both VFR and IFR arrivals and departures.   
 At busier airports, departures and arrivals may be handled separately by specific arrival and departure control units.
 
+## Communication Failure
+
+Total communication failure is rare with today's communication equipment / equipage.  
+
+When an ac station fails to maintain or establish contact with the aeronautical station on the designated frequency it should:   
+
+* try another frequency appropriate to the route
+* if this fails, try to establish communication with other aircraft or stations on frequencies appropriate to the route of 121.5MHz
+* if this fails, squawk 7600 and transmit its message twice on the designated frequency(s), preceded by the phrae TRANSMITTING BLIND and if necessary, include the addressee)s) for which the message is intended and the intentions of the pilot.
+
+### IMC
+
+in IMC or when conditions are such that it is not feasible to complete the flight in accordance with VFR your subsequent actions depend on the availability of a RADAR service.
+
+### IMC or IFR: No Radar Service
+
+unless otherwise prescribed on the basis of a regional air navigation agreement, in airspace where rader is not used in the provision of air traffic control:
+
+* maintain the last assigned speed and level or minimum flight altitude if higher for a period of 20 minutes following the aircraft's failure to report its position over a compulsory reporting point, and
+* thereafter adjust flight level and speed in accordance with the filed flight plan.
+
+### IMC or IFR, Radar Service Available
+
+in airspace where radar is used in the provision of Air Traffic Control.
+
+maintain the last assigned speed and level, or the minimum safe altitude, if this is higher, for a period of 7 minutes.
+
+The period of 7 minutes starts from:
+
+* the point when the transponder is set to 7600;
+* the last assigned level is reached; or
+* the time the aircraft failed to make the last compulsory position report, whichever is later.
+
+when being radar vectored, or having been directed by ATC to proceed offset without a specified limit, subsequently rejoin the current flight plan in the most direct manner possible and no later than the next significant point.
+
+### IMC or IFR: Subsequent Actions
+
+in both cases:
+
+* follow the flight plan to destination and enter the hold at the designated navigation aid.
+* commence the approach as close as possible to the last acknowledged Expected Approach Time (EAT). If no EAT has been received and acknowledged then commence the approach as close as possible to Flight plan ETA.
+* complete a normal instrument approach
+* if possible land within 30 minutes of the latest EAT or Flight Plan ETA, whichever is later.
+
+```
+EAT Expected Approach Time := the time at which ATC expects tht an arriving aircraft following a delay will leave the holding point to complete its approach for a landing.
+```
+
+### Radar Assistance to Aircraft with Transmitter Failure
+
+when ATCO suspects that an ac is able to receive but not transmit messages, the radar may be used to confirm that the polot has received instructions, by observing whether the ac carries out turns as instructed.
+
+#### Receiver Failure
+
+When an aircraft stations is unable to establish communication due to receiver failure, it shall transmit reports at the scheduled times, or positions, on the channel in use, preceded by the phrase TRANSMITTING BLIND DUE TO RECEIVER FAILURE.   
+The aircraft station shall transmit the intended message following this by a complete repetition.
+
+During this procedure, the aircraft shall also advise the time of its next intended transmission.
+
+#### Radio Failure whilst in the Circuit Pattern
+
+When the aircraft is frming part of the aerodrome traffic at a controlled aerodrome and experiences a radio failure the pilot shall squwak 7600, comply with the last instructions received and watch for visual signals from ATC.
+
+### Summary
+
+* in VMC or IMC, pilots are expected to
+  + try another frequency appropriate to the route, if this fails:
+  + try to estbalish communication with other aircraft or stations on frequencies appropriate to the route or 121.5MHz, if this fails
+  + squawk 7600 and transmit blind
+  
+* IMC - No Radar: maintain the last assigned speed and level or minimum flihgt altitude if higher, for 20 minutes then fly the filed flight plan.
+* IMC - Radar: maintain last assigned speed and level, or minimum safe altitude, if this higher, for 7 minutes starting from
+  + when the transponder is set to 7600
+  + the last assigned level is reached; or
+  + the time you failed to make the last compulsory position report, whichever is later
+* if radar vectored, or off-track rejoin the current flight plan route directly.
+* IMC - subsequent actions: fly the plan to destination. Hold at the IAF and  begin a normal instrument approach as close as possible to EAT or ETA.
+
+EU difference whereby the 7 minutes no longer applies and an IFR flight shall simply maintain the last assigned speed and level for 20 minutes after failing to make a required report or from squawking 7600.   
+Also when the PIC of an IFR flight encounters visual meteorological condition VMC and elects to continue to fly to VMC, the pilot will set Mode A code 7601 in EU airspace, rather than 7600.
+
+## MET Reporting Procedures
+
+Automatic Terminal Information Service ATIS    
+routine arrival and departure information is broadcast on dedicated RT frequency or appropriate VOR frequency
+
+Pilots inbound to these airports are normally required on first contact with aerodrome ATCO to acknowledge recept of current information by quoting code letter of broadcast. 
+
+ATIS updated every 30 minutes following routine weather observations, i.e., 20 and 50 min past the hour.
+
+METAR SPECI will cause an immediate update to the ATIS.
+
+### Contents of the ATIS report
+
+ATIS for arriving and departing aircraft will include    
+* aerodrome name
+* ATIS identification letter
+* time of weather observation
+* type of approach to be expected and runway(s) in use
+* significant runway surface conditions and braking action if appropriate
+* holding delay, if appropriate
+* transition level, if applicable
+* other essential operational information
+* surface wind direction and speed in magnetic degrees and knots
+* prevailing visibility, and RVR if applicable, in kilometres or metres
+* present weather (e.g. precipitation)
+* cloud amount < 5000ft and height of base in feet AAL or CAVOK
+* air and dew point temperature in degrees Clesius
+* altimeter setting(s)
+* any available information on significant meteorological phneomena in the approach or climb-out areas
+* trend type forecast when available (e.g. NOSIG, TEMPO, etc)
+* specific ATIS instructions
+
+CAVOK - cloud and visibility OK := used in place of visibility, weather, and cloud given    
+* visibility is 10km or more;
+* no cloud of operational significance (cloud base below 1500m/5000ft or below the highest minimum sector altitude, whichever is greater, or a cumulonimbus cloud or towering cumulus cloud at any height; and
+* no signifcant weather phenomena is present.
+
+### SIGMET
+
+SIGnificant METeorological occurrence enroute.   
+SIGMET transmitted using coded text message, but passed to aircraft in plain language.
+
+SIGMET warning for subsonic cruising levels are issued for:   
+* active thunderstorms (widespread or embedded CB or, line of CB with little or no separation, or CB concealded by haze: TS FRQ, EMBD, SLQ, OBSC, isolated or scattered CN are NOT report!)
+* severe line squalls of wind velocities of 50kt or more: SEV LSQ
+* tropical revolving storms: TC, plus name
+* heavy hail with certain thunderstorms: HVY GR
+* severe turbulence not associated with convective cloud: SEV TURRB
+* severe icing no associated with convenvective cloud: SEV ICE
+* freezing rain: FZRA
+* severe mountain waves: SEV MTW
+* heavy sand and dust storms: HVY SS, HVY DSa
+* volvanic ash cloud: VA plus name of volcano
+
+
+example: EGPX SIGMET 2 VALID ..... EGRR SCOTTISH FIR SEV TURB FCST BLW FL070 LAN E OF LINE 59N 08W 55N 03W WKN FROM W
+
+
+### Reporting RUnway Visual Range RVR
+
+Where multiple RVR observations are available, they are always tranmitted commencing with the reading for the touchdown zone.
+
+The RVR may be transmitted in an ATIS or may be passed directly by ATC. The worrds RUNWAY VISUAL RANGE or the abbreviation RVR should be used, followed by the runway number, the positions for mulitple readings if necessary, and the RVR values for the touchdown, midpoint, and stopend.
+
+```
+Runway Visual Range RVR := the range over which the pilot of an aircraft on the centre line of a runway, can see the runway surface markings, or the lights delineating the runway or identifying its centre line.
+```
+
+### METARs, TAFs, and SPECIs
+
+METARs, TAFs, and SPECIs are coded written reports and forecasts transmitted by fax, internet, teleprinter, or AFTN.
+
+METARs := aviation routine weather reports. compiled hourly or half-hourly at fixed times, often H+20 and H+50 while the met station is open to be available on the hour and half-hour.   
+Time of observatio is given in the report. The actual inforamtion may be supplemented by a Trend, which is a short-term 2hr forecast or significant changes.    
+
+SPECIs are raised to report certain critical weather conditions.   
+To be issues when   
+* the mean surface wind direction has changed by 60deg or more from that given in the latest report, the mean speed before and/or after the change being 5m/s (10kt) or more;
+* when the mean surface wind speed has changed by 5 m/s (10kt) or more from that given in the latest report
+* when the variation from the mean surface wind speed (gusts) has changed by 5m/s (10kt) or more from that at the time of the latest report, the mean speed before and/or aafter the change being 7.5 m/s (15kt) or more.
+* when the onset, cessation or change in intensity of any of the following  weather phenomena occurs:
+  + freezing precipitation
+  + moderate or heavy precipitation (including showers)
+  + thunderstorm (with precipitation)
+* when the onset or cessation of any of the following weather phenomena occurs:
+  + freezing fog
+  + thunderstorm (without precipitation)
+* when the amount of a cloud layer below 450m (1500ft) changes:
+  + from SCT or less to BKN or OVC, or
+  + from BKN or OVC to SCT or less
+
+
+p7/26
