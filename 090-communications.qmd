@@ -1300,4 +1300,65 @@ To be issues when
   + from BKN or OVC to SCT or less
 
 
-p7/26
+Example/exercise --> decoding of METAR (or SPECI)
+decode: report type (METAR) - location - datatime Z - wind dir/speed &^ gusts, horizontal visibility - RVR - weather - cloud - temp & dew point - QNH - recent weather - windshear WS - trend
+
+
+### Terminal Aerodrome Forecasts TAF
+
+TAFs describe weather forecasts for an aerodrome and cover a period from 9 to 30 hours.
+
+9 hour TAFs updated every 3 hours    
+12,24, and 30hou TAFs every 6 hours
+
+TAFs follow broadly METAR/SPECI decoding.
+
+### SNOWTAM
+
+SNOWTAM is part of NOTAM system origingating from AIS (and not a MET authority)    
+:= describes snow conditions at an airfield
+
+essential part of SNOWTAM, including braking action, will be added to the METAR or SPECI.
+
+Braking coefficients
+
+>= 0.4 (0.4 and higher)   good
+0.36 - 0.39               medium to good
+0.3  - 0.35               medium
+0.26 - 0.29               medium to poor
+<= 0.25                   poor
+
+### Reporting Essential Aerodrome Information
+
+"essential"  := information regarding maneuvering area and its associated facilities ~ safe operation of aircraft
+
+"whenever possible" prior to start-up or taxi, and prior to final approach.
+
+* construction or maintenance work on, or immediately adjacent to the maneuvering area;
+* rough or broken surfaces on runway or taxiway, marked or not;
+* snow or ice on a runway or taxiway;
+* water on a runway
+* snow banks or drifts adjacent to a runway or taxiway;
+* other temporary hazards, including parked aircraft and birds on the ground or in the air;
+* failure or irregular operation of part or all of the aerodrome lighting systems; or
+* any other pertinent information.
+
+
+### Definitions and Terms
+
+...
+
+### Air Traffic Control Abbreviations
+
+...
+
+
+### Summary
+
+* acknowledge ATIS information at initial contact giving "broadcast code letter"
+* SIGMETs are issued when there is a significant change, i.e., MET occurrence enroute.
+* RVR is reported in 3 groups in order: touchdown zone, mid-point, and end zone
+* braking effectivness
+  + either as measured runway friction coefficient -> braking action
+  + or plain language: good, medium to good, medium, medium to poor, poor
+* essential aerodrome information concerning the maneuvering area and its associated facilities is passed to aircraft before start up or taxi and before beginning final approach
