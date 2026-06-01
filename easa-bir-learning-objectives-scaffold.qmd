@@ -1,0 +1,1428 @@
+---
+title: "EASA BIR Learning Objectives Scaffold"
+subtitle: "Draft structure from TK Syllabus Comparison Document v6 / ECQB 2026"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    theme: cosmo
+execute:
+  echo: false
+---
+
+> Source workbook: `tk-syllabus-comparison-doc-v6.xlsx` (EASA TK Syllabus Comparison Document, version 6, ECQB 2026).
+
+## How to use this scaffold
+
+- Use the subject headings and syllabus references as the filing structure for your notes.
+- Add concise aide-memoire material under each learning objective.
+- Keep the `Exam` and `TK` module tags visible so the guide remains aligned with the BIR scope.
+- Use `CBIR` and `IR` tags to see where BIR knowledge also supports the later CBIR/full IR path.
+
+### Tag legend
+
+- `Exam M1/M2/M3`: BIR exam module indicated in the source workbook.
+- `TK M1/M2/M3`: BIR theoretical knowledge/basic knowledge module indicated in the source workbook.
+- `CBIR`: learning objective is also tagged for CBIR(A).
+- `IR`: learning objective is also tagged for the full IR.
+
+## Coverage Summary
+
+- Total BIR-tagged learning-objective rows: **936**
+- Exam module tags: M1=167, M2=243, M3=221
+- TK module tags: M1=128, M2=153, M3=168
+
+| Knowledge area | BIR rows | Exam M1 | Exam M2 | Exam M3 | TK M1 | TK M2 | TK M3 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 010-Air-Law-ATC | 231 | 0 | 92 | 82 | 14 | 66 | 50 |
+| 022-AGK-Instrumentation | 73 | 45 | 0 | 5 | 24 | 7 | 6 |
+| 033-Flight-Planning | 32 | 0 | 13 | 8 | 0 | 0 | 20 |
+| 040-Human-Performance | 103 | 66 | 0 | 0 | 37 | 0 | 0 |
+| 050-Meteorology | 263 | 56 | 24 | 83 | 51 | 10 | 48 |
+| 062-Radio-Nav | 178 | 0 | 114 | 0 | 2 | 61 | 31 |
+| 090-Communications | 56 | 0 | 0 | 43 | 0 | 9 | 13 |
+
+## Learning Objective Scaffold
+
+## 010 Air Law ATC
+
+_BIR-tagged rows: 231. Exam modules: M1=0, M2=92, M3=82. TK modules: M1=14, M2=66, M3=50._
+
+- **`010.00.00.00` AIR LAW**
+  - **`010.04.00.00` PERSONNEL LICENSING**
+    - **`010.04.02.00` Aircrew Regulation - Annex I (Part-FCL) Source: Aircrew Regulation**
+      - **`010.04.02.01` Definitions**
+        - `010.04.02.01.01` Define the following: Category, class and type of aircraft, cross-country, dual instruction time, flight time, student pilot-in-command (SPIC), instrument time, instrument flight time, instrument ground time, night, private pilot, proficiency check, renewal, revalidation, skill test, solo flight time. [TK M1; CBIR; IR]
+      - **`010.04.02.02` Content and structure**
+        - `010.04.02.02.01` Explain the structure of Part-FCL. [TK M1; CBIR; IR]
+      - **`010.04.02.05` Ratings**
+        - `010.04.02.05.03` State the requirements for instrument ratings, their validity and privileges (instrument rating (IR), competency-based instrument rating (CB-IR) and basic instrument rating (BIR). [TK M1; CBIR; IR]
+  - **`010.05.00.00` RULES OF THE AIR ACCORDING TO ICAO ANNEX 2 AND SERA**
+    - **`010.05.02.00` Rules of the Air**
+      - **`010.05.02.01` Applicability of the Rules of the Air**
+        - `010.05.02.01.04` Identify under what circumstances departure from the Rules of the Air may be allowed. [TK M1/M2/M3]
+        - `010.05.02.01.05` Explain the duties of the PIC concerning pre-flight actions in case of an instrument flight rule (IFR) flight. [Exam M3; TK M1; CBIR; IR]
+    - **`010.05.03.00` General rules**
+      - **`010.05.03.01` General rules - Collision avoidance - SERA**
+        - `010.05.03.01.09` Describe the requirements when carrying out simulated instrument flights. [Exam M3; TK M1; CBIR; IR]
+        - `010.05.03.01.11` Explain the requirements for the submission of an air traffic service (ATS) flight plan. [Exam M3; TK M1]
+        - `010.05.03.01.12` Explain the actions to be taken in case of flight plan change or delay. [Exam M3; TK M1; IR]
+        - `010.05.03.01.14` Explain the procedures for closing a flight plan. [Exam M3; TK M1/M2]
+        - `010.05.03.01.15` State for which flights an air traffic control (ATC) clearance shall be obtained. [Exam M3; TK M1/M2]
+        - `010.05.03.01.16` State how a pilot may request ATC clearance. [Exam M3; TK M1/M2]
+        - `010.05.03.01.18` Describe the required actions to be carried out if the continuation of a controlled visual flight rule (VFR) flight in visual meteorological conditions (VMC) is not practicable any more. [Exam M3; TK M2; CBIR; IR]
+        - `010.05.03.01.19` Describe the provisions for transmitting a position report to the appropriate ATS unit including time of transmission and normal content of the message. [Exam M3; CBIR; IR]
+        - `010.05.03.01.20` Describe the necessary action when an aircraft experiences a communication (COM) failure. [Exam M3; CBIR; IR]
+    - **`010.05.05.00` Instrument flight rules (IFR)**
+      - **`010.05.05.01` Instrument flight rules (IFR) - SERA**
+        - `010.05.05.01.01` Describe the IFR as contained in Commission Implementing Regulation (EU) No 923/2012. [Exam M3; CBIR; IR]
+  - **`010.06.00.00` AIRCRAFT OPERATIONS**
+    - **`010.06.03.00` Departure procedures - (ICAO Doc 8168, Volume I)**
+      - **`010.06.03.01` General criteria (assuming all engines operating)**
+        - `010.06.03.01.01` State the factors dictating the design of instrument departure procedures. [TK M2; CBIR; IR]
+        - `010.06.03.01.02` Explain in which situations the criteria for omnidirectional departures are applied. [Exam M2; CBIR; IR]
+      - **`010.06.03.02` Standard instrument departures (SIDs)**
+        - `010.06.03.02.01` Explain the terms 'straight departure' and 'turning departure'. [Exam M2; CBIR; IR]
+      - **`010.06.03.03` Omnidirectional departures**
+        - `010.06.03.03.01` Explain what is the meaning of an 'omnidirectional departure'. [Exam M2; CBIR; IR]
+    - **`010.06.04.00` Approach procedures - ICAO Doc 8168, Volume I**
+      - **`010.06.04.01` General criteria**
+        - `010.06.04.01.01` State the general criteria (except 'Speeds for procedure calculations') of the approach procedure design: instrument approach areas; accuracy of fixes; fixes formed by intersections; intersection fix-tolerance factors; other fix-tolerance factors; descent gradient. [TK M2; IR]
+        - `010.06.04.01.02` Name the five possible segments of an instrument approach procedure. [Exam M2; CBIR; IR]
+        - `010.06.04.01.03` State the reasons for establishing aircraft categories for the approach. [Exam M2; CBIR; IR]
+        - `010.06.04.01.04` State the maximum angle between the final approach track and the extended RWY centre line to still consider a non-precision approach as being a 'straight-in approach'. [Exam M2; CBIR; IR]
+        - `010.06.04.01.05` State the minimum obstacle clearance (MOC) provided by the minimum sector altitudes (MSAs) established for an aerodrome. [Exam M2; CBIR; IR]
+        - `010.06.04.01.06` State that a pilot shall apply wind corrections when carrying out an instrument approach procedure. [TK M2; CBIR; IR]
+        - `010.06.04.01.07` State the most significant factor influencing the conduct of instrument approach procedures. [Exam M2; CBIR; IR]
+        - `010.06.04.01.08` Explain why a pilot should not descend below obstacle clearance altitude/height (OCA/H), which are established for: precision approach procedures; non-precision approach procedures; visual (circling) procedures; APV approach procedures. [Exam M2; CBIR; IR]
+        - `010.06.04.01.09` Describe in general terms the relevant factors for the calculation of operational minima. [Exam M2; CBIR; IR]
+        - `010.06.04.01.10` State the following acronyms in plain language: DA, DH, OCA, OCH, MDA, MDH, MOC, DA/H, OCA/H, MDA/H. [Exam M2; CBIR; IR]
+        - `010.06.04.01.11` Explain the relationship between the terms: DA, DH, OCA, OCH, MDA, MDH, MOC, DA/H, OCA/H, and MDA/H. [Exam M2; CBIR; IR]
+      - **`010.06.04.02` Approach procedure design**
+        - `010.06.04.02.01` Describe how the vertical cross section for each of the five approach segments is broken down into the various areas. [Exam M2; CBIR; IR]
+        - `010.06.04.02.02` State within which area of the cross section the minimum obstacle clearance (MOC) is provided for the whole width of the area. [Exam M2; CBIR; IR]
+        - `010.06.04.02.03` Define the terms 'IAF', 'IF', 'FAF', 'FAP', 'MAPt' and 'TP'. [Exam M2; CBIR; IR]
+        - `010.06.04.02.04` State the accuracy of facilities providing track (VHF omnidirectional radio range (VOR), instrument landing system (ILS), non-directional beacon (NDB)). [TK M2; CBIR; IR]
+        - `010.06.04.02.05` State the optimum descent gradient (preferred for a precision approach) in degrees and per cent. [Exam M2; CBIR; IR]
+      - **`010.06.04.03` Arrival and approach segments**
+        - `010.06.04.03.01` Name the five standard segments of an instrument approach procedure, and state the beginning and end for each of them. [Exam M2; CBIR; IR]
+        - `010.06.04.03.02` Describe where an arrival route normally ends. [Exam M2; CBIR; IR]
+        - `010.06.04.03.03` State the main task of the initial approach segment. [Exam M2; CBIR; IR]
+        - `010.06.04.03.04` Describe the maximum angle of interception between the initial approach segment and the intermediate approach segment (provided at the intermediate fix) for a precision approach and a non-precision approach. [Exam M2; CBIR; IR]
+        - `010.06.04.03.05` Describe the main task of the intermediate approach segment. [Exam M2; CBIR; IR]
+        - `010.06.04.03.06` State the main task of the final approach segment. [Exam M2; CBIR; IR]
+        - `010.06.04.03.07` Name the two possible aims of a final approach. [Exam M2; CBIR; IR]
+        - `010.06.04.03.08` Explain the term 'final approach point' in case of an ILS approach. [Exam M2; CBIR; IR]
+        - `010.06.04.03.09` State what happens if an ILS glide path (GP) becomes inoperative during the approach. [Exam M2; CBIR; IR]
+      - **`010.06.04.04` Missed approach**
+        - `010.06.04.04.01` Name the three phases of a missed approach procedure and describe their geometric limits. [Exam M2; CBIR; IR]
+        - `010.06.04.04.02` State the main task of a missed approach procedure. [Exam M2; CBIR; IR]
+        - `010.06.04.04.03` Define the term 'missed approach point (MAPt)'. [Exam M2; CBIR; IR]
+        - `010.06.04.04.04` Describe how an MAPt may be established in an approach procedure. [Exam M2; CBIR; IR]
+        - `010.06.04.04.05` State the pilot's action if, upon reaching the MAPt, the required visual reference is not established. [Exam M2; CBIR; IR]
+        - `010.06.04.04.06` Describe what a pilot is expected to do in the event a missed approach is initiated prior to arriving at the MAPt. [Exam M2; CBIR; IR]
+        - `010.06.04.04.07` State whether the pilot is obliged to cross the MAPt at the height (HGT)/altitude (ALT) required by the procedure or whether they are allowed to cross the MAPt at a HGT/ALT greater than that required by the procedure. [Exam M2; CBIR; IR]
+      - **`010.06.04.05` Visual manoeuvring (circling) in the vicinity of the aerodrome (AD)**
+        - `010.06.04.05.01` Describe what is meant by 'visual manoeuvring (circling)'. [Exam M2; CBIR; IR]
+        - `010.06.04.05.02` Describe how a prominent obstacle in the visual manoeuvring (circling) area outside the final approach and missed approach area has to be considered for the visual circling. [Exam M2; CBIR; IR]
+        - `010.06.04.05.03` State for which category of aircraft the obstacle clearance altitude/height (OCA/H) within an established visual manoeuvring (circling) area is determined. [Exam M2; CBIR; IR]
+        - `010.06.04.05.04` Describe how the minimum descent altitude/height (MDA/H) is specified for visual manoeuvring (circling) if the OCA/H is known. [Exam M2; CBIR; IR]
+        - `010.06.04.05.05` State the conditions to be fulfilled before descending below MDA/H in a visual manoeuvring (circling) approach. [Exam M2; CBIR; IR]
+        - `010.06.04.05.06` Explain why there can be no single procedure designed that will cater for conducting a circling approach in every situation. [Exam M2; CBIR; IR]
+        - `010.06.04.05.07` State how the pilot is expected to act after initial visual contact during a visual manoeuvring (circling). [Exam M2; CBIR; IR]
+        - `010.06.04.05.08` Describe what the pilot is expected to do if visual reference is lost while circling to land from an instrument approach. [Exam M2; CBIR; IR]
+    - **`010.06.05.00` Holding procedures - ICAO Doc 8168, Volume I**
+      - **`010.06.05.01` Entry and holding**
+        - `010.06.05.01.01` Explain why deviations from the in-flight procedures of a holding established in accordance with ICAO Doc 8168 are dangerous. [Exam M2; CBIR; IR]
+        - `010.06.05.01.02` State that if for any reason a pilot is unable to conform to the procedures for normal conditions laid down for any particular holding pattern, this pilot should advise ATC as early as possible. [Exam M2; CBIR; IR]
+        - `010.06.05.01.03` Describe the shape and terminology associated with the holding pattern. [Exam M2; CBIR; IR]
+        - `010.06.05.01.04` State the bank angle and rate of turn to be used whilst flying in a holding pattern. [Exam M2; CBIR; IR]
+        - `010.06.05.01.05` Explain why a pilot in a holding pattern should attempt to maintain tracks and how this can be achieved. [Exam M2; CBIR; IR]
+        - `010.06.05.01.06` Describe where outbound timing begins in a holding pattern. [Exam M2; CBIR; IR]
+        - `010.06.05.01.07` State where the outbound leg in a holding terminates if the outbound leg is based on DME. [Exam M2; CBIR; IR]
+        - `010.06.05.01.08` Describe the three heading entry sectors for entries into a holding pattern. [Exam M2; CBIR; IR]
+        - `010.06.05.01.09` Describe the terms 'parallel entry', 'offset entry' and 'direct entry'. [Exam M2; CBIR; IR]
+        - `010.06.05.01.10` Determine the correct entry procedure for a given holding pattern. [Exam M2; CBIR; IR]
+        - `010.06.05.01.11` State the still-air time for flying the outbound entry heading with or without DME. [Exam M2; CBIR; IR]
+        - `010.06.05.01.12` Describe what the pilot is expected to do when clearance is received specifying the time of departure from the holding point. [Exam M2; CBIR; IR]
+      - **`010.06.05.02` Obstacle clearance**
+        - `010.06.05.02.01` Describe the layout of the basic holding area, entry area and buffer area of a holding pattern. [TK M2; CBIR; IR]
+        - `010.06.05.02.02` State which obstacle clearance is provided by a minimum permissible holding level referring to the holding area, the buffer area (general only) and over high terrain or in mountainous areas. [TK M2; CBIR; IR]
+    - **`010.06.06.00` Altimeter-setting procedures - ICAO Doc 8168**
+      - **`010.06.06.01` Basic requirements and procedures**
+        - `010.06.06.01.01` Describe the two main objectives of altimeter settings. [Exam M2; TK M3; CBIR; IR]
+        - `010.06.06.01.02` Define the terms 'QNH' and 'QFE'. [TK M3; CBIR; IR]
+        - `010.06.06.01.03` Describe the different terms for ALT or flight levels (FLs) respectively, which are the references during climb or descent to change the altimeter settings from QNH to 1013.2 hPa and vice versa. [Exam M2; TK M3; CBIR; IR]
+        - `010.06.06.01.04` Define the term 'flight level (FL)'. [Exam M2; TK M3; CBIR; IR]
+        - `010.06.06.01.05` State where FL zero shall be located. [TK M3; CBIR; IR]
+        - `010.06.06.01.06` State the interval by which consecutive FLs shall be separated. [Exam M2; TK M3; CBIR; IR]
+        - `010.06.06.01.07` Describe how FLs are defined. [TK M3; CBIR; IR]
+        - `010.06.06.01.08` Define the term 'transition altitude (TA)'. [Exam M2; TK M3; CBIR; IR]
+        - `010.06.06.01.09` State how TAs shall normally be specified. [Exam M2; TK M3; CBIR; IR]
+        - `010.06.06.01.10` Explain how the HGT of the TA is calculated and expressed in practice. [Exam M2; TK M3; CBIR; IR]
+        - `010.06.06.01.11` State where TAs shall be published. [Exam M2; TK M3; CBIR; IR]
+        - `010.06.06.01.12` Define the term 'transition level (TRL)'. [Exam M2; TK M3; CBIR; IR]
+        - `010.06.06.01.13` State when the TRL is normally passed on to the aircraft. [Exam M2; TK M3; CBIR; IR]
+        - `010.06.06.01.14` State how the vertical position of the aircraft shall be expressed at or below the TA and TRL. [Exam M2; TK M3; CBIR; IR]
+        - `010.06.06.01.15` Define the term 'transition layer'. [Exam M2; TK M3; CBIR; IR]
+        - `010.06.06.01.16` Describe when the vertical position of an aircraft passing through the transition layer shall be expressed in terms of FLs and when in terms of ALT. [Exam M2; TK M3; CBIR; IR]
+        - `010.06.06.01.17` State when the QNH altimeter setting shall be made available to departing aircraft. [Exam M2; TK M3; CBIR; IR]
+        - `010.06.06.01.18` Explain when the vertical separation of an aircraft during en-route flight shall be assessed in terms of ALT and when in terms of FLs. [Exam M2; TK M3; CBIR; IR]
+        - `010.06.06.01.19` Explain when, in air-ground communications during an en-route flight, the vertical position of an aircraft shall be expressed in terms of ALT and when in terms of FLs. [Exam M2; TK M3; CBIR; IR]
+        - `010.06.06.01.20` Describe why QNH altimeter-setting reports should be provided from sufficient locations. [Exam M2; TK M3; CBIR; IR]
+        - `010.06.06.01.21` State how a QNH altimeter setting shall be made available to aircraft approaching a controlled aerodrome (AD) for landing. [Exam M2; TK M3; CBIR; IR]
+        - `010.06.06.01.22` State under which circumstances the vertical position of an aircraft above the TRL may be referenced in ALT. [Exam M2; TK M3; CBIR; IR]
+      - **`010.06.06.02` Procedures for operators and pilots**
+        - `010.06.06.02.01` State on which setting at least one altimeter shall be set prior to take-off. [Exam M2; TK M3; CBIR; IR]
+        - `010.06.06.02.02` State where during the climb the altimeter setting shall be changed from QNH to 1013.2 hPa. [Exam M2; TK M3; CBIR; IR]
+    - **`010.06.07.00` Parallel or near-parallel instrument RWYs - ICAO Doc 8168, Volume III**
+      - **`010.06.07.01` Simultaneous operation on parallel or near-parallel instrument RWYs**
+        - `010.06.07.01.01` Describe the difference between independent and dependent parallel approaches. [TK M2; CBIR; IR]
+        - `010.06.07.01.02` Describe the following different operations: simultaneous instrument departures; segregated parallel approaches/departures; semi-mixed and mixed operations. [Exam M2; CBIR; IR]
+    - **`010.06.08.00` Secondary surveillance radar (transponder) operating procedures - ICAO Doc 8168**
+      - **`010.06.08.01` Operation of transponders**
+        - `010.06.08.01.01` State when and where the pilot shall operate the transponder. [TK M3; CBIR; IR]
+        - `010.06.08.01.02` State the modes and codes that the pilot shall operate in the absence of any ATC directions or regional air navigation agreements. [TK M3; CBIR; IR]
+        - `010.06.08.01.04` State when the pilot shall 'SQUAWK IDENT'. [TK M3; CBIR; IR]
+        - `010.06.08.01.05` State the transponder code to indicate: a state of emergency; a COM failure; unlawful interference. [TK M3; CBIR; IR]
+        - `010.06.08.01.06` Describe the consequences of a transponder failure in flight. [TK M3; CBIR; IR]
+        - `010.06.08.01.07` State the primary action of the pilot in the case of an unserviceable transponder before departure when no repair or replacement at the given AD is possible. [TK M3; CBIR; IR]
+        - `010.06.08.01.08` State when the pilot shall operate Mode S. [TK M3; CBIR]
+      - **`010.06.08.02` Operation of airborne collision avoidance system (ACAS) equipment**
+        - `010.06.08.02.01` Describe the main reason for using ACAS. [Exam M2; TK M3; CBIR; IR]
+  - **`010.07.00.00` AIR TRAFFIC SERVICES (ATS) AND AIR TRAFFIC MANAGEMENT (ATM)**
+    - **`010.07.01.00` ICAO Annex 11 - Air Traffic Services**
+      - **`010.07.01.03` Airspace**
+        - `010.07.01.03.02` Describe the various rules and services that apply to the various classes of airspace. [Exam M3; CBIR; IR]
+      - **`010.07.01.04` Air traffic control (ATC) services**
+        - `010.07.01.04.01` Name all classes of airspace in which ATC services shall be provided. [TK M2/M3; IR]
+        - `010.07.01.04.02` Name the ATS units providing ATC services (area control service, approach control service, aerodrome control service). [TK M3; CBIR; IR]
+        - `010.07.01.04.03` Describe which unit(s) may be assigned with the task to provide specified services on the apron. [TK M3; CBIR; IR]
+        - `010.07.01.04.04` State the purpose of clearances issued by an ATC unit. [TK M3; CBIR; IR]
+        - `010.07.01.04.05` List the various (five possible) parts of an ATC clearance. [Exam M3; CBIR; IR]
+      - **`010.07.01.05` Flight information service (FIS)**
+        - `010.07.01.05.06` List the basic information concerning automatic terminal information service (ATIS) broadcasts (e.g. frequencies used, number of ADs included, updating, identification, acknowledgment of receipt, language and channels, ALT- setting). [TK M2/M3; IR]
+      - **`010.07.01.06` Alerting service**
+        - `010.07.01.06.05` Name the three stages of emergency and describe the basic conditions for each kind of emergency. [TK M3]
+    - **`010.07.02.00` ICAO Doc 4444 - Air Traffic Management**
+      - **`010.07.02.01` Foreword (Scope and purpose)**
+        - `010.07.02.01.01` State which ATS units provide clearances that do, and do not, include the prevention of collision with terrain. [Exam M3; CBIR; IR]
+      - **`010.07.02.03` ATS system capacity and air traffic flow management (ATFM)**
+        - `010.07.02.03.01` Explain when and where ATFM services shall be implemented. [TK M3; CBIR; IR]
+      - **`010.07.02.05` ATC clearances**
+        - `010.07.02.05.01` State which information the issue of an ATC clearance is based on. [TK M3; CBIR; IR]
+        - `010.07.02.05.02` Describe what a PIC should do if an ATC clearance is not suitable. [Exam M3; CBIR; IR]
+        - `010.07.02.05.03` State who bears the responsibility for adhering to the applicable rules and regulations whilst flying under the control of an ATC unit. [TK M3; CBIR; IR]
+        - `010.07.02.05.06` Explain what is meant by the expression 'clearance limit'. [Exam M3; CBIR; IR]
+        - `010.07.02.05.07` Explain the meaning of the phrases 'cleared via flight planned route', 'cleared via (designation) departure' and 'cleared via (designation) arrival' in an ATC clearance. [Exam M3; CBIR; IR]
+        - `010.07.02.05.08` List which items of an ATC clearance shall always be read back by the flight crew. [Exam M3; CBIR; IR]
+      - **`010.07.02.06` Horizontal speed control instructions**
+        - `010.07.02.06.01` Explain the reason for speed control by ATC [Exam M3; CBIR; IR]
+        - `010.07.02.06.02` Define the maximum speed changes that ATC may impose. [TK M3; CBIR; IR]
+        - `010.07.02.06.03` State within what distance from the THR the PIC should not expect any kind of speed control. [Exam M3; CBIR; IR]
+      - **`010.07.02.07` Change from IFR to VFR flight**
+        - `010.07.02.07.01` Explain how the change from IFR to VFR can be initiated by the PIC. [Exam M3; CBIR; IR]
+        - `010.07.02.07.02` Describe the expected reaction of the appropriate ATC unit upon a request to change from IFR to VFR. [Exam M3; CBIR; IR]
+      - **`010.07.02.08` Wake turbulence**
+        - `010.07.02.08.01` State the wake-turbulence categories of aircraft. [Exam M3; TK M2; IR]
+        - `010.07.02.08.02` State the wake-turbulence separation minima. [Exam M3; TK M2; IR]
+      - **`010.07.02.09` Altimeter-setting procedures**
+        - `010.07.02.09.01` Define the following terms: TRL; transition layer; and TA. [TK M3; CBIR; IR]
+        - `010.07.02.09.02` Describe how the vertical position of an aircraft in the vicinity of an AD shall be expressed at or below the TA, at or above the TRL, and while climbing or descending through the transition layer. [TK M3; CBIR; IR]
+        - `010.07.02.09.03` Describe when the HGT of an aircraft using QFE during an NDB approach is referred to the landing THR instead of the AD elevation. [Exam M3; CBIR; IR]
+        - `010.07.02.09.04` State in which margin altimeter settings provided to aircraft shall be rounded up or down. [Exam M3; CBIR; IR]
+        - `010.07.02.09.05` Describe the expression 'lowest usable FL'. [Exam M3; CBIR; IR]
+        - `010.07.02.09.06` Determine how the vertical position of an aircraft on an en-route flight is expressed at or above the lowest usable FL and below the lowest usable FL. [Exam M3; CBIR; IR]
+        - `010.07.02.09.07` State who establishes the TRL to be used in the vicinity of an AD. [Exam M3; CBIR; IR]
+        - `010.07.02.09.08` Decide how and when a flight crew member shall be informed about the TRL. [Exam M3; CBIR; IR]
+        - `010.07.02.09.09` State whether or not the pilot can request TRL to be included in the approach clearance. [Exam M3; CBIR; IR]
+      - **`010.07.02.10` Position reporting**
+        - `010.07.02.10.01` Describe when position reports shall be made by an aircraft flying on routes defined by designated significant points. [Exam M3; CBIR; IR]
+        - `010.07.02.10.02` List the six items that are normally included in a voice position report. [Exam M3; CBIR; IR]
+        - `010.07.02.10.03` State the requirements for using a simplified position report with FL, next position (and time-over) and ensuing significant points omitted. [TK M3; CBIR; IR]
+        - `010.07.02.10.04` State the item of a position report which must be forwarded on to ATC with the initial call after changing to a new frequency. [Exam M3; CBIR; IR]
+        - `010.07.02.10.05` Indicate the item of a position report which may be omitted if secondary surveillance radar (SSR) Mode C is used. [TK M3; CBIR; IR]
+      - **`010.07.02.12` Separation methods and minima**
+        - `010.07.02.12.02` Name the different kinds of separation used in aviation. [TK M3; CBIR; IR]
+        - `010.07.02.12.03` State the difference between the type of separation provided within the various classes of airspace and the various types of flight. [Exam M3; CBIR; IR]
+        - `010.07.02.12.04` State who is responsible for the avoidance of collision with other aircraft when operating in VMC. [Exam M3; CBIR; IR]
+        - `010.07.02.12.05` Describe how vertical separation is obtained. [Exam M3; CBIR; IR]
+        - `010.07.02.12.06` State the required vertical separation minimum. [Exam M3; CBIR; IR]
+        - `010.07.02.12.07` Describe how the cruising levels of aircraft flying to the same destination and in the expected approach sequence are correlated with each other. [Exam M3; CBIR; IR]
+        - `010.07.02.12.08` Name the conditions that must be adhered to when two aircraft are cleared to maintain a specified vertical separation between them during climb or descent. [Exam M3; CBIR; IR]
+        - `010.07.02.12.09` State the two main methods for horizontal separation. [Exam M3; CBIR; IR]
+        - `010.07.02.12.10` Describe how lateral separation of aircraft at the same level may be obtained. [Exam M3; CBIR; IR]
+        - `010.07.02.12.11` Explain the term 'geographical separation'. [Exam M3; CBIR; IR]
+        - `010.07.02.12.12` Describe track separation between aircraft using the same navigation aid or method. [Exam M3; CBIR; IR]
+        - `010.07.02.12.13` Describe the three basic means for the establishment of longitudinal separation. [Exam M3; CBIR; IR]
+        - `010.07.02.12.14` State the minimum standard horizontal radar separation in NM. [Exam M3; CBIR; IR]
+      - **`010.07.02.13` Separation in the vicinity of aerodromes (ADs)**
+        - `010.07.02.13.03` State the condition to enable ATC to initiate a visual approach for an IFR flight. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.13.04` State whether or not separation shall be provided by ATC between an aircraft executing a visual approach and other arriving or departing aircraft. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.13.05` State in which case, when the flight crew are not familiar with the instrument approach procedure being carried out, only the final approach track has to be given to them by ATC. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.13.06` Describe which FL should be assigned to an aircraft first arriving over a holding fix for landing. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.13.07` State which kinds of priority can be applied to aircraft for a landing. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.13.08` Describe the situation when a pilot of an aircraft in an approach sequence indicates their intention to hold for weather improvements. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.13.09` Explain the term 'expected approach time' and the procedures for its use. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.13.10` State the reasons which could probably lead to the decision to use another take-off or landing direction than the one into the wind. [Exam M3; TK M2; CBIR; IR]
+      - **`010.07.02.14` Miscellaneous separation procedures**
+        - `010.07.02.14.01` State the minimum separation between departing and arriving aircraft. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.14.02` State the non-radar wake-turbulence longitudinal separation minima. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.14.03` Describe the consequences of a clearance to 'maintain own separation' while in VMC. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.14.04` Give a brief description of 'essential traffic' and 'essential traffic information'. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.14.05` Describe the circumstances under which a reduction in separation minima may be allowed. [Exam M3; TK M2; CBIR; IR]
+      - **`010.07.02.15` Arriving and departing aircraft**
+        - `010.07.02.15.01` List the elements of information which shall be transmitted to an aircraft as early as practicable if an approach for landing is intended. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.15.02` List the elements of information to be transmitted to an aircraft at the commencement of final approach. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.15.03` List the elements of information to be transmitted to an aircraft during final approach. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.15.05` State the sequence of priority between aircraft landing (or in the final stage of an approach to land) and aircraft intending to depart. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.15.06` State the significant changes in the meteorological conditions in the take-off or climb-out area that shall be transmitted without delay to a departing aircraft. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.15.07` State the significant changes that shall be transmitted as early as practicably possible to an arriving aircraft, particularly changes in the meteorological conditions. [Exam M3; TK M2; CBIR; IR]
+      - **`010.07.02.16` Procedures for aerodrome (AD) control service**
+        - `010.07.02.16.01` Name the operational failure or irregularity of AD equipment which shall be reported by the TWR immediately. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.16.02` Explain that, after a given period of time, the TWR shall report to the area control centre (ACC) or flight information centre (FIC) if an aircraft does not land as expected. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.16.03` Describe the procedures to be observed by the TWR whenever VFR operations are suspended. [Exam M3; TK M2; CBIR; IR]
+      - **`010.07.02.17` Radar services**
+        - `010.07.02.17.01` State the basic identification procedures used with radar. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.17.02` Define the term 'PSR'. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.17.03` Describe the circumstances under which an aircraft provided with radar service should be informed of its position. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.17.04` List the possible forms of position information passed on to the aircraft by radar services. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.17.05` Describe the term 'radar vectoring'. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.17.06` State the aims of radar vectoring as shown in ICAO Doc 4444. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.17.07` Describe how radar vectoring shall be achieved. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.17.08` Describe the information which shall be given to an aircraft when radar vectoring is terminated and the pilot is instructed to resume own navigation. [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.17.09` Explain the procedures for the conduct of surveillance radar approaches (SRAs). [Exam M3; TK M2; CBIR; IR]
+        - `010.07.02.17.10` Describe what kind of action (concerning the transponder) the pilot is expected to perform in case of emergency if they have previously been directed by ATC to operate the transponder on a specific code. [Exam M3; TK M2; CBIR; IR]
+      - **`010.07.02.19` Procedures related to emergencies, communication (COM) failure and contingencies**
+        - `010.07.02.19.01` State the mode and code of SSR equipment a pilot might operate in a (general) state of emergency or (specifically) in case the aircraft is subject to unlawful interference. [TK M3; CBIR; IR]
+        - `010.07.02.19.02` State the special rights an aircraft in a state of emergency can expect from ATC. [TK M3; CBIR; IR]
+        - `010.07.02.19.03` Describe the expected action of aircraft after receiving a broadcast from ATS concerning the emergency descent of an aircraft. [Exam M3; CBIR; IR]
+        - `010.07.02.19.04` State how it can be ascertained, in case of a failure of two-way COM, whether the aircraft is able to receive transmissions from the ATS unit. [Exam M3; CBIR; IR]
+        - `010.07.02.19.05` State on which frequencies appropriate information, for an aircraft encountering two-way COM failure, shall be sent by ATS. [Exam M3; CBIR; IR]
+        - `010.07.02.19.06` State what is meant by the expressions 'strayed aircraft' and 'unidentified aircraft'. [Exam M3; CBIR; IR]
+  - **`010.08.00.00` AERONAUTICAL INFORMATION SERVICE (AIS)**
+    - **`010.08.02.00` Definitions of ICAO Annex 15**
+      - **`010.08.02.01` Definitions of ICAO Annex 15**
+        - `010.08.02.01.01` Recall the following definitions: aeronautical information circular (AIC), aeronautical information publication (AIP), AIP amendment, AIP supplement, aeronautical information regulation and control (AIRAC), danger area, aeronautical information management, international airport, international NOTAM office (NOF), manoeuvring area, movement area, NOTAM, pre-flight information bulletin (PIB), prohibited area, restricted area, SNOWTAM, ASHTAM. [Exam M2; CBIR; IR]
+    - **`010.08.04.00` Aeronautical information products and services**
+      - **`010.08.04.01` Aeronautical information publication (AIP)**
+        - `010.08.04.01.03` State the main parts of the AIP where the following information can be found: differences from the ICAO Standards, Recommended Practices and Procedures; location indicators, AIS, minimum flight ALT, meteorological information for aircraft in flight (VOLMET) service, SIGMET service; general rules and procedures (especially general rules, VFR, IFR, ALT-setting procedure, interception of civil aircraft, unlawful interference, air traffic incidents); ATS airspace (especially FIR, UIR, TMA); ATS routes (especially lower ATS routes, upper ATS routes, area navigation routes); AD data including aprons, taxiways (TWYs) and check locations/positions data; navigation warnings (especially prohibited, restricted and danger areas); aircraft instruments, equipment and flight documents; AD surface movement guidance and control system and markings; RWY physical characteristics, declared distances, approach (APP) and RWY lighting; AD radio navigation and landing aids; charts related to an AD; entry, transit and departure of aircraft, passengers, crew and cargo, and the significance of this information to flight crew. [Exam M2; CBIR; IR]
+      - **`010.08.04.02` Notices to airmen (NOTAMs)**
+        - `010.08.04.02.01` Describe how information shall be published which in principle would belong to NOTAMs but includes extensive text or graphics. [TK M2; CBIR; IR]
+        - `010.08.04.02.02` Summarise the essential information which leads to the issue of a NOTAM. [Exam M2; CBIR; IR]
+      - **`010.08.04.03` Aeronautical information regulation and control (AIRAC)**
+        - `010.08.04.03.01` List the circumstances under which the information concerned shall or should be distributed as an AIRAC. [TK M2; CBIR; IR]
+      - **`010.08.04.05` Pre-flight and post-flight information/data**
+        - `010.08.04.05.02` Describe how a recapitulation of current NOTAM and other information of urgent character shall be made available to flight crew. [Exam M2; CBIR; IR]
+  - **`010.09.00.00` AERODROMES (ICAO Annex 14 and Regulation (EU) No 139/2014)**
+    - **`010.09.02.00` Aerodrome (AD) data**
+      - **`010.09.02.01` Aerodrome (AD) reference point**
+        - `010.09.02.01.01` Describe where the AD reference point shall be located and where it shall normally remain. [TK M2; CBIR; IR]
+      - **`010.09.02.04` Condition of the movement area and related facilities**
+        - `010.09.02.04.03` Describe the different types of contaminant on RWYs. [Exam M2; TK M1; IR]
+        - `010.09.02.04.05` Describe the runway condition codes and the associated runway braking action. [Exam M2; TK M1]
+    - **`010.09.03.00` Physical characteristics**
+      - **`010.09.03.01` Runways (RWYs)**
+        - `010.09.03.01.02` Describe the general considerations concerning RWYs associated with a stopway (SWY) or clearway (CWY). [TK M2; CBIR; IR]
+      - **`010.09.03.02` Runway (RWY) strips**
+        - `010.09.03.02.01` Explain the term 'runway strip'. [TK M2; CBIR; IR]
+      - **`010.09.03.03` Runway-end safety area**
+        - `010.09.03.03.01` Explain the term 'runway-end safety area'. [TK M2; CBIR; IR]
+      - **`010.09.03.04` Clearway (CWY)**
+        - `010.09.03.04.01` Explain the term 'clearway'. [TK M2; CBIR; IR]
+      - **`010.09.03.05` Stopway (SWY)**
+        - `010.09.03.05.01` Explain the term 'stopway'. [TK M2; CBIR; IR]
+      - **`010.09.03.07` Taxiways (TWYs)**
+        - `010.09.03.07.04` Describe where RWY holding positions shall be established. [TK M2; CBIR; IR]
+    - **`010.09.04.00` Visual aids for navigation**
+      - **`010.09.04.02` Markings**
+        - `010.09.04.02.01` Name the colours used for the various markings (RWY, TWY, aircraft stands, apron safety lines). [Exam M2; CBIR; IR]
+        - `010.09.04.02.03` Describe the application and general characteristics (excluding dimensions) of: RWY-centre-line markings; THR markings; touchdown-zone (TDZ) markings; RWY-side-stripe markings; TWY-centre-line markings; RWY holding position markings; intermediate holding position markings; aircraft-stand markings; apron safety lines; road holding position markings; mandatory instruction markings; information markings. [Exam M2; CBIR; IR]
+      - **`010.09.04.03` Lights**
+        - `010.09.04.03.01` Describe the mechanical safety considerations regarding elevated approach lights and elevated RWY, SWY and TWY lights. [Exam M2; CBIR; IR]
+        - `010.09.04.03.02` List the conditions for the installation of an aerodrome beacon (ABN) and describe its general characteristics. [TK M2; CBIR; IR]
+        - `010.09.04.03.03` Describe the different kinds of operations for which a simple approach lighting system shall be used. [Exam M2; CBIR; IR]
+        - `010.09.04.03.04` Describe the basic installations of a simple approach lighting system including the dimensions and distances normally used. [Exam M2; CBIR; IR]
+        - `010.09.04.03.05` Describe the principle of a precision approach category I lighting system including information such as location and characteristics. [Exam M2; CBIR; IR]
+        - `010.09.04.03.07` Describe the wing bars of the precision approach path indicator (PAPI) and the abbreviated precision approach path indicator (APAPI). Interpret what the pilot will see during the approach using PAPI. [TK M2; CBIR; IR]
+        - `010.09.04.03.09` Explain the application and characteristics (as applicable, but limited to colour, intensity, direction and whether fixed or flashing) of: RWY-edge lights; RWY-THR and wing-bar lights; RWY-end lights; RWY-centre-line lights; RWY-lead-in lights; RWY-TDZ lights; SWY lights; TWY-centre-line lights; TWY-edge lights; stop bars; intermediate holding position lights; RWY guard lights; road holding position lights. [Exam M2; CBIR; IR]
+      - **`010.09.04.04` Signs**
+        - `010.09.04.04.01` Explain which signs are the only ones on the movement area utilising red. [TK M2; CBIR; IR]
+        - `010.09.04.04.02` List the provisions for illuminating signs. [TK M2; CBIR; IR]
+        - `010.09.04.04.03` Name the kinds of signs which shall be included in mandatory instruction signs. [TK M2; CBIR; IR]
+        - `010.09.04.04.04` Name the colours used for mandatory instruction signs. [TK M2; CBIR; IR]
+        - `010.09.04.04.07` Describe the location of: a RWY designation sign at a TWY/RWY intersection; a 'NO ENTRY' sign; a RWY holding position sign. [TK M2; CBIR; IR]
+        - `010.09.04.04.08` State which sign indicates that a taxiing aircraft is about to infringe an obstacle limitation surface or interfere with the operation of radio navigation aids (e.g. ILS/MLS critical/sensitive area). [TK M2; CBIR; IR]
+        - `010.09.04.04.09` Describe the various possible inscriptions on RWY designation signs and on holding position signs. [TK M2; CBIR; IR]
+    - **`010.09.08.00` Supplementary Guidance Material**
+      - **`010.09.08.01` Declared distances**
+        - `010.09.08.01.01` List the four types of 'declared distances' on a RWY and also the appropriate abbreviations. [TK M1; IR]
+      - **`010.09.08.03` Approach lighting systems**
+        - `010.09.08.03.01` Name the two main groups of approach lighting systems. [Exam M2; CBIR; IR]
+        - `010.09.08.03.02` Describe the two different versions of a simple approach lighting system. [Exam M2; CBIR; IR]
+        - `010.09.08.03.03` Describe the two different basic versions of precision approach lighting systems for CAT I. [Exam M2; CBIR; IR]
+        - `010.09.08.03.05` Describe how the arrangement of an approach lighting system and the location of the appropriate THR are interrelated. [Exam M2; CBIR; IR]
+
+## 022 AGK Instrumentation
+
+_BIR-tagged rows: 73. Exam modules: M1=45, M2=0, M3=5. TK modules: M1=24, M2=7, M3=6._
+
+- **`022.00.00.00` AIRCRAFT GENERAL KNOWLEDGE - INSTRUMENTATION**
+  - **`022.02.00.00` MEASUREMENT OF AIR-DATA PARAMETERS**
+    - **`022.02.01.00` Pressure measurement**
+      - **`022.02.01.02` Pitot/static system: design and errors**
+        - `022.02.01.02.01` Describe the design and the operating principle of a: static port/source; pitot tube; combined pitot/static probe. [Exam M1; CBIR; IR]
+        - `022.02.01.02.02` For each of these indicate the various locations and describe the following associated errors and how to correct, minimise the effect of or compensate for them: position errors; instrument errors; errors due to a non-longitudinal axial flow (including manoeuvre-induced errors). [Exam M1; CBIR; IR]
+        - `022.02.01.02.05` Explain the purpose of pitot/static system heating. [Exam M1; CBIR; IR]
+        - `022.02.01.02.06` Describe alternate static sources and their effects when used, particularly in unpressurised aircraft. [Exam M1; CBIR; IR]
+    - **`022.02.02.00` Temperature measurement**
+      - **`022.02.02.01` Definitions**
+        - `022.02.02.01.01` Define the following and explain the relationship between them: outside air temperature (OAT); total air temperature (TAT); static air temperature (SAT). [TK M1; CBIR; IR]
+    - **`022.02.04.00` Altimeter**
+      - **`022.02.04.01` Units, terms, types, operating principles, displays, errors, corrections**
+        - `022.02.04.01.02` Define the following terms: height, altitude; indicated altitude, true altitude; pressure altitude, density altitude. [TK M1; CBIR; IR]
+        - `022.02.04.01.03` Define the following barometric references: 'QNH', 'QFE', '1013.25'. [TK M1; CBIR; IR]
+        - `022.02.04.01.04` Explain the operating principles of an altimeter. [Exam M1; TK M2/M3; CBIR; IR]
+        - `022.02.04.01.05` Describe and compare the following three types of altimeters and reason(s) why particular designs may be required in certain airspace: simple altimeter (single capsule); sensitive altimeter (multi-capsule); servo-assisted altimeter. [TK M1; CBIR; IR]
+        - `022.02.04.01.06` Give examples of associated displays: pointer, multi-pointer, drum, vertical straight scale. [TK M1; CBIR; IR]
+        - `022.02.04.01.07` Describe the following errors: static system error; instrument error; barometric error; temperature error (air column not at ISA conditions); lag (altimeter response to change of height). [TK M1; CBIR; IR]
+        - `022.02.04.01.08` Demonstrate the use of an altimeter correction table for the following errors: temperature corrections; aircraft position errors. [TK M1; CBIR; IR]
+        - `022.02.04.01.09` Describe the effects of a blockage or a leakage on the static pressure line. [Exam M1; CBIR; IR]
+        - `022.02.04.01.10` Describe the use of GPS altitude as an alternative means of checking erroneous altimeter indications, and highlight the limitations of the GPS altitude indication. [TK M1/M3; CBIR; IR]
+    - **`022.02.05.00` Vertical speed indicator (VSI)**
+      - **`022.02.05.01` VSI and instantaneous vertical speed indicator (IVSI)**
+        - `022.02.05.01.02` Explain the operating principles of a VSI and an IVSI. [Exam M1; CBIR; IR]
+        - `022.02.05.01.03` Describe and compare the following types of VSIs: barometric type (VSI); instantaneous barometric type (IVSI); inertial type (inertial information provided by an inertial reference unit). [Exam M1; CBIR; IR]
+        - `022.02.05.01.04` Describe the following VSI errors: static system errors; instrument errors; time lag. [Exam M1; CBIR; IR]
+        - `022.02.05.01.05` Describe the effects on a VSI of a blockage or a leakage on the static pressure line. [Exam M1; CBIR; IR]
+    - **`022.02.06.00` Airspeed indicator (ASI)**
+      - **`022.02.06.01` Units, errors, operating principles, displays, position errors, unreliable airspeed indications**
+        - `022.02.06.01.02` Describe the following ASI errors and state when they must be considered: pitot/static system errors; instrument errors; position errors; compressibility errors; density errors. [Exam M1; CBIR; IR]
+        - `022.02.06.01.03` Explain the operating principles of an ASI (as appropriate to aeroplanes or helicopters). [Exam M1; CBIR; IR]
+        - `022.02.06.01.09` Define the term 'unreliable airspeed' and describe the means by which it can be recognised such as: different airspeed indications between ASIs; unexpected aircraft behaviour; buffeting; aircraft systems warning; aircraft attitude. [TK M1; CBIR; IR]
+        - `022.02.06.01.10` Describe the appropriate procedures available to the pilot in the event of unreliable airspeed indications: combination of a pitch attitude and power setting; ambient wind noise inside the aircraft; use of GPS speed indications and the associated limitations. [TK M1; CBIR; IR]
+  - **`022.03.00.00` MAGNETISM - DIRECT-READING COMPASS AND FLUX VALVE**
+    - **`022.03.02.00` Aircraft magnetic field**
+      - **`022.03.02.01` Permanent magnetism, electromagnetism, deviation**
+        - `022.03.02.01.05` Demonstrate the use of deviation values (either given as E/W or +/-) from a compass deviation card to calculate: compass heading to magnetic heading; magnetic heading to compass heading. [Exam M1; CBIR; IR]
+    - **`022.03.03.00` Direct-reading magnetic compass**
+      - **`022.03.03.01` Purpose, errors, timed turns, serviceability**
+        - `022.03.03.01.04` Describe the serviceability check for a direct-reading magnetic compass prior to flight, such as: the physical appearance of the device; comparing the indication to another known direction such as a different compass or runway direction. [Exam M1; CBIR; IR]
+  - **`022.04.00.00` GYROSCOPIC INSTRUMENTS**
+    - **`022.04.01.00` Gyroscope: basic principles**
+      - **`022.04.01.01` Gyroscopic forces, degrees of freedom, gyro wander, driving gyroscopes**
+        - `022.04.01.01.01` Define a 'gyro'. [TK M1; CBIR; IR]
+        - `022.04.01.01.02` Explain the fundamentals of the theory of gyroscopic forces. [TK M1; CBIR; IR]
+        - `022.04.01.01.03` Define the 'degrees of freedom' of a gyro. Remark: As a convention, the degrees of freedom of a gyroscope do not include its own axis of rotation (the spin axis). [TK M1; CBIR; IR]
+        - `022.04.01.01.06` Describe the two ways of driving gyroscopes and any associated indications: air/vacuum; electrically. [Exam M1; CBIR; IR]
+    - **`022.04.02.00` Rate-of-turn indicator - Turn coordinator - Balance (slip) indicator**
+      - **`022.04.02.01` Indications, relation between bank angle, rate of turn and TAS**
+        - `022.04.02.01.01` Explain the purpose of a rate-of-turn and balance (slip) indicator. [Exam M1; CBIR; IR]
+        - `022.04.02.01.02` Define a 'rate-1 turn'. [Exam M1; CBIR; IR]
+        - `022.04.02.01.03` Describe the indications given by a rate-of-turn indicator. [TK M1; CBIR; IR]
+        - `022.04.02.01.04` Explain the relation between bank angle, rate of turn and TAS, and how bank angle becomes the limiting factor at high speed (no calculations). [Exam M1; CBIR; IR]
+        - `022.04.02.01.05` Explain the purpose of a balance (slip) indicator and its principle of operation. [Exam M1; CBIR; IR]
+        - `022.04.02.01.06` Describe the indications of a rate-of-turn and balance (slip) indicator during a balanced, slip or skid turn. [Exam M1; CBIR; IR]
+        - `022.04.02.01.07` Describe the indications given by a turn coordinator (or turn-and-bank indicator). [Exam M1; CBIR; IR]
+        - `022.04.02.01.08` Compare the indications on the rate-of-turn indicator and the turn coordinator. [Exam M1; CBIR; IR]
+    - **`022.04.03.00` Attitude indicator (artificial horizon)**
+      - **`022.04.03.01` Purpose, types, effect of aircraft acceleration, display**
+        - `022.04.03.01.01` Explain the purpose of the attitude indicator. [Exam M1; CBIR; IR]
+        - `022.04.03.01.02` Identify the two types of attitude indicators: attitude indicator; attitude and director indicator (ADI). [Exam M1; CBIR; IR]
+        - `022.04.03.01.05` Describe a typical attitude display and instrument markings. [Exam M1; CBIR; IR]
+    - **`022.04.04.00` Directional gyroscope**
+      - **`022.04.04.01` Purpose, types, drift, alignment to compass heading**
+        - `022.04.04.01.01` Explain the purpose of the directional gyroscope. [Exam M1; CBIR; IR]
+        - `022.04.04.01.02` Identify the two types of gyro-driven direction indicators: direction indicator; horizontal situation indicator (HSI). [Exam M1; CBIR; IR]
+    - **`022.04.05.00` Remote-reading compass systems**
+      - **`022.04.05.01` Operating principles, components, comparison with a direct-reading magnetic compass**
+        - `022.04.05.01.01` Describe the principles of operation of a remote-reading compass system. [TK M1; CBIR; IR]
+        - `022.04.05.01.02` Using a block diagram, list and explain the function of the following components of a remote-reading compass system: flux detection unit; gyro unit; transducers, precession amplifiers, annunciator; display unit (compass card, synchronising and set-heading knob, DG/compass/slave/free switch). [TK M1; CBIR; IR]
+    - **`022.04.06.00` Solid-state systems - attitude and heading reference system (AHRS)**
+      - **`022.04.06.01` Components, indications**
+        - `022.04.06.01.01` Explain that the AHRS is a replacement for traditional gyros using solid-state technology with no moving parts and is a single unit consisting of: solid-state accelerometers; solid-state rate sensor gyroscopes; solid-state magnetometers (measurement of the Earth's magnetic field). [Exam M1; CBIR; IR]
+  - **`022.11.00.00` FLIGHT MANAGEMENT SYSTEM (FMS) / FLIGHT MANAGEMENT AND GUIDANCE SYSTEM (FMGS)**
+    - **`022.11.02.00` FMC databases**
+      - **`022.11.02.01` Navigation database**
+        - `022.11.02.01.01` Explain the purpose of, and describe typical content of, the navigation database. [Exam M3; TK M1/M2; CBIR; IR]
+        - `022.11.02.01.02` Describe the 28-day aeronautical information regulation and control (AIRAC) update cycle of the navigation database and explain the reason for having two navigation databases (one active, one standby) and the implication this has to the pilot. [Exam M3; TK M1/M2; CBIR; IR]
+        - `022.11.02.01.04` Explain that the pilot cannot change or overwrite any of the data in the navigation database and that any user-defined waypoints, routes and inputted data will be erased when a different database is activated. [Exam M3; TK M1/M2; CBIR; IR]
+        - `022.11.02.01.05` Explain the threats and implications to the pilot of changing the database by error either on the ground or while flying. [Exam M3; TK M1; IR]
+    - **`022.11.03.00` Operations, limitations**
+      - **`022.11.03.01` Data, calculations, position inputs, raw data**
+        - `022.11.03.01.03` Explain the issues and threats using inputted/database data and give examples of consequences of inputting data incorrectly/using incorrect data. [TK M2/M3; IR]
+        - `022.11.03.01.04` Describe fuel consumption calculations during standard operations and explain typical data that will have an influence on the accuracy of the calculations. [TK M2/M3]
+        - `022.11.03.01.05` Explain the implications on the accuracy of the calculations during flight in abnormal configurations (such as engine out, gear down, flaps extended, spoilers extended, etc.) if the FMS is unable to detect the failure. [TK M2/M3]
+        - `022.11.03.01.07` Explain typical position inputs to an FMS: GPS; IRS; DME; VOR; LOC; runway threshold (RWY THR). [Exam M3; CBIR]
+  - **`022.13.00.00` INTEGRATED INSTRUMENTS - ELECTRONIC DISPLAYS**
+    - **`022.13.01.00` Electronic display units**
+      - **`022.13.01.01` Design, limitations**
+        - `022.13.01.01.01` List the different technologies used, e.g. CRT and LCD, and the associated limitations: cockpit temperature; glare; resolution. [Exam M1; CBIR; IR]
+    - **`022.13.02.00` Mechanical integrated instruments**
+      - **`022.13.02.01` Attitude and director indicator (ADI)/horizontal situation indicator (HSI)**
+        - `022.13.02.01.01` Describe an ADI and an HSI. [Exam M1; CBIR; IR]
+        - `022.13.02.01.02` List all the information that can be displayed on either instrument. [Exam M1; CBIR; IR]
+    - **`022.13.03.00` Electronic flight instrument systems (EFISs)**
+      - **`022.13.03.01` Design, operation**
+        - `022.13.03.01.01` List the following parts of an EFIS: control panel; display units; symbol generator; remote light sensor. [Exam M1; IR]
+        - `022.13.03.01.03` Explain the need for standby instruments to supplement the EFIS in the event of all the display units failing and the challenge of using these standby instruments, namely their size and position on the flight deck. [Exam M1; IR]
+        - `022.13.03.01.04` Explain the difference between a symbol generator failing and a display unit failing, and the implications if there are redundant symbol generators available. [Exam M1; IR]
+        - `022.13.03.01.05` Describe the purpose of an EFIS control panel and typical selections that may be available: altimeter pressure setting; navigation display (ND) mode selector; ND range selector; ND data selector (waypoints, facilities, constraints, data, etc.); radio-navigation aids selector (VOR 1/2 or ADF 1/2); decision altitude (DA)/decision height (DH) selection. [Exam M1; IR]
+      - **`022.13.03.02` Primary flight display (PFD), electronic attitude director indicator (EADI)**
+        - `022.13.03.02.01` Describe that a PFD (or an EADI) presents a dynamic colour display of all the parameters necessary to control the aircraft, and that the main layout conforms with the 'basic T' principle: attitude information in the centre; airspeed information on the left; altitude information on the right; heading/track indication lower centre; flight mode annunciation; basic T; take-off and landing reference speeds; minimum airspeed; lower selectable airspeed; Mach number. [Exam M1; CBIR; IR]
+        - `022.13.03.02.02` Describe the typical design of the attitude information: artificial horizon with aircraft symbol; superimposed flight director command bars. [Exam M1; CBIR; IR]
+        - `022.13.03.02.03` Describe the typical design of the speed tape: rolling speed scale with numerical read-out of current speed; limiting airspeeds according to configuration; speed trend vector; bug/indication for selected airspeed. [Exam M1; CBIR; IR]
+        - `022.13.03.02.05` Describe the typical design of the altitude information: rolling altitude scale with numerical read-out of current altitude; altimeter pressure setting; bug/indication for selected altitude; means of highlighting the altitude if certain criteria are met. [Exam M1; CBIR; IR]
+        - `022.13.03.02.06` Describe the typical design of the heading/track information: rolling compass scale/rose with numerical read-out of current heading/track; bug/indication for selected heading/track. [Exam M1; CBIR; IR]
+        - `022.13.03.02.07` Describe the typical design and location of the following information: flight mode annunciators (FMAs); vertical speed indicator including TCAS RA command indications; radio altitude; ILS localiser/glideslope and RNP/PBN, GBAS or SBAS horizontal/vertical flight path deviation indicator; decision altitude/height (DA/H). [Exam M1; TK M3; CBIR; IR]
+      - **`022.13.03.03` Navigation display (ND), electronic horizontal situation indicator (EHSI)**
+        - `022.13.03.03.01` Describe that an ND (or an EHSI) provides a mode-selectable colour flight ND. [Exam M1; CBIR; IR]
+        - `022.13.03.03.02` List the following four modes typically available to be displayed on an ND unit: MAP (or ARC); VOR (or ROSE VOR); APP (or ROSE LS); PLAN. [Exam M1; IR]
+        - `022.13.03.03.03` List and explain the following information that can be displayed with the MAP (or ARC) mode selected on an ND unit: aircraft symbol, compass scale and range markers; current heading and track (either one may be 'up' depending on selection), true or magnetic; selected heading and track; TAS/GS; wind direction and speed (W/V); raw data radio magnetic indicator (RMI) needles/pointers for VOR/automatic direction-finding equipment (ADF), if selected, including the frequency or ident of the selected navigation facility; route/flight plan data from the FMS; TO/next waypoint data from the FMS; data from the navigation database such as airports, waypoints or navigation facilities as selected; weather radar information; TCAS traffic information (no TCAS commands); TAWS (EGPWS) terrain information; failure flags and messages. [Exam M1; IR]
+    - **`022.13.06.00` Electronic flight bag (EFB)**
+      - **`022.13.06.01` Purpose, certification, malfunctions**
+        - `022.13.06.01.01` Explain the purpose of the EFB and list typical equipment: computer laptop; tablet device; integrated avionics suite in the aircraft. [Exam M1; IR]
+  - **`022.15.00.00` DIGITAL CIRCUITS AND COMPUTERS**
+    - **`022.15.01.00` Digital circuits and computers**
+      - **`022.15.01.01` General, definitions and design**
+        - `022.15.01.01.01` Define a 'computer' as a machine for manipulating data according to a list of instructions. [TK M1; CBIR; IR]
+        - `022.15.01.01.02` Explain the term 'bus' being used as a term for a facility (wiring, optical fibre, etc.) transferring data between different parts of a computer, both internally and externally. [TK M1; CBIR; IR]
+        - `022.15.01.01.03` Define the terms 'hardware' and 'software'. [TK M1; CBIR; IR]
+        - `022.15.01.01.04` With the help of the relevant 022 references, give examples of airborne computers and list the possible peripheral equipment for each system, such as: ADC with pitot probe(s), static port(s) and indicators; FMS with GPS, CDU/MCDU and ND; GPWS with radio altimeter, ADC and ND. [TK M1; CBIR; IR]
+
+## 033 Flight Planning
+
+_BIR-tagged rows: 32. Exam modules: M1=0, M2=13, M3=8. TK modules: M1=0, M2=0, M3=20._
+
+- **`033.00.00.00` FLIGHT PLANNING AND MONITORING**
+  - **`033.02.00.00` FLIGHT PLANNING FOR IFR FLIGHTS Remark: Using the GSPRM IFR charts.**
+    - **`033.02.01.00` IFR navigation plan**
+      - **`033.02.01.01` Air traffic service (ATS) routes**
+        - `033.02.01.01.01` Identify suitable routings by identifying all relevant aeronautical and regulatory information (including information published in the national aeronautical information publication (AIP)) required for IFR flight planning. [Exam M2; TK M3; CBIR; IR]
+      - **`033.02.01.02` Courses and distances from en-route charts**
+        - `033.02.01.02.01` Determine courses and distances. [Exam M2; TK M3; CBIR; IR]
+        - `033.02.01.02.02` Determine bearings and distances of waypoints from radio-navigation aids. [Exam M2; TK M3; CBIR; IR]
+      - **`033.02.01.03` Altitudes**
+        - `033.02.01.03.01` Define the following altitudes: minimum en-route altitude (MEA); minimum obstacle clearance altitude (MOCA); minimum sector altitude (MSA); minimum off-route altitude (MORA); grid minimum off-route altitude (Grid MORA); maximum authorised altitude (MAA); minimum crossing altitude (MCA); minimum holding altitude (MHA). [Exam M2; TK M3; CBIR; IR]
+        - `033.02.01.03.02` Extract the following altitudes from the chart(s): MEA; MOCA; MSA; MORA; Grid MORA; MAA; MCA; MHA. [Exam M2; TK M3; CBIR; IR]
+      - **`033.02.01.04` Standard instrument departure (SID) and standard instrument arrival (STAR) routes**
+        - `033.02.01.04.03` Interpret all data and information represented on SID and STAR charts, particularly: routings; distances; courses; radials; altitudes/levels; frequencies; restrictions; RNAV waypoints and non-RNAV intersection; fly-over and fly-by waypoints. [Exam M2; CBIR; IR]
+        - `033.02.01.04.04` Identify SID and STAR charts which might be relevant for a planned flight. [Exam M2; CBIR; IR]
+      - **`033.02.01.05` Instrument-approach charts**
+        - `033.02.01.05.02` Select IAPs appropriate for departure, destination and alternate aerodromes. [Exam M2; CBIR; IR]
+        - `033.02.01.05.03` Interpret all procedures, data and information represented on instrument-approach charts, particularly: courses and radials; distances; altitudes/levels/heights; restrictions; obstructions; frequencies; speeds and times; decision altitudes/heights (DAs/Hs); (DA/H) and minimum descent altitudes/heights (MDAs/Hs); visibility and runway visual ranges (RVRs); approach-light systems. [Exam M2; CBIR; IR]
+      - **`033.02.01.06` Communications and radio-navigation planning data**
+        - `033.02.01.06.01` Find the communication frequencies and call signs for aeronautical services for IFR flights from en-route charts. [Exam M2; TK M3; CBIR; IR]
+        - `033.02.01.06.02` Find the frequency or identifiers of radio-navigation aids for IFR flights from en-route charts. [Exam M2; TK M3; CBIR; IR]
+      - **`033.02.01.07` Completion of a manual navigation plan**
+        - `033.02.01.07.01` Complete a navigation plan with the courses, distances and frequencies taken from charts. [TK M3; CBIR; IR]
+        - `033.02.01.07.02` Find the SID and STAR routes to be flown or to be expected. [Exam M2; TK M3; CBIR; IR]
+        - `033.02.01.07.03` Determine the position of top of climb (TOC) and top of descent (TOD) from given appropriate data. [Exam M2; TK M3; CBIR; IR]
+        - `033.02.01.07.04` Determine variation and calculate magnetic/true courses. [TK M3; CBIR; IR]
+        - `033.02.01.07.05` Calculate TAS from given aircraft performance data, altitude and OAT. [TK M3; CBIR; IR]
+        - `033.02.01.07.06` Calculate wind correction angles (WCAs)/drift and ground speeds (GSs). [TK M3; CBIR; IR]
+  - **`033.03.00.00` FUEL PLANNING - OPERATIONAL REQUIREMENTS**
+    - **`033.03.01.00` General**
+      - **`033.03.01.01` Fuel planning (general)**
+        - `033.03.01.01.01` Convert to volume, mass and density given in different units which are commonly used in aviation. [TK M3; CBIR; IR]
+        - `033.03.01.01.02` Determine relevant data, such as fuel capacity, fuel flow/ consumption at different power/thrust settings, altitudes and atmospheric conditions, from the flight manual. [TK M3; CBIR; IR]
+        - `033.03.01.01.03` Calculate the attainable flight time/range from given average fuel flow/consumption and available amount of fuel. [Exam M3; CBIR; IR]
+        - `033.03.01.01.04` Calculate the required fuel from given average fuel flow/ consumption and required time/range to be flown. [Exam M3; CBIR; IR]
+        - `033.03.01.01.05` Calculate the required fuel for a VFR flight from given forecast meteorological conditions. [Exam M3; CBIR; IR]
+        - `033.03.01.01.08` Calculate the required fuel for an IFR flight from given forecast meteorological conditions. [Exam M3; CBIR; IR]
+  - **`033.04.00.00` PRE-FLIGHT PREPARATION**
+    - **`033.04.01.00` Notice to airmen (NOTAM) briefing**
+      - **`033.04.01.01` Ground- and satellite-based facilities and services**
+        - `033.04.01.01.01` Check that the ground- and satellite-based facilities and services required for the planned flight are available and adequate. [TK M3; CBIR; IR]
+      - **`033.04.01.02` Departure, destination and alternate aerodromes**
+        - `033.04.01.02.01` Find and analyse the latest state at the departure, destination and alternate aerodromes, in particular for: opening hours; work in progress (WIP); special procedures due to WIP; obstructions; changes of frequencies for communications, navigation aids and facilities. [Exam M3; CBIR; IR]
+      - **`033.04.01.03` Airway routings and airspace structure**
+        - `033.04.01.03.01` Find and analyse the latest en-route state for: airway(s) or route(s); restricted, danger and prohibited areas; changes of frequencies for communications, navigation aids and facilities. [Exam M3; CBIR; IR]
+    - **`033.04.02.00` Meteorological briefing**
+      - **`033.04.02.02` Update of navigation plan using the latest meteorological information**
+        - `033.04.02.02.01` Confirm the most fuel-efficient altitude from given wind, temperature and aircraft data. [Exam M3; CBIR]
+        - `033.04.02.02.03` Confirm magnetic headings and GSs. [TK M3; CBIR; IR]
+        - `033.04.02.02.04` Confirm the individual leg times and the total time en route. [TK M3; CBIR; IR]
+        - `033.04.02.02.06` Confirm the total time from destination to the alternate aerodrome. [TK M3; CBIR; IR]
+      - **`033.04.02.05` Update of fuel plan**
+        - `033.04.02.05.01` Calculate the revised fuel data in accordance with the changed conditions. [TK M3; IR]
+  - **`033.05.00.00` ICAO FLIGHT PLAN (ATS flight plan (FPL))**
+    - **`033.05.01.00` Individual FPL**
+      - **`033.05.01.01` Format of FPL**
+        - `033.05.01.01.02` Determine the correct entries to complete an ATS FPL plus decode and interpret the entries in a completed ATS FPL, particularly for the following: aircraft identification (Item 7); flight rules and type of flight (Item 8); number and type of aircraft and wake-turbulence category (Item 9); equipment (Item 10); departure aerodrome and time (Item 13); route (Item 15); destination aerodrome, total estimated elapsed time and alternate aerodrome (Item 16); other information (Item 18); supplementary information (Item 19). [Exam M3; CBIR; IR]
+
+## 040 Human Performance
+
+_BIR-tagged rows: 103. Exam modules: M1=66, M2=0, M3=0. TK modules: M1=37, M2=0, M3=0._
+
+- **`040.00.00.00` HUMAN PERFORMANCE AND LIMITATIONS**
+  - **`040.01.00.00` HUMAN FACTORS: BASIC CONCEPTS**
+    - **`040.01.03.00` Flight safety concepts**
+      - **`040.01.03.01` Threat and error management (TEM) model and SHELL model**
+        - `040.01.03.01.02` Explain and give examples of latent threats. [Exam M1; CBIR; IR]
+        - `040.01.03.01.03` Explain and give examples of environmental threats. [Exam M1; CBIR; IR]
+        - `040.01.03.01.04` Explain and give examples of organisational threats. [Exam M1; CBIR; IR]
+        - `040.01.03.01.05` Explain and give a definition of 'error' according to the TEM model of ICAO Doc 9683 (Part II, Chapter 2). [Exam M1; CBIR; IR]
+        - `040.01.03.01.06` Give examples of different countermeasures which may be used in order to manage threats, errors, and undesired aircraft states. [Exam M1; CBIR; IR]
+        - `040.01.03.01.07` Explain and give examples of procedural error, communication errors, and aircraft handling errors. [Exam M1; CBIR; IR]
+    - **`040.01.04.00` Safety culture**
+      - **`040.01.04.01` Safety culture and safety management**
+        - `040.01.04.01.01` Distinguish between 'open cultures' and 'closed cultures'. [TK M1; CBIR; IR]
+        - `040.01.04.01.02` Illustrate how safety culture is reflected in national culture. [TK M1; CBIR; IR]
+        - `040.01.04.01.04` Explain James Reason's 'Swiss Cheese Model'. [Exam M1; CBIR; IR]
+        - `040.01.04.01.05` State the important factors that promote a good safety culture. [TK M1; CBIR; IR]
+        - `040.01.04.01.06` Distinguish between 'just culture' and 'non-punitive culture'. [TK M1; CBIR; IR]
+        - `040.01.04.01.07` Name the five components which form safety culture (according to James Reason: informed culture, reporting culture, learning culture, just culture, flexible culture). [TK M1; CBIR; IR]
+  - **`040.02.00.00` Basics of aviation physiology and health maintenance**
+    - **`040.02.01.00` Basics of flight physiology**
+      - **`040.02.01.02` Respiratory and circulatory system**
+        - `040.02.01.02.02` Identify the different volumes of air in the lungs and state the normal respiratory rate. [TK M1; IR]
+        - `040.02.01.02.03` Explain the role of carbon dioxide in the control and regulation of respiration. [TK M1; IR]
+        - `040.02.01.02.13` Indicate the effect of increasing altitude on haemoglobin oxygen saturation. [TK M1; IR]
+        - `040.02.01.02.24` State the symptoms of hypoxia. [TK M1; IR]
+        - `040.02.01.02.27` State the altitude at which short-term memory begins to be affected by hypoxia. [TK M1; IR]
+        - `040.02.01.02.44` Define the hazards of diving and flying, and give the recommendations associated with these activities. [TK M1; IR]
+        - `040.02.01.02.45` Define 'linear acceleration' and 'angular acceleration'. [Exam M1; CBIR; IR]
+        - `040.02.01.02.46` Describe the effects of z-acceleration on the circulation and blood volume distribution. [Exam M1; IR]
+        - `040.02.01.02.47` List magnitude, duration and onset as factors that determine the effects of acceleration on the human body. [Exam M1; CBIR; IR]
+        - `040.02.01.02.48` List the effects of positive acceleration with respect to type, sequence and corresponding G-load. [Exam M1; IR]
+        - `040.02.01.02.49` State how carbon monoxide is produced. [Exam M1; IR]
+        - `040.02.01.02.51` List the signs and symptoms of carbon-monoxide poisoning. [Exam M1; IR]
+        - `040.02.01.02.52` Explain immediate countermeasures on suspicion of carbon-monoxide poisoning and how poisoning can be treated later on the ground. [Exam M1; IR]
+    - **`040.02.02.00` People and the environment: the sensory system**
+      - **`040.02.02.01` The different senses**
+        - `040.02.02.01.01` List the different senses. [TK M1; CBIR; IR]
+      - **`040.02.02.03` Vision**
+        - `040.02.02.03.02` State the basic functions of the parts of the eye. [Exam M1; IR]
+        - `040.02.02.03.09` State the time necessary for the eye to adapt both to bright light and the dark. [Exam M1; IR]
+      - **`040.02.02.05` Equilibrium**
+        - `040.02.02.05.01` List the main elements of the vestibular apparatus. [Exam M1; IR]
+        - `040.02.02.05.02` State the functions of the vestibular apparatus on the ground and in flight. [Exam M1; IR]
+        - `040.02.02.05.03` Distinguish between the component parts of the vestibular apparatus in the detection of linear and angular acceleration as well as on gravity. [Exam M1; IR]
+        - `040.02.02.05.04` Explain how the semicircular canals are stimulated. [TK M1; IR]
+        - `040.02.02.05.05` Describe air sickness and its accompanying symptoms. [Exam M1; CBIR; IR]
+        - `040.02.02.05.06` List the causes of air sickness. [Exam M1; CBIR; IR]
+        - `040.02.02.05.07` Describe the necessary actions to be taken to counteract the symptoms of air sickness. [Exam M1; IR]
+      - **`040.02.02.06` Integration of sensory inputs**
+        - `040.02.02.06.01` State the interaction between vision, equilibrium, proprioception and hearing to obtain spatial orientation in flight. [Exam M1; CBIR; IR]
+        - `040.02.02.06.02` Define the term 'illusion'. [Exam M1; CBIR; IR]
+        - `040.02.02.06.03` Give examples of visual illusions based on shape constancy, size constancy, aerial perspective, atmospheric perspective, the absence of focal or ambient cues, autokinesis, vectional false horizons, field myopia, and surface planes. [Exam M1; CBIR; IR]
+        - `040.02.02.06.04` Relate these illusions to problems that may be experienced in flight and identify the danger attached to them. [Exam M1; CBIR; IR]
+        - `040.02.02.06.05` List approach and landing illusions for slope of the runway, black-hole approach, and terrain around runway, and state the danger involved with recommendations to avoid or counteract the problems with high or low approach or flare at the wrong time. [Exam M1; CBIR; IR]
+        - `040.02.02.06.06` State the problems associated with flickering lights (strobe lights, anti-collision lights, propellers and rotors under certain light conditions, etc.). [Exam M1; CBIR; IR]
+        - `040.02.02.06.07` Describe vestibular illusions caused by the angular accelerations (the Leans, Coriolis) and linear accelerations (somatogravic, G-effect). [Exam M1; CBIR; IR]
+        - `040.02.02.06.08` Relate the above-mentioned vestibular illusions to problems encountered in flight and state the dangers involved. [Exam M1; CBIR; IR]
+        - `040.02.02.06.09` State that the 'seat-of-the-pants' sense is completely unreliable when visual contact with the ground is lost or when flying in instrument meteorological conditions (IMC) or with a poor visual horizon. [Exam M1; CBIR; IR]
+        - `040.02.02.06.10` Differentiate between vertigo, Coriolis effect, and spatial disorientation. [Exam M1; CBIR; IR]
+        - `040.02.02.06.11` List the measures to prevent or overcome spatial disorientation. [Exam M1; CBIR; IR]
+    - **`040.02.03.00` Health and hygiene**
+      - **`040.02.03.04` Intoxication**
+        - `040.02.03.04.01` State the harmful effects of tobacco on: the respiratory system; the cardiovascular system; the ability to resist hypoxia; the ability to withstand G-forces; night vision. [TK M1; IR]
+        - `040.02.03.04.12` State the dangers associated with the use of non-prescription drugs. [TK M1; IR]
+        - `040.02.03.04.13` State the side effects of common non-prescription drugs used to treat colds, flu, hay fever and other allergies, especially medicines containing antihistamine preparations. [TK M1; IR]
+        - `040.02.03.04.14` Interpret the rules relevant to using (prescription or non-prescription) drugs that the pilot has not used before. [TK M1; IR]
+        - `040.02.03.04.15` Interpret the general rule that 'if a pilot is so unwell that they require any medication, then they should consider themselves unfit to fly'. [TK M1; IR]
+  - **`040.03.00.00` BASIC AVIATION PSYCHOLOGY**
+    - **`040.03.01.00` Human information processing**
+      - **`040.03.01.04` Response selection**
+        - `040.03.01.04.04` Explain ways to facilitate the memorisation of information with the following learning techniques: mnemonics; mental training. [TK M1; IR]
+        - `040.03.01.04.05` Describe the advantage of planning and anticipation of future actions: define the term 'skills'; state the three phases of learning a skill (Anderson: cognitive, associative and autonomous phase). [TK M1; IR]
+    - **`040.03.02.00` Human error and reliability**
+      - **`040.03.02.02` Mental models and situation awareness**
+        - `040.03.02.02.01` Define the term 'situation awareness'. [TK M1; CBIR; IR]
+        - `040.03.02.02.02` List the cues that indicate loss of situation awareness and name the steps to regain it. [Exam M1; CBIR; IR]
+        - `040.03.02.02.03` List the factors that influence one's situation awareness both positively and negatively, and stress the importance of situation awareness in the context of flight safety. [Exam M1; CBIR; IR]
+        - `040.03.02.02.04` Define the term 'mental model' in relation to a surrounding complex situation. [Exam M1; CBIR; IR]
+        - `040.03.02.02.05` Describe the advantages/disadvantages of mental models. [Exam M1; CBIR; IR]
+        - `040.03.02.02.06` Explain the relationship between personal 'mental models' and the creation of cognitive illusions. [Exam M1; CBIR; IR]
+      - **`040.03.02.03` Theory and model of human error**
+        - `040.03.02.03.01` Explain the concept of the 'error chain'. [Exam M1; CBIR; IR]
+        - `040.03.02.03.02` Differentiate between an isolated error and an error chain. [Exam M1; CBIR; IR]
+        - `040.03.02.03.03` Distinguish between the main forms/types of errors (i.e. slips, faults, omissions and violations). [Exam M1; CBIR; IR]
+        - `040.03.02.03.04` Discuss the above errors and their relevance in flight. [Exam M1; CBIR; IR]
+        - `040.03.02.03.05` Distinguish between an active and a latent error, and give examples. [Exam M1; CBIR; IR]
+      - **`040.03.02.04` Error generation**
+        - `040.03.02.04.01` Distinguish between internal and external factors in error generation. [Exam M1; CBIR; IR]
+        - `040.03.02.04.02` Identify possible sources of internal error generation. [Exam M1; CBIR; IR]
+        - `040.03.02.04.03` Define and discuss the two errors associated with motor programmes (action slip and environmental capture). [Exam M1; CBIR; IR]
+        - `040.03.02.04.04` List the three main sources of external error generation in the flight crew compartment. [Exam M1; CBIR; IR]
+        - `040.03.02.04.05` Give examples to illustrate the following factors in external error generation in the flight crew compartment: ergonomics; economics; social environment. [Exam M1; CBIR; IR]
+        - `040.03.02.04.06` Name the major goals in the design of human-centred human-machine interfaces. [Exam M1; CBIR; IR]
+        - `040.03.02.04.07` Define the term 'error tolerance'. [Exam M1; CBIR; IR]
+        - `040.03.02.04.08` List and describe the strategies that are used to reduce human error. [Exam M1; CBIR; IR]
+    - **`040.03.03.00` Decision-making**
+      - **`040.03.03.01` Decision-making concepts**
+        - `040.03.03.01.01` Define the terms 'deciding' and 'decision-making'. [TK M1; CBIR; IR]
+        - `040.03.03.01.02` Describe the major factors on which decision-making should be based during the course of a flight. [TK M1; CBIR; IR]
+        - `040.03.03.01.03` Describe the main human attributes with regard to decision-making. [TK M1; CBIR; IR]
+        - `040.03.03.01.04` Discuss the nature of bias and its influence on the decision-making process. [TK M1; CBIR; IR]
+        - `040.03.03.01.05` Describe the main error sources and limits in an individual's decision-making mechanism. [TK M1; CBIR; IR]
+        - `040.03.03.01.06` State the factors upon which an individual's risk assessment is based. [TK M1; CBIR; IR]
+        - `040.03.03.01.07` Explain the relationship between risk assessment, commitment and pressure of time in decision-making strategies. [TK M1; CBIR; IR]
+        - `040.03.03.01.08` Explain the risks associated with dispersion or channelised attention during the application of procedures requiring a high workload within a short time frame (e.g. a go-around). [TK M1; IR]
+        - `040.03.03.01.09` Describe the positive and negative influences exerted by other group members on an individual's decision-making process (risky shift). [TK M1; CBIR; IR]
+        - `040.03.03.01.10` Explain the general idea behind the creation of a model for decision-making based upon: definition of the aim; collection of information; risk assessment; development of options; evaluation of options; decision; implementation; consequences; review and feedback. [TK M1; CBIR; IR]
+    - **`040.03.04.00` Avoiding and managing errors: cockpit management**
+      - **`040.03.04.01` Safety awareness**
+        - `040.03.04.01.01` Justify the need for being aware of not only one's own performance but that of others before and during a flight and the possible consequences or risks. [Exam M1; CBIR; IR]
+    - **`040.03.05.00` Human behaviour**
+      - **`040.03.05.03` Identification of hazardous attitudes (error proneness)**
+        - `040.03.05.03.01` Explain dangerous attitudes in aviation: anti-authority; macho; impulsivity; invulnerability; complacency; resignation. [TK M1]
+    - **`040.03.06.00` Human overload and underload**
+      - **`040.03.06.01` Arousal**
+        - `040.03.06.01.03` Explain the circumstances under which underload may occur and its possible dangers. [TK M1; IR]
+      - **`040.03.06.02` Stress**
+        - `040.03.06.02.07` List and discuss the major environmental sources of stress in the flight crew compartment. [TK M1; CBIR; IR]
+        - `040.03.06.02.08` Discuss the concept of 'break point' with regard to stress, overload and performance. [TK M1; CBIR; IR]
+        - `040.03.06.02.12` List the factors that influence the tolerance of stressors. [TK M1; IR]
+        - `040.03.06.02.22` Explain how stress is cumulative and how stress from one situation can be transferred to a different situation. [Exam M1; CBIR; IR]
+        - `040.03.06.02.23` Explain how successful completion of a stressful task will reduce the amount of stress experienced when a similar situation arises in the future. [Exam M1; CBIR; IR]
+        - `040.03.06.02.24` Describe the effect of human underload/overload on effectiveness in the flight crew compartment. [Exam M1; CBIR; IR]
+        - `040.03.06.02.25` List sources and symptoms of human underload. [Exam M1; CBIR; IR]
+      - **`040.03.06.05` Fatigue and stress management**
+        - `040.03.06.05.03` Identify the symptoms and describe the effects of fatigue. [TK M1; IR]
+    - **`040.03.07.00` Advanced cockpit automation**
+      - **`040.03.07.01` Advantages and disadvantages**
+        - `040.03.07.01.01` Compare the two basic concepts of automation: as per Boeing, where the pilot remains the last operator; and as per Airbus, where automated systems can correct erroneous pilot action. [Exam M1; CBIR; IR]
+        - `040.03.07.01.02` Explain the fundamental restrictions of autoflight systems to be lack of creativity in unknown situations, and lack of personal motivation with regard to safety. [Exam M1; CBIR; IR]
+        - `040.03.07.01.03` List the principal strengths and weaknesses of pilot versus autopilot systems to be creativity, decision-making, prioritisation of tasks, safety attitude versus precision, reliability. [Exam M1; CBIR; IR]
+        - `040.03.07.01.04` Explain the 'ironies of automation': designers' errors due to wrong interpretation of the data, leaving tasks to the pilot that are too complex to automate, loss of manual and cognitive skills of the pilot. State the necessity for regular training flights as one possible countermeasure. [Exam M1; CBIR; IR]
+        - `040.03.07.01.05` Describe methods to overcome the drawbacks of autoflight systems to be loss of manual flying capabilities, additional workload through programming, risk of slips during programming, and hypovigilance during cruise. [Exam M1; CBIR; IR]
+      - **`040.03.07.02` Automation complacency**
+        - `040.03.07.02.02` Explain some basic flight crew errors and terms that arise with the introduction of automation: passive monitoring; blinkered concentration; confusion; mode awareness. [Exam M1; CBIR; IR]
+        - `040.03.07.02.03` Explain how the method of call-outs counteracts ineffective monitoring of automatic systems. [Exam M1; CBIR; IR]
+        - `040.03.07.02.04` Define 'complacency'. [Exam M1; CBIR; IR]
+      - **`040.03.07.03` Working concepts**
+        - `040.03.07.03.02` Explain how the negative effects of automation on pilots may be alleviated by degrading to a lower level of automation to recover comprehension of the flight status from VNAV/LNAV to ALT/HDG or even to manual flying. [Exam M1; CBIR; IR]
+        - `040.03.07.03.03` Interpret the role of automation with respect to flight safety regarding the basic principle of the use of manual versus autoflight in normal operations, frequent changes in the flight profile, and in abnormal situations. [Exam M1; CBIR; IR]
+
+## 050 Meteorology
+
+_BIR-tagged rows: 263. Exam modules: M1=56, M2=24, M3=83. TK modules: M1=51, M2=10, M3=48._
+
+- **`050.00.00.00` METEOROLOGY**
+  - **`050.01.00.00` THE ATMOSPHERE**
+    - **`050.01.02.00` Air temperature**
+      - **`050.01.02.04` Lapse rates**
+        - `050.01.02.04.01` Describe qualitatively and quantitatively the temperature lapse rates of the troposphere (mean value 0.65 degrees C/100 m or 2 degrees C/1 000 ft and actual values). [TK M1; CBIR; IR]
+      - **`050.01.02.05` Development of inversions, types of inversions**
+        - `050.01.02.05.01` Describe the development and types of inversions. [TK M1; CBIR; IR]
+        - `050.01.02.05.02` Explain the characteristics of inversions and of an isothermal layer concerning stability and vertical motions. [TK M1; CBIR; IR]
+        - `050.01.02.05.03` Explain the reasons for the formation of the following inversions: ground inversion (nocturnal radiation/advection), subsidence inversion, frontal inversion, inversion above friction layer, valley inversion. [Exam M1; CBIR; IR]
+      - **`050.01.02.06` Temperature near the Earth's surface, insolation, surface effects, effect of clouds, effect of wind**
+        - `050.01.02.06.02` Explain the cooling/warming of the air by molecular or turbulent heat transfer to/from the earth or sea surfaces. [Exam M1; CBIR; IR]
+        - `050.01.02.06.03` Describe qualitatively the influence of the clouds on the cooling and warming of the surface and the air near the surface. [Exam M1; CBIR; IR]
+        - `050.01.02.06.04` Explain the influence of the wind on the cooling and warming of the air near the surfaces. [Exam M1; CBIR; IR]
+    - **`050.01.03.00` Atmospheric pressure**
+      - **`050.01.03.01` Barometric pressure, isobars**
+        - `050.01.03.01.01` Define 'atmospheric pressure'. [TK M1; CBIR; IR]
+        - `050.01.03.01.02` List the units of measurement of the atmospheric pressure used in aviation (hPa, inches of mercury). (Refer to Subject 050 10 01 01) [TK M1; CBIR; IR]
+        - `050.01.03.01.04` Define isobars and identify them on surface weather charts. [TK M1; CBIR; IR]
+        - `050.01.03.01.05` Define 'high', 'low', 'trough', 'ridge', 'col'. [TK M1; CBIR; IR]
+      - **`050.01.03.02` Pressure variation with height, contours (isohypses)**
+        - `050.01.03.02.01` Explain the pressure variation with height. [TK M1; CBIR; IR]
+        - `050.01.03.02.02` Describe quantitatively the variation of the barometric lapse rate. Remark: An approximation of the average value for the barometric lapse rate near mean sea level (MSL) is 30 ft (9 m) per 1 hPa. [TK M1; CBIR; IR]
+      - **`050.01.03.03` Reduction of pressure to QFF (MSL)**
+        - `050.01.03.03.01` Define 'QFF'. [TK M1; CBIR; IR]
+        - `050.01.03.03.02` Explain the reduction of measured pressure (QFE) to QFF (MSL). [TK M1; CBIR; IR]
+        - `050.01.03.03.03` Mention the use of QFF for surface weather charts. [TK M1; CBIR; IR]
+      - **`050.01.03.04` Relationship between surface pressure centres and pressure centres aloft**
+        - `050.01.03.04.01` Illustrate with a vertical cross section of isobaric surfaces the relationship between surface pressure systems and upper-air pressure systems. [TK M1; CBIR; IR]
+    - **`050.01.04.00` Air density**
+      - **`050.01.04.01` Relationship between pressure, temperature and density**
+        - `050.01.04.01.01` Describe the relationship between pressure, temperature and density. [Exam M1; CBIR; IR]
+        - `050.01.04.01.02` Describe the vertical variation of the air density in the atmosphere. [Exam M1; CBIR; IR]
+    - **`050.01.05.00` International Standard Atmosphere (ISA)**
+      - **`050.01.05.01` International Standard Atmosphere (ISA)**
+        - `050.01.05.01.01` Explain the use of standardised values for the atmosphere. [Exam M1; CBIR; IR]
+        - `050.01.05.01.02` List the main values of the ISA MSL pressure, MSL temperature, the vertical temperature lapse rate up to FL 650, height and temperature of the tropopause. [Exam M1; CBIR; IR]
+    - **`050.01.06.00` Altimetry**
+      - **`050.01.06.01` Terminology and definitions**
+        - `050.01.06.01.01` Define the following terms and explain how they are related to each other: height, altitude, pressure altitude, FL, pressure level, true altitude, true height, elevation, QNH, QFE, and standard altimeter setting. [Exam M1; CBIR; IR]
+      - **`050.01.06.02` Altimeter settings**
+        - `050.01.06.02.02` Describe the altimeter-setting procedures. [Exam M1; CBIR; IR]
+      - **`050.01.06.03` Calculations**
+        - `050.01.06.03.04` Explain the influence of the air temperature on the distance between the ground and the level read on the altimeter and between two FLs. [Exam M1; CBIR; IR]
+  - **`050.02.00.00` WIND**
+    - **`050.02.02.00` Primary cause of wind**
+      - **`050.02.02.02` Variation of wind in the friction layer**
+        - `050.02.02.02.01` Describe why and how the wind changes direction and speed with height in the friction layer in the northern and in the southern hemisphere (rule of thumb). [Exam M1; CBIR; IR]
+        - `050.02.02.02.04` Explain the relationship between isobars and wind (direction and speed). Remark: Approximate value for variation of wind in the friction layer (values to be used in examinations): Type of landscape: Wind speed in friction layer in per cent of the geostrophic wind: over water: ca. 70 per cent; over land: ca. 50 per cent; The wind in the friction layer blows across the isobars towards the low pressure. Angle between wind direction and isobars. Over water: ca. 10 degrees; over land: ca. 30 degrees. WMO - No. 266. [Exam M1; CBIR; IR]
+      - **`050.02.02.03` Effects of convergence and divergence**
+        - `050.02.02.03.01` Describe atmospheric convergence and divergence. [Exam M1; CBIR; IR]
+        - `050.02.02.03.02` Explain the relationship between convergence and divergence on the following: pressure systems at the surface and aloft; wind speed; vertical motion and cloud formation (relationship between upper-air conditions and surface pressure systems). [Exam M1; CBIR; IR]
+    - **`050.02.04.00` Local winds**
+      - **`050.02.04.01` Anabatic and katabatic winds, mountain and valley winds, Venturi effects, land and sea breezes**
+        - `050.02.04.01.01` Describe and explain anabatic and katabatic winds. [TK M1; CBIR; IR]
+        - `050.02.04.01.02` Describe mountain and valley winds. [TK M1; CBIR; IR]
+        - `050.02.04.01.03` Describe the Venturi effect, convergence in valleys and mountain areas. [TK M1; CBIR; IR]
+        - `050.02.04.01.04` Describe land and sea breezes, and sea-breeze front. [Exam M1; CBIR; IR]
+    - **`050.02.05.00` Mountain waves (standing waves, lee waves)**
+      - **`050.02.05.01` Origin and characteristics**
+        - `050.02.05.01.01` Explain the origin and formation of mountain waves. [TK M1; CBIR; IR]
+        - `050.02.05.01.02` State the conditions necessary for the formation of mountain waves. [TK M1; CBIR; IR]
+        - `050.02.05.01.03` Describe the structure and properties of mountain waves. [TK M1; CBIR; IR]
+        - `050.02.05.01.04` Explain how mountain waves may be identified by their associated meteorological phenomena. [Exam M1; CBIR; IR]
+    - **`050.02.06.00` Turbulence**
+      - **`050.02.06.01` Description and types of turbulence**
+        - `050.02.06.01.01` Describe turbulence and gustiness. [TK M1; CBIR; IR]
+        - `050.02.06.01.02` List the common types of turbulence (convective, mechanical, orographic, frontal, clear-air turbulence). [TK M1; CBIR; IR]
+      - **`050.02.06.02` Formation and location of turbulence**
+        - `050.02.06.02.01` Explain the formation of convective turbulence, mechanical and orographic turbulence, and frontal turbulence. [TK M1; CBIR; IR]
+        - `050.02.06.02.02` State where turbulence will normally be found (rough-ground surfaces, relief, inversion layers, cumulonimbus (CB), thunderstorm (TS) zones, unstable layers). [TK M1; CBIR; IR]
+  - **`050.03.00.00` THERMODYNAMICS**
+    - **`050.03.01.00` Humidity**
+      - **`050.03.01.01` Water vapour in the atmosphere**
+        - `050.03.01.01.01` State that the density of moist air is less than the density of dry air. [TK M1; CBIR; IR]
+        - `050.03.01.01.02` Describe the significance for meteorology of water vapour in the atmosphere. [TK M1; CBIR; IR]
+        - `050.03.01.01.03` Indicate the sources of atmospheric humidity. [TK M1; CBIR; IR]
+      - **`050.03.01.03` Temperature/dew point, relative humidity**
+        - `050.03.01.03.01` Define 'dew point'. [TK M1; CBIR; IR]
+        - `050.03.01.03.02` Define 'relative humidity'. [TK M1; CBIR; IR]
+        - `050.03.01.03.03` Explain the factors that influence the relative humidity at constant pressure. [TK M1; CBIR; IR]
+        - `050.03.01.03.04` Explain the diurnal variation of the relative humidity. [TK M1; CBIR; IR]
+        - `050.03.01.03.05` Describe the relationship between temperature and dew point. [TK M1; CBIR; IR]
+        - `050.03.01.03.06` Estimate the relative humidity of the air from the difference between dew point and temperature. [Exam M1; CBIR; IR]
+    - **`050.03.02.00` Change of state of water**
+      - **`050.03.02.01` Condensation, evaporation, sublimation, freezing and melting, latent heat**
+        - `050.03.02.01.06` List the conditions for freezing/melting. [Exam M1; CBIR; IR]
+        - `050.03.02.01.09` Define 'supercooled water'. (Refer to Subject 050 09 01 01) [Exam M1; CBIR; IR]
+        - `050.03.02.01.14` Illustrate all the changes of state of water with practical examples. [Exam M1; CBIR; IR]
+    - **`050.03.03.00` Adiabatic processes**
+      - **`050.03.03.01` Adiabatic processes, stability of the atmosphere**
+        - `050.03.03.01.08` Illustrate with a schematic sketch the formation of Foehn. [Exam M1; CBIR; IR]
+  - **`050.04.00.00` CLOUDS AND FOG**
+    - **`050.04.01.00` Cloud formation and description**
+      - **`050.04.01.01` Cloud formation**
+        - `050.04.01.01.01` Explain cloud formation by adiabatic cooling, conduction, advection and radiation. [Exam M1; CBIR; IR]
+        - `050.04.01.01.02` Describe cloud formation based on the following lifting processes: unorganised lifting in thin layers and turbulent mixing; forced lifting at fronts or over mountains; free convection. [Exam M1; CBIR; IR]
+        - `050.04.01.01.03` List cloud types typical for stable and unstable air conditions. [Exam M1; CBIR; IR]
+        - `050.04.01.01.04` Summarise the conditions for the dissipation of clouds. [Exam M1; CBIR; IR]
+      - **`050.04.01.02` Cloud types and cloud classification**
+        - `050.04.01.02.01` Describe the different cloud types and their classification. [TK M1; CBIR; IR]
+        - `050.04.01.02.02` Identify by shape cirriform, cumuliform and stratiform clouds. [TK M1; CBIR; IR]
+        - `050.04.01.02.03` Identify by shape and typical level the 10 cloud types (general). [TK M1; CBIR; IR]
+        - `050.04.01.02.04` Describe and identify by shape the following species and supplementary features: castellanus, lenticularis, congestus, calvus, capillatus and virga. [TK M1; CBIR; IR]
+        - `050.04.01.02.05` Distinguish between low-, medium- and high-level clouds according to the World Meteorological Organization's (WMO) 'cloud etage'. [Exam M1; CBIR; IR]
+        - `050.04.01.02.06` Distinguish between ice clouds, mixed clouds and pure-water clouds. [Exam M1; CBIR; IR]
+      - **`050.04.01.03` Influence of inversions on cloud development**
+        - `050.04.01.03.01` Explain the influence of inversions on vertical movements in the atmosphere. [Exam M1; CBIR; IR]
+        - `050.04.01.03.02` Explain the influence of an inversion on the formation of stratus clouds. [Exam M1; CBIR; IR]
+        - `050.04.01.03.03` Explain the influence of ground inversion on the formation of fog. [Exam M1; CBIR; IR]
+      - **`050.04.01.04` Flying conditions in each cloud type**
+        - `050.04.01.04.01` Assess the 10 cloud types for icing and turbulence. [TK M1; CBIR; IR]
+    - **`050.04.02.00` Fog, mist, haze**
+      - **`050.04.02.01` General aspects**
+        - `050.04.02.01.01` Define 'fog', 'mist' and 'haze' with reference to the WMO standards of visibility range. [TK M1; CBIR; IR]
+        - `050.04.02.01.02` Explain briefly the formation of fog, mist and haze. [TK M1; CBIR; IR]
+        - `050.04.02.01.03` Name the factors that generally contribute to the formation of fog and mist. [TK M1; CBIR; IR]
+        - `050.04.02.01.04` Name the factors that contribute to the formation of haze. [TK M1; CBIR; IR]
+        - `050.04.02.01.05` Describe freezing fog and ice fog. [TK M1; CBIR; IR]
+      - **`050.04.02.02` Radiation fog**
+        - `050.04.02.02.01` Explain the formation of radiation fog. [Exam M1; CBIR; IR]
+        - `050.04.02.02.02` Describe the significant characteristics of radiation fog, and its vertical extent. [Exam M1; CBIR; IR]
+        - `050.04.02.02.03` Summarise the conditions for the dissipation of radiation fog. [Exam M1; CBIR; IR]
+      - **`050.04.02.03` Advection fog**
+        - `050.04.02.03.01` Explain the formation of advection fog. [Exam M1; CBIR; IR]
+        - `050.04.02.03.02` Describe the different possibilities of advection-fog formation (over land, sea and coastal regions). [Exam M1; CBIR; IR]
+        - `050.04.02.03.03` Describe the significant characteristics of advection fog. [Exam M1; CBIR; IR]
+        - `050.04.02.03.04` Summarise the conditions for the dissipation of advection fog. [Exam M1; CBIR; IR]
+      - **`050.04.02.04` Sea smoke**
+        - `050.04.02.04.01` Explain the formation of sea smoke. [Exam M1; CBIR; IR]
+        - `050.04.02.04.02` Explain the conditions for the development of sea smoke. [Exam M1; CBIR; IR]
+        - `050.04.02.04.03` Summarise the conditions for the dissipation of sea smoke. [Exam M1; CBIR; IR]
+      - **`050.04.02.05` Frontal fog**
+        - `050.04.02.05.01` Explain the formation of frontal fog. [Exam M1; CBIR; IR]
+        - `050.04.02.05.02` Describe the significant characteristics of frontal fog. [Exam M1; CBIR; IR]
+        - `050.04.02.05.03` Summarise the conditions for the dissipation of frontal fog. [Exam M1; CBIR; IR]
+      - **`050.04.02.06` Orographic fog (hill fog)**
+        - `050.04.02.06.01` Summarise the features of orographic fog. [Exam M1; CBIR; IR]
+        - `050.04.02.06.02` Describe the significant characteristics of orographic fog. [Exam M1; CBIR; IR]
+        - `050.04.02.06.03` Summarise the conditions for the dissipation of orographic fog. [Exam M1; CBIR; IR]
+  - **`050.05.00.00` PRECIPITATION**
+    - **`050.05.01.00` Development of precipitation**
+      - **`050.05.01.01` Process of development of precipitation**
+        - `050.05.01.01.01` Describe the two basic processes of forming precipitation (the Wegener-Bergeron-Findeisen process, Coalescence). [Exam M1; CBIR; IR]
+        - `050.05.01.01.02` Summarise the outlines of the ice-crystal process (the Wegener-Bergeron-Findeisen process). [Exam M1; CBIR; IR]
+        - `050.05.01.01.03` Summarise the outlines of the coalescence process. [Exam M1; CBIR; IR]
+        - `050.05.01.01.04` Explain the development of snow, rain, drizzle and hail. [Exam M1; CBIR; IR]
+    - **`050.05.02.00` Types of precipitation**
+      - **`050.05.02.01` Types of precipitation, relationship with cloud types**
+        - `050.05.02.01.01` List and describe the types of precipitation given in the aerodrome forecast (TAF) and METAR codes (drizzle, rain, snow, snow grains, ice pellets, hail, small hail, snow pellets, ice crystals, freezing drizzle, freezing rain). [TK M1; CBIR; IR]
+        - `050.05.02.01.02` State the ICAO/WMO approximate diameters for cloud, drizzle and rain drops. [Exam M1; CBIR; IR]
+        - `050.05.02.01.03` State that, because of their size, hail stones can cause significant damage to aircraft. [Exam M1; CBIR; IR]
+        - `050.05.02.01.04` Explain the mechanism for the formation of freezing precipitation. [TK M1; CBIR; IR]
+        - `050.05.02.01.05` Describe the weather conditions that give rise to freezing precipitation. [Exam M1; CBIR; IR]
+        - `050.05.02.01.06` Distinguish between the types of precipitation generated in convective and stratiform clouds. [Exam M1; CBIR; IR]
+        - `050.05.02.01.07` Assign typical precipitation types and intensities to different cloud types. [Exam M1; CBIR; IR]
+  - **`050.06.00.00` AIR MASSES AND FRONTS**
+    - **`050.06.01.00` Air masses**
+      - **`050.06.01.01` Description, classification and source regions of air masses**
+        - `050.06.01.01.01` Define the term 'air mass'. [TK M3; CBIR; IR]
+        - `050.06.01.01.02` Describe the properties of the source regions. [TK M3; CBIR; IR]
+        - `050.06.01.01.03` Summarise the classification of air masses by source regions. [TK M3; CBIR; IR]
+        - `050.06.01.01.04` State the classifications of air masses by temperature and humidity at source. [TK M3; CBIR; IR]
+        - `050.06.01.01.05` State the characteristic weather in each of the air masses. [TK M3; CBIR; IR]
+        - `050.06.01.01.06` Name the three main air masses that affect Europe. [TK M3; CBIR; IR]
+        - `050.06.01.01.07` Classify air masses on a surface weather chart. Remark: Names and abbreviations of air masses used in examinations: first letter: humidity continental (c) maritime (m) second letter: type of air mass arctic (A) polar (P) tropical (T) equatorial (E) third letter: temperature cold (c) warm (w) [TK M3; CBIR; IR]
+      - **`050.06.01.02` Modifications of air masses**
+        - `050.06.01.02.01` List the environmental factors that affect the final properties of an air mass. [TK M3; CBIR; IR]
+        - `050.06.01.02.02` Explain how maritime and continental tracks modify air masses. [TK M3; CBIR; IR]
+        - `050.06.01.02.03` Explain the effect of passage over cold or warm surfaces. [TK M3; CBIR; IR]
+        - `050.06.01.02.04` Explain how air-mass weather is affected by the season, the air-mass track and by orographic and thermal effects over land. [TK M3; CBIR; IR]
+        - `050.06.01.02.05` Assess the tendencies of the stability of an air mass and describe the typical resulting air-mass weather including the hazards for aviation. [TK M3; CBIR; IR]
+    - **`050.06.02.00` Fronts**
+      - **`050.06.02.01` General aspects**
+        - `050.06.02.01.01` Describe the boundaries between air masses (fronts). [TK M3; CBIR; IR]
+        - `050.06.02.01.02` Define 'front' and 'frontal zone'. [TK M3; CBIR; IR]
+      - **`050.06.02.02` Warm front, associated clouds and weather**
+        - `050.06.02.02.01` Define a 'warm front'. [TK M3; CBIR; IR]
+        - `050.06.02.02.02` Describe the cloud, weather, ground visibility and aviation hazards at a warm front depending on the stability of the warm air. [Exam M3; CBIR; IR]
+        - `050.06.02.02.03` Explain the seasonal differences in the weather at warm fronts. [Exam M3; CBIR; IR]
+        - `050.06.02.02.04` Describe the structure, slope and dimensions of a warm front. [TK M3; CBIR; IR]
+        - `050.06.02.02.05` Sketch a cross section of a warm front showing weather, cloud and aviation hazards. [TK M3; CBIR; IR]
+      - **`050.06.02.03` Cold front, associated clouds and weather**
+        - `050.06.02.03.01` Define a 'cold front'. [TK M3; CBIR; IR]
+        - `050.06.02.03.02` Describe the cloud, weather, ground visibility and aviation hazards at a cold front depending on the stability of the warm air. [Exam M3; CBIR; IR]
+        - `050.06.02.03.03` Explain the seasonal differences in the weather at cold fronts. [Exam M3; CBIR; IR]
+        - `050.06.02.03.04` Describe the structure, slope and dimensions of a cold front. [TK M3; CBIR; IR]
+        - `050.06.02.03.05` Sketch a cross section of a cold front showing weather, cloud and aviation hazards. [TK M3; CBIR; IR]
+      - **`050.06.02.04` Warm sector, associated clouds and weather**
+        - `050.06.02.04.01` Describe fronts and air masses associated with the warm sector. [TK M3; CBIR; IR]
+        - `050.06.02.04.02` Describe the cloud, weather, ground visibility and aviation hazards in a warm sector. [Exam M3; CBIR; IR]
+        - `050.06.02.04.03` Explain the seasonal differences in the weather in the warm sector. [Exam M3; CBIR; IR]
+        - `050.06.02.04.04` Sketch a cross section of a warm sector showing weather, cloud and aviation hazards. [TK M3; CBIR; IR]
+      - **`050.06.02.05` Weather behind the cold front**
+        - `050.06.02.05.01` Describe the cloud, weather, ground visibility and aviation hazards behind the cold front. [Exam M3; CBIR; IR]
+        - `050.06.02.05.02` Explain the seasonal differences in the weather behind the cold front. [Exam M3; CBIR; IR]
+      - **`050.06.02.06` Occlusions, associated clouds and weather**
+        - `050.06.02.06.01` Define the term 'occlusion' and 'occluded front'. [TK M3; CBIR; IR]
+        - `050.06.02.06.02` Describe the cloud, weather, ground visibility and aviation hazards in a cold occlusion. [Exam M3; CBIR; IR]
+        - `050.06.02.06.03` Describe the cloud, weather, ground visibility and aviation hazards in a warm occlusion. [Exam M3; CBIR; IR]
+        - `050.06.02.06.04` Explain the seasonal differences in the weather at occlusions. [Exam M3; CBIR; IR]
+        - `050.06.02.06.05` Sketch a cross section of occlusions showing weather, cloud and aviation hazards. [TK M3; CBIR; IR]
+        - `050.06.02.06.06` On a sketch illustrate the development of an occlusion and the movement of the occlusion point. [TK M3; CBIR; IR]
+      - **`050.06.02.07` Stationary front, associated clouds and weather**
+        - `050.06.02.07.01` Define a 'stationary front'. [TK M3; CBIR; IR]
+        - `050.06.02.07.02` Describe the cloud, weather, ground visibility and aviation hazards in a stationary front. [Exam M3; CBIR; IR]
+      - **`050.06.02.08` Movement of fronts and pressure systems, life cycle**
+        - `050.06.02.08.01` Describe the movements of fronts and pressure systems and the life cycle of a mid-latitude depression. [TK M3; CBIR; IR]
+        - `050.06.02.08.02` State the rules for predicting the direction and the speed of movement of fronts. [TK M3; CBIR; IR]
+        - `050.06.02.08.03` State the difference in the speed of movement between cold and warm fronts. [TK M3; CBIR; IR]
+        - `050.06.02.08.04` State the rules for predicting the direction and the speed of movement of frontal depressions. [TK M3; CBIR; IR]
+        - `050.06.02.08.05` Describe, with a sketch if required, the genesis, development and life cycle of a frontal depression with associated cloud and rain belts. [TK M3; CBIR; IR]
+      - **`050.06.02.09` Changes of meteorological elements at a frontal wave**
+        - `050.06.02.09.01` Sketch a plan and a cross section of a frontal wave (warm front, warm sector, and cold front) and illustrate the changes of pressure, temperature, surface wind and wind in the vertical axis. [TK M3; CBIR; IR]
+  - **`050.07.00.00` PRESSURE SYSTEMS**
+    - **`050.07.02.00` Anticyclone**
+      - **`050.07.02.01` Anticyclones, types, general properties, cold and warm anticyclones, ridges and subsidence**
+        - `050.07.02.01.01` List the different types of anticyclones. [TK M3; CBIR; IR]
+        - `050.07.02.01.02` Describe the effect of high-level convergence in producing areas of high pressure at ground level. [TK M3; CBIR; IR]
+        - `050.07.02.01.03` Describe air-mass subsidence, its effect on the environmental lapse rate, and the associated weather. [TK M3; CBIR; IR]
+        - `050.07.02.01.04` Describe the formation of warm and cold anticyclones. [Exam M3; CBIR; IR]
+        - `050.07.02.01.05` Describe the formation of ridges. [TK M3; CBIR; IR]
+        - `050.07.02.01.07` Describe the properties of and the weather associated with ridges. [Exam M3; CBIR; IR]
+        - `050.07.02.01.08` Describe the blocking anticyclone and its effects. [TK M3; CBIR; IR]
+    - **`050.07.03.00` Non-frontal depressions**
+      - **`050.07.03.01` Thermal, orographic, polar and secondary depressions; troughs**
+        - `050.07.03.01.01` Describe the effect of high-level divergence in producing areas of low pressure at ground level. [TK M3; CBIR; IR]
+        - `050.07.03.01.02` Describe the formation and properties of thermal, orographic (lee lows), polar and secondary depressions. [Exam M3; CBIR; IR]
+        - `050.07.03.01.03` Describe the formation, the properties and the associated weather at troughs. [TK M3; CBIR; IR]
+  - **`050.08.00.00` CLIMATOLOGY**
+    - **`050.08.03.00` Typical weather situations in the mid-latitudes**
+      - **`050.08.03.01` Westerly situation (westerlies)**
+        - `050.08.03.01.01` Identify on a weather chart the typical westerly situation with travelling polar front waves. [TK M3; CBIR; IR]
+      - **`050.08.03.02` High-pressure area**
+        - `050.08.03.02.01` Describe the high-pressure zones with the associated weather. [TK M3; CBIR; IR]
+        - `050.08.03.02.02` Identify on a weather chart the high-pressure regions. [TK M3; CBIR; IR]
+  - **`050.09.00.00` FLIGHT HAZARDS**
+    - **`050.09.01.00` Icing**
+      - **`050.09.01.01` Conditions for ice accretion**
+        - `050.09.01.01.01` Summarise the general conditions under which ice accretion occurs on aircraft (temperatures of outside air; temperature of the airframe; presence of supercooled water in clouds, fog, rain and drizzle; possibility of sublimation). [Exam M3; CBIR; IR]
+        - `050.09.01.01.02` Explain the general weather conditions under which ice accretion occurs in a venturi carburettor. [TK M3; CBIR; IR]
+        - `050.09.01.01.03` Explain the general weather conditions under which ice accretion occurs on airframe. [Exam M3; CBIR; IR]
+        - `050.09.01.01.04` Explain the formation of supercooled water in clouds, rain and drizzle. (Refer to Subject 050 03 02 01) [Exam M3; CBIR; IR]
+        - `050.09.01.01.05` Explain qualitatively the relationship between the air temperature and the amount of supercooled water. [Exam M3; CBIR; IR]
+        - `050.09.01.01.06` Explain qualitatively the relationship between the type of cloud and the size and number of the droplets in cumuliform and stratiform clouds. [Exam M3; CBIR; IR]
+        - `050.09.01.01.07` Indicate in which circumstances ice can form on an aircraft on the ground: air temperature, humidity, precipitation. [Exam M3; CBIR; IR]
+        - `050.09.01.01.08` Explain in which circumstances ice can form on an aircraft in flight: inside clouds, in precipitation, and outside clouds and precipitation. [Exam M3; CBIR; IR]
+        - `050.09.01.01.09` Explain the influence of fuel temperature, radiative cooling of the aircraft surface and temperature of the aircraft surface (e.g. from previous flight) on ice formation. [Exam M3; CBIR; IR]
+        - `050.09.01.01.10` Describe the different factors that influence the intensity of icing: air temperature, amount of supercooled water in a cloud or in precipitation, amount of ice crystals in the air, speed of the aircraft, shape (thickness) of the airframe parts (wings, antennas, etc.). [Exam M3; CBIR; IR]
+        - `050.09.01.01.11` Explain the effects of topography on icing. [Exam M3; CBIR; IR]
+        - `050.09.01.01.12` Explain the higher concentration of water drops in stratiform orographic clouds. [Exam M3; CBIR; IR]
+      - **`050.09.01.02` Types of ice accretion**
+        - `050.09.01.02.07` Describe the aspects of rime ice: appearance, weight, solidity. [Exam M3; CBIR; IR]
+        - `050.09.01.02.08` Define 'mixed ice'. [Exam M3; CBIR; IR]
+        - `050.09.01.02.09` Describe the conditions for the formation of mixed ice. [Exam M3; CBIR; IR]
+        - `050.09.01.02.10` Describe the aspects of mixed ice: appearance, weight, solidity. [Exam M3; CBIR; IR]
+        - `050.09.01.02.11` Describe the possible process of ice formation in snow conditions. [Exam M3; CBIR; IR]
+        - `050.09.01.02.12` Define 'hoar frost'. [Exam M3; CBIR; IR]
+        - `050.09.01.02.13` Describe the conditions for the formation of hoar frost. [Exam M3; CBIR; IR]
+        - `050.09.01.02.14` Describe the aspects of hoar frost: appearance, solidity. [Exam M3; CBIR; IR]
+      - **`050.09.01.03` Hazards of ice accretion, avoidance**
+        - `050.09.01.03.01` State the ICAO qualifying terms for the intensity of icing. [Exam M3; CBIR; IR]
+        - `050.09.01.03.02` Describe, in general, the hazards of icing. [Exam M3; CBIR; IR]
+        - `050.09.01.03.03` Assess the dangers of the different types of ice accretion. [Exam M3; CBIR; IR]
+        - `050.09.01.03.04` Describe the position of the dangerous zones of icing in fronts, in stratiform and cumuliform clouds, and in the different precipitation types. [Exam M3; CBIR; IR]
+        - `050.09.01.03.05` Indicate the possibilities of avoiding dangerous zones of icing: in the flight planning: weather briefing, selection of track and altitude; during flight: recognition of the dangerous zones, selection of appropriate track and altitude. [Exam M3; CBIR; IR]
+      - **`050.09.01.04` Ice crystal icing**
+        - `050.09.01.04.01` Describe ice crystal icing. [TK M3; CBIR; IR]
+        - `050.09.01.04.02` Describe the atmospheric processes leading to high ice crystal concentration. Define the variable ice water content (IWC). [TK M3; CBIR; IR]
+        - `050.09.01.04.03` Identify weather situations and their relevant areas where high concentrations of ice crystals are likely to occur. [Exam M3; CBIR; IR]
+        - `050.09.01.04.04` Name, in general, the flight hazards associated with high concentrations of ice crystals. [Exam M3; CBIR; IR]
+        - `050.09.01.04.05` Explain how a pilot may possibly avoid areas with a high concentration of ice crystals. [Exam M3; CBIR; IR]
+    - **`050.09.02.00` Turbulence**
+      - **`050.09.02.01` Effects on flight, avoidance**
+        - `050.09.02.01.01` State the ICAO qualifying terms for the intensity of turbulence. [Exam M3; CBIR; IR]
+        - `050.09.02.01.02` Describe the effects of turbulence on an aircraft in flight. [Exam M3; CBIR; IR]
+        - `050.09.02.01.03` Indicate the possibilities of avoiding turbulence: in the flight planning: weather briefing, selection of track and altitude; during flight: selection of appropriate track and altitude. [Exam M3; CBIR; IR]
+    - **`050.09.03.00` Wind shear**
+      - **`050.09.03.01` Definition of wind shear**
+        - `050.09.03.01.01` Define 'wind shear' (vertical and horizontal). [Exam M3; CBIR; IR]
+        - `050.09.03.01.02` Define 'low-level wind shear'. [Exam M3; CBIR; IR]
+      - **`050.09.03.02` Weather conditions for wind shear**
+        - `050.09.03.02.01` Describe the conditions, where and how wind shear can form (e.g. thunderstorms, squall lines, fronts, inversions, land and sea breeze, friction layer, relief). [Exam M3; CBIR; IR]
+      - **`050.09.03.03` Effects on flight, avoidance**
+        - `050.09.03.03.01` Describe the effects of wind shear on flight. [Exam M3; CBIR; IR]
+        - `050.09.03.03.02` Indicate the possibilities of avoiding wind shear in flight: in the flight planning; during flight. [Exam M3; CBIR; IR]
+    - **`050.09.04.00` Thunderstorms**
+      - **`050.09.04.01` Conditions for and process of development, forecast, location, type specification**
+        - `050.09.04.01.01` Name the cloud types which indicate the development of thunderstorms. [Exam M3; CBIR; IR]
+        - `050.09.04.01.02` Describe the different types of thunderstorms, their location, the conditions for and the process of development, and list their properties (air-mass thunderstorms, frontal thunderstorms, squall lines, supercell storms, orographic thunderstorms). [Exam M3; CBIR; IR]
+      - **`050.09.04.02` Structure of thunderstorms, life cycle**
+        - `050.09.04.02.01` Assess the average duration of thunderstorms and their different stages. [Exam M3; CBIR; IR]
+        - `050.09.04.02.02` Describe a supercell storm: initial, supercell, tornado and dissipating stage. [Exam M3; CBIR; IR]
+        - `050.09.04.02.03` Summarise the flight hazards associated with a fully developed thunderstorm. [Exam M3; CBIR; IR]
+        - `050.09.04.02.04` Indicate on a sketch the most dangerous zones in and around a single-cell and a multi-cell thunderstorm. [Exam M3; CBIR; IR]
+      - **`050.09.04.03` Electrical discharges**
+        - `050.09.04.03.01` Describe the basic outline of the electric field in the atmosphere. [Exam M3; CBIR; IR]
+        - `050.09.04.03.02` Describe types of lightning, i.e. ground stroke, intra-cloud lightning, cloud-to-cloud lightning, upward lightning. [Exam M3; CBIR; IR]
+        - `050.09.04.03.03` Describe and assess the 'St. Elmo's fire' weather phenomenon. [TK M3; CBIR; IR]
+        - `050.09.04.03.04` Describe the development of lightning discharges. [Exam M3; CBIR; IR]
+        - `050.09.04.03.05` Describe the effect of lightning strike on aircraft and flight execution. [Exam M3; CBIR; IR]
+      - **`050.09.04.04` Development and effects of downbursts**
+        - `050.09.04.04.01` Define the term 'downburst'. [Exam M3; CBIR; IR]
+        - `050.09.04.04.02` Distinguish between macroburst and microburst. [Exam M3; CBIR; IR]
+        - `050.09.04.04.03` State the weather situations leading to the formation of downbursts. [Exam M3; CBIR; IR]
+        - `050.09.04.04.04` Describe the process of development of a downburst. [Exam M3; CBIR; IR]
+        - `050.09.04.04.05` Give the typical duration of a downburst. [Exam M3; CBIR; IR]
+      - **`050.09.04.05` Thunderstorm avoidance**
+        - `050.09.04.05.01` Explain how the pilot can anticipate each type of thunderstorm: through pre-flight weather briefing, observation in flight, use of specific meteorological information, use of information given by ground weather radar and by airborne weather radar. (Refer to Subject 050 10 01 04), use of a lightning detector (stormscope). (Refer to Subject 050 10 01 04), use of the stormscope (lightning detector). [Exam M3; CBIR; IR]
+        - `050.09.04.05.02` Describe practical examples of flight techniques used to avoid the hazards of thunderstorms. [Exam M3; CBIR; IR]
+    - **`050.09.05.00` Tornadoes**
+      - **`050.09.05.01` Properties and occurrence**
+        - `050.09.05.01.01` Define 'tornado'. [TK M3; CBIR; IR]
+    - **`050.09.06.00` Inversions**
+      - **`050.09.06.01` Influence on aircraft performance**
+        - `050.09.06.01.01` Compare the flight hazards during take-off and approach associated with a strong inversion alone and with a strong inversion combined with marked wind shear. [Exam M3; CBIR; IR]
+    - **`050.09.08.00` Hazards in mountainous areas**
+      - **`050.09.08.01` Influence of terrain on clouds and precipitation, frontal passage**
+        - `050.09.08.01.01` Describe the influence of mountainous area on a frontal passage. [Exam M3; CBIR; IR]
+      - **`050.09.08.02` Vertical movements, mountain waves, wind shear, turbulence, ice accretion**
+        - `050.09.08.02.01` Describe the vertical movements, wind shear and turbulence that are typical of mountain areas. [Exam M3; CBIR; IR]
+        - `050.09.08.02.02` Indicate on a sketch of a chain of mountains the turbulent zones (mountain waves, rotors). [Exam M3; CBIR; IR]
+        - `050.09.08.02.03` Explain the influence of relief on ice accretion. [Exam M3; CBIR; IR]
+      - **`050.09.08.03` Development and effect of valley inversions**
+        - `050.09.08.03.01` Describe the formation of a valley inversion due to katabatic winds. [Exam M3; CBIR; IR]
+        - `050.09.08.03.02` Describe the valley inversion formed by warm winds aloft. [Exam M3; CBIR; IR]
+        - `050.09.08.03.03` Describe the effects of a valley inversion for an aircraft in flight. [Exam M3; CBIR; IR]
+    - **`050.09.09.00` Visibility-reducing phenomena**
+      - **`050.09.09.01` Reduction of visibility caused by precipitation and obscurations**
+        - `050.09.09.01.01` Describe the reduction of visibility caused by precipitation: drizzle, rain, snow. [Exam M3; CBIR; IR]
+        - `050.09.09.01.02` Describe the reduction of visibility caused by obscurations: fog, mist, haze, smoke, volcanic ash. [Exam M3; CBIR; IR]
+        - `050.09.09.01.03` Describe the reduction of visibility caused by obscurations: sand (SA), dust (DU). [Exam M3]
+        - `050.09.09.01.04` Describe the differences between ground and flight visibility, and slant and vertical visibility when an aircraft is above or within a layer of haze or fog. [Exam M3; CBIR; IR]
+      - **`050.09.09.02` Reduction of visibility caused by other phenomena**
+        - `050.09.09.02.01` Describe the reduction of visibility caused by low drifting and blowing snow. [Exam M3; CBIR; IR]
+        - `050.09.09.02.04` Describe the reduction of visibility caused by icing (windshield). [Exam M3; CBIR; IR]
+        - `050.09.09.02.05` Describe the reduction of visibility caused by the position of the sun relative to the visual direction. [Exam M3; CBIR; IR]
+        - `050.09.09.02.06` Describe the reduction of visibility caused by the reflection of the sun's rays from the top of the layers of haze, fog and clouds. [Exam M3; CBIR; IR]
+  - **`050.10.00.00` METEOROLOGICAL INFORMATION**
+    - **`050.10.01.00` Observation**
+      - **`050.10.01.01` Surface observations**
+        - `050.10.01.01.03` Define 'visibility'. [TK M2; CBIR; IR]
+        - `050.10.01.01.04` Describe the meteorological measurement of visibility. [TK M2; CBIR; IR]
+        - `050.10.01.01.06` Define 'ground visibility'. [Exam M2; CBIR; IR]
+        - `050.10.01.01.07` List the units used for visibility (m, km, statute mile). [TK M2; CBIR; IR]
+        - `050.10.01.01.08` Define 'runway visual range'. [Exam M2; CBIR; IR]
+        - `050.10.01.01.09` Describe the meteorological measurement of runway visual range. [Exam M2; CBIR; IR]
+        - `050.10.01.01.10` Indicate where the transmissometers/forward-scatter meters are placed on the aerodrome. [Exam M2; CBIR; IR]
+        - `050.10.01.01.11` List the units used for runway visual range (m, ft). [TK M2; CBIR; IR]
+        - `050.10.01.01.12` List the different possibilities to transmit information to pilots about runway visual range. [Exam M2; CBIR; IR]
+        - `050.10.01.01.13` Compare ground visibility, prevailing visibility, and runway visual range. [Exam M2; CBIR; IR]
+        - `050.10.01.01.16` State the clouds which are indicated in METAR, TAF and SIGMET. [Exam M2; CBIR; IR]
+        - `050.10.01.01.17` Define 'oktas'. [TK M2; CBIR; IR]
+        - `050.10.01.01.18` Define 'cloud base'. [TK M2; CBIR; IR]
+        - `050.10.01.01.19` Define 'ceiling'. [TK M2; CBIR; IR]
+        - `050.10.01.01.20` Name the unit and the reference level used for information about cloud base (ft). [TK M2; CBIR; IR]
+        - `050.10.01.01.21` Define 'vertical visibility'. [TK M2; CBIR; IR]
+        - `050.10.01.01.22` Explain briefly how and when vertical visibility is measured. [Exam M2; CBIR; IR]
+        - `050.10.01.01.23` Name the units used for vertical visibility (ft, m). [TK M2; CBIR; IR]
+      - **`050.10.01.04` Weather radar observations (Refer to Subject 050 09 04 05)**
+        - `050.10.01.04.02` Interpret ground weather radar images. [Exam M2; CBIR; IR]
+        - `050.10.01.04.03` Describe the basic principle and the type of information given by airborne weather radar. [Exam M2; CBIR; IR]
+        - `050.10.01.04.04` Describe the limits and the errors of airborne weather radar information. [Exam M2; CBIR; IR]
+        - `050.10.01.04.05` Interpret typical airborne weather radar images. [Exam M2; CBIR; IR]
+    - **`050.10.02.00` Weather charts**
+      - **`050.10.02.01` Significant weather charts**
+        - `050.10.02.01.01` Decode and interpret significant weather charts (low, medium and high level). [Exam M2; CBIR; IR]
+        - `050.10.02.01.02` Describe from a significant weather chart the flight conditions at designated locations or along a defined flight route at a given FL. [Exam M2; CBIR; IR]
+      - **`050.10.02.02` Surface charts**
+        - `050.10.02.02.01` Recognise the following weather systems on a surface weather chart (analysed and forecast): ridges, cols and troughs; fronts; frontal side, warm sector and rear side of mid-latitude frontal lows; high- and low-pressure areas. [Exam M2; CBIR; IR]
+    - **`050.10.03.00` Information for flight planning**
+      - **`050.10.03.01` Aviation weather messages**
+        - `050.10.03.01.01` Describe, decode and interpret the following aviation weather messages (given in written or graphical format): METAR, aerodrome special meteorological report (SPECI), trend forecast (TREND), TAF, information concerning en-route weather phenomena which may affect the safety of aircraft operations (SIGMET), information concerning en-route weather phenomena which may affect the safety of low-level aircraft operations (AIRMET), area forecast for low-level flights (GAMET), ARS, volcanic ash advisory information. [Exam M2; TK M3; CBIR; IR]
+        - `050.10.03.01.03` Describe the general meaning of MET REPORT and SPECIAL REPORT. [Exam M2; TK M1; CBIR; IR]
+        - `050.10.03.01.04` List, in general, the cases when a SIGMET and an AIRMET are issued. [Exam M2; TK M1; CBIR; IR]
+        - `050.10.03.01.05` Describe, decode (by using a code table) and interpret the following messages: runway state message (as written in a METAR). Remark: For runway state message, refer to ICAO Doc 7754 'Air Navigation Plan - European Region'. [Exam M2; TK M1; CBIR; IR]
+      - **`050.10.03.02` Meteorological broadcasts for aviation**
+        - `050.10.03.02.01` Describe the meteorological content of broadcasts for aviation: meteorological information for aircraft in flight (VOLMET); automatic terminal information service (ATIS). [Exam M2; TK M1; CBIR; IR]
+      - **`050.10.03.03` Use of meteorological documents**
+        - `050.10.03.03.01` Describe meteorological briefing and advice. [Exam M2; TK M1; CBIR; IR]
+        - `050.10.03.03.02` List the information that a flight crew can receive from meteorological services for pre-flight planning and apply the content of this information on a designated flight route. [Exam M2; TK M1; CBIR; IR]
+        - `050.10.03.03.03` List the meteorological information that a flight crew can receive from flight information services during flight and apply the content of this information for the continuation of the flight. [Exam M2; TK M1; CBIR; IR]
+      - **`050.10.03.04` Meteorological warnings**
+        - `050.10.03.04.01` Describe and interpret aerodrome warnings and wind-shear warnings and alerts. [Exam M2; TK M1; CBIR; IR]
+
+## 062 Radio Nav
+
+_BIR-tagged rows: 178. Exam modules: M1=0, M2=114, M3=0. TK modules: M1=2, M2=61, M3=31._
+
+- **`062.00.00.00` RADIO NAVIGATION**
+  - **`062.02.00.00` RADIO AIDS**
+    - **`062.02.01.00` Ground direction finding (DF)**
+      - **`062.02.01.02` Presentation and interpretation**
+        - `062.02.01.02.01` Define the term 'QDM': the magnetic bearing to the station. [TK M1; CBIR; IR]
+        - `062.02.01.02.02` Define the term 'QDR': the magnetic bearing from the station. [TK M1; CBIR; IR]
+      - **`062.02.01.03` Coverage and range**
+        - `062.02.01.03.01` Use the formula: 1.23 × sqrt transmitter height in feet plus 1.23 × sqrt receiver height in feet to calculate the range in NM. [TK M2; CBIR; IR]
+    - **`062.02.02.00` Non-directional radio beacon (NDB)/automatic direction finding (ADF)**
+      - **`062.02.02.01` Principles**
+        - `062.02.02.01.01` Define the acronym 'NDB': non-directional radio beacon. [TK M2; CBIR; IR]
+        - `062.02.02.01.02` Define the acronym 'ADF': automatic direction-finding equipment. [TK M2; CBIR; IR]
+        - `062.02.02.01.03` State that the NDB is the ground part of the system. [TK M2; CBIR; IR]
+        - `062.02.02.01.04` State that the ADF is the airborne part of the system. [TK M2; CBIR; IR]
+        - `062.02.02.01.05` State that the NDB operates in the LF and MF frequency bands. [Exam M2; CBIR; IR]
+        - `062.02.02.01.06` State that the frequency band assigned to aeronautical NDBs according to ICAO Annex 10 is 190-1750 kHz. [Exam M2; CBIR; IR]
+        - `062.02.02.01.07` Define a 'locator beacon': an LF/MF NDB used as an aid to final approach usually with a range of 10-25 NM. [Exam M2; CBIR; IR]
+        - `062.02.02.01.08` State that certain commercial radio stations transmit within the frequency band of the NDB. [TK M2; CBIR; IR]
+        - `062.02.02.01.10` Describe the use of NDBs for navigation. [Exam M2; CBIR; IR]
+        - `062.02.02.01.11` Describe the procedure to identify an NDB station. [Exam M2; CBIR; IR]
+        - `062.02.02.01.12` Interpret the term 'cone of confusion' in respect of an NDB. [TK M2; CBIR; IR]
+        - `062.02.02.01.13` State that an NDB station emits a N0N/A1A or a N0N/A2A signal. [TK M2; CBIR; IR]
+        - `062.02.02.01.14` State the function of the beat frequency oscillator (BFO). [TK M2; CBIR; IR]
+        - `062.02.02.01.15` State that in order to identify a N0N/A1A NDB, the BFO circuit of the receiver has to be activated. [TK M2; CBIR; IR]
+        - `062.02.02.01.16` State that on modern aircraft, the BFO is activated automatically. [TK M2; CBIR; IR]
+      - **`062.02.02.02` Presentation and interpretation**
+        - `062.02.02.02.01` Name the types of indicators commonly in use: electronic display; radio magnetic indicator (RMI); fixed-card ADF (radio compass); moving-card ADF. [TK M2; CBIR; IR]
+        - `062.02.02.02.02` Interpret the indications given on RMI, fixed-card and moving-card ADF displays. [Exam M2; CBIR; IR]
+        - `062.02.02.02.03` Given a display, interpret the relevant ADF information. [Exam M2; CBIR; IR]
+        - `062.02.02.02.04` Calculate the true bearing from the compass heading and relative bearing. [Exam M2; CBIR; IR]
+        - `062.02.02.02.05` Convert the compass bearing into magnetic bearing and true bearing. [Exam M2; CBIR; IR]
+        - `062.02.02.02.06` Describe how to fly the following in-flight ADF procedures: homing and tracking, and explain the influence of wind; interception of inbound QDM and outbound QDR; changing from one QDM/QDR to another; determining station passage and the abeam point. [Exam M2; CBIR; IR]
+      - **`062.02.02.03` Coverage and range**
+        - `062.02.02.03.01` State that the power of the transmitter limits the range of an NDB. [TK M2; CBIR; IR]
+        - `062.02.02.03.03` Describe the propagation path of NDB radio waves with respect to the ionosphere and the Earth's surface. [TK M2; CBIR; IR]
+        - `062.02.02.03.04` Explain that the interference between sky waves and ground waves leads to 'fading'. [Exam M2; CBIR; IR]
+        - `062.02.02.03.05` Define that the accuracy the pilot has to fly the required bearing in order to be considered established during approach, according to ICAO Doc 8168, has to be within plus/minus 5 degrees. [Exam M2; CBIR; IR]
+        - `062.02.02.03.06` State that there is no warning indication of NDB failure. [Exam M2; CBIR; IR]
+      - **`062.02.02.04` Errors and accuracy**
+        - `062.02.02.04.01` Explain 'coastal refraction': as a radio wave travelling over land crosses the coast, the wave speeds up over water and the wave front bends. [TK M2; CBIR; IR]
+        - `062.02.02.04.02` Define 'night/twilight effect': the influence of sky waves and ground waves arriving at the ADF receiver with a difference of phase and polarisation which introduce bearing errors. [TK M2; CBIR; IR]
+        - `062.02.02.04.03` State that interference from other NDB stations on the same frequency may occur at night due to sky-wave contamination. [Exam M2; CBIR; IR]
+      - **`062.02.02.05` Factors affecting range and accuracy**
+        - `062.02.02.05.01` Describe diffraction of radio waves in mountainous terrain (mountain effect). [Exam M2; CBIR; IR]
+        - `062.02.02.05.02` State that static radiation energy from a cumulonimbus cloud may interfere with the radio wave and influence the ADF bearing indication. [Exam M2; CBIR; IR]
+    - **`062.02.03.00` VHF omnidirectional radio range (VOR): conventional VOR (CVOR) and Doppler VOR (DVOR)**
+      - **`062.02.03.01` Principles**
+        - `062.02.03.01.02` State that the frequency band allocated to VOR according to ICAO Annex 10 is VHF, and the frequencies used are 108.0-117.975 MHz. [Exam M2; CBIR; IR]
+        - `062.02.03.01.03` State that frequencies within the allocated VOR range 108.0-111.975 MHz, which have an odd number in the first decimal place, are used by instrument landing system (ILS). [Exam M2; CBIR; IR]
+        - `062.02.03.01.04` State that the following types of VOR are in operation: conventional VOR (CVOR): a first-generation VOR station emitting signals by means of a rotating antenna; Doppler VOR (DVOR): a second-generation VOR station emitting signals by means of a combination of fixed antennas utilising the Doppler principle; en-route VOR for use by IFR traffic; terminal VOR (TVOR): a station with a shorter range used as part of the approach and departure structure at major aerodromes; test VOR (VOT): a VOR station emitting a signal to test VOR indicators in an aircraft. [Exam M2; CBIR; IR]
+        - `062.02.03.01.05` State that automatic terminal information service (ATIS) information is transmitted on VOR frequencies. [Exam M2; CBIR; IR]
+        - `062.02.03.01.06` List the three main components of VOR airborne equipment: the antenna; the receiver; the indicator. [TK M2; CBIR; IR]
+        - `062.02.03.01.07` Describe the identification of a VOR in terms of Morse-code letters and additional plain text. [Exam M2; CBIR; IR]
+        - `062.02.03.01.09` State that failure of the VOR station to stay within the required limits can cause the removal of identification and navigation components from the carrier or radiation to cease. [Exam M2; CBIR; IR]
+      - **`062.02.03.02` Presentation and interpretation**
+        - `062.02.03.02.01` Read off the radial on an RMI. [Exam M2; IR]
+        - `062.02.03.02.02` Read off the angular displacement in relation to a preselected radial on a horizontal situation indicator (HSI) or omnibearing indicator (OBI). [Exam M2; IR]
+        - `062.02.03.02.03` Explain the use of the TO/FROM indicator in order to determine aircraft position relative to the VOR considering also the heading of the aircraft. [Exam M2; IR]
+        - `062.02.03.02.04` Interpret VOR information as displayed on HSI, CDI and RMI. [Exam M2; IR]
+        - `062.02.03.02.05` Describe the following in-flight VOR procedures: tracking, and explain the influence of wind when tracking; interception of a radial inbound and outbound to/from a VOR; changing from one radial inbound/outbound to another; determining station passage and the abeam point. [Exam M2; IR]
+        - `062.02.03.02.06` State that when converting a radial into a true bearing, the variation at the VOR station has to be taken into account. [Exam M2; IR]
+      - **`062.02.03.04` Errors and accuracy**
+        - `062.02.03.04.01` Define that the accuracy the pilot has to fly the required bearing in order to be considered established on a VOR track when flying approach procedures, according to ICAO Doc 8168, has to be within the half-full scale deflection of the required track. [Exam M2; CBIR; IR]
+        - `062.02.03.04.02` State that due to reflections from terrain, radials can be bent and lead to wrong or fluctuating indications, which is called 'scalloping'. [Exam M2; CBIR; IR]
+    - **`062.02.04.00` Distance-measuring equipment (DME)**
+      - **`062.02.04.01` Principles**
+        - `062.02.04.01.01` State that DME operates in the UHF band. [Exam M2; CBIR; IR]
+        - `062.02.04.01.02` State that the system comprises two basic components: the aircraft component: the interrogator; the ground component: the transponder. [TK M2; CBIR; IR]
+        - `062.02.04.01.04` Explain that the distance measured by DME is slant range. [Exam M2; CBIR; IR]
+        - `062.02.04.01.05` Illustrate that a position line using DME is a circle with the station at its centre. [Exam M2; CBIR; IR]
+        - `062.02.04.01.06` State that the pairing of VHF and UHF frequencies (VOR/DME) enables the selection of two items of navigation information from one frequency setting. [TK M2; CBIR; IR]
+        - `062.02.04.01.07` Describe, in the case of co-location with VOR and ILS, the frequency pairing and identification procedure. [TK M2; CBIR; IR]
+        - `062.02.04.01.08` State that military UHF tactical air navigation aid (TACAN) stations may be used for DME information. [Exam M2; CBIR; IR]
+      - **`062.02.04.02` Presentation and interpretation**
+        - `062.02.04.02.01` State that when identifying a DME station co-located with a VOR station, the identification signal with the higher-tone frequency is the DME which identifies itself approximately every 40 seconds. [TK M2; CBIR; IR]
+        - `062.02.04.02.02` Calculate ground distance from given slant range and altitude. [Exam M2; CBIR; IR]
+        - `062.02.04.02.03` Describe the use of DME to fly a DME arc in accordance with ICAO Doc 8168 Volume 1. [Exam M2; CBIR; IR]
+        - `062.02.04.02.04` State that a DME system may have a ground speed (GS) and time to station read-out combined with the DME read-out. [TK M2; CBIR; IR]
+      - **`062.02.04.03` Coverage and range**
+        - `062.02.04.03.01` Explain why a ground station can generally respond to a maximum of 100 aircraft. [Exam M2; CBIR; IR]
+        - `062.02.04.03.02` Explain which aircraft will be denied a DME range first when more than 100 interrogations are being made. [Exam M2; CBIR; IR]
+    - **`062.02.05.00` Instrument landing system (ILS)**
+      - **`062.02.05.01` Principles**
+        - `062.02.05.01.01` Name the three main components of an ILS: the localiser (LOC); the glide path (GP); range information (markers or DME). [Exam M2; CBIR; IR]
+        - `062.02.05.01.02` State the site locations of the ILS components: the LOC antenna should be located on the extension of the runway centre line at the stop-end; the GP antenna should be locate beyond the runway threshold, laterally displaced to the side of the runway centre line. [TK M2; CBIR; IR]
+        - `062.02.05.01.03` Explain that marker beacons produce radiation patterns to indicate predetermined distances from the threshold along the ILS GP. [Exam M2; CBIR; IR]
+        - `062.02.05.01.04` State that marker beacons are sometimes replaced by a DME paired with the LOC frequency. [Exam M2; CBIR; IR]
+        - `062.02.05.01.05` State that in the ILS LOC frequency assigned band 108.0-111.975 MHz, only frequencies which have an odd number in the first decimal are ILS LOC frequencies. [Exam M2; CBIR; IR]
+        - `062.02.05.01.06` State that the GP operates in the UHF band. [Exam M2; CBIR; IR]
+        - `062.02.05.01.09` Explain that both the LOC and the GP antenna radiates side lobes (false beams) which can give rise to false centre-line and false GP indication. [Exam M2; CBIR; IR]
+        - `062.02.05.01.10` Explain that the back beam from the LOC antenna may be used as a published 'non-precision approach'. [TK M2; CBIR; IR]
+        - `062.02.05.01.11` State that the recommended GP is 3 degrees . [Exam M2; CBIR; IR]
+        - `062.02.05.01.12` Name the frequency, modulation and identification assigned to all marker beacons. All marker beacons operate on 75-MHz carrier frequency. The modulation frequencies of the audio are: outer marker: low; middle marker: medium; inner marker: high. The audio frequency modulation (for identification) is the continuous modulation of the audio frequency and is keyed as follows: outer marker: 2 dashes per second continuously; middle marker: a continuous series of alternate dots and dashes; inner marker: 6 dots per second continuously. The outer-marker cockpit indicator is coloured blue, the middle marker amber, and the inner marker white. [Exam M2; CBIR; IR]
+        - `062.02.05.01.13` State that the final-approach area contains a fix or facility that permits verification of the ILS GP-altimeter relationship. The outer marker or DME is usually used for this purpose. [Exam M2; CBIR; IR]
+      - **`062.02.05.02` Presentation and interpretation**
+        - `062.02.05.02.01` Describe the ILS identification regarding frequency and Morse code or plain text. [Exam M2; CBIR; IR]
+        - `062.02.05.02.04` State that warning flags will appear for both the LOC and the GP if the received signal strength is below a threshold value. [Exam M2; CBIR; IR]
+        - `062.02.05.02.06` Interpret the indications on a CDI and an HSI: full-scale deflection of the CDI needle corresponds to approximately 2.5 degrees displacement from the ILS centre line; full-scale deflection on the GP corresponds to approximately 0.7 degrees from the ILS GP centre line. [Exam M2; CBIR; IR]
+        - `062.02.05.02.07` Interpret the aircraft's position in relation to the extended runway centre line on a back-beam approach. [Exam M2; IR]
+        - `062.02.05.02.08` Explain the setting of the course pointer of an HSI and the course selector of an omnibearing indicator (OBI) for front-beam and back-beam approaches. [Exam M2; IR]
+      - **`062.02.05.03` Coverage and range**
+        - `062.02.05.03.01` Sketch the standard coverage area of the LOC and GP with angular sector limits in degrees and distance limits from the transmitter: LOC coverage area is 10 degrees on either side of the centre line to a distance of 25 NM from the runway, and 35 degrees on either side of the centre line to a distance of 17 NM from the runway; GP coverage area is 8 degrees on either side of the centre line to a distance of minimum 10 NM from the runway. [Exam M2; CBIR; IR]
+      - **`062.02.05.04` Errors and accuracy**
+        - `062.02.05.04.05` Explain the following in accordance with ICAO Doc 8168: the accuracy the pilot has to fly the ILS LOC to be considered established on an ILS track is within the half-full scale deflection of the required track; the aircraft has to be established within the half-scale deflection of the LOC before starting descent on the GP; the pilot has to fly the ILS GP to a maximum of half-scale fly-up deflection of the GP in order to stay in protected airspace. [Exam M2; CBIR; IR]
+        - `062.02.05.04.06` State that if a pilot deviates by more than half-course deflection on the LOC or by more than half-dot deflection on the GP, an immediate go-around should be executed because obstacle clearance may no longer be guaranteed. [Exam M2; CBIR; IR]
+  - **`062.03.00.00` RADAR**
+    - **`062.03.01.00` Pulse techniques**
+      - **`062.03.01.01` Pulse techniques and associated terms**
+        - `062.03.01.01.01` Name the different applications of radar with respect to air traffic control (ATC), weather observations, and airborne weather radar (AWR). [Exam M2; CBIR; IR]
+        - `062.03.01.01.02` Describe the pulse technique and echo principle on which primary radar systems are based. [TK M2; IR]
+    - **`062.03.02.00` Ground radar**
+      - **`062.03.02.01` Principles**
+        - `062.03.02.01.01` Explain that primary radar provides bearing and distance of targets. [Exam M2; CBIR; IR]
+        - `062.03.02.01.02` Explain that primary ground radar is used to detect aircraft that are not equipped with a secondary radar transponder. [TK M2; CBIR; IR]
+      - **`062.03.02.02` Presentation and interpretation**
+        - `062.03.02.02.01` State that modern ATC systems use inputs from various sensors to generate the display. [TK M2; CBIR; IR]
+    - **`062.03.04.00` Secondary surveillance radar and transponder**
+      - **`062.03.04.01` Principles**
+        - `062.03.04.01.01` State that the ATC system is based on the replies provided by the airborne transponders in response to interrogations from the ATC secondary radar. [Exam M2; CBIR; IR]
+        - `062.03.04.01.02` State that the ground ATC secondary radar uses techniques which provide the ATC with information that cannot be acquired by the primary radar. [TK M2; CBIR; IR]
+        - `062.03.04.01.03` State that an airborne transponder provides coded-reply signals in response to interrogation signals from the ground secondary radar and from aircraft equipped with traffic alert and collision avoidance system (TCAS). [TK M2; CBIR; IR]
+        - `062.03.04.01.04` State the advantages of secondary surveillance radar (SSR) over a primary radar regarding range and collected information due to transponder principal information and active participation of the aircraft. [Exam M2; CBIR; IR]
+      - **`062.03.04.02` Modes and codes**
+        - `062.03.04.02.01` State that the interrogator transmits its interrogations in the form of a series of pulse pairs. [TK M2; CBIR; IR]
+        - `062.03.04.02.02` Name the interrogation modes: Mode A; Mode C; Mode S. [TK M2; CBIR; IR]
+        - `062.03.04.02.05` State that Mode A designation is a sequence of four digits which can be manually selected from 4 096 available codes. [TK M2; CBIR; IR]
+        - `062.03.04.02.06` State that in Mode C reply, the pressure altitude is reported in 100-ft increments. [TK M2; IR]
+        - `062.03.04.02.07` State that in addition to the information provided, on request from ATC, a special position identification (SPI) pulse can be transmitted but only as a result of a manual selection by the pilot (IDENT button). [TK M2; IR]
+        - `062.03.04.02.08` State the need for compatibility of Mode S with Mode A and C. [TK M2; IR]
+        - `062.03.04.02.09` Explain that Mode S transponders receive interrogations from TCAS and SSR ground stations. [TK M2; IR]
+        - `062.03.04.02.10` State that Mode S interrogation contains either the aircraft address, selective call or all-call address. [TK M2; IR]
+        - `062.03.04.02.11` State that every aircraft is allocated an ICAO aircraft address, which is hard-coded into the Mode S transponder (Mode S address). [TK M2; CBIR; IR]
+      - **`062.03.04.03` Presentation and interpretation**
+        - `062.03.04.03.01` State that an aircraft can be identified by a unique code. [Exam M2; CBIR; IR]
+        - `062.03.04.03.02` State which information can be presented on the ATC display system: pressure altitude; flight level; flight number or aircraft registration number; GS. [Exam M2; CBIR; IR]
+        - `062.03.04.03.03` Explain the use and function of the selector modes: OFF, Standby, ON (Mode A), ALT (Mode A, C and S), TEST, and of the reply lamp. [TK M2; CBIR; IR]
+  - **`062.06.00.00` GLOBAL NAVIGATION SATELLITE SYSTEMS (GNSSs)**
+    - **`062.06.01.00` Global navigation satellite systems (GNSSs)**
+      - **`062.06.01.01` General**
+        - `062.06.01.01.01` State that there are four main GNSSs. These are: USA NAVigation System with Timing And Ranging Global Positioning System (NAVSTAR GPS); Russian GLObal NAvigation Satellite System (GLONASS); European Galileo (under construction); Chinese BeiDou (under construction). [Exam M2; CBIR; IR]
+        - `062.06.01.01.02` State that all four systems (will) consist of a constellation of satellites which can be used by a suitably equipped receiver to determine position. [TK M2; CBIR; IR]
+      - **`062.06.01.02` Operation**
+        - `062.06.01.02.01` State that there are currently two modes of operation: standard positioning service (SPS) for civilian users, and precise positioning service (PPS) for authorised users. [Exam M2; CBIR; IR]
+        - `062.06.01.02.02` SPS was originally designed to provide civilian users with a less accurate positioning capability than PPS. [Exam M2; CBIR; IR]
+        - `062.06.01.02.03` Name the three GNSS segments as follows: space segment; control segment; user segment. [TK M2; CBIR; IR]
+        - `062.06.01.02.09` State that an ionospheric model is used to calculate the time delay of the signal travelling through the ionosphere. [TK M2; CBIR; IR]
+        - `062.06.01.02.11` State that satellites are equipped with atomic clocks which allow the system to keep very accurate time reference. [TK M2; CBIR; IR]
+        - `062.06.01.02.12` State that the control segment comprises: a master control station; a ground antenna; monitoring stations. [TK M2; CBIR; IR]
+        - `062.06.01.02.14` State that GNSS supplies three-dimensional position fixes and speed data, plus a precise time reference. [TK M2; CBIR; IR]
+        - `062.06.01.02.15` State that a GNSS receiver is able to determine the distance to a satellite by determining the difference between the time of transmission by the satellite and the time of reception. [TK M2; CBIR; IR]
+        - `062.06.01.02.16` State that the initial distance calculated to the satellites is called pseudo-range because the difference between the GNSS receiver and the satellite time references initially creates an erroneous range. [TK M2; IR]
+        - `062.06.01.02.17` State that each range defines a sphere with its centre at the satellite. [TK M2; CBIR; IR]
+        - `062.06.01.02.18` State that there are four unknown parameters (x, y, z and Delta t) (receiver clock error) which require the measurement of ranges to four different satellites in order to get the position. [TK M2; CBIR; IR]
+        - `062.06.01.02.19` State that the GNSS receiver is able to synchronise to the correct time reference when receiving four satellites. [TK M2; CBIR; IR]
+        - `062.06.01.02.20` State that the receiver is able to calculate aircraft ground speed using the space vehicle (SV) Doppler frequency shift or the change in receiver position over time. [TK M2; IR]
+        - `062.06.01.02.21` Define 'receiver autonomous integrity monitoring (RAIM)' as a technique that ensures the integrity of the provided data by redundant measurements. [Exam M2; CBIR; IR]
+        - `062.06.01.02.22` State that RAIM is achieved by consistency checks among range measurements. [Exam M2; CBIR; IR]
+    - **`062.06.02.00` Ground-, satellite- and aircraft-based augmentation systems**
+      - **`062.06.02.02` Satellite-based augmentation systems (SBASs)**
+        - `062.06.02.02.01` Explain the principle of an SBAS: to measure on the ground the errors in the signals received from the satellites and transmit differential corrections and integrity messages for navigation satellites. [TK M2; CBIR; IR]
+        - `062.06.02.02.02` State that the frequency band of the data link is identical to that of the GPS signals. [TK M2; CBIR; IR]
+        - `062.06.02.02.03` Explain that the use of geostationary satellites enables messages to be broadcast over very wide areas. [TK M2; CBIR; IR]
+        - `062.06.02.02.04` State that pseudo-range measurements to these geostationary satellites can also be made, as if they were GPS satellites. [TK M2; CBIR; IR]
+        - `062.06.02.02.05` State that SBAS consists of two elements: ground infrastructure (monitoring and processing stations); communication satellites. [TK M2; CBIR; IR]
+        - `062.06.02.02.06` State that SBAS allows the implementation of three-dimensional Type A and Type B approaches. [Exam M2; CBIR; IR]
+        - `062.06.02.02.07` State the following examples of SBAS: European Geostationary Navigation Overlay Service (EGNOS) in western Europe and the Mediterranean; wide area augmentation system (WAAS) in the USA; multi-functional transport satellite (MTSAT)-based augmentation system (MSAS) in Japan; GPS and geostationary earth orbit augmented navigation (GAGAN) in India. [TK M2; CBIR; IR]
+        - `062.06.02.02.08` State that SBAS is designed to significantly improve accuracy and integrity. [TK M2; CBIR; IR]
+        - `062.06.02.02.09` Explain that integrity and safety are improved by alerting SBAS users within 6 seconds if a GPS malfunction occurs. [Exam M2; CBIR; IR]
+      - **`062.06.02.04` Aircraft-based augmentation systems (ABASs)**
+        - `062.06.02.04.01` Explain the principle of ABAS: to use redundant elements within the GPS constellation (e.g. multiplicity of distance measurements to various satellites) or the combination of GNSS measurements with those of other navigation sensors (such as inertial systems) in order to develop integrity control. [Exam M2; CBIR; IR]
+        - `062.06.02.04.02` State that the type of ABAS using only GNSS information is named receiver autonomous integrity monitoring (RAIM). [Exam M2; CBIR; IR]
+        - `062.06.02.04.03` State that a system using information from additional onboard sensors is named aircraft autonomous integrity monitoring (AAIM). [Exam M2; CBIR; IR]
+        - `062.06.02.04.04` Explain that the typical sensors used are barometric altimeter and inertial reference system (IRS). [Exam M2; CBIR; IR]
+  - **`062.07.00.00` PERFORMANCE-BASED NAVIGATION (PBN)**
+    - **`062.07.01.00` Performance-based navigation (PBN) concept (as described in ICAO Doc 9613)**
+      - **`062.07.01.01` PBN principles**
+        - `062.07.01.01.01` List the factors used to define area navigation (RNAV) or required navigation performance (RNP) system performance requirements (accuracy, integrity and continuity). [TK M3; CBIR; IR]
+        - `062.07.01.01.02` State that these RNAV and RNP systems are necessary to optimise the utilisation of available airspace. [TK M2/M3; IR]
+        - `062.07.01.01.03` State that it is necessary for flight crew and air traffic controllers to be aware of the on-board RNAV or RNP system capabilities in order to determine whether the performance of the RNAV or RNP system is appropriate for the specific airspace requirements. [TK M2/M3; IR]
+        - `062.07.01.01.04` Define accuracy as the conformance of the true position and the required position. [TK M2/M3; IR]
+        - `062.07.01.01.05` Define continuity as the capability of the system to perform its function without unscheduled interruptions during the intended operation. [Exam M2; TK M3; CBIR; IR]
+        - `062.07.01.01.06` Define integrity as a measure of the trust that can be placed in the correctness of the information supplied by the total system. Integrity includes the ability of a system to provide timely and valid alerts to the user. [Exam M2; TK M3; CBIR; IR]
+        - `062.07.01.01.07` State that, unlike conventional navigation, PBN is not sensor-specific. [Exam M2; TK M3; CBIR; IR]
+        - `062.07.01.01.08` Explain the difference between raw data and computed data. [Exam M2; TK M3; CBIR; IR]
+        - `062.07.01.01.09` Define availability as the percentage of time (annually) during which the system is available for use. [Exam M2; TK M3; CBIR; IR]
+    - **`062.07.02.00` Navigation specifications**
+      - **`062.07.02.01` Area navigation (RNAV) and required navigation performance (RNP)**
+        - `062.07.02.01.01` State the difference between RNAV and RNP in terms of the requirement for on-board performance monitoring and alerting. [Exam M2; TK M3; CBIR; IR]
+      - **`062.07.02.03` Designation of RNP and RNAV specifications**
+        - `062.07.02.03.01` Interpret X in RNAV X or RNP X as the lateral navigation (LNAV) accuracy (total system error) in nautical miles, which is expected to be achieved at least 95 per cent of the flight time by the population of aircraft operating within the given airspace, route or procedure. [Exam M2; TK M3; IR]
+        - `062.07.02.03.02` State that aircraft approved to the more stringent accuracy requirements may not necessarily meet some of the functional requirements of the navigation specification that has a less stringent accuracy requirement. [Exam M2; TK M3; CBIR; IR]
+        - `062.07.02.03.04` State that RNAV 5 is used in the en-route and arrival phases of flight. [Exam M2; TK M3; CBIR; IR]
+        - `062.07.02.03.08` State that RNAV 1 and RNP 1 are used in the arrival and departure phases of flight. [Exam M2; CBIR; IR]
+        - `062.07.02.03.09` State that required navigation performance approach (RNP APCH) is used in the approach phase of flight. [Exam M2; CBIR; IR]
+        - `062.07.02.03.10` State that required navigation performance authorisation required approach (RNP AR APCH) is used in the approach phase of flight. [Exam M2; CBIR; IR]
+    - **`062.07.03.00` Use of performance-based navigation (PBN)**
+      - **`062.07.03.03` Specific RNAV and RNP system functions**
+        - `062.07.03.03.01` Recognise the definition of radius to fix (RF) leg. [Exam M2; TK M3; CBIR; IR]
+        - `062.07.03.03.02` Recognise the definition of a fixed radius transition (FRT). [Exam M2; TK M3; CBIR; IR]
+        - `062.07.03.03.03` State the importance of respecting the flight director guidance and the speed constraints associated with an RF procedure. [Exam M2; TK M3; CBIR; IR]
+        - `062.07.03.03.04` Explain the difference between a fly-by-turn and a fly-over. [Exam M2; TK M3; CBIR; IR]
+        - `062.07.03.03.07` Define the term 'offset flight path'. [Exam M2; TK M3; CBIR; IR]
+    - **`062.07.04.00` Performance-based navigation (PBN) operations**
+      - **`062.07.04.01` Performance-based navigation (PBN) principles**
+        - `062.07.04.01.01` Define 'path definition error' (PDE). [Exam M2; TK M3; CBIR; IR]
+        - `062.07.04.01.02` Define 'flight technical error' (FTE) and state that the FTE is the error in following the prescribed path, either by the auto-flight system or by the pilot. [Exam M2; TK M3; CBIR; IR]
+        - `062.07.04.01.03` Define 'navigation system error' (NSE) and state that the accuracy of a navigation system may be referred to as NSE. [Exam M2; TK M3; CBIR; IR]
+        - `062.07.04.01.04` Define 'total system error' (TSE) and state that the geometric sum of the PDE, FTE and NSE equals the TSE. [Exam M2; TK M3; CBIR; IR]
+      - **`062.07.04.02` On-board performance monitoring and alerting**
+        - `062.07.04.02.01` State that on-board performance monitoring and alerting of flight technical errors is managed by on-board systems or flight crew procedures. [Exam M2; TK M3; CBIR; IR]
+        - `062.07.04.02.02` State that on-board performance monitoring and alerting of navigation system errors is a requirement of on-board equipment for RNP. [Exam M2; TK M3; CBIR; IR]
+        - `062.07.04.02.06` State that on-board performance monitoring and alerting of path definition error is managed by gross reasonableness checks of navigation data. [Exam M2; TK M3; CBIR; IR]
+      - **`062.07.04.03` Abnormal situations**
+        - `062.07.04.03.01` State that abnormal and contingency procedures are to be used in case of loss of the PBN capability. [Exam M2; TK M3; CBIR; IR]
+      - **`062.07.04.04` Database management**
+        - `062.07.04.04.01` State that, unless otherwise specified in the operations documentation or acceptable means of compliance (AMCs), the navigational database must be valid for the current aeronautical information regulation and control (AIRAC) cycle. [Exam M2; TK M3; CBIR; IR]
+    - **`062.07.05.00` Requirements of specific RNAV and RNP specifications**
+      - **`062.07.05.02` RNAV 5**
+        - `062.07.05.02.01` State that manual data entry is acceptable for RNAV 5. [Exam M2; TK M3; CBIR; IR]
+      - **`062.07.05.03` RNAV 1/RNAV 2/RNP 1/RNP 2**
+        - `062.07.05.03.01` State that pilots must not fly an RNAV 1, RNAV 2, RNP 1 or RNP 2 standard instrument departure (SID) or standard instrument arrival (STAR) unless it is retrievable by route name from the on-board navigation database and conforms to the charted route. [Exam M2; TK M3; CBIR; IR]
+        - `062.07.05.03.02` State that the route may subsequently be modified through the insertion (from the database) or deletion of specific waypoints in response to ATC clearances. [Exam M2; TK M3; CBIR; IR]
+        - `062.07.05.03.03` State that the manual entry, or creation of new waypoints by manual entry, of either latitude and longitude or place/bearing/distance values is not permitted. [Exam M2; TK M3; CBIR; IR]
+      - **`062.07.05.05` Required navigation performance approach (RNP APCH)**
+        - `062.07.05.05.01` State that pilots must not fly an RNP APCH unless it is retrievable by procedure name from the on-board navigation database and conforms to the charted procedure. [Exam M2; CBIR; IR]
+        - `062.07.05.05.02` State that an RNP APCH to LNAV minima is a non-precision IAP designed for two-dimensional approach operations. [Exam M2; CBIR; IR]
+        - `062.07.05.05.03` State that an RNP APCH to lateral navigation (LNAV)/vertical navigation (VNAV) minima has lateral guidance based on GNSS and vertical guidance based on either SBAS or barometric vertical navigation (Baro-VNAV). [Exam M2; CBIR; IR]
+        - `062.07.05.05.04` State that an RNP APCH to LNAV/VNAV minima may only be conducted with vertical guidance certified for the purpose. [Exam M2; CBIR; IR]
+        - `062.07.05.05.05` Explain why an RNP APCH to LNAV/VNAV minima based on Baro-VNAV may only be conducted when the aerodrome temperature is within a promulgated range if the barometric input is not automatically temperature-compensated. [Exam M2; CBIR; IR]
+        - `062.07.05.05.06` State that the correct altimeter setting is critical for the safe conduct of an RNP APCH using Baro-VNAV. [Exam M2; CBIR; IR]
+        - `062.07.05.05.07` State that an RNP APCH to LNAV/VNAV minima is a three-dimensional operation. [Exam M2; CBIR; IR]
+        - `062.07.05.05.08` State that an RNP APCH to localiser performance with vertical guidance (LPV) minima is a three-dimensional operation. [Exam M2; CBIR; IR]
+        - `062.07.05.05.09` State that RNP APCH to LPV minima requires a final approach segment (FAS) data block. [Exam M2; CBIR; IR]
+        - `062.07.05.05.10` State that RNP approaches to LPV minima require SBAS. [Exam M2; CBIR; IR]
+        - `062.07.05.05.11` State that the FAS data block is a standard data format to describe the final approach path. [Exam M2; CBIR; IR]
+      - **`062.07.05.06` Required navigation performance authorisation required approach (RNP AR APCH)**
+        - `062.07.05.06.01` State that RNP AR APCH requires authorisation. [Exam M2; CBIR; IR]
+
+## 090 Communications
+
+_BIR-tagged rows: 56. Exam modules: M1=0, M2=0, M3=43. TK modules: M1=0, M2=9, M3=13._
+
+- **`090.00.00.00` COMMUNICATIONS**
+  - **`090.01.00.00` CONCEPTS**
+    - **`090.01.01.00` Associated terms**
+      - **`090.01.01.01` Meanings and significance**
+        - `090.01.01.01.03` Recognise the terms used in conjunction with the approach and holding procedures. [Exam M3; CBIR; IR]
+      - **`090.01.01.02` Air traffic services (ATS) abbreviations**
+        - `090.01.01.02.01` Define commonly used ATS abbreviations: flight conditions; airspace; services; time; VFR-related terms; IFR-related terms; miscellaneous. [Exam M3; CBIR; IR]
+      - **`090.01.01.03` Q-code groups commonly used in radiotelephony (RT) air-ground communications**
+        - `090.01.01.03.01` Define Q-code groups commonly used in RT air-ground communications: pressure settings; directions and bearings. [Exam M3; CBIR; IR]
+        - `090.01.01.03.02` State the procedure for obtaining bearing information in flight. [Exam M3; CBIR; IR]
+      - **`090.01.01.04` Categories of messages**
+        - `090.01.01.04.01` Identify to which category of messages a type of message belongs and identify the associated priority indicator. [Exam M3; TK M2; CBIR; IR]
+  - **`090.02.00.00` GENERAL OPERATING PROCEDURES**
+    - **`090.02.01.00` Transmission standards**
+      - **`090.02.01.01` Transmission of letters**
+        - `090.02.01.01.01` Know the phonetic alphabet used in RT. [TK M3; CBIR; IR]
+        - `090.02.01.01.02` Identify the circumstances when words should be spelt out. [TK M3; CBIR; IR]
+      - **`090.02.01.02` Transmission of numbers**
+        - `090.02.01.02.01` Describe the method of transmission of numbers: pronunciation; single digits, whole hundreds and whole thousands; state how numbers are transmitted in different circumstances. [TK M3; CBIR; IR]
+      - **`090.02.01.03` Transmission of time**
+        - `090.02.01.03.01` Describe the ways of transmitting time: the standard time reference is the Coordinated Universal Time (UTC); using only minutes, or minutes and hours, when required. [TK M3; CBIR; IR]
+      - **`090.02.01.05` Standard words and phrases**
+        - `090.02.01.05.01` Define the meaning of standard words and phrases. [TK M3; CBIR; IR]
+        - `090.02.01.05.02` Recognise, describe and use the correct standard phraseology for each phase of a VFR flight (consider communication with each type of aeronautical station): before taxi; taxi; departure; en route; circuit; final; landing; after landing. [Exam M3; CBIR; IR]
+        - `090.02.01.05.03` Recognise, describe and use the correct standard phraseology for each phase of an IFR flight, including PBN operations (consider communication with each type of aeronautical station): before pushback or taxi; pushback; taxi; departure; en route; approach; final approach; landing; after landing. [Exam M3; CBIR; IR]
+      - **`090.02.01.06` RT call signs for aeronautical stations including use of abbreviated call signs**
+        - `090.02.01.06.01` Name the two parts of the call sign of an aeronautical station. [Exam M3; CBIR; IR]
+        - `090.02.01.06.02` Identify the call-sign suffixes for aeronautical stations. [Exam M3; CBIR; IR]
+        - `090.02.01.06.03` Explain when the call sign may be omitted or abbreviated to the use of suffix only. [Exam M3; CBIR; IR]
+      - **`090.02.01.07` RT call signs for aircraft including use of abbreviated call signs**
+        - `090.02.01.07.04` Explain when the suffix 'HEAVY' or 'SUPER' is used with an aircraft call sign. [Exam M3; TK M2; CBIR; IR]
+        - `090.02.01.07.05` Explain the use of the phrase 'Change your call sign to...'. [Exam M3; CBIR; IR]
+        - `090.02.01.07.06` Explain the use of the phrase 'Revert to flight plan call sign'. [Exam M3; CBIR; IR]
+      - **`090.02.01.08` Transfer of communication**
+        - `090.02.01.08.01` Describe the procedure for transfer of communication: by ground station; by aircraft. [Exam M3; CBIR; IR]
+      - **`090.02.01.09` Test procedures including readability scale**
+        - `090.02.01.09.01` Explain how to test radio transmission and reception. [Exam M3; TK M2; CBIR; IR]
+        - `090.02.01.09.02` State the readability scale and explain its meaning. [Exam M3; TK M2; CBIR; IR]
+      - **`090.02.01.10` Read-back and acknowledgement requirements**
+        - `090.02.01.10.01` Describe the requirement to read back ATC route clearances. [Exam M3; TK M2; CBIR; IR]
+        - `090.02.01.10.02` Describe the requirement to read back clearances related to the runway in use. [Exam M3; TK M2; CBIR; IR]
+        - `090.02.01.10.03` Describe the requirement to read back other clearances including conditional clearances. [Exam M3; TK M2; CBIR; IR]
+        - `090.02.01.10.04` Describe the requirement to read back other data such as runway, secondary surveillance radar (SSR) codes, etc. [Exam M3; TK M2; CBIR; IR]
+      - **`090.02.01.11` Radar procedural phraseology**
+        - `090.02.01.11.01` Use the correct phraseology for an aircraft receiving a radar service: radar identification; radar vectoring; traffic information and avoidance; SSR procedures. [Exam M3; TK M2; CBIR; IR]
+      - **`090.02.01.12` Level changes and reports**
+        - `090.02.01.12.01` Use the correct term to describe vertical position in relation to: flight level (standard pressure setting); altitude (metres/feet on QNH); height (metres/feet on QFE). [Exam M3; CBIR; IR]
+  - **`090.03.00.00` RELEVANT WEATHER INFORMATION**
+    - **`090.03.01.00` Aerodrome weather**
+      - **`090.03.01.01` Aerodrome weather terms**
+        - `090.03.01.01.01` List the contents of aerodrome weather reports and state units of measurement used for each item: wind direction and speed; variation of wind direction and speed; visibility; present weather; cloud amount and type (including the definition of cloud and visibility OK (CAVOK); air temperature and dew point; pressure values (QNH, QFE); supplementary information (aerodrome warnings, landing runway, runway conditions, restrictions, obstructions, wind-shear warnings, etc.). [Exam M3; CBIR; IR]
+      - **`090.03.01.02` Weather broadcast**
+        - `090.03.01.02.03` Explain and demonstrate how to decode ATIS messages. [Exam M3; CBIR; IR]
+  - **`090.04.00.00` VOICE COMMUNICATION FAILURE**
+    - **`090.04.01.00` Required action**
+      - **`090.04.01.01` Action required to be taken in case of communication failure**
+        - `090.04.01.01.06` Describe the action to be taken in case of communication failure on an IFR flight. [Exam M3; CBIR; IR]
+        - `090.04.01.01.07` Describe the action to be taken in case of communication failure on an IFR flight when flying in visual meteorological conditions (VMC) and the flight will be terminated in VMC. [Exam M3; CBIR; IR]
+        - `090.04.01.01.08` Describe the action to be taken in case of communication failure on an IFR flight when flying in instrument meteorological conditions (IMC). [Exam M3; CBIR; IR]
+        - `090.04.01.01.09` Explain the causes and possible safety impacts of a blocked frequency. [Exam M3; CBIR; IR]
+  - **`090.05.00.00` DISTRESS AND URGENCY PROCEDURES**
+    - **`090.05.01.00` Signals and procedures**
+      - **`090.05.01.01` Distress**
+        - `090.05.01.01.01` State the DISTRESS signal(s) and DISTRESS procedure(s). [TK M3; CBIR; IR]
+        - `090.05.01.01.02` Define 'DISTRESS'. [TK M3; CBIR; IR]
+        - `090.05.01.01.03` Identify the frequencies that should be used by aircraft in DISTRESS. [Exam M3; CBIR; IR]
+        - `090.05.01.01.04` Specify the emergency SSR codes that may be used by aircraft, and the meaning of the codes. [Exam M3; CBIR; IR]
+        - `090.05.01.01.05` Describe the action to be taken by the station which receives a DISTRESS message. [Exam M3; CBIR; IR]
+        - `090.05.01.01.06` Describe the action to be taken by all other stations when a DISTRESS procedure is in progress. [Exam M3; CBIR; IR]
+        - `090.05.01.01.07` List the correctly sequenced elements of a DISTRESS signal/message and describe the message content. [TK M3; CBIR; IR]
+        - `090.05.01.01.09` State that DISTRESS messages take priority over all other messages. [Exam M3; CBIR; IR]
+      - **`090.05.01.02` Urgency**
+        - `090.05.01.02.01` State the URGENCY signal(s) and URGENCY procedure(s). [TK M3; CBIR; IR]
+        - `090.05.01.02.02` Define 'URGENCY'. [TK M3; CBIR; IR]
+        - `090.05.01.02.03` Identify the frequencies that should be used by aircraft in URGENCY. [Exam M3; CBIR; IR]
+        - `090.05.01.02.04` Describe the action to be taken by the station which receives an URGENCY message. [Exam M3; CBIR; IR]
+        - `090.05.01.02.06` List the correctly sequenced elements of an URGENCY signal/message and describe the message content. [TK M3; CBIR; IR]
+        - `090.05.01.02.07` State that URGENCY messages take priority over all other messages except DISTRESS. [Exam M3; CBIR; IR]
+  - **`090.06.00.00` VHF PROPAGATION AND ALLOCATION OF FREQUENCIES**
+    - **`090.06.01.00` General principles**
+      - **`090.06.01.01` Spectrum, bands, range**
+        - `090.06.01.01.01` Describe the radio-frequency spectrum with particular reference to VHF. [TK M3; CBIR; IR]
+        - `090.06.01.01.02` Describe the radio-frequency spectrum of the bands into which the radio-frequency spectrum is divided. [TK M3; CBIR; IR]
+        - `090.06.01.01.03` Identify the frequency range of the VHF band. [Exam M3; CBIR; IR]
+        - `090.06.01.01.04` State the band normally used for aeronautical mobile service (AMS) voice communication. [Exam M3; CBIR; IR]
+        - `090.06.01.01.05` State the frequency separation allocated between consecutive VHF frequencies. [Exam M3; CBIR; IR]
+        - `090.06.01.01.06` List the factors which reduce the effective range and quality of VHF radio transmissions. [Exam M3; CBIR; IR]
+  - **`090.07.00.00` Other communications**
+    - **`090.07.01.00` Weather observations, Morse code**
+      - **`090.07.01.01` Meteorological observations**
+        - `090.07.01.01.01` Explain when aircraft routine meteorological observations should be made. [Exam M3; CBIR; IR]
+        - `090.07.01.01.02` Explain when aircraft special meteorological observations should be made. [Exam M3; CBIR; IR]
+      - **`090.07.01.02` Use of Morse code**
+        - `090.07.01.02.02` Find the Morse code identifiers of radio navigation aids (VHF omnidirectional radio range (VOR), distance-measuring equipment (DME), non-directional radio beacon (NDB), instrument landing system (ILS)) using aeronautical charts. [Exam M3; CBIR; IR]
+

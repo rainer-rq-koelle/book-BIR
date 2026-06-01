@@ -1,0 +1,279 @@
+---
+title: "BIR Resource Library Index"
+subtitle: "Candidate Downloads resources for filling the EASA BIR aide-memoire gaps"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+execute:
+  echo: false
+---
+
+> This is a search list, not an endorsement list. Source files remain in `~/Downloads`; nothing was moved. Use `Priority` as a first-pass triage for gap filling.
+
+## Summary
+
+- Candidate resources indexed: **152**
+- High-priority resources: **89**
+- Medium-priority resources: **47**
+
+| Primary area | Resources | High | Medium | Low |
+|---|---:|---:|---:|---:|
+| 010 Air Law / ATC | 26 | 15 | 11 | 0 |
+| 022 Instrumentation / Avionics | 14 | 10 | 4 | 0 |
+| 033 Flight Planning | 21 | 6 | 15 | 0 |
+| 040 Human Performance | 5 | 3 | 2 | 0 |
+| 050 Meteorology | 33 | 19 | 14 | 0 |
+| 062 Navigation / Radio Navigation | 9 | 9 | 0 | 0 |
+| 090 Communications | 1 | 1 | 0 | 0 |
+| Comprehensive / Multi-area | 21 | 20 | 1 | 0 |
+| Other aviation / support | 22 | 6 | 0 | 16 |
+
+## Best Starting Points
+
+| Area | Resource | Type | Why useful |
+|---|---|---|---|
+| 010 Air Law / ATC | `airlaw.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 010 Air Law / ATC | `ATPL-AirLaw.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 010 Air Law / ATC | `ATPL-OPS-procedures.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 010 Air Law / ATC | `ATPL-PrinciplesOfFlight.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 010 Air Law / ATC | `BIR-chart-symbols.pdf` | Regulatory / syllabus reference | Use for validation and exact wording; not always ideal for aide-memoire prose. |
+| 010 Air Law / ATC | `CASA-VFRG.pdf` | Authority handbook / public training reference | Good public cross-check source; adapt to EASA terminology where needed. |
+| 010 Air Law / ATC | `EASA CB-IR vs BIR infosheet CIE (2024_v1).pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 010 Air Law / ATC | `EASA-CPL-groundschool-example.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 010 Air Law / ATC | `EASA-Pilot-Logbook-PDF.pdf` | Regulatory / syllabus reference | Use for validation and exact wording; not always ideal for aide-memoire prose. |
+| 010 Air Law / ATC | `EASA_BIR_Learning_Guide_Skeleton.docx` | Regulatory / syllabus reference | Use for validation and exact wording; not always ideal for aide-memoire prose. |
+| 010 Air Law / ATC | `EASA_FEM_MODULE_2.2_PPL_A__V2023_RGB.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 010 Air Law / ATC | `EASA_SIB_2022-07_1.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 010 Air Law / ATC | `easa_webinar_fuel_and_flight_planning_lufthansa.pdf` | Regulatory / syllabus reference | Use for validation and exact wording; not always ideal for aide-memoire prose. |
+| 010 Air Law / ATC | `ecqb-update-ecqb-2024.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 010 Air Law / ATC | `pplprogrammev1.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 022 Instrumentation / Avionics | `ATPL-Electrics.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 022 Instrumentation / Avionics | `ATPL-Instrumentation.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 022 Instrumentation / Avionics | `BIR-GLEIM-ipfmadd2.pdf` | Resource | Potential support resource; inspect before using for gap fill. |
+| 022 Instrumentation / Avionics | `BIR-INST-gyro.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 022 Instrumentation / Avionics | `BIRA-Instrumentenflugberechtigung-1.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 022 Instrumentation / Avionics | `FAA-H-8083-15B (1).pdf` | Authority handbook / public training reference | Good public cross-check source; adapt to EASA terminology where needed. |
+| 022 Instrumentation / Avionics | `FAA-H-8083-15B-AddA.pdf` | Authority handbook / public training reference | Good public cross-check source; adapt to EASA terminology where needed. |
+| 022 Instrumentation / Avionics | `FAA-H-8083-15B-AddB.pdf` | Authority handbook / public training reference | Good public cross-check source; adapt to EASA terminology where needed. |
+| 022 Instrumentation / Avionics | `FAA-H-8083-15B.pdf` | Authority handbook / public training reference | Good public cross-check source; adapt to EASA terminology where needed. |
+| 022 Instrumentation / Avionics | `Volume 14 Electronics V13.2.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 033 Flight Planning | `ATPL-FlightPlanning+Monitoring.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 033 Flight Planning | `ATPL-Mass+Balance.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 033 Flight Planning | `caa-gap-fuel-management-web.pdf` | Authority handbook / public training reference | Good public cross-check source; adapt to EASA terminology where needed. |
+| 033 Flight Planning | `Fuel_Consumption_and_Operational_Perform (1).pdf` | Authority handbook / public training reference | Good public cross-check source; adapt to EASA terminology where needed. |
+| 033 Flight Planning | `Fuel_Consumption_and_Operational_Perform.pdf` | Authority handbook / public training reference | Good public cross-check source; adapt to EASA terminology where needed. |
+| 033 Flight Planning | `Metz_AIAA_Aircraft_Performance_2016.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 040 Human Performance | `ATPL-HP.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 040 Human Performance | `CAA-Flight-Instructor-Guide-web.pdf` | Authority handbook / public training reference | Good public cross-check source; adapt to EASA terminology where needed. |
+| 040 Human Performance | `HumanPerformanceLimitations.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 050 Meteorology | `ATPL-JAA-MET.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 050 Meteorology | `BIR_Meteorology_Study_Notes.pdf` | Regulatory / syllabus reference | Use for validation and exact wording; not always ideal for aide-memoire prose. |
+| 050 Meteorology | `caa-gap-mountain-flying-may-2021-web (1).pdf` | Authority handbook / public training reference | Good public cross-check source; adapt to EASA terminology where needed. |
+| 050 Meteorology | `caa-gap-mountain-flying-may-2021-web (2).pdf` | Authority handbook / public training reference | Good public cross-check source; adapt to EASA terminology where needed. |
+| 050 Meteorology | `caa-gap-mountain-flying-may-2021-web.pdf` | Authority handbook / public training reference | Good public cross-check source; adapt to EASA terminology where needed. |
+| 050 Meteorology | `EASA-MET-clouds.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 050 Meteorology | `EASA-MET-ELR-DALR-SALR.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 050 Meteorology | `EASA-MET-ISA-Altimetry.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 050 Meteorology | `EASA-MET-Notes-Wind-ATPL.pdf` | Training textbook / exam prep | Likely directly useful for exam-style concise explanations. |
+| 050 Meteorology | `FAA-H-8083-28_FAA_Web.pdf` | Authority handbook / public training reference | Good public cross-check source; adapt to EASA terminology where needed. |
+| 050 Meteorology | `FAA-H-8083-28A_FAA_Web (1).pdf` | Authority handbook / public training reference | Good public cross-check source; adapt to EASA terminology where needed. |
+
+## 010 Air Law / ATC
+
+| Priority | Resource | Type | Size/pages | Notes |
+|---|---|---|---:|---|
+| High | `airlaw.pdf` | Training textbook / exam prep | 0.9 MB / 53 pp | Likely directly useful for exam-style concise explanations. |
+| High | `ATPL-AirLaw.pdf` | Training textbook / exam prep | 71.6 MB / 570 pp | Likely directly useful for exam-style concise explanations. |
+| High | `ATPL-OPS-procedures.pdf` | Training textbook / exam prep | 9.5 MB / 272 pp | Likely directly useful for exam-style concise explanations. |
+| High | `ATPL-PrinciplesOfFlight.pdf` | Training textbook / exam prep | 12.5 MB / 604 pp | Likely directly useful for exam-style concise explanations. Areas: 010 Air Law / ATC; 040 Human Performance; 050 Meteorology. |
+| High | `BIR-chart-symbols.pdf` | Regulatory / syllabus reference | 2.4 MB / 22 pp | Use for validation and exact wording; not always ideal for aide-memoire prose. Areas: 010 Air Law / ATC; 062 Navigation / Radio Navigation. |
+| High | `CASA-VFRG.pdf` | Authority handbook / public training reference | 21.0 MB / 539 pp | Good public cross-check source; adapt to EASA terminology where needed. |
+| High | `EASA CB-IR vs BIR infosheet CIE (2024_v1).pdf` | Training textbook / exam prep | 0.1 MB / 1 pp | Likely directly useful for exam-style concise explanations. Areas: 010 Air Law / ATC; 022 Instrumentation / Avionics; 033 Flight Planning; 040 Human Performance; 050 Meteorology; 062 Navigation / Radio Navigation. |
+| High | `EASA-CPL-groundschool-example.pdf` | Training textbook / exam prep | 3.0 MB / 160 pp | Likely directly useful for exam-style concise explanations. |
+| High | `EASA-Pilot-Logbook-PDF.pdf` | Regulatory / syllabus reference | 0.1 MB / 2 pp | Use for validation and exact wording; not always ideal for aide-memoire prose. |
+| High | `EASA_BIR_Learning_Guide_Skeleton.docx` | Regulatory / syllabus reference | 0.0 MB | Use for validation and exact wording; not always ideal for aide-memoire prose. |
+| High | `EASA_FEM_MODULE_2.2_PPL_A__V2023_RGB.pdf` | Training textbook / exam prep | 0.3 MB / 22 pp | Likely directly useful for exam-style concise explanations. |
+| High | `EASA_SIB_2022-07_1.pdf` | Training textbook / exam prep | 1.2 MB / 4 pp | Likely directly useful for exam-style concise explanations. Areas: 010 Air Law / ATC; 033 Flight Planning; 062 Navigation / Radio Navigation. |
+| High | `easa_webinar_fuel_and_flight_planning_lufthansa.pdf` | Regulatory / syllabus reference | 1.2 MB / 13 pp | Use for validation and exact wording; not always ideal for aide-memoire prose. Areas: 010 Air Law / ATC; 033 Flight Planning. |
+| High | `ecqb-update-ecqb-2024.pdf` | Training textbook / exam prep | 0.8 MB / 3 pp | Likely directly useful for exam-style concise explanations. Areas: 010 Air Law / ATC; 040 Human Performance. |
+| High | `pplprogrammev1.pdf` | Training textbook / exam prep | 1.7 MB / 80 pp | Likely directly useful for exam-style concise explanations. Areas: 010 Air Law / ATC; 040 Human Performance; 050 Meteorology. |
+| Medium | `Aerodynamics_Workbook-CH6.pdf` | Study notes / workbook | 0.9 MB / 50 pp | Potential support resource; inspect before using for gap fill. Areas: 010 Air Law / ATC; 033 Flight Planning; 040 Human Performance. |
+| Medium | `Annex II to ED Decision 2016-008-R (1).pdf` | Regulatory / syllabus reference | 6.4 MB / 551 pp | Use for validation and exact wording; not always ideal for aide-memoire prose. Areas: 010 Air Law / ATC; 022 Instrumentation / Avionics; 033 Flight Planning; 040 Human Performance. Duplicate candidates: Annex II to ED Decision 2016-008-R.pdf. |
+| Medium | `Annex II to ED Decision 2016-008-R.pdf` | Regulatory / syllabus reference | 6.4 MB / 551 pp | Use for validation and exact wording; not always ideal for aide-memoire prose. Areas: 010 Air Law / ATC; 022 Instrumentation / Avionics; 033 Flight Planning; 040 Human Performance. Duplicate candidates: Annex II to ED Decision 2016-008-R (1).pdf. |
+| Medium | `annex3_performance_ratios_2023.csv` | Regulatory / syllabus reference | 0.0 MB | Use for validation and exact wording; not always ideal for aide-memoire prose. Areas: 010 Air Law / ATC; 033 Flight Planning. |
+| Medium | `annex5_table01_total_ans_revenues_2023.csv` | Regulatory / syllabus reference | 0.0 MB | Use for validation and exact wording; not always ideal for aide-memoire prose. |
+| Medium | `annex5_table02_gate_to_gate_costs_2023.csv` | Regulatory / syllabus reference | 0.0 MB | Use for validation and exact wording; not always ideal for aide-memoire prose. |
+| Medium | `annex5_table03_atm_cns_cost_breakdown_2023.csv` | Regulatory / syllabus reference | 0.0 MB | Use for validation and exact wording; not always ideal for aide-memoire prose. |
+| Medium | `annex5_table04_balance_sheet_2023.csv` | Regulatory / syllabus reference | 0.0 MB | Use for validation and exact wording; not always ideal for aide-memoire prose. Areas: 010 Air Law / ATC; 033 Flight Planning. |
+| Medium | `Annexes_ACI EUROPE Connectivity Report 2022.xlsx` | Regulatory / syllabus reference | 0.2 MB | Use for validation and exact wording; not always ideal for aide-memoire prose. |
+| Medium | `ECQB-sample-annexes-v2.pdf` | Regulatory / syllabus reference | 18.4 MB | Use for validation and exact wording; not always ideal for aide-memoire prose. |
+| Medium | `operations.csv` | Resource | 75.2 MB | Potential support resource; inspect before using for gap fill. |
+
+## 022 Instrumentation / Avionics
+
+| Priority | Resource | Type | Size/pages | Notes |
+|---|---|---|---:|---|
+| High | `ATPL-Electrics.pdf` | Training textbook / exam prep | 10.4 MB / 284 pp | Likely directly useful for exam-style concise explanations. |
+| High | `ATPL-Instrumentation.pdf` | Training textbook / exam prep | 46.6 MB / 668 pp | Likely directly useful for exam-style concise explanations. |
+| High | `BIR-GLEIM-ipfmadd2.pdf` | Resource | 0.1 MB / 19 pp | Potential support resource; inspect before using for gap fill. |
+| High | `BIR-INST-gyro.pdf` | Training textbook / exam prep | 0.2 MB / 5 pp | Likely directly useful for exam-style concise explanations. |
+| High | `BIRA-Instrumentenflugberechtigung-1.pdf` | Training textbook / exam prep | 0.1 MB / 1 pp | Likely directly useful for exam-style concise explanations. |
+| High | `FAA-H-8083-15B (1).pdf` | Authority handbook / public training reference | 65.2 MB / 371 pp | Good public cross-check source; adapt to EASA terminology where needed. Duplicate candidates: FAA-H-8083-15B.pdf. |
+| High | `FAA-H-8083-15B-AddA.pdf` | Authority handbook / public training reference | 0.7 MB / 3 pp | Good public cross-check source; adapt to EASA terminology where needed. |
+| High | `FAA-H-8083-15B-AddB.pdf` | Authority handbook / public training reference | 0.0 MB / 1 pp | Good public cross-check source; adapt to EASA terminology where needed. |
+| High | `FAA-H-8083-15B.pdf` | Authority handbook / public training reference | 65.2 MB / 371 pp | Good public cross-check source; adapt to EASA terminology where needed. Duplicate candidates: FAA-H-8083-15B (1).pdf. |
+| High | `Volume 14 Electronics V13.2.pdf` | Training textbook / exam prep | 5.4 MB / 384 pp | Likely directly useful for exam-style concise explanations. |
+| Medium | `Aircraft Gyroscopic Instruments.pdf` | Resource | 1.5 MB / 6 pp | Potential support resource; inspect before using for gap fill. |
+| Medium | `Gyroscopic Instruments - 3 Essential Instruments and How They Work - Pilot Institute.pdf` | Resource | 2.9 MB / 9 pp | Potential support resource; inspect before using for gap fill. |
+| Medium | `Gyroscopic Instruments _ Study Aircrafts.pdf` | Resource | 5.9 MB / 12 pp | Potential support resource; inspect before using for gap fill. |
+| Medium | `Pilots_Course_Registration_Form_2021.1.pdf` | Resource | 0.5 MB / 4 pp | Likely useful for CNS/radio-navigation technical gaps. Areas: 022 Instrumentation / Avionics; 062 Navigation / Radio Navigation. |
+
+## 033 Flight Planning
+
+| Priority | Resource | Type | Size/pages | Notes |
+|---|---|---|---:|---|
+| High | `ATPL-FlightPlanning+Monitoring.pdf` | Training textbook / exam prep | 13.1 MB / 340 pp | Likely directly useful for exam-style concise explanations. |
+| High | `ATPL-Mass+Balance.pdf` | Training textbook / exam prep | 72.6 MB / 540 pp | Likely directly useful for exam-style concise explanations. |
+| High | `caa-gap-fuel-management-web.pdf` | Authority handbook / public training reference | 1.4 MB / 36 pp | Good public cross-check source; adapt to EASA terminology where needed. |
+| High | `Fuel_Consumption_and_Operational_Perform (1).pdf` | Authority handbook / public training reference | 1.3 MB / 10 pp | Good public cross-check source; adapt to EASA terminology where needed. Areas: 033 Flight Planning; 040 Human Performance; 050 Meteorology. Duplicate candidates: Fuel_Consumption_and_Operational_Perform.pdf. |
+| High | `Fuel_Consumption_and_Operational_Perform.pdf` | Authority handbook / public training reference | 1.3 MB / 10 pp | Good public cross-check source; adapt to EASA terminology where needed. Areas: 033 Flight Planning; 040 Human Performance; 050 Meteorology. Duplicate candidates: Fuel_Consumption_and_Operational_Perform (1).pdf. |
+| High | `Metz_AIAA_Aircraft_Performance_2016.pdf` | Training textbook / exam prep | 3.1 MB / 14 pp | Likely directly useful for exam-style concise explanations. Areas: 033 Flight Planning; 050 Meteorology. |
+| Medium | `Aircraft-fuel-burn-trends-sept2020.pdf` | Resource | 0.6 MB / 25 pp | Potential support resource; inspect before using for gap fill. Areas: 033 Flight Planning; 040 Human Performance; 090 Communications. |
+| Medium | `flightplanning.pdf` | Resource | 0.1 MB / 2 pp | Potential support resource; inspect before using for gap fill. |
+| Medium | `FlightReleaseFormV2.0DA40NG (1).pdf` | Resource | 1.6 MB / 3 pp | Potential support resource; inspect before using for gap fill. Areas: 033 Flight Planning; 040 Human Performance. |
+| Medium | `fuel burn paper summary.docx` | Resource | 0.0 MB | Potential support resource; inspect before using for gap fill. |
+| Medium | `Fuel_Burn_Method_Assessment_Using_Automatic_Depend (1).pdf` | Resource | 12.3 MB / 28 pp | Potential support resource; inspect before using for gap fill. |
+| Medium | `Fuel_Burn_Method_Assessment_Using_Automatic_Depend.pdf` | Resource | 12.3 MB / 28 pp | Potential support resource; inspect before using for gap fill. |
+| Medium | `Fuel_Estimation_in_Air_Transportation_Modeling_glo.pdf` | Resource | 2.3 MB / 16 pp | Potential support resource; inspect before using for gap fill. Areas: 033 Flight Planning; 040 Human Performance. |
+| Medium | `Fuelburn-Engine-Examples.docx` | Resource | 0.0 MB | Potential support resource; inspect before using for gap fill. |
+| Medium | `FuelFlow-Simplified-ICAS-96-4.1.2.pdf` | Resource | 0.5 MB / 11 pp | Potential support resource; inspect before using for gap fill. |
+| Medium | `navplan_EDNH-LIPB.pdf` | Resource | 0.1 MB / 1 pp | Likely useful for CNS/radio-navigation technical gaps. Areas: 033 Flight Planning; 062 Navigation / Radio Navigation. |
+| Medium | `navplan_EDST-LIPB.pdf` | Resource | 0.1 MB / 1 pp | Likely useful for weather theory and examples. Areas: 033 Flight Planning; 050 Meteorology; 062 Navigation / Radio Navigation. |
+| Medium | `navplan_EDST-LSXH.pdf` | Resource | 0.1 MB / 1 pp | Likely useful for CNS/radio-navigation technical gaps. Areas: 033 Flight Planning; 062 Navigation / Radio Navigation. |
+| Medium | `navplan_LSPN-LOWZ.pdf` | Resource | 0.1 MB / 1 pp | Likely useful for CNS/radio-navigation technical gaps. Areas: 033 Flight Planning; 062 Navigation / Radio Navigation. |
+| Medium | `Performance Objectives_odfm_crrctd.docx` | Resource | 0.0 MB | Potential support resource; inspect before using for gap fill. |
+| Medium | `Performance_Analyzes_of_Thermodynamic_Indices_and_.pdf` | Resource | 1.7 MB / 21 pp | Likely useful for weather theory and examples. Areas: 033 Flight Planning; 040 Human Performance; 050 Meteorology. |
+
+## 040 Human Performance
+
+| Priority | Resource | Type | Size/pages | Notes |
+|---|---|---|---:|---|
+| High | `ATPL-HP.pdf` | Training textbook / exam prep | 12.2 MB / 464 pp | Likely directly useful for exam-style concise explanations. Duplicate candidates: HumanPerformanceLimitations.pdf. |
+| High | `CAA-Flight-Instructor-Guide-web.pdf` | Authority handbook / public training reference | 21.2 MB / 300 pp | Good public cross-check source; adapt to EASA terminology where needed. Areas: 040 Human Performance; 050 Meteorology; 062 Navigation / Radio Navigation. |
+| High | `HumanPerformanceLimitations.pdf` | Training textbook / exam prep | 12.2 MB / 464 pp | Likely directly useful for exam-style concise explanations. Duplicate candidates: ATPL-HP.pdf. |
+| Medium | `Irvine Budd Ison Kitching 2015 v2.pdf` | Resource | 0.3 MB / 16 pp | Potential support resource; inspect before using for gap fill. |
+| Medium | `metFundamentals_student_1-4.pdf` | Study notes / workbook | 9.6 MB / 33 pp | Likely useful for weather theory and examples. Areas: 040 Human Performance; 050 Meteorology. |
+
+## 050 Meteorology
+
+| Priority | Resource | Type | Size/pages | Notes |
+|---|---|---|---:|---|
+| High | `ATPL-JAA-MET.pdf` | Training textbook / exam prep | 12.6 MB / 354 pp | Likely directly useful for exam-style concise explanations. |
+| High | `BIR_Meteorology_Study_Notes.pdf` | Regulatory / syllabus reference | 0.6 MB / 9 pp | Use for validation and exact wording; not always ideal for aide-memoire prose. |
+| High | `caa-gap-mountain-flying-may-2021-web (1).pdf` | Authority handbook / public training reference | 1.5 MB / 36 pp | Good public cross-check source; adapt to EASA terminology where needed. Duplicate candidates: caa-gap-mountain-flying-may-2021-web (2).pdf; caa-gap-mountain-flying-may-2021-web.pdf. |
+| High | `caa-gap-mountain-flying-may-2021-web (2).pdf` | Authority handbook / public training reference | 1.5 MB / 36 pp | Good public cross-check source; adapt to EASA terminology where needed. Duplicate candidates: caa-gap-mountain-flying-may-2021-web (1).pdf; caa-gap-mountain-flying-may-2021-web.pdf. |
+| High | `caa-gap-mountain-flying-may-2021-web.pdf` | Authority handbook / public training reference | 1.5 MB / 36 pp | Good public cross-check source; adapt to EASA terminology where needed. Duplicate candidates: caa-gap-mountain-flying-may-2021-web (1).pdf; caa-gap-mountain-flying-may-2021-web (2).pdf. |
+| High | `EASA-MET-clouds.pdf` | Training textbook / exam prep | 4.9 MB / 7 pp | Likely directly useful for exam-style concise explanations. |
+| High | `EASA-MET-ELR-DALR-SALR.pdf` | Training textbook / exam prep | 0.3 MB / 3 pp | Likely directly useful for exam-style concise explanations. |
+| High | `EASA-MET-ISA-Altimetry.pdf` | Training textbook / exam prep | 0.3 MB / 5 pp | Likely directly useful for exam-style concise explanations. |
+| High | `EASA-MET-Notes-Wind-ATPL.pdf` | Training textbook / exam prep | 0.1 MB / 7 pp | Likely directly useful for exam-style concise explanations. |
+| High | `FAA-H-8083-28_FAA_Web.pdf` | Authority handbook / public training reference | 31.1 MB / 532 pp | Good public cross-check source; adapt to EASA terminology where needed. |
+| High | `FAA-H-8083-28A_FAA_Web (1).pdf` | Authority handbook / public training reference | 30.9 MB / 539 pp | Good public cross-check source; adapt to EASA terminology where needed. Duplicate candidates: FAA-H-8083-28A_FAA_Web.pdf; Meteorology-AviationWeather-FAA-H-8083-28A.pdf. |
+| High | `FAA-H-8083-28A_FAA_Web.pdf` | Authority handbook / public training reference | 30.9 MB / 539 pp | Good public cross-check source; adapt to EASA terminology where needed. Duplicate candidates: FAA-H-8083-28A_FAA_Web (1).pdf; Meteorology-AviationWeather-FAA-H-8083-28A.pdf. |
+| High | `MET-4-PPL.pdf` | Training textbook / exam prep | 0.1 MB / 9 pp | Likely directly useful for exam-style concise explanations. |
+| High | `Meteorological Applications - 2008 - Markovic - A statistical study of the weather impact on punctuality at Frankfurt.pdf` | Training textbook / exam prep | 0.3 MB / 11 pp | Likely directly useful for exam-style concise explanations. |
+| High | `Meteorology-AviationWeather-FAA-H-8083-28A.pdf` | Authority handbook / public training reference | 30.9 MB / 539 pp | Good public cross-check source; adapt to EASA terminology where needed. Duplicate candidates: FAA-H-8083-28A_FAA_Web (1).pdf; FAA-H-8083-28A_FAA_Web.pdf. |
+| High | `RCAF-Weather-Manual-Workbook (1).pdf` | Authority handbook / public training reference | 18.9 MB / 205 pp | Good public cross-check source; adapt to EASA terminology where needed. Duplicate candidates: RCAF-Weather-Manual-Workbook.pdf. |
+| High | `RCAF-Weather-Manual-Workbook.pdf` | Authority handbook / public training reference | 18.9 MB / 205 pp | Good public cross-check source; adapt to EASA terminology where needed. Duplicate candidates: RCAF-Weather-Manual-Workbook (1).pdf. |
+| High | `RCAF-Weather-Manual.pdf` | Authority handbook / public training reference | 38.1 MB / 345 pp | Good public cross-check source; adapt to EASA terminology where needed. |
+| High | `weather_aviation_impact_research_paper.pdf` | Training textbook / exam prep | 0.1 MB / 30 pp | Likely directly useful for exam-style concise explanations. |
+| Medium | `Aviation-Weather-Principles.pdf` | Resource | 3.2 MB / 30 pp | Likely useful for weather theory and examples. |
+| Medium | `cloud-types-postcard (1).pdf` | Resource | 0.1 MB / 2 pp | Likely useful for weather theory and examples. Duplicate candidates: cloud-types-postcard.pdf. |
+| Medium | `cloud-types-postcard.pdf` | Resource | 0.1 MB / 2 pp | Likely useful for weather theory and examples. Duplicate candidates: cloud-types-postcard (1).pdf. |
+| Medium | `Flight_Delay_Prediction_with_Airport_Traffic_Densi.pdf` | Resource | 0.9 MB / 10 pp | Likely useful for weather theory and examples. |
+| Medium | `met-cloud-formation-slides.pdf` | Resource | 3.5 MB / 33 pp | Likely useful for weather theory and examples. |
+| Medium | `met.pdf` | Resource | 0.9 MB / 8 pp | Likely useful for weather theory and examples. |
+| Medium | `Meteorology-Climatology-and-Geography (1).pdf` | Study notes / workbook | 3.2 MB / 51 pp | Likely useful for weather theory and examples. Duplicate candidates: Meteorology-Climatology-and-Geography.pdf. |
+| Medium | `Meteorology-Climatology-and-Geography.pdf` | Study notes / workbook | 3.2 MB / 51 pp | Likely useful for weather theory and examples. Duplicate candidates: Meteorology-Climatology-and-Geography (1).pdf. |
+| Medium | `Meteorology-Recap-Notes.pdf` | Study notes / workbook | 1.0 MB / 111 pp | Likely useful for weather theory and examples. |
+| Medium | `PilotNotes_Meteorology_1997-02.pdf` | Study notes / workbook | 0.4 MB / 27 pp | Likely useful for weather theory and examples. |
+| Medium | `weather-airspace-permeability-ATMSeminar.pdf` | Resource | 0.9 MB / 10 pp | Likely useful for weather theory and examples. |
+| Medium | `Weather_Impact_on_Airport_Performance.pdf` | Resource | 1.3 MB / 19 pp | Likely useful for weather theory and examples. |
+| Medium | `Weather_impact_quantification_preprint_rgate.pdf` | Resource | 0.9 MB / 28 pp | Likely useful for weather theory and examples. |
+| Medium | `WeathermetricsPackageStructure.pdf` | Study notes / workbook | 0.3 MB / 1 pp | Likely useful for weather theory and examples. |
+
+## 062 Navigation / Radio Navigation
+
+| Priority | Resource | Type | Size/pages | Notes |
+|---|---|---|---:|---|
+| High | `ATPL-JAA-Gen-NAV.pdf` | Training textbook / exam prep | 59.5 MB / 281 pp | Likely directly useful for exam-style concise explanations. |
+| High | `ATPL-NAV-Gen.pdf` | Training textbook / exam prep | 88.5 MB / 576 pp | Likely directly useful for exam-style concise explanations. |
+| High | `ATPL-RadioNav.pdf` | Training textbook / exam prep | 36.0 MB / 396 pp | Likely directly useful for exam-style concise explanations. |
+| High | `Flightplan (1).pdf` | Training textbook / exam prep | 0.0 MB / 1 pp | Likely directly useful for exam-style concise explanations. |
+| High | `Flightplan (2).pdf` | Training textbook / exam prep | 0.0 MB / 1 pp | Likely directly useful for exam-style concise explanations. |
+| High | `Flightplan.pdf` | Training textbook / exam prep | 0.0 MB / 1 pp | Likely directly useful for exam-style concise explanations. |
+| High | `JAA-RadioNavigation.pdf` | Training textbook / exam prep | 12.8 MB / 330 pp | Likely directly useful for exam-style concise explanations. |
+| High | `PBN_Manual_e4.0.v1 (1).pdf` | Study notes / workbook | 11.4 MB / 202 pp | Likely useful for CNS/radio-navigation technical gaps. Duplicate candidates: PBN_Manual_e4.0.v1.pdf. |
+| High | `PBN_Manual_e4.0.v1.pdf` | Study notes / workbook | 11.4 MB / 202 pp | Likely useful for CNS/radio-navigation technical gaps. Duplicate candidates: PBN_Manual_e4.0.v1 (1).pdf. |
+
+## 090 Communications
+
+| Priority | Resource | Type | Size/pages | Notes |
+|---|---|---|---:|---|
+| High | `ATPL-COM.pdf` | Training textbook / exam prep | 3.6 MB / 164 pp | Likely directly useful for exam-style concise explanations. |
+
+## Comprehensive / Multi-area
+
+| Priority | Resource | Type | Size/pages | Notes |
+|---|---|---|---:|---|
+| High | `ATPL Theory Summary (1).pdf` | Training textbook / exam prep | 1.3 MB / 60 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. Duplicate candidates: ATPL Theory Summary.pdf. |
+| High | `ATPL Theory Summary.pdf` | Training textbook / exam prep | 1.3 MB / 60 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. Duplicate candidates: ATPL Theory Summary (1).pdf. |
+| High | `EASA-ATPL-Handbook-FreeSample.pdf` | Training textbook / exam prep | 9.5 MB / 105 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. |
+| High | `easa-professional-pilot-studies_compress.pdf` | Training textbook / exam prep | 211.3 MB / 2155 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. |
+| High | `IR-Training-Students-handbook.pdf` | Resource | 6.3 MB / 75 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. |
+| High | `PPL-A-20240922.pdf` | Training textbook / exam prep | 0.5 MB / 1 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. |
+| High | `PPL-EASA.pdf` | Training textbook / exam prep | 0.4 MB / 1 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. |
+| High | `Volume 11 Radar V13.2.pdf` | Training textbook / exam prep | 1.8 MB / 129 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. Areas: Comprehensive / Multi-area; 040 Human Performance; 050 Meteorology; 062 Navigation / Radio Navigation. |
+| High | `Volume 12 Helicopters V13.2.pdf` | Study notes / workbook | 2.7 MB / 201 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. Areas: Comprehensive / Multi-area; 033 Flight Planning; 040 Human Performance; 050 Meteorology. |
+| High | `Volume 13 Maths and Physics V13.2.pdf` | Study notes / workbook | 3.6 MB / 308 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. Areas: Comprehensive / Multi-area; 022 Instrumentation / Avionics; 040 Human Performance. |
+| High | `Volume_01_Principles_of_Flight.pdf` | Resource | 3.0 MB / 303 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. |
+| High | `Volume_02_Aircraft_Performance.pdf` | Training textbook / exam prep | 2.3 MB / 121 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. |
+| High | `Volume_03_Propulsion.pdf` | Resource | 4.8 MB / 184 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. |
+| High | `Volume_04_Aircraft_Systems.pdf` | Training textbook / exam prep | 2.4 MB / 107 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. |
+| High | `Volume_05_Flight_Instruments.pdf` | Resource | 4.0 MB / 197 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. Areas: Comprehensive / Multi-area; 022 Instrumentation / Avionics. |
+| High | `Volume_06_Aviation_Medicine.pdf` | Resource | 1.7 MB / 165 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. Areas: Comprehensive / Multi-area; 040 Human Performance. |
+| High | `Volume_07_Avionics.pdf` | Resource | 3.2 MB / 215 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. Areas: Comprehensive / Multi-area; 022 Instrumentation / Avionics. |
+| High | `Volume_08_Aircraft_Operations.pdf` | Authority handbook / public training reference | 4.1 MB / 320 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. |
+| High | `Volume_09_Navigation.pdf` | Resource | 6.6 MB / 270 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. Areas: Comprehensive / Multi-area; 062 Navigation / Radio Navigation. |
+| High | `Volume_10_Meteorology__CFS_version_.pdf` | Resource | 1.9 MB / 97 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. Areas: Comprehensive / Multi-area; 050 Meteorology. |
+| Medium | `aviation18_RC.pdf` | Resource | 7.1 MB / 16 pp | Likely broad reference; useful for filling multiple gaps and cross-checking terminology. Areas: Comprehensive / Multi-area; 050 Meteorology. |
+
+## Other aviation / support
+
+| Priority | Resource | Type | Size/pages | Notes |
+|---|---|---|---:|---|
+| High | `aviation-identification-application-form-499.pdf` | Training textbook / exam prep | 0.3 MB / 6 pp | Likely directly useful for exam-style concise explanations. |
+| High | `BIR-M01-RainerKoelle.pdf` | Resource | 1.0 MB | Potential support resource; inspect before using for gap fill. |
+| High | `BIR_Learning_Objectives.csv` | Resource | 0.4 MB | Potential support resource; inspect before using for gap fill. |
+| High | `BIR_Learning_Objectives.xlsx` | Resource | 0.1 MB | Potential support resource; inspect before using for gap fill. |
+| High | `CAAT - coop agreement - benchmarking appendix - Attendance report 8-06-24.csv` | Authority handbook / public training reference | 0.0 MB | Good public cross-check source; adapt to EASA terminology where needed. |
+| High | `FAA-H-8083-16B.pdf` | Authority handbook / public training reference | 35.3 MB / 312 pp | Good public cross-check source; adapt to EASA terminology where needed. |
+| Low | `Aviation_and_Aircraft_Engine_Emissions_at_Juanda_I.pdf` | Resource | 0.5 MB / 8 pp | Potential support resource; inspect before using for gap fill. |
+| Low | `Aviation_and_climate_change_the_science.pdf` | Resource | 1.6 MB / 409 pp | Potential support resource; inspect before using for gap fill. |
+| Low | `Flight efficiency concepts.docx` | Resource | 6.1 MB | Potential support resource; inspect before using for gap fill. |
+| Low | `flight-Hainan-BrusselsXian.pdf` | Resource | 0.2 MB / 2 pp | Potential support resource; inspect before using for gap fill. |
+| Low | `Flight_AUAs_Actual_extract.csv` | Resource | 0.0 MB | Potential support resource; inspect before using for gap fill. |
+| Low | `Flight_AUAs_Filed_extract.csv` | Resource | 0.0 MB | Potential support resource; inspect before using for gap fill. |
+| Low | `flight_data_recorder_20230209-1.pdf` | Resource | 0.1 MB / 1 pp | Potential support resource; inspect before using for gap fill. |
+| Low | `Flight_FIRs_Actual_extract.csv` | Resource | 0.0 MB | Potential support resource; inspect before using for gap fill. |
+| Low | `Flight_FIRs_Filed_extract.csv` | Resource | 0.0 MB | Potential support resource; inspect before using for gap fill. |
+| Low | `Flight_Points_Actual_extract.csv` | Resource | 0.0 MB | Potential support resource; inspect before using for gap fill. |
+| Low | `Flight_Points_Filed_extract.csv` | Resource | 0.0 MB | Potential support resource; inspect before using for gap fill. |
+| Low | `Flight_safety_during_Covid-19_A_study_of_Charles_d.pdf` | Resource | 2.3 MB / 11 pp | Potential support resource; inspect before using for gap fill. |
+| Low | `Flights_extract.csv` | Resource | 0.0 MB | Potential support resource; inspect before using for gap fill. |
+| Low | `Manual.pdf` | Study notes / workbook | 1.8 MB / 54 pp | Potential support resource; inspect before using for gap fill. |
+| Low | `Navigating the Turbulent Skies_ Unraveling Europe's Evolving Air Connectivity (2019-2025).pdf` | Resource | 0.2 MB / 7 pp | Potential support resource; inspect before using for gap fill. |
+| Low | `UAM_ConOps_v1.0.pdf` | Resource | 1.4 MB / 49 pp | Potential support resource; inspect before using for gap fill. |
+
